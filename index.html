@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 情报站</title>
+<style>
+  :root{
+    --blue:#0052D9; --blue-soft:#E8F0FE; --ink:#1f2329; --sub:#646a73;
+    --line:#e5e6eb; --bg:#f5f7fa; --card:#fff; --weak:#c9cdd4;
+    --green:#00a870; --orange:#ff8800; --purple:#6f42c1; --red:#e34d59; --gray:#86909c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{max-width:100%;overflow-x:hidden}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,Roboto,sans-serif;
+    color:var(--ink);background:var(--bg);font-size:14px;line-height:1.65}
+  header{background:linear-gradient(135deg,#0052D9,#2b6fe0);color:#fff;padding:16px 28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  header h1{font-size:19px;font-weight:600;letter-spacing:.5px}
+  header .tag{font-size:12px;opacity:.9;background:rgba(255,255,255,.15);padding:3px 10px;border-radius:12px}
+  header .sub{width:100%;margin:0;font-size:13px;opacity:.92;line-height:1.5;font-weight:400}
+  nav{display:flex;gap:2px;background:#fff;border-bottom:1px solid var(--line);padding:0 12px;flex-wrap:wrap;position:sticky;top:0;z-index:20}
+  nav button{background:none;border:none;padding:13px 13px;font-size:13.5px;color:var(--sub);
+    cursor:pointer;border-bottom:2px solid transparent;font-family:inherit;white-space:nowrap}
+  nav button:hover{color:var(--blue)}
+  nav button.active{color:var(--blue);border-bottom-color:var(--blue);font-weight:600}
+  main{max-width:1200px;margin:22px auto;padding:0 20px}
+  /* ---- 手机端适配（≤768px 主断点，≤480px 微调）---- */
+  @media(max-width:768px){
+    header{padding:12px 16px;flex-direction:column;align-items:stretch;gap:10px}
+    header h1{font-size:17px}
+    header .search{width:100%}
+    header .search input{width:100%;max-width:100%}
+    header .sub{font-size:12px}
+    nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 8px;gap:0}
+    nav button{padding:12px 14px;font-size:13px;flex:0 0 auto}
+    nav::-webkit-scrollbar{display:none}
+    nav{scrollbar-width:none}
+    main{padding:0 12px;margin:14px auto}
+    .daily-tabs{gap:5px;padding:2px 0 8px}
+    .daily-tabs .dt{padding:6px 10px;font-size:12px}
+    .brief-frame iframe{height:68vh}
+    .grid{grid-template-columns:1fr}
+    .item .meta{gap:6px}
+    .filters{flex-direction:column;align-items:stretch}
+    .filters select{width:100%}
+    .filters .cnt{margin-left:0;text-align:right}
+    .sitem .mmeta{gap:6px}
+  }
+  @media(max-width:480px){
+    header h1{font-size:16px}
+    .brief-frame iframe{height:62vh}
+    .card{padding:14px 14px}
+    .item{padding:11px 12px}
+    .item .t{font-size:13.5px}
+  }
+  .panel{display:none;animation:fade .25s ease}
+  .panel.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+  h2{font-size:16px;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+  h2 .num{background:var(--blue);color:#fff;width:22px;height:22px;border-radius:6px;
+    display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+  .desc{color:var(--sub);font-size:13px;margin-bottom:14px}
+  .note{font-size:12px;color:var(--gray);margin-top:10px;font-style:italic}
+  /* daily —— 新版：正文占满主区，日期归档改为顶部可横滑标签条 */
+  .daily-scroll{position:relative}
+  .daily-tabs{display:flex;gap:6px;overflow-x:auto;padding:4px 2px 10px 2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .daily-tabs::-webkit-scrollbar{display:none}
+  /* 右侧渐隐提示：暗示可向右横滑（无触屏也有视觉线索） */
+  .daily-scroll::after{content:"";position:absolute;top:0;right:26px;bottom:8px;width:34px;pointer-events:none;
+    background:linear-gradient(to right,rgba(255,255,255,0),#fff 92%);opacity:0;transition:.2s}
+  .daily-scroll.has-overflow::after{opacity:1}
+  /* 向右按钮：无触屏电脑的明确点击入口 */
+  .daily-scroll .scroll-right{position:absolute;right:0;top:50%;transform:translateY(-60%);width:24px;height:30px;
+    border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--blue);font-size:20px;line-height:1;
+    cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.08);z-index:5}
+  .daily-scroll .scroll-right:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+  .daily-scroll.has-overflow .scroll-right{display:flex}
+  .daily-tabs .dt{font-size:12.5px;padding:6px 12px;border:1px solid var(--line);border-radius:16px;background:#fff;color:var(--sub);cursor:pointer;white-space:nowrap;transition:.15s;flex:0 0 auto}
+  .daily-tabs .dt:hover{border-color:var(--blue);color:var(--blue)}
+  .daily-tabs .dt.on{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}
+  .brief-frame{border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden;min-height:60vh}
+  .brief-frame iframe{width:100%;height:78vh;border:none;display:block}
+  .brief-tip{padding:60px 20px;text-align:center;color:var(--sub);font-size:14px}
+  .daily-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:10px;flex-wrap:wrap}
+  .daily-bar .dh{font-size:13px;color:var(--sub)}
+  .daily-bar .dh b{color:var(--ink);font-weight:600}
+  /* modules db */
+  .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+  .filters label{font-size:12.5px;color:var(--sub)}
+  .filters select{font-family:inherit;font-size:13px;padding:7px 11px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--ink);cursor:pointer}
+  .filters .reset{font-size:12.5px;padding:7px 12px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--sub);cursor:pointer}
+  .filters .cnt{font-size:12.5px;color:var(--sub);margin-left:auto}
+  .item{border:1px solid var(--line);border-radius:9px;padding:13px 15px;margin-bottom:9px;transition:.15s}
+  .item:hover{border-color:var(--blue);box-shadow:0 2px 8px rgba(0,82,217,.08)}
+  .item .t{font-weight:600;font-size:14px;margin-bottom:4px}
+  .item .s{color:var(--sub);font-size:13px}
+  .item .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:7px;font-size:12px;color:var(--gray)}
+  .item .vtag{background:var(--blue-soft);color:var(--blue);padding:1px 9px;border-radius:10px;font-weight:600}
+  .item .dtag{padding:1px 9px;border-radius:10px;background:#f2f3f5;color:var(--sub)}
+  .item .ltag a{color:var(--blue);text-decoration:none;font-weight:600}
+  .item .ltag a:hover{text-decoration:underline}
+  .empty{color:var(--sub);padding:24px;text-align:center;font-size:13px}
+  /* monthly / reports cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .mcard{border:1px solid var(--line);border-radius:11px;padding:16px 18px;background:#fff;transition:.15s}
+  .mcard:hover{border-color:var(--blue);box-shadow:0 2px 8px rgba(0,82,217,.08)}
+  .mcard .mt{font-weight:700;font-size:15px;margin-bottom:6px}
+  .mcard .mb{font-size:12.5px;color:var(--sub);margin-bottom:10px}
+  .mcard .mlink{font-size:13px}
+  .mcard .mlink a{color:var(--blue);text-decoration:none;font-weight:600}
+  /* special reports */
+  .report{border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin-bottom:14px;background:#fff}
+  .report .rh{font-weight:700;font-size:15px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .report .rv{font-size:12px;color:var(--purple);font-weight:600;white-space:nowrap}
+  .report .rp{font-size:12px;color:var(--gray);margin:2px 0 8px}
+  .report .judge{background:#f6f1fd;border-left:4px solid var(--purple);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13px;color:#4a2d6b;margin:8px 0 10px;line-height:1.7}
+  .report .kw{margin:8px 0}
+  .report .k{display:inline-block;font-size:11.5px;background:var(--blue-soft);color:var(--blue);padding:3px 10px;border-radius:11px;margin:0 6px 6px 0;font-weight:600}
+  .report .rlink{font-size:13px;margin-top:6px}
+  .report .rlink a{color:var(--blue);text-decoration:none;font-weight:600}
+  footer{text-align:center;color:var(--gray);font-size:12px;padding:24px;line-height:1.7}
+  /* search */
+  .search{display:flex;align-items:center}
+  .search input{font-family:inherit;font-size:13px;padding:8px 14px;width:290px;max-width:62vw;
+    border:1px solid rgba(255,255,255,.45);border-radius:20px;background:rgba(255,255,255,.16);color:#fff;
+    outline:none;transition:.18s}
+  .search input::placeholder{color:rgba(255,255,255,.72)}
+  .search input:focus{background:#fff;color:var(--ink);border-color:#fff;width:340px}
+  .search input:focus::placeholder{color:var(--gray)}
+  mark{background:#fff3a3;color:inherit;padding:0 1px;border-radius:2px}
+  /* search results */
+  .sbar{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+  .sbar .n{font-size:13px;color:var(--sub)}
+  .sbar .clr{font-size:12.5px;padding:6px 12px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--sub);cursor:pointer}
+  .sitem{border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:9px;padding:12px 15px;margin-bottom:9px;transition:.15s;cursor:pointer}
+  .sitem:hover{border-color:var(--blue);box-shadow:0 2px 8px rgba(0,82,217,.08)}
+  .sitem .mt{font-weight:600;font-size:14px;margin-bottom:3px}
+  .sitem .ms{color:var(--sub);font-size:13px}
+  .sitem .mmeta{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;font-size:12px;color:var(--gray);align-items:center}
+  .sitem .bmod{padding:1px 9px;border-radius:10px;background:var(--blue-soft);color:var(--blue);font-weight:600}
+  .sitem .bdt{padding:1px 9px;border-radius:10px;background:#f2f3f5;color:var(--sub)}
+  .sitem .bopen{margin-left:auto;color:var(--blue);font-weight:600}
+</style>
+<script src="https://static.cloudbase.net/cloudbase-js-sdk/latest/cloudbase.full.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Data+AI 行业信息参考</h1>
+  <div class="search"><input id="q" type="search" placeholder="站内搜索：厂商 / 关键词 / 模块 / 日期…" oninput="onSearch(this.value)"></div>
+  <p class="sub">大数据平台视角的 Data+AI 行业信息参考 · 更新至 2026-07</p>
+</header>
+
+<nav id="nav">
+  <button data-t="daily" class="active" onclick="switchTab('daily')">日报</button>
+  <button data-t="monthly" onclick="switchTab('monthly')">月报</button>
+  <button data-t="prod" onclick="switchTab('prod')">产品</button>
+  <button data-t="tech" onclick="switchTab('tech')">技术</button>
+  <button data-t="cap" onclick="switchTab('cap')">投融资</button>
+  <button data-t="ana" onclick="switchTab('ana')">机构</button>
+  <button data-t="report" onclick="switchTab('report')">专题</button>
+</nav>
+
+<main>
+  <!-- 日报 -->
+  <section class="panel active" id="daily">
+    <div class="card">
+      <h2><span class="num">1</span>日报 · 全量归档</h2>
+      <p class="desc">每期日报为完整产出，按日期归档。下方标签条可切换任意一期，正文区直接展示该期完整日报 HTML（含来源链接）。</p>
+      <div class="daily-bar">
+        <span class="dh">当前查看：<b id="curDate">—</b></span>
+        <span class="dh">共 <b id="arcN"></b> 期</span>
+      </div>
+      <div class="daily-scroll">
+        <div class="daily-tabs" id="archive"></div>
+        <button class="scroll-right" id="scrollRight" title="向右查看更多日期" aria-label="向右查看更多日期">›</button>
+      </div>
+      <div class="brief-frame"><div class="brief-tip" id="briefTip">正在加载最新一期日报…</div></div>
+    </div>
+  </section>
+
+  <!-- 月报 -->
+  <section class="panel" id="monthly">
+    <div class="card">
+      <h2><span class="num">2</span>月报 · 周期综述</h2>
+      <p class="desc">由月报 skill 基于每日日报聚合生成。点击下方卡片，在当前框架内嵌打开完整月报 HTML。</p>
+      <div class="grid" id="monthlyGrid"></div>
+      <div class="brief-frame" id="monthlyFrame" style="margin-top:14px"></div>
+    </div>
+  </section>
+
+  <!-- 产品 -->
+  <section class="panel" id="prod">
+    <div class="card">
+      <h2><span class="num">3</span>产品 · 资料库</h2>
+      <p class="desc">各厂商产品发布、GA/Preview、功能迭代。顶部「按厂商筛选」可看某厂商在产品侧的持续进展，条目带来源链接。</p>
+      <div class="filters" data-mod="产品">
+        <label>按厂商：</label><select class="fvendor"></select>
+        <button class="reset">重置</button><span class="cnt"></span>
+      </div>
+      <div class="list"></div>
+    </div>
+  </section>
+
+  <!-- 技术 -->
+  <section class="panel" id="tech">
+    <div class="card">
+      <h2><span class="num">4</span>技术 · 资料库</h2>
+      <p class="desc">架构演进、开源动态、引擎/标准进展。可按厂商看其技术路线。</p>
+      <div class="filters" data-mod="技术">
+        <label>按厂商：</label><select class="fvendor"></select>
+        <button class="reset">重置</button><span class="cnt"></span>
+      </div>
+      <div class="list"></div>
+    </div>
+  </section>
+
+  <!-- 投融资 -->
+  <section class="panel" id="cap">
+    <div class="card">
+      <h2><span class="num">5</span>投融资 · 资料库</h2>
+      <p class="desc">融资、并购、IPO、财报信号。可按厂商查看其资本动向。</p>
+      <div class="filters" data-mod="投融资">
+        <label>按厂商：</label><select class="fvendor"></select>
+        <button class="reset">重置</button><span class="cnt"></span>
+      </div>
+      <div class="list"></div>
+    </div>
+  </section>
+
+  <!-- 机构 -->
+  <section class="panel" id="ana">
+    <div class="card">
+      <h2><span class="num">6</span>机构 · 资料库</h2>
+      <p class="desc">分析师报告、研究机构观点、政策文件、白皮书的结构化档案，可检索、可复用为竞争态势基线。</p>
+      <div class="filters" data-mod="机构">
+        <label>按厂商/机构：</label><select class="fvendor"></select>
+        <button class="reset">重置</button><span class="cnt"></span>
+      </div>
+      <div class="list"></div>
+    </div>
+  </section>
+
+  <!-- 专题 -->
+  <section class="panel" id="report">
+    <div class="card">
+      <h2><span class="num">7</span>专题 · 深度报告库</h2>
+      <p class="desc">围绕 Summit / 标准 / 重大事件的深度报告。点击「查看」在当前框架内阅读完整 HTML 报告。</p>
+      <div id="reportGrid" class="grid"></div>
+      <div id="reportFrame" class="brief-frame" style="margin-top:14px;display:none"></div>
+    </div>
+  </section>
+
+  <!-- 搜索结果 -->
+  <section class="panel" id="search">
+    <div class="card">
+      <div class="sbar">
+        <h2>站内搜索</h2>
+        <span class="n" id="sN"></span>
+        <button class="clr" onclick="clearSearch()">清空并返回</button>
+      </div>
+      <div id="searchList"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>来源：Data+AI 日报 / 月报与产品 · 技术 · 投融资 · 机构 · 专题情报产出 ｜ 有问题联系作者 haiyangchen / benjhchen</div>
+</footer>
+
+<script>
+/* 埋点汇聚后端：CloudBase NoSQL 集合 dai_events（腾讯云实现方案，Web SDK 匿名直写，无额外服务依赖） */
+window.CB_ENV = 'cloud1-8gxhmvps775f72e2';
+
+/* ===== 基础页面统计埋点（轻量、无第三方依赖） =====
+   设计原则：
+   1. 单页纯前端，无外部统计 SDK 也可用（本地 localStorage 存会话级事件，便于本机核对）。
+   2. 同时匿名直写 CloudBase NoSQL 集合 dai_events（Web SDK 匿名登录后写入，无需个人信息）。
+   3. 不采集任何个人信息，仅记匿名事件名 + 结构化属性 + 会话 ID + 时间戳。
+*/
+(function(){
+  const SID = (function(){
+    let s = sessionStorage.getItem('dai_sid');
+    if(!s){ s = 's_' + Date.now().toString(36) + Math.random().toString(36).slice(2,8); sessionStorage.setItem('dai_sid', s); }
+    return s;
+  })();
+  // 初始化 CloudBase Web SDK（匿名登录后直写 NoSQL，公开写规则已放通，环境已开启匿名登录）
+  let _cbCol = null;
+  let _cbReady = false;
+  function initCb(){
+    if(_cbReady || !window.cloudbase || !window.CB_ENV) return;
+    try {
+      const app = window.cloudbase.init({ env: window.CB_ENV });
+      const auth = app.auth();
+      auth.signInAnonymously().then(()=>{
+        _cbCol = app.database().collection('dai_events');
+        _cbReady = true;
+        // 把页面加载期间缓存的事件补写
+        flushBuffered();
+      }).catch(()=>{ _cbReady = false; });
+    } catch (e) { _cbReady = false; }
+  }
+  function flushBuffered(){
+    if(!_cbCol) return;
+    try {
+      const arr = JSON.parse(localStorage.getItem('dai_events')||'[]');
+      for(const p of arr){ try{ _cbCol.add({ ev:p.ev, sid:SID, t:p.t, props:p.props||{}, _ts:Date.now() }).catch(()=>{}); }catch(e){} }
+      localStorage.removeItem('dai_events');
+    } catch(e){}
+  }
+  function flushCB(p){
+    if(!_cbCol) return;
+    try { _cbCol.add({ ev: p.ev, sid: SID, t: p.t, props: p.props||{}, _ts: Date.now() }).catch(()=>{}); } catch(e){}
+  }
+  window.track = function(ev, props){
+    const p = { ev:String(ev), t:Date.now(), props:props||{} };
+    try{
+      const arr = JSON.parse(localStorage.getItem('dai_events')||'[]');
+      arr.push(p); if(arr.length>200) arr.splice(0, arr.length-200);
+      localStorage.setItem('dai_events', JSON.stringify(arr));
+    }catch(e){}
+    flushCB(p);
+    if(window.location.search.indexOf('debug=1')>=0) console.log('[track]', ev, props||{});
+  };
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', waitCb);
+  } else { waitCb(); }
+  function waitCb(){
+    if(window.cloudbase){ initCb(); }
+    else { setTimeout(waitCb, 120); }
+  }
+  const loadT = Date.now();
+  window.addEventListener('load', ()=>{ window.track('page_load', { load_ms: Date.now()-loadT,
+    vw: window.innerWidth, vh: window.innerHeight }); });
+  document.addEventListener('visibilitychange', ()=>{
+    if(document.visibilityState==='hidden'){ window.track('page_hide', { dwell_ms: Date.now()-loadT }); }
+  });
+})();
+
+fetch('./data/site.json')
+  .then(r => r.json())
+  .then(D => { window.DATA = D; boot(D); })
+  .catch(e => { document.body.innerHTML = '<p style="padding:40px">数据加载失败：' + e.message + '。请通过本地服务器或云托管访问（data/site.json 需同域可访问）。</p>'; });
+
+function boot(D){
+  /* 日报归档（倒序标签条，默认展示最新一期） */
+  const arc=document.getElementById('archive');
+  document.getElementById('arcN').textContent=D.archive.length;
+  const arcDates=[...D.archive].sort().reverse();
+  arcDates.forEach((d)=>{
+    const a=document.createElement('span');
+    a.className='dt'+(d===arcDates[0]?' on':'');
+    a.textContent=d;
+    a.dataset.d=d;
+    a.addEventListener('click',()=>openDaily(d));
+    arc.appendChild(a);
+  });
+  /* 无触屏也能横向浏览：右侧按钮点击滚动一屏 + 滚轮横向滚动 */
+  const scrollWrap=arc.parentElement;
+  function syncOverflow(){ scrollWrap.classList.toggle('has-overflow', arc.scrollWidth > arc.clientWidth + 2); }
+  syncOverflow();
+  window.addEventListener('resize', syncOverflow);
+  const btnScroll=document.getElementById('scrollRight');
+  if(btnScroll){
+    btnScroll.addEventListener('click',()=>{ arc.scrollBy({left:Math.max(arc.clientWidth*0.8,180),behavior:'smooth'});
+      track('tab_scroll',{dir:'right'}); });
+  }
+  arc.addEventListener('wheel',(e)=>{ if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){ arc.scrollLeft+=e.deltaY; e.preventDefault(); } },{passive:false});
+  arc.addEventListener('scroll',()=>{ const atEnd=arc.scrollLeft+arc.clientWidth>=arc.scrollWidth-2; scrollWrap.classList.toggle('has-overflow', !atEnd); });
+  /* 默认加载最新一期（异常不影响其他模块渲染） */
+  try{ if(arcDates.length) openDaily(arcDates[0]); }catch(e){ console.warn('daily auto-load skipped',e); }
+
+  /* 月报卡片（倒序：最新在前，内嵌 iframe，不跳新页） */
+  document.getElementById('monthlyGrid').innerHTML=[...D.monthly].reverse().map((m,idx)=>
+    `<div class="mcard" data-file="${m.file}"><div class="mt">${m.title}</div>
+     <div class="mb">周期综述 · 完整 HTML</div>
+     <div class="mlink"><span class="openMonthly" onclick="openMonthly('${m.file}')">▸ 点击查看</span></div></div>`).join('');
+
+  /* 模块资料库（按厂商筛选，带来源链接） */
+  function initModulePanels(){
+    document.querySelectorAll('.filters').forEach(f=>{
+      const mod=f.dataset.mod; const sel=f.querySelector('.fvendor');
+      const vendors=[...new Set(D.entries.filter(e=>e.module===mod).map(e=>e.vendor))].sort();
+      sel.innerHTML='<option value="">全部厂商</option>'+vendors.map(v=>'<option>'+v+'</option>').join('');
+      sel.addEventListener('change',()=>{renderModule(mod); track('filter_vendor',{module:mod,vendor:sel.value||'全部'});});
+      f.querySelector('.reset').addEventListener('click',()=>{sel.value='';renderModule(mod);track('filter_reset',{module:mod});});
+      renderModule(mod);
+    });
+  }
+  function renderModule(mod){
+    const f=document.querySelector('.filters[data-mod="'+mod+'"]');
+    const v=f.querySelector('.fvendor').value;
+    const list=D.entries.filter(e=>e.module===mod&&(!v||e.vendor===v))
+      .sort((a,b)=> (b.date||'').localeCompare(a.date||''));
+    const box=f.parentElement.querySelector('.list');
+    f.querySelector('.cnt').textContent='共 '+list.length+' 条';
+    if(!list.length){box.innerHTML='<div class="empty">该筛选下暂无条目。</div>';return;}
+    box.innerHTML=list.map(e=>{
+      const link=e.url?`<span class="ltag"><a href="${e.url}" target="_blank" onclick="track('open_source',{module:'${mod}',vendor:'${e.vendor}',date:'${e.date}'});event.stopPropagation()">来源 ↗</a></span>`:'';
+      return `<div class="item"><div class="t">${e.title}</div><div class="s">${e.summary}</div>
+        <div class="meta"><span class="vtag">${e.vendor}</span><span class="dtag">${e.date}</span>
+        ${link}<span>来源：${e.source||'—'}</span></div></div>`;
+    }).join('');
+  }
+
+  /* 专题报告（卡片+iframe，倒序：最新在前，参考月报） */
+  document.getElementById('reportGrid').innerHTML=[...D.reports].reverse().map(r=>
+    `<div class="mcard" data-file="${r.file}"><div class="mt">${r.title}</div>
+     <div class="mb">${r.judge ? r.judge.slice(0,80)+'...' : '深度专题报告 · 完整 HTML'}</div>
+     <div class="mlink"><span class="openReport" onclick="openReport('${r.file}')">▸ 点击查看</span></div></div>`).join('');
+
+  initModulePanels();
+}
+
+/* tab 切换（onclick 直接调用，不依赖事件委托） */
+let ACTIVE_TAB='daily', LAST_TAB='daily';
+function switchTab(t){
+  if(t!==ACTIVE_TAB) track('tab_switch',{from:ACTIVE_TAB,to:t});
+  ACTIVE_TAB=t;
+  document.querySelectorAll('#nav button').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  const btn=document.querySelector('#nav button[data-t="'+t+'"]');
+  if(btn) btn.classList.add('active');
+  const panel=document.getElementById(t);
+  if(panel) panel.classList.add('active');
+  if(t==='monthly'){
+    const box=document.getElementById('monthlyFrame');
+    if(box && !box.querySelector('iframe') && window.DATA.monthly.length){
+      openMonthly(window.DATA.monthly[window.DATA.monthly.length-1].file);
+    }
+  }
+  if(t==='report'){
+    const box=document.getElementById('reportFrame');
+    if(box && !box.querySelector('iframe') && window.DATA.reports.length){
+      openReport(window.DATA.reports[window.DATA.reports.length-1].file);
+    }
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+/* 月报内嵌打开 */
+function openMonthly(file){
+  track('open_monthly',{file:file});
+  const box=document.getElementById('monthlyFrame');
+  box.innerHTML='<iframe class="brief-iframe" src="'+file+'"></iframe>';
+  box.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+/* 专题内嵌打开 */
+function openReport(file){
+  track('open_report',{file:file});
+  const box=document.getElementById('reportFrame');
+  box.style.display='block';
+  box.innerHTML='<iframe class="brief-iframe" src="'+file+'"></iframe>';
+  box.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+/* 日报内嵌打开（被日期标签条与搜索结果共用） */
+function openDaily(d){
+  if(ACTIVE_TAB!=='daily') switchTab('daily');
+  const frame=document.querySelector('#daily .brief-frame');
+  frame.innerHTML='<iframe class="brief-iframe" src="daily/'+d+'.html"></iframe>';
+  document.getElementById('curDate').textContent=d;
+  document.querySelectorAll('#archive .dt').forEach(x=>{
+    x.classList.toggle('on', x.dataset.d===d);
+  });
+  track('open_daily',{date:d});
+  window.scrollTo({top:0});
+}
+/* 站内搜索（跨 entries + reports 全文，纯前端 filter，不影响部署架构） */
+function hi(txt,q){
+  if(!txt) return '';
+  txt=String(txt);
+  if(!q) return txt;
+  try{
+    const re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+    return txt.replace(re,'<mark>$1</mark>');
+  }catch(e){return txt;}
+}
+function matchText(e,q){ return (e.title+' '+e.summary+' '+e.vendor+' '+e.module+' '+e.date+' '+(e.source||'')).toLowerCase().includes(q); }
+function matchReport(r,q){ const kw=Array.isArray(r.keywords)?r.keywords.join(' '):(r.keywords||''); return (r.title+' '+(r.judgment||'')+' '+kw).toLowerCase().includes(q); }
+function renderSearch(q){
+  const list=window.DATA.entries.filter(e=>matchText(e,q))
+    .sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  const rlist=window.DATA.reports.filter(r=>matchReport(r,q));
+  const N=list.length+rlist.length;
+  window.__lastHits=N;
+  document.getElementById('sN').textContent='命中 '+N+' 条';
+  if(!N){ document.getElementById('searchList').innerHTML='<div class="empty">未找到匹配「'+q+'」的内容。试试厂商名（如 Snowflake）、模块（如 技术）、或关键词（如 lakehouse、成本治理）。</div>'; return; }
+  let html='';
+  list.forEach(e=>{
+    const link=e.url?'<span class="ltag"><a href="'+e.url+'" target="_blank" onclick="track(\'search_open_source\',{date:\''+e.date+'\'});event.stopPropagation()">来源 ↗</a></span>':'';
+    html+='<div class="sitem" onclick="track(\'search_click\',{type:\'daily\',date:\''+e.date+'\'});openDaily(\''+e.date+'\')"><div class="mt">'+hi(e.title,q)+'</div><div class="ms">'+hi(e.summary,q)+'</div>'+
+      '<div class="mmeta"><span class="bmod">'+e.module+'</span><span class="bdt">'+e.date+'</span><span class="vtag">'+e.vendor+'</span>'+link+'<span class="bopen">▸ 查看当日日报</span></div></div>';
+  });
+  rlist.forEach(r=>{
+    html+='<div class="sitem" onclick="track(\'search_click\',{type:\'report\',file:\''+r.file+'\'});openReport(\''+r.file+'\')" style="border-left-color:var(--purple)"><div class="mt">'+hi(r.title,q)+'</div><div class="ms">'+(r.judgment?hi(r.judgment.slice(0,90),q):'深度专题报告')+'</div>'+
+      '<div class="mmeta"><span class="bmod" style="background:#f6f1fd;color:var(--purple)">专题报告</span><span class="bopen">▸ 查看报告</span></div></div>';
+  });
+  document.getElementById('searchList').innerHTML=html;
+}
+function onSearch(raw){
+  const q=raw.trim();
+  if(!q){ clearSearch(); return; }
+  LAST_TAB=ACTIVE_TAB;
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('#nav button').forEach(x=>x.classList.remove('active'));
+  document.getElementById('search').classList.add('active');
+  renderSearch(q.toLowerCase());
+  track('search',{query:q, hits: window.__lastHits||0});
+  window.scrollTo({top:0});
+}
+function clearSearch(){
+  const q=document.getElementById('q'); if(q) q.value='';
+  document.getElementById('search').classList.remove('active');
+  switchTab(LAST_TAB||'daily');
+  track('search_clear',{});
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI Monthly Report | 2026年3月</title>
+<style>
+  :root {
+    --primary: #7c3aed;
+    --primary-dark: #5b21b6;
+    --primary-light: #ede9fe;
+    --accent: #dc2626;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #1e1b4b;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --green: #059669;
+    --orange: #d97706;
+    --teal: #0891b2;
+    --blue: #2563eb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7; padding: 20px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  .header {
+    background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+    color: white; padding: 40px 48px; border-radius: 16px; margin-bottom: 28px;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.3);
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+  .header .period { font-size: 16px; opacity: 0.9; }
+  .header .subtitle { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+  .verdict-box {
+    background: var(--card-bg); border-left: 4px solid var(--primary); border-radius: 12px;
+    padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .verdict-box h2 { font-size: 18px; color: var(--primary); margin-bottom: 16px; }
+  .verdict-box p { font-size: 15px; line-height: 1.8; margin-bottom: 10px; }
+  .verdict-box p:last-child { margin-bottom: 0; }
+  .section {
+    background: var(--card-bg); border-radius: 12px; padding: 28px; margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 20px;
+    padding-bottom: 12px; border-bottom: 2px solid var(--border);
+  }
+  .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 28px; height: 28px; padding: 0 10px; border-radius: 6px;
+    font-weight: 700; font-size: 12px; color: white; white-space: nowrap;
+  }
+  .badge-timeline { background: var(--accent); }
+  .badge-trend { background: var(--blue); }
+  .badge-product { background: var(--teal); }
+  .badge-capital { background: var(--green); }
+  .badge-watchlist { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { padding: 10px 14px; text-align: left; font-weight: 600; font-size: 13px; }
+  td { padding: 10px 14px; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .th-purple { background: var(--primary-light); color: var(--primary-dark); }
+  .th-teal { background: #ecfdf5; color: #065f46; }
+  .th-green { background: #ecfdf5; color: #065f46; }
+  .td-date { color: var(--text-secondary); white-space: nowrap; font-size: 13px; }
+  .impact-tag {
+    display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;
+  }
+  .impact-high { background: #fef2f2; color: #991b1b; }
+  .impact-mid { background: #fffbeb; color: #92400e; }
+  .trend-block { padding: 20px 0; border-bottom: 1px solid #f0f0f0; }
+  .trend-block:last-child { border-bottom: none; }
+  .trend-block h3 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text); }
+  .trend-block p { font-size: 14px; line-height: 1.8; color: #374151; margin-bottom: 10px; }
+  .so-what {
+    background: var(--primary-light); padding: 12px 16px; border-radius: 8px; margin-top: 12px;
+    font-size: 13px; color: var(--primary-dark); font-weight: 500; line-height: 1.7;
+  }
+  .watchlist-item { padding: 10px 0; border-bottom: 1px solid #f3f4f6; font-size: 14px; }
+  .watchlist-item:last-child { border-bottom: none; }
+  .status {
+    display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px;
+    font-weight: 600; margin-right: 6px;
+  }
+  .status-done { background: #dcfce7; color: #166534; }
+  .status-tracking { background: #fef3c7; color: #92400e; }
+  .status-upcoming { background: #dbeafe; color: #1e40af; }
+  .footer { text-align: center; padding: 24px; font-size: 12px; color: var(--text-secondary); }
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 28px; }
+    .header h1 { font-size: 22px; }
+    .section, .verdict-box { padding: 20px; }
+    table { font-size: 12px; }
+    th, td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI Monthly Report</h1>
+    <div class="period">2026年3月</div>
+  </div>
+
+  <!-- 月度总判断 -->
+  <div class="verdict-box">
+    <h2>🎯 月度总判断</h2>
+    <p>数据平台正在从"数据基础设施"演变为"AI Agent 的可信运行时"。Agent 化是这个月所有重大事件的公约数——从 OpenClaw 引爆的算力需求，到三大平台同周亮出的 Agent 战略，再到 Oracle 从数据库方向提出的对立路线。三条竞争路线已经清晰化，下个季度的核心看点是谁先跑出规模化客户采用。</p>
+    <p>4 月关注：Databricks IPO 进展、IBM-Confluent 整合路线图、阿里云/百度涨价生效（4/18）、华为云 AgentArts 公测。</p>
+  </div>
+
+  <!-- 关键事件时间线 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-timeline">时间线</span>
+      <h2>关键事件时间线</h2>
+    </div>
+    <table>
+      <thead><tr><th class="th-purple">日期</th><th class="th-purple">事件</th><th class="th-purple">一句话定位</th></tr></thead>
+      <tbody>
+        <tr><td class="td-date">03-01</td><td>Delta Lake 4.1.0 发布</td><td>Catalog-Managed Tables GA，湖仓表格走向目录服务驱动</td></tr>
+        <tr><td class="td-date">03-03</td><td>OpenClaw 登顶 GitHub 星标历史第一（25.2 万星）</td><td>引爆整个月的 Agent 基础设施竞赛</td></tr>
+        <tr><td class="td-date">~03-05</td><td>DeepSeek V4 发布</td><td>万亿参数 MoE + 国产芯片优先适配</td></tr>
+        <tr><td class="td-date">03-11</td><td>Gartner D&A Summit 2026 开幕</td><td>行业转入价值兑现期，语义层被定位为关键基础设施</td></tr>
+        <tr><td class="td-date">03-12</td><td>腾讯云 ADP 模型涨价 460%+</td><td>Agent 商业化定价时代开启</td></tr>
+        <tr><td class="td-date">03-16</td><td>NVIDIA GTC 2026 开幕</td><td>GPU 加速数据处理 + 分离式推理，硬件经济学被改写</td></tr>
+        <tr><td class="td-date">03-17</td><td>IBM $110 亿完成 Confluent 收购</td><td>近年最大并购，实时流升级为 AI 基础设施</td></tr>
+        <tr><td class="td-date">03-18</td><td>Microsoft FabCon Keynote</td><td>Database Hub + Fabric IQ + MCP + Runtime 2.0</td></tr>
+        <tr><td class="td-date">03-18</td><td>Snowflake Project SnowWork</td><td>竞争从"更快查询"转向"业务用户桌面"</td></tr>
+        <tr><td class="td-date">03-19</td><td>Databricks RTM GA + AI Runtime 公测</td><td>流批一体补齐 + GPU 训练 Serverless 化</td></tr>
+        <tr><td class="td-date">03-24</td><td>Databricks Lakewatch</td><td>湖仓平台首次以完整产品进入安全市场</td></tr>
+        <tr><td class="td-date">03-25</td><td>Oracle AI World Tour Agentic 创新</td><td>"数据库应成为 Agent 控制点"</td></tr>
+        <tr><td class="td-date">03-30</td><td>Apache Flink CDC 3.6.0</td><td>CDC 从复制工具升级为全链路数据编排层</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 月度趋势分析 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-trend">趋势</span>
+      <h2>月度趋势分析</h2>
+    </div>
+
+    <div class="trend-block">
+      <h3>趋势一：Agent 化成为数据平台竞争的主战场</h3>
+      <p>月初 OpenClaw 引爆 Agent 基础设施需求（IDC：Token 消耗 CAGR 3418%），云厂商从免费补贴迅速转入涨价。月中三大平台在同一周亮出 Agent 战略——微软 Fabric IQ + MCP 开放语义层给 Agent，Snowflake SnowWork 将 Agent 部署到业务用户桌面，Databricks AI Runtime + Lakewatch 将 Agent 嵌入训练和安全分析。月末 Oracle 从数据库方向提出截然不同路线。</p>
+      <div class="so-what"><strong>So what：</strong>数据平台选型标准正在质变——"谁能让 AI Agent 最安全、最快速地消费我的数据"。</div>
+    </div>
+
+    <div class="trend-block">
+      <h3>趋势二：GPU 加速从 AI 训练渗透到数据处理核心层</h3>
+      <p>GTC 2026 引爆：cuDF/cuVS 被 Dell/IBM/Oracle/Snap 在生产环境采用——Snap 成本降 76%，IBM+雀巢查询从 15 分降至 3 分、成本降 83%，Dell 向量索引提速 12 倍。AWS+Cerebras 分离式推理为推理成本优化提供硬件新选项。</p>
+      <div class="so-what"><strong>So what：</strong>"是否需要 GPU"从技术选型问题变成成本竞争力问题。</div>
+    </div>
+
+    <div class="trend-block">
+      <h3>趋势三：全球算力成本结构性上涨，FinOps 成刚需</h3>
+      <p>贯穿全月：腾讯云涨 460%、AWS EC2 涨 15%、Google Cloud 数据传输北美翻倍、GPU 租金涨 15-30%、阿里云/百度并行存储涨 30%。Gartner：超 50% IT 领导者担忧成本失控，仅 44% 有 FinOps 实践。</p>
+      <div class="so-what"><strong>So what：</strong>Token 监控、成本归因、智能路由、缓存复用——从锦上添花变成平台标配。</div>
+    </div>
+
+    <div class="trend-block">
+      <h3>趋势四：实时数据流从可选中间件升级为 AI 基础设施</h3>
+      <p>IBM $110 亿收购 Confluent 是标志性事件。Forrester：买的不是 Kafka 管道而是 AI Agent 实时数据运行时。同周 Databricks RTM GA 声称比 Flink 快 92%，Confluent Cloud 发布 dbt-confluent 适配器。</p>
+      <div class="so-what"><strong>So what：</strong>湖仓 + 实时流成为标配。流处理战场重组：IBM(Confluent) vs Databricks(RTM) vs 独立厂商。</div>
+    </div>
+
+    <div class="trend-block">
+      <h3>趋势五：平台互操作走向成熟，语义层成为新竞争高地</h3>
+      <p>OneLake 同时向 Snowflake（双向读写 GA）和 Databricks（读取 Preview）开放。Gartner 预测 2030 年语义层成关键基础设施，60% Agentic 分析因缺乏语义基础失败。Delta Lake 4.1 的 Catalog-Managed Tables GA 标志治理架构内置。</p>
+      <div class="so-what"><strong>So what：</strong>竞争高地从存储计算层上移到语义层——谁的语义层让 Agent 最高效地理解业务数据，谁拥有入口。</div>
+    </div>
+  </div>
+
+  <!-- Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-product">产品</span>
+      <h2>Product & Tech 月度盘点</h2>
+    </div>
+    <p style="font-size:13px; color:var(--text-secondary); margin-bottom:16px;">仅收录大产品发布、大版本更新和具有行业影响的重大技术变化。</p>
+    <table>
+      <thead><tr><th class="th-teal">日期</th><th class="th-teal">厂商/项目</th><th class="th-teal">事件</th><th class="th-teal">影响</th></tr></thead>
+      <tbody>
+        <tr><td class="td-date">03-01</td><td>Delta Lake</td><td>4.1.0：Catalog-Managed Tables GA、Server-Side Planning Preview</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">~03-05</td><td>DeepSeek</td><td>V4：万亿参数 MoE，国产芯片优先适配</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-13</td><td>AWS + Cerebras</td><td>分离式推理架构通过 Amazon Bedrock 提供</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-17</td><td>Dell</td><td>AI Data Platform with NVIDIA（编排+cuDF+cuVS 一体化）</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-17</td><td>IBM + NVIDIA</td><td>watsonx.data + cuDF 加速 Presto，实测成本降 83%</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-18</td><td>Microsoft Fabric</td><td>Database Hub + Fabric IQ/MCP + OneLake 安全 GA + Runtime 2.0</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-18</td><td>OneLake</td><td>Snowflake 双向读写 GA、Databricks 读取 Preview、Oracle/SAP 镜像 GA</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-18</td><td>Snowflake</td><td>Project SnowWork 研究预览</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-19</td><td>Databricks</td><td>Real-Time Mode GA（毫秒级流处理，比 Flink 快 92%）</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-19</td><td>Databricks</td><td>AI Runtime 公测（Serverless GPU 训练）</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-24</td><td>Databricks</td><td>Lakewatch 开源 Agentic SIEM</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-24</td><td>Oracle</td><td>AI Database Agentic：Unified Memory Core、Deep Data Security、Vectors on Ice</td><td><span class="impact-tag impact-high">高</span></td></tr>
+        <tr><td class="td-date">03-30</td><td>Flink CDC</td><td>3.6.0：Oracle Source、Hudi Sink、VARIANT 类型</td><td><span class="impact-tag impact-high">高</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-capital">资本</span>
+      <h2>Capital & Corporate 月度盘点</h2>
+    </div>
+    <table>
+      <thead><tr><th class="th-green">日期</th><th class="th-green">类型</th><th class="th-green">事件</th><th class="th-green">核心数据</th></tr></thead>
+      <tbody>
+        <tr><td class="td-date">03-17</td><td>收购</td><td>IBM 完成 Confluent 收购</td><td>$110 亿全现金，6500+ 客户（40% F500）</td></tr>
+        <tr><td class="td-date">03-18</td><td>合作</td><td>Accenture + Databricks 联合业务集团</td><td>25,000 名认证专业人员</td></tr>
+        <tr><td class="td-date">03-22</td><td>战略</td><td>OpenAI 放弃自建数据中心</td><td>2030 年算力支出降至约 $6000 亿</td></tr>
+        <tr><td class="td-date">03-24</td><td>收购</td><td>Databricks 收购 Antimatter + SiftD.ai</td><td>安全认证 + Splunk 核心团队</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:16px; font-size:14px; color:#374151; line-height:1.7;"><strong>月度资本流向：</strong>集中指向实时数据基础设施（IBM $110亿 Confluent）和安全市场扩展（Databricks Lakewatch + 双收购）。Databricks $5.4B ARR 增长 65% 超越 Snowflake（$4.7B/29%），IPO 信号持续。</p>
+  </div>
+
+  <!-- Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-watchlist">复盘</span>
+      <h2>Watchlist 月度复盘</h2>
+    </div>
+
+    <h3 style="font-size:15px; font-weight:600; margin-bottom:12px; color:var(--green);">已确认 / 已落地</h3>
+    <div class="watchlist-item"><span class="status status-done">✅</span><strong>NVIDIA GTC 2026</strong> — cuDF/cuVS 被主要平台采用</div>
+    <div class="watchlist-item"><span class="status status-done">✅</span><strong>FabCon 2026</strong> — Fabric 史上最大更新如期发布</div>
+    <div class="watchlist-item"><span class="status status-done">✅</span><strong>华为数据存储峰会</strong> — AI 数据平台 + FusionCube A1000 如期发布</div>
+    <div class="watchlist-item"><span class="status status-done">✅</span><strong>OpenClaw Token 消耗</strong> — IDC 确认 CAGR 3418%，非一过性热度</div>
+
+    <h3 style="font-size:15px; font-weight:600; margin:20px 0 12px; color:var(--orange);">仍在跟踪</h3>
+    <div class="watchlist-item"><span class="status status-tracking">🔄</span><strong>Databricks IPO</strong> — 信号持续，S-1 未提交</div>
+    <div class="watchlist-item"><span class="status status-tracking">🔄</span><strong>OneLake × Databricks 双向写入</strong> — 读取 Preview 已发，写入联合开发</div>
+    <div class="watchlist-item"><span class="status status-tracking">🔄</span><strong>IBM-Confluent 整合路线图</strong> — Day-1 已启动，完整路线图预计 Q2</div>
+    <div class="watchlist-item"><span class="status status-tracking">🔄</span><strong>RTM vs Flink</strong> — 有状态场景验证待更多案例</div>
+
+    <h3 style="font-size:15px; font-weight:600; margin:20px 0 12px; color:var(--blue);">4 月重点关注</h3>
+    <div class="watchlist-item"><span class="status status-upcoming">📌</span>阿里云/百度涨价生效（4/18）</div>
+    <div class="watchlist-item"><span class="status status-upcoming">📌</span>Databricks IPO 进展</div>
+    <div class="watchlist-item"><span class="status status-upcoming">📌</span>IBM-Confluent 整合路线图</div>
+    <div class="watchlist-item"><span class="status status-upcoming">📌</span>华为云 AgentArts 4 月公测</div>
+    <div class="watchlist-item"><span class="status status-upcoming">📌</span>Informatica IDMC April Release</div>
+  </div>
+
+  <!-- 延伸阅读 -->
+  <div class="section" style="border-top: 3px solid var(--primary);">
+    <div class="section-header" style="border-bottom: none; padding-bottom: 0; margin-bottom: 12px;">
+      <h2 style="font-size: 16px;">📖 延伸阅读</h2>
+    </div>
+    <div style="padding: 16px 20px; background: var(--primary-light); border-radius: 10px;">
+      <a href="https://mp.weixin.qq.com/s/UyJSrb3d5ZB37D5_Wpv1bg" style="text-decoration: none; color: var(--text);" target="_blank">
+        <div style="font-weight: 600; font-size: 15px; margin-bottom: 6px; color: var(--primary); text-decoration: underline; text-underline-offset: 3px;">🔗 AI Agent 如何重塑企业数据平台</div>
+        <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">从平台工程视角拆解 Agent 的介入路径——六层架构 × 双类型 Agent × 五大必备能力。月报讲了"行业发生了什么"，这篇讲"你的平台该怎么接"。</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div style="margin-bottom: 12px;">
+      <span style="font-size: 14px; font-weight: 600; color: var(--text);">科里 Coralyx</span>
+      <span style="margin: 0 8px; color: var(--border);">|</span>
+      <span style="font-size: 13px; color: var(--text-secondary);">公众号「边界层笔记」</span>
+    </div>
+    <p>Powered by Data+AI Monthly Report v1.0</p>
+    <p>覆盖 2026-03-01 至 2026-03-31</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-27（含周末）</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-downgrade { background: #fff3e0; color: #e65100; }
+  .tag-track { background: #e3f2fd; color: #1565c0; }
+
+  /* Empty section */
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Watchlist specific */
+  .watchlist-signal {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #fffde7;
+    border-radius: 6px;
+    border-left: 3px solid var(--orange);
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-27（含周末）· 覆盖 04-24 ~ 04-27 共 72 小时</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台的 Agent 编排能力正在从 UI 配置走向 SDK 编程化管控</li>
+      <li>分析师开始指出"语义锁定"比存储锁定更难迁移，数据平台竞争重心上移</li>
+      <li>AI 基础设施层融资继续虹吸资本，数据平台独立融资空间被进一步压缩</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Google Cloud Next 大周落幕后，行业进入公告消化期。两个值得注意的信号：一是 Databricks 将多 Agent 编排推入 SDK 层，意味着 Agent 不再是实验品而是需要被工程化管理的生产组件；二是分析师已明确警告"语义锁定"将取代存储锁定成为新的迁移壁垒。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <p class="empty-note">本期窗口内（04-24 ~ 04-27，含周末）无符合准入标准的重大战略事件。Google Cloud Next '26 核心数据平台公告已在 04-24 日报覆盖。</p>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks Workspace Base Environments 正式 GA</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks Release Notes — April 2026</a></div>
+      <div class="body">
+        Databricks 于 04-24 宣布 Workspace Base Environments 正式 GA。该功能允许工作区管理员为无服务器笔记本创建和管理预构建、缓存的 Python 环境，包括预安装的库和配置，消除用户每次启动笔记本时的环境初始化等待。启用合规安全配置文件的工作区将在 2026 年 5 月下旬开始推出。
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>无服务器计算的"冷启动"问题一直是企业采用的痛点之一。预构建环境 GA 意味着 Databricks 在无服务器笔记本的开发者体验上补齐了关键一环——管理员可以标准化团队的依赖环境，开发者获得秒级启动体验。这是无服务器 notebook 走向企业级生产就绪的必要基础设施。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. Databricks Supervisor Agent SDK 进入 Beta——多 Agent 编排走向编程化</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks Release Notes — April 24, 2026</a></div>
+      <div class="body">
+        Databricks 于 04-24 发布 Supervisor Agent 的 Python SDK 编程接口（Beta），允许开发者通过 Databricks SDK 以代码方式创建、配置和管理 Supervisor Agent 及其下属工具，用于构建协调式多智能体系统。此前 Supervisor Agent 仅支持通过 UI 配置。
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>多 Agent 系统从 UI 配置走向 SDK 编程管理，标志着 Agent 编排进入工程化阶段。对数据平台而言，这意味着 Agent 不再是孤立的"聊天助手"，而是可以被纳入 CI/CD 流水线、版本管控和自动化测试的生产组件——与传统数据管道的管理方式趋同。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Futurum Group：Google Agentic Data Cloud 将成为 Agentic AI 的"语义核心"，但"智能锁定"风险值得警惕</h3>
+      <div class="source">来源：<a href="https://futurumgroup.com/insights/going-beyond-the-data-graveyard-with-googles-agentic-data-cloud-as-the-new-semantic-core-for-agentic-ai/" target="_blank">Futurum Group — Going Beyond the Data Graveyard With Google's Agentic Data Cloud</a></div>
+      <div class="body">
+        Futurum 分析师 Brad Shimmin 在 04-24 发表深度分析，认为 Google 的 Knowledge Catalog 不是简单的元数据仓库重命名，而是一个"动态语义引擎"——它将对话从"数据物理位置"转向"数据业务含义"。同时 Smart Storage（GCS 原生能力）在文件落地时自动标记、生成向量嵌入、提取实体，有效"点亮"企业暗数据。但 Shimmin 明确指出两大风险：跨云出口费用仍是硬约束，更重要的是"智能锁定"——语义映射和 Agent 逻辑深度绑定 Gemini 模型，"迁移大脑比迁移数据困难得多"。
+      </div>
+      <div class="impact">
+        <strong>映射到数据平台的判断：</strong>这是首个明确区分"存储锁定"和"语义锁定"的主流分析师判断。随着数据平台竞争从存算层上移到上下文与推理层，企业的迁移壁垒不再是数据搬迁成本，而是重建语义映射和 Agent 工作流的成本。这对多云数据架构的选型逻辑有根本影响。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">本期窗口内（04-24 ~ 04-27，含周末）无符合时效性准入标准的投融资/企业战略事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-downgrade">降级</span><span class="funding-tag tag-funding">投融资</span> 1. VAST Data 完成 F 轮约 $10 亿融资，估值达 $300 亿</h3>
+      <div class="source">来源：<a href="https://www.jiemian.com/article/14302479.html" target="_blank">VAST Data 官方公告（via 界面新闻）</a> · 降级原因：原始公告日期 04-23，早于本期窗口起点</div>
+      <div class="body">
+        F 轮约 $10 亿（含一级和二级市场），估值 $300 亿（较 2023 年底 E 轮 $91 亿增长逾两倍）。Drive Capital 领投，NVIDIA、Fidelity、NEA 跟投。CARR 逾 $5 亿，已实现正向运营利润率和自由现金流。
+      </div>
+      <div class="watchlist-signal">
+        <strong>为什么值得继续看：</strong>VAST Data 估值飙升至 $300 亿验证 AI 基础设施层资本虹吸效应持续加剧，其估值已超过多家上市数据平台公司。需关注后续 IPO 时间表及对数据平台赛道融资格局的影响。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-track">跟踪</span> 2. Google Cloud Next '26 公告进入落地验证期</h3>
+      <div class="source">来源：综合 Google Cloud Next '26 大会公告 + Futurum 分析</div>
+      <div class="body">
+        Google Cloud Next 三天大会已闭幕（04-22~24），数据平台方向的核心公告（Agentic Data Cloud / Cross-Cloud Lakehouse / Knowledge Catalog / Data Agent Kit / Data Engineering Agent GA）均已发布。接下来进入落地验证期——跨云 Lakehouse 和 Knowledge Catalog 仍为 Preview 状态，需要关注 GA 时间表、大型企业客户案例和定价模型。同时需观察 Databricks 和 Snowflake 的竞争响应。
+      </div>
+      <div class="watchlist-signal">
+        <strong>需要等待什么信号确认：</strong>跨云 Lakehouse GA 时间表；大型企业跨云查询延迟实测数据；Databricks Data+AI Summit（06 月）的竞争响应；Snowflake Summit（06 月）的跨云策略回应。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-track">跟踪</span> 3. Databricks + Snowflake 06 月双峰会前的 Agent 平台竞赛</h3>
+      <div class="source">来源：综合 Databricks/Snowflake/Google Cloud 近期发布</div>
+      <div class="body">
+        三大平台在过去两周密集释放 Agent 能力——Google 走"跨云推理平面"、Databricks 走"开放治理控制平面"（Supervisor Agent SDK 是最新信号）、Snowflake 走"平台内聚控制平面"（Intelligence + Cortex Code + Cortex Agents）。06 月 Databricks Data+AI Summit 和 Snowflake Summit 将是两大平台集中回应 Google 的关键窗口。
+      </div>
+      <div class="watchlist-signal">
+        <strong>需要等待什么信号确认：</strong>Databricks Data+AI Summit（06 月）是否升级 Supervisor Agent 至 GA 并扩展跨平台联邦；Snowflake Summit（06 月）是否推出跨云数据访问能力与 Google 正面竞争。
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息覆盖窗口：北京时间 2026-04-24 08:00 ~ 2026-04-27 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

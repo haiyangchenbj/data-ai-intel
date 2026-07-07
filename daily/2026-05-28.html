@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-28</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .body p { margin-bottom: 8px; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+  .tag-upcoming { background: #fff3e0; color: #e65100; }
+  .tag-downgraded { background: #f5f5f5; color: #616161; }
+  .tag-followup { background: #e0f7fa; color: #006064; }
+
+  .empty-note {
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-05-28 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>AI 数据云的"基础+智能体+算力"三件套同日落地，Snowflake 押注重于历次任何一次</li>
+      <li>数据平台厂商正用十年期算力承诺锁定云上 AI 工作负载，竞争从产品转向基础设施合约</li>
+      <li>智能体进入企业前线后，治理与身份控制成为下一个被收购的关键能力层</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Snowflake 一日内同时释放财报、$60亿 AWS 算力承诺与 MCP 治理收购，背后是数据平台争夺 Agentic Enterprise 控制平面的关键节奏——单纯卖数据底座已不足以构建 moat，深度算力绑定+智能体动作治理才是下半场壁垒。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Snowflake 同日释放三连击：Q1 FY27 财报超预期 + 收购 Natoma + 与 AWS 签 $60 亿五年算力协议</h3>
+      <div class="source">来源：<a href="https://investors.snowflake.com/news/news-details/2026/Snowflake-Reports-Financial-Results-for-the-First-Quarter-of-Fiscal-2027/default.aspx" target="_blank">Snowflake Q1 FY27 Results</a> · <a href="https://www.snowflake.com/en/blog/snowflake-acquire-natoma-governed-agentic-access" target="_blank">Snowflake-Natoma Acquisition Blog</a> · <a href="https://press.aboutamazon.com/2026/5/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption" target="_blank">AWS-Snowflake $6B SCA</a></div>
+      <div class="body">
+        <p>Snowflake 5/27 盘后同时发布三项重大公告：（1）FY27 Q1 产品收入 $13.34 亿同比 +34%、NRR 126%、$1M+ 客户达 779 家，全年产品收入指引上调至 $58.4 亿（+31%）；（2）签署收购企业级 MCP 平台 Natoma 的最终协议，将其身份治理与特权访问能力整合进 AI Data Cloud，让 Cortex Agents/Snowflake Intelligence/Cortex Code 通过统一 MCP 网关安全连接 Slack、Gmail、CRM、Jira 等企业系统；（3）与 AWS 签署多年期战略合作协议，承诺五年内在 AWS Graviton 算力与 AI GPU 上投入 $60 亿（Snowflake 史上最大基础设施承诺）。盘后股价一度暴涨 37%。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>三件事必须放在一起看。财报证明 Snowflake 的"AI 拉动核心数据平台"叙事已被收入数据验证（Cortex Code 已渗透 7100+ 账户、Snowflake Intelligence 账户环比翻倍）；Natoma 收购填补的是 Agentic Enterprise 最后的治理短板——MCP 网关层的身份与策略控制；$60 亿 Graviton+GPU 承诺则把 AI 工作负载的算力供给在合约层面绑死在 AWS 上。这是一次完整的"AI Data Cloud 操作系统"叙事兑现：上层 Agent + 中层数据治理 + 底层算力锁定。Databricks 此前的 GTC 节奏被打乱，下周 Snowflake Summit 26 将进入更激进的产品推介窗口。
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks 上线 Google Drive 托管摄取连接器 Beta + Serverless Notebook 全局超时管控</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may" target="_blank">Databricks May 2026 Release Notes</a></div>
+      <div class="body">
+        <p>Databricks 5/27 在 Lakeflow Connect 中发布 Google Drive 托管摄取连接器 Beta 版，支持非结构化文件（二进制）与结构化文件（CSV/JSON/XML/Excel/Parquet/Avro/ORC）从 Google Drive 直接摄入 Delta 表，并支持文件元数据摄取。同日，工作区管理员获得 Serverless Notebook 默认执行超时配置入口（默认 2.5 小时），替代此前需要逐 notebook 手动 override 的方式，可在 Settings > Compute 集中调整以减少 Serverless 失控开销。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>Lakeflow Connect 在 5 月密集补齐了 Google Drive、HubSpot（GA）、Outlook、GitHub、Smartsheet 等 SaaS 与协作类源连接器矩阵，意图明显——把企业非结构化协作数据（邮件、文档、表单）作为 Agentic AI 的上下文池统一收编进 Lakehouse，与 Snowflake 通过 Natoma 收购走的是不同路径但同一目标。Serverless Notebook 全局超时设置则是 FinOps 的小但重要的能力，工程团队今后可以在租户层面统一约束 AI 时代下不可控的探索性算力消耗。
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Snowflake 用户实测：Adaptive Compute 在稳定 ETL 负载上反而劣于调优后的 Standard Warehouse</h3>
+      <div class="source">来源：<a href="https://dev.to/swaroop_krishna_e2f4b83b2/evaluating-adaptive-warehouses-for-etl-why-we-reverted-to-standard-239f" target="_blank">Evaluating Adaptive Warehouses for ETL: Why We Reverted to Standard (dev.to)</a></div>
+      <div class="body">
+        <p><strong>核心观点：</strong>Snowflake 用户在 5/12-5/27 周期中将白银层 ETL Warehouse（约 2000 查询/日、负载稳定可预测）从 Standard 切换至预览版的 Adaptive Compute 模式，16 天后回退。实测数据：排队率从 ~0% 升至 3.4% 仍在攀升、P95 耗时从 14.1s 升至 20.4s、单查询 credits 从 0.0071 升至 0.0093（贵 31%）、平均排队时长从 3.3ms 升至 1543ms。作者结论：Adaptive Compute 设计假设是应对突发不可预测负载（dashboard、ad-hoc 分析），对节奏稳定的生产 ETL 管道反而是劣化方案，QUERY_THROUGHPUT_MULTIPLIER 锁在 3 倍这一限制成为关键瓶颈。</p>
+      </div>
+      <div class="impact">
+        <strong>映射到数据平台的判断：</strong>这是一线工程团队对 Snowflake 推力旗舰算力新模型的少见公开打脸。说明两件事：（1）"AI 时代下一代弹性算力"的市场叙事和具体工作负载之间存在显著 gap，预览版本不应直接上生产 ETL；（2）数据平台的算力定价模型从"按 size 买"转向"按 query 买"是趋势，但在稳定批处理场景的成本表现仍未跑赢传统模式——结合 Snowflake 此次 $60 亿 AWS 承诺中"延展 Graviton 价格性能优势"的表述，平台方仍在向用户兑现传统按规格买算力的性价比承诺。CIO 在评估"Adaptive/Serverless"类新算力产品时需要按工作负载类型分别建模，不要一刀切迁移。
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-earnings">财报发布</span>Snowflake Q1 FY27 财报已合并至 A 板块</h3>
+      <div class="body">
+        <p>Snowflake Q1 FY27 财报（产品收入 $13.34 亿同比 +34%、全年指引上调至 $58.4 亿）与 Natoma 收购、AWS $60 亿合作同日发布且互为支撑，作为整体 Top Signal 处理，此处不重复展开。详见 A 板块第 1 条。</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-upcoming">预告</span>Snowflake Summit 26 将于 6/1-4 旧金山举办，Anthropic CEO Daniela Amodei 出席</h3>
+      <div class="source">来源：<a href="https://investors.snowflake.com/news/news-details/2026/Snowflake-Makes-AI-Real-for-Businesses-at-Snowflake-Summit-26-Featuring-Anthropic's-Daniela-Amodei-and-Other-Industry-Leaders/default.aspx" target="_blank">Snowflake Summit 26</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>紧接今日三连击之后的产品发布主舞台，Snowflake CEO Sridhar Ramaswamy 已暗示 "More to share at Snowflake Summit 26"。Natoma 集成路线图、Cortex Code 跨平台扩展、Snowflake Intelligence 移动端 + Deep Research GA 时点都很可能在 Summit 上明确。Anthropic 出席亦预示 Claude 与 Snowflake 数据生态的深度合作可能官宣。</p>
+        <p><strong>需要等待什么信号确认：</strong>6/1 主题演讲实录、Cortex 系列产品的 GA 时间表、Natoma 收购完成节点（受常规交割条件约束）。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-followup">跟踪</span>国家数据局 5/27 启动 2026 年"数据要素×"大赛 + 深入推进数字中国建设专题研究班开班</h3>
+      <div class="source">来源：<a href="https://www.nda.gov.cn/" target="_blank">国家数据局官网</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>2026 年是《"数据要素×"三年行动计划（2024-2026）》收官年，本届大赛的赛道设置与重点方向将折射出政策侧对数据要素价值释放的最后一公里期望。同日开班的"深入推进数字中国建设专题研究班"在深圳举办，国家数据局局长刘烈宏出席，是政策推进节点性信号。</p>
+        <p><strong>需要等待什么信号确认：</strong>大赛具体赛道方向公告、专题研究班的政策文件输出、行业高质量数据集建设实施方案是否近期落地（征求意见稿已结束）。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-downgraded">降级</span>USEReady 发布 SemaBridge：跨 BI 平台与 Snowflake/Databricks/Fabric 的语义互操作层</h3>
+      <div class="source">来源：<a href="https://www.einpresswire.com/article/915430518/useready-launches-semabridge-to-unify-business-semantics-across-snowflake-power-bi-and-enterprise-ai" target="_blank">USEReady SemaBridge Launch (EIN Presswire)</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>SemaBridge 直接命中"语义漂移"问题——同一指标在 Power BI、Tableau、Cortex Analyst、Snowflake Semantic Views 中给出不同值，是 AI Agent 落地企业数据栈的高频卡点。方向价值高，但目前仅有厂商发布稿、缺第三方验证与企业实际部署案例。</p>
+        <p><strong>需要等待什么信号确认：</strong>Snowflake Summit 26 期间是否有联合发布、首批典型客户落地案例、与 Databricks Unity Catalog/Microsoft Fabric 的实际兼容深度。</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-05-28 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

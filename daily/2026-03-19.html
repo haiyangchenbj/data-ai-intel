@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-03-19</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #f9ab00;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --bg: #ffffff;
+    --card-bg: #f8f9fa;
+    --border: #dadce0;
+    --success: #34a853;
+    --warning: #ea8600;
+    --danger: #d93025;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    background: #f1f3f4;
+    padding: 20px;
+  }
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+  }
+  .header .date {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+  .content { padding: 32px 40px; }
+  .top-changes {
+    background: var(--primary-light);
+    border-left: 4px solid var(--primary);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+  }
+  .top-changes h2 {
+    font-size: 16px;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+  .top-changes ol {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .top-changes li {
+    margin-bottom: 8px;
+  }
+  .verdict {
+    background: #fef7e0;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  .verdict strong { color: #e37400; }
+  .note-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 20px;
+    margin-top: 32px;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.2s;
+  }
+  .card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .card .source {
+    font-size: 12px;
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+  .card .source a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .card .source a:hover { text-decoration: underline; }
+  .card .summary {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  .card .summary ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+  .card .summary li {
+    margin-bottom: 4px;
+  }
+  .card .impact {
+    font-size: 13px;
+    color: var(--text-secondary);
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px 14px;
+    border-left: 3px solid var(--success);
+  }
+  .card .impact-watchlist {
+    font-size: 13px;
+    color: var(--text-secondary);
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px 14px;
+    border-left: 3px solid var(--warning);
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .badge-top { background: #d93025; color: white; }
+  .badge-product { background: #1a73e8; color: white; }
+  .badge-people { background: #7b1fa2; color: white; }
+  .badge-analyst { background: #0d652d; color: white; }
+  .badge-watch { background: #ea8600; color: white; }
+  .footer {
+    padding: 20px 40px;
+    background: var(--card-bg);
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-align: center;
+  }
+  .tag {
+    display: inline-block;
+    background: #e8f0fe;
+    color: var(--primary);
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026年3月19日 · 周四</div>
+  </div>
+
+  <div class="content">
+    <div class="top-changes">
+      <h2>🔥 今日最重要的 3 个变化</h2>
+      <ol>
+        <li><strong>微软 FabCon/SQLCon 2026 发布数据库与 Fabric 统一平台战略</strong> — Database Hub 统一管理多引擎数据库、Fabric IQ 通过 MCP 服务器开放语义层给 AI Agent、OneLake 安全 GA、Runtime 2.0 引入 Spark 4.x，Fabric 有史以来最大规模平台更新</li>
+        <li><strong>Snowflake 发布 Project SnowWork 自主企业 AI 平台</strong> — 将 AI Agent 直接带到业务用户桌面，从查询驱动转向结果驱动的多步骤工作流自动化</li>
+        <li><strong>阿里云与百度智能云同日宣布 AI 算力涨价</strong> — AI 算力最高涨 34%、并行文件存储涨 30%，4月18日生效，全球算力紧张传导至中国市场</li>
+      </ol>
+    </div>
+
+    <div class="verdict">
+      <strong>总判断：</strong>今日行业信号集中于 <strong>平台统一与 Agent 化</strong> — 微软通过 Database Hub + Fabric IQ + MCP 服务器，将分散的数据库资产统一在单一语义层上并开放给 AI Agent；Snowflake 通过 Project SnowWork 将数据平台价值延伸到业务用户桌面。两大平台同日发布 Agent 战略，标志着数据平台竞争从"谁的数据更快"进入"谁离业务决策更近"的新阶段。中国市场阿里云与百度智能云同日涨价，AI 驱动的算力和存储成本上升正成为全球共同挑战。
+    </div>
+
+    <div class="note-box">
+      📌 本日 AWS、Google Cloud（数据平台方向）、华为云、腾讯云、火山引擎在24小时窗口内无数据平台产品发布或版本更新。Databricks 收购 Quotient AI（3/11发布）和 Gartner D&A 预测（3/11发布）均在窗口外，不予纳入。
+    </div>
+
+    <!-- A. Top Signals -->
+    <h2 class="section-title">A. Top Signals</h2>
+
+    <div class="card">
+      <h3><span class="badge badge-top">A1</span> 微软 FabCon/SQLCon 2026 Keynote：数据库与 Fabric 统一为单一数据平台</h3>
+      <div class="source">
+        来源：<a href="https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/" target="_blank">Azure 官方博客（Arun Ulag）</a>，
+        <a href="https://blog.fabric.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-whats-new-in-microsoft-onelake/" target="_blank">Microsoft Fabric Blog</a>（2026-03-18）
+      </div>
+      <div class="summary">
+        微软在 FabCon/SQLCon 2026 上发布了自 Fabric 产品线诞生以来最大规模的平台更新：
+        <ul>
+          <li><strong>Database Hub（早期预览）</strong>：将 Azure SQL、Cosmos DB、PostgreSQL、MySQL、SQL Server 和 Fabric Databases 整合到统一管理视图，内置 Copilot 驱动的 AI 洞察和智能代理持续监控</li>
+          <li><strong>Fabric IQ + MCP 服务器（预览）</strong>：将分析和运营数据统一在共享语义框架中，通过 MCP 服务器让 AI Agent 发现、理解和操作语义层</li>
+          <li><strong>OneLake 安全（即将 GA）</strong>：单一模型定义角色、行/列级控制，跨所有分析体验强制执行</li>
+          <li><strong>Runtime 2.0（预览）</strong>：包含 Apache Spark 4.x、Delta Lake 4.x、Scala 2.13</li>
+          <li><strong>互操作扩展</strong>：Databricks Unity Catalog 原生读取进入公开预览，Oracle/SAP 镜像 GA，Dremio/SharePoint 镜像预览</li>
+          <li><strong>数据库节省计划</strong>：特定服务最高节省 35%</li>
+        </ul>
+      </div>
+      <div class="impact">
+        <strong>💡 对数据平台的影响：</strong>这是微软在数据平台领域发出的最强整合信号。Database Hub 解决了企业多引擎数据库资产碎片化的痛点，Fabric IQ 通过 MCP 服务器将语义层开放给 AI Agent，是对 Gartner "语义层是 Agent 就绪数据的关键" 预测的直接回应。OneLake 同时向 Databricks 和 Snowflake 开放互操作，表明微软正以"数据层中立"策略抢占平台层话语权。
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="badge badge-top">A2</span> Snowflake 发布 Project SnowWork：自主 AI 平台将 Agent 带到业务用户桌面</h3>
+      <div class="source">
+        来源：<a href="https://www.snowflake.com/en/news/press-releases/snowflake-launches-project-snowwork-bringing-outcome-driven-ai-to-every-business-user/" target="_blank">Snowflake 官方新闻稿</a>，
+        <a href="https://siliconangle.com/2026/03/18/snowflake-previews-project-automate-workflows-ai-agents/" target="_blank">SiliconANGLE</a>，
+        <a href="https://www.constellationr.com/insights/news/snowflake-launches-project-snowwork-eyes-ai-workflows" target="_blank">Constellation Research</a>（2026-03-18）
+      </div>
+      <div class="summary">
+        Snowflake 宣布 Project SnowWork 研究预览版，这是一个全新的自主企业 AI 平台：
+        <ul>
+          <li><strong>结果驱动（Outcome-Driven）</strong>：从查询工具转向能够规划和执行多步骤工作流的自主系统</li>
+          <li><strong>桌面端部署</strong>：将安全的数据驱动 AI Agent 直接放在业务用户桌面</li>
+          <li><strong>企业治理内置</strong>：自动执行 Snowflake 平台的安全策略、RBAC 和治理规则</li>
+          <li><strong>消除分析师积压</strong>：业务用户可直接从数据获取行动建议，无需等待分析师</li>
+        </ul>
+      </div>
+      <div class="impact">
+        <strong>💡 对数据平台的影响：</strong>Snowflake 正从"数据仓库/湖仓平台"向"业务生产力平台"转型。桌面端定位意味着 Snowflake 直接触达业务决策者，与同日微软 Fabric IQ Agent 策略形成直接竞争。数据平台的价值衡量标准正从查询性能和成本转向"业务用户自主完成多少工作"。
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="badge badge-top">A3</span> 阿里云与百度智能云同日宣布 AI 算力涨价：全球算力紧张传导至中国市场</h3>
+      <div class="source">
+        来源：阿里云官网公告 + 百度智能云公告（2026-03-18），
+        <a href="https://www.nbd.com.cn/articles/2026-03-18/4297462.html" target="_blank">每日经济新闻</a>
+      </div>
+      <div class="summary">
+        3月18日，阿里云与百度智能云同日宣布 AI 相关产品涨价：
+        <ul>
+          <li><strong>阿里云</strong>：平头哥真武810E 等算力卡产品上涨 5%-34%，CPFS（智算版）上涨 30%</li>
+          <li><strong>百度智能云</strong>：AI 算力产品上涨 5%-30%，并行文件存储上涨 30%</li>
+          <li><strong>生效日期</strong>：均为 2026年4月18日</li>
+          <li><strong>原因</strong>：全球 AI 需求爆发、供应链硬件成本上涨、春节 AI Agent 应用爆发致资源紧缺</li>
+        </ul>
+      </div>
+      <div class="impact">
+        <strong>💡 对数据平台的影响：</strong>并行文件存储是大规模数据平台和 AI 训推管道的核心基础设施，30% 涨幅将直接推高存储成本。此前 AWS、Google Cloud 年初已涨价，中国厂商同日跟进标志着成本上涨成为全球趋势。需重新评估冷热分层、数据生命周期管理和存算分离策略。
+      </div>
+    </div>
+
+    <!-- B. Product & Tech -->
+    <h2 class="section-title">B. Product & Tech</h2>
+
+    <div class="card">
+      <h3><span class="badge badge-product">B4</span> OneLake 扩展互操作：Databricks Unity Catalog 读取公开预览，Oracle/SAP 镜像 GA</h3>
+      <div class="source">
+        来源：<a href="https://blog.fabric.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-whats-new-in-microsoft-onelake/" target="_blank">Microsoft Fabric Blog（Josh Caplan）</a>（2026-03-18）
+      </div>
+      <div class="summary">
+        OneLake 在 FabCon 2026 宣布多项互操作扩展：Databricks Unity Catalog 原生读取进入公开预览（双方正共同开发双向互操作）；Oracle 和 SAP Datasphere 镜像 GA；新增 Dremio 和 SharePoint 列表镜像预览；快捷方式转换 GA（支持 Excel 到 Delta 表自动转换）；Snowflake 镜像数据支持变更数据流和视图创建。
+      </div>
+      <div class="impact">
+        <strong>💡 对数据平台的影响：</strong>OneLake 正加速成为多引擎数据架构的统一存储层。Databricks 双向互操作意味着企业可在 Fabric 和 Databricks 之间零拷贝数据共享。Oracle/SAP 镜像 GA 解锁了大量传统 ERP 数据的零拷贝接入。
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="badge badge-product">B5</span> Fabric Database Hub：统一管理 SQL 和 NoSQL 数据库资产</h3>
+      <div class="source">
+        来源：<a href="https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/" target="_blank">Azure 官方博客</a>，
+        <a href="https://www.theregister.com/2026/03/18/microsoft_fabric_latest/" target="_blank">The Register</a>（2026-03-18）
+      </div>
+      <div class="summary">
+        Database Hub（早期预览）将 Azure SQL、Cosmos DB、PostgreSQL/MySQL、SQL Server（通过 Arc）和 Fabric Databases 整合到统一视图。内置 Copilot AI 洞察和智能代理持续监控，同步推出数据库节省计划（最高省 35%）。
+      </div>
+      <div class="impact">
+        <strong>💡 对数据平台的影响：</strong>是微软将 OLTP 和分析型平台整合到同一管理界面的关键一步。结合 Fabric IQ 语义层，从数据库管理到 AI Agent 消费数据形成完整闭环。
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="badge badge-product">B6</span> Fabric Runtime 2.0 预览：引入 Apache Spark 4.x 和 Delta Lake 4.x</h3>
+      <div class="source">
+        来源：<a href="https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/" target="_blank">Azure 官方博客 FabCon 2026 Keynote</a>（2026-03-18）
+      </div>
+      <div class="summary">
+        Fabric Runtime 2.0 进入预览，核心组件包括 Apache Spark 4.x、Delta Lake 4.x、Scala 2.13 和 Azure Linux Mariner 3.0。同步宣布物化湖视图 GA，简化 Spark SQL 和 PySpark 的分层架构实现，支持始终最新的数据管道。
+      </div>
+      <div class="impact">
+        <strong>💡 对数据平台的影响：</strong>Spark 4.x 是重大版本升级，Fabric 率先将其纳入托管运行时。Delta Lake 4.x 同步升级确保湖仓一体架构的最佳兼容。物化湖视图 GA 降低了数据工程团队的管道编排复杂度。
+      </div>
+    </div>
+
+    <!-- C. People & Views -->
+    <h2 class="section-title">C. People & Views</h2>
+
+    <div class="card">
+      <h3><span class="badge badge-people">C7</span> Sridhar Ramaswamy（Snowflake CEO）：数据平台下一阶段是消除"分析师积压"</h3>
+      <div class="source">
+        来源：<a href="https://www.snowflake.com/en/news/press-releases/snowflake-launches-project-snowwork-bringing-outcome-driven-ai-to-every-business-user/" target="_blank">Snowflake 官方新闻稿</a>，
+        <a href="https://www.constellationr.com/insights/news/snowflake-launches-project-snowwork-eyes-ai-workflows" target="_blank">Constellation Research</a>（2026-03-18）
+      </div>
+      <div class="summary">
+        Ramaswamy 在 Project SnowWork 发布中表示，数据平台的下一阶段不是更快的查询，而是让"安全的、数据驱动的 AI Agent 出现在每个业务用户的桌面上"。当前企业的核心瓶颈是"分析师积压"——业务数据需求远超数据团队的交付能力。Project SnowWork 通过自主 AI Agent 从根本上消除这一瓶颈。
+      </div>
+      <div class="impact">
+        <strong>💡 映射到数据平台：</strong>Ramaswamy 将价值锚点从技术指标（查询速度、成本效率）重新定义为业务生产力指标。这与同日微软 Fabric IQ Agent 策略形成共振——两大平台 CEO 同时指向"数据到决策"距离的缩短。
+      </div>
+    </div>
+
+    <!-- D. Analyst Insights -->
+    <h2 class="section-title">D. Analyst Insights</h2>
+
+    <div class="card">
+      <h3><span class="badge badge-analyst">D8</span> Gartner 发布 2026 iPaaS Magic Quadrant：集成平台成为 AI Agent 连接枢纽</h3>
+      <div class="source">
+        来源：<a href="https://www.businesswire.com/news/home/20260318294684/en/Workato-Named-a-Leader-in-the-2026-Gartner-Magic-Quadrant-for-iPaaS-for-the-8th-Consecutive-Time" target="_blank">Business Wire（Workato 公告）</a>，
+        <a href="https://boomi.com/content/report/gartner-magic-quadrant-ipaas/" target="_blank">Boomi</a>，
+        <a href="https://blogs.mulesoft.com/news/mulesoft-recognized-in-gartner-magic-quadrant-for-ipaas/" target="_blank">MuleSoft</a>（报告发布 2026-03-16，厂商公告 2026-03-18）
+      </div>
+      <div class="summary">
+        Gartner 发布 2026 年 iPaaS 魔力象限：Boomi 连续第12次入选 Leader、Workato 连续第8次入选 Leader、MuleSoft 连续第10年获认可、SnapLogic 被评为 Visionary。分析师为 Andrew Humphreys、Keith Guttridge 等。
+      </div>
+      <div class="impact">
+        <strong>💡 对数据平台的映射：</strong>在微软（MCP 服务器）和 Snowflake（SnowWork Agent）同日发布 Agent 战略的背景下，iPaaS 正从传统 ETL/应用集成工具升级为 AI Agent 与企业系统的连接枢纽。对数据平台团队，iPaaS 在数据管道和 Agent 工作流中的定位需重新评估。
+      </div>
+    </div>
+
+    <!-- E. Watchlist -->
+    <h2 class="section-title">E. Watchlist</h2>
+
+    <div class="card">
+      <h3><span class="badge badge-watch">E9</span> 微软与 NVIDIA 战略合作：Fabric IQ + Omniverse 驱动物理 AI 与数字孪生</h3>
+      <div class="source">
+        来源：<a href="https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-unifying-databases-and-fabric-on-a-single-data-platform/" target="_blank">Azure 官方博客 FabCon 2026 Keynote</a>（2026-03-18）
+      </div>
+      <div class="summary">
+        微软在 FabCon Keynote 中宣布与 NVIDIA 建立战略合作，将 Fabric 实时智能和 Fabric IQ 与 NVIDIA Omniverse 库集成，驱动下一代物理 AI（数字孪生和预测性维护）。具体产品集成方案和 GA 时间线尚未披露。
+      </div>
+      <div class="impact-watchlist">
+        <strong>👀 为什么值得跟踪：</strong>继 GTC 2026 发布 AI Data Platform 后，微软与 NVIDIA 在 Fabric 层面的合作扩展到物理 AI 领域。如果 Fabric IQ 语义层与 Omniverse 物理仿真引擎打通，数据平台应用边界将从商业分析延伸到工业数字孪生。
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="badge badge-watch">E10</span> 全球云厂商 AI 服务集体涨价趋势确立</h3>
+      <div class="source">
+        来源：<a href="https://m.21jingji.com/article/20260319/dc87269d43cf6484cd86d9837635343c.html" target="_blank">21世纪经济报道</a>（2026-03-19）
+      </div>
+      <div class="summary">
+        2026年初以来，全球云厂商相继涨价。AWS 和 Google Cloud 年初率先公布部分服务涨价，阿里云与百度智能云 3月18日跟进。Agent 应用爆发被认为是推高算力需求的核心驱动力。
+      </div>
+      <div class="impact-watchlist">
+        <strong>👀 为什么值得跟踪：</strong>如果成本上升持续，可能加速企业对存算分离架构、冷热分层存储、开源自建方案的评估。值得持续跟踪各厂商后续涨价动作和客户迁移反应。
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>本日报由 Data+AI 全球日报系统生成 · 覆盖 2026-03-18 08:00 CST ~ 2026-03-19 08:00 CST（24小时窗口）</p>
+    <p>所有条目均经过发布日期逐条验证和数据平台相关性审查 · 信息宁缺毋滥</p>
+    <p style="margin-top: 8px;">
+      <a href="https://haiyangchenbj.github.io/data-ai-daily/" target="_blank" style="color: var(--primary);">GitHub Pages 归档</a>
+    </p>
+  </div>
+</div>
+</body>
+</html>

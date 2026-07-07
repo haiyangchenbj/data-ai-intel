@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-23</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-06-23 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>向量数据库正在向上生长为统一数据平台，单一检索能力已不够用</li>
+      <li>数据工程工具的默认行为正在收紧，平台标准化加速</li>
+      <li>AI 推理基础设施成独立资本品类，融资规模已超越数据平台</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>向量数据库向统一数据平台的结构性升级与 AI 推理基础设施的资本虹吸是今日两条平行信号——数据平台边界继续外扩，而基础设施投资重心正从数据平台向上游推理层急剧倾斜。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Zilliz 发布 Vector Lakebase 公开预览：向量数据库正式升级为统一数据平台</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.yahoo.com/technology/ai/articles/zilliz-launches-vector-lakebase-extending-060000097.html">Business Wire</a><br><b>摘要：</b> Zilliz（Milvus 母公司）于 6 月 22 日发布 Zilliz Vector Lakebase 公开预览版。该版本在 Milvus 生产级实时向量搜索核心之上，新增共享湖原生存储层（基于 S3/Vortex），引入交互式发现、大规模批量分析和外部数据湖直搜三种新工作模式，所有工作负载共享单一逻辑数据副本，按需计算按量计费。Milvus 是全球采用最广的开源向量数据库（44,000+ GitHub Stars，10,000+ 企业用户），此次升级标志着向量数据库从单一检索引擎向统一 AI 数据平台的结构性转变。<br><b>为什么对数据平台重要：</b> AI 系统正从"单次检索"转向"服务-学习-改进"的闭环，但此前向量数据库、分析引擎和训练数据管道各自独立，向量在不同系统间搬运耗时数天。Vector Lakebase 通过零拷贝语义数据平面消除这一断层，直接挑战传统湖仓在 AI 原生场景中的定位——向量数据不再只是湖仓中的一种数据类型，而是可能围绕向量数据库重新组织整个 AI 数据栈。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>dbt 平台行为标志成熟 + Model Query History 扩展至 Redshift 和 Databricks GA</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.getdbt.com/docs/dbt-versions/release-notes/Dec-2023/legacy-sl">dbt Docs</a><br><b>摘要：</b> dbt 平台 6 月更新：多项行为变更标志于 6 月 23 日在 Latest release track 上达到成熟（默认启用），涉及 dbt 项目默认行为调整，用户需在生效前评估影响并选择退出。同时，Model Query History 功能新增对 Redshift 和 Databricks 的正式支持（GA），此前仅覆盖 Snowflake 和 BigQuery，扩展后覆盖四大主流数据仓库。<br><b>对数据平台的影响：</b> 行为标志成熟是 dbt 平台标准化进程的持续推进——通过逐步收紧默认行为推动工程实践统一。Model Query History 的四大仓库覆盖意味着数据团队可以在几乎所有主流数据平台上追踪模型消费热度，支撑成本优化和资产治理决策。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Baseten $15 亿 Series F：AI 推理基础设施成为独立超大资本品类</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://theagenttimes.com/articles/baseten-raises-1-5-billion-series-f-as-ai-inference-demand-s-b31ee4de">The Agent Times</a><br><b>为什么值得继续看：</b> Baseten 于 6 月 22 日完成 $15 亿 Series F，由 Altimeter Capital、Conviction、Spark Capital 联合领投，估值跳至 $110-130 亿区间（三个月前 E 轮 $50 亿）。Baseten 本身是 AI 推理平台而非数据平台，但此轮融资规模（$15 亿单轮）已超过多数数据平台公司的总融资额，反映了 AI 基础设施投资的重心向推理层的急剧倾斜。对数据平台行业的影响是双面的：推理层扩张带来更多数据需求，但也可能在资本市场形成注意力与资金的虹吸效应。<br><b>需要等待什么信号确认：</b> Baseten 是否利用此轮资金向数据管理和治理层垂直整合；数据平台核心厂商（Databricks/Snowflake）的推理层布局是否加速回应。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Databricks 查询历史语句文本脱敏开始推送</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june">Databricks Release Notes</a><br><b>为什么值得继续看：</b> 自 6 月 22 日起，非管理员和非 databricks_pii_access 组成员的用户查询 system.query.history 时，statement_text 列返回 `<REDACTED>`。这是 Databricks 在数据安全/隐私治理方面的一项新措施，直接影响到依赖查询历史进行分析和审计的工作负载——需要确认有哪些工作负载读取 statement_text，并为对应主体授予 PII 访问权限。此举也暗示 Databricks 在数据平台治理层面正在从"默认开放"向"默认脱敏"转变，值得观察其他厂商是否跟进类似策略。<br><b>需要等待什么信号确认：</b> 该功能在全球所有 region 的推送进度；Snowflake/AWS/Google 等竞品是否推出类似的查询历史脱敏机制；社区对这一变更的反馈和迁移工具的出现。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-23 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

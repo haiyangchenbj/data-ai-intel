@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-13（含周末）</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Empty section */
+  .empty-note {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Watchlist tag */
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-downgrade { background: #fff3e0; color: #e65100; }
+  .tag-follow { background: #e8f5e9; color: #2e7d32; }
+  .tag-upcoming { background: #e3f2fd; color: #1565c0; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-13（含周末） · 覆盖过去72小时信息（04-10 ~ 04-13）</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>开放表格式竞赛进入生产落地阶段，各平台围绕 Iceberg 的差异化不再是"是否支持"而是"治理能否跟上"</li>
+      <li>数据库开发工作流正在借鉴代码管理范式，存算分离架构释放了新的工程可能性</li>
+      <li>国内数据标准体系建设进入密集落地期，标准化节奏从规划转向"急用先行"的实操阶段</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>上周 Iceberg Summit 余波延续，Databricks 和 Snowflake 同步在 Iceberg 生态上加码产品化落地。与此同时，国内数据标准化进入执行期，数据平台从业者需要同时跟踪技术演进和合规要求两条线。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks Lakebase 推出 Git 式数据库分支，存算分离催生新开发范式</h3>
+      <div class="source">来源：<a href="https://www.databricks.com/blog/database-branching-postgres-git-style-workflows-databricks-lakebase" target="_blank">Databricks Blog</a></div>
+      <div class="body">
+        <p>Databricks 于 4 月 10 日发布 Lakebase Postgres 的数据库分支（Database Branching）功能。基于写时复制（Copy-on-Write）机制，开发者可在秒级创建包含完整 schema 和数据的隔离 Postgres 环境，创建时间与数据库大小无关。每个分支拥有独立的连接字符串和计算端点，空闲自动缩容至零。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是存算分离架构在 OLTP 层面的一次范式突破——数据库终于可以像代码一样分支、测试、回滚。对于构建在 Lakehouse 之上的应用开发团队而言，"每个 PR 一个数据库"不再是理想而是可执行的工作流，直接改变了数据应用的开发效率和安全边界。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. Snowflake 动态 Iceberg 表新增分区与路径控制能力正式 GA</h3>
+      <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/new-features" target="_blank">Snowflake Release Notes</a></div>
+      <div class="body">
+        <p>Snowflake 于 4 月 13 日宣布动态 Apache Iceberg 表正式支持 PARTITION BY、TARGET_FILE_SIZE 和 PATH_LAYOUT 参数，进入 GA 状态。用户可在 Snowflake 内以声明式方式构建自动增量转换管道，同时精确控制 Iceberg 表的物理布局。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>动态 Iceberg 表是 Snowflake 将数据湖集成从"能读"推进到"能写且能调优"的关键一步。分区和文件大小控制能力的 GA 使其在生产环境中可用于高吞吐 ETL 场景，Snowflake 在 Iceberg 写路径上的能力差距正在快速收窄。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3. 全国数标委发布 2026 年第一批数据领域国家标准需求清单</h3>
+      <div class="source">来源：<a href="https://www.nda.gov.cn/sjj/zwgk/tzgg/0410/20260410211223651215762_pc.html" target="_blank">国家数据局</a></div>
+      <div class="body">
+        <p>全国数据标准化技术委员会于 4 月 10 日发布 2026 年第一批数据领域国家标准需求清单，按照"急用先行、急需先用"原则，面向全社会征集标准申报，截止日期 4 月 30 日。这是国家数据局推动数据标准体系建设从规划进入密集落地执行的标志性动作。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>数据标准直接影响数据平台的合规架构设计、元数据管理和跨组织数据流通能力。"急用先行"的节奏意味着部分标准将快速进入强制或推荐执行，数据平台厂商和企业数据团队需要提前关注标准覆盖范围，评估对现有数据治理体系的影响。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Snowflake AI 功能预算管理正式 GA</h3>
+      <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/new-features" target="_blank">Snowflake Release Notes</a></div>
+      <div class="body">
+        <p>Snowflake 于 4 月 10 日宣布 Budgets for AI Features 进入 GA，为 AI 相关功能（Cortex 系列等）提供独立的预算控制能力，管理员可设定 AI 工作负载的消费上限并监控使用情况。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>AI 功能的成本不可控是企业采用的主要障碍之一。将 AI 功能纳入平台级预算管理体系，是 Snowflake 推动 AI 功能从实验走向生产部署的关键治理配套。这也释放了一个信号：平台 AI 能力的竞争焦点正从"能不能用"转向"用得起、管得住"。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: 观点与洞察 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>观点与洞察</h2>
+    </div>
+    <p class="empty-note">本期窗口内（04-10 ~ 04-13）未发现符合准入标准的机构研究报告或关键人物原始观点。</p>
+  </div>
+
+  <!-- Section D: 投融资 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>投融资</h2>
+    </div>
+    <p class="empty-note">本期窗口内（04-10 ~ 04-13）未发现符合准入标准的数据平台领域投融资、财报或收购兼并事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-downgrade">降级</span>Redpanda Connect 四组件 GA：DynamoDB CDC、Oracle CDC、Salesforce 连接器</h3>
+      <div class="source">来源：<a href="https://www.redpanda.com/press/redpanda-connect-breaks-down-data-silos-salesforce-connectors-streaming-cdc-oracle-dynamodb" target="_blank">Redpanda Press Release</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Redpanda 于 4 月 9 日宣布 Connect 平台新增 DynamoDB CDC、Oracle CDC、Salesforce 处理器和输出四个企业级组件 GA。这些连接器直接替代了传统 Kafka Connect + Debezium 的重型部署模式，在 Kubernetes 上即可运行。Oracle CDC 和 DynamoDB CDC 的可用意味着企业核心事务系统的流式数据集成门槛显著降低。</p>
+        <p><strong>需要等待什么信号确认：</strong>降级原因为发布时间（美西4月9日）略早于本期72小时窗口起点。后续关注生产环境采用反馈及与 Iceberg Sink 的集成进展。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-follow">跟踪</span>Iceberg Summit 后多平台 V3 竞速：Databricks Preview、Snowflake 路线图、Dremio GA</h3>
+      <div class="source">来源：<a href="https://www.icebergsummit.org/" target="_blank">Iceberg Summit 2026</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>4 月 8-9 日 Iceberg Summit 期间，Databricks 宣布 Iceberg V3 Public Preview（行血缘 + 删除向量 + VARIANT），Snowflake 公布 V3 GA 路线图（含治理可移植性和 Polaris 目录），Dremio 率先实现 V3 GA。三大平台在 Iceberg V3 上的落地节奏形成了清晰的竞争格局分化。</p>
+        <p><strong>需要等待什么信号确认：</strong>Snowflake Iceberg V3 从 Preview 到 GA 的具体时间表；Databricks V3 从 Public Preview 进入 GA 的周期；三平台在 VARIANT、删除向量等 V3 特性上的实际性能差异。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-follow">跟踪</span>Snowflake 证券集体诉讼提醒：4月27日截止</h3>
+      <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/snow-shareholder-reminder-faruqi--faruqi-llp-reminds-snowflake-snow-investors-of-securities-class-action-deadline-on-april-27-2026-302739577.html" target="_blank">PR Newswire</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Faruqi & Faruqi 律所于 4 月 11-12 日多次发布提醒，针对 Snowflake 的证券集体诉讼截止日期为 4 月 27 日。虽然此类诉讼提醒属于常规法律流程，但对于跟踪 Snowflake 公司治理和资本市场信号的从业者仍有参考价值。</p>
+        <p><strong>需要等待什么信号确认：</strong>4 月 27 日诉讼截止后的实质进展；是否影响 Snowflake 的业务运营或市场信心。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-04-13 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

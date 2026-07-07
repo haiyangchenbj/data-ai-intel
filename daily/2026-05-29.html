@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-29</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .body ul { padding-left: 18px; margin: 8px 0; }
+  .item .body li { margin-bottom: 4px; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-05-29 周五 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li><strong>Starburst 发布 Enterprise Intelligence Platform + AIDA GA</strong> — 联邦查询引擎正式转型"企业智能平台"，AI Agent AIDA 进入正式可用，引入企业上下文层减少 AI 幻觉，同步发布 Managed Icehouse 和 BYOC。</li>
+      <li><strong>OpenRouter 完成 $113M B 轮（$1.3B 估值）</strong> — CapitalG 领投，五家数据/AI 平台 Ventures 联合跟投；周处理 25 万亿 token，多模型路由成为独立基础设施品类。</li>
+      <li><strong>Daloopa 完成 $47M C 轮</strong> — 金融 AI 数据基础设施，MCP 连接器打通主流 AI 工具，结构化数据让 Agent 准确率最高提升 71pp。</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Starburst 从联邦查询工具升级为 AI Native 企业智能平台，是本日数据平台领域最重大战略事件。资本持续涌入推理路由（OpenRouter）和垂直数据层（Daloopa），"模型够强、数据不行"的行业共识正兑现为投资逻辑。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>Starburst 发布 Enterprise Intelligence Platform：AIDA GA + 企业上下文层 + Managed Icehouse</h3>
+      <div class="source">来源：<a href="https://www.starburst.io/press-releases/starburst-unveils-enterprise-intelligence-platform-giving-enterprises-a-faster-path-to-trusted-ai/" target="_blank">Starburst 官方新闻稿</a>（2026-05-28）</div>
+      <div class="body">
+        <p>在年度 AI+Datanova 大会上，Starburst 宣布产品定位从联邦查询引擎升级为 Enterprise Intelligence Platform，核心发布：</p>
+        <ul>
+          <li><strong>AIDA GA</strong>：AI 助手正式可用，支持自然语言查询分布式数据、生成可视化、通过 MCP 连接第三方工具触发工作流。交付方式覆盖 Galaxy（云托管）和 SEP 480 LTS（自管理）。</li>
+          <li><strong>企业上下文层</strong>：从 Collibra/Tableau 等工具抽取元数据和语义关系为图结构，让 AI 理解"同一指标在不同部门的真实含义"。</li>
+          <li><strong>AI-Ready Data Products</strong>：Data Products as Code（Preview）+ Automatic Metadata Enrichment（GA）。</li>
+          <li><strong>Managed Icehouse</strong>：Icehouse Ingest（批流摄取）+ LakeOps（自动表压缩/快照清理/查询调优）。</li>
+          <li><strong>BYOC 部署</strong>：客户自管理基础设施，面向金融/医疗合规场景。</li>
+        </ul>
+      </div>
+      <div class="impact">
+        <strong>So What：</strong>Starburst 的转型路径——从"跨源查询"到"企业智能平台"——与 Databricks/Snowflake 的 AI 平台化趋势一致，但差异化押注"数据不动、语义统一"。AIDA 通过 MCP 实现 Agent 互操作的设计值得关注：它不只是 text-to-SQL chatbot，而是能触发外部系统操作的 Agentic 控制面。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>Microsoft Fabric May 2026 更新：OneLake Security GA + Data Warehouse Monitor Preview</h3>
+      <div class="source">来源：<a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new" target="_blank">Microsoft Fabric What's New</a>（2026-05 月度更新）</div>
+      <div class="body">
+        <p>Fabric 五月 GA/Preview 要点：</p>
+        <ul>
+          <li><strong>OneLake Security GA + Data Access Roles GA</strong>：细粒度访问控制正式可用，支持文件夹/行/列级安全策略。</li>
+          <li><strong>OneLake Catalog in Microsoft Foundry GA</strong>：目录原生嵌入 Foundry 平台。</li>
+          <li><strong>Data Warehouse Monitor（Preview）</strong>：运行时监控仪表盘。</li>
+          <li><strong>Configurable Data Retention（Preview）</strong>：可配置数据保留策略。</li>
+          <li><strong>Resource Profiles in Data Engineering（Preview）</strong>：自定义 Spark 资源配置。</li>
+        </ul>
+        <p>此外，Microsoft 明确 Fabric Data Warehouse 作为 Synapse Dedicated SQL Pool 现代化路径，以及 dbt + Fabric 战略合作持续推进。</p>
+      </div>
+      <div class="impact">
+        <strong>So What：</strong>OneLake Security GA 标志着 Fabric 在企业级治理能力上补齐最后一块拼图。对于仍在犹豫 P-SKU 向 F-SKU 迁移的企业，本月 GA 的安全/治理能力使迁移可行性显著提升。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>The Futurum Group：企业 AI 规模化瓶颈在数据治理而非模型</h3>
+      <div class="source">来源：<a href="https://www.starburst.io/press-releases/starburst-unveils-enterprise-intelligence-platform-giving-enterprises-a-faster-path-to-trusted-ai/" target="_blank">Starburst 新闻稿引述</a>（2026-05-28）</div>
+      <div class="body">
+        <p>The Futurum Group VP &amp; Practice Lead Brad Shimmin 评论指出：</p>
+        <blockquote style="border-left: 3px solid #dadce0; padding-left: 12px; margin: 10px 0; color: #5f6368; font-style: italic;">
+          "Enterprises are realizing that scaling AI depends less on the models and more on access to trusted, governed data across complex hybrid environments. The industry is shifting toward architectures that reduce data movement while preserving governance and business context."
+        </blockquote>
+        <p>Mavvrik 2025 研究数据佐证：84% 的企业报告 AI 成本侵蚀毛利超 6%，原因不在于 AI 不工作，而在于底层数据碎片化导致信任缺失。</p>
+      </div>
+      <div class="impact">
+        <strong>So What：</strong>"模型够强、数据不行"正从行业直觉变为量化共识。数据平台竞争焦点从"谁的模型更快"转向"谁能统一语义、减少数据移动"——这正是 Starburst/Databricks Unity Catalog/Microsoft OneLake 的共同方向。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">投融资</span>OpenRouter 完成 $113M B 轮，估值 $1.3B</h3>
+      <div class="source">来源：<a href="https://openrouter.ai/announcements/series-b" target="_blank">OpenRouter 官方公告</a>（2026-05-28）</div>
+      <div class="body">
+        <ul>
+          <li><strong>轮次：</strong>Series B</li>
+          <li><strong>金额：</strong>$113M</li>
+          <li><strong>领投：</strong>CapitalG（Alphabet 旗下成长基金）</li>
+          <li><strong>跟投：</strong>NVentures、ServiceNow Ventures、MongoDB Ventures、Snowflake Ventures、Databricks Ventures、AMP PBC、Pace Capital</li>
+          <li><strong>现有投资人：</strong>a16z、Menlo Ventures</li>
+          <li><strong>估值：</strong>~$1.3B</li>
+          <li><strong>业务数据：</strong>周处理 25 万亿 token（6 个月前 5 万亿，5x 增长）；400+ 模型、800 万+ 开发者</li>
+        </ul>
+      </div>
+      <div class="impact">
+        <strong>So What：</strong>多模型推理路由从开发者工具演化为企业级基础设施。CapitalG + 五家数据/AI 平台 Ventures 联合跟投的罕见组合，表明大厂认可"模型网关"作为独立中间层的长期价值。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">投融资</span>Daloopa 完成 $47M C 轮融资</h3>
+      <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/daloopa-raises-47-million-series-c-to-power-the-data-layer-behind-ai-driven-finance-302784528.html" target="_blank">PR Newswire</a>（2026-05-28）</div>
+      <div class="body">
+        <ul>
+          <li><strong>轮次：</strong>Series C</li>
+          <li><strong>金额：</strong>$47M</li>
+          <li><strong>领投：</strong>Brighton Park Capital</li>
+          <li><strong>跟投：</strong>Squarepoint Capital、Touring Capital、Nexus Venture Partners</li>
+          <li><strong>亮点：</strong>覆盖 5,500+ 全球上市公司结构化数据；MCP 连接器接入 ChatGPT/Claude/Perplexity/Rogo；Benchmark 显示 AI Agent 准确率最高提升 71pp；新推 Partner API + Snowflake/Databricks/S3 云原生交付</li>
+        </ul>
+      </div>
+      <div class="impact">
+        <strong>So What：</strong>Daloopa 证明金融垂直领域"AI 瓶颈是数据质量"尤为尖锐。MCP 连接器让结构化数据直接进入主流 AI 工具，是数据产品从"下载 Excel"到"Agent-ready API"的范式转移。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>Snowflake Summit 26 即将召开（6/1-4，旧金山）</h3>
+      <div class="body">
+        <p>Snowflake 年度开发者大会将于 6 月 1-4 日在旧金山举行，紧接上周超预期 Q1 FY27 财报。预计发布 AI/ML 平台新功能、Iceberg 深度集成进展、Natoma 收购后 Agent 产品路线图。建议持续关注。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>Core42 获 HSBC $550M 结构化贸易融资扩展 AI 基础设施</h3>
+      <div class="source">来源：<a href="https://www.core42.ai/resources/news/core42-raises-usd-550-million-from-hsbc-to-scale-global-ai-infrastructure" target="_blank">Core42 官方</a>（2026-05-21 公告）</div>
+      <div class="body">
+        <p>UAE 主权 AI 基础设施运营商 Core42（G42 旗下）通过 HSBC 两笔非稀释融资（$240M 2月 + $310M 5月）共获 $5.5 亿，用于加速美国和欧洲 AI 云/算力部署。代表 AI 基础设施融资模式创新——用结构化贸易金融替代股权稀释，以长期合约需求作为信用支撑。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-05-29 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

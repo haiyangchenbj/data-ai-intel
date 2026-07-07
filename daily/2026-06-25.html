@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-25</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-06-25 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台从"为人服务"转向"为 Agent 服务"，定位发生根本变化</li>
+      <li>垂直行业开始以联合验证方式推动跨云统一数据平台架构</li>
+      <li>峰会季后行业进入消化期，架构变化从密集发布转向验证落地</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>峰会季后行业进入消化期，窗口内实质发布稀疏。国内厂商加速从"分析工具"向"Agent 基础设施"转型——数据平台服务对象从人扩展到智能体，这一趋势正从海外向国内传导。垂直行业对统一数据平台的需求开始以联合验证方式落地。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>火山引擎发布 Data Agent Pro 企业级数据原生智能体 + AgentDataLake 数据基础设施</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cn.chinadaily.com.cn/a/202606/24/WS6a3b7969a310d709c2fb9d01.html">中国日报</a>、<a href="https://field.10jqka.com.cn/20260624/c677672767.shtml">同花顺</a><br><b>摘要：</b> 6 月 23 日，在 2026 火山引擎 Force 原动力大会数据智能论坛上，火山引擎数智平台发布 AI 时代数据产品解决方案，核心包括两大升级：Data Agent 升级为企业级数据原生智能体，定位为企业数据消费与决策的统一智能入口，不只提供数据分析建议，更能带动全链路执行动作、确保任务完成；AgentDataLake 作为面向 Agent 时代的企业数据基础设施，通过多模态数据处理、上下文编排与记忆沉淀，将企业数据转化为 Agent 可直接消化的"燃料"。<br><b>为什么对数据平台重要：</b> 火山引擎是国内首个明确提出"数据平台服务对象从人变为 Agent"并配套发布完整产品栈的厂商。Data Agent 从"数据专家"升级为"数字合伙人"，AgentDataLake 将数据基础设施重新定义为 Agent 的上下文供给层——这两个方向与 Databricks LTAP/Snowflake Intelligence Control Plane 形成中外呼应，标志着数据平台行业集体转向 Agent-Native 架构。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Nokia 与 Databricks 联合完成面向 AI 自主网络的跨云统一数据平台概念验证</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.taiwannews.com.tw/en/news/6388670">TaiwanNews</a>、<a href="https://finance.sina.com.cn/stock/usstock/summary/2026-06-24/doc-inienxzt8240137.shtml">新浪财经</a><br><b>摘要：</b> 6 月 24 日，Nokia 与 Databricks 联合宣布完成一项面向 AI 驱动自主网络的统一数据平台概念验证。该 PoC 模拟一级电信运营商规模的数据分析接入流程，证实跨云跨平台数据流水线可一次构建后无需修改即部署于 Databricks 平台及基于 Apache Flink、Kafka、Iceberg 的开源技术栈，配套输出无厂商绑定的 Python 数据逻辑设计、跨平台工作流自动编译器及自然语言生成数据产品的 AI 代理三项技术成果。<br><b>对数据平台的影响：</b> 电信行业拥有数百个碎片化运营支撑系统，是检验数据平台跨云统一能力的极端场景。Databricks 与 Nokia 的联合验证表明，基于开源标准（Flink/Kafka/Iceberg）的统一数据架构可以在不要求运营商替换现有基础设施的前提下实现 AI 驱动的跨域自动化，这一模式可能成为其他垂直行业（制造、能源等）的参考路径。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】Allium 完成 $40M Series B 融资，区块链数据基础设施获机构加码</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.businesswire.com/news/home/20260623179873/en/Allium-Raises-%2440M-Series-B-to-Power-Blockchain-for-Institutional-Finance">BusinessWire</a><br><b>核心数据：</b> $40M Series B，由 Amplify Partners 领投，Kleiner Perkins 和 Theory Ventures 跟投，累计融资约 $61.5M；收入较 A 轮时增长超 10 倍，服务 150+ 企业客户包括 Visa、Stripe、BCG。<br><b>摘要：</b> Allium 是面向金融机构的区块链数据平台，从 150+ 条链和 10,000+ 协议中采集、标准化和富化区块链数据，交付查询 API、数据流和分析工具。Visa 和 BCG 均基于其平台构建了稳定币分析仪表盘，美联储和斯坦福大学等机构引用其数据。本轮融资发生在区块链分析同行 Dune Analytics 裁员、Messari 被低价收购的行业整合期，凸显机构级数据基础设施的差异化价值。<br><b>对数据平台的影响：</b> 区块链数据正在从零售投机走向机构级基础设施，Allium 的快速增长表明，即使是非传统数据平台领域，高吞吐、标准化、可信任的数据管线同样是基础设施竞争的核心。对数据平台行业而言，这一模式验证了"数据基础设施即系统记录"的跨行业通用性。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Kaarvi 发布 Living Data Platform——Agentic 数据管理赛道新玩家</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.businesswire.com/news/home/20260624389498/en/Kaarvi-Unveils-Living-Data-Platform-for-Governed-Agentic-AI">BusinessWire</a><br><b>为什么值得继续看：</b> Kaarvi 推出的 Living Data Platform 整合了对话式分析（Hey Kaarvi）、AI 辅助数据转换（Living Pipelines）、文本生成仪表板（Living Dashboards）和自动化同步（Live Sync），以 Agentic AI 驱动从原始数据到治理就绪分析的完整工作流。其核心差异化在于智能体"适应数据形态"而非强制数据适配工具——这一设计理念与 Databricks Genie Ontology 存在概念共鸣。<br><b>需要等待什么信号确认：</b> Kaarvi 目前为早期阶段，需观察其客户获取速度和具体行业落地案例。若能在 1-2 个垂直场景中形成可复制的数据治理 Agent 模式，Agentic Data Management 可能成为一个独立产品品类。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】人民数保平台上线——个人数据合规流通基础设施探索</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.people.com.cn/BIG5/n1/2026/0624/c1004-40746767.html">人民网</a><br><b>为什么值得继续看：</b> 6 月 24 日，人民网·人民数据与北京大学联合开发的"人民数保"平台正式发布，打造"确权-授权-存证-流转-分润"全链路个人数据服务模式，融合隐私计算和区块链存证，探索"数据不出域、可用不可见"的个人数据合规流通路径。这一平台是数据要素市场化配置在个人数据领域的首个系统化基础设施尝试。<br><b>需要等待什么信号确认：</b> 平台的实际运营数据（授权次数、流转规模、参与企业数量）以及是否形成可复制的商业模式。若成功跑通，可能为数据治理厂商提供个人数据合规流通的标准参考架构。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-25 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

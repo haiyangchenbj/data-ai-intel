@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-03-31</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Empty section */
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Watchlist tag */
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+    background: #fff3e0;
+    color: #e65100;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-03-31 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>CDC 生态正在从单一数据库捕获走向全链路多源多目标编排</li>
+      <li>开放表格式的连接器矩阵加速扩展，湖仓互通的最后一公里在缩短</li>
+      <li>半结构化数据处理能力正式进入 CDC 管道层，不再是查询引擎专属</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Flink CDC 3.6.0 是本窗口内唯一重大发布，但信号密度高——Oracle 源、Hudi 目标、Iceberg 多目录、VARIANT 类型一次性落地，表明 CDC 管道正在从"数据库复制工具"演变为湖仓架构的核心数据编排层。FabCon/GTC 后的信息消化期仍在持续。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+      <h3>1. Apache Flink CDC 3.6.0 发布：Oracle 源连接器、Hudi Sink 和 VARIANT 类型一次性落地</h3>
+      <div class="source">来源：<a href="https://flink.apache.org/2026/03/30/apache-flink-cdc-3.6.0-release-announcement/" target="_blank">Apache Flink Blog — Flink CDC 3.6.0 Release Announcement (2026-03-30)</a></div>
+      <div class="body">
+        <p>Apache Flink CDC 3.6.0 于 3 月 30 日正式发布，这是一个功能密集的大版本。核心变化包括：新增 Oracle Pipeline Source 连接器和 Apache Hudi Pipeline Sink；Apache Iceberg 连接器新增 AWS Glue Catalog 和 BigQuery Catalog 支持；Transform 框架引入 VARIANT 类型和 PARSE_JSON 函数用于半结构化数据处理；Flink 版本支持扩展至 1.20.x 和 2.2.x，基础 JDK 升级至 11；PostgreSQL 新增 Schema Evolution 支持；StarRocks 支持重命名列 DDL 和修改列类型 DDL；同时修复了大量 MySQL CDC、MongoDB CDC 的关键 Bug。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这个版本标志着 Flink CDC 从"MySQL/PostgreSQL 复制工具"正式升级为覆盖 Oracle → Hudi/Iceberg/Paimon/Kafka/Doris/StarRocks 的全链路数据编排管道。Oracle Source 的加入填补了企业级传统数据库 CDC 的关键空白，Hudi Sink 补齐了对三大开放表格式（Iceberg/Paimon/Hudi）的完整支持。VARIANT 类型进入 CDC Transform 层，意味着半结构化数据不再需要先落仓再处理——CDC 管道本身就能完成 JSON 解析和路由，减少一次数据搬运。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <p class="empty-note">本期窗口内无其他符合 B 板块准入标准的产品发布。Flink CDC 3.6.0 已作为当天最重要事件收录于 A 板块。</p>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <p class="empty-note">本期窗口内无符合准入标准的机构研究或原始观点。</p>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">本期窗口内无符合准入标准的投融资/财报/收购事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+      <h3><span class="watchlist-tag">跟踪</span> 1. Flink CDC 3.6.0 对湖仓连接器矩阵的补全效应</h3>
+      <div class="source">来源：<a href="https://flink.apache.org/2026/03/30/apache-flink-cdc-3.6.0-release-announcement/" target="_blank">Apache Flink CDC 3.6.0 Release Announcement</a></div>
+      <div class="body">
+        <p>Flink CDC 3.6.0 一次性补齐了 Oracle Source + Hudi Sink + Iceberg 多目录 + Fluss 0.9 + VARIANT 类型，使其连接器矩阵在源端和目标端都达到了新的覆盖广度。但这些新连接器在企业级生产环境中的稳定性、性能和 Schema Evolution 完整性仍需验证，特别是 Oracle Source 在大规模 CDC 场景下的表现。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>社区反馈 Oracle Source 在大表全量快照+增量切换场景的稳定性；Hudi Sink 与 Hudi 主流版本的 Schema Evolution 兼容性；企业用户实际采用 Flink CDC 替代传统 ETL 工具（如 Informatica、DataStage）进行 Oracle 迁移的案例。
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.1</p>
+    <p>信息截至北京时间 2026-03-31 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

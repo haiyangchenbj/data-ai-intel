@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-06</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-06 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据产权登记制度正式落地，数据要素市场化基础设施框架就位</li>
+      <li>数据标准范式从格式统一转向语义贯通，跨域流通成本有望降低</li>
+      <li>淡季叠加独立日假期，数据平台产品发布处于年内低点</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本周最值得关注的信号来自政策层——国家数据局接连发布数据产权登记指引与语义贯通新范式，标志着数据要素市场化从"制度设计"进入"操作化落地"阶段。技术产品层进入夏季低谷，Databricks 等厂商以身份治理和开发者工具小步迭代。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局印发《数据产权登记工作指引（试行）》，数据"三权分置"登记框架全国落地</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.nda.gov.cn/sjj/zwgk/zcjd/0705/20260705102042473708804_pc.html">国家数据局</a><br><b>摘要：</b> 国家数据局于7月4日正式印发《数据产权登记工作指引（试行）》，共6章42条，首次在国家层面系统建立数据产权登记体系。指引明确将数据产权划分为数据持有权、数据使用权、数据经营权三项基本权利（"三权分置"），构建"国家统一服务平台+地方市场化登记机构"的分层架构，实行"一地登记、全国互认"。登记凭证可作为数据资产入表、融资担保、作价入股等的权属证明。<br><b>为什么对数据平台重要：</b> 数据产权登记制度的正式落地，为数据从"资源"向"资产"转化提供了制度性基础设施。对数据平台而言，明确的确权框架将降低数据流通交易中的合规不确定性，加速数据产品的资产化和资本化。全国互认机制打破地方壁垒，有助于培育跨区域的数据要素市场，这意味着数据平台的治理能力需要覆盖更复杂的产权登记与凭证验证场景。</div>
+</div>
+<div class="item">
+    <h3>刘烈宏在全球数字经济大会提出"语义贯通"破解数据格式壁垒，加速数据集国家标准出台</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20260705A07NAD00">新京报</a><br><b>摘要：</b> 7月3日，国家数据局局长刘烈宏在2026全球数字经济大会数据要素发展论坛上提出，解决数据标准不统一问题需从"重格式统一"转向"语义贯通"。他指出，要求所有部门、行业、企业统一底层数据存储格式代价高昂且不现实，真正需要的是可互操作的规则层。下一步将加快出台高质量数据集格式要求、质量评测、数据标注等国家标准，以"模数共振"驱动"数据飞轮"加速运转。<br><b>为什么对数据平台重要：</b> "语义贯通"替代"格式统一"的提法，代表了数据治理范式的重大转向——从强制底层格式一致转向构建跨系统的语义互操作层。这对数据平台架构有直接影响：统一的语义层（如知识图谱、元数据管理、本体对齐）的战略价值将大幅提升，而传统以ETL/ELT为中心的格式转换策略可能被弱化。高质量数据集国家标准的加速制定，也将为AI训练数据的采购和治理提供明确的合规基准。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks Okta 自动身份管理正式 GA，企业身份治理进一步简化</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july">Databricks Release Notes</a><br><b>摘要：</b> 7月3日，Databricks 宣布 Okta 自动身份管理（Automatic Identity Management）正式 GA。该功能允许用户从 Okta 直接同步用户和组到 Databricks，无需 SCIM 配置。管理员可在身份联邦工作区中直接搜索并添加用户，Databricks 将 Okta 作为组成员关系的记录源。<br><b>对数据平台的影响：</b> Okta AIM GA 简化了 Databricks 的企业身份治理流程，消除了 SCIM 配置的运维开销。对大型企业而言，这意味着更快的用户配置和更一致的跨平台权限管理。这是 Databricks 在 DAIS 2026 之后持续落地的治理能力之一，与 Unity Catalog 的访问控制层形成互补。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内（7/3-7/6）为美国独立日假期周末，全球数据平台投融资活动停滞。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】Databricks Budgets 功能将于 7 月 7 日正式 GA，为 Unity AI Gateway 提供成本管控底座</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/gcp/en/release-notes/whats-coming">Databricks What's Coming</a><br><b>为什么值得继续看：</b> Budgets 允许管理员为 Databricks 管理的请求（包括 Unity AI Gateway）定义支出阈值，支持共享和按用户限制，可配置邮件告警和使用阻断。这是 Databricks 代理式 AI 成本治理的关键拼图——Unity AI Gateway 本身仍在 Beta，但 Budgets 先行 GA 表明 Databricks 在推动成本管控基础设施优先于网关全面上线。<br><b>需要等待什么信号确认：</b> 7月7日 GA 后的实际使用反馈；Unity AI Gateway 何时结束 Beta 进入 GA。</div>
+</div>
+<div class="item">
+    <h3>【降级】Databricks Genie App Builder 进入 Private Preview，企业级"受管控的 Vibe Coding"概念浮出</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://theagenttimes.com/articles/databricks-launches-genie-app-builder-to-bring-governed-vibe-f0672635">The Agent Times</a><br><b>为什么值得继续看：</b> Genie App Builder 允许用户用自然语言描述应用需求并自动生成企业级应用，原生集成 Unity Catalog 语义层、数据资产和工作区配置。Databricks 将这一模式称为"Governed Vibe Coding"。该工具在 DAIS 2026（6月中旬）首次亮相，7月3日通过社交媒体进行了二次推广，目前处于 Private Preview 阶段。<br><b>需要等待什么信号确认：</b> Public Preview 或 GA 时间表；实际企业用户的采纳数据和生成应用的质量反馈。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-06 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

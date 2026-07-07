@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-02</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+  .item .watch-signal {
+    background: #fff8e1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #8a6d1f;
+  }
+
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+  .tag-watch { background: #fff3e0; color: #e65100; }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>Data+AI 全球日报</h1>
+    <div class="date">2026-06-02（周二） · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>今日最重要的3点</h2>
+    <ol>
+      <li>数据平台正在从"AI Ready"迈向"Agentic AI 原生"</li>
+      <li>AI 基础设施竞赛从美国溢出到欧洲主权云市场</li>
+      <li>开放多引擎架构与自适应算力成为平台差异化新维度</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台向 Agentic AI 控制平面演进已成中美共识，AI 基础设施竞赛正从美国溢出到欧洲主权云市场。
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+      <h3>Snowflake Summit 26 开幕：四大发布标志数据平台全面转向 Agentic 原生</h3>
+      <div class="source">来源：<a href="https://www.snowflake.com/summit/">Snowflake Summit</a></div>
+      <div class="body">Snowflake Summit 26 于旧金山开幕，Opening Keynote 集中发布四大产品：Openflow（开放多引擎数据治理框架）、Adaptive Compute（AI 自适应算力调度引擎）、Cortex AISQL（自然语言查询平台）以及 Snowflake Intelligence（企业级 Agent 平台）。四大发布共同指向同一战略方向——将数据平台从被动查询引擎升级为主动理解业务意图、自主执行数据任务的 Agentic 控制平面。</div>
+      <div class="impact">这是主流云数据厂商首次将"Agentic Enterprise"作为产品矩阵核心叙事，意味着数据平台竞争进入新阶段：不再是存储与查询性能比拼，而是谁能率先让数据平台成为企业 Agent 的可靠底座。Snowflake 的激进布局将迫使 Databricks、Google BigQuery、Microsoft Fabric 加速跟进。</div>
+    </div>
+    <div class="item">
+      <h3>腾讯云数据库面向 Agent 场景全面升级</h3>
+      <div class="source">来源：<a href="https://www.cs.com.cn/ssgs/01/2026/06/01/detail_2026060110015383.html">中国证券报</a></div>
+      <div class="body">腾讯云数据库宣布面向 Agent 场景的全面升级，推出三大核心能力：AgentMemory（首个面向 Agent 的专属内存引擎，支持智能体上下文状态持久化）、DatabaseClaw（Agent 专用数据库操作工具链，实现自然语言到数据库操作的原子化调度）以及 TDSQL 的 Agent 场景性能优化。本次升级将腾讯云数据库从传统 OLTP/OLAP 引擎扩展为 Agent 原生数据基础设施。</div>
+      <div class="impact">这是国内云厂商首次将数据库产品从"支持 AI"升级为"为 AI Agent 原生设计"，与 Snowflake Summit 26 的 Agentic 战略形成中美呼应。AgentMemory 的推出意味着数据库开始承担 Agent 状态管理的角色，数据平台的边界正在向 Agent 运行时扩展。</div>
+    </div>
+    <div class="item">
+      <h3>SoftBank 宣布 €45-75B 法国 AI 数据中心投资</h3>
+      <div class="source">来源：<a href="https://www.reuters.com/">Reuters</a></div>
+      <div class="body">在 Choose France Summit（6 月 1 日）上，SoftBank 集团宣布将在法国投资 €45 亿至 €75 亿欧元建设 AI 数据中心，法国总统马克龙亲自出席并背书。该投资将分阶段实施，首期集中在巴黎及周边区域，目标是建设欧洲最大的 AI 训练与推理基础设施集群之一，服务于欧洲本土 AI 企业和主权云需求。</div>
+      <div class="impact">这是欧洲 AI 基础设施单笔最大投资纪录，直接改变了全球数据平台部署的地理格局。此前 AI 算力基建高度集中在美国（NVDA 生态 + AWS/Azure/GCP），SoftBank 的法国投资意味着欧洲主权云市场正在加速形成独立供应链，数据平台的全球化部署策略需要重新评估合规、延迟和数据主权因素。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+      <h3>Snowflake Openflow 发布：开放多引擎数据治理框架</h3>
+      <div class="source">来源：<a href="https://www.snowflake.com/blog/">Snowflake Blog</a></div>
+      <div class="body">Snowflake Openflow 在 Summit 26 正式发布，是一个开放的多引擎数据治理框架，允许企业在 Snowflake 平台内统一管理 Iceberg、Delta Lake、Hudi 等多种开放表格式，同时保持统一的治理层（访问控制、血缘追踪、质量监控）。Openflow 不强制数据迁移，而是通过元数据联邦实现跨引擎治理。</div>
+      <div class="impact">这是 Snowflake 对"开放格式竞争"的正式回应。此前 Databricks 主导 Delta Lake 生态，Snowflake 押注 Iceberg，Openflow 的推出意味着 Snowflake 选择用"治理联邦"而非"格式统一"来解决问题，降低了企业多引擎并存时的治理复杂度，也可能削弱单一格式锁定效应。</div>
+    </div>
+    <div class="item">
+      <h3>Snowflake Adaptive Compute 与 Cortex AISQL 发布</h3>
+      <div class="source">来源：<a href="https://www.snowflake.com/blog/">Snowflake Blog</a></div>
+      <div class="body">Adaptive Compute 是 Snowflake 新推出的 AI 自适应算力调度引擎，可根据工作负载特性（批处理、交互查询、AI 推理）自动选择最优算力配置（CPU/GPU/专用加速器），实现资源利用率提升。Cortex AISQL 则是自然语言到 SQL 的生成与执行平台，支持复杂多表关联查询的自然语言描述，并内置结果可信度评估。</div>
+      <div class="impact">Adaptive Compute 将"AI 驱动的资源调度"从概念推向产品化，可能改变数据平台的成本模型（从预配实例转向按需自适应）。Cortex AISQL 则直接冲击传统 BI 工具和自然语言查询中间件市场，如果准确率足够高，可能压缩独立 NL2SQL 厂商的生存空间。</div>
+    </div>
+    <div class="item">
+      <h3>Databricks Enzyme 获 SIGMOD 2026 Honorable Mention</h3>
+      <div class="source">来源：<a href="https://sigmod2026.org/">SIGMOD 2026</a> / <a href="https://www.databricks.com/blog/">Databricks Blog</a></div>
+      <div class="body">Databricks 与斯坦福大学联合提交的论文《Enzyme: Incremental View Maintenance for Complex Analytical Queries》获得 SIGMOD 2026 Honorable Mention。Enzyme 是一种面向复杂分析查询的增量视图维护引擎，能够在源数据变化时以亚秒级延迟更新物化视图，同时支持窗口函数、嵌套子查询等复杂 SQL 特性，突破了传统 IVM 仅支持简单聚合的限制。</div>
+      <div class="impact">这是工业界查询优化器首次在 SIGMOD 获得高规格认可，意味着 Databricks 在查询引擎底层技术上的投入开始获得学术背书。Enzyme 若产品化，将显著降低实时数据管道中物化视图的维护成本，对需要低延迟分析的数据平台架构有直接影响。</div>
+    </div>
+    <div class="item">
+      <h3>Microsoft Fabric Data Factory 引入 Mapping Data Flows</h3>
+      <div class="source">来源：<a href="https://blog.fabric.microsoft.com/">Microsoft Fabric Blog</a></div>
+      <div class="body">Microsoft 宣布 Fabric Data Factory 正式引入 Mapping Data Flows（可视化 ETL 设计工具），支持无代码/低代码的数据转换管道设计，内置 300+ 数据转换操作和智能数据预览。该功能预计 6 月全面 GA，目前已对预览用户开放。Mapping Data Flows 此前是 Azure Data Factory 的核心功能，现在是首次深度集成到 Fabric 统一平台中。</div>
+      <div class="impact">这是微软将 Azure Data Factory 能力向 Fabric 迁移的关键一步，意味着 Fabric 的 ETL/ELT 能力正在补齐与独立数据集成工具的差距。对于已在使用 Azure 生态的企业，这降低了从 Azure Data Factory 向 Fabric 迁移的摩擦，可能加速 Fabric 的市场渗透。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+      <h3>Snowflake 将 Agentic Enterprise 定位为数据平台控制平面</h3>
+      <div class="source">来源：<a href="https://www.snowflake.com/summit/">Snowflake Summit Keynote</a></div>
+      <div class="body">Snowflake CEO 在 Summit 26 Opening Keynote 中明确提出，数据平台的下一站不是"更快查询"或"更大规模"，而是成为企业 Agent 的"控制平面"（Control Plane）。这一定位将数据平台的竞争维度从基础设施性能转向 Agent 编排与可信数据供给能力。</div>
+      <div class="impact">如果"控制平面"定位成为行业共识，数据平台厂商的核心投资重点将从存储引擎和查询优化器，转向 Agent 状态管理、工具链编排（如 DatabaseClaw 类能力）、多模态数据理解和语义层构建。这对国内云厂商的产品路线有直接参考意义——腾讯云数据库的 AgentMemory 和 DatabaseClaw 正是同一方向的具体落地。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">投融资</span>VAST 完成 A+/A++ 近 $2 亿融资</h3>
+      <div class="source">来源：<a href="https://www.businesswire.com/">Business Wire</a></div>
+      <div class="body"><strong>核心数据：</strong>近 $2 亿 A+/A++ 轮，估值未公开披露<br><br>通用 AI 基础设施公司 VAST 宣布完成 A+/A++ 轮合计近 $2 亿美元融资，投资方包括多家顶级风投。VAST 主打统一 AI 数据平台，提供面向大模型训练和推理的高性能数据存储与访问层，客户覆盖多家头部 AI 公司。</div>
+      <div class="impact">近 $2 亿融资规模在 A 轮阶段极为罕见，说明资本市场对"AI 原生数据基础设施"赛道的估值溢价极高。VAST 的核心叙事——为 AI 工作负载专门设计的数据平台——与 Snowflake/Databricks 的传统数据平台形成差异化竞争，可能催生新的细分赛道。</div>
+    </div>
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">投融资</span>核数聚完成数千万元 A 轮融资</h3>
+      <div class="source">来源：<a href="https://36kr.com/">36氪</a></div>
+      <div class="body"><strong>核心数据：</strong>数千万元人民币 A 轮<br><br>AI 数据服务公司核数聚宣布完成数千万元 A 轮融资，专注为 AI 大模型提供高质量标注数据、合成数据和数据治理服务。核数聚的客户覆盖自动驾驶、金融和医疗等数据密集型行业，其核心能力包括多模态数据标注 pipeline 和自动化数据质量评估。</div>
+      <div class="impact">核数聚融资反映 AI 数据服务作为独立赛道的资本认可度在提升。随着大模型对高质量训练数据的需求激增，数据平台厂商需要考虑是否将数据准备/标注/质量评估能力纳入平台原生功能，还是通过生态合作补足。这可能成为数据平台产品边界扩展的新方向。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+      <h3><span class="funding-tag tag-watch">跟踪</span>Databricks Lakebase Provisioned 实例强制迁移至 Autoscaling</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/">Databricks Documentation</a></div>
+      <div class="body">Databricks 于 6 月启动 Lakebase Provisioned 实例向 Autoscaling 的强制迁移。这一变化直接影响使用 Lakebase 进行可预测工作负载（如固定 ETL 管道）的企业成本结构——Autoscaling 在突发负载下更省，但在稳定负载下可能更贵。迁移的强制性和时间表仍需观察。</div>
+      <div class="watch-signal"><strong>需要等待什么信号确认：</strong>Databricks 是否发布迁移成本计算器或提供 Provisioned 保留选项；首批迁移企业的实际成本变化反馈。</div>
+    </div>
+    <div class="item">
+      <h3><span class="funding-tag tag-watch">跟踪</span>Microsoft Fabric Data Factory Mapping Data Flows 6 月 GA</h3>
+      <div class="source">来源：<a href="https://blog.fabric.microsoft.com/">Microsoft Fabric Blog</a></div>
+      <div class="body">Mapping Data Flows 在 Fabric 中的 GA 将是微软统一数据平台战略的关键里程碑。如果 GA 后功能完整度与 Azure Data Factory 原版本相当，将显著降低 ADF 用户向 Fabric 迁移的障碍，可能引发一波 Fabric 采用潮。</div>
+      <div class="watch-signal"><strong>需要等待什么信号确认：</strong>6 月 GA 的具体日期、功能完整度对比（与 ADF 原生版本）、早期用户的性能与稳定性反馈。</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-02 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

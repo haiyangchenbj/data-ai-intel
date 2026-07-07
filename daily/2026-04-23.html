@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-23</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Empty section */
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-23 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的2个变化</h2>
+    <ol>
+      <li>数据治理正在从平台内建能力演变为跨平台双向流动的独立基础设施层</li>
+      <li>无代码数据准备工具开始嵌入 AI 原生能力，分析师与工程师的边界在模糊</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>两件事指向同一方向：数据平台的价值正从「存算能力」向「上下文丰富度」迁移——治理语义能跨平台流动、数据准备能用自然语言驱动，谁先做到谁就掌握 AI 就绪性的入口。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+      <h3>1. Google Cloud × Collibra 深化合作：双向元数据集成进入 Public Preview</h3>
+      <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/google-cloud-and-collibra-deepen-partnership-to-bring-business-context-and-semantics-directly-to-knowledge-catalog-302749065.html" target="_blank">PR Newswire 官方新闻稿</a> / <a href="https://www.collibra.com/company/newsroom/press-releases/google-cloud-and-collibra-deepen-partnership" target="_blank">Collibra 官方新闻</a></div>
+      <div class="body">
+        <p>Google Cloud 与 Collibra 于 04-22 宣布扩展战略合作伙伴关系，聚焦开放湖仓环境中的数据治理。核心发布是 Collibra 与 Google Cloud Dataplex 的双向集成（Public Preview）：出站方向——Collibra 中定义的业务上下文、数据血缘、质量和治理策略原生流入 Dataplex；入站方向——Dataplex 的技术元数据和发现洞察自动回传至 Collibra，确保企业记录系统实时更新。联合客户在 Google Cloud Knowledge Catalog 中即可获得统一的数据发现、语义和合规能力。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是主流云平台首次与独立治理厂商实现生产级双向元数据同步。此前各平台的治理能力（Unity Catalog / Horizon / Dataplex）均以内建为主，Collibra 的跨平台定位意味着治理上下文不再被锁定在单一平台内。对多云/开放湖仓客户而言，业务含义可以跟随数据跨平台流动，这改变了治理从「平台附属品」到「独立基础设施层」的定位。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+      <h3>1. Databricks Lakeflow Designer 进入 Public Preview：可视化无代码数据准备 + AI 原生</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks Release Notes - April 2026</a> / <a href="https://docs.databricks.com/aws/en/designer/what-is-lakeflow-designer" target="_blank">Lakeflow Designer 文档</a></div>
+      <div class="body">
+        <p>Databricks 于 04-22 正式将 Lakeflow Designer 推入 Public Preview。这是一个面向分析师的可视化画布工具，支持拖放式 DAG 编排（Filter / Join / Aggregate / Reshape 等算子）、Excel/CSV 文件直接拖入画布、逐步预览中间结果，以及关键差异化——内置 Genie Code 自然语言驱动的转换生成，所有交互均为 Agentic 模式并利用 Databricks 平台上下文。所有可视化转换有底层代码支撑，可迁移至生产环境。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>Lakeflow Designer 补齐了 Databricks 在「非工程师用户」群体的数据准备入口。与 Microsoft Fabric Dataflows、Informatica IDMC 等竞品不同，Designer 从设计之初就嵌入 AI（Genie Code），将自然语言作为一等公民接口。这意味着数据准备的门槛从「会写 SQL/Python」降到「会描述需求」，平台用户基数有望进一步向业务分析师扩展。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <p class="empty-note">本日窗口内无符合准入标准的机构研究或人物观点。</p>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">本日窗口内无符合准入标准的投融资、财报、IPO 或收购兼并事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+      <h3>1. 【跟踪】数据治理从平台内建向跨平台互操作演进</h3>
+      <div class="source">来源：综合 <a href="https://www.prnewswire.com/news-releases/google-cloud-and-collibra-deepen-partnership-to-bring-business-context-and-semantics-directly-to-knowledge-catalog-302749065.html" target="_blank">Google Cloud × Collibra 04-22 公告</a> / Databricks Unity Catalog / Snowflake Horizon / Oracle AIDP Workbench</div>
+      <div class="body">
+        <p>Google Cloud 与 Collibra 的双向集成标志着治理上下文开始跨平台流动。此前 Databricks（Unity Catalog）、Snowflake（Horizon）、Oracle（AIDP Workbench）均在强化平台内建治理，走的是「治理跟着平台走」的路线。Collibra 作为独立治理厂商打通 Dataplex 双向通道，意味着第三条路线出现：「治理独立于任何单一平台」。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>双向集成从 Public Preview 到 GA 的时间线；Collibra 是否在 Data Summit 或 Snowflake Summit 上宣布与 Databricks/Snowflake 的类似集成；企业客户在多云治理场景的实际部署反馈。
+      </div>
+    </div>
+    <div class="item">
+      <h3>2. 【跟踪】Google Cloud Next 2026 数据平台相关发布预期</h3>
+      <div class="source">来源：<a href="https://cloud.withgoogle.com/next" target="_blank">Google Cloud Next 2026</a> / Collibra 04-22 新闻稿提及</div>
+      <div class="body">
+        <p>Collibra 04-22 新闻稿明确提及 Google Cloud Next 2026 展位演示，暗示 Google Cloud 在 Next 大会期间可能有更多数据平台相关发布（BigQuery / Dataplex / Knowledge Catalog 升级）。作为三大云厂商年度旗舰大会，Next 往往是 Google Cloud 数据平台战略更新的集中释放窗口。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>Google Cloud Next 2026 正式议程和 Keynote 中的数据平台发布；BigQuery 是否有架构级更新；Dataplex 治理能力是否进一步扩展。
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-04-23 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

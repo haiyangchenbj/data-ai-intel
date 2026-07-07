@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-03</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Capital tag */
+  .capital-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #e8f5e9; color: #2e7d32; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #fce4ec; color: #c62828; }
+  .tag-ma { background: #f3e5f5; color: #7b1fa2; }
+
+  /* Empty section */
+  .empty-note {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Watchlist tag */
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-downgrade { background: #fff3e0; color: #e65100; }
+  .tag-follow { background: #e8f5e9; color: #2e7d32; }
+  .tag-upcoming { background: #e3f2fd; color: #1565c0; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-03 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据湖的小文件瓶颈被从架构层面突破，流式写入不再需要后置合并</li>
+      <li>数据平台供应商的伦理争议正在实质性影响企业采购决策</li>
+      <li>AI 工作负载正成为数据平台消费增长的核心驱动力，但尚未转化为利润确定性</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据湖架构正在经历一次"写入路径"的范式升级——DuckLake 用目录内联数据的方式证明了小文件问题可以从根本上消除而非事后修补。与此同时，Palantir 在 NHS 的遭遇提醒行业：数据平台的采购逻辑正从纯技术能力扩展到供应商的社会声誉维度。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. DuckLake 发布数据内联功能，从架构层面解决数据湖小文件问题</h3>
+      <div class="source">
+        来源：<a href="https://ducklake.select/2026/04/02/data-inlining-in-ducklake/" target="_blank">DuckLake Blog</a>
+      </div>
+      <div class="body">
+        <p>DuckDB Labs 于 4 月 2 日发布 DuckLake 数据内联（Data Inlining）功能。该功能将小批量写入直接存储在目录数据库中而非生成独立 Parquet 文件，按需刷新为合并文件。Benchmark 显示：在流式写入场景下，DuckLake 聚合查询比无内联模式快 926×，比 Apache Iceberg（Polaris）快 923×；插入速度比 Iceberg 快 105×。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>小文件问题是数据湖流式写入的核心痛点，传统方案依赖后置 Compaction 作业消耗大量资源。DuckLake 的内联方案将写入成本从对象存储层降到目录数据库层，意味着数据湖架构在流式场景下的性能天花板被显著提升，对 Iceberg 生态的 Compaction 策略构成架构层面的挑战。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. NHS 员工大规模抵制 Palantir 数据平台，英国政府考虑触发合同终止条款</h3>
+      <div class="source">
+        来源：<a href="https://www.ft.com/content/dbb67083-bd1d-46e9-b196-1438d54c5795" target="_blank">Financial Times</a>
+      </div>
+      <div class="body">
+        <p>据 FT 4 月 2 日报道，越来越多 NHS 员工以"工作场所调整"为由正式拒绝使用 Palantir 提供的联邦数据平台（FDP）。该平台基于 Palantir 2023 年获得的 £3.3 亿合同建设，目前已在英格兰 205 家医院信托中的 123 家部署。反对原因涉及 Palantir 的美国国防业务及高管政治关联。英国政府据报正在寻求法律意见以触发合同终止条款。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是数据平台领域罕见的"非技术因素实质性影响采购决策"案例。£3.3 亿级别的企业数据平台合同可能因供应商的社会声誉问题被终止，意味着企业采购逻辑正在从纯能力评估扩展到 ESG 与供应商信誉维度，这对所有面向公共部门的数据平台厂商都是信号。
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <p class="empty-note">DuckLake 数据内联功能已作为当天最重要事件纳入 A 板块，不在 B 板块重复展开。窗口内无其他达标的正式产品发布。</p>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Zacks Research：Snowflake AI 工作负载扩张能否支撑下一轮增长仍存疑</h3>
+      <div class="source">
+        来源：<a href="https://www.zacks.com/stock/news/2893518/can-ai-workload-expansion-strengthen-snowflakes-next-leg-of-growth" target="_blank">Zacks Investment Research</a>
+      </div>
+      <div class="body">
+        <p>Zacks 4 月 2 日分析指出，Snowflake 正从传统数据仓库向 AI 集成数据平台转型，通过 Snowflake Intelligence 套件和与 OpenAI、Anthropic、Google Cloud 的合作提升平台 AI 工作负载。Q4 FY2026 营收 $12.8 亿（同比+30%），但近期股价周跌 7%，39 家机构给出"买入"评级、1 家"卖出"。</p>
+      </div>
+      <div class="impact">
+        <strong>映射到数据平台的判断：</strong>AI Agent 驱动的查询量增长正在成为数据平台消费模式的新引擎。但 Snowflake 的情况也揭示了一个行业性挑战：AI 工作负载带来的平台消费增长能否转化为可持续的盈利能力，目前尚缺乏验证——内部人士过去 6 个月净卖出 140 笔、零买入，市场对增长确定性的信心并不充分。
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">Crunchbase Q1 2026 全球 VC $3000 亿报告发布于 4 月 1 日，超出当期窗口（4月2日08:00起），已降级至 E 板块。窗口内无其他达标事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-downgrade">降级</span>Q1 2026 全球 VC 投资 $3000 亿创纪录——AI 吸走 80%，数据平台层融资窗口可能被挤压</h3>
+      <div class="source">
+        来源：<a href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/" target="_blank">Crunchbase News</a> · <a href="https://techcrunch.com/2026/04/01/startup-funding-shatters-all-records-in-q1/" target="_blank">TechCrunch</a>
+      </div>
+      <div class="body">
+        <p>Crunchbase 4 月 1 日发布数据显示 Q1 全球风投 $3000 亿（同比+150%），AI 占 80%（$2420 亿）。前四大轮次（OpenAI $1220 亿 + Anthropic $300 亿 + xAI $200 亿 + Waymo $160 亿）占总额 63%。资本高度集中于头部 AI 基础设施，数据管理/治理/编排层的独立融资窗口可能被挤压。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>Q2 是否有数据平台垂直领域的大额融资出现；数据基础设施类创业公司的融资节奏是否放缓。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-follow">跟踪</span>Snowflake 证券集体诉讼截止日 4 月 27 日逼近</h3>
+      <div class="source">
+        来源：<a href="https://www.morningstar.com/news/pr-newswire/20260402dc25418/investor-alert-pomerantz-law-firm-reminds-investors-with-losses-on-their-investment-in-snowflake-inc-of-class-action-lawsuit-and-upcoming-deadlines-snow" target="_blank">Pomerantz LLP via PR Newswire</a>
+      </div>
+      <div class="body">
+        <p>多家律所（Pomerantz、Faruqi & Faruqi、Bronstein Gewirtz、Rosen Law、Gross Law）于 4 月 1-2 日密集发布投资者提醒，指控 Snowflake 存在误导性陈述。4 月 27 日为首席原告申请截止日。诉讼结果虽不确定，但若进入正式审理阶段，可能影响 Snowflake 的市场信心和企业客户续约决策。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>4 月 27 日首席原告截止后，法院是否受理以及 Snowflake 的正式回应。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-follow">跟踪</span>NHS 抵制 Palantir 事件的后续：英国政府是否真正终止合同</h3>
+      <div class="source">
+        来源：<a href="https://www.ft.com/content/dbb67083-bd1d-46e9-b196-1438d54c5795" target="_blank">Financial Times</a>
+      </div>
+      <div class="body">
+        <p>FT 报道英国政府正寻求法律意见触发终止条款，但 Palantir 目前已在 123/205 家医院部署，项目评级"按时按预算"。实际终止面临巨大的迁移成本和运营风险。这是一个观察"数据平台伦理争议能否真正改变采购结果"的关键案例。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>英国政府是否正式触发合同终止条款；若终止，替代方案和迁移路径。
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>📊 本期条目数：A×2 + C×1 + E×3 = 6 条 | B/D 板块留空</p>
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-04-03 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

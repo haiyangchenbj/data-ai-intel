@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-10</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-06-10 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库从为人设计转向为 Agent 设计，Agent-Native 数据库成为新品类</li>
+      <li>云存储从被动容器进化为 AI 原生底座，向量检索成存储第一方能力</li>
+      <li>芯片+网络+资本打包重塑 AI 基础设施融资，算力供给模式在重构</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今日窗口信息密度极低，但两条新品发布共同指向一个方向：AI 基础设施正在从"适配 AI"走向"原生为 AI 设计"。数据库和存储层同步进化，Agent-Native 架构从应用层下沉到基础设施层。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Tiger Data（TimescaleDB 团队）发布 Ghost，首个专为 AI Agent 设计的数据库服务正式面世</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.globenewswire.com/news-release/2026/06/09/3308882/0/en/Tiger-Data-Launches-Ghost-a-Purpose-Built-Database-Service-for-the-Agentic-Era.html">GlobeNewswire</a><br><b>摘要：</b> 6 月 9 日，TimescaleDB 背后的 Tiger Data 团队正式发布 Ghost——一个专门为 AI Agent 构建的 PostgreSQL 数据库服务。Ghost 提供不限量的隔离 Postgres 数据库、快速分支克隆、MCP 原生集成，支持按查询计费。核心设计哲学："Agent 需要的是为其工作方式设计的数据库，不是从人类工具改造而来的"。每个 Agent 任务对应一个隔离数据库，失败爆炸半径局限在单库而非共享环境。OpenRouter 已在实际使用中部署 Ghost。<br><b>为什么对数据平台重要：</b> Ghost 标志着"Agent-Native 数据库"作为一个独立品类的诞生。传统数据库以人类分析师为设计目标（连接池、权限模型、并发控制），而 Agent 的数据库需求完全不同：大量隔离沙箱、按任务生命周期创建/销毁、MCP 协议原生集成。Postgres 生态是这一趋势的先行者，Ghost 的发布可能引发数据库产品从"human-first"到"agent-first"的架构范式迁移。</div>
+</div>
+<div class="item">
+    <h3>阿里云 OSS 向量 Bucket 正式商业化，对象存储进化为 AI 原生多模态统一存储底座</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://developer.aliyun.com/article/1739752">阿里云开发者社区</a><br><b>摘要：</b> 阿里云对象存储 OSS 向量 Bucket 于 6 月 10 日正式结束免费公测，启动商业化收费。向量 Bucket 支持万亿级向量存储与语义检索，相比传统方案成本降低 95%。随着 Table Bucket 的加入，OSS 已构建"对象 + 向量 + 表格"三合一产品家族——首个原生覆盖非结构化内容、高维语义索引与海量结构化元数据的多模态统一存储底座。已在全球 12 个地域开服，服务 AIGC 资产管理、AI 数据集管理、AI Agent 等场景。<br><b>为什么对数据平台重要：</b> 这是主流云厂商首次将向量存储作为对象存储的原生第一方能力正式商业化——不是外挂向量数据库，而是存储层原生集成。这意味着 AI 数据基础设施的"存储-检索"边界正在消融。对于企业数据平台，向量检索不再是独立选型决策，而是云存储的基础能力——这将深刻影响 Pinecone/Weaviate/Milvus 等独立向量数据库的市场空间，也改变了数据平台的架构设计假设。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Microsoft Fabric Graph 正式 GA，图分析成为数据平台原生能力</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://learn.microsoft.com/mt-mt/fabric/fundamentals/whats-new">Microsoft Fabric 文档</a><br><b>摘要：</b> Microsoft Fabric 6 月更新中，Fabric Graph 正式 GA。该功能让用户直接在 Fabric 平台内建模、可视化和分析数据中的复杂关系，将图分析能力作为数据平台的一等公民而非外部工具集成。同期更新的数据平台相关功能还包括：SQL 分析端点 CI/CD 支持（Preview）、Fabric Warehouse 预/后部署脚本（Preview）、SQL 端点 30 秒数据新鲜度 SLO、Time Travel for SQL 端点等。<br><b>对数据平台的影响：</b> Fabric Graph GA 意味着图分析不再需要独立图数据库——数据平台原生支持关系建模和遍历查询。这与 Databricks 的 GraphFrames 和 Snowflake 尚未内建图能力形成差异化。SQL 端点 30 秒 SLO 和 Time Travel 则直接回应了数据平台在 AI Agent 场景中对数据新鲜度的刚性需求。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日窗口内无合格的分析师一手观点或机构正式研究报告。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日窗口内无数据平台核心投融资事件。Databricks 新一轮融资洽谈（$1650-1750 亿估值）已于上期（06-09）覆盖；Broadcom $35B AI XPV 平台融资偏 AI 基础设施，不满足数据平台 D 板块准入标准。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】Databricks Genie 系列产品 7 月 6 日转为按量付费</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june">Databricks 发布说明</a><br><b>为什么值得继续看：</b> Genie Spaces、Genie Code 等产品将于 7/6 从免费转为按 DBU 消耗付费，每用户每月 150 DBU 免费额度（约 $10.50）。计费模式转变将直接影响企业采用 Genie 的成本模型和规模决策，可能成为 Data+AI 平台从 seat-based 到 consumption-based 定价转型的风向标。<br><b>需要等待什么信号确认：</b> 首批企业客户的实际 DBU 消耗数据、是否存在预算超支案例、竞品是否跟进按量付费模式。</div>
+</div>
+<div class="item">
+    <h3>【通告】Databricks Lakebase Provisioned 实例 6 月起强制迁移至 Autoscaling 架构</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://community.databricks.com/t5/lakebase-articles/databricks-lake-base-evolution-mandatory-shift-from-provisioned/td-p/157509">Databricks 社区</a><br><b>为什么值得继续看：</b> 所有遗留 Provisioned 实例将从 6 月起自动升级到弹性 Autoscaling 架构，涉及计算模型、存储、网络和 API 的全面变更。这是 Databricks Lakebase（原 OLTP 数据库）的一次底层架构重构，直接关系现有客户的迁移成本和业务连续性。<br><b>需要等待什么信号确认：</b> 首批自动迁移客户的实际 downtime 数据、计费变化幅度、是否有因迁移导致的性能回退案例。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Broadcom 联合 Apollo/Blackstone 推出 $350 亿 AI XPV 平台</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai">Apollo 公告</a><br><b>为什么值得继续看：</b> 6 月 9 日，Broadcom 与 Apollo、Blackstone 宣布成立 AI XPV 平台，首期 $350 亿支持 Anthropic 超 1GW 算力扩张。虽然本身偏 AI 基础设施融资，但其"芯片+网络+数据中心+长期资本"打包模式可能对数据平台厂商的基础设施采购和融资方式产生溢出效应——如果这一模式被数据平台厂商采用，将改变硬件采购和资本支出的传统逻辑。<br><b>需要等待什么信号确认：</b> 是否有数据平台厂商（Databricks/Snowflake）采用类似融资结构；基础设施即服务的资本模式是否向数据平台层扩散。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-10 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
