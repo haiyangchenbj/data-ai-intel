@@ -4909,6 +4909,36 @@
       "source": "Databricks Release Notes",
       "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/july",
       "conf": ""
+    },
+    {
+      "date": "2026-07-08",
+      "vendor": "AWS",
+      "module": "技术",
+      "title": "AWS EMR Serverless 支持 32 vCPU / 244 GB 大规格 Worker",
+      "summary": "来源： AWS What's New摘要： AWS EMR Serverless 新增 32 vCPU / 最高 244 GB 内存的大规格 Worker 配置，此前最大配置为 16 vCPU / 120 GB。大规格 Worker 可减少 Shuffle 密集型作业的跨节点数据传输、降低数据倾斜场景下的 OOM 风险、以及支持更大规模的内存缓存。对数据平台的影响： 无服务器 Spark/Hive 处理能力向上扩展，使 EMR Serverless 可以承接原本需要自建集群的高内存负载（如大规模 join、宽表聚合），进一步模糊了 Serverless 与自建集群之间的能力边界。",
+      "source": "AWS What's New",
+      "url": "https://aws.amazon.com/new/",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-08",
+      "vendor": "Databricks",
+      "module": "产品",
+      "title": "【预告】Databricks 七月路线图兑现窗口：Genie 更名 + Unity AI Gateway 预算 GA 在即",
+      "summary": "来源： Databricks What's Coming为什么值得继续看： Databricks 七月路线图包含多项标志性变更——Genie Spaces 更名为 Genie Agents（七月初）、Unity AI Gateway 预算 GA（七月内）、ai_extract/ai_classify 对合规工作区默认启用（七月中）——这些是 DAIS 2026 上宣布的路线图进入兑现期的关键节点。需要等待什么信号确认： Genie 更名是否伴随产品功能或定价调整；Unity AI Gateway 预算 GA 后的企业采用反馈；ai_extract/ai_classify 默认启用的合规工作区覆盖范围。",
+      "source": "Databricks What's Coming",
+      "url": "https://docs.databricks.com/aws/en/release-notes/whats-coming",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-08",
+      "vendor": "Databricks",
+      "module": "产品",
+      "title": "【预告】AWS Context 知识图谱服务\"Coming Soon\"——Agent 上下文基础设施竞赛升温",
+      "summary": "来源： DBTA July 7, 2026为什么值得继续看： AWS Context（6/17 AWS Summit NYC 宣布）自动将企业跨系统数据关系映射为知识图谱，供 AI Agent 运行时查询。其 Iceberg 格式元数据输出 + IAM/Lake Formation 身份感知治理的设计，使其天然嵌入现有数据平台架构。该服务状态仍为\"Coming Soon\"，但 7 月 DBTA 等行业媒体开始密集关注，可能预示 GA 临近。需要等待什么信号确认： 正式 GA 日期和区域覆盖；与 Databricks Unity Catalog / Snowflake Horizon 的差异化定位；企业知识图谱是否会成为数据平台的下一个基础设施层。",
+      "source": "DBTA July 7, 2026",
+      "url": "https://www.dbta.com/Editorial/News-Flashes/AWS-Context-Streamlines-Intelligence-for-AI-Agents-175616.aspx",
+      "conf": ""
     }
   ],
   "archive": [
@@ -4992,7 +5022,8 @@
     "2026-07-02",
     "2026-07-03",
     "2026-07-06",
-    "2026-07-07"
+    "2026-07-07",
+    "2026-07-08"
   ],
   "monthly": [
     {
