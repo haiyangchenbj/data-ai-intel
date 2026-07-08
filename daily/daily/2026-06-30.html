@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-30</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-06-30 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库的AI时代重新定位加速，湖仓一体正被湖库一体取代</li>
+      <li>数据治理平台边界向AI模型层延伸，数据目录开始管LLM</li>
+      <li>夏季峰会季后信息真空持续，数据平台行业进入消化期</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>OceanBase以湖库一体重新定义数据库的AI时代角色，中国数据库厂商正从跟随者转向定义者。Databricks同步将LLM纳入Unity Catalog治理，数据平台边界向AI模型层延伸。峰会季后行业进入落地消化期。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>OceanBase发布湖库一体AI数据库，国产数据库重新定位为AI时代的Agent数据基础设施</h3>
+    <div class="source">来源：<a href="https://en.prnasia.com/releases/apac/oceanbase-unveils-ai-database-a-new-product-portfolio-unifying-multimodal-data-real-time-analytics-and-ai-agent-workloads-539071.shtml">PRNewswire</a></div>
+    <div class="body"><b>摘要：</b> 6月29日，OceanBase发布面向AI时代的湖库一体AI数据库，提出LakeBase架构，将数据湖的开放存储能力、数据库的事务处理与分析能力、多模态数据处理能力统一到一套强一致的数据底座上，帮助Agent一次性获取完整业务上下文。同步发布三层产品体系：Lakebase（底层引擎统一管理结构化/非结构化/向量数据）、DataStudio（数据治理与服务化平台）、DataPilot（自然语言驱动的业务智能Agent）。该方案较传统多系统架构可降低整体TCO约30%-50%，已在蚂蚁阿福、灵光等AI场景完成验证，其中灵光累计生成数千万个"闪应用"，验证了千万级Agent场景的可行性。<br><b>为什么对数据平台重要：</b> OceanBase此举标志着中国数据库厂商在AI时代数据基础设施方向上的战略级转向——不再只是"兼容和追赶"，而是主动定义"AI需要什么样的数据库"。LakeBase架构直接回应了当前企业AI落地的核心瓶颈（Agent需要统一上下文而非碎片化数据源），将数据库从"系统记录"重新定位为"AI可信上下文引擎"。CEO杨冰明确表示"从跟随者走向共同定义者"，叠加OceanBase连续两年中国分布式数据库本地部署市场第一和同时登顶TPC-C/TPC-H的技术信用，这一发布对国内数据平台采购选型和架构决策有实质性影响。</div>
+</div>
+<div class="item">
+    <h3>Databricks将LLM治理纳入Unity Catalog，数据目录从管数据延伸到管模型</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/gcp/en/release-notes/product/2026/june">Databricks Release Notes (June 2026)</a></div>
+    <div class="body"><b>摘要：</b> 6月29日，Databricks通过Unity Catalog的Model Services功能（Beta）将LLM端点作为可治理资产纳入数据目录。Model Service是Unity Catalog中的可安全对象，代表受治理的LLM端点，允许组织定义一次端点并通过Unity Catalog权限跨workspace共享，替代每个workspace重复配置端点。Databricks在system.ai schema中提供预置的Model Services用于托管基础模型，用户也可通过Unity AI Gateway UI、Catalog Explorer或REST API自行创建。<br><b>为什么对数据平台重要：</b> 这是数据治理平台向AI治理层延伸的标志性信号。Unity Catalog过去管的是表、视图、模型文件等传统数据资产，现在开始管LLM端点这一AI原生资产。这意味着企业数据平台的治理边界正在系统性地向AI推理层扩展，"数据治理"和"AI治理"的界限在平台层面开始消融。对于正在构建Agent系统但苦于AI治理碎片化的企业来说，在数据平台内统一治理数据+模型的路径开始具备产品化可行性。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks SQL alert task在Lakeflow Jobs中正式GA</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/gcp/en/release-notes/product/2026/june">Databricks Release Notes (June 2026)</a></div>
+    <div class="body"><b>摘要：</b> 6月29日，Databricks SQL alert task在Lakeflow Jobs中正式GA。该任务类型可在Lakeflow Job中评估Databricks SQL alert，并将评估状态作为任务输出值返回，下游任务可根据结果进行分支处理。<br><b>对数据平台的影响：</b> 将SQL告警纳入数据工程编排工作流是Lakeflow Jobs功能完整性的重要补全，使数据团队能基于数据质量/业务指标监控结果自动触发下游处理（如数据修复、通知推送、管道暂停），减少了围绕数据可观测性搭建外挂编排的工程负担。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内无分析师报告、关键人物原创观点或政策文件发布。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内相关公司资本事件（Digital Realty $78亿收购数据中心股权、迅策科技×北数所合作框架协议）均不满足数据平台板块准入标准。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】Gartner网络研讨会：从CDP到Customer Data Fabric——Databricks CustomerLake将如何重塑Martech架构</h3>
+    <div class="source">来源：<a href="https://www.gartner.com/en/webinar/917388/1918200-from-cdp-to-customer-data-fabric-data-platforms-will-reshape-the-martech-stack">Gartner Webinar</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 本次Gartner研讨会（6月30日美东时间）将探讨Databricks CustomerLake如何改变CDP与Lakehouse的共存关系，以及独立CDP被平台原生方案逐步替代的趋势。Gartner以第三方权威身份就此议题举办专场研讨，暗示数据平台向Martech渗透正达到分析师关注阈值。<br><b>需要等待什么信号确认：</b> 研讨会后Gartner是否发布相关研究笔记或更新Magic Quadrant中CDP品类的定义；Databricks是否借势发布CustomerLake的客户案例或GA时间表。</div>
+</div>
+<div class="item">
+    <h3>【降级】Publicis以$2.17B收购数据协作平台LiveRamp</h3>
+    <div class="source">来源：<a href="https://inforcapital.com/news/hightouch-pourquoi-cette-startup-a-fait-une-offre-%C3%A0-12-milliard-de-dollars-%C3%A0-publicis">InforCapital</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 6月25日（略早于窗口）Publicis Groupe以$21.67亿全现金收购数据协作平台LiveRamp，溢价约30%。LiveRamp作为中立数据协作基础设施，连接品牌、媒体和平台方的数据资产，其被广告巨头收购表明数据平台能力正成为Martech并购的核心标的。收购逻辑指向一个趋势：广告集团不再满足于使用数据平台，而要拥有数据平台。<br><b>需要等待什么信号确认：</b> 交易预计2026年底完成，需关注监管审批进展及Publicis如何整合LiveRamp的中立性定位；dbt Labs+Fivetran合并（Snowflake Summit期间宣布）的后续产品整合进展作为同方向信号可一并跟踪。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-30 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-21</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Empty section note */
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Watchlist tag */
+  .watch-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-upcoming { background: #e3f2fd; color: #1565c0; }
+  .tag-downgraded { background: #fff3e0; color: #e65100; }
+  .tag-followup { background: #f3e5f5; color: #7b1fa2; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-21 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台的敏感数据治理正在从人工标注走向 AI 自动分类，治理自动化进入生产阶段</li>
+      <li>AI 安全护栏从实验性功能变为生产级基础设施，数据平台开始内建 AI 输出可信度保障</li>
+      <li>双平台同日将治理能力推向 GA，数据平台竞争的纵深战场已从计算性能转向信任与合规</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Databricks 和 Snowflake 在同一天分别将数据分类和 AI 护栏推向 GA，看似巧合，实则揭示了数据平台演进的共同方向：当 AI 成为平台核心能力后，"如何让 AI 可信"和"如何用 AI 管数据"成为比性能更紧迫的工程命题。治理自动化和 AI 安全正在成为平台竞争的新基础设施层。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks Data Classification 正式 GA：AI 自动分类敏感数据进入生产</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks on AWS Release Notes</a> / <a href="https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/april" target="_blank">Azure Databricks Release Notes</a> / <a href="https://docs.databricks.com/gcp/en/release-notes/product/2026/april" target="_blank">Databricks on GCP Release Notes</a></div>
+      <div class="body">
+        <p>Databricks 于 4 月 20 日将 Data Classification 功能从 Public Preview 推向 GA，跨 AWS、Azure、GCP 三个云平台同步发布。该功能使用 Agentic AI 系统自动扫描 Unity Catalog 中的表，识别并标记敏感数据（覆盖 PII、GDPR、HIPAA、DPDPA 等合规框架）。系统支持智能增量扫描（新表/新列 24 小时内自动分类）、自动标记（元存储级或目录级配置）、以及基于分类结果的 ABAC 策略自动生成。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>敏感数据分类此前是数据治理中最耗人力的环节。Databricks 用 Agentic AI + Unity Catalog 元数据的组合，将分类从"人工审查"变为"AI 自动执行 + 人工审核例外"，实质性降低了合规治理落地门槛。从 Public Preview 到 GA 意味着该方案已在生产环境验证过可靠性。这是 Databricks 治理层"Governed Tags（04-02 GA）→ Data Classification（04-20 GA）"连续落地的第二步，敏感数据治理正在从手动标签走向 AI 自动闭环。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. Snowflake Cortex AI Guardrails 正式 GA：AI 内容安全护栏进入生产</h3>
+      <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/new-features" target="_blank">Snowflake Release Notes - New Features</a></div>
+      <div class="body">
+        <p>Snowflake 于 4 月 20 日将 Cortex AI Guardrails 从 Preview 推向 GA。该功能为 Snowflake Cortex AI 平台提供内容安全防护层，基于 Meta Llama Guard 系列模型，通过 <code>SNOWFLAKE.CORTEX.GUARD()</code> SQL 函数对 LLM 输入和输出进行安全检测与分类，识别并过滤有害内容（暴力、仇恨言论、自残、不当内容等类别），返回安全/不安全的判断结果。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>随着 Snowflake 在 Cortex AI 上密集投入，平台上运行的 AI 工作负载正在快速增长。Guardrails GA 意味着企业现在可以在生产环境中对 Cortex AI 的每次调用都内建安全检查——这对金融、医疗、政府等受监管行业的采用至关重要。Guardrails 作为 SQL 原生函数嵌入平台，使 AI 安全不再是应用层的额外工作，而是数据平台基础设施的一部分。结合今天 Databricks 的 Data Classification GA，两大平台正在同步构建"可信 AI"的基础设施层。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <p class="empty-note">本期窗口内（04-20 08:00 ~ 04-21 08:00 CST）除 A 板块两项 GA 发布外，Databricks 同日发布了 7 个 Runtime 版本的维护更新（Bug 修复/安全补丁/性能改进），属常规维护级别，不单独列入。无其他符合准入标准的产品发布。</p>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <p class="empty-note">本期窗口内未发现符合准入标准的机构研究或关键人物原始观点。</p>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">本期窗口内未发现符合准入标准的数据平台领域投融资、财报或收购兼并事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-upcoming">预告</span> Snowflake AI Pulse 04-21 首场直播：Intelligence / Cortex Code / Cortex Agents 三线演示</h3>
+      <div class="source">来源：<a href="https://www.snowflake.com/en/ai-pulse/april-2026/" target="_blank">Snowflake AI Pulse - April 2026</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Snowflake 在今天（4 月 21 日）1:00 PM PT 举办 AI Pulse 月度系列的首场直播，将现场演示 Snowflake Intelligence（面向业务用户的 Agentic 统一平台）、Cortex Code（开发者数据探索工具）和 Cortex Agents（端到端 Agent 开发加速）。结合今日 Cortex AI Guardrails GA 以及近期 Agent Skills（Preview）、MCP Connectors（Limited Access）密集发布，Snowflake 的 Agent 生态正在快速成型。</p>
+        <p><strong>需要等待什么信号确认：</strong>直播中是否有新的 GA/Preview 功能发布；Intelligence 与 Cortex Analyst 的定位差异是否明确；MCP Connectors 是否从 Limited Access 扩大。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-followup">跟踪</span> Databricks 治理自动化三连发：从 Governed Tags 到 Data Classification，下一步是什么？</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks Release Notes - April 2026</a> / <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-classification" target="_blank">Data Classification 文档</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>4 月份 Databricks 在治理层连续推出三项 GA：Governed Tags（04-02）、Catalog/Schema 存储位置管理（04-17）、Data Classification（04-20）。三项串联形成清晰路径：先定义标签体系 → 再控制物理存储位置 → 最后用 AI 自动填充分类标签。Unity Catalog 正在从"元数据注册中心"演进为"自动化治理引擎"。</p>
+        <p><strong>需要等待什么信号确认：</strong>是否出现基于分类结果的自动化策略推荐功能；用户社区对 AI 分类准确率的反馈。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-04-21 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

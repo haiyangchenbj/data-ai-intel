@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-03-24</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .note-box {
+    background: #fff8e1;
+    border-left: 4px solid var(--orange);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: #6d4c00;
+  }
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .body p { margin-bottom: 8px; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+  .empty-note {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+    padding: 8px 0;
+  }
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+  .tag-downgrade { background: #fff3e0; color: #e65100; }
+  .tag-follow { background: #e8eaf6; color: #283593; }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-03-24 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="note-box">
+    ⚠️ 今天（周二）是 FabCon/GTC 大周之后的低新闻日。严格 24 小时窗口内一手数据平台产品发布极少。本期日报以 IBM-Confluent 收购这一此前遗漏的重大事件为主线，补充窗口内发布的行业分析和客户案例。部分条目已标注【降级】。
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>实时数据流正在从独立中间件变成企业数据平台的内置基础层</li>
+      <li>数据集成工具正从管道导向转向统一控制平面，批流复制一体化提速</li>
+      <li>企业数据建设的定位从"BI-Ready"转向"AI-Ready"，数据基座先行</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>上周 IBM 以 110 亿美元完成对 Confluent 的收购（此前日报因 FabCon/GTC 密集覆盖遗漏），本周行业分析密集涌现，核心判断一致：实时数据流正式从可选中间件升级为数据平台的内置基础设施。湖仓 + Kafka 实时流的组合将成为平台标配，Databricks 和 Snowflake 的实时数据战略面临新的竞争压力。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <p class="empty-note">严格 24 小时窗口内无符合 A 板块准入标准的已确认重大事件。本期 A 板块留空。</p>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Fivetran 被 WM New Zealand 选为 AI-Ready 数据基础设施核心方案</h3>
+      <div class="source">来源：<a href="https://www.businesswire.com/news/home/20260323461570/en/" target="_blank">BusinessWire</a>（March 23, 2026）</div>
+      <div class="body">
+        <p><strong>摘要：</strong>新西兰最大的废弃物与环境服务商 WM New Zealand (WMNZ) 选择 Fivetran 作为其 AI-Ready 数据基础设施的核心数据移动平台。WMNZ 将通过 Fivetran 自动化数据管道，将分散在多个业务系统中的运营数据集中到分析平台，为后续 AI 和分析场景提供可靠数据基础。</p>
+      </div>
+      <div class="impact"><strong>对数据平台的影响：</strong>反映出企业数据基础设施建设正从"先做 BI"转向"先为 AI 打地基"的趋势。独立数据集成工具在"AI-Ready 数据基础"定位上与云厂商内置方案的竞争正在加剧。</div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 行业分析：IBM-Confluent 收购重塑实时数据格局——"AI-Ready"标准被重新定义</h3>
+      <div class="source">来源：<a href="https://www.linkedin.com/pulse/inside-deal-ibms-11-billion-acquisition-confluent-raj-sura-zp0le/" target="_blank">LinkedIn 深度分析</a>（March 22, 2026）；<a href="https://jangwook.net/en/blog/en/ibm-confluent-realtime-data-ai-agents/" target="_blank">CTO 视角分析</a>（March 20, 2026）</div>
+      <div class="body">
+        <p><strong>核心观点：</strong>多位行业分析人士指出，IBM 收购 Confluent 不仅是基础设施扩展，更是一次战略重新定位：实时数据流从可选的中间件变成了 AI Agent 时代的必需基础设施。Confluent 的 Apache Kafka 平台服务于 6,500+ 企业、覆盖 40%+ Fortune 500，IBM 一次性获得了企业实时数据层的核心入口。此收购的真正影响在于重新定义了"AI-Ready"的标准——不再是"有数据湖就够了"，而是"必须有持续更新的实时数据流"。</p>
+      </div>
+      <div class="impact"><strong>映射到数据平台的判断：</strong>湖仓 + 实时流将成为标配组合。Databricks（Lakeflow + Spark Structured Streaming RTM）、Snowflake（Snowpipe Streaming + Dynamic Tables）都已布局，但 IBM 通过收购 Kafka 创造者直接拥有了实时层。竞争维度从"谁分析得更快"变为"谁拥有实时数据的入口"。独立数据流厂商（Redpanda、WarpStream）可能迎来市场机会窗口。</div>
+    </div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">严格 24 小时窗口内无符合 D 板块准入标准的已确认资本事件。本期 D 板块留空。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. <span class="funding-tag tag-downgrade">降级</span> IBM 完成 110 亿美元 Confluent 收购——数据流领域最大并购案（此前日报遗漏）</h3>
+      <div class="source">来源：<a href="https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents" target="_blank">IBM Newsroom</a>（March 17, 2026）；<a href="https://www.dbta.com/Editorial/News-Flashes/IBM-Completes-Acquisition-of-Confluent-Boosting-Real-Time-Data-for-the-Organization-173970.aspx" target="_blank">DBTA 分析</a>（March 23-24, 2026）</div>
+      <div class="body">
+        <p><strong>为什么降级：</strong>收购完成日期 03-17，超出 24 小时时效窗口。但这是数据平台领域近年最大并购案（$110 亿），且因 FabCon/GTC 密集覆盖导致此前全部日报遗漏。行业媒体 03-23~24 仍在发布深度分析。</p>
+        <p><strong>核心事实：</strong>IBM 以每股 $31、约 110 亿美元企业价值全现金收购 Confluent，3 月 17 日交易完成。Confluent 从纳斯达克退市，保持独立运营品牌。Day-one 集成包括：实时事件流注入 watsonx.data 湖仓、IBM Z 大机事务源头实时事件流、IBM MQ + webMethods 混合环境事件驱动自动化。</p>
+        <p><strong>为什么值得继续看：</strong>Databricks 已与 Confluent 有合作，收购后合作关系需要重新评估；IBM Confluent + watsonx.data + IBM Z 组合将如何与 Databricks/Snowflake 实时能力竞争；独立流厂商是否迎来市场机会。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. <span class="funding-tag tag-downgrade">降级</span> IBM 发布 watsonx.data integration 统一数据集成控制平面</h3>
+      <div class="source">来源：<a href="https://www.ibm.com/cn-zh/new/announcements/a-paradigm-shift-in-data-integration-is-here-introducing-ibm-watsonx-data-integration" target="_blank">IBM 官网公告</a>（2026年3月）</div>
+      <div class="body">
+        <p><strong>为什么降级：</strong>发布时间约 03-22 前后，窗口边界模糊且无明确一手发布日期确认。</p>
+        <p><strong>为什么值得继续看：</strong>将批处理、CDC 复制和实时流集成三种模式统一到同一控制平面，配合 Confluent 收购形成完整数据集成矩阵。AI 管道构建助手和设计平面与引擎解耦的架构理念值得关注。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3. <span class="funding-tag tag-follow">跟踪</span> Snowflake Project SnowWork 研究预览——自主式 AI 平台从洞察走向行动</h3>
+      <div class="source">来源：<a href="https://www.snowflake.com/en/news/press-releases/snowflake-launches-project-snowwork-bringing-outcome-driven-ai-to-every-business-user/" target="_blank">Snowflake Press Release</a>（March 18, 2026）</div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Snowflake 发布"自主式企业 AI 平台"研究预览，可自主执行多步骤业务工作流，标志着从"洞察系统"向"行动系统"的跃迁。此条在 03-23 日报中未覆盖。</p>
+        <p><strong>需要等待什么信号确认：</strong>从研究预览到 Public Preview/GA 的时间线；与 Cortex Code 和 Snowflake Intelligence 的定位分工。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.1</p>
+    <p>信息截至北京时间 2026-03-24 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

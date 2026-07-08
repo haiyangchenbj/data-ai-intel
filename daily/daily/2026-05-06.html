@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-06</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background:#f5f7fa; color:#1f2329; line-height:1.7; padding:20px; }
+  .brief { max-width:880px; margin:0 auto; }
+  h1 { font-size:22px; margin-bottom:12px; }
+  .three { background:#e8f0fe; border-radius:8px; padding:12px 16px; margin:12px 0; }
+  .three b { color:#0052D9; }
+  .verdict { background:#eef4ff; border-left:4px solid #0052D9; border-radius:8px; padding:12px 16px; margin:14px 0; }
+  hr { border:none; border-top:1px solid #e5e6eb; margin:16px 0; }
+  .section { background:#fff; border-radius:12px; padding:20px 24px; margin:16px 0; box-shadow:0 1px 4px rgba(20,40,80,.05); }
+  .section-title { font-size:17px; font-weight:700; color:#0052D9; border-bottom:2px solid #eef0f3; padding-bottom:8px; margin-bottom:12px; }
+  .section-title .badge { display:inline-block; background:#0052D9; color:#fff; width:24px; height:24px; line-height:24px; text-align:center; border-radius:6px; margin-right:8px; font-size:13px; }
+  .item { padding:12px 0; border-bottom:1px solid #f2f3f5; }
+  .item:last-child { border-bottom:none; }
+  .item h3 { font-size:15px; font-weight:600; margin-bottom:6px; }
+  .num { color:#0052D9; margin-right:6px; }
+  .meta { font-size:13px; color:#646a73; margin:4px 0; }
+  .desc { font-size:14px; color:#3c4043; margin:4px 0; }
+  .impact { background:#f0f7ff; border-radius:8px; padding:8px 12px; margin-top:8px; font-size:13px; color:#1a56db; }
+  a { color:#0052D9; text-decoration:none; } a:hover { text-decoration:underline; }
+  .wecom { font-size:12px; color:#909399; margin-top:6px; font-style:italic; }
+</style>
+</head><body><div class="brief">
+<h1>Data+AI 全球日报 | 2026-05-06</h1>
+<div class="three"><b>今日最重要的 3 点：</b><ol>
+<li>SAP同日收购Dremio+Prior Labs（&gt;10亿欧元），全面押注Iceberg湖仓架构——两大标的均与Apache Iceberg深度绑定，数据平台整合战进入新阶段</li>
+<li>dbt Labs与Fivetran签署正式合并协议（all-stock），合并后ARR逼近$600M——数据集成+Transformation统一平台格局正在形成</li>
+<li>Gartner连续第二年将Lakehouse评级为Transformational，Forrester确认"湖仓已是现代分析默认选型"——分析师机构共识评级意味着企业采购将进一步向湖仓倾斜</li>
+</ol></div>
+<div class="verdict"><strong>总判断：</strong>本周数据平台市场出现罕见密集整合，从ERP核心层到数据栈中间层，巨头均在通过收购/合并补齐能力短板，争夺AI时代的数据入口。Apache Iceberg已从技术偏好演变为产业共识，成为跨平台互操作的事实标准。</div>
+<hr>
+<div class="section"><div class="section-title"><span class="badge">A</span>Top Signals</div>
+<div class="item">
+<h3><span class="num">1</span>SAP宣布收购Dremio+Prior Labs，进击企业级AI数据平台</h3>
+<div class="meta">📎 来源：<a href="https://finance.yahoo.com/sectors/technology/articles/sap-acquires-dremio-power-enterprise-134836894.html" target="_blank">Yahoo Finance</a> / <a href="https://www.theregister.com/software/2026/05/05/sap-dives-deeper-into-iceberg-with-dremio-acquisition/5226560" target="_blank">The Register</a> / <a href="https://www.cio.com/article/4166881/sap-to-acquire-data-lakehouse-vendor-dremio.html" target="_blank">CIO</a> | 2026-05-04</div>
+<div class="desc">SAP于5月4日同日宣布两笔收购：数据湖仓平台Dremio（Apache Iceberg原生，定位"Agentic Lakehouse"）及表格基础模型公司Prior Labs（专注Tabular Foundation Model）。总金额超10亿欧元（具体未披露），均待监管审批，预计2026 Q3完成交割。收购完成后，Dremio将成为SAP Business Data Cloud的核心引擎，使SAP Business Data Cloud升级为Iceberg-native企业湖仓，实现SAP与非SAP数据的统一访问，供企业直接在受治理数据上构建AI Agent。SAP此前主要依赖Databricks提供集成能力，此次收购标志着其战略重心转向自建。</div>
+<div class="impact"><strong>影响判断：</strong>这是继Snowflake收购Snowflake Intelligence、Databricks收购Neon之后，头部厂商在AI数据入口的又一次重大卡位。Iceberg生态价值链全面看涨。值得关注的是，SAP此前与Databricks存在合作伙伴关系，此次收购可能动摇Databricks在SAP生态中的地位。</div>
+<div class="wecom">企微摘要：SAP以&gt;10亿欧元同日收购Dremio（Agentic Lakehouse）和Prior Labs（表格基础模型），将Business Data Cloud升级为Iceberg-native企业湖仓，统一SAP+非SAP数据入口供AI Agent直接调用。Databricks不再是唯一集成选项。</div>
+</div>
+<div class="item">
+<h3><span class="num">2</span>dbt Labs与Fivetran签署正式合并协议，合并后ARR逼近$600M</h3>
+<div class="meta">📎 来源：<a href="https://www.getdbt.com/community/join-the-community/" target="_blank">dbt Labs</a> / <a href="https://aitech365.com/data-management/fivetran-and-dbt-labs-join-forces-to-define-open-data-standards/" target="_blank">AiTech365</a> | 2026-05</div>
+<div class="desc">dbt Labs与Fivetran于本周签署确定性合并协议（all-stock deal）。合并后：George Fraser（Fivetran CEO）任统一公司CEO，Tristan Handy（dbt Labs CEO）任Co-founder &amp; President；合并ARR逼近$6亿美元。官方定位为"Open Data Standards"联盟。</div>
+<div class="impact"><strong>影响判断：</strong>数据集成（ELT）+ 数据转换（dbt）合并为统一平台，将对Fivetran/dbt Cloud的竞争对手（Matillion、Airbyte等）形成显著竞争压力，同时也为Databricks、Snowflake等厂商的生态策略带来变数——合并后平台可能更倾向于自建而非依赖云厂商的集成层。</div>
+<div class="wecom">企微摘要：dbt Labs与Fivetran正式签署合并协议（all-stock），合并后年 ARR 约$600M，Fivetran CEO George Fraser掌舵。数据集成+Transformation合体平台将挤压中型独立工具，并给Databricks/Snowflake生态策略带来新变数。</div>
+</div>
+<div class="item">
+<h3><span class="num">3</span>Gartner 2026年MQ将Lakehouse升至Transformational，Atlan入选Leader</h3>
+<div class="meta">📎 来源：<a href="https://www.bilytica.com/blog/gartner-2026-magic-quadrant-data-engineering-lakehouse/" target="_blank">Bilytica</a> / <a href="https://atlan.com/newsroom/atlan-named-leader-gartner-magic-quadrant-data-analytics-governance/" target="_blank">Atlan</a> | 2026-04-23</div>
+<div class="desc">Gartner于4月23日发布2026 Cloud DBMS &amp; Data Engineering Magic Quadrant，连续第二年将Lakehouse架构从"High-Benefit"升级至Transformational级别。同期，Gartner将Atlan评为2026 Data &amp; Analytics Governance Platforms MQ的Leader——Atlan的Metadata Lakehouse on Apache Iceberg架构获得认可。 ---</div>
+<div class="impact"><strong>影响判断：</strong>Transformational评级将显著影响企业CIO的数据平台采购决策，Iceberg元数据治理（Metadata Lakehouse）赛道进入主流采购视野。对国内厂商而言，Gartner的评级信号对向海外拓展业务具有参考价值。</div>
+<div class="wecom">企微摘要：Gartner 2026 MQ将Lakehouse升至最高评级"Transformational"（连续第二年），Atlan凭Iceberg Metadata Lakehouse入选Governance Leader。Iceberg已成企业数据治理选型的关键锚点。</div>
+</div>
+</div>
+<div class="section"><div class="section-title"><span class="badge">B</span>Product &amp; Tech</div>
+<div class="item">
+<h3><span class="num">1</span>Snowflake Interactive Analytics发布春季4项GA功能</h3>
+<div class="meta">📎 来源：<a href="https://www.snowflake.com/en/engineering-blog/snowflake-interactive-analytics-spring-2026-updates/" target="_blank">Snowflake Engineering Blog</a> | 2026-05-04</div>
+<div class="desc">Snowflake于5月4日发布Interactive Analytics四项正式GA功能：Auto-suspend、Auto-resume、Search Optimization、Storage Lifecycle Policies，均已在AWS、Azure、GCP全面可用，主要针对Interactive Tables/Warehouses的生产级部署优化。</div>
+<div class="impact"><strong>影响判断：</strong>Snowflake正加速从传统数据仓库向实时交互式分析平台迁移，四项GA标志Interactive Analytics已具备生产级稳定性，将对Redshift Spectrum、BigQuery Interactive等竞品形成直接竞争。</div>
+<div class="wecom">企微摘要：Snowflake Interactive Analytics四项功能正式GA（Auto-suspend/resume/Search优化/存储生命周期），三云可用，交互式实时分析进入生产稳定期。</div>
+</div>
+<div class="item">
+<h3><span class="num">2</span>Google Cloud预览BigQuery与Iceberg引擎读写互操作能力</h3>
+<div class="meta">📎 来源：<a href="https://cloud.google.com/blog/products/data-analytics/improved-interoperability-for-your-apache-iceberg-lakehouse/" target="_blank">Google Cloud Blog</a> | 2026-05（当周）</div>
+<div class="desc">Google Cloud在Apache Iceberg Summit期间宣布BigQuery Iceberg读写互操作能力预览，支持Trino、Spark等Iceberg兼容引擎直接访问BigQuery管理的Iceberg表，基于Google托管的Iceberg REST Catalog实现。</div>
+<div class="impact"><strong>影响判断：</strong>BigQuery加入Iceberg互操作阵营，"数据不动、查询跑"的多引擎湖仓时代正在接近现实，将削弱厂商锁定效应，利好企业在多云环境下的灵活架构选择。</div>
+<div class="wecom">企微摘要：Google Cloud在Iceberg Summit预览BigQuery Iceberg读写互操作，Trino/Spark等引擎可直接访问BigQuery托管表，多引擎湖仓互操作再进一步。</div>
+</div>
+<div class="item">
+<h3><span class="num">3</span>Apache Arrow-rs 58.2.0正式发布，Arrow生态稳定性再获验证</h3>
+<div class="meta">📎 来源：<a href="https://dev.to/alexmercedcoder/apache-data-lakehouse-weekly-april-30-may-6-2026-1ibl" target="_blank">DEV Community</a> | 2026-05-02</div>
+<div class="desc">Apache Arrow-rs 58.2.0于5月2日vote clean close正式发布（4月28日发起vote）。Apache Polars发布vote同步关闭，进入正式发布周期。</div>
+<div class="impact"><strong>影响判断：</strong>Arrow-rs稳定发布意味着Rust生态的数据列式互操作基础设施成熟度提升，将加速数据平台底层技术栈向多语言互操作方向收敛。</div>
+<div class="wecom">企微摘要：Apache Arrow-rs 58.2.0正式发布vote通过，Arrow生态稳定性持续验证，多语言列式互操作基础进一步夯实。</div>
+</div>
+<div class="item">
+<h3><span class="num">4</span>Palantir Foundry新增GPT-5.5 from Azure及OSDK React支持</h3>
+<div class="meta">📎 来源：<a href="https://www.palantir.com/docs/foundry/release-notes" target="_blank">Palantir Release Notes</a> | 2026-05-05</div>
+<div class="desc">Palantir于5月5日更新：AIP新增GPT-5.5 from Azure（US/EU georestricted enrollments及OpenAI可用）；OSDK新增@osdk/react库支持React-first应用开发范式。 ---</div>
+<div class="impact"><strong>影响判断：</strong>Palantir通过OSDK向现代前端开发范式靠拢，降低在Palantir平台上构建AI应用的门槛，将与Databricks Compound AI、Snowflake Cortex Agent形成直接竞争。</div>
+<div class="wecom">企微摘要：Palantir AIP支持GPT-5.5（Azure/OpenAI双渠道），OSDK新增React支持，降低AI应用构建门槛，与Databricks/Snowflake Agent平台竞争加剧。</div>
+</div>
+</div>
+<div class="section"><div class="section-title"><span class="badge">C</span>Views &amp; Research</div>
+<div class="item">
+<h3><span class="num">1</span>Forrester Q1 2026 Data Lakehouse Landscape：湖仓已成默认选型</h3>
+<div class="meta">📎 来源：<a href="https://www.dremio.com/blog/what-forresters-2026-data-lakehouse-landscape-signals-about-the-market-and-where-dremio-fits/" target="_blank">Dremio Blog</a> / <a href="https://www.singlestore.com/blog/data-lakehouses-are-being-redefined-by-real-time-expectations" target="_blank">SingleStore Blog</a> | 2026-Q1</div>
+<div class="desc">Forrester在Q1 2026 Data Lakehouse Landscape报告中明确：湖仓架构已成为现代分析和AI工作负载的默认选择，驱动因素包括简化数据架构、控制成本、支持现代分析和AI工作负载。报告同时指出实时化期望正在重新定义湖仓边界。</div>
+<div class="impact"><strong>影响判断：</strong>Forrester的定性确认将进一步加速企业从传统数仓向湖仓的迁移决策周期，对仍在投资传统数仓的厂商形成压力。</div>
+<div class="wecom">企微摘要：Forrester Q1 2026确认湖仓已成现代分析默认选型，实时化期望正在重新定义湖仓边界，企业迁移决策将加速。</div>
+</div>
+<div class="item">
+<h3><span class="num">2</span>Apache Iceberg 2026：Column-level Updates成为下一个主战场</h3>
+<div class="meta">📎 来源：<a href="https://www.linkedin.com/posts/siddharth-srivastava2450_dataengineering-apacheiceberg-lakehouse-activity-7445436833662160896-1_8L" target="_blank">LinkedIn</a> | 2026-05（近周）</div>
+<div class="desc">Apache Iceberg社区2026年前沿方向已从"ACID on Object Storage"转向三大领域，最关键的是Column-level Updates：现有Iceberg实现在宽ML特征表（3000+列）更新单列时需rewrite全部列，写放大~2999倍；新提案将实现精确到列级别的手术式写入，使特征存储在湖仓上具备实践可行性。 ---</div>
+<div class="impact"><strong>影响判断：</strong>若Column-level Updates落地，Iceberg将从分析型存储升级为ML特征工程的核心基础设施，进一步压缩ML平台独立存在的必要性，利好Databricks、Snowflake等已深度集成Iceberg的厂商。</div>
+<div class="wecom">企微摘要：Iceberg 2026主战场转向Column-level Updates（列级手术式写入），解决ML特征表写放大的2999倍问题，若落地将压缩ML平台独立存在必要性。</div>
+</div>
+</div>
+<div class="section"><div class="section-title"><span class="badge">D</span>Capital &amp; Corporate</div>
+<div class="item">
+<h3><span class="num">1</span>DeepInfra完成$107M Series B，聚焦生产级AI推理基础设施</h3>
+<div class="meta">📎 来源：<a href="https://au.finance.yahoo.com/news/deepinfra-closes-107m-series-b-160000545.html" target="_blank">Yahoo Finance</a> | 2026-05-04</div>
+<div class="desc">DeepInfra于5月4日宣布完成$107M Series B融资，目标为扩展AI推理云和全球容量。AI需求正从模型训练向生产级推理规模转移，推理基础设施成为新投资热点。</div>
+<div class="impact"><strong>影响判断：</strong>推理基础设施赛道（与数据平台关联度：数据访问层的LLM调用）进入资本加速期，DeepInfra若与数据平台集成将强化RAG场景的数据访问能力。</div>
+<div class="wecom">企微摘要：DeepInfra获$107M Series B，押注生产级AI推理云，AI需求正从训练向推理规模转移，推理数据访问层基础设施值得关注。</div>
+</div>
+<div class="item">
+<h3><span class="num">2</span>Redpine获$6.8M种子轮，解决AI数据访问缺口</h3>
+<div class="meta">📎 来源：<a href="https://inforcapital.com/news/swedish-redpine-secures-68-million-seed-to-tackle-ais-data-gap/" target="_blank">InforCapital</a> | 2026-05-02</div>
+<div class="desc">瑞典AI数据访问平台Redpine获NordicNinja、Node.vc、Luminar Ventures等$6.8M种子轮融资，专注解决AI应用获取高质量企业数据的问题（Data Gap for AI）。</div>
+<div class="impact"><strong>影响判断：</strong>AI数据访问层的基础设施创新仍获资本关注，与Databricks/Snowflake的数据治理能力形成互补或竞争关系。</div>
+<div class="wecom">企微摘要：Redpine获$6.8M种子轮瞄向AI数据访问缺口，AI应用获取高质量企业数据仍是未被充分解决的问题。</div>
+</div>
+<div class="item">
+<h3><span class="num">3</span>Panthalassa获$140M Series B：Peter Thiel押注海洋漂浮数据中心</h3>
+<div class="meta">📎 来源：<a href="https://forklog.com/en/peter-thiel-invests-140-million-in-ocean-based-data-centers/" target="_blank">ForkLog</a> | 2026-05-05</div>
+<div class="desc">Panthalassa完成$140M Series B（Peter Thiel领投，John Doerr跟投），估值约$10亿，打造波浪能驱动的自主漂浮数据中心。 ---</div>
+<div class="impact"><strong>影响判断：</strong>算力基础设施的能源多元化探索持续吸引关注，对AI数据中心选址和能源策略有长期参考价值，与数据平台的计算成本结构间接相关。</div>
+<div class="wecom">企微摘要：Peter Thiel领投$140M押注海洋漂浮数据中心，能源多元化探索为AI数据中心选址和成本策略提供长期参考。</div>
+</div>
+</div>
+<div class="section"><div class="section-title"><span class="badge">E</span>Watchlist</div>
+<div class="item">
+<h3><span class="num">1</span>【跟踪】dbt Launch Desk Live（5月20日）：dbt新功能发布预告</h3>
+<div class="meta">📎 来源：<a href="https://www.getdbt.com/events/dbt-hands-on-lab-anz" target="_blank">dbt Labs</a> | 待办</div>
+<div class="wecom">企微摘要：dbt 5月20日Launch Desk发布路线图，结合Fivetran合并背景，dbt Cloud 2.0方向值得关注。</div>
+</div>
+<div class="item">
+<h3><span class="num">2</span>【跟踪】Palantir GPT-5.5部署跟踪</h3>
+<div class="meta">📎 来源：<a href="https://www.palantir.com/docs/foundry/release-notes" target="_blank">Palantir</a> | 持续</div>
+<div class="wecom">企微摘要：Palantir AIP支持GPT-5.5双渠道，持续跟踪企业级数据治理场景下的性能与合规表现。</div>
+</div>
+<div class="item">
+<h3><span class="num">3</span>【跟踪】Confluent Cloud for Flink + dbt集成落地</h3>
+<div class="meta">📎 来源：<a href="https://docs.confluent.io/cloud/current/release-notes.html" target="_blank">Confluent</a> | 持续</div>
+<div class="wecom">企微摘要：Confluent Flink+dbt集成持续推进，流批一体+数据转换整合趋势深化，dbt+Fivetran合并可能重塑流数据平台定位。</div>
+</div>
+</div>
+</div></body></html>

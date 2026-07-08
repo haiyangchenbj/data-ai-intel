@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-05</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Empty section note */
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 12px 0;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-06-05 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>AI Agent正在重塑数据库基础设施的估值逻辑，Postgres生态成为最大受益者</li>
+      <li>开放表格式互操作性进入生产级阶段，Catalog成为新的竞争焦点</li>
+      <li>数据平台与前沿模型厂商的深度融合正在加速，数据不出平台成为标配</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Agentic基础设施正从概念验证快速进入资本密集期，数据平台厂商围绕开放表格式、AI治理和Agent运行时的三向布局，将在下半年决定企业AI数据栈的采购优先级。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Supabase $500M Series F估值$105亿，Agentic基础设施成为独立品类</h3>
+      <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/supabase-raises-500m-at-10-5b-to-accelerate-lead-in-agentic-infrastructure-302791787.html" target="_blank">PR Newswire</a></div>
+      <div class="body">
+        <p>Supabase宣布完成$500M Series F融资，投后估值$105亿，由GIC领投，Accel、Stripe、Salesforce Ventures等参投。距离去年10月$5B估值的Series E仅7个月，累计融资超$10亿。CEO Paul Copplestone披露，用户基数自E轮以来翻倍，数据库数量同比增长600%，Claude Code是今年最大贡献者，Agents现已部署平台上大多数数据库。同日发布Multigres预览版（开源Postgres水平扩展层）。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>Supabase的估值翻倍速度和Agent部署占比揭示了一个结构性转变：Postgres正在从传统关系型数据库重新定位为AI原生应用的默认基础设施。当Agents成为数据库的主要创建者，数据平台的用户画像、性能模型和治理逻辑都将发生根本变化。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. Databricks Unity Catalog Iceberg全面GA，开放湖仓互操作性达新里程碑</h3>
+      <div class="source">来源：<a href="https://www.databricks.com/blog/unity-catalog-and-next-era-apache-icebergtm" target="_blank">Databricks Blog</a></div>
+      <div class="body">
+        <p>Databricks宣布Unity Catalog中Managed Iceberg、Iceberg v3、Foreign Iceberg全面GA，同时推出Cross-engine ABAC（Beta）、Delta Sharing向Iceberg客户端开放共享（GA）、以及新增Google Cloud Lakehouse和Palantir的catalog federation连接器。Iceberg v3支持deletion vectors、VARIANT类型和row tracking，且适用于managed、foreign和UniForm-enabled表。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是目前业界最全面的Iceberg catalog能力集——从表管理、跨引擎治理到安全共享形成完整闭环。当Snowflake在Summit主打Iceberg互操作时，Databricks以Unity Catalog的"五维能力"（开放API、联邦、跨引擎治理、零拷贝共享、AI优化）回应，开放表格式的竞争已从"支持与否"进入"治理深度"阶段。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3. Snowflake与Anthropic深化合作，Claude直接集成Cortex AI平台</h3>
+      <div class="source">来源：<a href="https://www.thelec.net/news/articleView.html?idxno=10984" target="_blank">TheLec</a></div>
+      <div class="body">
+        <p>Snowflake在Summit 26期间宣布与Anthropic扩大合作，Claude模型直接集成至Snowflake Cortex AI平台，实现数据不出平台即可调用前沿模型。Snowflake Intelligence个人工作Agent和Cortex Code编码Agent均基于Claude构建。Snowflake同时成为Anthropic Claude Marketplace六个首发合作伙伴之一，客户可将Anthropic现有承诺直接用于Snowflake AI服务。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是"数据主权+前沿模型"组合的重要落地案例。企业AI adoption的最大障碍之一是敏感数据外泄风险，Snowflake通过将Claude引入自身治理边界，证明了数据平台可以既是存储层又是模型推理层。这种"平台内闭环"模式很可能成为受监管行业的默认架构。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Cloudera采用Apache Polaris并贡献Ranger授权插件</h3>
+      <div class="source">来源：<a href="https://aapnews.aap.com.au/aapreleases/globenewswire9731758" target="_blank">Globe Newswire</a></div>
+      <div class="body">
+        <p>Cloudera在Snowflake Summit 26上宣布采用Apache Polaris作为其开放数据湖仓架构的一部分，并向Polaris 1.5贡献Apache Ranger authorizer插件（Beta）。该集成使企业能够在分析和AI引擎之间安全访问和共享受治理数据，同时保持集中化治理和运营控制。Cloudera的Data Readiness Index 2026显示，79%的组织因无法跨环境访问100%所需数据而受阻。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>Cloudera对Polaris的采纳标志着开放catalog标准正在获得传统Hadoop生态的认可。Ranger插件的贡献尤其重要——它填补了Polaris在企业级细粒度权限管理上的空白，使开放湖仓架构在受监管行业的可行性大幅提升。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. OneStream推出Snowflake连接器，财务智能直通数据云</h3>
+      <div class="source">来源：<a href="https://finance.sina.com.cn/stock/usstock/summary/2026-06-04/doc-iniafrts0471800.shtml" target="_blank">新浪财经</a></div>
+      <div class="body">
+        <p>OneStream在6月4日的世界巡回活动上发布全新Snowflake连接器，作为其连接中心框架的新增功能。该连接器将管控的财务背景信息引入Snowflake数据生态系统，确保AI和分析计划基于经过认证、符合财务标准的智能运行。OneStream研究显示，去年47%的高管用不准确或不完整数据做重大决策，62%从多个不协调系统获取AI数据。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>这是SaaS财务规划与云数据平台深度集成的典型案例。OneStream的切入点揭示了企业AI落地的真实瓶颈：不是缺少模型，而是缺少"经过财务治理认证"的数据管道。FP&A（财务规划与分析）数据的质量和可信度，正成为企业级AI应用的前提条件。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3. Databricks 6月产品更新：Excel回写、Genie Code自动审批</h3>
+      <div class="source">来源：<a href="https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/june" target="_blank">Microsoft Learn</a></div>
+      <div class="body">
+        <p>Azure Databricks 6月4日发布多项更新：Excel Add-in支持将数据从Microsoft Excel直接写回Unity Catalog表；Genie Code新增auto-approve模式，AI分类器自动审批工具动作；Genie产品将于7月6日转为按需计费模式，每人每月150 DBU免费额度。此外，AI Search（原Vector Search）6月1日更名，支持无需向量的全文检索索引。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>Excel回写降低了业务用户参与数据治理的门槛，让"最后一英里"的数据修正不再需要工程师介入。Genie Code的auto-approve则反映了Agent权限模型的演进方向：从"每次确认"到"分级自动"，但Databricks明确标注这不是安全边界——显示了Agent治理仍处于探索期。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="empty-note">今日无窗口内确认的合格分析师观点与研究。宁缺毋滥。</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <div class="empty-note">今日无独立于A板块的合格投融资事件。宁缺毋滥。</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-ma">降级</span> 国家数据局：2026年为"数据要素价值释放年"，将推出行业高质量数据集建设行动方案</h3>
+      <div class="source">来源：<a href="https://www.cs.com.cn/xwzx/01/2026/06/01/detail_2026060110015185.html" target="_blank">中国证券报</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>国家数据局局长刘烈宏在5月31日世界智能产业博览会上明确，2026年将推出《关于推进行业高质量数据集建设行动的实施方案》，聚焦强基扩容、标注攻坚、提质增效等六大行动。工信部与国家数据局近期联合印发"模数共振"行动通知，目标到2026年底基本形成"数据-模型-场景应用"良性互促循环。</p>
+        <p><strong>需要等待什么信号确认：</strong>正式实施方案的发布时间表、首批试点行业名单、与现有数据平台厂商的具体合作机制。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-ma">降级</span> Gartner：流程智能平台正成为企业AI落地的"新底座"</h3>
+      <div class="source">来源：<a href="https://www.163.com/dy/article/KUGDNPRP05381Q12.html" target="_blank">163.com</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Gartner 5月发布的《Magic Quadrant for Process Intelligence Platforms》将流程智能平台定义为融合开发与运行工具的软件方案，可为AI Agent提供运营上下文。报告判断流程挖掘正从单一分析工具走向企业运营控制塔，这一赛道正在从探索性细分领域变为主流企业技术。</p>
+        <p><strong>需要等待什么信号确认：</strong>流程智能平台与数据平台（Snowflake/Databricks/Fabric）的具体集成案例、中国市场的本土化落地进展、该MQ中厂商的后续生态合作动态。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-05 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

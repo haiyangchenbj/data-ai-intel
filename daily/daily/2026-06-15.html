@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-15</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-06-15 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>Agent 工程从单工具竞争进入系统化编排阶段，跨 Agent 组合与治理成为独立能力层</li>
+      <li>湖仓架构正在吸收专用数据引擎的核心能力，地理空间 SQL 不再需要独立数据库</li>
+      <li>企业级韧性从附加功能升级为平台标配，灾备与存储治理自动化成为核心竞争力</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Agent-Native 架构正从应用层向平台层渗透，数据平台竞争已从存算性能转向 Agent 时代的运行环境。跨 Agent 编排、能力融合和生产就绪成为本周的核心信号，今日开幕的 Data+AI Summit 预计将加速这一趋势。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 开源 Omnigent：Agent 元排布框架诞生</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/introducing-omnigent-meta-harness-combine-control-and-share-your-agents">Databricks Blog</a><br><b>摘要：</b> Databricks 以 Apache 2.0 协议开源 Omnigent——一个"元排布"框架，在 Claude Code、Codex、Pi 等终端编码 Agent 及 OpenAI Agents SDK 之上提供统一接口层。Omnigent 围绕三个核心能力设计：组合（一行代码切换底层 Agent）、管控（有状态的安全策略——如 Agent 安装 npm 包后拦截 git push、累计 LLM 费用超 $100 暂停运行）和协作（通过 URL 实时共享 Agent 会话）。框架内置 OS 沙箱 Omnibox，可拦截并转换网络请求以保护凭证。<br><b>为什么对数据平台重要：</b> 数据平台正在从服务人类分析师转向服务 Agent 集群。Omnigent 的跨 Agent 治理模式（成本限额、权限沙箱、动态安全策略）意味着数据平台的治理层未来需要提供 Agent 运行时级别的访问控制能力。Databricks 此举标志着数据平台厂商从"为 Agent 提供数据"进一步延伸到"为 Agent 提供运行环境"。</div>
+</div>
+<div class="item">
+    <h3>Databricks Spatial SQL GA：地理空间能力原生进入湖仓</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/geospatial-unbounded-spatial-sql-ga-aibi-maps-delta-sharing-and-iceberg-v3">Databricks Blog</a><br><b>摘要：</b> Databricks Spatial SQL 正式 GA，引入 GEOMETRY 原生数据类型、90+ OGC 标准 ST_* 空间函数、AI/BI 仪表盘内置地图渲染。空间数据现已支持 Delta Sharing 跨组织共享和 Iceberg v3 表互操作。相比 Public Preview，布尔集合操作性能提升 2 倍，SpatialBench 查询整体提升 20% 至 15 倍。Databricks 承诺将 GEOMETRY/GEOGRAPHY 类型贡献至 Apache Spark 4.2（预计 2026 年夏季）。<br><b>为什么对数据平台重要：</b> 企业处理地理空间数据长期依赖"空间数据库 + 数仓 + 地图工具"的异构工具栈，Spatial SQL GA 将其统一到湖仓的同一治理框架下。湖仓架构正在系统性吸收专用数据引擎的核心能力，过去割裂的查询引擎品类边界进一步消解。</div>
+</div>
+<div class="item">
+    <h3>Databricks 企业级韧性三连发：灾备、合规与存储治理进入生产级</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june">Databricks June 2026 Release Notes</a><br><b>摘要：</b> 6 月 12 日集中发布：Managed Disaster Recovery Public Preview（跨区域 Unity Catalog 元数据和托管表数据复制、故障切换稳定 URL）、Mission Critical 工作区附加组件 Public Preview（单费率解锁 DR + 增强安全合规 ESC）、Auto-TTL 自动行删除 GA（基于 DATE/TIMESTAMP 列自动清理 Delta/ Iceberg/Streaming 表数据）、分区表转 Liquid Clustering GA（ALTER TABLE 在线转换，最小化读写停机）。<br><b>为什么对数据平台重要：</b> 灾备、合规增强和存储生命周期自动化正在从自建运维能力变为平台原生功能。三线同步推进标志着 Databricks 系统性地瞄准受监管行业和关键任务负载——这些过去是传统数据仓库和大型机厂商的壁垒市场。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake Iceberg Azure ADLS Gen2 正式 GA：多云互操作补齐关键拼图</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-06-12-iceberg-azure-dls-external-volumes-ga">Snowflake Release Notes</a><br><b>摘要：</b> Snowflake 宣布外部管理的 Apache Iceberg 表在 Azure Data Lake Storage Gen2 上正式 GA。用户可通过外部 Catalog 凭证或 External Volume 连接 Azure 存储，实现 Snowflake 与 Azure 上 Unity Catalog 等外部 Catalog 之间的 Iceberg 双向读写。<br><b>对数据平台的影响：</b> 继 AWS S3 之后，这是 Snowflake 开放互操作路线补齐 Azure 存储的关键一步。对于在 Azure 上部署 Databricks Unity Catalog 同时使用 Snowflake 的企业，多云 Iceberg 湖仓架构的完整读写路径现已打通。</div>
+</div>
+<div class="item">
+    <h3>Databricks AI Runtime CLI Beta：GPU 训练走向命令行与 CI/CD</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june">Databricks June 2026 Release Notes</a><br><b>摘要：</b> Databricks 推出 AI Runtime CLI（`air`）Beta 版，允许从本地终端提交和管理 AI Runtime Serverless GPU 上的分布式训练任务，无需打开 Notebook。支持命令行交互式开发和生产级 CI/CD 集成。<br><b>对数据平台的影响：</b> GPU 训练工作负载从 Notebook/GUI 界面扩展到 CLI，使数据工程和 ML 工程团队能将模型训练纳入标准 DevOps 流水线，降低了 ML 基础设施与数据平台之间的工程摩擦。</div>
+</div>
+<div class="item">
+    <h3>Databricks ai_extract / ai_classify GA：AI 文档理解内建为 SQL 函数</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june">Databricks June 2026 Release Notes</a><br><b>摘要：</b> Databricks 宣布 ai_extract（从文本和文档中提取结构化数据，支持嵌套对象、数组、类型验证、引文溯源和置信度评分）和 ai_classify（按自定义标签分类文本，新增多标签分类支持）正式 GA。两个函数均为 SQL 内建调用，无需部署独立 AI 服务。<br><b>对数据平台的影响：</b> AI 能力从外部模型 API 调用下沉为数据平台的 SQL 内建函数，意味着数据工程师可直接在数据管道中完成文档理解和自动分类，减少了对独立 AI 微服务和跨系统数据集成的依赖。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>InfoQ 分析：Snowflake Summit 揭示 Agentic Enterprise 的信任基础设施需求</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.sina.com.cn/wm/2026-06-12/doc-iniccspq1857021.shtml">InfoQ</a><br><b>核心观点：</b> Snowflake Summit 2026 Platform Keynote 贯穿一条清晰主线——当 Agent 开始进入企业流程，平台必须同时解决数据、上下文、权限、治理和可审计性问题。Snowflake 联创 Benoit Dageville 现场表示"最好的 Agent 平台必须建立在最好的数据平台之上"，而 Horizon Context、Agent Identity 和 Data Movement Policy 的发布正是这一判断的产品化落地。<br><b>映射到数据平台的判断：</b> 企业 AI 的可信度最终要回到数据平台本身。Snowflake 构建的"Agent 控制平面"表明，数据平台的职责正在从存储和计算层扩展到 Agent 运行时的治理基础设施——语义一致性、身份认证和数据流转策略成为新必需品。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日窗口中无符合准入标准的独立投融资事件。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】Databricks Data + AI Summit 2026 今日开幕</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/dataaisummit">Databricks</a><br><b>为什么值得继续看：</b> 全球最大数据与 AI 会议，6/15-18 旧金山 Moscone Center，预计 30,000+ 现场参会者、800+ 场次。Keynote 阵容包括 Databricks 四位联创及 Satya Nadella（预录）、Greg Brockman（OpenAI）。历年 DAIS 均有重大产品发布，今年主题为"Build Apps and Agents That Work"。<br><b>需要等待什么信号确认：</b> 开幕式 Keynote 具体产品发布（北京时间 6/16 凌晨）；Lakebase、Genie、Unity Catalog、Agent Bricks 等核心产品是否有重大版本更新；是否发布新的开源项目或开放标准。</div>
+</div>
+<div class="item">
+    <h3>【降级】工信部发布 AI+信息通信三年实施意见，首次纳入网络智能体</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.cnr.cn/jingji/ycbd/20260610/t20260610_527655762.shtml">央广网</a><br><b>为什么值得继续看：</b> 6/10 发布超出本期时效窗口，但首次将"网络智能体""通感算智一体化"纳入国家级产业政策，提出到 2028 年形成 30+ 高价值典型场景、城域算力 1ms 时延圈覆盖率 ≥75%，对数据基础设施和算力网络布局有直接牵引作用。<br><b>需要等待什么信号确认：</b> 配套实施细则和资金安排；三大运营商和云厂商的具体落地动作；是否对数据平台厂商产生采购拉动。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Iceberg v3 多引擎生态扩展进度分化，Trino/DuckDB 支持仍待补课</h3>
+    
+    <div class="body"><b>来源：</b> 综合社区动态<br><b>为什么值得继续看：</b> Snowflake Summit 期间 Iceberg v3 正式 GA（6/2），Databricks 在 5/21 实现 Managed Iceberg + v3 全面 GA，Hudi 1.2.0 新增 Native Iceberg 格式支持。Iceberg v3 正从双雄独占快速扩展，但 Trino 和 DuckDB 的 v3 特性（Deletion Vectors、Variant 类型）支持进度不同步，是生态成熟度的关键瓶颈。<br><b>需要等待什么信号确认：</b> Trino Iceberg 连接器 v3 正式支持的版本号和时间窗口；DuckDB Iceberg 扩展对 v3 Deletion Vectors 和 Variant 类型的支持状态；Paimon 对 Iceberg v3 互操作的明确路线图。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-15 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

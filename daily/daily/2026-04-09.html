@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-09</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Empty section */
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Watchlist tag */
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+    background: #fff3e0;
+    color: #e65100;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-09 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台运行时迭代开始以流处理可恢复性和模式灵活性为核心演进方向</li>
+      <li>安全治理从粗粒度令牌管控走向 API 级别的最小权限控制</li>
+      <li>流式数据摄取的可观测性能力从黑盒走向生产级错误追踪</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台的基础设施层正在同步强化两个维度：向下，运行时和流引擎的容错与恢复能力持续提升；向上，安全治理和可观测性的粒度持续细化。这两个方向的交汇点是生产环境的可靠性工程。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <p class="empty-note">今日窗口内无符合 A 板块准入标准的重大战略事件。窗口内信息集中在产品版本更新层面，归入 B 板块。</p>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks Runtime 18.2（Beta）发布：Spark 4.1.0 驱动，Structured Streaming 支持倒带重放</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks on AWS Release Notes - April 2026</a></div>
+      <div class="body">
+        <p>Databricks 4 月 8 日发布 Runtime 18.2（Beta），由 Apache Spark 4.1.0 和 Delta Lake 4.1.0 驱动。关键更新包括：Structured Streaming 支持倒带和重放（从流的较早点重新处理数据以从故障中恢复）、Delta 表原生支持 NullType (VOID) 列、Unity Catalog 强制执行 SQL UDF 依赖验证以防绕过访问控制、AWS SDK v1 依赖 shading 为 v2 迁移做准备。ML 版同步发布，包含 PyTorch 2.9.0、CUDA 12.9、Transformers 4.57.1 等。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>Structured Streaming 倒带重放是实时数据管道工程的关键能力缺口补齐——此前从模式变更、数据格式错误中恢复通常需要完全重置状态，现在可以精确回溯至故障点重新处理。Unity Catalog UDF 依赖验证的强制执行表明 Databricks 正在系统性收紧治理层的安全边界。AWS SDK v1 shading 预示着未来版本将全面切换至 v2，使用旧 SDK 的用户应提前准备迁移。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. Databricks 作用域个人访问令牌（Scoped PAT）正式 GA</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks on AWS Release Notes - April 2026</a></div>
+      <div class="body">
+        <p>Databricks 4 月 8 日宣布作用域个人访问令牌（Scoped PAT）正式 GA。用户现在可以将 PAT 限制为特定的 API 操作，而非此前的全权限令牌，实现最小权限原则（Principle of Least Privilege）。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>对于在 CI/CD 管道、自动化脚本和第三方集成中广泛使用 PAT 的数据团队，作用域限制意味着即使令牌泄露，攻击面也被限定在预设的 API 范围内。这是 Databricks 安全治理体系从"粗粒度"向"细粒度"演进的标志性一步，与企业安全合规要求（SOC 2、HIPAA 等）的对齐度显著提升。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3. Snowflake Snowpipe Streaming 错误日志正式 GA</h3>
+      <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/new-features" target="_blank">Snowflake Release Notes</a></div>
+      <div class="body">
+        <p>Snowflake 4 月 8 日宣布 Snowpipe Streaming 错误日志功能正式 GA。该功能为 Snowpipe Streaming 引入结构化的错误日志记录能力，使数据工程团队能够追踪和诊断流式摄取过程中的错误。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>Snowpipe Streaming 是 Snowflake 实时数据摄取的核心通道，此前流式加载过程中的错误定位依赖间接手段。错误日志 GA 意味着 Snowflake 的流式摄取进入生产级可观测性阶段，对于构建关键业务实时管道的团队，故障排查和 SLA 保障能力获得实质性提升。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <p class="empty-note">今日窗口内无符合准入标准的机构研究或关键人物观点。</p>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">今日窗口内无符合准入标准的投融资、财报或收购兼并事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag">跟踪</span>Databricks Runtime 版本演进：Spark 4.1 生态成熟度与 AWS SDK v2 迁移窗口</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/runtime/18.2" target="_blank">Databricks Runtime 18.2 Release Notes</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Runtime 18.2 中 AWS SDK v1 被 shading 是 v2 全面切换的前奏。依赖旧 SDK 的自定义代码（如直接引用 AWS SDK v1 类的 Spark 作业）将在后续版本中断。同时 Spark 4.1.0 作为 Apache Spark 4.x 系列的第二个次版本，其行为变更的累积效应需要在生产环境中验证。</p>
+        <p><strong>需要等待什么信号确认：</strong>Runtime 18.2 从 Beta 进入 GA 的时间表、AWS SDK v1 完全移除的明确版本预告、Spark 4.1 在其他平台（EMR、Dataproc）的跟进节奏。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-04-09 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-08</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-06-08 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据要素与AI从并行走向联动，顶层政策首次将高质量数据集建设上升为专项行动</li>
+      <li>数据库内AI推理从实验走向工程化，厂商开始用批处理加代理模型解决成本与延迟瓶颈</li>
+      <li>可观测性平台收敛加速，统一信号后端的成本逻辑正在替代多工具拼装模式</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>政策层"数据+AI"联动首次获得专项实施方案，标志着行业高质量数据集从概念进入制度推动阶段；工程层数据库内AI推理和可观测性统一后端的落地表明，降本正在取代"上新能力"成为当前产品迭代主线。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局发布《行业高质量数据集建设行动实施方案》，"数据要素×"与"人工智能+"进入双向赋能阶段</h3>
+    <div class="source">来源：<a href="https://jg-static.eeo.com.cn/article/info?id=704254172495ca239daf48c7d3f6ded2">21世纪经济报道</a></div>
+    <div class="body">7月2日，2026全球数字经济大会在北京开幕，国家数据局局长刘烈宏在开幕式上宣布制定《关于推进行业高质量数据集建设行动的实施方案》，提出强基扩容、标注攻坚、提质增效、应用赋能、管理服务、价值释放六大行动，深入打通数据供给、流通、应用全链条。该方案是国家数据局首次以专项行动形式将"高质量数据集"建设制度化，明确以人工智能牵引数据价值释放，推动"数据要素×"与"人工智能+"双向赋能、同频共振。同日，刘烈宏还提出三大工作方向：用好用足政策工具箱、明晰数据供得出/流得动/用得好/保安全的解决路径、持续推进数据赋能AI发展。从"531"工作体系到六大行动，数据要素市场化配置改革正从蓝图进入细分行业落地阶段。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud AlloyDB 推出数据库内 AI 推理加速：smart batching 实现 2,400x 吞吐提升，代理模型降低 6,000x 成本</h3>
+    <div class="source">来源：<a href="https://www.163.com/game/article/DK3UFFO400318PFH_mobile.html?live-blog-15202746-2026-07-02-data-analytics-genai-llms-google-cloud-expands-alloydb-with-new-ai-functions-thu">163.com / Mark Tarre</a></div>
+    <div class="body">Google Cloud 在 AlloyDB 中新增三个 AI 函数（ai.summarize、ai.agg_summarize、ai.analyze_sentiment），并将四个既有函数（ai.generate、ai.rank、ai.if、ai.forecast）推进至 GA。关键突破在于两项性能优化：Smart Batching 将重复 prompt 合并，内部测试吞吐提升 2,400 倍（最高 10,000 行/秒）；针对 ai.if 的优化模式则训练轻量代理模型替代大模型调用，实现 100,000 行/秒吞吐、成本降低 6,000 倍。这一方向表明，数据库内 AI 推理正在从单条 SQL 调用 LLM 的"能跑"阶段，进入批处理+代理模型解决成本与延迟瓶颈的"能上生产"阶段——不再依赖外部数据流水线，推理直接在数据库引擎内闭环完成。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Elastic 统一可观测性平台新增原生 Prometheus 支持，列存指标引擎查询比 Prometheus 快 30 倍</h3>
+    <div class="source">来源：<a href="https://www.163.com/game/article/DK3UFFO400318PFH_mobile.html?live-blog-15198915-2026-07-02-devops-apm-aiops-elastic-adds-native-prometheus-support-for-metrics-thu-2nd-jul-">163.com / Sean Mitchell</a></div>
+    <div class="body">Elastic 正式发布可观测性平台重大更新：新增原生 PromQL 支持（Kibana 内直接运行 PromQL 查询）、Prometheus Remote Write 写入通道、以及基于 Elasticsearch 列存引擎重建的指标存储。官方宣称查询速度比 Prometheus 快 30 倍，存储效率提升 2.5 倍（每数据点 3.75 字节），无基数限制、无自定义指标惩罚。同时推出的 Agentic Investigations 可在告警触发时自动关联 metrics/logs/traces 并标注变更与异常程度，还提供 Datadog/Grafana 自动迁移工具。这次发布的竞争逻辑清晰：用单一后端替代 Prometheus + Grafana + 日志平台的多工具拼装，以存储效率和成本可预测性切入企业可观测性预算压力最大的痛点。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>Together AI 完成 8 亿美元 C 轮融资，估值 83 亿美元，算力租赁模式年预订额突破 11.5 亿美元</h3>
+    <div class="source">来源：<a href="https://www.itbear.com.cn/html/2026-07/1423988.html">ITBear</a></div>
+    <div class="body">Together AI 宣布完成 8 亿美元 C 轮融资，由沙特阿美创投（Aramco Ventures）领投，Vista Equity Partners、General Catalyst、英伟达、March Capital 等跟投，估值跃升至 83 亿美元。该公司成立于 2022 年，以英伟达 GPU 集群算力租赁为核心业务，上季度年度预订额突破 11.5 亿美元。本轮距其 3.05 亿美元 B 轮仅 16 个月，累计融资超 11 亿美元。其客户涵盖 Cursor、Cognition 等新兴 AI 公司。从行业视角看，Together AI 代表的新云模式（以开源模型算力租赁替代封闭模型代币付费）正在分流传统云厂商的 AI 推理收入，企业 AI 投入降低 40-60% 的成本优势是这一模式的核心驱动力。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>科杰科技携 AI 数据基础设施亮相 2026 数字经济产业博览会</h3>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260702A05KGI00">腾讯新闻</a></div>
+    <div class="body">科杰科技（国家级专精特新重点"小巨人"）在 7 月 2 日开幕的 2026 数字经济产业博览会上展出其 Keen Data Lakehouse 数据智能平台，该平台采用"AI-in-Lakehouse"架构，融合湖仓一体引擎、多模态计算引擎与训推一体加速引擎。公司已服务 300 余家大型组织，覆盖能源、金融、制造、政务等行业。同日，2026 全球数字经济大会也在北京开幕，两个会议同时在京举办释放的信号值得持续关注：北京正以"双会并行"的方式加速推动数据基础设施与 AI 产业的生态聚合。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <!-- Items here -->
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-08 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

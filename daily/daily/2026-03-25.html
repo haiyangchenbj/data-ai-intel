@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-03-25</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .body p { margin-bottom: 8px; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Watchlist type tags */
+  .watch-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+    background: #fff3e0;
+    color: #e65100;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-03-25 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台头部厂商正在从分析市场向安全市场做纵向延伸，安全数据成为湖仓的新增长极</li>
+      <li>FabCon 后行业反馈集中：数据平台的竞争维度从"分析能力"转向"可信数据控制平面"</li>
+      <li>第三方 AI 洞察工具加速适配多平台，独立分析层与平台内置能力的边界模糊化加剧</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Databricks 用 Lakewatch 将湖仓架构延伸到安全领域，本质是"数据已在湖仓里，安全分析理应也在这里运行"的逻辑。这与 FabCon 后 Microsoft 将 Fabric 定位为"AI 数据控制平面"的思路异曲同工——数据平台的战场正在从"谁分析更快"扩展到"谁掌控数据流经的每一个环节"。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks 发布 Lakewatch 进入安全市场——基于湖仓架构的开源 Agentic SIEM</h3>
+      <div class="source">来源：<a href="https://www.databricks.com/company/newsroom/press-releases/databricks-enters-security-market-launch-lakewatch-new-open-agentic-siem" target="_blank">Databricks 官方公告</a>（March 24, 2026）；<a href="https://www.databricks.com/blog/databricks-announces-lakewatch-new-open-agentic-siem" target="_blank">Databricks 官方博客</a></div>
+      <div class="body">
+        <p>Databricks 正式发布 Lakewatch，一款基于"安全湖仓"（Security Lakehouse）架构的开源 Agentic SIEM。核心设计理念是"安全数据应与 IT 和业务数据共存于同一湖仓环境"，通过存算分离 + 开放格式（Delta Lake / Iceberg）实现 PB 级安全遥测数据的无限留存和低成本查询。产品内置 Genie AI Agent 进行自动化分诊和多步骤威胁狩猎，支持多模态数据（日志、视频、音频），采用 Detection-as-Code 方式管理检测规则。同时宣布收购 Antimatter（AI Agent 安全认证）和 SiftD.ai（Splunk SPL 创造者创立），并与 Anthropic Claude 模型深度集成。Adobe、National Australia Bank、Anthropic 已成为首批客户。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是数据平台头部厂商首次以完整产品形态进入安全市场。Lakewatch 的核心逻辑是"安全数据本质就是大数据问题"——存储成本高、查询延迟大、数据孤岛多，正是湖仓架构擅长解决的问题。传统 SIEM（Splunk、Microsoft Sentinel、Google Chronicle）按数据量计费的模式被直接挑战，Databricks 声称 TCO 可降低 80%。此举意味着湖仓平台的数据引力效应进一步增强：当安全、IT、业务数据都汇聚到同一湖仓时，平台的粘性和壁垒将显著提升。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. dotData Insight 原生支持 Azure Databricks 和 Snowflake on Azure</h3>
+      <div class="source">来源：<a href="https://dotdata.com/news/pressrelease-20260324/" target="_blank">dotData 官方公告</a>（March 24, 2026）</div>
+      <div class="body">
+        <p>AI 洞察发现平台 dotData 宣布其 dotData Insight 产品原生支持 Azure Databricks 和 Snowflake on Microsoft Azure。此次集成直接对接 Unity Catalog（Databricks）和 Horizon Catalog（Snowflake）的治理体系，在数据不出平台的前提下完成自动化业务驱动因素发现和分析，生成的 Drivers 和 Scorecards 直接存储在相应平台中。支持 Self-Managed 部署模式，满足金融机构等严格安全要求。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>第三方 AI 分析工具正加速适配 Databricks 和 Snowflake 的多云生态。dotData 明确对接 Unity Catalog 和 Horizon Catalog 的治理层——数据治理目录正在成为平台生态的"接口标准"，第三方工具以此为锚点实现无数据拷贝的原生集成。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. FabCon 2026 深度分析：Microsoft 正将 Fabric 从分析层打造为企业 AI 数据控制平面</h3>
+      <div class="source">来源：<a href="https://www.telm.ai/blog/fabcon-2026-recap-how-microsoft-is-turning-fabric-into-the-control-plane-for-trustworthy-ai-ready-data/" target="_blank">Telmai 博客</a>（March 24, 2026）</div>
+      <div class="body">
+        <p><strong>核心观点：</strong>Telmai CEO Anoop Gopalam 在 FabCon 2026 后发布深度分析指出，Microsoft 在 FabCon 上的战略定位已从"统一分析平台"升级为"企业数据控制平面"。关键判断：（1）Direct Lake GA 消除了数据从 OneLake 到报表之间的缓冲层，坏数据将直接影响 AI 模型和仪表盘，持续数据质量监控从可选变为刚需；（2）Fabric IQ 引入本体驱动的语义层，AI Agent 获得的不再是裸 schema 而是业务语义上下文；（3）OneLake 正成为多引擎中枢（已 GA 支持 Snowflake Iceberg 互操作、Preview 支持 Databricks Unity Catalog），数据质量标准需在数据层定义一次并跨引擎执行。</p>
+      </div>
+      <div class="impact">
+        <strong>映射到数据平台的判断：</strong>Fabric 的"控制平面"定位直接挑战 Databricks Unity Catalog 的治理层角色——两者都试图成为企业数据的"操作系统"。Direct Lake GA 带来的"零缓冲"架构意味着数据质量从 BI 团队的下游问题变成了数据工程的上游刚需。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. <span class="funding-tag tag-ma">收购兼并</span> Databricks 收购 Antimatter 和 SiftD.ai 强化安全能力</h3>
+      <div class="source">来源：<a href="https://www.databricks.com/company/newsroom/press-releases/databricks-enters-security-market-launch-lakewatch-new-open-agentic-siem" target="_blank">Databricks 官方公告</a>（March 24, 2026）；<a href="https://www.cnbc.com/2026/03/24/databricks-cybersecurity-lakewatch-ipo.html" target="_blank">CNBC 报道</a></div>
+      <div class="body">
+        <p><strong>核心数据：</strong>收购金额未披露。Antimatter 由 UC Berkeley 安全研究人员创立，专注 AI Agent 安全认证；SiftD.ai 创始团队拥有 Splunk 39 年累计经验，包括 SPL 搜索语言和用户界面的核心创造者。</p>
+        <p>两项收购作为 Lakewatch 产品发布的配套战略同时宣布。Antimatter 技术已集成到 Lakewatch，为 AI Agent 提供安全认证能力；SiftD.ai 的 Splunk 核心团队将帮助 Databricks 构建安全分析师熟悉的交互体验。CNBC 指出此举也是 Databricks 在潜在 2026 年 IPO 前向市场展示平台横向扩展能力的举措。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>SiftD.ai 的收购尤为值得注意——从 Splunk 核心团队中挖人，直接瞄准了 Splunk 用户的迁移路径。这延续了 Databricks 近年来"通过收购快速进入新领域"的策略（Neon → Lakebase、MosaicML → AI 训练）。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. <span class="watch-tag">跟踪</span> Informatica IDMC 支持 Fabric Open Mirroring 将在 April 2026 Release 正式 GA</h3>
+      <div class="source">来源：<a href="https://www.dbta.com/Editorial/News-Flashes/Informatica-Deepens-Microsoft-Collaboration-with-Open-Mirroring-Support-for-Microsoft-Fabric-174041.aspx" target="_blank">DBTA 报道</a>（March 24, 2026）；<a href="https://www.salesforce.com/news/press-releases/2026/03/18/informatica-microsoft-fabric-integration-pod-expansion/" target="_blank">Salesforce 原始公告</a>（March 18, 2026）</div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Informatica（现属 Salesforce）在 FabCon 2026 期间宣布 IDMC 支持 Microsoft Fabric Open Mirroring，将在 April 2026 IDMC Release 中正式 GA。该功能允许一键启用 Open Mirroring，从 300+ 数据源直接摄取到 Fabric 镜像数据库，同时在管道中应用治理和质量管控。</p>
+        <p><strong>需要等待什么信号确认：</strong>April 2026 IDMC Release 正式发布后的客户采用情况；与 IBM watsonx.data integration 在 Fabric 生态中的竞争关系。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. <span class="watch-tag">跟踪</span> Databricks IPO 窗口期信号持续释放</h3>
+      <div class="source">来源：<a href="https://www.cnbc.com/2026/03/24/databricks-cybersecurity-lakewatch-ipo.html" target="_blank">CNBC 报道</a>（March 24, 2026）</div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>CNBC 在 Lakewatch 报道中指出，CEO Ali Ghodsi 去年 12 月未排除 2026 年 IPO 的可能。Databricks 当前估值 $1340 亿，年化收入超 $54 亿且增长 65%+。Lakewatch 的发布被分析为向公开市场展示"平台可横向扩展至新领域"的信号。安全市场是一个大型、成熟、高毛利的市场，如果 Databricks 能在此领域取得进展，将显著扩大其 TAM 估算。</p>
+        <p><strong>需要等待什么信号确认：</strong>IPO 正式申请（S-1 文件）；Lakewatch 的商业化进展和客户签约情况。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.1</p>
+    <p>信息截至北京时间 2026-03-25 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

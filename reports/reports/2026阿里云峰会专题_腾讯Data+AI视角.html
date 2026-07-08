@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 阿里云峰会专题 | 腾讯云大数据视角</title>
+<style>
+  :root {
+    --primary: #7c3aed;
+    --primary-dark: #5b21b6;
+    --primary-light: #ede9fe;
+    --accent: #dc2626;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #1e1b4b;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --green: #059669;
+    --orange: #d97706;
+    --teal: #0891b2;
+    --blue: #2563eb;
+    --rose: #e11d48;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+    color: white;
+    padding: 40px 48px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.3);
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .header .period { font-size: 16px; opacity: 0.9; }
+  .header .subtitle { font-size: 13px; opacity: 0.7; margin-top: 6px; }
+
+  /* Verdict Box */
+  .verdict-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--primary);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .verdict-box h2 { font-size: 18px; color: var(--primary); margin-bottom: 16px; }
+  .verdict-box .verdict-text { font-size: 15px; line-height: 1.85; }
+  .verdict-text p { margin: 0 0 12px 0; }
+  .verdict-text p:last-child { margin-bottom: 0; }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    white-space: nowrap;
+  }
+  .badge-overview { background: var(--primary); }
+  .badge-story { background: var(--accent); }
+  .badge-data { background: var(--teal); }
+  .badge-entry { background: var(--blue); }
+  .badge-concept { background: var(--green); }
+  .badge-metric { background: var(--orange); }
+  .badge-industry { background: var(--rose); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Table */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .data-table th {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .data-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+
+  /* Key-value list */
+  .kv-list { font-size: 14px; }
+  .kv-list .kv-row {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  .kv-list .kv-row:last-child { border-bottom: none; }
+  .kv-list .kv-key {
+    flex: 0 0 130px;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  .kv-list .kv-val { flex: 1; color: var(--text); }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .body { font-size: 14px; line-height: 1.85; color: #374151; }
+  .item .body p { margin: 0 0 10px 0; }
+  .item .body p:last-child { margin-bottom: 0; }
+  .item .body ul { margin: 8px 0 8px 22px; }
+  .item .body li { margin-bottom: 4px; }
+  .item .highlight {
+    background: #faf5ff;
+    border-left: 3px solid var(--primary);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 13.5px;
+    color: #4c1d95;
+    line-height: 1.8;
+  }
+  .item .highlight strong { color: var(--primary-dark); }
+  .item .quote {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: var(--primary-dark);
+    font-weight: 500;
+    line-height: 1.8;
+    font-style: italic;
+  }
+
+  /* Stack diagram */
+  .stack-diagram {
+    background: linear-gradient(180deg, #f5f3ff 0%, #ede9fe 100%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 12px 0 16px;
+  }
+  .stack-row {
+    background: var(--card-bg);
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba(124, 58, 237, 0.08);
+  }
+  .stack-row:last-child { margin-bottom: 0; }
+  .stack-row.layer-onemore {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-color: #fbbf24;
+  }
+  .stack-tag {
+    flex: 0 0 64px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    letter-spacing: 0.5px;
+  }
+  .stack-content {
+    flex: 1;
+    font-size: 13.5px;
+    color: var(--text);
+  }
+  .stack-content strong { color: var(--primary-dark); }
+  .stack-num {
+    flex: 0 0 auto;
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    background: #f3f4f6;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  /* Tag */
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .tag-direct { background: #fef2f2; color: #991b1b; }
+  .tag-related { background: #fffbeb; color: #92400e; }
+  .tag-bg { background: #f0fdf4; color: #166534; }
+
+  /* Stat grid */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 14px 0;
+  }
+  .stat-card {
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  .stat-card .stat-num {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .stat-card .stat-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
+
+  /* Concept block */
+  .concept-block {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 30%, #ffffff 100%);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 14px;
+  }
+  .concept-block:last-child { margin-bottom: 0; }
+  .concept-block h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #78350f;
+    margin-bottom: 8px;
+  }
+  .concept-block p { font-size: 14px; line-height: 1.8; color: #44403c; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 28px; }
+    .header h1 { font-size: 22px; }
+    .section, .verdict-box { padding: 20px; }
+    .data-table { font-size: 12px; }
+    .kv-list .kv-key { flex: 0 0 90px; font-size: 12px; }
+    .stack-tag { flex: 0 0 56px; font-size: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>2026 阿里云峰会专题报告</h1>
+    <div class="period">腾讯云大数据视角</div>
+    <div class="subtitle">2026 年 5 月 20 日 · 杭州西子宾馆 · 主题：Agentic Cloud</div>
+  </div>
+
+  <!-- VERDICT -->
+  <div class="verdict-box">
+    <h2>📌 摘要</h2>
+    <div class="verdict-text">
+      <p>2026 年 5 月 20 日，阿里云在杭州西子宾馆举办年度峰会，主题 <strong>Agentic Cloud — Transform to Agentic Era</strong>。这场大会被外界普遍认为是阿里云成立 17 年来"释放信号最为密集"的一次发布会：从底层芯片、云平台、大模型到推理平台四层同步动刀，提出"国内云厂商首次围绕 Agent 进行全栈产品发布"，宣布"建设中国最大的 AI 工厂"。</p>
+      <p>本报告聚焦其中与腾讯云大数据条线相关的部分，包括<strong>数据平面 10 项更新</strong>、<strong>大数据引擎集体 AI 原生升级</strong>（MaxCompute / Hologres / Flink / ES / OpenLake / PAI）、<strong>DataWorks Data Agent</strong>、<strong>OSS Table Bucket 多模存储底座</strong>、以及作为 Agent 入口范式的 <strong>千问云</strong>。同时整理了大会上提出的几个值得关注的概念性提法和一组客户案例与量化指标。</p>
+    </div>
+  </div>
+
+  <!-- SECTION 1: 大会基本盘 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-overview">01</span>
+      <h2>大会基本盘</h2>
+    </div>
+
+    <div class="kv-list">
+      <div class="kv-row"><div class="kv-key">时间</div><div class="kv-val">2026 年 5 月 20 日（主论坛 + 6 个分论坛） + 5 月 21 日（部分话题）</div></div>
+      <div class="kv-row"><div class="kv-key">地点</div><div class="kv-val">杭州西湖畔·西子宾馆</div></div>
+      <div class="kv-row"><div class="kv-key">大会主题</div><div class="kv-val">Agentic Cloud — Transform to Agentic Era</div></div>
+      <div class="kv-row"><div class="kv-key">主舞台讲者</div><div class="kv-val">刘伟光 → 李飞飞 → 周靖人 → 高慧 → 于文渊</div></div>
+      <div class="kv-row"><div class="kv-key">收尾</div><div class="kv-val">重磅发布 + 生态联盟（爱诗、MiniMax、Kimi、阶跃星辰、生数科技、智谱齐站台）</div></div>
+      <div class="kv-row"><div class="kv-key">下午分论坛</div><div class="kv-val">主论坛下午场 / 基础模型 / Agent Native 基础设施 / AI 编程 / AI 创作 / AI 硬件 / AI 游戏</div></div>
+      <div class="kv-row"><div class="kv-key">体量</div><div class="kv-val">超 50 项新品及升级，其中 Agentic Cloud 部分 32 项</div></div>
+      <div class="kv-row"><div class="kv-key">自我定位</div><div class="kv-val">国内云厂商首次围绕 Agent 进行全栈产品发布</div></div>
+      <div class="kv-row"><div class="kv-key">战略口号</div><div class="kv-val">建设中国最大的 AI 工厂；做最 Agent 化的一朵云</div></div>
+    </div>
+
+    <div style="margin-top: 20px; font-size: 14px; color: #374151; line-height: 1.8;">
+      <strong style="color: var(--primary-dark);">主舞台叙事框架</strong>：芯片 → 云 → 模型 → 推理 → One More Thing（千问云）。每层一个旗舰发布物 + 一个核心数字。
+    </div>
+
+    <div class="stack-diagram">
+      <div class="stack-row layer-onemore">
+        <div class="stack-tag">入口</div>
+        <div class="stack-content"><strong>千问云 qianwenai.com</strong> — 17 年来首个独立产品官网，首页一行 Agent prompt</div>
+        <div class="stack-num">压轴</div>
+      </div>
+      <div class="stack-row">
+        <div class="stack-tag">推理</div>
+        <div class="stack-content"><strong>百炼</strong> — 150+ 模型 API、客户数同比 +8×、Token 日均 +15×</div>
+        <div class="stack-num">于文渊</div>
+      </div>
+      <div class="stack-row">
+        <div class="stack-tag">模型</div>
+        <div class="stack-content"><strong>Qwen3.7-Max</strong> — Arena 国产第一、35 小时连续自主工作、内核加速 10×</div>
+        <div class="stack-num">周靖人</div>
+      </div>
+      <div class="stack-row">
+        <div class="stack-tag">云</div>
+        <div class="stack-content"><strong>Agentic Cloud 32 项</strong> — 6 大能力、1 分钟可起 1–2 万沙箱</div>
+        <div class="stack-num">李飞飞</div>
+      </div>
+      <div class="stack-row">
+        <div class="stack-tag">芯片</div>
+        <div class="stack-content"><strong>真武 M890 + 磐久 AL128 超节点</strong> — 性能 3×、144GB 显存、128 卡一台机器、P2P &lt; 150ns</div>
+        <div class="stack-num">高慧</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: 整体故事 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-story">02</span>
+      <h2>整体故事：阿里云的"全栈 Agent 化"叙事</h2>
+    </div>
+
+    <div class="item">
+      <h3>2.1 三个失效假设 + 六大挑战</h3>
+      <div class="body">
+        <p>阿里云这次叙事的逻辑底色：<strong>Agent 时代，传统云的三个核心假设全部失效</strong>。</p>
+      </div>
+      <table class="data-table" style="margin-top: 12px;">
+        <thead>
+          <tr><th>传统云的假设</th><th>Agent 时代的现实</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>工作负载是稳态的，可预测扩缩容</td><td>短生命周期、瞬时起量即走、突发负载</td></tr>
+          <tr><td>用户是人，靠 GUI / 控制台 / 代码交互</td><td>用户是 Agent，靠自然语言 + 标准化协议</td></tr>
+          <tr><td>资源调度是核心命题（卖 ECS 等算力）</td><td>任务调度是核心命题（卖 Token）</td></tr>
+        </tbody>
+      </table>
+      <div class="body" style="margin-top: 14px;">
+        <p>由此延伸出李飞飞主舞台讲的 <strong>Agent Infrastructure 六大挑战</strong>：短生命周期、数据模态复杂、突发负载、动态环境依赖、任务级安全管控、大规模动态编排。阿里云对应推出 <strong>Agent Infra 六大能力域</strong>（运行时 / 编排 / 治理 / 安全 / 记忆 / 数据平面），共 32 项新品及升级。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2.2 商业故事：增长引擎从 ECS 切换到 MaaS</h3>
+      <div class="body">
+        <p>大会公开口径中最具传播力的商业故事：</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-num">+15×</div>
+          <div class="stat-label">百炼 Token 日均收入<br>5 个月增长</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">+8×</div>
+          <div class="stat-label">百炼客户数<br>同比增长（截至 2026/3）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">56 万片</div>
+          <div class="stat-label">真武芯片<br>累计出货</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">MaaS &gt; ECS</div>
+          <div class="stat-label">收入将取代 ECS<br>成为最大产品线</div>
+        </div>
+      </div>
+      <div class="highlight">
+        这组数字共同构成了"以 Token 为计量单位的 AI 收入"叙事，把 Agent 化从技术故事变成了商业故事。多家媒体（澎湃、证券日报、证券时报）以此作为头条角度。
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: 大数据条线发布全景 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-data">03</span>
+      <h2>大数据条线发布全景</h2>
+    </div>
+
+    <div class="item">
+      <h3>3.1 数据平面 10 项 — Agentic Cloud 中的"数据"主旗</h3>
+      <div class="body">
+        <p>数据平面是 Agent Infra 6 大能力域中<strong>条目最多</strong>的（10 项），也是大会上和大数据 / 数据库条线交集最深的部分。李飞飞在主舞台用"AI Native 数据底座"统称这一组发布。</p>
+        <p>核心叙事：</p>
+        <ul>
+          <li><strong>物理元数据层 + 业务元数据层</strong>双层结构（物理层是表 / 字段 / 索引；业务层是指标 / 术语 / 行业知识）</li>
+          <li><strong>多模数据准备</strong>：把非结构化数据按需结构化沉淀进数据底座</li>
+          <li><strong>持续元数据沉淀</strong>：从开发代码、查询日志、表命名、样本数据中自底向上反向积累业务语义</li>
+          <li><strong>协议层四件套</strong>：API + MCP + Skill + ACP（Agent 间通信协议）并存</li>
+          <li><strong>垂类 Data Agent</strong>：分析 / 资产 / 运维 / 准备等场景都长出对应 Data Agent</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3.2 大数据引擎集体 AI 原生升级</h3>
+      <div class="body">
+        <p>3 月 27 日春季发布会首发、5 月 20 日主舞台引用，构成阿里云大数据条线的统一对外口径。</p>
+      </div>
+      <table class="data-table" style="margin-top: 12px;">
+        <thead>
+          <tr><th>引擎</th><th>关键升级</th><th>公开指标</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>MaxCompute</strong></td><td>AI Function 调用百炼大模型；vector embedding 服务一站式托管；运维 Agent</td><td>—</td></tr>
+          <tr><td><strong>Hologres</strong></td><td>向量检索 + 多模分析；运维 Agent</td><td>Vector DB Bench 千万级向量 <strong>QPS + 性价比双榜第一</strong></td></tr>
+          <tr><td><strong>Flink (FSD)</strong></td><td>全面拥抱 AI 时代，与 NVIDIA 在多模态数据流处理深度合作</td><td>EMR-less Spark 性能 <strong>10×</strong>；EMR 首个通过 TPC 官方认证的公共云产品</td></tr>
+          <tr><td><strong>Elasticsearch</strong></td><td>自研 falls seek 引擎</td><td>性能 <strong>2–6×</strong>、成本下降 <strong>40%–70%</strong></td></tr>
+          <tr><td><strong>OpenLake</strong></td><td>数据湖统一架构，支持 5 类表格式（P table / Iceberg / Object 等）</td><td>—</td></tr>
+          <tr><td><strong>PAI</strong></td><td>业界唯一支持顶级大模型家族训练 + 推理商业化的平台</td><td>一键部署专属 OpenClaw Agent</td></tr>
+        </tbody>
+      </table>
+      <div class="highlight" style="margin-top: 14px;">
+        <strong>统一升级方向有三条：</strong>① AI Function 内置化（引擎内可直接调用大模型做处理）；② Agent 化（内置运维 Agent 自动诊断 / 调优；通过 MCP 协议对外接 Agent）；③ Embedding / 向量服务原生托管（不再依赖外部向量数据库）。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3.3 DataWorks Data Agent <span class="tag tag-direct">直接对位 DataBuddy</span></h3>
+      <div class="body">
+        <p><strong>核心能力</strong>：自然语言驱动数据集成 / 开发 / 数据地图 / 数据治理；全流程接管，从需求到任务执行端到端；离线同步任务原生整合 AI 大模型处理；所有大模型调用流量走 PrivateLink 私网通道，数据不出域。</p>
+        <p><strong>生态开放</strong>：支持第三方 Skill 与 MCP 接入；个人开发者只要说出业务目标，Agent 就能自动调用底层引擎完成任务。</p>
+      </div>
+      <div class="quote">
+        标志性客户案例：淘宝闪购团队，单需求开发周期从 12–23 小时压缩到 5–10 分钟。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3.4 OSS Table Bucket — 多模存储底座 <span class="tag tag-related">存储基础设施</span></h3>
+      <div class="body">
+        <p>5 月 20 日峰会同步推出。OSS 形成 <strong>对象桶 + 向量桶 + 表格桶</strong>三件套，组成"覆盖非结构化、向量、结构化的多模态统一存储底座"。</p>
+      </div>
+      <table class="data-table" style="margin-top: 12px;">
+        <thead>
+          <tr><th>桶类型</th><th>数据类型</th><th>关键能力</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>对象桶</td><td>非结构化（图片 / 视频 / 文档）</td><td>传统对象存储</td></tr>
+          <tr><td>向量桶</td><td>向量</td><td>向量检索</tr>
+          <tr><td>表格桶（新）</td><td>结构化</td><td>集成 Apache Iceberg；零改造迁移；实时入湖；跨引擎分析</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="item">
+      <h3>3.5 PolarDB AI Ready 路线 <span class="tag tag-bg">数据库条线背景，对位 TDSQL</span></h3>
+      <div class="body">
+        <p>PolarDB 是阿里云数据库部门产品，腾讯云对位是 TDSQL 系列，<strong>不属于大数据条线</strong>。本节仅作为背景信息收录。</p>
+        <p>阿里云把数据库 AI 化分为三阶段：<strong>云原生 → AI 就绪（AI Ready）→ AI 原生（AI Native）</strong>。当前 PolarDB 定位是 AI Ready，迈向 AI Native。</p>
+      </div>
+      <div class="quote">
+        李飞飞给出的 AI Native 数据库判断标准："一半实例是 Agent 在使用，一半输出 Byte 是 Token 时，才能叫 AI Native。"
+      </div>
+      <div class="body">
+        <p>PolarDB AI Ready 的"4+1"核心能力：① 存储层走向 Lakebase（湖库一体）；② 元数据统一管理（Zero ETL，业务元数据层）；③ 多模检索（向量 + 全文 + 图谱）；④ 模型算子化（数据不出域智能）；+1 紧跟硬件（Intel Xeon 6、与 DuckDB 深度融合做 HTAP）。</p>
+        <p><strong>体量</strong>：客户数 2 万+、部署规模 300 万核+、覆盖全球 86 个可用区。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3.6 大数据条线产品对位速查表</h3>
+      <table class="data-table" style="margin-top: 8px;">
+        <thead>
+          <tr><th>阿里云产品</th><th>腾讯云对位</th><th>备注</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MaxCompute</td><td>EMR / DLC</td><td>大数据计算</td></tr>
+          <tr><td>Hologres</td><td>DLC / 实时数仓相关</td><td>实时分析 + 向量</td></tr>
+          <tr><td>Flink (FSD) / EMR-less Spark</td><td>Oceanus / EMR Serverless</td><td>流计算</td></tr>
+          <tr><td>Elasticsearch</td><td>ES Service</td><td>搜索引擎</td></tr>
+          <tr><td>OpenLake</td><td>DLC + COS</td><td>数据湖</td></tr>
+          <tr><td>PAI</td><td>TI 平台</td><td>AI 训练 / 推理平台</td></tr>
+          <tr><td><strong>DataWorks Data Agent</strong></td><td><strong>DataBuddy / WeData 数据开发</strong></td><td>直接对位</td></tr>
+          <tr><td>OSS Table Bucket</td><td>COS + Iceberg / 表存储</td><td>存储底座</td></tr>
+          <tr><td>PolarDB</td><td>TDSQL（数据库部门）</td><td>非大数据条线</td></tr>
+          <tr><td>千问云</td><td>量级是 aliyun.com 平级</td><td>不直接对位某个大数据产品</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 4: 千问云 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-entry">04</span>
+      <h2>千问云 qianwenai.com — Agent 入口范式</h2>
+    </div>
+    <div class="item">
+      <div class="body">
+        <p>5/20 的 One More Thing。这是阿里云成立 17 年来<strong>首次在阿里云官网（aliyun.com）之外推出的全新产品官网</strong>，量级是官网级别。产品定位：为 AI Agent 而生的全新服务方式。</p>
+      </div>
+      <table class="data-table" style="margin-top: 12px;">
+        <tbody>
+          <tr><td style="width: 110px;"><strong>首页范式</strong></td><td>整个首页只有一行 Agent 可读 prompt：<code style="background: #f3f4f6; padding: 2px 6px; border-radius: 4px;">安装 Skills npx skills add QianWen-AI/qianwen-ai</code></td></tr>
+          <tr><td><strong>模型矩阵</strong></td><td>接入 150+ 主流模型 API（Qwen / GLM / Kimi / DeepSeek / Wan / HappyHorse 等）</td></tr>
+          <tr><td><strong>Skill 化</strong></td><td>模型选型、调用、认证配置、用量查询全链路 Skill 化；Agent 可动态路由</td></tr>
+          <tr><td><strong>CLI 化</strong></td><td>覆盖登录认证、模型查询、调用、用量查询、环境诊断</td></tr>
+          <tr><td><strong>支持 Agent</strong></td><td>OpenClaw / HermesAgent / ClaudeCode / Qoder 等可直接调用</td></tr>
+          <tr><td><strong>付费</strong></td><td>按量付费 + Token Plan 订阅</td></tr>
+          <tr><td><strong>开源</strong></td><td>Skills 和 CLI 已 GitHub 开源</td></tr>
+        </tbody>
+      </table>
+      <div class="quote">
+        "云的用户正在从人变成 Agent。" — 刘伟光
+      </div>
+      <div class="highlight">
+        <strong>关于产品量级：</strong>千问云的层级是模型服务平台 + Agent 友好的产品入口，与 aliyun.com 平级。它<strong>不与具体某个大数据产品对位</strong>。在腾讯云体系内，与之量级相当的是腾讯云官网 + 模型服务平台层级的产品组合。
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: 概念性提法 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-concept">05</span>
+      <h2>大会上提出的几个值得关注的概念性提法</h2>
+    </div>
+
+    <div class="concept-block">
+      <h3>5.1 "AI Native" 的判断标准</h3>
+      <p>李飞飞 1 月 20 日 PolarDB 开发者大会首次给出，5 月 20 日峰会再次引用："现在喊 AI Native 还过早。一个数据库要称得上 AI Native，至少要满足两个标准：第一，<strong>一半实例是 Agent 在使用</strong>；第二，<strong>输出的 Byte 至少一半是 Token</strong>。"阿里云用这套标准把自己定位在 AI Ready → AI Native 的演进路径上，明确不抢"AI Native"这个词。</p>
+    </div>
+
+    <div class="concept-block">
+      <h3>5.2 云产品 Skill / MCP / CLI 三件套改造</h3>
+      <p>李飞飞主舞台明确承诺：<strong>"今年内，阿里云所有云产品都会完成控制面改造，以 Agent 为优先用户。"</strong>具体方式：Skill 化（封装为标准化模块）+ MCP 化（Model Context Protocol）+ CLI 化（命令行接口）。各条产品线进度：存储线（OSS Agent）、数据库线（瑶池 Agent）、数据开发线（DataWorks Data Agent）、安全 / 运维线全面 Agent 化。</p>
+    </div>
+
+    <div class="concept-block">
+      <h3>5.3 Agent 是云的新用户</h3>
+      <p>"过去模型服务平台为人服务，未来用模型的主力将是智能体。" "云的用户正在从人变成 Agent。" "调度的对象从机器变成了事情。"由此推导出云的两层重构：① 现有 60+ 云产品改造为 Agent 能直接调用的标准化技能；② 为 Agent 建一套全新的运行环境（沙箱运行时、记忆系统、多 Agent 编排、安全治理 — 即 Agent Infra 六大能力）。</p>
+    </div>
+
+    <div class="concept-block">
+      <h3>5.4 数据基础设施"AI Ready → AI Native"演进路径</h3>
+      <p>云原生 → AI 就绪 → AI 原生。AI Ready 的核心特征（PolarDB 4+1 为参考样本）：湖库一体存储 / 物理元数据 + 业务元数据双层 / 多模融合检索 / 模型算子化 / 紧跟硬件演进。阿里云在大数据条线（MaxCompute / Hologres / Flink 等）和数据库条线（PolarDB）都使用这套演进框架进行对外沟通。</p>
+    </div>
+  </div>
+
+  <!-- SECTION 6: 客户案例与量化指标 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-metric">06</span>
+      <h2>客户案例与量化指标盘点</h2>
+    </div>
+    <table class="data-table">
+      <thead>
+        <tr><th style="width: 28%;">类别</th><th>数据 / 案例</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>数据开发提效</td><td>淘宝闪购团队：单需求 12–23 小时 → 5–10 分钟（DataWorks Data Agent）</td></tr>
+        <tr><td>模型推理性能</td><td>Qwen3.7-Max 在真武 M890 上自主工作 35 小时，1158 次工具调用，推理内核加速 10×</td></tr>
+        <tr><td>引擎性能</td><td>EMR-less Spark 性能 10×；ES falls seek 性能 2–6×、成本下降 40%–70%</td></tr>
+        <tr><td>第三方榜单</td><td>Hologres 千万级向量 QPS + 性价比双榜第一；EMR 首个通过 TPC 官方认证的公共云产品</td></tr>
+        <tr><td>商业增长</td><td>百炼客户数同比 +8×（截至 2026/3）；Token 日均收入 5 个月 +15×</td></tr>
+        <tr><td>模型生态</td><td>接入 150+ 主流模型 API</td></tr>
+        <tr><td>数据库体量</td><td>PolarDB 客户 2 万+、部署 300 万核+、覆盖全球 86 个可用区</td></tr>
+        <tr><td>芯片出货</td><td>真武系列累计 56 万片，服务 20+ 行业 400+ 客户</td></tr>
+        <tr><td>Agent Infra 性能</td><td>Agent 沙箱百毫秒冷启动，1 分钟可起 1–2 万沙箱；磐久 AL128 P2P &lt; 150ns</td></tr>
+        <tr><td>Agent 资源消耗</td><td>80% Token 消耗在"搞懂环境"而非"完成任务"（ANOLISA 数据）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 7: 行业反应 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-industry">07</span>
+      <h2>行业反应</h2>
+    </div>
+    <table class="data-table">
+      <thead>
+        <tr><th style="width: 24%;">媒体 / 角度</th><th>关键判断</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>雷锋网</td><td>"OpenAI 放弃的事，为什么阿里可能做得成" — 全栈自研 + Agent 化双线推进</td></tr>
+        <tr><td>雷科技</td><td>"谷歌微软没做透的事，被阿里给做成了" — 不是给云加 Agent，而是按 Agent 重构云</td></tr>
+        <tr><td>澎湃新闻</td><td>Token 日均收入 5 个月涨 15 倍；MaaS 收入将取代 ECS 成为最大产品线</td></tr>
+        <tr><td>证券日报 / 证券时报</td><td>全栈 Agent 化升级，阿里云增长引擎切换；MaaS 压过 ECS</td></tr>
+        <tr><td>智东西</td><td>阿里云 17 年来"释放信号最为密集"的发布会；李飞飞首秀连发 32 大新品</td></tr>
+        <tr><td>沂景资本</td><td>"全栈式 AI 生态能力具备稀缺性"；未来比的是"系统整合能力"</td></tr>
+        <tr><td>华西都市报</td><td>"把云的控制权交给智能体"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- APPENDIX: Agent Native 分论坛 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-overview">附</span>
+      <h2>附录：5/20 下午"Agent Native 基础设施"分论坛速览</h2>
+    </div>
+    <div class="item">
+      <div class="body">
+        <p>该分论坛属于阿里云<strong>云原生应用条线</strong>，不属于大数据条线。本附录作为阿里云全景信息收录，便于了解 Agent 工程化方向的产品矩阵。主讲人：李国强、周絮。</p>
+      </div>
+
+      <div class="body" style="margin-top: 12px;"><p><strong>Agent 工程化五大产品矩阵：</strong></p></div>
+      <table class="data-table" style="margin-top: 8px;">
+        <tbody>
+          <tr><td style="width: 130px;"><strong>AgentRun</strong></td><td>一站式智能体开发构建平台</td></tr>
+          <tr><td><strong>AgentTeams</strong></td><td>多智能体治理与协作平台</td></tr>
+          <tr><td><strong>AgentLoop</strong>（可观测）</td><td>智能体全栈可观测</td></tr>
+          <tr><td><strong>AgentLoop</strong>（评估与优化）</td><td>Agent 持续优化</td></tr>
+          <tr><td><strong>STAROps</strong></td><td>全域智能运维平台</td></tr>
+        </tbody>
+      </table>
+
+      <div class="body" style="margin-top: 14px;">
+        <p><strong>ANOLISA — Agent 操作系统</strong>：Tokenless 组件（Token 节省 30%+，可视化面板）；cosh（Copilot Shell）自然语言入口；SkillFS 按需供给当前任务的技能视图；内核级运行时增强；四层全链路安全。<strong>关键数字</strong>：Agent 80% 的 Token 消耗在"搞懂环境"而非"完成任务"。</p>
+      </div>
+
+      <div class="body" style="margin-top: 12px;">
+        <p><strong>企业级 Agent 落地五大痛点</strong>（按 Agent 生命周期切分）：① 智能体架构依赖多，如何快速构建部署；② 多智能体如何治理与协作；③ 如何洞察运行状态，做到成本可控；④ 效果评估难，不知道如何持续优化；⑤ 复杂架构下运维问题发现慢、修复难。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>2026 阿里云峰会专题报告 · 腾讯云大数据视角</p>
+    <p style="margin-top: 4px;">整理时间：2026-05-26</p>
+  </div>
+
+</div>
+</body>
+</html>

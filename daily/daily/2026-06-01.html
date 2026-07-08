@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-01（含周末）</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-06-01（含周末）· 信息窗口 05-29 ~ 06-01</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3点</h2>
+    <ol>
+      <li>数据平台核心厂商财报验证 AI 正从讲故事阶段进入可量化的消费增长</li>
+      <li>开放表格式的治理权争夺进入跨云阶段，Catalog 层成为新锁定点</li>
+      <li>中国大模型公司集体冲刺资本市场，国家资本首次直接下注纯模型层</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本周数据平台行业呈现"上下游同时加速"态势——上游 AI 模型层的巨额融资将推动算力和存储需求爆发，下游数据平台层则通过跨引擎治理和 Agent 原生能力争夺企业数据入口，采购决策正从"选引擎"转向"选治理中台"。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Snowflake Q1 FY27 产品收入同比增长 34%，签约 AWS $60 亿协议并收购 MCP 平台 Natoma</h3>
+      <div class="source">来源：<a href="https://investors.snowflake.com/news/news-details/2026/Snowflake-Reports-Financial-Results-for-the-First-Quarter-of-Fiscal-2027/default.aspx" target="_blank">Snowflake Investor Relations</a></div>
+      <div class="body">
+        <p>Snowflake 2027 财年 Q1（截至 2026-04-30）总营收 $13.9 亿（+33%），产品收入 $13.3 亿（+34%），创历史最强环比美元增量。RPO $92.1 亿（+38%），NRR 126%，百万美元客户 779 家（+29%）。全年产品收入指引从 $56.6 亿上调至 $58.4 亿。与 AWS 签署五年 $60 亿战略协议（含 Graviton 与 AI GPU 集成），签署收购企业 MCP 平台 Natoma 最终协议。盘后股价飙涨约 37%。</p>
+      </div>
+      <div class="impact">💡 产品收入加速且 RPO 增速高于收入增速，证明 AI workload 正在转化为有粘性的数据平台消费承诺。$60 亿 AWS 协议锁定算力-存储深度绑定路径；Natoma 收购标志 MCP 协议从开发者工具向企业 Agent 治理层渗透。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Anthropic 完成 $650 亿 H 轮融资，投后估值 $9650 亿超越 OpenAI</h3>
+      <div class="source">来源：<a href="https://www.anthropic.com/news/series-h" target="_blank">Anthropic 官方新闻稿</a></div>
+      <div class="body">
+        <p>Anthropic 5 月 28 日宣布完成 $650 亿 H 轮融资，由 Altimeter Capital、Dragoneer、Greenoaks 和红杉资本领投，投后估值 $9650 亿。年化收入突破 $470 亿。同时签署与 Amazon 5GW 新容量、Google+Broadcom 5GW TPU 容量协议。存储三巨头美光、三星、SK 海力士作为战略伙伴参投。</p>
+      </div>
+      <div class="impact">💡 $470 亿 ARR 意味着 Claude 正嵌入企业核心工作流，10GW 算力协议推动对 HBM、高性能存储和数据管道的天量需求。存储巨头入股标志 AI 模型层与数据基础设施供应链深度耦合。</div>
+    </div>
+
+    <div class="item">
+      <h3>3. Google Cloud 预览 BigQuery 跨引擎 Apache Iceberg 支持，统一治理跨云 Lakehouse</h3>
+      <div class="source">来源：<a href="https://finance.sina.com.cn/wm/2026-05-31/doc-inhztyms6452694.shtml" target="_blank">Google Cloud Blog / InfoQ 报道</a></div>
+      <div class="body">
+        <p>Google Cloud 5 月 31 日正式预览 BigQuery 跨引擎 Iceberg 支持：同一 Iceberg 表可由 BigQuery、Spark、Flink、Trino 等多引擎直接读写无需复制数据。核心能力包括托管元数据与自动表维护、跨 AWS/Azure/Databricks/Snowflake 的 Catalog 查询、统一 IAM 权限管控、ObjectRefs 多模态数据引用。</p>
+      </div>
+      <div class="impact">💡 Google 将 BigQuery 从"分析引擎"重新定位为"跨云 Lakehouse 治理中台"。Catalog 和元数据管理成为新锁定层——"谁管 Catalog 谁掌握入口"的竞争格局正在 Google/Databricks Unity/Snowflake Polaris 三方间形成。</div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 腾讯云数据库面向 Agent 全面升级：发布 Agent Memory、DatabaseClaw，TDSQL-B 架构级重构</h3>
+      <div class="source">来源：<a href="https://www.163.com/dy/article/KU62G6DU0514R9OJ.html" target="_blank">环球网 / 腾讯云官方</a></div>
+      <div class="body">
+        <p>5 月 29 日，腾讯云宣布数据库产品体系面向 Agent 场景全面升级。核心发布：(1) Agent Memory——三层记忆服务（短期压缩/长期沉淀/团队记忆），任务成功率+30%，最高节省 60% Token 成本，开源一周获 4000+ Stars；(2) DatabaseClaw——基于 OpenClaw 的数据库 AI Agent，覆盖 14 款产品 1600 API；(3) TDSQL-B 架构级重构，统一事务/向量/全文/图计算四引擎；(4) TDSQL-C 引入数据库 Branch 能力，1TB 秒级分叉。</p>
+      </div>
+      <div class="impact">💡 腾讯云将数据库从"被动存储"重新定位为"Agent 原生数据底座"。Agent Memory "团队记忆"概念在业内属首批产品化落地；TDSQL-B 四引擎统一对标多模数据库趋势，Database Branch 对标 Neon/PlanetScale。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Databricks Lakeflow Real-Time Mode 进入 Public Preview：端到端延迟低至 5ms</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/gcp/en/release-notes/product/2026/may" target="_blank">Databricks Release Notes</a></div>
+      <div class="body">
+        <p>5 月 27 日，Databricks 宣布 Lakeflow Spark Declarative Pipelines 的 Real-Time Mode 进入 Public Preview。该模式可实现端到端延迟低至 5 毫秒，适用于欺诈检测、实时个性化、即时决策等场景。使用新增的 update_flow 装饰器，支持 update output mode 和无需 watermark 的有状态聚合。</p>
+      </div>
+      <div class="impact">💡 Databricks 在流批一体架构中补齐"极低延迟"短板。5ms 延迟直接对标 Flink 核心优势场景，Spark 生态用户无需独立流引擎即可覆盖实时决策类 workload。</div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+      <div class="body" style="color: var(--text-secondary); font-style: italic;">
+        今日无合格信息。窗口内未发现符合准入标准的一手分析师观点或机构研究报告发布。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">投融资</span>1. DeepSeek 首轮融资接近尾声：国家大基金领投，投前估值 $450 亿</h3>
+      <div class="source">来源：<a href="https://k.sina.com.cn/article_5953190046_162d6789e0670383qo.html" target="_blank">《财经》杂志</a></div>
+      <div class="body">
+        <p><strong>核心数据：</strong>融资规模约 ¥700 亿（≈$100 亿），投前估值 $450 亿（一个月前为 $200 亿），国家集成电路产业投资基金领投。</p>
+        <p>DeepSeek 成立三年首次对外融资，也是国家大基金 12 年来首次跨界投资纯大模型公司。5 月底融资名单基本敲定。创始人梁文锋表示将继续专注开源模型和 AGI 研究。若完成将成中国 AI 大模型史上首轮融资规模最大的公司。</p>
+      </div>
+      <div class="impact">💡 国家资本从芯片制造端延伸至模型应用端，形成"芯片→模型→应用"全栈布局。DeepSeek 适配国产昇腾芯片，规模化部署将拉动国产算力-存储-数据管道上下游需求。</div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-ipo">IPO</span>2. MiniMax 与智谱双双启动 A 股科创板 IPO 辅导，冲刺"A+H"双平台</h3>
+      <div class="source">来源：<a href="https://www.cnfin.com/gs-lb/detail/20260530/4419645_1.html" target="_blank">新华财经</a></div>
+      <div class="body">
+        <p><strong>核心数据：</strong>MiniMax 5/29 与中信证券签署辅导协议，港股市值 HK$2635 亿；智谱 2 月聘国泰海通+中金推进辅导（已完成第四期），港股市值超 HK$7000 亿。</p>
+        <p>今年 1 月相继登陆港股后，两家头部大模型公司同步推进 A 股上市。"A+H"布局可对接国内算力、数据、应用生态及政策红利。</p>
+      </div>
+      <div class="impact">💡 大模型厂商加速资本化意味着 AI 基础设施采购规模将进一步扩大。A 股上市后获国内产业资本加持，有望加速国产数据平台生态适配与绑定。</div>
+    </div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 【跟踪】Databricks Cross-engine ABAC：外部引擎访问 Unity Catalog 表可强制行列级权限</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/gcp/en/release-notes/product/2026/may" target="_blank">Databricks Release Notes</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>5 月 28 日 Databricks 宣布 Cross-engine ABAC Beta——外部引擎读取 Unity Catalog 管理的 Delta/Iceberg 表时可服务端强制属性级访问控制、行过滤和列掩码。Unity Catalog 正从"Databricks 内部治理"向"跨引擎通用治理层"扩展。</p>
+        <p><strong>需要等待的信号：</strong>Beta 转 GA 时间、外部引擎范围是否扩展到 Snowflake/BigQuery、性能开销 benchmark。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. 【跟踪】ClickHouse ARR 突破 $2.5 亿，估值 $150 亿，正在准备 IPO</h3>
+      <div class="source">来源：业内报道综合</div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>ClickHouse 近期被多家媒体报道 ARR 突破 $2.5 亿，估值约 $150 亿，正在为 IPO 做准备。作为实时分析引擎领域核心玩家，上市将对 OLAP 市场格局和估值基准产生直接影响。</p>
+        <p><strong>需要等待的信号：</strong>IPO 路径（直接上市 vs 传统 IPO）、S-1 中云原生 vs 自部署收入拆分、客户集中度等关键指标披露。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-01 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

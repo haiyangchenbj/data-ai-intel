@@ -285,6 +285,11 @@ window.CB_ENV = 'cloud1-8gxhmvps775f72e2';
     if(!s){ s = 's_' + Date.now().toString(36) + Math.random().toString(36).slice(2,8); sessionStorage.setItem('dai_sid', s); }
     return s;
   })();
+  // 自排除：URL 加 ?no-track 设置永久跳过标记，后续访问不产生埋点事件（仅 localStorage 标识，不影响 CloudBase 数据）
+  if(window.location.search.indexOf('no-track')>=0){
+    localStorage.setItem('no_track', '1');
+  }
+  const _noTrack = localStorage.getItem('no_track') === '1';
   // 初始化 CloudBase Web SDK（匿名登录后直写 NoSQL，公开写规则已放通，环境已开启匿名登录）
   let _cbCol = null;
   let _cbReady = false;
@@ -314,6 +319,7 @@ window.CB_ENV = 'cloud1-8gxhmvps775f72e2';
     try { _cbCol.add({ ev: p.ev, sid: SID, t: p.t, props: p.props||{}, _ts: Date.now() }).catch(()=>{}); } catch(e){}
   }
   window.track = function(ev, props){
+    if(_noTrack) return;
     const p = { ev:String(ev), t:Date.now(), props:props||{} };
     try{
       const arr = JSON.parse(localStorage.getItem('dai_events')||'[]');
@@ -321,7 +327,7 @@ window.CB_ENV = 'cloud1-8gxhmvps775f72e2';
       localStorage.setItem('dai_events', JSON.stringify(arr));
     }catch(e){}
     flushCB(p);
-    if(window.location.search.indexOf('debug=1')>=0) console.log('[track]', ev, props||{});
+    if(window.location.search.indexOf('debug=1')>=0) console.log('[track]', _noTrack?'OFF:':'', ev, props||{});
   };
   if(document.readyState==='loading'){
     document.addEventListener('DOMContentLoaded', waitCb);

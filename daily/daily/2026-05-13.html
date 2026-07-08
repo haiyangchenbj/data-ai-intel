@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-13</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .body p { margin-bottom: 8px; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Watchlist tag */
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-downgrade { background: #fff3e0; color: #e65100; }
+  .tag-track { background: #e8f5e9; color: #2e7d32; }
+  .tag-upcoming { background: #e3f2fd; color: #1565c0; }
+
+  /* Empty section */
+  .empty-note {
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-05-13 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>ERP 巨头正在把数据平台能力内化为 AI Agent 的底座</li>
+      <li>数据连接层从闭源驱动走向开源化，降低平台锁定风险</li>
+      <li>AI 治理从合规文档向自动化证据链体系演进</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>SAP Sapphire 2026 释放的核心信号不是 Agent 数量，而是数据统一层（Business Data Cloud + 零拷贝联邦查询）成为自治企业的真正基础设施。同日 Databricks 将 JDBC 驱动全面开源，连接层的透明化正在成为平台竞争的新维度。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. SAP Sapphire 2026 发布「自治企业」战略，Business AI Platform 统一数据与 AI 底座</h3>
+      <div class="source">来源：<a href="https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise" target="_blank">SAP News</a></div>
+      <div class="body">
+        <p>SAP 在 Sapphire 2026 大会上发布「自治企业」战略，核心是将 SAP Business Technology Platform、Business Data Cloud 和 Business AI 合并为统一的 SAP Business AI Platform。同时宣布与 AWS 建立 Amazon Athena 与 Business Data Cloud 的双向零拷贝数据共享，与 Google Cloud、Microsoft 实现 Joule Agent 双向互操作，并推出 Knowledge Graph 为 Agent 提供结构化业务语境。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是 SAP 首次将数据平台能力（Business Data Cloud）与 AI 运行时合并为单一平台，并通过零拷贝联邦查询消除数据复制瓶颈。SAP 管理着全球约 87% 的商业交易数据，其数据平台战略的方向直接影响企业数据栈的架构选择。Athena 零拷贝集成意味着 SAP+非 SAP 数据的联邦分析不再需要 ETL 中间层。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks 开源 JDBC 驱动重大升级：性能提升 30%，新增 Arrow 传输与异步执行</h3>
+      <div class="source">来源：<a href="https://www.databricks.com/blog/faster-queries-and-new-capabilities-open-source-databricks-jdbc-driver" target="_blank">Databricks Blog</a></div>
+      <div class="body">
+        <p>Databricks 发布开源 JDBC 驱动 3.x 系列的重大更新（Apache 2.0 许可），大型结果集检索性能提升最高 30%。新增 JDK 16+ 原生 Arrow 数据传输、异步执行接口、流式 Volume 数据摄入（免本地暂存）、多语句事务支持、Unity Catalog 指标视图访问、地理空间数据类型和查询标签等能力。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>JDBC 是企业 BI 工具、ETL 管道和应用连接数据平台的核心通道。Databricks 将其完全开源并大幅增强，一方面降低了第三方工具的集成门槛，另一方面通过 Arrow 传输和异步执行提升了数据密集型工作负载的效率。多语句事务支持补齐了 Lakehouse 在交易性场景的短板。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <p class="empty-note">本期窗口内无合格条目</p>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">本期窗口内无合格条目</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-downgrade">降级</span>1. Alation 发布 AI Governance 产品，构建企业 AI 合规证据链体系</h3>
+      <div class="source">来源：<a href="https://www.alation.com/news-and-press/alation-announces-new-ai-governance-offering/" target="_blank">Alation News</a></div>
+      <div class="body">
+        <p>Alation 在 Gartner Data & Analytics Summit（伦敦）发布 AI Governance 产品，包含 AI 资产注册表、自动化模型卡、基于法规的审批流程（支持 EU AI Act / NIST AI RMF / ISO 42001）、法规注册表和高管合规仪表盘五大能力模块。这是数据目录厂商首次推出完整的 AI 治理产品线，标志着 AI 治理从手动文档阶段进入自动化证据链管理阶段。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>产品 GA 时间、实际企业部署案例和与现有数据目录产品的集成深度。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-track">跟踪</span>2. SAP 三连收购（Dremio + Reltio + Prior Labs）持续重塑数据平台版图</h3>
+      <div class="source">来源：<a href="https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/" target="_blank">SAP News</a></div>
+      <div class="body">
+        <p>SAP 于 5 月初密集宣布收购开放数据湖仓平台 Dremio（基于 Apache Iceberg/Arrow）、主数据管理厂商 Reltio 和表格基础模型公司 Prior Labs。Dremio 收购尤其值得关注——SAP 明确承诺继续投入 Iceberg 和 Arrow 开源生态，且 Dremio 的联邦查询引擎将补强 Business Data Cloud 的非 SAP 数据覆盖能力。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>监管审批进展（预计 Q3 2026 完成）、Dremio 与 SAP Business Data Cloud 的整合路线图、对 Iceberg/Arrow 社区贡献的实际兑现。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-upcoming">预告</span>3. Apache Iceberg 1.11.0 进入 RC 投票阶段</h3>
+      <div class="source">来源：<a href="https://www.mail-archive.com/dev@iceberg.apache.org/msg13483.html" target="_blank">Apache Iceberg Dev 邮件列表</a></div>
+      <div class="body">
+        <p>Apache Iceberg 1.11.0 RC1 已于 5 月初进入社区投票，包含 Flink 纳秒精度支持等新特性。作为当前数据湖仓生态的核心表格式，每个新版本的特性方向都直接影响引擎兼容性和平台选型。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>投票结果和正式 release 日期。
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-05-13 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

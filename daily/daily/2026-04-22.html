@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-22</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 12px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-22 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台正在从分析工具升级为企业 Agent 的统一控制平面</li>
+      <li>AI 编码代理开始主动连接竞品数据系统，平台边界正在被打破</li>
+      <li>国内 Agent 治理从概念进入可量化的测评落地阶段</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Snowflake 以一次发布同时覆盖业务用户（Intelligence）和开发者（Cortex Code），并主动连接 Databricks、AWS Glue 等竞品数据源，标志着数据平台竞争从功能比拼转向「谁能成为企业 Agent 化的控制平面」。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Snowflake 大幅扩展 Intelligence + Cortex Code，定位「Agentic Enterprise 控制平面」</h3>
+      <div class="source">来源：<a href="https://www.morningstar.com/news/business-wire/20260421788290/snowflake-expands-snowflake-intelligence-and-cortex-code-to-power-the-control-plane-for-the-agentic-enterprise" target="_blank">Business Wire 官方新闻稿</a> / <a href="https://siliconangle.com/2026/04/21/snowflake-targets-agentic-enterprise-unified-control-plane-ai-data/" target="_blank">SiliconANGLE</a></div>
+      <div class="body">
+        <p>Snowflake 于 04-21 发布两大产品线重大更新。<strong>Snowflake Intelligence</strong> 升级为个人工作代理，新增 MCP 连接器（Gmail/Jira/Salesforce/Slack）、iOS 应用、深度研究和持续个性化学习能力；<strong>Cortex Code</strong> 从 AI 编码助手扩展为完整的 AI 构建层，关键突破是新增对 <strong>AWS Glue、Databricks、PostgreSQL</strong> 等外部数据系统的支持，同时发布 VS Code 扩展、Claude Code 插件以及 Python/TypeScript SDK。超过 9,100 家客户每周使用 Snowflake AI 产品，50%+ 客户已采用 Cortex Code。</p>
+      </div>
+      <div class="impact">💡 这是数据平台首次以「控制平面」定位覆盖业务用户和开发者双端，且主动连接竞品数据源（Databricks/AWS Glue），意味着平台竞争逻辑从「让用户把数据搬进来」转向「无论数据在哪，都通过我来编排 Agent」。MCP/ACP 双协议支持进一步强化了互操作性叙事。</div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks AI Runtime 新增 1xH100 加速器支持（Beta）</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks Release Notes - April 2026</a></div>
+      <div class="body">
+        <p>Databricks 于 04-21 发布 AI Runtime 对 1xH100 单卡加速器的 Beta 支持，降低了 GPU 训练/推理的入门门槛。此前 AI Runtime 仅支持多卡 GPU 配置。</p>
+      </div>
+      <div class="impact">💡 单卡 H100 支持使中小规模深度学习工作负载无需预留多卡集群，Serverless GPU 的可及性进一步降低。这是 Databricks 将 GPU 训练从基础设施工程推向按需服务的持续动作。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Oracle AI Data Platform Workbench 发布目录级治理与访问控制模型</h3>
+      <div class="source">来源：<a href="https://blogs.oracle.com/ai-data-platform/catalog-governance-and-access-control-in-oracle-ai-data-platform-workbench" target="_blank">Oracle AI Data Platform 官方博客</a></div>
+      <div class="body">
+        <p>Oracle 于 04-21 发布博客详解 AI Data Platform Workbench 的目录治理架构：以 Catalog 为主治理边界，实现目录/Schema/表三层精细权限控制，支持基于 Delta Sharing 的安全数据共享，核心设计是将数据访问与工作空间协作解耦。</p>
+      </div>
+      <div class="impact">💡 Oracle 在 AI Data Platform 上复刻了 Databricks Unity Catalog 和 Snowflake Horizon 的治理路线（目录级治理+开放共享协议），三大平台在治理架构上趋同。差异化战线正在从「有没有治理」转向「治理能否覆盖 Agent 场景」。</div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 中国信通院启动「可信技能（Skills）治理」首批测试评估</h3>
+      <div class="source">来源：<a href="https://wap.cj.sina.cn/pc/7x24/4829653" target="_blank">中国信通院 / 新浪财经 7×24</a></div>
+      <div class="body">
+        <p>中国信通院于 04-21 正式启动首批可信技能（Skills）治理测试评估，聚焦 Agent 技能的三大问题——执行可信性不足、调用过程不可控、合规安全不可靠。测试体系覆盖 3 大类、15 个指标、70+ 细分项，首批方向包括 Skills 治理、Skills 库治理和智能体 Skills 治理，预计 7 月发布结果。</p>
+      </div>
+      <div class="impact">💡 数据平台正在成为 Agent 技能的核心执行环境（Databricks Agent Bricks、Snowflake Cortex Agents 等），信通院此举意味着国内 Agent 生态即将进入标准化合规阶段。数据平台厂商如果要进入国内 Agent 市场的企业客户端，Skills 治理合规将成为准入前提。</div>
+    </div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">本日窗口内无符合准入标准的投融资、财报、IPO 或收购兼并事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 【跟踪】Snowflake 与 Databricks 的 Agent 控制平面路线分化</h3>
+      <div class="source">来源：<a href="https://siliconangle.com/2026/04/21/snowflake-targets-agentic-enterprise-unified-control-plane-ai-data/" target="_blank">SiliconANGLE</a> / 综合近期日报追踪</div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Snowflake 04-21 首次明确提出「Agentic Enterprise Control Plane」定位，并通过 Cortex Code 主动连接 Databricks 数据源。而 Databricks 的 Agent Bricks 平台走开放框架+自有治理路线。两者在 Agent 层面的竞争从「各建围墙」转向「谁能成为超级连接器」。</p>
+        <p><strong>需要等待什么信号确认：</strong>Cortex Code 连接 Databricks 数据源的功能是否进入 GA 及实际使用深度；Databricks 是否在 Agent Bricks 中增加 Snowflake 数据连接。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. 【跟踪】数据平台治理架构三方趋同（Databricks/Snowflake/Oracle）</h3>
+      <div class="source">来源：综合 Oracle 04-21 博客 / Databricks Unity Catalog / Snowflake Horizon</div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Oracle AI Data Platform Workbench 的目录级治理+Delta Sharing 架构与 Databricks Unity Catalog 高度相似，Snowflake Horizon 也在同一方向推进。三大平台在治理层趋同意味着企业选型将更多依赖上层能力差异（Agent 编排、开发者体验、生态连接），治理本身正在标准化。</p>
+        <p><strong>需要等待什么信号确认：</strong>Oracle AIDP Workbench 何时 GA 及实际客户采用反馈；三方在 Agent 治理（而非数据治理）层面的差异化是否拉开。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-04-22 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

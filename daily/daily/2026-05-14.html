@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-14</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  .empty-section {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-upcoming { background: #fff3e0; color: #e65100; }
+  .tag-downgrade { background: #f3e5f5; color: #7b1fa2; }
+  .tag-followup { background: #e8f5e9; color: #2e7d32; }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-05-14 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>Agent 基础设施正在从应用层下沉到专用数据层，可观测性催生新的数据库品类</li>
+      <li>数据治理从被动审计走向主动权限洞察，敏感数据可见性成为平台标配</li>
+      <li>AI 能力进入合规行业数据管道，非结构化文档解析和 AI 函数权限管理同步落地</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Agent 生态的数据层需求正在催生新的数据库和可观测性基础设施，与此同时，数据治理能力正从合规附件升级为平台核心竞争力——Snowflake 和 Databricks 同日推进的治理增强说明这已不是差异化卖点，而是平台底线。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. LangChain 发布 SmithDB：首个面向 Agent 可观测性的专用分布式数据库</h3>
+      <div class="source">来源：<a href="https://www.langchain.com/blog" target="_blank">LangChain Blog</a> / <a href="https://www.aiexpertmagazine.com/interrupt-2026-langchain-everything-you-need-to-know/" target="_blank">Interrupt 2026 大会</a></div>
+      <div class="body">
+        <p>LangChain 在 Interrupt 2026 大会（5月13-14日，旧金山）上发布 SmithDB，这是一个用 Rust 构建、基于 Apache DataFusion 和 Vortex 的分布式数据库，专门为 Agent 可观测性场景设计。SmithDB 作为 LangSmith 平台的数据层，解决了 Agent 运行时产生的大规模追踪数据的存储、查询和分析问题。同日还发布了 LangSmith Engine 和 LangSmith Context Hub。</p>
+      </div>
+      <div class="impact">💡 Agent 可观测性正在从通用日志/APM 工具中独立出来，催生专用数据基础设施。SmithDB 选择 DataFusion + Vortex 的列式存储架构而非传统 OLAP，说明 Agent trace 数据的查询模式（高基数、深嵌套、跨 session）需要新的存储和计算引擎。这对数据平台厂商是一个信号：Agent 数据管理可能是下一个需要专门解决方案的领域。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Snowflake 推出敏感数据权限报告（Public Preview）：数据治理从分类走向权限可见性</h3>
+      <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-05-13-sensitive-data-entitlement-report-preview" target="_blank">Snowflake Release Notes 2026-05-13</a></div>
+      <div class="body">
+        <p>Snowflake 发布 Sensitive Data Entitlement Report（公开预览），允许管理员生成报告查看哪些用户角色拥有对敏感数据表的访问权限。该功能将数据分类结果（哪些列包含敏感数据）与访问控制（谁能看到这些数据）关联起来，生成一张权限-敏感数据交叉视图。</p>
+      </div>
+      <div class="impact">💡 数据治理的核心痛点正在从"发现敏感数据在哪里"演进到"谁能访问敏感数据"。这是 Snowflake 将 Horizon（治理框架）从被动分类推向主动权限洞察的关键一步。对于受监管行业（金融、医疗），这类功能将从"锦上添花"变为平台选型的硬性门槛。</div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Snowflake Cortex AI 函数支持细粒度权限控制（Preview）</h3>
+      <div class="source">来源：<a href="https://docs.snowflake.com/release-notes/all-release-notes" target="_blank">Snowflake Release Notes 2026-05-13</a></div>
+      <div class="body">
+        <p>Snowflake 新增 <code>USE AI FUNCTION</code> 细粒度权限，管理员可按函数级别控制角色对 Cortex AI Functions 的调用权限，替代此前"全有或全无"的 <code>USE AI FUNCTIONS</code> 权限。</p>
+      </div>
+      <div class="impact">💡 AI 函数的精细化权限管理是数据平台将 AI 能力纳入企业治理体系的关键一步。当 AI 函数成本和安全风险差异显著时（如 LLM 推理 vs 嵌入生成），按函数授权比按角色授权更贴近企业的实际管控需求。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Databricks ai_parse_document 在合规安全配置工作区默认可用</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may" target="_blank">Databricks Release Notes May 2026</a></div>
+      <div class="body">
+        <p>Databricks 的 <code>ai_parse_document</code> 函数现已在启用合规安全配置（HIPAA、PCI-DSS、FedRAMP Moderate 等）的工作区默认可用。该函数可从 PDF、图片、Word、PowerPoint 等非结构化文档中解析结构化内容。</p>
+      </div>
+      <div class="impact">💡 非结构化文档解析进入合规场景（医疗、金融、政府），意味着 Databricks 正在将 AI 数据处理能力从实验性功能推向受监管行业的生产使用。这降低了合规行业采用 AI 增强数据管道的门槛。</div>
+    </div>
+  </div>
+
+  <!-- Section C: 观点与洞察 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>观点与洞察</h2>
+    </div>
+    <div class="empty-section">今日窗口内无符合准入标准的高价值观点或正式研究发布</div>
+  </div>
+
+  <!-- Section D: 投融资 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>投融资</h2>
+    </div>
+    <div class="empty-section">今日窗口内无符合准入标准的投融资/财报/IPO/收购兼并事件</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-upcoming">预告</span>LangChain Interrupt 2026 大会持续进行（5/13-14），更多 Agent 基础设施发布待跟踪</h3>
+      <div class="source">来源：<a href="https://www.aiexpertmagazine.com/interrupt-2026-langchain-everything-you-need-to-know/" target="_blank">Interrupt 2026</a></div>
+      <div class="body">
+        <p>Interrupt 2026 是目前 Agent 生态最集中的技术发布窗口。Day 1 已发布 SmithDB、LangSmith Engine、Context Hub 三款产品。Day 2（5/14）可能有更多关于 LangGraph、Agent 编排和数据管道的发布，值得在下期日报跟进。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-downgrade">降级</span>dbt Cloud 五月批量更新：Cost Insights Beta、Fusion Release Tracks、Native Private Packages GA</h3>
+      <div class="source">来源：<a href="https://docs.getdbt.com/docs/dbt-cloud/cloud-changelog" target="_blank">dbt Release Notes</a></div>
+      <div class="body">
+        <p>dbt Cloud 五月更新包含多项重要功能——Cost Insights（Beta）首次让用户在 dbt 平台内看到仓库计算成本估算和 state-aware 编排节省；Fusion Release Tracks 开始分阶段推出意味着 Fusion 引擎进入规模化交付阶段；Native Private Packages GA 解决了企业级代码复用的关键痛点。降级原因：月度更新无具体发布日期。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-downgrade">降级</span>Microsoft Purview 数据质量三项功能 GA：可配置阈值、独立扫描、增量扫描</h3>
+      <div class="source">来源：<a href="https://learn.microsoft.com/ar-sa/purview/whats-new" target="_blank">Microsoft Purview What's New</a></div>
+      <div class="body">
+        <p>Microsoft Purview 在五月将三项数据质量功能推向 GA：可配置数据质量阈值（按规则和数据资产分别设定最低质量分数）、独立数据资产质量扫描（不再需要先关联数据产品）、增量质量扫描（基于时间过滤的高效扫描）。降级原因：月度更新无精确发布日期。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Data+AI 全球日报 v4.2</p>
+    <p>信息截至北京时间 2026-05-14 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
