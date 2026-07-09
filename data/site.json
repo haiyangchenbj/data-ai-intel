@@ -4939,6 +4939,76 @@
       "source": "DBTA July 7, 2026",
       "url": "https://www.dbta.com/Editorial/News-Flashes/AWS-Context-Streamlines-Intelligence-for-AI-Agents-175616.aspx",
       "conf": ""
+    },
+    {
+      "date": "2026-07-09",
+      "vendor": "国家数据局",
+      "module": "专题",
+      "title": "四部门联合印发\"人工智能+人社\"实施意见，67个AI场景首次跨部委落地",
+      "summary": "摘要： 7月8日，人社部、国家发改委、工信部、国家数据局联合印发《关于加快推进\"人工智能+人社\"应用发展的实施意见》，提出5年三步走目标：2026年打造20个行业大模型应用场景及数据集，2027年探索50个高价值场景赋能路径，2030年实现人社领域AI普遍应用。文件制定了覆盖就业、社保、人才、劳动关系、人力资源服务、智慧治理六大领域的67个细分场景全景图，并要求搭建\"1（部级）+N（中试基地）+32（省级）\"全国人社AI应用平台。为什么对数据平台重要： 这是国家数据局成立以来首个跨部委联合印发的AI垂直场景实施方案，直接锚定了政务AI数据基础设施的投入方向。67个细分场景需要配套高质量数据集、行业大模型和AI应用平台，将实质性拉动政务数据平台建设需求，特别是行业知识库、数据标注治理、模型训练推理等数据基础设施层。",
+      "source": "国家数据局",
+      "url": "https://www.nda.gov.cn/sjj/zwgk/zcfb/0708/20260708133949899211227_pc.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-09",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks Genie全面转向按量付费，数据平台AI能力进入独立商业化阶段",
+      "summary": "摘要： 自7月8日起，Databricks Genie产品线（Genie Agents/Genie Code/Genie One）全面转向按量付费模式。每用户每月享有150 DBU免费大模型用量（约合$10.50），超出部分按实际LLM消耗计费。同日，Genie Spaces正式更名为Genie Agents。配套的Unity AI Gateway Budgets已于7月6日GA，支持按账户、工作区、群组和用户粒度设置支出上限和告警。为什么对数据平台重要： Genie从\"随Workspace授权附送\"变为独立计费产品，标志着Databricks的AI能力正式成为独立可量化的产品线而非平台附加功能。这一定价模式转变对行业有双重信号：一是数据平台厂商对AI投入的商业回报开始寻求独立变现路径；二是企业采购数据平台时需将AI消费成本从平台授权中单独核算，影响TCO评估和预算规划。",
+      "source": "Databricks Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-09",
+      "vendor": "AWS",
+      "module": "技术",
+      "title": "AWS SageMaker Unified Studio新增OpenLineage数据血缘，首次覆盖IAM身份体系",
+      "summary": "摘要： 7月8日，AWS SageMaker Unified Studio将OpenLineage兼容的数据血缘追踪能力扩展至IAM-based域，此前该功能仅限IAM Identity Center环境。新能力可自动捕获Amazon EMR Spark、AWS Glue、SageMaker Visual ETL和Notebook的列级血缘事件，支持交互式血缘图可视化、历史版本对比和DeleteLineageEvent API管理。OpenLineage自定义传输已合入OpenLineage 1.33.0版本，允许外部Spark作业直接向SageMaker端点发送血缘事件。对数据平台的影响： 这是AWS首次将数据血缘治理能力与IAM身份体系打通，意味着企业可以在现有IAM权限模型下实现自动化列级血缘追踪，无需额外身份基础设施。OpenLineage开源传输的合入使得混合架构（EMR on EC2/EKS + SageMaker）的血缘治理无需自建中间层，降低了全链路数据治理的实施门槛。",
+      "source": "AWS Big Data Blog",
+      "url": "https://aws.amazon.com/blogs/big-data/capture-data-lineage-of-amazon-emr-spark-jobs-into-amazon-sagemaker-unified-studio/",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-09",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks SQL物化视图成本自动归因+Managed Iceberg MVs进入公测",
+      "summary": "摘要： 7月8日，Databricks SQL物化视图和流表的刷新任务开始自动继承SQL Warehouse的自定义标签，标签传播至system.billing.usage计费表，实现按Warehouse粒度自动归因MV/流表刷新成本。同日，新增_object_metadata隐藏列进入公测（DR 18.1+），可暴露云存储对象的MIME类型、ETag、自定义键值元数据、系统元数据和对象标签。此外，7月7日起Managed Iceberg物化视图进入公测，支持创建外部Iceberg Reader兼容的MV。对数据平台的影响： 成本自动归因解决了企业级数据平台中长期存在的MV/流表刷新成本无法准确计入业务部门的痛点，是FinOps能力的重要补全。Managed Iceberg MVs公测标志着Databricks在开放格式方向上的持续投入——此前仅Delta格式支持MV，现在Iceberg外部Reader可直接读取Databricks管理的物化视图，降低了开放格式用户的选择壁垒。",
+      "source": "Databricks Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-09",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "Google Gemini API托管代理四项升级：后台执行、远程MCP、凭据刷新、混合工具调用",
+      "summary": "摘要： 7月8日，Google Gemini API托管代理（Managed Agents）发布四项能力升级：异步后台执行（background:true标志+可轮询task ID）、远程MCP服务器直连（无需自定义代理中间件）、自定义函数调用与内置沙箱工具混合使用（requires_action步骤匹配模式）、跨会话网络凭据刷新（不丢失沙箱状态）。Google将Gemini Interactions API定位为\"单端点代理运行时\"，在隔离云沙箱中一站式处理推理、代码执行、包安装、文件管理和网络检索。对数据平台的影响： 托管代理的后台执行和远程MCP直连能力降低了Agent与数据基础设施的集成复杂度。对于数据平台而言，这意味Agent可以更可靠地执行长时间数据查询和ETL任务（不再因HTTP超时丢失状态），并通过MCP协议直接访问数据库、数据目录等后端系统，减少中间代理层的运维负担。",
+      "source": "Gemini API",
+      "url": "https://www.my2cents.ai/news/2026-07-08-google",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-09",
+      "vendor": "Google",
+      "module": "产品",
+      "title": "【预告】Google Gemini 3.5 Pro预计7月17日发布，支持200万上下文窗口和\"深度思考\"推理模式",
+      "summary": "为什么值得继续看： Gemini 3.5 Pro定位面向复杂智能体工作流，若\"深度思考\"推理模式实现对结构化数据分析的增强，可能直接影响BigQuery、AlloyDB等Google数据平台产品的AI集成能力——特别是自然语言查询和Agent驱动的数据分析场景。需要等待什么信号确认： 7月17日正式发布时，关注是否包含数据分析专用能力（如SQL生成增强、多步推理查询优化），以及是否与Google Cloud数据产品（BigQuery、AlloyDB、Dataproc）有明确的集成路线图。",
+      "source": "IT之家",
+      "url": "https://view.inews.qq.com/a/20260707A02D4300",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-09",
+      "vendor": "微软",
+      "module": "机构",
+      "title": "【预告】Microsoft Fabric GPU加速数仓预计7月启动早期预览",
+      "summary": "为什么值得继续看： Microsoft在Build 2026大会上宣布Fabric Data Warehouse将引入NVIDIA GPU加速，称内部基准测试性能可达竞品7倍。GPU加速数仓代表了数据仓库架构从CPU向异构计算演进的趋势，一旦落地将实质性改变数据平台性能竞争格局和TCO评估模型。需要等待什么信号确认： 早期预览的具体启动日期、首批支持的工作负载类型（Ad-hoc查询/ETL/ML推理）、以及是否有独立的第三方基准测试来验证性能提升数据。",
+      "source": "The New Stack",
+      "url": "https://www.digitaltoday.co.kr/cn/view/61145/microsoft-fabric-aims-to-be-data-platform-for-ai-agents-targeting-snowflake-and-databricks",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5023,7 +5093,8 @@
     "2026-07-03",
     "2026-07-06",
     "2026-07-07",
-    "2026-07-08"
+    "2026-07-08",
+    "2026-07-09"
   ],
   "monthly": [
     {

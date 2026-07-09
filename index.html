@@ -285,9 +285,10 @@ window.CB_ENV = 'cloud1-8gxhmvps775f72e2';
     if(!s){ s = 's_' + Date.now().toString(36) + Math.random().toString(36).slice(2,8); sessionStorage.setItem('dai_sid', s); }
     return s;
   })();
-  // 自排除：URL 加 ?no-track 设置永久跳过标记，后续访问不产生埋点事件（仅 localStorage 标识，不影响 CloudBase 数据）
+  // 自排除：URL 加 ?no-track 设置永久跳过标记，同时清空本地缓冲区（避免旧事件被补写）
   if(window.location.search.indexOf('no-track')>=0){
     localStorage.setItem('no_track', '1');
+    localStorage.removeItem('dai_events');
   }
   const _noTrack = localStorage.getItem('no_track') === '1';
   // 初始化 CloudBase Web SDK（匿名登录后直写 NoSQL，公开写规则已放通，环境已开启匿名登录）
@@ -307,7 +308,7 @@ window.CB_ENV = 'cloud1-8gxhmvps775f72e2';
     } catch (e) { _cbReady = false; }
   }
   function flushBuffered(){
-    if(!_cbCol) return;
+    if(!_cbCol || _noTrack) return;
     try {
       const arr = JSON.parse(localStorage.getItem('dai_events')||'[]');
       for(const p of arr){ try{ _cbCol.add({ ev:p.ev, sid:SID, t:p.t, props:p.props||{}, _ts:Date.now() }).catch(()=>{}); }catch(e){} }
