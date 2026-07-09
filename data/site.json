@@ -263,12 +263,13 @@
     {
       "date": "2026-03-24",
       "vendor": "IBM",
-      "module": "机构",
+      "module": "投融资",
       "title": "1. 行业分析：IBM-Confluent 收购重塑实时数据格局——\"AI-Ready\"标准被重新定义",
       "summary": "核心观点：多位行业分析人士指出，IBM 收购 Confluent 不仅是基础设施扩展，更是一次战略重新定位：实时数据流从可选的中间件变成了 AI Agent 时代的必需基础设施。Confluent 的 Apache Kafka 平台服务于 6,500+ 企业、覆盖 40%+ Fortune 500，IBM 一次性获得了企业实时数据层的核心入口。此收购的真正影响在于重新定义了\"AI-Ready\"的标准——不再是\"有数据湖就够了\"，而是\"必须有持续更新的实时数据流\"。",
       "source": "LinkedIn 深度分析",
       "url": "https://www.linkedin.com/pulse/inside-deal-ibms-11-billion-acquisition-confluent-raj-sura-zp0le/",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-03-24",
@@ -323,12 +324,13 @@
     {
       "date": "2026-03-25",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "1. FabCon 2026 深度分析：Microsoft 正将 Fabric 从分析层打造为企业 AI 数据控制平面",
       "summary": "核心观点：Telmai CEO Anoop Gopalam 在 FabCon 2026 后发布深度分析指出，Microsoft 在 FabCon 上的战略定位已从\"统一分析平台\"升级为\"企业数据控制平面\"。关键判断：（1）Direct Lake GA 消除了数据从 OneLake 到报表之间的缓冲层，坏数据将直接影响 AI 模型和仪表盘，持续数据质量监控从可选变为刚需；（2）Fabric IQ 引入本体驱动的语义层，AI Agent 获得的不再是裸 schema 而是业务语义上下文；（3）OneLake 正成为多引擎中枢（已 GA 支持 Snowflake Iceberg 互操作、Preview 支持 Databricks Unity Catalog），数据质量标准需在数据层定义一次并跨引擎执行。",
       "source": "Telmai 博客",
       "url": "https://www.telm.ai/blog/fabcon-2026-recap-how-microsoft-is-turning-fabric-into-the-control-plane-for-trustworthy-ai-ready-data/",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-03-25",
@@ -503,12 +505,13 @@
     {
       "date": "2026-03-31",
       "vendor": "Oracle",
-      "module": "机构",
+      "module": "技术",
       "title": "跟踪 1. Flink CDC 3.6.0 对湖仓连接器矩阵的补全效应",
       "summary": "Flink CDC 3.6.0 一次性补齐了 Oracle Source + Hudi Sink + Iceberg 多目录 + Fluss 0.9 + VARIANT 类型，使其连接器矩阵在源端和目标端都达到了新的覆盖广度。但这些新连接器在企业级生产环境中的稳定性、性能和 Schema Evolution 完整性仍需验证，特别是 Oracle Source 在大规模 CDC 场景下的表现。",
       "source": "Apache Flink CDC 3.6.0 Release Announcement",
       "url": "https://flink.apache.org/2026/03/30/apache-flink-cdc-3.6.0-release-announcement/",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-04-01",
@@ -613,12 +616,13 @@
     {
       "date": "2026-04-03",
       "vendor": "Palantir",
-      "module": "机构",
+      "module": "产品",
       "title": "跟踪NHS 抵制 Palantir 事件的后续：英国政府是否真正终止合同",
       "summary": "FT 报道英国政府正寻求法律意见触发终止条款，但 Palantir 目前已在 123/205 家医院部署，项目评级\"按时按预算\"。实际终止面临巨大的迁移成本和运营风险。这是一个观察\"数据平台伦理争议能否真正改变采购结果\"的关键案例。",
       "source": "Financial Times",
       "url": "https://www.ft.com/content/dbb67083-bd1d-46e9-b196-1438d54c5795",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 产品"
     },
     {
       "date": "2026-04-07",
@@ -693,12 +697,13 @@
     {
       "date": "2026-04-07",
       "vendor": "其他",
-      "module": "机构",
+      "module": "技术",
       "title": "跟踪Dell Lightning File System 进入 4 月可用窗口，号称最快并行文件系统",
       "summary": "Dell 3 月 16 日宣布的 Lightning File System 标称 150 GB/s/机架、20X 性能提升，定于 4 月可用。若如期交付，将直接影响 AI 训练场景的存储选型。",
       "source": "PR Newswire / Dell Technologies",
       "url": "https://www.prnewswire.com/news-releases/dell-ai-data-platform-with-nvidia-supercharges-enterprise-ai-with-breakthrough-data-orchestration-and-storage-innovations-302715096.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-04-08",
@@ -863,12 +868,13 @@
     {
       "date": "2026-04-10",
       "vendor": "Snowflake",
-      "module": "机构",
+      "module": "技术",
       "title": "1. Snowflake CEO Sridhar Ramaswamy：聊天机器人时代落幕，智能体时代到来",
       "summary": "核心观点：Snowflake CEO 在 TechCrunch Equity 播客中阐述公司战略转型方向：从数据仓库公司转变为「随数据交付」的 AI 平台。核心判断是聊天机器人时代正在结束，真正的价值在于能自主执行复杂业务任务的智能体。公司已推出数百项 AI 功能并对内部团队架构进行全面重组。",
       "source": "TechCrunch Equity 播客",
       "url": "https://news.qq.com/rain/a/20260409A049KH00",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-04-10",
@@ -903,12 +909,13 @@
     {
       "date": "2026-04-10",
       "vendor": "Iceberg",
-      "module": "机构",
+      "module": "技术",
       "title": "降级 Cloudera 混合数据平台重大升级：延长支持至 2032 年，Iceberg 表查询性能提升 38%",
       "summary": "为什么值得继续看：Cloudera 4 月 8 日在 Iceberg Summit 上宣布平台重大升级，核心亮点包括：延长支持至 2032 年、Lakehouse Optimizer 自动优化 Iceberg 表（查询性能 +38%、存储开销 -36%）、Cloud Bursting（本地数据中心弹性扩展到云端无需数据复制）、跨平台实时 Iceberg 表共享。 需要等待什么信号确认：Cloud Bursting 和跨平台 Iceberg 表共享的实际可用时间和客户验证案例。",
       "source": "Cloudera Press Release",
       "url": "https://www.cloudera.com/about/news-and-blogs/press-releases/2026-04-08-cloudera-advances-hybrid-data-platform-with-long-term-stability-elastic-scale-and-open-data-interoperability.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-04-10",
@@ -1373,12 +1380,13 @@
     {
       "date": "2026-04-23",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "产品",
       "title": "1. 【跟踪】数据治理从平台内建向跨平台互操作演进",
       "summary": "Google Cloud 与 Collibra 的双向集成标志着治理上下文开始跨平台流动。此前 Databricks（Unity Catalog）、Snowflake（Horizon）、Oracle（AIDP Workbench）均在强化平台内建治理，走的是「治理跟着平台走」的路线。Collibra 作为独立治理厂商打通 Dataplex 双向通道，意味着第三条路线出现：「治理独立于任何单一平台」。",
       "source": "Google Cloud × Collibra 04-22 公告",
       "url": "https://www.prnewswire.com/news-releases/google-cloud-and-collibra-deepen-partnership-to-bring-business-context-and-semantics-directly-to-knowledge-catalog-302749065.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 产品"
     },
     {
       "date": "2026-04-23",
@@ -1443,12 +1451,13 @@
     {
       "date": "2026-04-24",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "2. 【跟踪】三大平台 Agent 数据架构路线分化加速",
       "summary": "为什么值得继续看：Google 走\"跨云推理平面\"（数据在哪不重要，上下文在我这里），Databricks 走\"开放写入控制平面\"（Unity Catalog 为中心的治理+共享），Snowflake 走\"平台内聚控制平面\"（Intelligence + Cortex 全栈内建）。三种路线的分化在 Google Cloud Next 后进一步清晰化，直接影响企业多云数据架构的选型决策。 需要等待什么信号确认：Google Cloud 跨云 Lakehouse 的大型企业生产案例、Snowflake 对 Google 联邦读取的响应策略、Databricks 是否在 Data+AI Summit（06月）进一步强化开放写入叙事。",
       "source": "",
       "url": "",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-04-27",
@@ -1483,12 +1492,13 @@
     {
       "date": "2026-04-27",
       "vendor": "英伟达",
-      "module": "机构",
+      "module": "投融资",
       "title": "降级投融资 1. VAST Data 完成 F 轮约 $10 亿融资，估值达 $300 亿",
       "summary": "F 轮约 $10 亿（含一级和二级市场），估值 $300 亿（较 2023 年底 E 轮 $91 亿增长逾两倍）。Drive Capital 领投，NVIDIA、Fidelity、NEA 跟投。CARR 逾 $5 亿，已实现正向运营利润率和自由现金流。",
       "source": "VAST Data 官方公告（via 界面新闻）",
       "url": "https://www.jiemian.com/article/14302479.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-04-27",
@@ -1553,12 +1563,13 @@
     {
       "date": "2026-04-28",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "跟踪06 月 Databricks / Snowflake 双峰会前的 Agent 平台竞赛",
       "summary": "三大平台 Agent 架构路线持续分化——Google 走\"跨云推理平面\"、Databricks 走\"开放治理控制平面\"（Supervisor Agent SDK 上周进入 Beta）、Snowflake 走\"平台内聚控制平面\"。OpenAI 多云条款松绑为竞争格局增加新变量。06 月 Databricks Data+AI Summit 和 Snowflake Summit 将是集中回应 Google 并争取 OpenAI 多云机遇的关键窗口。",
       "source": "",
       "url": "",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-06",
@@ -1643,12 +1654,13 @@
     {
       "date": "2026-05-06",
       "vendor": "Iceberg",
-      "module": "机构",
+      "module": "技术",
       "title": "Apache Iceberg 2026：Column-level Updates成为下一个主战场",
       "summary": "Apache Iceberg社区2026年前沿方向已从\"ACID on Object Storage\"转向三大领域，最关键的是Column-level Updates：现有Iceberg实现在宽ML特征表（3000+列）更新单列时需rewrite全部列，写放大~2999倍；新提案将实现精确到列级别的手术式写入，使特征存储在湖仓上具备实践可行性。 ---",
       "source": "LinkedIn",
       "url": "https://www.linkedin.com/posts/siddharth-srivastava2450_dataengineering-apacheiceberg-lakehouse-activity-7445436833662160896-1_8L",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-06",
@@ -1693,22 +1705,24 @@
     {
       "date": "2026-05-06",
       "vendor": "Palantir",
-      "module": "机构",
+      "module": "产品",
       "title": "【跟踪】Palantir GPT-5.5部署跟踪",
       "summary": "",
       "source": "Palantir",
       "url": "https://www.palantir.com/docs/foundry/release-notes",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 产品"
     },
     {
       "date": "2026-05-06",
       "vendor": "dbt",
-      "module": "机构",
+      "module": "产品",
       "title": "【跟踪】Confluent Cloud for Flink + dbt集成落地",
       "summary": "",
       "source": "Confluent",
       "url": "https://docs.confluent.io/cloud/current/release-notes.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 产品"
     },
     {
       "date": "2026-05-07",
@@ -1823,22 +1837,24 @@
     {
       "date": "2026-05-07",
       "vendor": "Google",
-      "module": "机构",
+      "module": "投融资",
       "title": "2. 降级 Ineffable Intelligence $1.1B种子轮：AlphaGo之父押注无数据强化学习",
       "summary": "DeepMind前研究主管David Silver创立Ineffable Intelligence，$1.1B种子轮+$5.1B估值（全球最大种子轮）。Sequoia+Lightspeed领投，NVIDIA/Google/英国Sovereign AI基金参投。目标：纯强化学习Superlearner，无需人类数据。",
       "source": "CNBC",
       "url": "https://www.cnbc.com/amp/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-05-07",
       "vendor": "其他",
-      "module": "机构",
+      "module": "技术",
       "title": "3. 跟踪 Meta 24个月内开工10座AI数据中心",
       "summary": "Meta确认过去24个月开工10座AI优化数据中心，是消费技术领域历史上最激进的物理基础设施扩建之一。规模化推理（服务30亿+用户）驱动的基建需求正在重塑云基础设施竞争格局。",
       "source": "Business 2.0 Channel",
       "url": "https://business20channel.tv/meta-data-centres-2026-10-new-ai-facilities-reshape-cloud-in-5-may-2026",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-08",
@@ -1853,12 +1869,13 @@
     {
       "date": "2026-05-08",
       "vendor": "Fivetran",
-      "module": "机构",
+      "module": "技术",
       "title": "1. Fivetran：现代数据栈已到尽头，Open Data Infrastructure 是 AI 时代的正确架构",
       "summary": "Fivetran 产品高级总监 Amy Peterson 发文指出，仓库中心的 Modern Data Stack 在 AI 工作负载下正在崩溃——Agent 产生的高频查询使成本指数级膨胀，低延迟需求超出仓库设计上限，厂商锁定限制了多引擎访问。Open Data Infrastructure（湖中心 + 开放格式 + 存算分离）才是正确路径。",
       "source": "Fivetran 官方博客 — May 7, 2026",
       "url": "https://www.fivetran.com/blog/modern-data-stack-vs-open-data-infrastructure",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-08",
@@ -1873,12 +1890,13 @@
     {
       "date": "2026-05-08",
       "vendor": "Anthropic",
-      "module": "机构",
+      "module": "投融资",
       "title": "1. 【跟踪】CoreWeave Q1 营收同比翻倍超预期，但 Q2 指引疲软引发 AI 算力供给侧信号",
       "summary": "CoreWeave Q1 营收 $20.78 亿（同比+112%），订单积压飙升至 $994 亿，但 Q2 指引 $24.5-26 亿低于共识 $26.9 亿，盘后跌超 10%。虽然 CoreWeave 是 GPU 算力租赁商而非数据平台公司，但其订单结构（Meta $210 亿、Anthropic/Mistral 多年期协议）和 2026 年 $310-350 亿资本开支规模直接影响 AI 训练/推理基础设施的供给弹性。",
       "source": "CNBC — CoreWeave Q1 Earnings Report 2026",
       "url": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-05-08",
@@ -1913,12 +1931,13 @@
     {
       "date": "2026-05-11",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "1. Databricks OfficeQA / OfficeQA Pro：企业文档推理基准暴露 Agent 可靠性短板",
       "summary": "Databricks 推出 OfficeQA / OfficeQA Pro，用美国财政部公报构造企业文档推理基准。该语料包含约 89,000 页 Treasury Bulletins，涉及复杂表格、扫描 PDF、图表、跨文档检索和高精度计算。原始 OfficeQA 发布时，前沿 Agent 即使获得 PDF 语料，全量准确率仍低于 45%，最难子集低于 25%；后续 GPT-5.5 在 OfficeQA Pro 的端到端 Agent Harness 上提升到 52.63%，较 GPT-5.4 明显进步，但距离企业可放心自动化仍有很大空间。5 月 8 日 Databricks 进一步发布 Genie / Data Agent 方法文章，将 OfficeQA 揭示的难点推进到工程方案层面——提出 Specialized Knowledge Search、Parallel Thinking、Multi-LLM 三条路线。",
       "source": "Databricks OfficeQA Blog — Dec 9, 2025",
       "url": "https://www.databricks.com/blog/officeqa",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-11",
@@ -1993,12 +2012,13 @@
     {
       "date": "2026-05-12",
       "vendor": "Snowflake",
-      "module": "机构",
+      "module": "技术",
       "title": "降级Oracle ADB 通过 Snowflake Horizon Catalog 直读 Iceberg 表实现跨平台分析",
       "summary": "Oracle Autonomous AI Database 通过 Iceberg REST Catalog API 动态连接 Snowflake Horizon Catalog，无需数据移动即可查询 Snowflake 管理的 Iceberg 表。这标志着 Iceberg 目录协议已成为跨厂商数据互操作的工程级连接层，而非仅是开放格式愿景。",
       "source": "Oracle Database Blog (2026-05-08)",
       "url": "https://blogs.oracle.com/database/oracle-adb-snowflake-horizoncatalog-iceberg-no-etl",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-12",
@@ -2193,12 +2213,13 @@
     {
       "date": "2026-05-15",
       "vendor": "其他",
-      "module": "机构",
+      "module": "技术",
       "title": "跟踪 LangChain Deep Agents v0.6 + Delta Channels：长运行 Agent 存储效率验证",
       "summary": "Delta Channels 将 LangGraph 检查点从全量快照改为增量 delta 写入（周期性快照），500 轮对话存储从 4GB 降至 110MB（41 倍）。这个优化已在 Deep Agents v0.6 中默认启用，并在 LangGraph v1.2 中以 API 形式开放。对数据平台而言，Agent 数据的存储模式正在从\"状态全量复制\"走向\"增量+定期快照\"——与数据库领域的 WAL/增量检查点思路高度一致。",
       "source": "LangChain Blog - Delta Channels",
       "url": "https://www.langchain.com/blog/delta-channels-evolving-agent-runtime",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-18",
@@ -2663,12 +2684,13 @@
     {
       "date": "2026-05-22",
       "vendor": "华为",
-      "module": "机构",
+      "module": "技术",
       "title": "2. 华为首席存储科学家：构建可解释、可逆、受约束的 AI 系统，六大存储技术方向",
       "summary": "David Slik 提出存储三大 AI 时代使命：效率与成本、可信与可靠、隐私与安全。六大攻关方向：高带宽闪存（HBF）、归档存储成本突破、网内数据处理、防止知识表示格式碎片化、知识图谱与细粒度安全、存储生命周期可见性。新型 AI 接口——\"知识服务\"和\"记忆服务\"——让存储理解数据语义关系。",
       "source": "智东西 2026-05-21",
       "url": "https://new.qq.com/rain/a/20260521A09S0P00",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-22",
@@ -2773,22 +2795,24 @@
     {
       "date": "2026-05-25",
       "vendor": "Confluent",
-      "module": "机构",
+      "module": "技术",
       "title": "1. Confluent Head of AI：数据层崩塌是 AI 项目失败首因",
       "summary": "Sean Falconer 引用 McKinsey 报告：\"八成企业因数据限制无法规模化 Agentic AI。\"根因：安全团队因暴露风险阻止数据进入 AI 管道 + 开发者在工具切换中浪费时间。应对策略：让流数据层本身成为安全、实时、可被 Agent 直接消费的基础设施。",
       "source": "Confluent 新闻稿 2026-05-19",
       "url": "https://www.confluent.io/press-release/build-and-secure-real-time-ai",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-25",
       "vendor": "Snowflake",
-      "module": "机构",
+      "module": "技术",
       "title": "2. ClickHouse vs Snowflake 写入成本对比：Agent 分析的写入侧经济学",
       "summary": "ClickHouse 发文论证：Agentic 分析要求数据在写入时即\"查询就绪\"（query-ready），非写入后再转换。MergeTree 写入时完成排序和索引，天然适配 Agent 即时查询模式，而 Snowflake Micro-partition 自动聚类在大规模写入时产生显著成本。",
       "source": "ClickHouse 博客 2026-05-06",
       "url": "https://clickhouse.com/blog/",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-25",
@@ -2873,12 +2897,13 @@
     {
       "date": "2026-05-26",
       "vendor": "其他",
-      "module": "机构",
+      "module": "技术",
       "title": "1. Acceldata 发布自治数据与 AI 平台，CEO 宣告\"后 Lakehouse 时代\"",
       "summary": "数据可观测性厂商 Acceldata 在 Informatica World 2026 发布：① xLake 推理引擎 GA——支持跨多云/本地的统一推理调度；② Agentic Data Management——自治 Agent 自动检测异常/诊断根因/执行修复；③ MCP 协议原生支持——MCP 兼容 Agent 可标准化访问企业数据。CEO Rohit Choudhary 核心判断：\"Lakehouse 将孤岛从多处搬到单一云内，并未消除。AI Agent 需要直接访问分散在多云/主权环境的数据。\"",
       "source": "Wedoany 2026-05-25",
       "url": "https://en.wedoany.com/shortnews/175174.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-26",
@@ -2903,12 +2928,13 @@
     {
       "date": "2026-05-26",
       "vendor": "其他",
-      "module": "机构",
+      "module": "投融资",
       "title": "2. AI 基础设施投融资月度速览：2026年5月 $364B / 347 笔",
       "summary": "5 月 AI 创业投融资：347 笔/$364B，AI Vertical Platforms 180 笔领跑，AI Agents 独立品类达 113 笔。Seed 轮均值 ~$10M，Series A 均值 $233M。美国 42%/UK 39 笔/中国 35 笔。",
       "source": "InforCapital 2026-05-23",
       "url": "https://inforcapital.com/blog/2026-05-23-ai-startups-raised-364-billion-this-month-heres-where-the-capital-went/",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-05-27",
@@ -2993,12 +3019,13 @@
     {
       "date": "2026-05-28",
       "vendor": "Snowflake",
-      "module": "机构",
+      "module": "技术",
       "title": "1. Snowflake 用户实测：Adaptive Compute 在稳定 ETL 负载上反而劣于调优后的 Standard Warehouse",
       "summary": "核心观点：Snowflake 用户在 5/12-5/27 周期中将白银层 ETL Warehouse（约 2000 查询/日、负载稳定可预测）从 Standard 切换至预览版的 Adaptive Compute 模式，16 天后回退。实测数据：排队率从 ~0% 升至 3.4% 仍在攀升、P95 耗时从 14.1s 升至 20.4s、单查询 credits 从 0.0071 升至 0.0093（贵 31%）、平均排队时长从 3.3ms 升至 1543ms。作者结论：Adaptive Compute 设计假设是应对突发不可预测负载（dashboard、ad-hoc 分析），对节奏稳定的生产 ETL 管道反而是劣化方案，QUERY_THROUGHPUT_MULTIPLIER 锁在 3 倍这一限制成为关键瓶颈。",
       "source": "Evaluating Adaptive Warehouses for ETL: Why We Reverted to Standard (dev.to)",
       "url": "https://dev.to/swaroop_krishna_e2f4b83b2/evaluating-adaptive-warehouses-for-etl-why-we-reverted-to-standard-239f",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-05-28",
@@ -3103,12 +3130,13 @@
     {
       "date": "2026-05-29",
       "vendor": "Core42",
-      "module": "机构",
+      "module": "投融资",
       "title": "Core42 获 HSBC $550M 结构化贸易融资扩展 AI 基础设施",
       "summary": "UAE 主权 AI 基础设施运营商 Core42（G42 旗下）通过 HSBC 两笔非稀释融资（$240M 2月 + $310M 5月）共获 $5.5 亿，用于加速美国和欧洲 AI 云/算力部署。代表 AI 基础设施融资模式创新——用结构化贸易金融替代股权稀释，以长期合约需求作为信用支撑。",
       "source": "Core42 官方",
       "url": "https://www.core42.ai/resources/news/core42-raises-usd-550-million-from-hsbc-to-scale-global-ai-infrastructure",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-06-01",
@@ -3193,12 +3221,13 @@
     {
       "date": "2026-06-01",
       "vendor": "ClickHouse",
-      "module": "机构",
+      "module": "投融资",
       "title": "2. 【跟踪】ClickHouse ARR 突破 $2.5 亿，估值 $150 亿，正在准备 IPO",
       "summary": "为什么值得继续看：ClickHouse 近期被多家媒体报道 ARR 突破 $2.5 亿，估值约 $150 亿，正在为 IPO 做准备。作为实时分析引擎领域核心玩家，上市将对 OLAP 市场格局和估值基准产生直接影响。 需要等待的信号：IPO 路径（直接上市 vs 传统 IPO）、S-1 中云原生 vs 自部署收入拆分、客户集中度等关键指标披露。",
       "source": "",
       "url": "",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-06-02",
@@ -3273,12 +3302,13 @@
     {
       "date": "2026-06-02",
       "vendor": "Snowflake",
-      "module": "机构",
+      "module": "技术",
       "title": "Snowflake 将 Agentic Enterprise 定位为数据平台控制平面",
       "summary": "Snowflake CEO 在 Summit 26 Opening Keynote 中明确提出，数据平台的下一站不是\"更快查询\"或\"更大规模\"，而是成为企业 Agent 的\"控制平面\"（Control Plane）。这一定位将数据平台的竞争维度从基础设施性能转向 Agent 编排与可信数据供给能力。",
       "source": "Snowflake Summit Keynote",
       "url": "https://www.snowflake.com/summit/",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-06-02",
@@ -3303,12 +3333,13 @@
     {
       "date": "2026-06-02",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "产品",
       "title": "跟踪Databricks Lakebase Provisioned 实例强制迁移至 Autoscaling",
       "summary": "Databricks 于 6 月启动 Lakebase Provisioned 实例向 Autoscaling 的强制迁移。这一变化直接影响使用 Lakebase 进行可预测工作负载（如固定 ETL 管道）的企业成本结构——Autoscaling 在突发负载下更省，但在稳定负载下可能更贵。迁移的强制性和时间表仍需观察。",
       "source": "Databricks Documentation",
       "url": "https://docs.databricks.com/",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 产品"
     },
     {
       "date": "2026-06-02",
@@ -3623,22 +3654,24 @@
     {
       "date": "2026-06-08",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "Smart Chunks：Databricks AI Search 品牌重塑标志着\"混合搜索成为准入门槛\"",
       "summary": "摘要： Smart Chunks 分析指出，Databricks 更名 AI Search 反映了一个工程现实：生产级 AI Agent 和 Copilot 不生活在纯向量空间，它们需要\"find me contracts mentioning ACME Corp signed after Q3 2025 that are semantically similar to this clause\"这类混合查询。文章认为向量搜索是\"为单一路况设计的跑车\"，而 AI Search 是\"能同时应对高速、城市和土路的跨界车\"——因为真实检索工作流会在同一查询中混合所有三种需求。",
       "source": "Smart Chunks",
       "url": "https://smartchunks.com?p=51842/",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-06-08",
       "vendor": "其他",
-      "module": "机构",
+      "module": "技术",
       "title": "The Agent Times：Lakebase 消除了 Agent 跨治理边界操作的\"摩擦乘数\"",
       "summary": "摘要： The Agent Times 分析指出，AI Agent 当前需要在运营数据库读取、分析仓库查询、事务系统回写之间穿梭，每次跨越都涉及独立的凭证链、API 接口和模式表示。Lakebase 通过 Unity Catalog 提供统一的权限和发现层，Agent 可在不切换治理上下文的情况下完成全链路操作。文章称\"fragmented data governance is a friction multiplier\"——每一个额外的权限边界都会增加延迟、故障模式和安全暴露面。",
       "source": "The Agent Times",
       "url": "https://theagenttimes.com/articles/databricks-launches-lakebase-to-unify-operational-and-analyt-0197b72c",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-06-08",
@@ -3783,12 +3816,13 @@
     {
       "date": "2026-06-10",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "【通告】Databricks Lakebase Provisioned 实例 6 月起强制迁移至 Autoscaling 架构",
       "summary": "来源： Databricks 社区为什么值得继续看： 所有遗留 Provisioned 实例将从 6 月起自动升级到弹性 Autoscaling 架构，涉及计算模型、存储、网络和 API 的全面变更。这是 Databricks Lakebase（原 OLTP 数据库）的一次底层架构重构，直接关系现有客户的迁移成本和业务连续性。需要等待什么信号确认： 首批自动迁移客户的实际 downtime 数据、计费变化幅度、是否有因迁移导致的性能回退案例。",
       "source": "Databricks 社区",
       "url": "https://community.databricks.com/t5/lakebase-articles/databricks-lake-base-evolution-mandatory-shift-from-provisioned/td-p/157509",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-06-10",
@@ -3843,12 +3877,13 @@
     {
       "date": "2026-06-11",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "【跟踪】Databricks Workspace 权限模型即将结构性变更",
       "summary": "为什么值得继续看： Databricks 宣布将变更 Workspace 权限继承机制：从 6 月 15 日起开放 opt-in，9 月 14 日强制执行。新模型下新增用户不再自动继承 users 系统组的 Workspace Access 和 SQL Access 权限，需显式授权。这一变更将直接影响所有使用 Terraform、SCIM API 或自定义脚本管理 Databricks 权限的企业，且 users 和 admins 系统组不再支持嵌套。需要等待什么信号确认： Opt-in 开启后企业迁移的实际反馈，特别是自动化权限管理脚本的兼容性问题和 SCIM 同步对迁移克隆组的处理。这可能推动 Unity Catalog 权限管理的标准化实践。",
       "source": "Databricks What's Coming",
       "url": "https://docs.databricks.com/aws/en/release-notes/whats-coming",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-06-12",
@@ -4173,12 +4208,13 @@
     {
       "date": "2026-06-17",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "行业分析：LTAP vs HTAP——存储层统一为何优于引擎层融合",
       "summary": "来源： BroadChain / VentureBeat AI核心观点： Gartner 2014 年提出 HTAP 概念后，MemSQL、SAP HANA 等厂商尝试在单一引擎中融合 OLTP 与 OLAP，但均未成功——核心问题是工作负载隔离性塌缩和专有格式锁定。Databricks 的 LTAP 选择在存储层统一而非引擎层：保留 Postgres 为事务引擎、Spark 为分析引擎，数据以开放格式（Delta/Iceberg）存储。Hyp 分析师 Stephanie Walter 指出 Agent 框架与开放格式是差异化优势，但企业需验证实际效果。映射到数据平台的判断： LTAP 的设计哲学——开放格式 + 存储统一 + 工作负载隔离——可能比引擎融合路线更具长期生存力。它不强制企业抛弃已有数据库，而是消除数据副本和管道。对数据平台选型而言，\"是否需要独立事务数据库\"正在从默认答案变为可选项。",
       "source": "BroadChain",
       "url": "https://broadchain.info/zh-CN/articles/3ed8py",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-06-17",
@@ -4293,12 +4329,13 @@
     {
       "date": "2026-06-18",
       "vendor": "腾讯",
-      "module": "机构",
+      "module": "投融资",
       "title": "【降级】AI 基础设施融资持续向推理与训练层集中——硅基流动、章鱼动力、觅蜂科技密集完成融资",
       "summary": "来源： IT桔子 / 腾讯新闻 / 东方财富为什么值得继续看： 窗口内 AI 基础设施融资密集——硅基流动完成超 20 亿元 B 轮（推理基础设施）、章鱼动力完成 $50M 新轮（世界基础模型）、觅蜂科技完成数亿元天使+轮（具身智能数据基础设施）。但资金几乎全部集中在模型推理和训练层，纯数据平台/数据治理层的融资活跃度明显偏低。这一结构偏差是否在未来数季度修正——特别是随着 Agent 对数据治理需求的爆发——值得持续跟踪。需要等待什么信号确认： 下一季度是否出现专注数据平台/数据治理的规模融资；AI 推理基础设施的算力需求是否会向上游传导至数据准备和治理赛道。",
       "source": "IT桔子",
       "url": "https://new.qq.com/rain/a/20260617A054CO00",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-06-19",
@@ -4393,12 +4430,13 @@
     {
       "date": "2026-06-22",
       "vendor": "Anthropic",
-      "module": "机构",
+      "module": "技术",
       "title": "Anthropic：Claude 已处理 95% 内部分析查询，AI-Native 分析范式进入规模化验证",
       "summary": "来源： InfoQ AI/ML（2026-06-21）核心观点： Anthropic 披露其内部已将 Claude 作为主要分析查询接口，95% 的内部分析查询通过 AI 完成，表明 AI-Native 分析范式已从实验阶段进入大规模生产验证。映射到数据平台的判断： 如果企业分析查询的主入口从 SQL/BI 界面转向自然语言 Agent，数据平台的语义层、元数据治理和查询优化方向将发生根本性变化——平台需要为 AI Agent 而非人类分析师优化查询路径和上下文供给。",
       "source": "",
       "url": "",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-06-22",
@@ -4413,22 +4451,24 @@
     {
       "date": "2026-06-22",
       "vendor": "dbt",
-      "module": "机构",
+      "module": "技术",
       "title": "【跟踪】dbt Core 平台行为变更标志将于 6/23 默认启用",
       "summary": "来源： dbt Developer Hub Release Notes为什么值得继续看： dbt 平台多项行为变更标志（behavior change flags）将在 6/23 达到成熟并默认启用，可能影响现有 dbt 项目的编译行为和输出结果，涉及数万个活跃项目的兼容性。需要等待什么信号确认： 默认启用后社区反馈、迁移工具成熟度及实际兼容性问题报告。",
       "source": "dbt Developer Hub Release Notes",
       "url": "https://docs.getdbt.com/docs/dbt-cloud/release-notes",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-06-22",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "投融资",
       "title": "【降级】Rumble 完成 Northern Data 收购，成立 Quake AI 云平台",
       "summary": "来源： GlobeNewswire / Investing.com为什么值得继续看： 合并后 GPU 资产约 22,000 块 NVIDIA H100/H200（9 个数据中心、250MW 容量），与 Together AI（$270M）和 Tether（$250M）签署多年合同，GPU 利用率约 85%。GPU 云产能集中化对数据平台 AI 工作负载的算力成本和供给格局有潜在影响。需要等待什么信号确认： Quake AI 是否进入数据平台生态（如与 Snowflake/Databricks 建立算力合作）；下一季度利用率及客户结构披露。",
       "source": "GlobeNewswire",
       "url": "https://www.globenewswire.com",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-06-23",
@@ -4453,12 +4493,13 @@
     {
       "date": "2026-06-23",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "投融资",
       "title": "【降级】Baseten $15 亿 Series F：AI 推理基础设施成为独立超大资本品类",
       "summary": "来源： The Agent Times为什么值得继续看： Baseten 于 6 月 22 日完成 $15 亿 Series F，由 Altimeter Capital、Conviction、Spark Capital 联合领投，估值跳至 $110-130 亿区间（三个月前 E 轮 $50 亿）。Baseten 本身是 AI 推理平台而非数据平台，但此轮融资规模（$15 亿单轮）已超过多数数据平台公司的总融资额，反映了 AI 基础设施投资的重心向推理层的急剧倾斜。对数据平台行业的影响是双面的：推理层扩张带来更多数据需求，但也可能在资本市场形成注意力与资金的虹吸效应。需要等待什么信号确认： Baseten 是否利用此轮资金向数据管理和治理层垂直整合；数据平台核心厂商（Databricks/Snowflake）的推理层布局是否加速回应。",
       "source": "The Agent Times",
       "url": "https://theagenttimes.com/articles/baseten-raises-1-5-billion-series-f-as-ai-inference-demand-s-b31ee4de",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-06-23",
@@ -4743,12 +4784,13 @@
     {
       "date": "2026-07-02",
       "vendor": "Databricks",
-      "module": "机构",
+      "module": "技术",
       "title": "【预告】Microsoft Fabric GPU加速数据仓库7月进入早期访问预览",
       "summary": "来源： Microsoft Build 2026 / Byteiota为什么值得继续看： Microsoft在Build 2026上宣布Fabric Data Warehouse将引入基于NVIDIA GPU的查询加速引擎CoddSpeed（原Microsoft Research TQP项目），内部基准测试显示在64并发下性能可达竞品7倍，UNC Health早期采用者报告5倍查询加速。该功能将于7月进入早期访问预览，用户仅需在工作区设置中开启GPU加速开关，无需修改SQL或Schema。作为首个原生支持GPU加速的全托管数据仓库，若7倍性能在生产环境兑现，将直接冲击Snowflake和Databricks Photon的性能叙事。需要等待什么信号确认： 早期访问预览的确切开放日期；第三方独立基准测试结果（非Microsoft内部数据）；GPU加速的增量成本和适用查询类型占比。",
       "source": "Microsoft Build 2026 / Byteiota",
       "url": "https://byteiota.com/microsoft-fabric-gpu-data-warehouse-7x-faster-sql-one-toggle",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     },
     {
       "date": "2026-07-03",
@@ -4783,12 +4825,13 @@
     {
       "date": "2026-07-03",
       "vendor": "Together AI",
-      "module": "机构",
+      "module": "投融资",
       "title": "Together AI 完成 8 亿美元 C 轮融资，估值 83 亿美元，算力租赁模式年预订额突破 11.5 亿美元",
       "summary": "Together AI 宣布完成 8 亿美元 C 轮融资，由沙特阿美创投（Aramco Ventures）领投，Vista Equity Partners、General Catalyst、英伟达、March Capital 等跟投，估值跃升至 83 亿美元。该公司成立于 2022 年，以英伟达 GPU 集群算力租赁为核心业务，上季度年度预订额突破 11.5 亿美元。本轮距其 3.05 亿美元 B 轮仅 16 个月，累计融资超 11 亿美元。其客户涵盖 Cursor、Cognition 等新兴 AI 公司。从行业视角看，Together AI 代表的新云模式（以开源模型算力租赁替代封闭模型代币付费）正在分流传统云厂商的 AI 推理收入，企业 AI 投入降低 40-60% 的成本优势是这一模式的核心驱动力。",
       "source": "ITBear",
       "url": "https://www.itbear.com.cn/html/2026-07/1423988.html",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 投融资"
     },
     {
       "date": "2026-07-03",
@@ -5004,12 +5047,13 @@
     {
       "date": "2026-07-09",
       "vendor": "微软",
-      "module": "机构",
+      "module": "技术",
       "title": "【预告】Microsoft Fabric GPU加速数仓预计7月启动早期预览",
       "summary": "为什么值得继续看： Microsoft在Build 2026大会上宣布Fabric Data Warehouse将引入NVIDIA GPU加速，称内部基准测试性能可达竞品7倍。GPU加速数仓代表了数据仓库架构从CPU向异构计算演进的趋势，一旦落地将实质性改变数据平台性能竞争格局和TCO评估模型。需要等待什么信号确认： 早期预览的具体启动日期、首批支持的工作负载类型（Ad-hoc查询/ETL/ML推理）、以及是否有独立的第三方基准测试来验证性能提升数据。",
       "source": "The New Stack",
       "url": "https://www.digitaltoday.co.kr/cn/view/61145/microsoft-fabric-aims-to-be-data-platform-for-ai-agents-targeting-snowflake-and-databricks",
-      "conf": ""
+      "conf": "",
+      "note": "2026-07-09 按内容语义重分：原误归机构（厂商动态/融资），归 技术"
     }
   ],
   "archive": [
