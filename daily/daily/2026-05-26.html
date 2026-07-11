@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-26</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+
+  .empty-note {
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-05-26 (周二) · 信息窗口 05-25 08:00 ~ 05-26 08:00 CST</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>dbt 发布 May 2026 月度更新：Developer Agent 进入 Preview（自然语言驱动模型构建）、Fusion Release Tracks GA、新 Semantic Layer YAML 规范大幅简化语义层定义</li>
+      <li>Snowflake Accelerate 2026 Japan 今日开幕：三菱电机展示 Cortex Search 零调优 RAG（设计文档问答系统构建从数月缩短至数日）</li>
+      <li>Acceldata 发布自治数据平台并宣告"后 Lakehouse 时代"——xLake 推理引擎 GA + MCP 协议原生支持 Agent 访问企业数据</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>周一信号主要来自工具链能力提升而非基础设施架构变化。dbt Developer Agent 让语义层和管道定义进入 AI 辅助生成阶段；Acceldata 的"后 Lakehouse"核心判断——Agent 需要联邦化数据访问而非全部搬进单一湖仓——与行业趋势一致。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <p class="empty-note">本期 A 板块留空。24h 窗口内无达到 Top Signal 级别（行业结构性变化/重大首发产品 GA）的事件。</p>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. dbt May 2026 月度发布：Developer Agent Preview + Fusion Release Tracks GA + 新语义层规范</h3>
+      <div class="source">来源：<a href="https://docs.getdbt.com/docs/dbt-versions/dbt-cloud-release-notes">dbt 官方发布说明</a></div>
+      <div class="body">
+        <p>dbt 发布 May 2026 月度更新合集：① <strong>Developer Agent（Preview）</strong>——用自然语言构建或重构模型、生成 SQL/测试/文档/语义模型；② <strong>Fusion Release Tracks GA</strong>——Nightly/Stable/Extended/Fallback 四级发布节奏，新项目默认 Fusion Stable；③ <strong>新 Semantic Layer YAML 规范</strong>——语义模型嵌入模型 YAML 条目，measures 重命名为 simple metrics，常用选项提升为顶层 key；④ <strong>Cost Insights（Public Beta）</strong>——估算 warehouse 计算成本；⑤ <strong>Fusion 引擎新增 DuckDB/Spark 3.0 Beta 适配</strong>。</p>
+      </div>
+      <div class="impact">Developer Agent 标志着 dbt 从手动编写转换逻辑向 AI 辅助生成数据管道的模式迁移。新语义层规范的简化使 LLM 更容易生成符合规范的语义模型定义。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Snowflake Accelerate 2026 Japan 开幕：制造/金融行业 AI 落地案例集中展示</h3>
+      <div class="source">来源：<a href="https://www.snowflake.com/accelerate/japan/">Snowflake 官网</a></div>
+      <div class="body">
+        <p>Snowflake Accelerate 2026 Japan（5/26-29）今日开幕，覆盖制造/汽车、零售/运输、金融、科技四个行业赛道。Day 1 亮点：① <strong>DENSO 数据基盤演化</strong>——从 on-prem 到 Snowflake 的全社 DX 基盤；② <strong>三菱电机零调优 RAG</strong>——通过 Cortex Search 将技术设计文档 RAG 构建从数月缩短至数日，IT 未经验者短期内构建生产级系统；③ 金融庁那須翔讨论 AI 治理讨论纸 1.1 改订背景。</p>
+      </div>
+      <div class="impact">三菱电机的"零调优 RAG"案例值得关注——如果模式可复制，意味着 AI-augmented knowledge base 的部署门槛正在被平台能力拉平。</div>
+    </div>
+  </div>
+
+  <!-- Section C: 观点与洞察 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>观点与洞察</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Acceldata 发布自治数据与 AI 平台，CEO 宣告"后 Lakehouse 时代"</h3>
+      <div class="source">来源：<a href="https://en.wedoany.com/shortnews/175174.html">Wedoany 2026-05-25</a> / Informatica World 2026 (Las Vegas, 5/19)</div>
+      <div class="body">
+        <p>数据可观测性厂商 Acceldata 在 Informatica World 2026 发布：① <strong>xLake 推理引擎 GA</strong>——支持跨多云/本地的统一推理调度；② <strong>Agentic Data Management</strong>——自治 Agent 自动检测异常/诊断根因/执行修复；③ <strong>MCP 协议原生支持</strong>——MCP 兼容 Agent 可标准化访问企业数据。CEO Rohit Choudhary 核心判断："Lakehouse 将孤岛从多处搬到单一云内，并未消除。AI Agent 需要直接访问分散在多云/主权环境的数据。"</p>
+      </div>
+      <div class="impact">"后 Lakehouse"作为营销口号有简化之嫌，但核心论点——Agent 需要联邦化数据访问——与 Gartner 5 月伦敦 D&A Summit 强调的"context as critical infrastructure"方向一致。客户含 DBS Bank/Walmart-owned PhonePe/Qualcomm。</div>
+    </div>
+  </div>
+
+  <!-- Section D: 投融资 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>投融资</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Moment $78M B 轮：前 Citadel 量化交易员打造的 AI 交易自动化平台</h3>
+      <div class="source"><span class="funding-tag tag-funding">融资</span>来源：<a href="https://www.theblockbeats.info/flash/346771">Bloomberg via BlockBeats 2026-05-20</a></div>
+      <div class="body">
+        <p>金融科技公司 Moment 完成 $78M B 轮融资，Index Ventures 领投，a16z 和 Avra 跟投。前 Citadel Securities 量化交易员创立，核心产品为 AI 驱动的固定收益与股票交易自动化系统。已签下 Edward Jones、LPL Financial、Hightower Advisors 等大型财富管理合作伙伴。上轮（2025.7）$36M，一年内融资额翻倍。</p>
+      </div>
+      <div class="impact">AI 交易基础设施需求从量化机构向主流资管扩散——客户是管理万亿美元资产的传统财富管理巨头，而非加密原生机构。</div>
+    </div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 国家数据局印发《2026年数字经济发展工作要点》：强化数据赋能 AI</h3>
+      <div class="source">来源：<a href="https://cpc.people.com.cn/n1/2026/0521/c64387-40724476.html">人民日报 2026-05-21</a> / <a href="https://www.nda.gov.cn/sjj/swdt/mtsy/0523/20260523215954623606433_pc.html">央视 2026-05-23</a></div>
+      <div class="body">
+        <p>八大重点任务第三项"强化数据赋能人工智能发展"提出六大专项行动。两批先行先试已覆盖 15 行业/43 城市/1.9 万生态主体/3.8 万数据产品/270+ 应用场景，技术路线含隐私计算/区块链/可信数据空间/数据编织/数据网格/本体论。</p>
+      </div>
+      <div class="impact">数据基础设施从试点进入规模化验证。对数据平台厂商而言，合规能力和政务数据对接将成为国内市场差异化因素。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. AI 基础设施投融资月度速览：2026年5月 $364B / 347 笔</h3>
+      <div class="source">来源：<a href="https://inforcapital.com/blog/2026-05-23-ai-startups-raised-364-billion-this-month-heres-where-the-capital-went/">InforCapital 2026-05-23</a></div>
+      <div class="body">
+        <p>5 月 AI 创业投融资：347 笔/$364B，AI Vertical Platforms 180 笔领跑，AI Agents 独立品类达 113 笔。Seed 轮均值 ~$10M，Series A 均值 $233M。美国 42%/UK 39 笔/中国 35 笔。</p>
+      </div>
+      <div class="impact">AI Agent 两年前几乎不存在，现已成为独立资本品类（113 笔/月），印证 Agent 化不只是产品功能演进而是催生了独立创业生态层。</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Data+AI 全球日报 · 第 26 期</p>
+    <p>信息截至北京时间 2026-05-26 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

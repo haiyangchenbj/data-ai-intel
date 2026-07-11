@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-11（含周末）</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .body p { margin-bottom: 8px; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  .empty-note {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  .watch-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-track { background: #fff3e0; color: #e65100; }
+  .tag-upcoming { background: #e8eaf6; color: #283593; }
+  .tag-downgrade { background: #fce4ec; color: #c62828; }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-05-11（含周末）· 覆盖 05-08 至 05-11 共 72 小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>中国科技巨头 AI 基础设施投入加速追赶，地缘政治正重塑芯片供应链结构</li>
+      <li>模型推理正在从自建工程转变为平台化服务，数据平台的边界进一步扩展</li>
+      <li>AI Agent 在真实企业文档上的推理准确率刚突破 50%，距企业自动化仍有距离</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>当全球 CSP 以近 $1 万亿级别押注 AI 基础设施时，数据平台正在被拉入两个新战场——向上承接推理服务的平台化需求，向下提供 Agent 可信赖的企业数据上下文——而最强模型在企业文档基准上刚突破 50% 准确率的现实说明这条路还很长。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 字节跳动 2026 年 AI 基础设施资本支出上调至 ¥2000 亿，同比增长 25%+</h3>
+      <div class="source">来源：<a href="https://www.techinasia.com/news/bytedance-spend-30b-china-ai-2026" target="_blank">South China Morning Post via Tech in Asia — May 9, 2026</a></div>
+      <div class="body">
+        <p>据南华早报报道，字节跳动已将 2026 年 AI 资本支出从去年底计划的 ¥1600 亿上调至 ¥2000 亿（约 $294 亿），增幅至少 25%。上调原因包括 AI 运营持续投入和内存芯片成本攀升。值得关注的是，字节跳动在本轮预算中显著提高国产 AI 芯片采购比例，以对冲地缘政治风险并响应国产替代政策，同时 NVIDIA H200 仍未获得中国进口许可。</p>
+      </div>
+      <div class="impact">💡 字节跳动是全球第一梯队 CSP 中资本支出增速最快的之一。其大规模算力建设直接拉动数据处理基础设施需求——从训练数据管道、特征存储到推理服务的全链路数据平台能力。国产芯片替代趋势意味着数据平台需要适配更多异构算力架构。</div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks × Superhuman 联合构建 200K QPS 推理平台：模型服务从自建走向平台化</h3>
+      <div class="source">来源：<a href="https://www.databricks.com/blog/how-superhuman-and-databricks-built-200k-qps-inference-platform-together" target="_blank">Databricks Blog — May 8, 2026</a></div>
+      <div class="body">
+        <p>Superhuman 将其拼写/语法纠正 LLM 从自建 vLLM + L40S 栈迁移到 Databricks FMAPI Provisioned Throughput + H100 平台。单 Pod 吞吐从 750 QPS 提升至 1200 QPS（+60%），峰值承载 200K+ QPS，P99 延迟亚秒级，可用性目标 99.99%。关键优化包括：Power-of-Two Choices 负载均衡替代 K8s 轮询、FP8 量化（+30% 吞吐且零质量损失）、多进程 RPC 消除 CPU 瓶颈（+20%）、镜像加速将容器启动从数分钟降至数秒。</p>
+      </div>
+      <div class="impact">💡 这个案例展示了模型推理正在从"自建基础设施工程"演变为"平台即服务"模式。Databricks 的价值不仅在于 GPU 算力，更在于调度、量化、负载均衡等平台级工程能力的封装。对数据平台而言，推理服务层正在成为与数据管道、特征存储并列的核心基础设施组件。</div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks OfficeQA / OfficeQA Pro：企业文档推理基准暴露 Agent 可靠性短板</h3>
+      <div class="source">来源：<a href="https://www.databricks.com/blog/officeqa" target="_blank">Databricks OfficeQA Blog — Dec 9, 2025</a> / <a href="https://arxiv.org/abs/2503.06445" target="_blank">OfficeQA Pro Paper — Mar 9, 2026</a> / <a href="https://www.databricks.com/blog/building-accurate-data-agents" target="_blank">Genie Data Agent 方法论 — May 8, 2026</a></div>
+      <div class="body">
+        <p>Databricks 推出 OfficeQA / OfficeQA Pro，用美国财政部公报构造企业文档推理基准。该语料包含约 89,000 页 Treasury Bulletins，涉及复杂表格、扫描 PDF、图表、跨文档检索和高精度计算。原始 OfficeQA 发布时，前沿 Agent 即使获得 PDF 语料，全量准确率仍低于 45%，最难子集低于 25%；后续 GPT-5.5 在 OfficeQA Pro 的端到端 Agent Harness 上提升到 52.63%，较 GPT-5.4 明显进步，但距离企业可放心自动化仍有很大空间。5 月 8 日 Databricks 进一步发布 Genie / Data Agent 方法文章，将 OfficeQA 揭示的难点推进到工程方案层面——提出 Specialized Knowledge Search、Parallel Thinking、Multi-LLM 三条路线。</p>
+      </div>
+      <div class="impact">💡 OfficeQA 系列填补了"学术基准 ≠ 企业就绪"的评测盲区。对数据平台厂商而言，这意味着 Agent 在结构化 + 非结构化混合数据上的推理能力远未成熟——企业 RAG 和数据 Agent 的可靠性问题仍是核心瓶颈，数据平台需要在数据质量、Schema 管理和上下文提供层面持续投入。</div>
+    </div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">本期窗口内无符合准入标准的独立投融资/财报/IPO/收购兼并事件。字节跳动 capex 已在 A 板块作为行业信号收录。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-downgrade">降级</span> Teradata 发布 Autonomous Knowledge Platform，定位"受治理的 Agent 自主运营层"</h3>
+      <div class="source">来源：<a href="https://investor.teradata.com/news-events/investor-news/news-details/2026/Introducing-the-Teradata-Autonomous-Knowledge-Platform/default.aspx" target="_blank">Teradata 投资者新闻稿</a> / <a href="https://www.infoworld.com/article/4168350/teradata-launches-platform-for-enterprise-ai-agents-moving-beyond-pilots.html" target="_blank">InfoWorld — May 7, 2026</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Teradata 发布旗舰产品将数据、分析、AI 和 Agent 编排统一，核心差异化是 Enterprise MCP 治理层（所有 Agent 工具调用经认证、审计、权限控制）。提出"有边界的自主"（bounded autonomy）理念，多 Agent 编排模式 Tera Claw 年底进入研究预览。这是老牌数据厂商重新定位为"Agent 运行时"的标志性动作。</p>
+        <p><strong>需要等待什么信号确认：</strong>Q3 云版本正式上线后的客户采用情况；Enterprise MCP 能否成为行业治理标准参考。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-downgrade">降级</span> Snowflake Apache Iceberg v3 支持正式 GA：新增删除向量和 Variant 类型</h3>
+      <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-05-07-iceberg-v3-ga.html" target="_blank">Snowflake Release Notes — May 7, 2026</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Iceberg v3 GA 新增 Geography/Variant 类型和删除向量，后者解决 v2 行级变更的写放大痛点。Snowflake 率先 GA 意味着 Iceberg v3 进入生产就绪阶段，后续 Databricks、Trino、Spark 的 v3 兼容进度是湖仓互操作性的关键观察点。</p>
+        <p><strong>需要等待什么信号确认：</strong>其他主要引擎的 v3 兼容进度和实际性能对比。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-downgrade">降级</span> TrendForce：全球九大 CSP 2026 年资本支出上调至 $8300 亿，同比 +79%</h3>
+      <div class="source">来源：<a href="https://www.trendforce.com/presscenter/news/20260506-13033.html" target="_blank">TrendForce — May 6, 2026</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>九大 CSP 合计资本支出 $8300 亿（+79% YoY），Microsoft $1900 亿（+130%）、AWS $2300 亿+（+50%+）、Google $1800-1900 亿（+100%+）。AI 服务器用电量 2026 年将首超通用服务器。接近 $1 万亿的投入标志 AI 从实验进入产业规模化。</p>
+        <p><strong>需要等待什么信号确认：</strong>H2 实际支出执行率是否达到指引；AI 算力供给是否出现过剩信号。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-track">跟踪</span> SAP 宣布收购 Dremio 以增强 Business Data Cloud，湖仓格局生变</h3>
+      <div class="source">来源：<a href="https://news.sap.com/" target="_blank">SAP 官方公告 — May 4, 2026</a> / <a href="https://finance.yahoo.com/sectors/technology/articles/sap-se-sap-acquire-dremio-111709432.html" target="_blank">Yahoo Finance 报道</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>SAP 于 5 月 4 日宣布收购高性能数据湖仓平台 Dremio，目标是统一 SAP 与非 SAP 数据以支撑实时分析和 Agentic AI 工作负载。这是企业应用巨头通过收购直接进入湖仓竞争的标志性事件——Dremio 基于 Apache Iceberg + Arrow Flight 的架构将为 SAP Business Data Cloud 注入开放湖仓能力。</p>
+        <p><strong>需要等待什么信号确认：</strong>收购金额和交割时间线；Dremio 开源项目（Arrow Flight、Nessie）的治理模式是否变化；SAP 客户实际采用路径和与 Databricks/Snowflake 的竞争策略。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-upcoming">预告</span> Databricks Data+AI Summit 2026（6/15-18 旧金山）</h3>
+      <div class="source">来源：<a href="https://www.databricks.com/dataaisummit" target="_blank">Databricks 官网</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Databricks 年度旗舰大会将于 6 月 15-18 日在旧金山举办。从近期动向看（OfficeQA 基准、200K QPS 推理平台、MCP Marketplace、GPT-5.5 合作），Agent + 数据平台的融合将是核心主题。Lakebase（Databricks 托管 Postgres）的 GA 进展和 Unity Catalog 的 Agent 治理扩展也值得关注。</p>
+        <p><strong>需要等待什么信号确认：</strong>是否发布 Lakebase GA；Unity Catalog 是否新增 Agent 相关治理能力；模型服务平台是否有新的定价或能力升级。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-05-11 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

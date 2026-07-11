@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-24</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Empty section */
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-24 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台正式从"数据仓库"重新定位为"AI 推理基础设施"</li>
+      <li>跨云零拷贝数据访问打破存储锁定，竞争焦点转向上下文层</li>
+      <li>实时分析厂商加速嵌入湖仓生态，独立部署模式让位于平台原生集成</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台被重新定义为 Agent 的"行动系统"，跨云零拷贝联邦让数据留在原地、推理跑在别处。竞争焦点从存算层上移到上下文与推理层——谁能最快将原始数据转化为 Agent 可操作的业务语义，谁就拿到控制权。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Google Cloud 发布 Agentic Data Cloud：跨云 Lakehouse + Knowledge Catalog + Data Agent Kit</h3>
+      <div class="source">来源：<a href="https://cloud.google.com/blog/products/data-analytics/whats-new-in-the-agentic-data-cloud" target="_blank">Google Cloud Blog — What's New in the Agentic Data Cloud</a></div>
+      <div class="body">
+        <p>Google Cloud 在 Next '26 Day 1 keynote 上发布 Agentic Data Cloud，包含三大支柱：（1）<strong>Knowledge Catalog</strong>（由 Dataplex 升级而来）——自动通过 Gemini 为数据资产添加业务上下文，支持访问控制感知搜索；（2）<strong>跨云 Lakehouse</strong>——基于 Apache Iceberg REST Catalog 和 Cross-Cloud Interconnect 实现零拷贝访问 AWS S3 / Azure ADLS 数据，支持与 Databricks Unity Catalog、Snowflake Polaris、AWS Glue 的双向联邦（Preview）；（3）<strong>Data Agent Kit</strong>（Preview）——可移植的技能/工具/插件套件，集成 VS Code、Gemini CLI、Claude Code 等 IDE，自动选择 dbt/Spark/Airflow 生成生产级代码。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是第一次有超大规模云厂商明确将数据平台重新定位为 AI Agent 的"行动系统"（System of Action）。跨云零拷贝联邦直接冲击存储锁定逻辑——企业数据可以留在 AWS/Azure，但推理和上下文层跑在 Google。BigQuery 从数据仓库变成了"推理平面"，竞争焦点从存算能力上移到谁能最快将原始数据转化为 Agent 可操作的业务上下文。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. ClickHouse 大幅扩展与 Google Cloud 战略合作：Lakehouse 原生集成 + BYOC + Axion 迁移</h3>
+      <div class="source">来源：<a href="https://clickhouse.com/blog/clickhouse-expands-strategic-collaboration-with-google-cloud" target="_blank">ClickHouse Blog</a></div>
+      <div class="body">
+        <p>ClickHouse 在 Google Next '26 上宣布四项里程碑：（1）与 Google Cloud Lakehouse 原生集成，支持对 Lakehouse 托管表的亚秒级查询、无需数据复制；（2）BYOC 正式登陆 Google Cloud，用户可在自有 VPC 中运行 ClickHouse Cloud；（3）迁移至 Google Axion 处理器（Arm 架构），查询速度提升 30-55%、计算积分消耗减少约 15%；（4）ClickHouse MCP Server 与 Google Antigravity IDE 集成。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>独立分析引擎厂商正从"独立部署"模式快速转向"平台原生嵌入"——ClickHouse 同时拿到 Lakehouse 数据通路和 BYOC 合规能力，意味着实时分析不再是独立基础设施，而是湖仓生态的原生组件。Axion 迁移则验证了 Arm 架构在分析工作负载上的成本优势。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. Google Cloud Data Engineering Agent 和 Data Science Agent 进入 GA</h3>
+      <div class="source">来源：<a href="https://cloud.google.com/blog/products/data-analytics/whats-new-in-the-agentic-data-cloud" target="_blank">Google Cloud Blog</a></div>
+      <div class="body">
+        <p>Google Cloud 宣布 Data Engineering Agent（从零构建复杂管道转换并执行治理规则）和 Data Science Agent（自动化模型全生命周期）正式进入 GA。同步发布的 Database Observability Agent（Preview）提供 7×24 基础设施守护和自动根因诊断。MCP 支持已覆盖 BigQuery、Spanner（Preview）、AlloyDB、Cloud SQL（GA）和 Looker（Preview）。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>数据工程和数据科学 Agent 进入 GA 标志着"Agent 做数据工作"从概念验证进入生产就绪状态。MCP 的全面覆盖意味着 Google 数据栈的每个组件都可以作为 Agent 的工具被调用——数据平台正在变成 Agent 的工具箱而不仅是存储和计算资源。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>3. Databricks Delta Sharing ABAC 策略变更生效</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/whats-coming" target="_blank">Databricks Release Notes — What's coming</a></div>
+      <div class="body">
+        <p>自 2026 年 4 月 23 日起，通过 Delta Sharing 共享引用 ABAC 保护表的视图时，共享所有者必须豁免于底层表的 ABAC 策略（此前要求的是接收方豁免）。这一变更强化了数据提供方的治理责任，确保跨组织数据共享中的属性级访问控制更精确。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>ABAC 在跨组织数据共享场景中的治理职责从接收方转移到提供方，反映了行业共识：数据治理的第一责任人应是数据所有者而非消费者。这对企业间数据产品交易的合规架构有直接影响。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <p class="empty-note">本期窗口内无符合准入标准的机构研究或原始观点。</p>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">本期窗口内无符合准入标准的数据平台领域投融资或公司事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 【跟踪】Google Cloud Agentic Data Cloud 后续落地观察</h3>
+      <div class="source">来源：<a href="https://cloud.google.com/blog/products/data-analytics/whats-new-in-the-agentic-data-cloud" target="_blank">Google Cloud Blog</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>跨云 Lakehouse 和 Knowledge Catalog 目前均为 Preview 状态，生产环境的跨云查询延迟、Iceberg 双向联邦的数据一致性保证、以及定价模型尚未公布。Google 能否在 Databricks 和 Snowflake 已深度布局的企业中实现"推理层卡位"，取决于 GA 后的实际性能和成本表现。</p>
+        <p><strong>需要等待什么信号确认：</strong>跨云 Lakehouse GA 时间表、跨云查询延迟基准测试结果、Knowledge Catalog 自动富化的准确率实测数据、定价模型发布。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. 【跟踪】三大平台 Agent 数据架构路线分化加速</h3>
+      <div class="source">来源：综合 Google Cloud Next '26 公告 + Databricks / Snowflake 近期发布</div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Google 走"跨云推理平面"（数据在哪不重要，上下文在我这里），Databricks 走"开放写入控制平面"（Unity Catalog 为中心的治理+共享），Snowflake 走"平台内聚控制平面"（Intelligence + Cortex 全栈内建）。三种路线的分化在 Google Cloud Next 后进一步清晰化，直接影响企业多云数据架构的选型决策。</p>
+        <p><strong>需要等待什么信号确认：</strong>Google Cloud 跨云 Lakehouse 的大型企业生产案例、Snowflake 对 Google 联邦读取的响应策略、Databricks 是否在 Data+AI Summit（06月）进一步强化开放写入叙事。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-04-24 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

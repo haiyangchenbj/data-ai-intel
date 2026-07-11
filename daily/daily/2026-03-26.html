@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-03-26</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .body p { margin-bottom: 8px; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Watchlist tag */
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-track { background: #fff3e0; color: #e65100; }
+  .tag-downgrade { background: #fce4ec; color: #c62828; }
+  .tag-upcoming { background: #e3f2fd; color: #1565c0; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-03-26 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>传统数据库巨头正在将 AI Agent 的运行时锚定在数据库内部，而非外挂</li>
+      <li>开放表格式成为数据库厂商接入数据湖生态的标准通道，Iceberg 生态加速扩张</li>
+      <li>数据库原生安全正在从访问控制升级为 Agent 行为约束，应对 AI 时代新威胁面</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Oracle 在 AI World Tour 上发布的 Agentic 创新标志着一种路线分歧正在清晰化——Databricks 和 Snowflake 从数据湖向外扩展，Oracle 从数据库向内收敛。两条路线的交汇点是"谁来做 Agent 的可信运行时"，这将成为下一阶段数据平台竞争的核心议题。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Oracle 在 AI World Tour 发布 AI Database Agentic 创新——将数据库打造为企业 Agent 控制平面</h3>
+      <div class="source">来源：<a href="https://www.oracle.com/news/announcement/oracle-unveils-ai-database-agentic-innovations-for-business-data-2026-03-24/" target="_blank">Oracle 官方公告</a>（March 24, 2026）；<a href="https://www.prnewswire.com/news-releases/oracle-unveils-ai-database-agentic-innovations-for-business-data-302722719.html" target="_blank">PR Newswire</a></div>
+      <div class="body">
+        <p><strong>摘要：</strong>Oracle 在伦敦 AI World Tour 上发布一系列 Agentic AI 创新，核心思路是将 AI Agent 的构建、部署和安全管控全部锚定在 Oracle AI Database 内部。关键组件包括：Autonomous AI Vector Database（全功能向量数据库即服务）、Private Agent Factory（无代码 Agent 构建器，本地运行不外泄数据）、Unified Memory Core（将向量/JSON/图/关系数据的推理统一到单一事务引擎中，提供 ACID 保证）、Deep Data Security（在数据库层而非应用层强制实施行级列级访问控制，防御提示词注入）。同时发布 Oracle Vectors on Ice（对 Apache Iceberg 表中的向量数据提供原生搜索支持）和 Autonomous AI Database MCP Server（使外部 AI Agent 通过 MCP 协议安全访问数据库）。</p>
+      </div>
+      <div class="impact"><strong>为什么对数据平台重要：</strong>Oracle 的核心主张是"数据库，而非 LLM，应成为企业自动化的主要控制点"——这与 Databricks（从湖仓向安全/Agent 延伸）和 Microsoft Fabric（从分析平台向数据控制平面升级）的路线形成鲜明对比。Unified Memory Core 将多模态数据推理整合进单一事务引擎的做法，直接挑战了当前"操作数据库 + 独立向量库 + 外部模型"的三件套架构。而 Vectors on Ice 对 Iceberg 的原生支持，则表明即使是最传统的数据库厂商也在向开放表格式靠拢。这些能力免费包含在 Fusion Applications 订阅中的策略，将对独立 AI Agent 平台和向量数据库初创公司形成定价压力。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Oracle Deep Data Security 将 Agent 安全从应用层下沉到数据库层——防御提示词注入的新范式</h3>
+      <div class="source">来源：<a href="https://www.oracle.com/news/announcement/oracle-unveils-ai-database-agentic-innovations-for-business-data-2026-03-24/" target="_blank">Oracle 官方公告</a>（March 24, 2026）；<a href="https://www.enterprisetimes.co.uk/2026/03/25/oracle-launches-ai-database-agentic-innovations-for-business-data/" target="_blank">Enterprise Times</a>（March 25, 2026）</div>
+      <div class="body">
+        <p><strong>摘要：</strong>Oracle Deep Data Security 在数据库内核层面实施终端用户特定的数据访问规则，确保每个用户或代表用户的 AI Agent 只能访问被授权的数据。关键设计决策是通过数据库原生控件（而非应用代码）执行最小权限访问，直接在数据源阻断提示词注入等新型 AI 威胁。同时发布 Private AI Services Container，允许受监管行业在防火墙内运行私有 AI 模型实例；以及 Trusted Answer Search，通过匹配预创建报告而非让 LLM 直接生成答案，从架构层面减少幻觉风险。</p>
+      </div>
+      <div class="impact"><strong>为什么对数据平台重要：</strong>当 AI Agent 获得操作数据的权限后，安全边界从"谁能登录系统"变成"Agent 能触达哪些数据"。Oracle 选择在数据库层而非应用层解决这个问题，与 Databricks 前一天发布 Lakewatch（从湖仓延伸到安全市场）形成互补视角——一个在数据层做访问控制，一个在分析层做威胁检测。这意味着"AI 时代的数据安全"正在成为数据平台的标配能力而非可选项。</div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Oracle Vectors on Ice：AI Database 原生支持 Apache Iceberg 向量搜索</h3>
+      <div class="source">来源：<a href="https://www.oracle.com/news/announcement/oracle-unveils-ai-database-agentic-innovations-for-business-data-2026-03-24/" target="_blank">Oracle 官方公告</a>（March 24, 2026）</div>
+      <div class="body">
+        <p><strong>摘要：</strong>Oracle AI Database 新增 Vectors on Ice 功能，对存储在 Apache Iceberg 表中的向量数据提供原生搜索支持。AI Vector Search 可直接从 Iceberg 表读取向量数据、创建索引并自动维护索引更新，实现对数据湖和数据库中业务数据的统一向量搜索。此外同步发布 Autonomous AI Database MCP Server，使外部 AI Agent 和 MCP 客户端无需自定义集成即可安全访问数据库能力。</p>
+      </div>
+      <div class="impact"><strong>对数据平台的影响：</strong>Iceberg 正成为数据平台互操作的事实标准——继 Snowflake 的 Iceberg Tables、Databricks 的 Universal Format、Microsoft Fabric 对 Iceberg 的 GA 支持后，Oracle 也选择以 Iceberg 为桥梁接入数据湖生态。Vectors on Ice 的独特之处在于将向量搜索能力延伸到了 Iceberg 表，这是主流云平台中的首个实现。而 MCP Server 的发布则表明 Anthropic 推动的 Model Context Protocol 正在获得企业数据库层的采纳。</div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Futurum Group：Oracle 押注"数据库是 Agent 控制点"，挑战 1.2 万亿美元数据+AI 市场</h3>
+      <div class="source">来源：<a href="https://futurumgroup.com/insights/oracle-positions-ai-database-26ai-to-lead-1-2-trillion-market-by-bridging-the-agentic-reasoning-gap/" target="_blank">Futurum Group 分析报告</a>（March 25, 2026）</div>
+      <div class="body">
+        <p><strong>核心观点：</strong>Futurum 分析师 Brad Shimmin 和 Keith Kirkpatrick 认为，Oracle 此次发布标志着与行业"外部无状态 AI 架构"潮流的明确分歧——Oracle 下注"数据库而非 LLM 应成为企业自动化的主要控制点"。关键判断包括：（1）Unified Memory Core 将多模态数据推理整合进带 ACID 保证的单一事务引擎，比当前 RAG 的"胶带架构"更可靠；（2）Oracle 通过将 Agentic 能力免费包含在 Fusion Applications 订阅中来压缩纯 AI 自动化初创公司的市场空间——如果 CIO 通过现有 ERP 订阅实现 80% 自动化，独立 Agent 平台很难证明额外许可费的价值；（3）数据+AI 市场预计 2026 年达 $5411 亿，以 16.9% CAGR 增长到 2031 年超 $1.2 万亿。</p>
+      </div>
+      <div class="impact"><strong>映射到数据平台的判断：</strong>这一分析框架揭示了数据平台竞争的新维度：不仅是"谁的分析更快"或"谁的治理更好"，而是"AI Agent 运行时归谁管"。Oracle 的"收敛"路线与 Databricks/Snowflake 的"扩张"路线之间的张力，将决定企业数据栈的下一代架构形态。</div>
+    </div>
+  </div>
+
+  <!-- Section D: Capital & Corporate - 留空 -->
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-track">跟踪</span>数据平台"Agent 控制平面"之争：Oracle vs Databricks vs Microsoft 三条路线并行</h3>
+      <div class="source">来源：<a href="https://www.oracle.com/news/announcement/oracle-unveils-ai-database-agentic-innovations-for-business-data-2026-03-24/" target="_blank">Oracle 官方公告</a>；<a href="https://www.databricks.com/company/newsroom/press-releases/databricks-enters-security-market-launch-lakewatch-new-open-agentic-siem" target="_blank">Databricks Lakewatch 公告</a>（March 24）；<a href="https://www.telm.ai/blog/fabcon-2026-recap-how-microsoft-is-turning-fabric-into-the-control-plane-for-trustworthy-ai-ready-data/" target="_blank">Telmai FabCon 分析</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>一周之内三家巨头分别定义了自己的"Agent 数据控制平面"路线——Oracle 从数据库层向内收敛（Unified Memory Core + Deep Data Security），Databricks 从湖仓向安全领域横向扩展（Lakewatch），Microsoft 从分析平台向治理层纵向升级（Fabric IQ + Direct Lake）。三条路线的交汇点是"谁掌控 Agent 访问和操作数据的运行时"，但出发点和架构完全不同。</p>
+        <p><strong>需要等待什么信号确认：</strong>各平台 Agent 能力的实际客户采用数据；AWS 是否会在 re:Invent 前发布类似的 Agent 数据控制平面产品；独立 Agent 平台公司如何回应平台厂商的"内嵌"策略。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-downgrade">降级</span>华为发布 AI 推理场景数据基础设施——AI 数据平台 + FusionCube A1000</h3>
+      <div class="source">来源：<a href="https://www.guancha.cn/economy/2026_03_18_810471.shtml" target="_blank">观察者网</a>（March 18, 2026）；<a href="https://www.jiemian.com/article/14125921.html" target="_blank">界面新闻</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>华为在 2026 数据存储新春发布会上（3月17日）发布了面向 AI 推理场景的数据基础设施，包括 AI 数据平台（一体化/独立式两种部署模式）和 FusionCube A1000 AI 超融合一体机。FusionCube A1000 采用通算与智算融合一体化架构，内置 AI 平台预集成数据处理、模型训练与推理全流程，声称部署与上线周期缩短 80%。虽然发布日期超出今日时效窗口，但其"存储+推理一体化"思路与国际数据平台向 AI 运行时延伸的趋势同频，且此前日报未覆盖。</p>
+        <p><strong>需要等待什么信号确认：</strong>华为 AI 数据平台在金融、运营商等行业的落地案例；与国内云厂商的差异化定位。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.1</p>
+    <p>信息截至北京时间 2026-03-26 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

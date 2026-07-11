@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-07</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-downgrade { background: #fff3e0; color: #e65100; }
+  .tag-track { background: #e8f5e9; color: #2e7d32; }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-05-07 · 覆盖窗口：05-01 ~ 05-07（五一假期补充版）</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>企业数据平台正式进入"AI原生运行时"阶段——ServiceNow Context Engine+VMware VCF 9.1同周发布，数据层从"被查询"进化为"主动供给AI Agent"</li>
+      <li>AI推理基础设施成为资本新宠——RadixArk（SGLang）$100M种子轮+DeepInfra $107M B轮，开源推理引擎商业化路径成型</li>
+      <li>中国数据要素政策密集落地——第九届数字中国峰会+"531工具箱"+工信部23场景指引，数据要素从制度设计进入执行年</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期扩展覆盖5/1-5/6，呈现三条清晰主线：1）企业AI从"辅助对话"升级为"自主执行"，数据平台角色从被动查询层变为AI Agent实时供给层；2）推理基础设施的投资密度首次超过训练侧，标志AI产业化进入部署收割期；3）中国数据要素政策从顶层设计全面转入落地执行。
+    </div>
+  </div>
+
+  <!-- Section A -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. TikTok获批泰国$250亿数据基础设施扩展计划，刷新东南亚单笔投资记录</h3>
+      <div class="source"><a href="https://www.china.org.cn/world/Off_the_Wire/2026-05/06/content_118479765.html">Xinhua/China.org</a> / <a href="https://www.nationthailand.com/pr-news/pr-news/40065898">Nation Thailand</a> / <a href="https://www.businesstimes.com.sg/international/asean/thailand-approves-958-billion-baht-investment-projects-including-tiktok">Business Times</a> · 2026-05-06</div>
+      <div class="body">泰国BOI 5月6日批准六大项目总投资958亿泰铢（约$290亿），其中TikTok System (Thailand)以842亿泰铢（约$250亿）领投，将在曼谷、北榄府、北柳府部署更多服务器并扩展数据存储与处理基础设施。这是TikTok去年宣布五年$88亿泰国数据中心计划后的大幅升级。</div>
+      <div class="impact">📐 $250亿单笔数据基础设施投资创下东南亚记录。超大规模数据中心建设将带动存储、数据管理、数据治理等配套需求；数据主权成为基础设施投资的核心逻辑。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. ServiceNow Knowledge 2026：发布实时数据基础层，让自主AI Agent直接在治理数据上行动</h3>
+      <div class="source"><a href="https://sg.finance.yahoo.com/news/servicenow-launches-real-time-data-170000711.html">Business Wire</a> / <a href="https://www.cio.com/article/4156549/servicenow-rolls-out-context-engine-to-embed-ai-governance-across-its-platform.html">CIO</a> · 2026-05-06</div>
+      <div class="body">ServiceNow在Knowledge 2026（5/6，拉斯维加斯）发布三项数据能力：1）<strong>Context Engine</strong>——融合知识图谱、决策图谱、行为图谱，为AI Agent提供360度业务上下文；2）<strong>Workflow Data Fabric</strong>——跨系统实时数据连接层；3）<strong>Autonomous Data Analytics</strong>——AI自主分析引擎。定位为"企业AI Control Tower"。</div>
+      <div class="impact">📐 ServiceNow正重新定义"企业数据平台"边界——不再是被动数据仓库，而是主动供给AI Agent的实时运行时。85B workflows + 7T transactions的数据体量使其LLM grounding具备独特优势。</div>
+    </div>
+  </div>
+
+  <!-- Section B -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. WEKA与Glocomp达成战略合作，成为马来西亚首家端到端AI基础设施合作伙伴</h3>
+      <div class="source"><a href="https://en.prnasia.com/releases/global/weka-partners-with-glocomp-to-deliver-end-to-end-ai-infrastructure-solutions-across-malaysia-531884.shtml">PR Newswire</a> · 2026-05-06</div>
+      <div class="body">WEKA与Glocomp Systems建立战略合作，Glocomp成为WEKA+NVIDIA在马来西亚首家端到端AI基础设施合作伙伴。推出"AI Starter Pack"将企业AI部署时间从数月压缩至数周，通过150+家经销商网络全国交付。</div>
+      <div class="impact">📐 端到端打包方案降低采用门槛，可能对传统存储厂商在东南亚的AI升级策略形成压力。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Broadcom发布VMware Cloud Foundation 9.1：AI+K8s原生私有云平台</h3>
+      <div class="source"><a href="https://news.broadcom.com/emea/releases/broadcom-announces-vmware-cloud-foundation-9-1">Broadcom</a> / <a href="https://www.networkworld.com/article/4166905/broadcom-bets-big-on-vmware-cloud-foundation-9-1.html">Network World</a> / <a href="https://www.theregister.com/2026/05/05/vmware_vcf_9_update/">The Register</a> · 2026-05-05</div>
+      <div class="body">VCF 9.1三大方向：1）AI推理工作负载原生支持——推理、Agentic AI、容器与VM在单一栈运行；2）Memory Tiering优化减少服务器内存需求；3）零信任安全+AI可观测性。支持AMD/Intel/NVIDIA。</div>
+      <div class="impact">📐 私有云基础设施全面为AI推理重构。VCF 9.1定位"生产级AI的受治理控制面"，数据平台私有化部署需求将同步上升。</div>
+    </div>
+
+    <div class="item">
+      <h3>3. NVIDIA与ServiceNow扩展战略合作：规模化部署企业AI Agent</h3>
+      <div class="source"><a href="https://www.cxodigitalpulse.com/nvidia-and-servicenow-expand-partnership-to-scale-enterprise-ai-agents/">CXO Digital Pulse</a> · 2026-05-06</div>
+      <div class="body">NVIDIA与ServiceNow在Knowledge 2026宣布扩展合作，聚焦将NVIDIA加速推理与ServiceNow Workflow Data Fabric结合，实现AI Agent在治理框架内自主执行端到端业务流程。</div>
+      <div class="impact">📐 AI Agent规模化部署需要"数据供给+推理计算+治理框架"三位一体，单纯数据存储/查询能力已不足，需向Agent运行时延伸。</div>
+    </div>
+  </div>
+
+  <!-- Section C -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. DIGITIMES报告：企业AI正式进入部署阶段，算力架构向推理侧结构性转移</h3>
+      <div class="source"><a href="https://en.prnasia.com/releases/global/digitimes-report-enterprise-ai-enters-deployment-phase-shifting-compute-architectures-toward-inference-532030.shtml">PR Newswire/DIGITIMES</a> · 2026-05-06</div>
+      <div class="body">DIGITIMES专题报告指出：行业已决定性超越AI训练产能初始建设阶段，进入以大规模部署为特征的新阶段——推理工作负载正成为算力增长的首要驱动力。混合部署模式（云+边缘+本地）和推理优化硬件成为中心议题。</div>
+      <div class="impact">📐 推理规模化意味着数据访问模式根本变化——从"批量读取大数据集"转向"高频低延迟供给"。Streaming Lakehouse和KV Cache优化成为关键。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. 第九届数字中国建设峰会：国家数据局"531工具箱"全面推进</h3>
+      <div class="source"><a href="https://www.digitalchina.gov.cn/2026/xwzx/fhzx/202605/t20260501_5317219.htm">国家数据局/数字中国</a> · 2026-04-28 ~ 05-01</div>
+      <div class="body">国家数据局局长刘烈宏明确2026年为"数据要素价值释放年"，提出"531政策工具箱"——5个组合拳（制度、设施、场景、市场、产业）+3大基础（技术、人才、标准）+1个重点（数据赋能AI创新发展）。同期发布国资央企可信数据空间成都枢纽节点投运（23家央企入驻，14个标杆场景）。</div>
+      <div class="impact">📐 "数据赋能AI"的顶层定位意味着国内数据平台政策驱动力从"合规治理"扩展到"AI供给"。可信数据空间规模化建设为平台厂商创造增量市场。</div>
+    </div>
+
+    <div class="item">
+      <h3>3. 工信部《工业场景数据要素应用参考指引》：23个典型场景明确数据"采集用"路径</h3>
+      <div class="source"><a href="https://www.digitalchina.gov.cn/2026/xwzx/szkx/202605/t20260503_5317352.htm">国家数据局/数字中国</a> · 2026-05-03</div>
+      <div class="body">工信部发布指引，围绕研发设计（5场景）、生产制造（8场景）、经营管理（5场景）、客户服务（2场景）、产业协同（3场景）共23个场景凝练数据"采、集、用"路径。重点包括数字孪生工厂、智能排产、能耗管理等。</div>
+      <div class="impact">📐 23场景标准化意味着工业数据平台从POC进入规模化复制，行业knowhow结合深度将成差异化关键。</div>
+    </div>
+  </div>
+
+  <!-- Section D -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. RadixArk获$100M种子轮：SGLang开源推理引擎商业化，估值$4亿</h3>
+      <div class="source"><span class="funding-tag tag-funding">融资</span><a href="https://techfundingnews.com/radixark-100m-seed-accel-spark-nvidia-sglang-ai-inference">TechFundingNews</a> / <a href="https://theaiinsider.tech/2026/05/06/radixark-launches-with-100m-in-seed-funding-led-by-accel-to-grow-sglang-and-democratize-frontier-ai-infrastructure/">The AI Insider</a> · 2026-05-05</div>
+      <div class="body">SGLang创始团队（Ying Sheng & Banghua Zhu）创立RadixArk，获$100M种子轮@$4亿估值。Accel+Spark Capital领投，NVIDIA NVentures、AMD、Databricks、Broadcom CEO参投；天使含OpenAI/PyTorch/HuggingFace联合创始人。SGLang开源推理引擎已为Google/Microsoft/xAI每日处理万亿token。商业模式：开源+托管服务变现。</div>
+      <div class="impact">📐 推理引擎商业化标志AI基础设施层成熟。数据平台与推理层集成（RAG访问、KV Cache、实时特征服务）将成新竞争维度。Databricks既是投资方又是潜在竞争者。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. 推理基础设施周融资超$200M：RadixArk+DeepInfra标志赛道爆发</h3>
+      <div class="source"><span class="funding-tag tag-funding">趋势</span><a href="https://au.finance.yahoo.com/news/deepinfra-closes-107m-series-b-160000545.html">Yahoo Finance</a> · 2026-05-04/05-05（DeepInfra已见5/6日报，合并为趋势判断）</div>
+      <div class="body">本周推理基础设施赛道单周融资超$207M（RadixArk $100M + DeepInfra $107M），叠加DIGITIMES报告"企业AI进入部署阶段"，推理侧资本密度已超越同期训练侧。这不是单点事件，而是产业周期转换的资本信号。</div>
+      <div class="impact">📐 当推理成为规模化基础设施，数据平台需匹配新访问模式：从批量ETL转向实时特征服务+KV Cache+RAG数据管道。</div>
+    </div>
+  </div>
+
+  <!-- Section E -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. <span class="funding-tag tag-downgrade">降级</span> IBM Think 2026：watsonx.data联邦上下文层、OpenRAG与GPU加速Presto</h3>
+      <div class="source"><a href="https://completeaitraining.com/news/ibm-launches-sovereign-ai-platform-expands-enterprise/">Complete AI Training</a> · 2026-05-05（5/6日报未覆盖）</div>
+      <div class="body">IBM在Think 2026（5/5）发布：1）watsonx.data Federated Context Layer；2）OpenRAG + OpenSearch；3）GPU-Accelerated Presto。试图在watsonx.data上重建数据存储到AI推理的完整链路竞争力。</div>
+      <div class="impact">⏳ 待确认：GPU加速Presto GA时间及第三方基准测试；Federated Context Layer跨云部署验证。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. <span class="funding-tag tag-downgrade">降级</span> Ineffable Intelligence $1.1B种子轮：AlphaGo之父押注无数据强化学习</h3>
+      <div class="source"><a href="https://www.cnbc.com/amp/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html">CNBC</a> / <a href="https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data">TechCrunch</a> · 2026-04-27（超出窗口，规模史无前例）</div>
+      <div class="body">DeepMind前研究主管David Silver创立Ineffable Intelligence，$1.1B种子轮+$5.1B估值（全球最大种子轮）。Sequoia+Lightspeed领投，NVIDIA/Google/英国Sovereign AI基金参投。目标：纯强化学习Superlearner，无需人类数据。</div>
+      <div class="impact">⏳ 若"无数据AI"成功，将从根本上改变数据作为AI核心燃料的行业叙事，对数据平台行业的长期定位构成根本性挑战。</div>
+    </div>
+
+    <div class="item">
+      <h3>3. <span class="funding-tag tag-track">跟踪</span> Meta 24个月内开工10座AI数据中心</h3>
+      <div class="source"><a href="https://business20channel.tv/meta-data-centres-2026-10-new-ai-facilities-reshape-cloud-in-5-may-2026">Business 2.0 Channel</a> · 2026-04-28/05-05</div>
+      <div class="body">Meta确认过去24个月开工10座AI优化数据中心，是消费技术领域历史上最激进的物理基础设施扩建之一。规模化推理（服务30亿+用户）驱动的基建需求正在重塑云基础设施竞争格局。</div>
+      <div class="impact">⏳ 关注：对应的数据管理/治理基础设施投入规模；是否带动类似TikTok的区域数据主权投资模式。</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息覆盖窗口：2026-05-01 ~ 05-07 08:00 CST（五一假期补充版）</p>
+  </div>
+
+</div>
+</body>
+</html>

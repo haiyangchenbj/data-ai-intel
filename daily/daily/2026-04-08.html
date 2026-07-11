@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-08</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Empty section */
+  .empty-note {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Watchlist tags */
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-downgrade { background: #fff3e0; color: #e65100; }
+  .tag-follow { background: #e8f5e9; color: #2e7d32; }
+  .tag-upcoming { background: #e3f2fd; color: #1565c0; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-08 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>流数据与湖仓的架构边界正在消失，流即表、表即流成为可落地方案</li>
+      <li>数据平台应用层部署方式从手动上传转向 GitOps 全流程管控</li>
+      <li>跨平台 Iceberg 写入互操作逐步扩展，湖仓开放生态的实质性进展加速</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>流处理正经历从"独立基础设施"到"湖仓原生能力"的架构跃迁，这将重新定义数据团队构建实时管道的方式和成本结构。数据平台的应用层和治理层同步向 GitOps 和开放格式演进，平台锁定的成本正在系统性降低。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. StreamNative 发布 Lakestream 架构与 Ursa for Kafka：每个 Kafka Topic 自动成为 Iceberg/Delta Lake 表</h3>
+      <div class="source">来源：<a href="https://streamnative.io/press-releases/streamnative-introduces-lakestream-architecture-and-launches-native-kafka-service" target="_blank">BusinessWire / StreamNative Press Release</a></div>
+      <div class="body">
+        <p>StreamNative（Apache Pulsar 创始团队创立）4 月 7 日发布 Lakestream 架构范式，并推出 Ursa for Kafka（UFK）进入 Limited Public Preview。UFK 是 Apache Kafka 4.2+ 的原生 fork（非兼容层），运行在对象存储上，每个 topic 同时是一个实时事件流和一个可查询的 Iceberg/Delta Lake 表。采用无主（leaderless）架构，消除了分区 leader 选举和副本再平衡，broker 作为无状态计算节点可像 Web 服务器一样弹性伸缩。内置联邦目录自动注册至 Databricks Unity Catalog、Snowflake Horizon Catalog 和 AWS S3 Tables。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>这是流数据与湖仓架构融合的标志性事件。传统模式下，从 Kafka 到湖仓需要 Kafka Connect + ETL 管道，延迟高、运维复杂。Lakestream 将互操作下推到存储和目录层，声称可降低 95% 的云流处理成本（消除跨 AZ 复制这一最大成本项）。如果性能指标经受住生产验证，这将直接冲击 Confluent/IBM、Amazon MSK、Redpanda 的市场定位。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks Apps 支持 Git 仓库部署正式 GA</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april" target="_blank">Databricks on AWS Release Notes - April 2026</a></div>
+      <div class="body">
+        <p>Databricks 4 月 7 日宣布 Git-backed app deployments 正式 GA。用户可直接从 Git 仓库部署 Databricks Apps，支持配置 Git 引用、指定源代码路径，并可在工作区级别强制要求仅通过 Git 部署。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>这标志着 Databricks 的应用层从"上传部署"全面转向 GitOps 模式，与企业软件工程的 CI/CD 标准实践对齐。对于在 Databricks 上构建数据应用和 AI 应用的团队，版本控制、审计追溯和自动化部署流水线成为一等公民能力。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>2. DataOps.live 4 月更新：SOLE 新增 Snowflake Hybrid Table 权限和 GENERATION 参数支持</h3>
+      <div class="source">来源：<a href="https://docs.dataops.live/docs/release-notes/release-notes-april-2026/" target="_blank">DataOps.live Release Notes April 2026</a></div>
+      <div class="body">
+        <p>DataOps.live 4 月 7 日发布 Orchestrators 5-latest 预发布更新。Snowflake Object Lifecycle Engine（SOLE）新增对 CREATE HYBRID TABLE 权限（Snowflake BCR 2026_02）、仓库 GENERATION 参数和文件格式 USE_LOGICAL_TYPE 参数的支持，以及安全修复。</p>
+      </div>
+      <div class="impact">
+        <strong>对数据平台的影响：</strong>Snowflake Hybrid Table 权限的支持表明 Snowflake 的混合事务+分析（HTAP）能力正在被 DevOps 工具链跟进，GENERATION 参数则关联 Snowflake 新一代计算资源管理。生态工具的跟进速度反映了 Snowflake 新功能的采用热度。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>观点与洞察</h2>
+    </div>
+    <p class="empty-note">今日窗口内无符合准入标准的机构研究或关键人物观点。</p>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>投融资</h2>
+    </div>
+    <p class="empty-note">今日窗口内无符合准入标准的投融资、财报或收购兼并事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-downgrade">降级</span>Snowflake Apache Iceberg 表写支持 Databricks Unity Catalog on Azure 正式 GA</h3>
+      <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/new-features" target="_blank">Snowflake Release Notes</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Snowflake 4 月 6 日宣布 Apache Iceberg 表对 Databricks Unity Catalog on Azure 的写支持正式 GA。这意味着 Snowflake 用户可以直接写入由 Databricks Unity Catalog 管理的 Iceberg 表，跨平台数据互操作从"只读"进入"读写双向"阶段。降级原因：发布日期 4 月 6 日，早于今日窗口起点（4 月 7 日 08:00 CST）。</p>
+        <p><strong>需要等待什么信号确认：</strong>实际使用中的写入性能和一致性表现、AWS 和 GCP 平台的同步支持时间表、Databricks 侧的官方响应。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-follow">跟踪</span>StreamNative Lakestream 生态整合与性能验证</h3>
+      <div class="source">来源：<a href="https://streamnative.io/blog/ursa-for-kafka-native-apache-kafka-service-on-lakestream" target="_blank">StreamNative Blog</a></div>
+      <div class="body">
+        <p><strong>为什么值得继续看：</strong>Ursa for Kafka 声称 95% 成本降低和 5 GB/s 吞吐量，但目前仅在 Limited Public Preview 阶段（AWS/GCP），Azure 尚未支持。其 Universal Linking 功能支持从现有 Kafka 部署（Confluent、MSK、Redpanda、自建）持续复制至 UFK，迁移路径设计值得关注。</p>
+        <p><strong>需要等待什么信号确认：</strong>生产级工作负载的第三方性能验证、Unity Catalog/Snowflake Horizon 目录集成的实际延迟、IBM/Confluent 整合后对流处理市场竞争格局的实质影响。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.2</p>
+    <p>信息截至北京时间 2026-04-08 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-01</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-01 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据管道中间件进入PE整合期，外部数据管理从自建走向平台化</li>
+      <li>开放表格式复制能力GA化，企业级灾备就绪度进一步提升</li>
+      <li>托管流处理平台持续吸收连接器层能力，自建基础设施的边界收窄</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>夏季淡季窗口产出再创新低，A/C板块全空。PE收购Crux标志数据管道中间件进入整合期，Iceberg复制GA表明开放格式企业级灾备就绪。两条暗线——中间件平台化与格式成熟——将在Q3持续演进。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无符合准入标准的已确认重大事件。24h窗口内延续DAIS 2026和Snowflake Summit闭幕后的夏季信息淡季特征，第一优先级厂商均无窗口内正式公告。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake Dynamic Iceberg Table Replication 正式 GA</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/all-release-notes">Snowflake Release Notes</a><br><b>摘要：</b> Snowflake 宣布动态 Iceberg 表的复制能力正式 GA。该功能支持将动态 Iceberg 表纳入复制和故障转移组，此前动态 Iceberg 表在复制刷新操作中会被跳过。此次 GA 意味着企业可以在跨区域灾备架构中完整覆盖 Iceberg 原生表。<br><b>对数据平台的影响：</b> Iceberg 表格式的复制能力 GA 是开放格式在企业级灾备场景走向成熟的关键一步。对于已采用 Snowflake Iceberg 表的企业，不再需要在灾备方案中为 Iceberg 表单独设计复制逻辑，降低了开放格式在多区域部署中的运维复杂度。这也进一步缩小了 Iceberg 原生表与 Snowflake 专有表在企业级能力上的差距。</div>
+</div>
+<div class="item">
+    <h3>Confluent Cloud 托管连接器新增自定义 SMT 与 mTLS 支持</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.confluent.io/cloud/current/release-notes/index.html">Confluent Cloud Release Notes</a><br><b>摘要：</b> Confluent Cloud 于 6 月 30 日发布两项连接器能力升级：全托管连接器（Basic/Standard/Dedicated 集群）现已支持自定义单消息转换（Custom SMT），允许用户在托管连接器中注入自有转换逻辑；同时 PostgreSQL 和 MySQL 的 JDBC 连接器新增 mTLS 双向认证支持。<br><b>对数据平台的影响：</b> Custom SMT 的开放意味着 Confluent Cloud 的托管连接器不再局限于内置转换能力，企业可以将此前需自建 Kafka Connect 集群才能运行的定制逻辑迁移到全托管环境。mTLS 的支持则消除了金融、医疗等强合规行业在采用托管连接器时的认证障碍。两项更新共同指向一个趋势：托管流平台正在系统性吸收此前属于自建基础设施层的能力。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无符合准入标准的分析师报告或关键人物观点。窗口内未检索到 Gartner、Forrester、IDC、信通院等机构的正式数据平台相关研究报告发布。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【收购兼并】Parabellum Investments 收购数据基础设施公司 Crux Informatics</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/parabellum-investments-acquires-crux-informatics-to-transform-ai-powered-data-infrastructure-for-financial-markets-302813595.html">PR Newswire</a><br><b>核心数据：</b> 交易金额未披露。Crux 服务客户包括 Goldman Sachs、Two Sigma、Google Cloud，管理数千条生产客户数据管道，集成 200+ 数据供应商（Morningstar、Moody's、MSCI 等）。<br><b>摘要：</b> PE 机构 Parabellum Investments 于 6 月 30 日宣布收购 Crux Informatics。Crux 是金融行业外部数据管理的核心基础设施，通过 Sphere（全周期托管数据服务）和 ArrayX（Agentic 数据管道平台）两条产品线，为金融机构提供从原始数据到可用洞察的自动化管道。该平台深度集成 Databricks、Snowflake 和 Google Cloud。<br><b>对数据平台的影响：</b> Crux 被 PE 收购是数据管道中间件进入平台化整合期的信号。随着 Agent 驱动的金融分析场景增长，外部数据的自动化接入、清洗和治理正从自建能力变为采购决策中的独立品类。PE 的进入意味着这个中间件层将加速产品化和独立运营，对 Databricks/Snowflake 等平台生态中的"数据接入最后一公里"供应商格局产生影响。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Crux 收购后的产品路线图与数据管道中间件整合趋势</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/parabellum-investments-acquires-crux-informatics-to-transform-ai-powered-data-infrastructure-for-financial-markets-302813595.html">PR Newswire</a><br><b>为什么值得继续看：</b> Crux 是少数同时深度集成 Databricks 和 Snowflake 的数据管道中间件公司，对两大平台生态的"接入层"均有一定影响力。PE 收购后，其定价策略、产品独立性和多平台兼容性是否会发生变化，将直接影响金融数据管道的供应商选型格局。<br><b>需要等待什么信号确认：</b> Parabellum 后续是否公布 Crux 的产品路线图更新、定价策略调整或管理层变动；是否有其他数据管道中间件（如 Fivetran、Airbyte、Matillion）出现类似整合动作。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-01 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

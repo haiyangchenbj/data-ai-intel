@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-06-04</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>Data+AI 全球日报</h1>
+    <div class="date">2026-06-04 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>今日最重要的3点</h2>
+    <ol>
+      <li>分析型数据库开始向 Agent 原生架构演进，查询引擎与 AI 能力深度耦合成为新方向</li>
+      <li>云厂商数据集成工具加速拥抱低代码 Spark 级数据工程，降低实时 AI 管道门槛</li>
+      <li>数据平台厂商正从"提供数据"转向"提供行动"，Agent 控制平面成为竞争焦点</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台正从"AI-Ready"迈向"Agent-Native"。ClickHouse、Microsoft、Snowflake 同日信号表明：查询引擎嵌入 Agent 能力、数据管道支持自主工作流、平台成为 Agent 控制平面，已成共识。
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+      <h3>1. ClickHouse Open House 2026：Agent、Postgres 与 Observability 三连发</h3>
+      <div class="source">来源：<a href="https://clickhouse.com/docs/whats-new/changelog/cloud" target="_blank">ClickHouse Cloud Changelog</a></div>
+      <div class="body">ClickHouse 在 6 月 3 日的 Open House 2026 活动中密集发布四项重大更新。ClickHouse Agents 进入 Public Beta，基于 Claude 提供对话式 schema-aware 分析，支持无代码 AgentBuilder、MCP 服务器插件和子代理工作流。ClickHouse Postgres 同步进入 Public Beta，在本地 NVMe 存储上提供托管 Postgres 服务，声称 TPS 较 AWS RDS 提升 5 倍以上，并通过原生 CDC 管道将数据实时同步至 ClickHouse。ClickStack Cloud 作为 serverless 可观测性平台启动 Private Preview，基于 OpenTelemetry 提供日志、指标和追踪的统一管理。</div>
+      <div class="impact"><strong>为什么对数据平台重要：</strong>ClickHouse 首次将 AI Agent 能力作为第一方功能嵌入分析数据库，标志着查询引擎与 AI 推理层开始深度融合。Postgres + ClickHouse 的托管组合则打通了 OLTP 到 OLAP 的实时链路，无需中间件。这两项变化共同指向一个趋势：分析型数据库正在从"被动响应查询"转向"主动理解业务并执行动作"。</div>
+    </div>
+    <div class="item">
+      <h3>2. Microsoft Build 2026：Fabric Data Factory 引入 MDF Transform 与私有网络镜像</h3>
+      <div class="source">来源：<a href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Build-2026-From-data-to-intelligence-Faster-with-Fabric-Data/ba-p/5191636" target="_blank">Microsoft Fabric Updates Blog</a></div>
+      <div class="body">Microsoft 在 Build 2026 大会上宣布 Fabric Data Factory 多项更新。Mapping Data Flows (MDF) Transform 将在 6 月 8 日当周进入 Dataflow Gen2，提供低代码 Spark 级数据工程体验。Secure ingestion into Fabric Data Warehouse with Copy job/activity 正式 GA，支持最严格网络拓扑下的工作空间私有链路。Mirroring with Workspace Private Link 进入 Preview，覆盖 Azure SQL DB、SQL Server、SAP Datasphere 和 SharePoint List。此外，Rayfin 开源 SDK 发布，支持将 Agent 构建的应用直接部署到 Fabric 平台作为受治理的生产后端。</div>
+      <div class="impact"><strong>为什么对数据平台重要：</strong>MDF Transform 进入 Dataflow Gen2 意味着微软将 Azure Data Factory 的核心能力下沉到 Fabric 的 SaaS 体验中，降低了大规模数据工程的入门门槛。Rayfin 的发布则表明微软正在构建 Agent 应用与数据平台之间的双向闭环：Agent 从 Fabric 取数据，应用产出的数据又回流到 Fabric。这一架构对数据平台的治理模型和实时性提出了新要求。</div>
+    </div>
+    <div class="item">
+      <h3>3. Snowflake Summit Day 3：CoWork 详细功能曝光，Cortex Training 首次亮相</h3>
+      <div class="source">来源：<a href="https://www.163.com/game/article/DK3UFFO400318PFH_mobile.html" target="_blank">Snowflake 官方 / 163.com 报道</a></div>
+      <div class="body">Snowflake 在 Summit Day 3 期间披露了 CoWork（原 Snowflake Intelligence）的完整功能细节。CoWork 新增 Artifacts（可发布仪表盘）、Cortex Sense（为 Agent 提供共享业务上下文层）、User Skills（自动化工作流）、User Memory（个性化学习）和 Skill Catalog。Cortex Training 首次亮相，提供托管 GPU 环境供企业在 Snowflake 内定制基础模型。Snowflake 同时透露已有超过 13,900 家客户，其中 13,600 多个账户每周使用其 AI 产品。</div>
+      <div class="impact"><strong>为什么对数据平台重要：</strong>CoWork 的完整功能揭示了 Snowflake 对"Agentic Enterprise"的具体定义：不是单一 Chatbot，而是由共享上下文层（Cortex Sense）连接的可组合 Agent 网络。Cortex Training 则意味着 Snowflake 从"数据平台"向"模型训练平台"延伸，客户无需将敏感数据移出即可微调模型。这一组合使 Snowflake 成为同时覆盖数据、治理、模型训练和 Agent 部署的完整栈。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+      <h3>1. AWS SageMaker Unified Studio 新增 Notebook 调度和 Data Agent 对话历史</h3>
+      <div class="source">来源：<a href="https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/release-notes.html" target="_blank">AWS Release Notes</a></div>
+      <div class="body">AWS 于 6 月 3 日为 SageMaker Unified Studio 发布两项更新。Notebook scheduling 支持直接从笔记本界面调度、参数化和编排笔记本运行，无需外部编排基础设施，并支持多笔记本工作流链式执行。SageMaker Data Agent 新增 90 天对话历史保留功能，支持恢复之前的分析会话。</div>
+      <div class="impact"><strong>对数据平台的影响：</strong>Notebook scheduling 的引入降低了数据科学工作流自动化的门槛，使分析师可以直接将探索性分析转化为生产级定时任务。Data Agent 的对话历史则增强了可观测性和审计能力，对于受监管行业的 AI 辅助分析尤为重要。两者共同强化了 AWS 在"数据工程 + AI"一体化方面的竞争力。</div>
+    </div>
+    <div class="item">
+      <h3>2. NetApp 与 Cisco 扩展合作，将存储层纳入 SOAR 自动化响应</h3>
+      <div class="source">来源：<a href="https://s21.q4cdn.com/371534297/files/doc_news/NetApp-and-Cisco-Collaboration-Strengthens-Defense-in-Depth-for-Enterprise-Cyber-Resilience-2026.pdf" target="_blank">Business Wire</a></div>
+      <div class="body">NetApp 与 Cisco（通过 Splunk）于 6 月 3 日宣布扩展合作，发布 NetApp Splunk SOAR Playbook。该方案允许 Splunk SOAR 在检测到勒索软件威胁时，直接在 NetApp ONTAP 存储层执行自动化响应动作，包括阻断可疑用户、创建快照和下线数据卷，无需人工干预。</div>
+      <div class="impact"><strong>对数据平台的影响：</strong>这是数据基础设施与安全运营深度集成的典型案例。传统上，存储层是安全响应的盲区——检测到威胁后需要人工介入存储系统。将 SOAR 能力延伸到存储层意味着数据平台本身成为主动防御体系的一部分，这对金融、医疗等强合规行业的数据架构设计具有参考意义。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+      <h3>1. Gartner：2026 数据与分析十大预测</h3>
+      <div class="source">来源：<a href="https://www.gartner.com/cn/newsroom/press-releases/2026-da-top-predictions" target="_blank">Gartner 中国新闻室</a></div>
+      <div class="body"><strong>核心观点：</strong>Gartner 发布 2026 年及未来数据与分析领域十大预测。关键判断包括：到 2027 年末，GenAI 与 AI 智能体的应用将给主流生产力工具带来 30 年来首次真正挑战，引发价值 580 亿美元的市场格局重塑；到 2029 年，AI 智能体从物理环境产生的数据量预计将达到所有数字 AI 应用数据总和的 10 倍；到 2030 年，50% 的企业将使用自主 AI 智能体将治理政策转化为机器可验证的数据合约。</div>
+      <div class="impact"><strong>映射到数据平台的判断：</strong>Gartner 的预测明确了数据平台未来的两个核心命题：一是 Agent 产生的数据规模将远超人类产生的数据，平台必须为此设计新的存储、治理和实时处理架构；二是治理将从"人工制定规则"转向"机器自动执行合约"，这意味着数据平台需要内建策略引擎和自动化合规能力。对于当前正在规划 Agent-Ready 架构的企业，这些预测提供了 3-5 年的技术路线图参考。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">投融资</span>Coralogix 完成 2 亿美元 F 轮融资，总融资达 5.5 亿美元</h3>
+      <div class="source">来源：<a href="https://coralogix.com/coralogix-raises-200m-to-scale-the-observability-backbone-for-the-age-of-ai/" target="_blank">Coralogix 官方博客</a></div>
+      <div class="body"><strong>核心数据：</strong>Series F 融资 2 亿美元，由 Advent 和 CPPIB 领投，Greenfield 和 Brighton Park Capital 跟投。总融资额达 5.5 亿美元。<br><br>Coralogix 于 6 月 3 日宣布完成 2 亿美元 F 轮融资。公司定位为"AI 时代的可观测性数据平台"，其流式引擎和 schema-free 架构支持全保真摄取和实时分析，内置 AI Agent Olly 可自动执行事件调查和根因分析。CEO Ariel Assaraf 表示，Coralogix 的架构在 Agent 时代"不需要重新定位，因为它就是为这个场景构建的"。</div>
+      <div class="impact"><strong>对数据平台的影响：</strong>Coralogix 的高估值反映了市场对"AI-Native 可观测性"的强烈需求。传统可观测性工具基于采样和仪表盘设计，难以应对 Agent 产生的大规模遥测数据。Coralogix 的全保真流式架构为数据平台领域提供了一个重要参照：当 AI 系统成为数据的主要消费者时，存储和查询架构需要从"人类可读"转向"机器优先"。</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+      <h3><span class="funding-tag tag-ma">预告</span>腾讯云 6 月 5 日 AI 产业应用大会将发布 Agent Storage</h3>
+      <div class="source">来源：<a href="https://cloud.tencent.com/developer/article/2681637" target="_blank">腾讯云开发者社区</a></div>
+      <div class="body"><strong>为什么值得继续看：</strong>腾讯云将于 6 月 5 日在北京举办 2026 腾讯云 AI 产业应用大会，届时将发布面向 Agent 时代的全新存储产品矩阵"Agent Storage"。这是国内云厂商首次明确将存储产品定位为"Agent 时代的数据底座"，与今日 ClickHouse、Microsoft、Snowflake 的国际信号形成呼应。<br><br><strong>需要等待什么信号确认：</strong>需关注 Agent Storage 的具体技术架构（是否支持多模态数据统一存储、长短期记忆管理、与现有腾讯云数据产品的集成深度），以及定价模式和 GA 时间表。</div>
+    </div>
+    <div class="item">
+      <h3><span class="funding-tag tag-ma">跟踪</span>SAP 收购 Dremio 和 Prior Labs 的后续整合进展</h3>
+      <div class="source">来源：<a href="https://staging.theoutpost.ai/news-story/sap-acquires-dremio-and-prior-labs-with-1-1-b-investment-to-advance-enterprise-ai-strategy-25094" target="_blank">The Outpost</a></div>
+      <div class="body"><strong>为什么值得继续看：</strong>SAP 近期宣布收购开放数据湖仓平台 Dremio 和表格基础模型公司 Prior Labs，总投资超 11 亿欧元。SAP Business Data Cloud 将原生支持 Apache Iceberg，并基于 Apache Polaris 构建通用开放目录。这是传统 ERP 巨头向开放数据平台转型的关键动作。<br><br><strong>需要等待什么信号确认：</strong>需跟踪收购完成后的产品整合时间表、Dremio 的 Agentic Lakehouse 与 SAP HANA Cloud 的融合路径，以及 Prior Labs 的 TabPFN 模型在 SAP 产品中的实际落地场景。</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-06-04 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-10</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-10 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库产业AI原生转型提速，信通院首度量化市场格局与增长路径</li>
+      <li>国产数据库进入核心系统攻坚期，行业替换从外围系统走向心脏地带</li>
+      <li>Agent原生基础设施产品化，云厂商开始为智能体重构存储底座</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>信通院2026数据库报告量化中国市场近千亿规模（2028年），公有云占比突破三分之二。OceanBase政务+向量数据库双突破，国产数据库进入核心系统攻坚期。腾讯云Agent Bucket标志基础设施层开始为Agent原生重构。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>2026可信数据库发展大会开幕，信通院发布《数据库发展研究报告（2026年）》</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.cnii.com.cn/rmydb/202607/t20260709_748135.html">人民邮电报</a><br><b>摘要：</b> 7月9日，2026可信数据库发展大会在京召开，中国信通院副院长魏亮发布《数据库发展研究报告（2026年）》。报告显示，2025年全球数据库市场规模达1316亿美元，中国市场规模94.9亿美元（占全球7.2%），预计2028年将增至979.74亿元人民币，年复合增长率13.06%。公有云数据库2025年规模442.65亿元（占比65.3%），预计2026年占比升至66.2%。报告指出，数据库技术正加速向AI原生方向演进，软硬协同与AI原生成为两大核心技术趋势。<br><b>为什么对数据平台重要：</b> 信通院首次在权威报告中系统定义"AI原生数据库"演进方向，并给出中国数据库市场到2028年的完整增长预测和产业结构画像。公有云占比突破三分之二、非关系型和向量数据库占比持续提升，这些结构性变化直接影响云数据平台的采购优先级和架构选型。</div>
+</div>
+<div class="item">
+    <h3>OceanBase产业图谱双突破，联合信通院发起"AI数据库"攻坚计划</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20260709A09TJ900">腾讯新闻</a><br><b>摘要：</b> 在2026可信数据库发展大会上，OceanBase在中国信通院《中国数据库产业图谱（2026年）》中实现两项突破：纵向将"政务"首次纳入领航者版图（此前仅覆盖金融、电信等七大行业），横向技术版图新增"向量数据库"类别。同时，OceanBase联合信通院及神州信息、东软集团、恒生电子、华信永道正式发布关键行业"AI数据库"攻坚计划，聚焦两大战役：关键业务负载攻坚（国产数据库从"可用"迈向"好用"）和AI创新加速攻坚（以湖库一体AI数据库底座赋能行业AI应用）。<br><b>为什么对数据平台重要：</b> OceanBase以"一横一纵"（HTAP→向量数据库，金融→政务）的双重扩展验证了"湖库一体"技术路线在核心行业和AI新兴方向的双向适配能力。攻坚计划的发布意味着国产数据库进入"攻核心系统"的新阶段——不仅是替代，更是以AI数据库身份重新定义关键行业数据底座。</div>
+</div>
+<div class="item">
+    <h3>腾讯云Agent Bucket正式发布，为Agent场景打造原生存储底座</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20260709A06ER300">腾讯云</a><br><b>摘要：</b> 7月9日，腾讯云Agent Bucket（智能体桶）正式发布，可为亿级Agent提供独立云空间。产品引入"Space"独立空间单元概念，每个Agent或用户独享访问凭证、容量配额和读写限速，隔离能力下沉至系统底层。内置文件秒传去重、多模态内容检索、外链分享和回收站等网盘级能力，搭配GooseFS分布式缓存加速和冷热分层存储。目前已落地WorkBuddy、QClaw、ClawPro等腾讯Agent应用，并服务华硕AI PC和东风日产车载场景。<br><b>为什么对数据平台重要：</b> Agent Bucket是云厂商首次为Agent场景从底层重构存储架构——不是"让Agent用现有对象存储"，而是为Agent的原生需求（独立空间、系统级隔离、高并发负载均衡）重新设计存储底座。这标志着基础设施层正从"兼容Agent"走向"为Agent原生设计"，与"存储智能"（Agent-Ready数据底座）方向一致。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>AWS SageMaker数据平台功能更新：Unified Studio支持自定义资产类型，Feature Store新增批量写入</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.cloudspark.global/en/duyurular/">AWS</a><br><b>摘要：</b> 7月9日，AWS发布两项SageMaker数据平台功能更新：SageMaker Unified Studio新增对IAM域自定义资产类型的支持，域管理员可将任意格式资产（如医学影像、Power BI报表）纳入统一目录管理；SageMaker Feature Store新增批量特征写入和记录列表功能，提升大规模ML特征工程的吞吐能力。<br><b>对数据平台的影响：</b> Unified Studio的自定义资产类型扩展了数据目录的覆盖范围，使其从传统结构化数据向多模态资产延伸，回应了AI场景对非结构化数据治理的需求。Feature Store的批量写入则降低了大规模特征工程的延迟瓶颈。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】国产数据库行业应用从外围进入核心系统攻坚期</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.cnii.com.cn/rmydb/202607/t20260709_748135.html">信通院《数据库发展研究报告（2026年）》</a><br><b>为什么值得继续看：</b> 报告明确指出金融行业数据库应用"步入深水区，核心系统升级全面提速"，电信行业"迈入深化攻坚阶段，集采加速生态整合"，能源行业"集团集采驱动规模化升级"。三大行业同步进入核心系统替换阶段——这是国产数据库从"能用"到"好用"的质变窗口，也是信通院首次在年度报告中系统量化这一趋势。<br><b>需要等待什么信号确认：</b> 2026年下半年金融机构核心交易系统迁移的实际案例数量、电信和能源行业集采中标格局变化、OceanBase等头部厂商在政务领域的落地进展。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-10 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-04-02</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* Empty section */
+  .empty-note {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  /* Watchlist tag */
+  .watchlist-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-downgrade { background: #fff3e0; color: #e65100; }
+  .tag-follow { background: #e8f5e9; color: #2e7d32; }
+  .tag-upcoming { background: #e3f2fd; color: #1565c0; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-04-02 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>多个主流数据平台同月进入 EOL 倒计时，企业升级窗口正在收窄</li>
+      <li>数据平台厂商在 Q2 开局保持沉默，产品发布节奏仍处于大会后消化期</li>
+      <li>数据库版本退役正在从单一产品事件变成跨厂商的系统性迁移压力</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>四月是数据平台"还债月"——MySQL 8.0 和 IBM Db2 11.1 同时进入 EOL 倒计时，叠加 3 月已退役的多个平台版本，企业数据栈的版本升级已从可选项变成强制项。与此同时，主流厂商在 Q2 开局尚无重大产品发布，行业仍在消化 FabCon/GTC 大周带来的信息密度。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <p class="empty-note">窗口内（04-01 08:00 ~ 04-02 08:00 CST）无符合准入标准的重大已确认事件。严格遵循「宁缺毋滥」原则，A 板块留空。</p>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <p class="empty-note">窗口内无符合准入标准的数据平台产品发布或技术更新。B 板块留空。</p>
+  </div>
+
+  <!-- Section C: Views & Research -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <p class="empty-note">窗口内无符合准入标准的分析师报告或关键人物原始观点。C 板块留空。</p>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <p class="empty-note">窗口内无符合准入标准的数据平台相关投融资、财报或收购兼并事件。D 板块留空。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-downgrade">降级</span>MySQL 8.0 与 IBM Db2 11.1 同月进入 EOL——数据平台"退役潮"四月集中爆发</h3>
+      <div class="source">
+        来源：<a href="https://dev.mysql.com/doc/relnotes/mysql/8.0/en/" target="_blank">MySQL 8.0 Release Notes</a> · <a href="https://www.ibm.com/support/pages/db2-distributed-end-support-eos-dates" target="_blank">IBM Db2 11.1 EOS</a> · <a href="https://www.datavail.com/blog/data-platforms-reaching-end-of-life-in-march-2026/" target="_blank">Datavail April 2026 EOL Calendar</a>
+      </div>
+      <div class="body">
+        <p>MySQL 8.0 将于 4 月 30 日以 8.0.46 版本正式 EOL，全球数百万实例需迁移至 8.4 LTS 或 Innovation 版本；IBM Db2 11.1 LUW 延伸支持同日终止。叠加 3 月已退役的 Databricks Runtime 12.2 LTS、Amazon DocumentDB 3.6、Azure PostgreSQL 11-13 等平台，企业数据栈正面临数年来最密集的版本升级窗口。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>关注 Oracle 是否为 MySQL 8.0.46 提供最终安全补丁；关注云厂商（AWS RDS、Azure Database for MySQL、腾讯云 TDSQL-C）是否同步推送强制升级通知；关注企业迁移过程中是否出现兼容性问题导致数据平台选型变化。
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watchlist-tag tag-follow">跟踪</span>FabCon/GTC 后数据平台产品发布持续低迷——Q2 开局第八个低新闻工作日</h3>
+      <div class="source">
+        来源：综合本期及此前日报信息采集结果
+      </div>
+      <div class="body">
+        <p>自 3 月 24 日以来，数据平台领域已连续八个工作日处于低新闻状态。Databricks、Snowflake、AWS、Google Cloud、Microsoft Fabric 均未在窗口内发布产品级公告。这种静默期在 FabCon/GTC 大会密集发布后属于正常消化节奏，但持续时间已超过此前预期。</p>
+      </div>
+      <div class="impact">
+        <strong>需要等待什么信号确认：</strong>关注 Databricks Data+AI Summit（通常 6 月）的预告是否提前释放；关注 Snowflake 是否在 Q2 初期发布重大产品更新；关注 AWS re:Invent 2026 之前是否有中期产品发布窗口。
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.1</p>
+    <p>信息截至北京时间 2026-04-02 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

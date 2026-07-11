@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-05-25</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-05-25 · 周末 72 小时窗口（05-22 ~ 05-25）</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>Confluent 在 Current London 发布"AI 数据流全家桶"：Real-Time Context Engine、Streaming Agents、MCP Server 三项同时 GA，数据流正式成为 Agent 的实时上下文层</li>
+      <li>Databricks Runtime 18 Beta 落地 Apache Spark 4.1.0——Spark Declarative Pipelines 和 Real-Time Mode 首次进入可用状态，批流融合进入声明式时代</li>
+      <li>ClickHouse 26.5 "Spring Release" 引入 Rust Delta Kernel 集成和 filesystem() 表函数，OLAP 引擎向数据湖和非结构化数据场景双向扩张</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据基础设施正在从"被调用的后端"转变为"Agent 主动消费的实时上下文层"。Confluent 的 MCP Server + Context Engine 让 Kafka 成为 Agent 的感知神经，Databricks 的 SDP 让管道定义回归业务逻辑，ClickHouse 的 Delta Kernel 集成让 OLAP 引擎原生读取湖仓数据。共同方向：让 AI 系统无摩擦地获取所需数据。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Confluent Current London：Real-Time Context Engine + Streaming Agents + MCP Server 三项 GA</h3>
+      <div class="source">来源：<a href="https://www.confluent.io/press-release/build-and-secure-real-time-ai">Confluent 新闻稿 2026-05-19</a> / <a href="https://www.confluent.io/blog/2026-q2-confluent-cloud-launch">Q2 Cloud Launch</a> / <a href="https://www.confluent.io/blog/2026-q2-confluent-intelligence-update">Intelligence 更新</a></div>
+      <div class="body">
+        <p>Confluent（IBM 旗下）在伦敦 Current 大会发布年度最大规模产品更新：① <strong>Real-Time Context Engine GA</strong>——将 Kafka topic 实时转化为 Agent 可通过 MCP 查询的结构化上下文层，支持 filter/range/compound query；② <strong>Streaming Agents GA</strong>——生产级事件驱动 Agent 运行在 Flink+Kafka 上，含反思模式，99.99% SLA；③ <strong>Managed MCP Server GA</strong>——AI 助手通过自然语言管理 Confluent Cloud；④ <strong>dbt Adapter for Flink GA</strong>——用 dbt 命令定义流处理管道；⑤ <strong>Queues for Kafka GA</strong>（Kafka 4.2 + KIP-932）——原生队列语义。</p>
+      </div>
+      <div class="impact">💡 Confluent 从"消息中间件"转型为"Agent 的实时感知与行动基座"。Real-Time Context Engine 直接解决了"八成企业因数据层问题无法规模化 Agent AI"的痛点。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Databricks Runtime 18 Beta：首个基于 Spark 4.1.0 的运行时，SDP + Real-Time Mode 就位</h3>
+      <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/runtime/18.0.html">Databricks 发布说明 2026-05-22</a></div>
+      <div class="body">
+        <p>Databricks Runtime 18 Beta（5/22）是首个搭载 Spark 4.1.0 的运行时：① <strong>Spark Declarative Pipelines (SDP)</strong> 取代 Delta Live Tables——用户声明"要什么数据"，引擎自动编排和故障恢复，流批统一；② <strong>Real-Time Mode</strong>——SDP 原生低延迟流处理；③ <strong>SQL Scripting GA</strong>——过程式 SQL 正式可用；④ PySpark 原生 Arrow 集成增强。</p>
+      </div>
+      <div class="impact">💡 SDP 是 Databricks 从"Spark 作业平台"向"声明式数据工程平台"的架构跃迁。声明式定义比命令式脚本更适合 LLM/Agent 自动生成数据管道。</div>
+    </div>
+
+    <div class="item">
+      <h3>3. ClickHouse 26.5 "Spring Release"：38 新特性 + Rust Delta Kernel + filesystem() 表函数</h3>
+      <div class="source">来源：<a href="https://clickhouse.com/docs/en/changelog">Changelog 2026-05-21</a> / <a href="https://presentations.clickhouse.com/2026-release-26.5/">Release Presentation</a> / <a href="https://clickhouse.com/blog/">Rust Delta Kernel 博客 2026-05-22</a></div>
+      <div class="body">
+        <p>ClickHouse 26.5（5/21 发布，38 新特性、51 性能优化、224 Bug fix）：① <strong>Rust Delta Kernel 集成</strong>——原生读取 Delta Lake 表，数据湖双格式覆盖（+既有 Iceberg）；② <strong>filesystem() 表函数</strong>——目录结构映射为可查询表，支持文件内容 SQL 查询；③ <strong>Bucketed Map 序列化</strong>——Map 列单 key 查询提速 2-49 倍；④ <strong>Materialized CTE</strong>——复杂查询性能翻倍；⑤ 默认开启 async insert。</p>
+      </div>
+      <div class="impact">💡 ClickHouse 双向扩张：向左对接数据湖（Delta+Iceberg），向右覆盖非结构化数据（filesystem）。从纯 OLAP 向"湖仓分析 + AI 增强"平台演进。</div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Microsoft Fabric 5 月更新：OneLake Security GA + Direct Lake on SQL + 多项 Preview</h3>
+      <div class="source">来源：<a href="https://learn.microsoft.com/en-us/azure/synapse-analytics/whats-new">Fabric What's New</a> / <a href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/New-metadata-sync-and-more-in-SQL-Analytics-Endpoint-Preview/ba-p/5183137">SQL Analytics Endpoint 博客</a></div>
+      <div class="body">
+        <p>① <strong>OneLake Security GA</strong>——文件夹/行/列级细粒度访问控制默认启用，5 月底全量升级；② <strong>Direct Lake on SQL</strong>——Warehouse 直接作为 Power BI Direct Lake 数据源；③ <strong>SQL Analytics Endpoint 新元数据同步（Preview）</strong>——秒级可查；④ Data Warehouse Monitor (Preview)；⑤ Service Principal 支持 Data Agents (Preview)；⑥ OneLake Catalog 集成 Microsoft Foundry (GA)。</p>
+      </div>
+      <div class="impact">💡 OneLake Security GA 将安全模型从"每引擎各自管"统一为"存储层统一执行"，是 Lakehouse 安全范式标志性进展。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. Confluent Platform 8.2：Queues for Kafka GA + Private Cloud 发布</h3>
+      <div class="source">来源：<a href="https://docs.confluent.io/cloud/current/release-notes/index.html">Release Notes</a></div>
+      <div class="body">
+        <p>① <strong>Confluent Platform 8.2</strong>——基于 Kafka 4.2，Queues for Kafka GA（KIP-932 原生队列）、Flink SQL GA（自建环境）；② <strong>Confluent Private Cloud</strong>——全托管能力下沉私有设施，broker 吞吐 10 倍提升；③ <strong>AI_DETECT_PII 函数（EA）</strong>——Flink SQL 内置 PII 自动脱敏；④ Agent Skills GA——AI 编程工具获得 Confluent 领域知识。</p>
+      </div>
+      <div class="impact">💡 Queues for Kafka 是 Kafka 15 年来最大消费模型变化——统一 streaming 和 queuing 基础设施，Agent 任务分发不再需要独立消息队列。</div>
+    </div>
+
+    <div class="item">
+      <h3>3. ClickHouse clickhousectl v0.2.0 + Postgres 28K TPS + Native Sampling</h3>
+      <div class="source">来源：<a href="https://clickhouse.com/blog/">ClickHouse Blog 2026-05-20~22</a></div>
+      <div class="body">
+        <p>① <strong>clickhousectl v0.2.0</strong>（5/20）——CLI 新增 Postgres 连接和 ClickPipes 管理；② ClickHouse Postgres 基准 28K TPS（2-3x Aurora/Neon/Supabase）；③ <strong>Native Random Sampling</strong>（5/22）——SAMPLE BY 支持大数据集快速近似查询。</p>
+      </div>
+      <div class="impact">💡 ClickHouse Postgres 兼容层 28K TPS 使其成为 HTAP 场景的有力竞争者。</div>
+    </div>
+
+    <div class="item">
+      <h3>4. Confluent AI Developer Tools GA：Managed MCP Server + Agent Skills</h3>
+      <div class="source">来源：<a href="https://www.confluent.io/blog/ai-developer-tools-mcp-server-agent-skills-ga/">Confluent 博客 2026-05-19</a></div>
+      <div class="body">
+        <p>① <strong>Managed MCP Server GA</strong>——AI 助手通过 MCP 连接 Confluent Cloud，自然语言管理 topic/schema/connector；② <strong>Open-source MCP Server</strong>——面向自建 Kafka；③ <strong>四项 Agent Skills GA</strong>——Schema Registry、Kafka Streams、Python Client、CDC to Tableflow。演示中通过自然语言完成 MySQL→Iceberg CDC 管道全流程。</p>
+      </div>
+      <div class="impact">💡 MCP 正在成为数据基础设施标准控制面协议。如果你的平台不支持 MCP，Agent 就无法管理你的产品。</div>
+    </div>
+  </div>
+
+  <!-- Section C -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>观点与洞察</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Confluent Head of AI：数据层崩塌是 AI 项目失败首因</h3>
+      <div class="source">来源：<a href="https://www.confluent.io/press-release/build-and-secure-real-time-ai">Confluent 新闻稿 2026-05-19</a></div>
+      <div class="body">
+        <p>Sean Falconer 引用 McKinsey 报告："八成企业因数据限制无法规模化 Agentic AI。"根因：安全团队因暴露风险阻止数据进入 AI 管道 + 开发者在工具切换中浪费时间。应对策略：让流数据层本身成为安全、实时、可被 Agent 直接消费的基础设施。</p>
+      </div>
+      <div class="impact">💡 数据平台叙事从"让数据更快"转向"让 AI 能可靠地消费数据"。</div>
+    </div>
+
+    <div class="item">
+      <h3>2. ClickHouse vs Snowflake 写入成本对比：Agent 分析的写入侧经济学</h3>
+      <div class="source">来源：<a href="https://clickhouse.com/blog/">ClickHouse 博客 2026-05-06</a></div>
+      <div class="body">
+        <p>ClickHouse 发文论证：Agentic 分析要求数据在写入时即"查询就绪"（query-ready），非写入后再转换。MergeTree 写入时完成排序和索引，天然适配 Agent 即时查询模式，而 Snowflake Micro-partition 自动聚类在大规模写入时产生显著成本。</p>
+      </div>
+      <div class="impact">💡 "Query-ready data" 概念重新定义数据平台价值——Agent 不等待 ETL，数据落地即需可查。</div>
+    </div>
+  </div>
+
+  <!-- Section D -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>投融资</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">融资</span> Modal Labs $3.55 亿 C 轮：AI 推理基础设施估值暴涨至 $46.5 亿</h3>
+      <div class="source">来源：<a href="https://www.investing.com/news/economy-news/exclusivemodal-labs-valued-at-465-billion-as-ai-coding-takes-off-4704718">Reuters 2026-05-21</a></div>
+      <div class="body">
+        <p>Modal Labs 完成 $3.55 亿 C 轮，估值 8 个月内从 $11 亿飙至 $46.5 亿（4.2x）。Redpoint + General Catalyst 领投。年化收入从 $6000 万增至 ~$3 亿。Serverless AI 推理/训练/沙箱平台，已启动 10 亿+ sandbox 实例。CEO："AI 代码爆发驱动一切。"</p>
+      </div>
+      <div class="impact">💡 AI 瓶颈从"训练算力"转向"推理执行环境"。Modal 8 个月 5 倍增长量化了数据平台 Agent 化趋势的加速度。</div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">融资</span> Anthropic 最快本周完成 $300 亿+ 融资，估值拟破 $9000 亿</h3>
+      <div class="source">来源：每日经济新闻 / 多家媒体 2026-05-23</div>
+      <div class="body">
+        <p>红杉/Dragoneer/Altimeter/Greenoaks 联合领投（各 ~$20 亿），Google 追加 $100 亿、Amazon 追加 $200 亿。Q2 预计营收 $109 亿，下月年化收入超 $500 亿。估值拟超 OpenAI $8520 亿登顶全球 AI 榜首。</p>
+      </div>
+      <div class="impact">💡 市场押注 Anthropic 的"工具使用"路线（Claude + MCP + Stainless）优于 OpenAI 的"通用对话"路线——工具使用正是数据平台与 LLM 交互的核心模式。</div>
+    </div>
+
+    <div class="item">
+      <h3><span class="funding-tag tag-funding">融资</span> Hark AI $7 亿 A 轮：英伟达/AMD/英特尔三巨头联合参投</h3>
+      <div class="source">来源：<a href="https://36kr.com/newsflashes/3820052713984137">36Kr/财联社 2026-05-22</a></div>
+      <div class="body">
+        <p>Figure 创始人 Brett Adcock 的 Hark 完成 $7 亿 A 轮，估值 $60 亿。Parkway VC 领投，英伟达/AMD/Intel/高通/Salesforce 参投。定位 Agentic AI 平台（个人助手+硬件），仅 ~70 人团队，夏天发布多模态模型。</p>
+      </div>
+      <div class="impact">💡 三大芯片巨头同投一家极罕见，反映从"卖芯片"到"参与 Agent 生态"的战略升级。</div>
+    </div>
+  </div>
+
+  <!-- Section E -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. 【跟踪】Snowflake FY2027 Q1 财报（5/27 盘后）</h3>
+      <div class="body"><p>关注：Observe 收购（~$6 亿）整合进展、AI 产品使用量增长、客户净留存率、与 Databricks 竞争动态。</p></div>
+    </div>
+
+    <div class="item">
+      <h3>2. 【跟踪】Confluent Queues for Kafka 对 RabbitMQ/SQS 替代效应</h3>
+      <div class="body"><p>KIP-932 GA 后 Kafka 首次原生覆盖队列语义。关注早期采用者案例和性能对比数据。</p></div>
+    </div>
+
+    <div class="item">
+      <h3>3. 【跟踪】腾讯云"数据库+AI"产品发布会（5/29）</h3>
+      <div class="body"><p>预告 AI-In-Database 双轨路径，含 Agent"记忆大脑"、多模态向量混合检索。</p></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Data+AI 全球日报 v4.2</p>
+    <p>信息窗口：2026-05-22 08:00 ~ 2026-05-25 08:00 (CST) · 72 小时周末窗口</p>
+  </div>
+
+</div>
+</body>
+</html>

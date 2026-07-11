@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-03-27</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .body p { margin-bottom: 8px; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  .empty-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  .watch-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-track { background: #e3f2fd; color: #1565c0; }
+  .tag-upcoming { background: #fff3e0; color: #e65100; }
+  .tag-downgrade { background: #fce4ec; color: #c62828; }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-03-27 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>多个主流数据平台版本集中退役，企业技术债务清理进入密集窗口期</li>
+      <li>实时数据层被重新定义为 AI Agent 的运行时基础设施，流平台市场格局面临重组</li>
+      <li>数据平台双寡头之间的增速差距继续拉大，平台选型越来越等于 AI 路线选择</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天是 FabCon/GTC 大周之后的低新闻窗口，窗口内产品级发布稀疏，但 Databricks 12.2 LTS 等多平台版本集中 EOL 发出实际信号——企业数据栈升级已不可回避。结合本周 Confluent 被 IBM 整合后的首批产品交付和分析师解读，"实时数据即 AI 基础设施"的叙事正在落地，2026 年 H1 的数据平台迁移和整合浪潮正在蓄力。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+
+    <div class="item">
+      <h3>1. Databricks 12.2 LTS / Amazon DocumentDB 3.6 / Azure PostgreSQL 11-13 本月集中退役——多平台 EOL 叠加倒逼升级</h3>
+      <div class="source">来源：<a href="https://www.datavail.com/blog/data-platforms-reaching-end-of-life-in-march-2026/" target="_blank">Datavail - Data Platforms Reaching End of Life in March 2026</a>（March 26, 2026）</div>
+      <div class="body">
+        <p>Datavail 发布3月数据平台 EOL 综合报告，三大平台版本同期退役：（1）Databricks 12.2 LTS 完全退役（无延期支持），17.2 非 LTS 版本同步停止支持，建议升级至 13.3+ 或 17.3 LTS；（2）Amazon DocumentDB 3.6 月末 EOL，3月30日前未升级将自动进入付费延期支持，建议就地升级至 DocumentDB 5.0；（3）Azure Database for PostgreSQL 11/12/13 已 EOL，免费延期支持持续至7月31日，之后转入最长3年付费延期，建议升级至 PostgreSQL 17 或 18。此外预告4月 MySQL 8.0 和 IBM Db2 11.1 LUW 即将退役。</p>
+      </div>
+      <div class="impact">
+        <strong>为什么对数据平台重要：</strong>多个主流版本同时退役形成"升级压力叠加"：Databricks 用户必须跨越至少一个 LTS 大版本，DocumentDB 用户面临3月30日自动付费的倒计时，PostgreSQL 用户需要跨多个主版本升级。对于同时使用多平台的企业，这些 EOL 日期的密集重叠可能引发集中的迁移评估和技术栈简化决策——这正是湖仓平台厂商争取客户整合的机会窗口。4月 MySQL 8.0 和 Db2 11.1 的接续退役意味着这波升级压力将持续至少两个月。
+      </div>
+    </div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <p class="empty-note">今日时效窗口内（03-26 08:00 ~ 03-27 08:00）无符合 B 板块收录标准的独立产品/技术发布。Datavail EOL 报告已升级至 A 板块。</p>
+  </div>
+
+  <!-- Section C: 观点与洞察 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>观点与洞察</h2>
+    </div>
+    <p class="empty-note">今日时效窗口内无符合收录标准的独立观点/研究发布。SaaStr 和 Forrester 的分析文章原始发布日期为03-25，降级至 E 板块收录。</p>
+  </div>
+
+  <!-- Section D: 投融资 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>投融资</h2>
+    </div>
+    <p class="empty-note">今日时效窗口内无符合收录标准的投融资、IPO 或新增收购事件。</p>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-downgrade">降级</span> Confluent Cloud for Apache Flink 正式支持 dbt——批流一体落地为工程实践</h3>
+      <div class="source">来源：<a href="https://docs.confluent.io/cloud/current/release-notes/index.html" target="_blank">Confluent Cloud Release Notes - March 25, 2026</a></div>
+      <div class="body">
+        <p>Confluent Cloud 于03-25发布 <code>dbt-confluent</code> 适配器，Flink SQL 转换可通过 dbt 标准工具链定义、测试和部署。这是 IBM 完成 Confluent $110亿收购后的首批产品级交付。同日新增6个 Flink 可用区域。降级原因：发布日期03-25早于本期窗口起点03-26。</p>
+        <p><strong>需要等待什么信号确认：</strong>dbt-confluent 适配器的社区采用速度；IBM 是否将 dbt-Flink 集成推广到 watsonx 数据管道。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-downgrade">降级</span> Forrester 解读 IBM-Confluent 收购：$110亿买的是 AI Agent 实时数据运行时</h3>
+      <div class="source">来源：<a href="https://www.forrester.com/blogs/why-ibm-paid-11b-for-real-time-ai-not-kafka/" target="_blank">Forrester Blog - Why IBM Paid $11B For Real-Time AI, Not Kafka</a>（March 25, 2026）</div>
+      <div class="body">
+        <p>Forrester 分析师核心论点：IBM 买的不是 Kafka 管道而是 AI Agent 实时数据平台。Confluent 被整合（非独立运营），产品路线向 watsonx 倾斜，为独立流平台厂商创造了市场机会。降级原因：发布日期03-25早于本期窗口起点03-26。</p>
+        <p><strong>需要等待什么信号确认：</strong>IBM 公布 Confluent 整合路线图（预计 Q2）；Redpanda、Amazon MSK 等替代方案的客户迁移活动。</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3><span class="watch-tag tag-downgrade">降级</span> SaaStr 分析：Databricks $5.4B ARR 增长65%，数据平台双寡头格局加速分化</h3>
+      <div class="source">来源：<a href="https://www.saastr.com/growth-may-have-slowed-for-some-but-holy-cow-not-for-databricks/" target="_blank">SaaStr - Databricks at $5.4B, Growing 65%</a>（~March 25, 2026）</div>
+      <div class="body">
+        <p>Databricks 收入 $5.4B 增长65%超越 Snowflake，AI 产品贡献 $1.4B ARR，净留存 >140%，$1M+ 客户超800家。两家差距源于战略分歧——Databricks 构建 AI 平台，Snowflake 将 AI 作为功能附加。降级原因：发布日期约03-25早于本期窗口起点03-26。</p>
+        <p><strong>需要等待什么信号确认：</strong>Databricks IPO 进程；Data+AI Summit（6月）的 Lakebase GA 发布；Snowflake 战略回应。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.1</p>
+    <p>信息截至北京时间 2026-03-27 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

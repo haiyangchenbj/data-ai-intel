@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI Monthly Report | 2026年6月</title>
+<style>
+  :root {
+    --primary: #7c3aed;
+    --primary-dark: #5b21b6;
+    --primary-light: #ede9fe;
+    --accent: #dc2626;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #1e1b4b;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --green: #059669;
+    --orange: #d97706;
+    --teal: #0891b2;
+    --blue: #2563eb;
+    --rose: #e11d48;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+    color: white;
+    padding: 40px 48px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.3);
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+  .header .period { font-size: 16px; opacity: 0.9; }
+  .header .subtitle { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+
+  /* Verdict Box */
+  .verdict-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--primary);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .verdict-box h2 { font-size: 18px; color: var(--primary); margin-bottom: 16px; }
+  .verdict-box .verdict-text { font-size: 15px; line-height: 1.8; }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    white-space: nowrap;
+  }
+  .badge-verdict { background: var(--primary); }
+  .badge-timeline { background: var(--accent); }
+  .badge-trend { background: var(--blue); }
+  .badge-product { background: var(--teal); }
+  .badge-capital { background: var(--green); }
+  .badge-watchlist { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Timeline */
+  .timeline-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .timeline-table th {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .timeline-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .timeline-table tr:last-child td { border-bottom: none; }
+  .timeline-date { color: var(--text-secondary); white-space: nowrap; font-size: 13px; }
+
+  /* Trend Block */
+  .trend-block {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .trend-block:last-child { border-bottom: none; }
+  .trend-block h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .trend-block .body { font-size: 14px; line-height: 1.85; color: #374151; }
+  .trend-block .body p { margin: 0 0 12px 0; }
+  .trend-block .body p:last-child { margin-bottom: 0; }
+  .trend-block .evidence-box {
+    background: #faf5ff;
+    border-left: 3px solid var(--primary);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #4c1d95;
+    line-height: 1.75;
+  }
+  .trend-block .evidence-box strong { color: var(--primary-dark); }
+  .trend-block .so-what {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 14px;
+    font-size: 13.5px;
+    color: var(--primary-dark);
+    font-weight: 500;
+    line-height: 1.75;
+  }
+
+  /* Verdict paragraphs */
+  .verdict-text p { margin: 0 0 12px 0; }
+  .verdict-text p:last-child { margin-bottom: 0; }
+
+  /* Product Table */
+  .product-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .product-table th {
+    background: #ecfdf5;
+    color: #065f46;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .product-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .product-table tr:last-child td { border-bottom: none; }
+  .impact-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .impact-high { background: #fef2f2; color: #991b1b; }
+  .impact-mid { background: #fffbeb; color: #92400e; }
+  .impact-low { background: #f0fdf4; color: #166534; }
+
+  /* Item */
+  .item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+  .item:last-child { border-bottom: none; }
+  .item h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #374151; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 28px; }
+    .header h1 { font-size: 22px; }
+    .section, .verdict-box { padding: 20px; }
+    .timeline-table, .product-table { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <h1>📊 Data+AI Monthly Report</h1>
+    <div class="period">2026年6月</div>
+    <div class="subtitle">2026-06-01 至 2026-06-30</div>
+  </div>
+
+  <!-- Content will be generated dynamically -->
+  <div class='verdict-box'><h2>📌 月度总判断</h2><div class='verdict-text'><p>6 月核心叙事：<strong>Agent-Native 数据平台从概念验证进入产品定义阶段</strong>。Snowflake Summit 26 与 Databricks DAIS 2026 双峰会以 30+ 项发布完成控制平面的 Agent 化重构；国内国家数据局、信通院政策与火山引擎、OceanBase、阿里云等同步共振，"数据平台服务对象从人变为 Agent"成为跨地域共识。资本端 AI 推理基础设施虹吸显著（Baseten $15 亿 Series F），数据平台整合聚焦于能力补齐（Panther 收购、dbt+Fivetran 合并完成）。</p></div></div><div class='section'>
+  <div class='section-header'><span class='badge badge-timeline'>时间线</span><h2>关键事件时间线</h2></div>
+  <table class="timeline-table"><thead><tr><th>日期</th><th>事件</th><th>一句话定位</th></tr></thead><tbody><tr><td>06-01</td><td>dbt + Fivetran 合并完成交割 + dbt Core v2.0 Alpha + Agents Schema</td><td>数据集成 + 转换统一平台正式落地，开源 Agent 上下文标准发布</td></tr><tr><td>06-01</td><td>Snowflake Q1 FY27 财报 + 收购 Natoma + AWS $60 亿协议</td><td>AI Data Cloud 形成"算力-数据-Agent 治理"完整叙事</td></tr><tr><td>06-01</td><td>Anthropic 向 SEC 秘密提交 S-1</td><td>全球最高估值 AI 创企率先启动 IPO，或创 AI 产业最大规模 IPO 纪录</td></tr><tr><td>06-02</td><td>Snowflake Summit 26：Openflow + Adaptive Compute + Cortex AISQL + CoWork + Datastream</td><td>主流云数据厂商首次将 Agentic Enterprise 作为产品矩阵核心叙事</td></tr><tr><td>06-03</td><td>Snowflake Iceberg v3 GA + Polaris 双向 Catalog + Horizon 统一治理</td><td>主流云数据平台首次以完整产品栈拥抱开放表格式互操作</td></tr><tr><td>06-03</td><td>Coralogix 宣布 Series F $2 亿</td><td>AI 可观测平台单笔融资规模创纪录，标志 AI 运维层进入资本密集型阶段</td></tr><tr><td>06-04</td><td>Supabase Series F $5 亿</td><td>7 个月估值翻倍，AI Agent 部署占平台新增数据库 majority</td></tr><tr><td>06-05</td><td>腾讯云 DataBuddy + WeData + AI 原生底座；Databricks AI Search + Lakebase GA</td><td>中美头部云厂商同日向 Agent-Ready 数据基础设施对齐</td></tr><tr><td>06-08</td><td>国家数据局发布《行业高质量数据集建设行动实施方案》</td><td>数据治理从企业自主行为升级为国家级基础设施建设</td></tr><tr><td>06-09</td><td>信通院发布《2026 智能体十大关键词》</td><td>智能体基础设施首次纳入国家级产业框架</td></tr><tr><td>06-09</td><td>Google Cloud 数据 Agent 发布：Data Engineering Agent GA + MCP Servers + Conversational Analytics 扩展</td><td>Google Cloud 正式加入 Agent-Native 数据平台竞争</td></tr><tr><td>06-09</td><td>ClickHouse Agents Public Beta + Postgres managed by ClickHouse Beta</td><td>分析数据库厂商以 Claude 驱动 Agent + 托管 OLTP 双管齐下入局</td></tr><tr><td>06-10</td><td>Databricks 将 Delta Sharing 升级为 OpenSharing 并捐赠 Linux Foundation</td><td>数据与 AI 资产共享标准正式进入基金会治理时代</td></tr><tr><td>06-11</td><td>SelectDB 发布面向 Agent 的实时数据引擎</td><td>国内开源分析数据库首个系统化 Agent-Native 架构宣言</td></tr><tr><td>06-15</td><td>DAIS 2026 开幕：Omnigent 开源 + Spatial SQL GA + Agent Bricks 可观测性</td><td>Agent 编排、空间分析、可观测性三线推进</td></tr><tr><td>06-16</td><td>DAIS Day 2：LTAP + Lakehouse//RT + Genie One + Unity AI Gateway + CustomerLake + Panther 收购</td><td>数据平台 40 年来最根本的范式转变：OLTP/OLAP 存储层统一</td></tr><tr><td>06-16</td><td>DeepSeek 完成首轮融资（超 $70 亿，国家大基金领投）</td><td>中国 AI 初创企业迄今规模最大的单轮融资</td></tr><tr><td>06-16</td><td>Informatica 扩展 AI 数据合作：Headless IDMC 在 Microsoft Foundry GA + Google Cloud CLAIRE GPT GA</td><td>无头数据管理跨五大云厂商落地，Agent 治理进入多平台分发阶段</td></tr><tr><td>06-17</td><td>DAIS Day 3：NVIDIA Vera CPU 合作 + Genie ZeroOps</td><td>Agent 算力瓶颈从 GPU 转向 CPU，数据运维 Agent 进入自主执行时代</td></tr><tr><td>06-17</td><td>阿里云"点金"金融级 Agent 平台</td><td>100 毫秒弹性沙箱、三重合规防线、全链路审计</td></tr><tr><td>06-18</td><td>阿里云日本第五数据中心启用</td><td>中国云厂商 AI 原生数据平台栈出海</td></tr><tr><td>06-23</td><td>火山引擎发布 Data Agent Pro + AgentDataLake</td><td>国内首个明确将"数据平台服务对象从人变为 Agent"并配套完整产品栈</td></tr><tr><td>06-23</td><td>AWS Amazon Quick 自主 Agent + 16 项新集成</td><td>AWS 以 Agent 自主执行能力回应 Google Cloud 和 Microsoft 的 Agent 化竞争</td></tr><tr><td>06-23</td><td>Baseten Series F $15 亿</td><td>AI 推理平台 18 个月内第四轮融资，收入 20x YoY（vendor-reported）</td></tr><tr><td>06-26</td><td>华为 ISC 2026 展示全栈 AI 数据基础设施（CMS 概念升级）</td><td>存储首次被定位为 AI 数据中心的核心计算层而非附属组件</td></tr><tr><td>06-26</td><td>Flink Forward Asia 2026：Apache Flink 3.0 + Paimon 2.0 + Fluss 1.0</td><td>流处理从"云原生"到"AI 原生"范式跃迁，实时数据层成为 Agent 核心基础设施</td></tr><tr><td>06-29</td><td>OceanBase 湖库一体 AI 数据库；Databricks LLM 治理纳入 Unity Catalog</td><td>国产数据库从跟随者转向定义者，数据治理边界向 AI 模型层延伸</td></tr></tbody></table>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-trend'>趋势</span><h2>月度趋势分析</h2></div>
+  <div class='trend-block'><h3>趋势一：Agent-Native 数据平台成为全行业共识 ★★★（高可信）</h3><div class='body'><p><strong>核心判断</strong>：8 家厂商（Snowflake/Databricks/Google Cloud/腾讯云/火山引擎/阿里云/SelectDB/OceanBase）在 6 月以不同路径发布 Agent-Native 数据平台，跨中美两地、从独立平台到云厂商到开源社区，结构性证据充分。竞争维度已从"存储更多数据"转向"让 Agent 更高效地使用数据"。</p><p><strong>关键事件：</strong></p><table class="product-table"><thead><tr><th>厂商</th><th>6 月发布</th><th>Agent-Native 定位</th></tr></thead><tbody><tr><td>Snowflake</td><td>Openflow + Adaptive Compute + Cortex AISQL + CoWork + Datastream</td><td>Agent 的"控制平面"——数据平台主动理解业务意图</td></tr><tr><td>Databricks</td><td>LTAP + Genie One + Unity AI Gateway + CustomerLake</td><td>从服务分析师扩展到服务每一个业务人员</td></tr><tr><td>Google Cloud</td><td>Data Engineering Agent GA + MCP Servers + Conversational Analytics 扩展</td><td>GCP 以托管 MCP + 多数据库 Agent 正式加入竞争</td></tr><tr><td>腾讯云</td><td>DataBuddy + WeData + AI 原生底座</td><td>三层架构：Agent 与人的并列使用者</td></tr><tr><td>火山引擎</td><td>Data Agent Pro + AgentDataLake</td><td>"数据平台服务对象从人变为 Agent"</td></tr><tr><td>阿里云</td><td>"点金"金融级 Agent 平台 / 日本 AI 原生数据平台</td><td>金融级沙箱 + 出海</td></tr><tr><td>SelectDB</td><td>CLI+Skill 范式 + MCP 原生支持</td><td>将领域工程知识封装为 Agent 可挂载 Skill</td></tr><tr><td>OceanBase</td><td>LakeBase 架构</td><td>湖库一体，千万级 Agent 场景验证（厂商声称）</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>Snowflake 将数据平台重新定义为 Agent 的"控制平面"——Openflow 开放多引擎治理、Adaptive Compute AI 自适应算力调度、CoWork 企业级 Agent 平台、Datastream 基于 Kafka 的托管流服务，四者指向"数据平台主动理解业务意图、自主执行数据任务"。Databricks 在 DAIS 2026 以 Genie One 连接 50+ 办公应用，Genie ZeroOps 实现管道故障自主检测修复；Unity AI Gateway 将治理从"谁能访问什么数据"推进到"Agent 在运行时可以做什么、花多少钱"。Google Cloud 以 Data Engineering Agent GA + Managed MCP Servers for Databases GA + MCP Toolbox 1.0 GA 快速补齐 Agent 化能力。</p><p>国内厂商呈现罕见的同步 Agent 化。腾讯云 DataBuddy 内测超 3000 家企业申请；WeData NL2SQL 准确率 90%+（腾讯云官方声称）。火山引擎数智平台将 Data Agent 从"数据专家"升级为"数字合伙人"。SelectDB 提出 CLI+Skill 范式——底层工具链重构为 CLI 接口。OceanBase LakeBase 统一数据湖开放存储、数据库事务/分析/多模态能力到底层引擎。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人应将 Agent 治理能力（成本限额、行为审计、上下文追踪）作为 RFP 独立评估维度；采购方可利用当前多厂商同步发布窗口进行 POC，重点验证端到端延迟和成本可控性；竞品厂商若尚未包含 Agent 原生接口（MCP/CLI+Skill/自然语言驱动），建议在 Q3 前补齐。</div></div><div class='trend-block'><h3>趋势二：开放表格式从竞争对抗走向统一融合 ★★★（高可信）</h3><div class='body'><p><strong>核心判断</strong>：开放表格式竞争已从"支持与否"升级为"治理深度"和"标准话语权"。Databricks 2024 年收购 Tabular 获取 Iceberg 社区深度，2026 年 6 月以 OpenSharing 捐赠 + Unity Catalog Iceberg GA 推进 Delta/Iceberg 统一。Snowflake 以 Iceberg v3 GA + Polaris Catalog + Horizon 治理完整回应。Catalog 层成为新的竞争焦点。</p><p><strong>关键事件：</strong></p><table class="product-table"><thead><tr><th>日期</th><th>厂商</th><th>事件</th><th>意义</th></tr></thead><tbody><tr><td>06-03</td><td>Snowflake</td><td>Iceberg v3 GA + Polaris 双向 Catalog + Horizon 统一治理 + Iceberg Azure ADLS Gen2 GA</td><td>企业可在 Snowflake 内外共享一份实时、受治理的数据副本</td></tr><tr><td>06-05/08</td><td>Databricks</td><td>Unity Catalog Iceberg 全面 GA + Cross-engine ABAC Beta</td><td>Delta/Iceberg 互操作从预览进入生产可用</td></tr><tr><td>06-10</td><td>Databricks</td><td>Delta Sharing → OpenSharing，捐赠 Linux Foundation</td><td>首个覆盖 Agent Skills、AI 模型、非结构化数据的开放共享协议</td></tr><tr><td>06-08</td><td>Cloudera</td><td>采用 Polaris 并贡献 Ranger 授权插件</td><td>填补开放 Catalog 在企业级细粒度权限管理上的空白</td></tr><tr><td>06-29</td><td>Snowflake</td><td>Delta Direct Dynamic Tables + Insert-Only Streams GA</td><td>Iceberg 表从"可读取"走向"可完整操作"</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>Databricks 2024 年对 Tabular（Iceberg 创始人 Ryan Blue/Daniel Weeks）的收购提供了 Iceberg 社区深度。2026 年 6 月的 OpenSharing 捐赠和 Unity Catalog Iceberg GA 标志着从"收购获取能力"进入"标准主导实施"阶段。Snowflake 在 Summit 期间以完整产品栈回应：Iceberg v3 GA（删除向量 + Variant 类型）、Polaris 驱动的 Horizon Catalog 双向读写 GA。Cloudera 采用 Polaris 并贡献 Ranger 授权插件，使开放湖仓架构在受监管行业的可行性大幅提升。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人应要求供应商提供 Catalog 互操作性路线图，Catalog 层正成为新的潜在锁定点；竞品厂商若产品尚未支持 Iceberg v3 特性，建议 Q3 前补齐，v3 已成为企业采购准入门槛。</div></div><div class='trend-block'><h3>趋势三：LTAP 架构终结 OLTP/OLAP 40 年分离范式 ★★（中可信）</h3><div class='body'><p><strong>核心判断</strong>：Databricks 在 DAIS Day 2 发布 LTAP（Lake Transactional/Analytical Processing）架构，首次在同一数据湖存储层上统一事务处理与分析。EDB Postgres AI 和 OceanBase 湖库一体从各自路线跟进。但大规模混合负载下的长期稳定性数据仍缺失，核心证据以 Databricks 单一厂商为主。</p><p><strong>三条路线对比：</strong></p><table class="product-table"><thead><tr><th>路线</th><th>代表厂商</th><th>核心设计</th><th>关键声明（vendor-reported）</th></tr></thead><tbody><tr><td>湖仓先行</td><td>Databricks</td><td>存储层统一：Postgres 事务引擎 + Spark 分析引擎，数据以 Delta/Iceberg 开放格式存储</td><td>亚 100ms 延迟、12,000 QPS（Lakehouse//RT）；日均 1200 万次数据库启动（Lakebase）</td></tr><tr><td>运营层先行</td><td>EDB</td><td>关系型/分析型/向量/Agentic 工作负载统一到受治理的 Postgres 基础</td><td>强调数据主权和可预测计费</td></tr><tr><td>湖库一体</td><td>OceanBase</td><td>数据湖开放存储 + 数据库事务/分析/多模态能力统一到底层引擎</td><td>整体 TCO 降低 30%-50%（未经独立验证）</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>LTAP 不同于 HTAP 在引擎层强行融合（MemSQL、SAP HANA 等均未成功），而是在存储层统一，事务和分析工作负载各自独立扩展。Lakehouse//RT 基于全新 Reyden 计算引擎，直接在受治理的 Delta/Iceberg 表上运行。Lakebase 支持即时 Copy-on-Write 数据库分支——开发者可在秒级内创建生产数据库完整副本用于调试 AI Agent。EDB 以"运营层先行"路线挑战 Databricks；OceanBase 以"湖库一体"架构从中国市场切入。</p><p><strong>预测性判断</strong>：若 LTAP 在 2026 年下半年获得至少 2 家头部企业核心系统的生产级验证，并公开独立基准测试数据，"是否需要独立事务数据库"将从默认答案变为可选项。当前仅基于 Databricks 单一厂商声明，置信度中等，建议持续跟踪至 2026 年 Q4 再做投资决策。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人建议以 POC 为主，不建议在 2026 年下半年将核心交易系统迁移至 LTAP，除非有明确 SLA 承诺和独立基准验证；采购方应要求厂商提供与现有独立 OLTP + OLAP 架构的对比基准测试，重点关注混合负载下的尾延迟和故障恢复时间。</div></div><div class='trend-block'><h3>趋势四：数据治理从"数据权限"向"Agent 运行时管控"延伸 ★★（中可信）</h3><div class='body'><p><strong>核心判断</strong>：Agent 正在创造一种新的治理需求——不是静态的"谁能访问什么数据"，而是动态的"Agent 在运行时可以做什么、花多少钱、调用什么工具"。Databricks Unity AI Gateway 率先产品化，但行业标准尚未形成。核心证据以 Databricks 单厂商为主。</p><p><strong>关键事件：</strong></p><table class="product-table"><thead><tr><th>日期</th><th>厂商</th><th>事件</th><th>治理粒度升级</th></tr></thead><tbody><tr><td>06-03</td><td>Immuta</td><td>Agentic Data Access 发布</td><td>为每个 Agent 交互分发唯一临时角色，会话级别强制执行访问边界</td></tr><tr><td>06-16</td><td>Databricks</td><td>Unity AI Gateway</td><td>覆盖模型、MCP 服务、Agent、技能的全生命周期；硬性支出上限、智能路由、上下文策略执行</td></tr><tr><td>06-22</td><td>Databricks</td><td>查询历史 statement_text 脱敏</td><td>从"默认开放"转向"默认脱敏"</td></tr><tr><td>06-23</td><td>Databricks</td><td>数据分类对合规工作区默认启用</td><td>治理自动化</td></tr><tr><td>06-29</td><td>Databricks</td><td>LLM 端点作为可治理资产纳入 Unity Catalog</td><td>数据目录从管数据延伸到管模型</td></tr><tr><td>06-23</td><td>dbt</td><td>行为变更标志集体成熟</td><td>数据工程治理标准化</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>Immuta 在 Snowflake Summit 上发布 Agentic Data Access，为每个 Agent 交互分发唯一的临时角色，将治理粒度从"人能访问什么"推进到"Agent 在代表谁、能访问什么、每一步是否合规"。Databricks Unity AI Gateway 进一步将治理从数据访问扩展到 AI 运行时：覆盖模型、MCP 服务、Agent、技能的全生命周期，支持硬性支出上限、智能路由、上下文策略执行和统一追踪。Genie Ontology 为所有治理决策提供企业语义上下文——治理策略不再只是"允许/拒绝"，而是"基于业务语义理解允许什么"。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人应将 Agent 治理能力作为独立评估维度，要求厂商提供运行时策略引擎的延迟指标和成本限额功能的精确度；采购方若采购周期紧迫，建议优先评估 Databricks Unity AI Gateway；若多平台战略是长期方向，建议等待 Snowflake 和 Informatica 后续跟进，避免单一厂商锁定。</div></div><div class='trend-block'><h3>趋势五：国内数据基础设施政策与产品进入"Agent 原生"共振期 ★★★（高可信）</h3><div class='body'><p><strong>核心判断</strong>：国家数据局、信通院政策框架与厂商产品发布在 6 月形成罕见同步共振。政策端的"行业高质量数据集"和"智能体基础设施"为数据平台厂商提供明确合规导向；产品端的集体 Agent 化表明国内厂商已跨越"跟随海外"阶段，开始主动定义 AI 时代数据基础设施标准。FFA 2026（Flink Forward Asia）进一步证明国内开源社区在 Agent 时代实时数据层的话语权提升。</p><p><strong>政策端：</strong></p><table class="product-table"><thead><tr><th>日期</th><th>机构</th><th>文件/事件</th><th>核心内容</th></tr></thead><tbody><tr><td>06-08</td><td>国家数据局</td><td>《行业高质量数据集建设行动实施方案》</td><td>六大专项行动，聚焦 18 个重点领域 + 5 个创新领域，目标到 2028 年底建成一批行业高质量数据集</td></tr><tr><td>06-09</td><td>信通院</td><td>《2026 智能体十大关键词》</td><td>首次将智能体基础设施和可信/全栈评估纳入国家级产业框架</td></tr><tr><td>06-10</td><td>工信部</td><td>AI+信息通信三年实施意见</td><td>降级处理：与 5 月政策框架重合度高，属延续性文件</td></tr></tbody></table><p><strong>产品端：</strong></p><table class="product-table"><thead><tr><th>日期</th><th>厂商</th><th>事件</th><th>关键声明（vendor-reported）</th></tr></thead><tbody><tr><td>06-05</td><td>腾讯云</td><td>DataBuddy + WeData + AI 原生底座</td><td>内测超 3000 家企业申请；NL2SQL 准确率 90%+；自研 Meson 引擎 TPC-DS 性能提升 3.6 倍</td></tr><tr><td>06-17</td><td>阿里云</td><td>"点金"金融级 Agent 平台</td><td>100 毫秒弹性沙箱、三重合规防线、全链路审计</td></tr><tr><td>06-18</td><td>阿里云</td><td>日本第五数据中心启用</td><td>完整 AI 原生数据平台栈出海</td></tr><tr><td>06-23</td><td>火山引擎</td><td>Data Agent Pro + AgentDataLake</td><td>国内首个明确将"数据平台服务对象从人变为 Agent"并配套完整产品栈</td></tr><tr><td>06-26</td><td>华为</td><td>ISC 2026 全栈 AI 数据基础设施</td><td>CMS 首 Token 时延降低 90%、每 Token 成本降低约 30%（未经独立基准验证）</td></tr><tr><td>06-26</td><td>阿里云</td><td>Flink Forward Asia 2026：Flink 3.0 + Paimon 2.0 + Fluss 1.0</td><td>流处理从"云原生"到"AI 原生"范式跃迁，实时数据层成为 Agent 核心基础设施</td></tr><tr><td>06-29</td><td>OceanBase</td><td>湖库一体 AI 数据库（LakeBase）</td><td>声称已在千万级 Agent 场景验证（未经独立第三方验证）</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>国家数据局方案围绕六大专项行动（强基扩容、标注攻坚、提质增效、应用赋能、管理服务、价值释放），聚焦 18 个重点领域及低空经济、具身智能、智能驾驶等 5 个创新领域。信通院十大关键词将智能体基础设施、智能体互联协作、智能体工程化等纳入国家级产业框架。</p><p>产品端，阿里云"点金"发布金融级通用智能体平台，并在 6 月 18 日将完整 AI 原生数据平台栈引入日本市场。华为在 ISC 2026 首次提出 Context Memory Storage（CMS）概念，将存储定位为 AI 数据中心的核心计算层。FFA 2026 上，阿里云发布 Flink 3.0（Agentic Streaming for AI）、Paimon 2.0（The Next-Gen Agentic Lake for AI）、Fluss 1.0（The Real-Time Context for AI Agents），标志国内开源社区在实时数据层从跟随者转向定义者。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人建议在下半年产品路线图中明确对标国家数据局六大专项行动的能力映射；采购方应增加"信通院标准体系对接能力"和"国产芯片 Agent 优化"两项评分维度；面向政企市场的竞品厂商建议尽快与信通院标准体系对接，否则将在政府采购场景中处于劣势。</div></div>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-product'>产品</span><h2>Product &amp; Tech 月度盘点</h2></div>
+  <table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>影响</th></tr></thead><tbody><tr><td>06-01</td><td>dbt + Fivetran</td><td>合并完成交割 + dbt Core v2.0 Alpha（Fusion 引擎）+ dbt Wizard + Agents Schema</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-02</td><td>Snowflake</td><td>Summit 26：Openflow + Adaptive Compute + Cortex AISQL + CoWork + Datastream</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-03</td><td>Snowflake</td><td>Iceberg v3 GA + Polaris 双向 Catalog + Horizon 统一治理 + Iceberg Azure ADLS Gen2 GA</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-05</td><td>Databricks</td><td>AI Search 品牌重塑 + Lakebase 统一治理 + Unity Catalog Iceberg GA</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-05</td><td>腾讯云</td><td>DataBuddy + WeData + AI 原生底座三层架构</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-08</td><td>Databricks</td><td>Unity Catalog 外部血缘正式 GA</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-09</td><td>ClickHouse</td><td>Agents Public Beta（Claude 驱动）+ Postgres managed by ClickHouse Beta</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-09</td><td>Google Cloud</td><td>Data Engineering Agent GA + Managed MCP Servers for Databases GA + MCP Toolbox 1.0 GA</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-09</td><td>Tiger Data</td><td>Ghost 发布——首个专为 AI Agent 设计的数据库服务</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-10</td><td>阿里云</td><td>OSS 向量 Bucket 正式商业化</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-10</td><td>Databricks</td><td>Delta Sharing 升级为 OpenSharing 捐赠 Linux Foundation</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-10</td><td>Zilliz</td><td>Vector Lakebase Public Preview——向量数据库升级为统一数据平台</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-11</td><td>SelectDB</td><td>面向 Agent 的实时数据引擎（CLI+Skill 范式 + MCP 原生支持）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-11</td><td>Databricks</td><td>ai_extract / ai_classify 正式 GA</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-15</td><td>Databricks</td><td>Omnigent 开源 + Spatial SQL GA + Agent Bricks 可观测性集成</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-16</td><td>Databricks</td><td>LTAP 架构 + Lakehouse//RT 引擎 + Genie One + Unity AI Gateway + CustomerLake</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-16</td><td>Databricks</td><td>收购 Panther（AI SOC 平台）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-16</td><td>Informatica</td><td>Headless IDMC 扩展：Microsoft Foundry GA + Google Cloud CLAIRE GPT GA + A2A 协议支持</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-17</td><td>阿里云</td><td>"点金"金融级通用 Agent 平台发布</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-19</td><td>Databricks</td><td>Omnigent Beta 发布（多 Agent 元编排框架）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-23</td><td>火山引擎</td><td>Data Agent Pro + AgentDataLake</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-23</td><td>AWS</td><td>Amazon Quick 自主 Agent + 16 项新集成</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-23</td><td>dbt</td><td>Core v2.0 Alpha 2（Rust 重写）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-26</td><td>华为</td><td>ISC 2026 全栈 AI 数据基础设施（CMS 概念）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-26</td><td>阿里云</td><td>Flink Forward Asia 2026：Flink 3.0 + Paimon 2.0 + Fluss 1.0</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-29</td><td>OceanBase</td><td>湖库一体 AI 数据库（LakeBase 架构）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-29</td><td>Databricks</td><td>LLM 治理纳入 Unity Catalog（Model Services Beta）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>06-29</td><td>Snowflake</td><td>Delta Direct Dynamic Tables + Insert-Only Streams GA</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr></tr></tbody></table>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-capital'>资本</span><h2>Capital &amp; Corporate 月度盘点</h2></div>
+  <table class="product-table"><thead><tr><th>日期</th><th>类型</th><th>事件</th><th>核心数据</th></tr></thead><tbody><tr><td>06-01</td><td>合并完成</td><td>dbt + Fivetran 合并交割（all-stock）</td><td>George Fraser CEO，Tristan Handy President；合并后服务超 10 万数据团队</td></tr><tr><td>06-01</td><td>IPO 申请</td><td>Anthropic 向 SEC 秘密提交 S-1</td><td>5/28 完成 $65 亿 H 轮，投后估值 $9650 亿；目标 2026 年 10 月 IPO</td></tr><tr><td>06-01</td><td>融资</td><td>VAST A+/A++ 轮</td><td>近 $2 亿（通用世界模型赛道）</td></tr><tr><td>06-03</td><td>融资</td><td>Coralogix Series F</td><td>$2 亿 @ post-money $16 亿估值，Advent、CPPIB、Greenfield 领投；ARR 约 $1.5-2 亿（Coralogix/投资者声称，未经独立审计验证）</td></tr><tr><td>06-04</td><td>融资</td><td>Supabase F 轮</td><td>$5 亿 @ post-money $105 亿估值（pre-money $100 亿），7 个月估值翻倍</td></tr><tr><td>06-08</td><td>融资</td><td>Upriver 种子轮</td><td>$1400 万，AI 原生数据工程平台</td></tr><tr><td>06-09</td><td>融资洽谈</td><td>Databricks 新一轮融资</td><td>目标估值 $1650-1750 亿，ARR $69 亿（+80%，Databricks 官方披露）</td></tr><tr><td>06-11</td><td>融资</td><td>KKR 联合 Nvidia/Vistra 推出 Helix AI</td><td>长期资本承诺超 $100 亿</td></tr><tr><td>06-16</td><td>投融资</td><td>DeepSeek 首轮融资（国家大基金领投）</td><td>超 $70 亿（约 ¥500 亿），投后估值超 $500 亿（约 $550 亿）</td></tr><tr><td>06-16</td><td>收购</td><td>Databricks 收购 Panther（AI SOC 平台）</td><td>2021 年估值 $14 亿，交易条款未披露</td></tr><tr><td>06-22</td><td>融资</td><td>Allium Series B</td><td>$40M，区块链数据基础设施</td></tr><tr><td>06-23</td><td>融资</td><td>Baseten Series F</td><td>$15 亿 @ $110-130 亿估值，AI 推理平台（Baseten 官方声称收入 20x YoY，未经独立审计验证）</td></tr><tr><td>06-23</td><td>融资</td><td>EDB Postgres AI 融资</td><td>金额未披露，Converged Analytics 路线</td></tr><tr></tr></tbody></table><p style='font-size:14px;margin-top:14px;line-height:1.7'><strong>月度资本流向：</strong>6 月资本呈现四条主线：
+
+1. <strong>数据平台整合完成</strong>——dbt+Fivetran 合并交割（6/1）标志数据集成 + 转换统一平台正式落地；Databricks 收购 Panther（6/16）补齐安全运营能力。行业从生态合作转向直接能力补齐。
+
+2. <strong>AI 推理基础设施层资本虹吸</strong>——Baseten $15 亿 Series F（$110-130 亿估值，18 个月内第四轮融资）、Helix AI 超 $100 亿、Coralogix $2 亿 F 轮。推理层的单笔融资规模已超越多数数据平台公司的总融资额，资本市场注意力正从数据平台向上游推理层急剧倾斜。
+
+3. <strong>国内大模型资本化</strong>——DeepSeek 首轮融资（超 $70 亿，约 ¥500 亿，国家大基金领投）、MiniMax/智谱 A+H 双平台 IPO（智谱拟募资 ¥150 亿）。大模型层的资本化将向上游传导至数据基础设施采购需求。
+
+4. <strong>AI 巨头 IPO 竞赛启动</strong>——Anthropic 6/1 向 SEC 秘密提交 S-1（5/28 完成 $65 亿 H 轮，投后估值 $9650 亿），目标 2026 年 10 月 IPO；Databricks 新一轮融资洽谈中（目标 $1650-1750 亿估值），CEO Ghodsi 称 2026 是"糟糕的上市时机"，最早 2027 年 IPO。
+
+CEO Ali Ghodsi 在 DAIS 2026 Keynote 中披露总年化收入约 $69 亿（同比 +80%+，Databricks 官方披露，未经独立审计验证），AI 产品年化收入超 $17 亿（较去年 9 月增 70%+，Databricks 官方披露）。Ghodsi 坦言随着 Agent 大规模上线"毛利率会往下走"——消费型计费模式下 Agent 驱动更多用量推高营收，但也推高底层模型和云计算成本。这一结构性压力是所有数据平台厂商在 Agent 时代都将面临的共同挑战。</p>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-watchlist'>跟踪</span><h2>Watchlist 月度复盘</h2></div>
+  <h3 style='font-size:15px;margin-bottom:8px;color:var(--green)'>✅ 已确认 / 已落地</h3><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>Agent-Native 数据平台产品矩阵</strong> — Snowflake（Openflow/CoWork/Adaptive Compute）、Databricks（LTAP/Genie One/Unity AI Gateway）、Google Cloud（Data Engineering Agent/MCP Servers）、腾讯云（DataBuddy/WeData）、火山引擎（Data Agent Pro/AgentDataLake）、阿里云（"点金"）、SelectDB（Agent 实时引擎）、OceanBase（LakeBase）全部按计划发布或 GA</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>开放表格式统一路线图</strong> — Databricks 2024 年收购 Tabular 后于 2026 年 6 月宣布 Delta+Iceberg 统一路线图实质性推进，OpenSharing 捐赠 Linux Foundation，Unity Catalog Iceberg 全面 GA</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>国家数据局行业高质量数据集方案</strong> — 《关于推进行业高质量数据集建设行动的实施方案》正式发布，六大专项行动 + 18 个重点领域 + 5 个创新领域</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>Snowflake Iceberg 多云互操作</strong> — AWS S3 + Azure ADLS Gen2 双平台 GA，Delta Direct Dynamic Tables 和 Insert-Only Streams 上线</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>Databricks 新一轮融资信号</strong> — 目标估值 $1650-1750 亿，ARR $69 亿（+80%），Ghodsi 称最早明年上市</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>dbt + Fivetran 合并完成</strong> — 6 月 1 日完成交割，dbt Core v2.0 Alpha（Fusion 引擎）、dbt Wizard、Agents Schema 同步发布</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>信通院 2026 智能体十大关键词</strong> — 6 月 9 日发布，智能体基础设施纳入国家级产业框架</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>FFA 2026 核心发布</strong> — Apache Flink 3.0（Agentic Streaming）、Paimon 2.0（Agentic Lake）、Fluss 1.0（实时上下文供给）</div>
+  <h3 style='font-size:15px;margin-bottom:8px;margin-top:16px;color:var(--orange)'>🔄 仍在跟踪</h3><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Databricks LTAP GA 时间表</strong> — 架构已发布，生产级大规模验证待确认，首批客户案例待披露</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Snowflake Natoma 集成路线图</strong> — 收购已宣布，与 Cortex Agents 的 MCP 网关集成时间表未明确</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Snowflake Datastream GA</strong> — 6 月 2 日发布 Private Preview，GA 时间表未明确</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Informatica Headless IDMC Databricks/Snowflake 集成</strong> — Microsoft Foundry 和 Google Cloud 已 GA，Databricks 和 Snowflake 集成仍为 Private Preview，目标 Summer 2026 GA</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>NVIDIA Vera CPU 在 Databricks 实际部署</strong> — DAIS 宣布合作，实际性能验证和规模部署时间表未知</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Iceberg V4 规范进展</strong> — 相对路径和内容统计提案社区投票状态</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Databricks IPO / S-1</strong> — 新一轮融资洽谈中，最早 2027 年，无 S-1 提交</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>dbt Core v2.0 正式 GA</strong> — 6 月 23 日 Alpha 2 发布，社区兼容性反馈待观察，正式 GA 时间表</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>阿里云 OSS 向量 Bucket 商业化效果</strong> — 6 月 10 日 GA，实际性能基准和定价策略待验证</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>DeepSeek 首轮融资官方确认</strong> — 6 月 16 日多家媒体确认，DeepSeek 官方尚未发布正式声明</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Anthropic IPO 时间表</strong> — 6 月 1 日秘密提交 S-1，目标 2026 年 10 月，承销商和发行规模待确认</div>
+  <h3 style='font-size:15px;margin-bottom:8px;margin-top:16px;color:var(--blue)'>📅 下月重点关注</h3><div class='item'><span style='color:var(--blue);margin-right:6px'>1.</span><strong>Databricks LTAP 首批生产客户与 GA 时间表</strong> — 架构级变革能否获得大规模企业验证</div><div class='item'><span style='color:var(--blue);margin-right:6px'>2.</span><strong>Snowflake Natoma 集成与 Cortex 跨平台扩展</strong> — MCP 治理层是否按 Summit 承诺推进</div><div class='item'><span style='color:var(--blue);margin-right:6px'>3.</span><strong>OpenSharing 生态扩展</strong> — 基金会治理启动后，除 MinIO/VAST/Everpure 外是否有更多存储厂商加入</div><div class='item'><span style='color:var(--blue);margin-right:6px'>4.</span><strong>dbt Core v2.0 正式 GA</strong> — Rust 重写后的性能基准和社区迁移情况</div><div class='item'><span style='color:var(--blue);margin-right:6px'>5.</span><strong>Gartner CDP 与 Lakehouse 融合研讨会后续</strong> — 是否发布相关研究笔记或更新 Magic Quadrant</div><div class='item'><span style='color:var(--blue);margin-right:6px'>6.</span><strong>CustomerLake GA 时间表</strong> — Databricks 首个垂直 Martech 产品从 Private Preview 进入 GA 的时点</div><div class='item'><span style='color:var(--blue);margin-right:6px'>7.</span><strong>国内行业高质量数据集首批试点</strong> — 国家数据局方案落地后的首批试点行业名单和合作厂商</div><div class='item'><span style='color:var(--blue);margin-right:6px'>8.</span><strong>Anthropic IPO 进程</strong> — S-1 公开版本和发行定价区间</div><div class='item'><span style='color:var(--blue);margin-right:6px'>9.</span><strong>Apache Flink 3.0 / Paimon 2.0 / Fluss 1.0 社区采纳</strong> — FFA 2026 发布后社区贡献者和企业用户增长数据</div>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-verdict'>延伸</span><h2>延伸阅读</h2></div>
+  <p><a href='https://www.databricks.com/blog/introducing-omnigent-meta-harness-combine-control-and-share-your-agents' target='_blank'><strong>Databricks: Introducing Omnigent — Meta-Harness to Combine, Control and Share Your Agents</strong></a><br/>Databricks 开源的 Agent 元编排框架，提供组合、管控、协作三层能力，是数据平台厂商从"为 Agent 提供数据"延伸到"为 Agent 提供运行环境"的标志性项目。</p><p><a href='https://www.databricks.com/blog/geospatial-unbounded-spatial-sql-ga-aibi-maps-delta-sharing-and-iceberg-v3' target='_blank'><strong>Databricks: Geospatial Unbounded — Spatial SQL GA</strong></a><br/>Databricks Spatial SQL GA 的完整技术细节，涵盖 GEOMETRY 原生类型、90+ OGC 标准函数、AI/BI 地图渲染、Delta Sharing 跨组织共享和 Iceberg v3 互操作。</p><p><a href='https://smartchunks.com?p=51842/' target='_blank'><strong>Smart Chunks: Databricks AI Search Rebrand Signals Hybrid Search as Table Stakes</strong></a><br/>对 Databricks AI Search 品牌重塑的深度分析，解释了为什么生产级 Agent 需要语义+关键字+混合搜索的统一能力，而非纯向量检索。</p>
+</div>
+
+  <div class="footer">
+    <p>Data+AI Monthly Report</p>
+  </div>
+</div>
+</body>
+</html>
