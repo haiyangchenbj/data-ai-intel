@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-13</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-13 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>国产数据库从供料系统升级为Agent时代的推理引擎</li>
+      <li>数据治理控制点从消费端前移至网关，集中式策略执行成为新标配</li>
+      <li>数据工程运维引入AI辅助诊断，从人工查日志向Agent驱动过渡</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>PolarDB开发者大会是本周窗口内唯一的战略级事件。李飞飞关于"热数据是AI下一道瓶颈"和"数据库用户一半将是Agent"的判断，为数据平台在Agent时代的角色重新定价。周末窗口其他厂商动作以常规功能迭代为主，无结构性变化。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云PolarDB发布AI数据湖库Lakebase，定义"AI就绪数据库"四大支柱</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://openpolardb.com/blog/detail?creator=2ea60b3276e14cd6a74f0fc131632437&id=32026020417701942541134041&tabData=blog">阿里云PolarDB开发者大会官方发布</a><br><b>摘要：</b> 阿里云在2026 PolarDB开发者大会上正式发布AI数据湖库Lakebase，采用"湖库一体"架构统一管理结构化、半结构化和非结构化多模态数据。核心能力包括：模型算子化（Model-as-Operator）支持在SQL中直接调用AI模型完成语义搜索和推理、KVCache+图数据库+向量检索构建Agent上下文方案、Serverless多租户支撑Agent 7×24访问模式。李飞飞明确提出"AI就绪"而非"AI原生"的定位，判断标准是：当数据库一半使用者是Agent、主要输出变成Token而非表格时，才配谈AI原生。<br><b>为什么对数据平台重要：</b> 这是国产数据库厂商首次在议程设置层面与Databricks LTAP/OceanBase Lakebase形成三足鼎立。PolarDB的路线——让推理靠近数据、让数据库直接参与AI决策——将数据库从被动存储工具重新定义为Agent时代的"供氧系统"。模型算子化绕开了"模型参数更新慢"的瓶颈，是工程上务实的选择。</div>
+</div>
+<div class="item">
+    <h3>李飞飞：热数据是AI下一道瓶颈，数据库需从"供料系统"变为"供氧系统"</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://openpolardb.com/blog/detail?creator=2ea60b3276e14cd6a74f0fc131632437&id=32026020417701942541134041&tabData=blog">2026 PolarDB开发者大会主论坛及会后采访</a><br><b>摘要：</b> 李飞飞在PolarDB开发者大会主论坛及采访中提出两个核心判断：其一，算力未必还是AI的主要瓶颈，数据的存储、调度、实时处理能力才是——当前大模型本质上只吃冷数据和温数据，真正有业务价值的热数据（实时交易、行为、状态）进不了模型，数据库必须补上这个缺口；其二，未来高频使用数据库的用户将不再是开发者或DBA，而是AI Agent 7×24小时持续读写，数据库的负载形态和成本模型将根本改变。<br><b>为什么对数据平台重要：</b> 这两个判断为数据平台在Agent时代的定位提供了清晰的战略框架。"热数据进模型"意味着数据平台不再是AI的配角，而是AI持续演进的必要条件。数据库用户从人变为Agent，将驱动Serverless、多租户、资源池化的需求，改变数据平台的商业模式和产品形态。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>AWS EMR on EKS推出AI驱动的Apache Spark故障诊断Agent</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-emr-eks-spark-troubleshooting/">AWS</a><br><b>摘要：</b> Amazon EMR on EKS新增Apache Spark故障诊断Agent，数据工程师可通过自然语言描述故障现象，Agent自动分析Spark History Server数据和分布式日志，返回根因分析和PySpark代码建议。Agent可从EMR on EKS控制台直接调用，也支持通过MCP协议接入Claude Code等AI编程工具。<br><b>对数据平台的影响：</b> 这是主流云厂商首次将AI诊断能力嵌入数据工程工作流。Spark作业调试长期依赖手工日志排查，AI Agent的引入将降低数据工程Ops门槛，但诊断质量取决于日志完整性和Agent对Spark内部机制的理解深度。</div>
+</div>
+<div class="item">
+    <h3>Confluent Cloud Gateway 1.3.0引入集中式数据治理执行能力</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.confluent.io/cloud/current/release-notes/index.html">Confluent Cloud Release Notes</a><br><b>摘要：</b> Confluent Cloud Gateway 1.3.0新增集中式治理执行（Early Access），在Gateway层通过Schema Registry对消息进行schema ID校验、深度schema验证、字段级加密和全量加密四种策略执行，确保不合规数据在进入Kafka集群前被拦截。支持按Topic覆盖策略、OAuth-to-OAuth认证交换、CyberArk Conjur密钥存储。<br><b>对数据平台的影响：</b> 数据治理策略从消费端（下游应用自行清洗）前移至Gateway层集中执行，是流数据治理架构的重要变化。对Schema Registry依赖性强的企业将受益于"入口即治理"，但Gateway层引入的处理延迟和单点风险需要在GA前评估。</div>
+</div>
+<div class="item">
+    <h3>达梦数据DM9推进金融/能源/政务核心系统落地，原生向量数据库能力就绪</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.toutiao.com/article/7660846909724066338/">证券日报</a><br><b>摘要：</b> 达梦数据表示正积极推进DM9在金融、能源、政务等关键领域的标杆案例打造。公司已在达梦数据库管理体系中构建原生向量数据类型，提供完整的向量创建、查询、索引、导入导出处理能力，将根据客户需求和产品成熟度推进规模化应用。<br><b>对数据平台的影响：</b> 作为国产数据库头部厂商，达梦的向量数据库能力面向信创市场的AI场景需求。从"构建完成"到"规模化应用"之间存在显著的工程化鸿沟——性能基准、生态集成、生产稳定性是后续验证的关键。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Snowflake Clone Dynamic Iceberg Tables GA：开放格式表克隆能力就绪</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/release-notes/feature-releases-2026">Snowflake Release Notes</a><br><b>摘要：</b> Snowflake计划于7月13日发布Dynamic Iceberg Tables的克隆能力GA。该功能允许用户零拷贝克隆Iceberg动态表，支持开发/测试环境快速搭建和数据快照管理。发布日期恰在窗口边缘（7/13），因精确发布时间未确认而降级收录。<br><b>为什么值得继续看：</b> Iceberg动态表克隆标志着开放格式表的管理能力向传统数仓靠拢。零拷贝克隆直接降低Iceberg在Snowflake上的存储和管理成本，对考虑Iceberg迁移的企业是正向信号。<br><b>需要等待什么信号确认：</b> 7月13日正式GA确认后观察跨云Iceberg引擎（Spark/Trino）对克隆表的兼容性表现。</div>
+</div>
+<div class="item">
+    <h3>【降级】Databento完成$97M B轮融资，NEA领投</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20260710A03OG900">腾讯新闻</a><br><b>摘要：</b> 金融市场数据平台Databento完成9700万美元B轮融资，NEA领投，Redpoint、DRW Venture Capital等跟投。Databento通过从交易所直采原始数据并将服务器部署于交易所数据中心，降低实时数据获取延迟。公司未披露投后估值和营收数据。<br><b>为什么值得继续看：</b> Databento位于"金融数据基础设施"和"实时数据管道"的交叉点，其融资反映资本市场对低延迟数据分发平台的需求。但与数据平台核心领域（湖仓/治理/分析引擎）的直接关联较弱，仅作为金融数据基础设施方向的信号跟踪。<br><b>需要等待什么信号确认：</b> 后续融资轮次中是否出现数据平台厂商（Snowflake/Databricks/Confluent）作为战略投资方。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-13 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
