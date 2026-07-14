@@ -5174,6 +5174,36 @@
       "source": "腾讯新闻",
       "url": "https://new.qq.com/rain/a/20260710A03OG900",
       "conf": ""
+    },
+    {
+      "date": "2026-07-14",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "Snowflake 动态 Iceberg 表克隆功能正式 GA",
+      "summary": "来源： Snowflake 文档摘要： Snowflake 于 7 月 13 日正式发布动态 Iceberg 表克隆功能（GA），支持将动态 Iceberg 表克隆为新的动态 Iceberg 表或 Snowflake 管理的 Iceberg 表。此外，克隆数据库或 Schema 时，其中的动态 Iceberg 表现在也会被包含在克隆范围内，此前这些表会被静默跳过。对数据平台的影响： 动态 Iceberg 表的克隆能力补齐了开放格式在开发/测试环境复制、数据快照备份等场景中的操作缺口。此前动态 Iceberg 表在 Schema 级克隆中被跳过，限制了企业在 Iceberg 表上的 DevOps 流程。本次更新将 Snowflake 动态 Iceberg 表的运维能力拉升到与传统 Snowflake 表一致的水平。",
+      "source": "Snowflake 文档",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-13-dynamic-iceberg-table-clone",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-14",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks SQL 仓库活动详情功能正式 GA",
+      "summary": "来源： Databricks 发布说明摘要： Databricks 于 7 月 13 日正式发布 SQL 仓库监控 UI 中的\"活动详情\"切换功能（GA）。该功能在运行集群图表中提供颜色编码标注，直观解释仓库保持活跃状态的原因，包括查询活动、正在获取的查询、打开会话和空闲状态。用户可悬停查看元数据，或点击获取活动筛选查询历史表。对数据平台的影响： SQL 仓库作为数据平台核心计算资源，其成本和利用率的透明化直接影响企业 FinOps 实践。此功能将仓库空闲原因从\"黑盒猜测\"变为可视化根因分析，有助于数据平台团队优化仓库配置、降低闲置成本。可观测性从\"看发生了什么\"升级为\"理解为什么发生\"，标志着数据平台管理精细化程度的提升。",
+      "source": "Databricks 发布说明",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/july#view-warehouse-activity-details-general-availability",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-14",
+      "vendor": "腾讯",
+      "module": "技术",
+      "title": "【预告】腾讯云大数据预告国内首个 Spark+Ray 统一智能数据湖平台",
+      "summary": "来源： 腾讯云开发者社区为什么值得继续看： 腾讯云大数据宣布将于 7 月 25 日在 DataFun Agentic AI Summit 上正式发布智能数据湖计算 AI DLC——国内首个在同一平台上同时提供生产级 Spark + Ray 全托管服务的平台。一份算力将同时承载大数据处理与 AI 训练推理，统一数据和元数据管理，按量计费。这代表国内云厂商在\"数据湖即AI计算底座\"方向上的一次重要产品化尝试。需要等待什么信号确认： 7 月 25 日正式发布后的产品架构细节、引擎性能基准（TCRay/Xpark/Meson）、与现有 DLC 产品的兼容性和迁移路径、以及首批客户场景。",
+      "source": "腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/2708037",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5261,7 +5291,8 @@
     "2026-07-08",
     "2026-07-09",
     "2026-07-10",
-    "2026-07-13"
+    "2026-07-13",
+    "2026-07-14"
   ],
   "monthly": [
     {
