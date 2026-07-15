@@ -5204,6 +5204,46 @@
       "source": "腾讯云开发者社区",
       "url": "https://cloud.tencent.com/developer/article/2708037",
       "conf": ""
+    },
+    {
+      "date": "2026-07-15",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "Snowflake CREATE OR ALTER 正式 GA，覆盖 24 种对象类型",
+      "summary": "来源： Snowflake 发布说明摘要： Snowflake 于 7 月 14 日正式发布 CREATE OR ALTER 语句的 GA 版本，覆盖 24 种对象类型，包括数据库、Schema、表、视图、函数、存储过程、管道、任务、通知集成等。该语法在对象不存在时自动创建，存在时则将其修改至与语句定义匹配，天然支持幂等执行。此前该语法仅支持部分对象类型的预览。对数据平台的影响： 声明式 DDL 补齐了 Snowflake 在 IaC 和 GitOps 工作流中的关键缺口。此前脚本需在 CREATE 和 ALTER 之间分支判断，不具备天然幂等性。24 种对象的覆盖度意味着 Snowflake 的大部分基础设施对象现已可通过 Terraform、Pulumi 等声明式工具链统一管理，显著降低 CI/CD 流水线中的数据平台配置漂移风险。",
+      "source": "Snowflake 发布说明",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-14-create-or-alter-ga",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-15",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "Google Cloud Bigtable 原生暴露 MCP 工具，数据库成为 AI Agent 可编程接口",
+      "summary": "来源： Google Cloud 发布说明摘要： Google Cloud 于 7 月 14 日正式上线 Bigtable 的 MCP（Model Context Protocol）工具，AI Agent 可通过 list_hot_tablets 工具编程查询集群健康状态，识别资源密集型 Tablet 和过载节点 CPU。该功能为 GA 状态，标志着 Google 首次将数据库运维能力以 MCP 标准暴露给外部 AI Agent。对数据平台的影响： 数据库原生暴露 MCP 接口是基础设施\"Agent 可编程性\"的重要里程碑。此前 AI Agent 与数据库的交互主要依赖 SQL 查询或 API 封装，MCP 将数据库的运维和诊断能力标准化为 Agent 可直接调用的工具。这意味着数据平台的运维自动化正从\"人写脚本\"走向\"Agent 自主诊断\"，数据库不再是 AI 的数据源，而是 AI 可以编程交互的服务端点。",
+      "source": "Google Cloud 发布说明",
+      "url": "https://cloud.google.com/release-notes",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-15",
+      "vendor": "Snowflake",
+      "module": "产品",
+      "title": "Snowflake Marketplace 推出集成式 SaaS 应用试用，统一发现、试用与购买",
+      "summary": "来源： Snowflake 发布说明摘要： Snowflake 于 7 月 15 日正式上线集成式 SaaS 列表功能（GA），用户可直接在 Marketplace 列表页启动 SaaS 应用的免费试用。该功能替代了此前通过 Partner Connect 提供的试用机制，将应用的发现、试用和购买统一在 Marketplace 内完成。无需管理员权限即可浏览列表，并支持通过 Marketplace Capacity Drawdown 使用已有的 Snowflake 容量承诺进行购买。对数据平台的影响： 集成式 SaaS 试用机制将 Snowflake Marketplace 从\"数据产品商店\"扩展为\"数据+应用市场\"。对于数据平台生态而言，这意味着 Snowflake 在向应用层渗透——第三方 SaaS 厂商直接在 Snowflake 客户的数据环境中运行，降低数据移动成本和合规风险。Marketplace 从纯数据交换平台演变为数据平台的 App Store，生态粘性进一步增强。",
+      "source": "Snowflake 发布说明",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-integrated-saas-listings-ga",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-15",
+      "vendor": "Databricks",
+      "module": "投融资",
+      "title": "【降级】Confluent Cloud Flink 扩展至 Azure 和 GCP 四个新区域",
+      "summary": "来源： Confluent Cloud 发布说明为什么值得继续看： Confluent 于 7 月 14 日将 Flink 托管服务扩展至 Azure Italy North、Mexico Central、South Africa North 和 GCP Madrid 四个新区域，所有区域均同时支持公网和私网连接。Confluent 的 Flink 区域扩展速度反映其托管流计算在全球企业中的采用节奏，以及与传统云数仓（Snowflake/Databricks/BigQuery）的地理覆盖对齐程度。需要等待什么信号确认： 是否会有客户在新增区域上运行生产级 Flink 流处理和 Tableflow（Kafka → Iceberg/Delta Lake）工作负载，以及 Confluent 后续是否会公布 Flink 托管服务的独立营收数据。",
+      "source": "Confluent Cloud 发布说明",
+      "url": "https://docs.confluent.io/cloud/current/release-notes/index.html",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5292,7 +5332,8 @@
     "2026-07-09",
     "2026-07-10",
     "2026-07-13",
-    "2026-07-14"
+    "2026-07-14",
+    "2026-07-15"
   ],
   "monthly": [
     {

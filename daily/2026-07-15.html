@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-15</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-15 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>云数据库运维正在向声明式、幂等的IaC范式全面迁移</li>
+      <li>数据库开始以MCP接口原生暴露运维能力，向Agent开放编程</li>
+      <li>数据市场从买卖数据走向应用生态，SaaS集成成为平台竞争力</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台基础设施管理在向声明式范式迁移，Snowflake 24类对象的声明式DDL补齐了IaC关键缺口。数据库以MCP工具形态向Agent开放，数据基础设施的可编程性边界在重新定义。夏季淡季信息底部延续。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无满足准入标准的重大事件。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake CREATE OR ALTER 正式 GA，覆盖 24 种对象类型</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-07-14-create-or-alter-ga">Snowflake 发布说明</a><br><b>摘要：</b> Snowflake 于 7 月 14 日正式发布 CREATE OR ALTER 语句的 GA 版本，覆盖 24 种对象类型，包括数据库、Schema、表、视图、函数、存储过程、管道、任务、通知集成等。该语法在对象不存在时自动创建，存在时则将其修改至与语句定义匹配，天然支持幂等执行。此前该语法仅支持部分对象类型的预览。<br><b>对数据平台的影响：</b> 声明式 DDL 补齐了 Snowflake 在 IaC 和 GitOps 工作流中的关键缺口。此前脚本需在 CREATE 和 ALTER 之间分支判断，不具备天然幂等性。24 种对象的覆盖度意味着 Snowflake 的大部分基础设施对象现已可通过 Terraform、Pulumi 等声明式工具链统一管理，显著降低 CI/CD 流水线中的数据平台配置漂移风险。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud Bigtable 原生暴露 MCP 工具，数据库成为 AI Agent 可编程接口</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/release-notes">Google Cloud 发布说明</a><br><b>摘要：</b> Google Cloud 于 7 月 14 日正式上线 Bigtable 的 MCP（Model Context Protocol）工具，AI Agent 可通过 list_hot_tablets 工具编程查询集群健康状态，识别资源密集型 Tablet 和过载节点 CPU。该功能为 GA 状态，标志着 Google 首次将数据库运维能力以 MCP 标准暴露给外部 AI Agent。<br><b>对数据平台的影响：</b> 数据库原生暴露 MCP 接口是基础设施"Agent 可编程性"的重要里程碑。此前 AI Agent 与数据库的交互主要依赖 SQL 查询或 API 封装，MCP 将数据库的运维和诊断能力标准化为 Agent 可直接调用的工具。这意味着数据平台的运维自动化正从"人写脚本"走向"Agent 自主诊断"，数据库不再是 AI 的数据源，而是 AI 可以编程交互的服务端点。</div>
+</div>
+<div class="item">
+    <h3>Snowflake Marketplace 推出集成式 SaaS 应用试用，统一发现、试用与购买</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-integrated-saas-listings-ga">Snowflake 发布说明</a><br><b>摘要：</b> Snowflake 于 7 月 15 日正式上线集成式 SaaS 列表功能（GA），用户可直接在 Marketplace 列表页启动 SaaS 应用的免费试用。该功能替代了此前通过 Partner Connect 提供的试用机制，将应用的发现、试用和购买统一在 Marketplace 内完成。无需管理员权限即可浏览列表，并支持通过 Marketplace Capacity Drawdown 使用已有的 Snowflake 容量承诺进行购买。<br><b>对数据平台的影响：</b> 集成式 SaaS 试用机制将 Snowflake Marketplace 从"数据产品商店"扩展为"数据+应用市场"。对于数据平台生态而言，这意味着 Snowflake 在向应用层渗透——第三方 SaaS 厂商直接在 Snowflake 客户的数据环境中运行，降低数据移动成本和合规风险。Marketplace 从纯数据交换平台演变为数据平台的 App Store，生态粘性进一步增强。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Confluent Cloud Flink 扩展至 Azure 和 GCP 四个新区域</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.confluent.io/cloud/current/release-notes/index.html">Confluent Cloud 发布说明</a><br><b>为什么值得继续看：</b> Confluent 于 7 月 14 日将 Flink 托管服务扩展至 Azure Italy North、Mexico Central、South Africa North 和 GCP Madrid 四个新区域，所有区域均同时支持公网和私网连接。Confluent 的 Flink 区域扩展速度反映其托管流计算在全球企业中的采用节奏，以及与传统云数仓（Snowflake/Databricks/BigQuery）的地理覆盖对齐程度。<br><b>需要等待什么信号确认：</b> 是否会有客户在新增区域上运行生产级 Flink 流处理和 Tableflow（Kafka → Iceberg/Delta Lake）工作负载，以及 Confluent 后续是否会公布 Flink 托管服务的独立营收数据。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-15 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
