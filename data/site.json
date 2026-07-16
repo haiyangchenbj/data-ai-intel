@@ -5244,6 +5244,66 @@
       "source": "Confluent Cloud 发布说明",
       "url": "https://docs.confluent.io/cloud/current/release-notes/index.html",
       "conf": ""
+    },
+    {
+      "date": "2026-07-16",
+      "vendor": "英伟达",
+      "module": "技术",
+      "title": "Cloudera 与 VAST Data 共建 AI 数据平台，消除 GPU 饥饿",
+      "summary": "来源： GlobeNewswire摘要： Cloudera 与 AI 操作系统公司 VAST Data 宣布战略合作，基于 NVIDIA AI Data Platform 参考设计联合交付\"AI 工厂\"——一个持续摄取、精炼和治理数据并供给 AI 模型训练推理的生产环境。该方案整合 Cloudera 容器化湖仓数据服务与 VAST AI OS（含基于 NVIDIA cuVS 的向量数据库和高性能存储），覆盖数据工程、流处理、分析与 ML 全链路，支持混合云和多云一致部署。双方联合管理 60 EB 客户数据，参考架构与行业方案将在 2026 年持续扩展。对数据平台的影响： 该合作标志着传统湖仓厂商加速向 AI 基础设施转型——数据平台的核心命题从\"存算分离\"演进为\"消除 GPU 饥饿\"。基于 NVIDIA 参考设计的统一 AI 工厂架构，为混合云环境中的企业提供了一条从数据到推理的标准化路径。VAST 的分解式全共享（DSE）架构作为 AI OS 底座，可能重塑企业级数据平台的存储层选型逻辑。",
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/07/15/cloudera-vast-data-ai-factory",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-16",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Snowflake Marketplace 集成 SaaS 列表正式 GA",
+      "summary": "来源： Snowflake Release Notes摘要： Snowflake Marketplace 的 Integrated SaaS Listings 功能于 7 月 15 日正式 GA。该功能使 SaaS 提供商能够在 Snowflake 应用市场中直接展示和交付其服务，用户无需离开 Snowflake 平台即可发现、试用和采购第三方 SaaS 产品。对数据平台的影响： 这是 Snowflake 将平台边界从数据服务扩展到应用交付的关键一步。Marketplace 从数据交换市场升级为 SaaS 分发渠道，进一步模糊了数据平台与应用平台的边界，与 Databricks Marketplace 的 App 分发形成直接对标。对数据平台采购方而言，这意味着平台选型越来越不只是技术判断，还包括生态可用性考量。",
+      "source": "Snowflake Release Notes",
+      "url": "https://docs.snowflake.com/en/release-notes/feature-releases-2026",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-16",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks 账户自定义 URL 进入公开预览",
+      "summary": "来源： Databricks Release Notes摘要： Databricks 于 7 月 15 日推出账户级自定义 URL 功能的公开预览，企业可为所有用户和工作区设置统一品牌化入口（如 acme.databricks.com）。对数据平台的影响： 虽然属于体验层优化，但自定义 URL 是企业级平台的标准治理能力——统一入口有助于多工作区环境下的身份管理一致性和安全策略执行。对大企业客户的平台推广有实际价值，但不构成竞争差异化。",
+      "source": "Databricks Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-16",
+      "vendor": "腾讯",
+      "module": "技术",
+      "title": "腾讯云 MySQL 本地盘存储超用计费将于 8 月生效",
+      "summary": "来源： 腾讯云公告摘要： 腾讯云 7 月 15 日公告，自 8 月 1 日起对云数据库 MySQL 本地盘实例的存储空间超用部分进行计费，生效前已发生的超用不追溯收取。此举旨在保障服务稳定性和资源使用公平性。对数据平台的影响： 这是一次数据库服务成本结构的精细化调整。本地盘实例通常用于高性能场景，超用计费意味着用户需要更精确地管理存储容量规划，或促使部分工作负载向云盘实例迁移（后者通常弹性更强），对腾讯云数据库用户的成本模型有直接影响。",
+      "source": "腾讯云公告",
+      "url": "https://cloud.tencent.com/announce/detail/2044",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-16",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【收购兼并】Anaconda 收购 Kilo Code，强化企业代码生成能力",
+      "summary": "来源： Business Wire摘要： 数据科学平台公司 Anaconda 于 7 月 15 日宣布收购 AI 代码生成工具 Kilo Code，交易金额未披露。Kilo Code 提供面向企业级开发的 AI 代码生成能力，Anaconda 将将其整合进自身的数据科学与企业 AI 平台，服务于\"万亿 Token 企业级部署\"战略。对数据平台的影响： 此次收购延续了数据科学平台向 AI 开发者工具链纵向整合的趋势。Anaconda 作为 Python 数据科学生态的核心分发者，收购代码生成工具意味着其从\"包和环境管理\"向\"AI 辅助开发全流程\"的扩展。对企业数据团队而言，这意味着数据科学工作台的边界正在从 Notebook 延伸到代码生成与自动化，开发者工具链成为平台竞争的新维度。",
+      "source": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260715005000/en/Anaconda-Acquires-Kilo-Code",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-16",
+      "vendor": "Databricks",
+      "module": "投融资",
+      "title": "【降级】Databricks 被曝寻求新一轮融资，估值或达 1650-1750 亿美元",
+      "summary": "来源： The Information摘要： 多家媒体报道 Databricks 正在洽谈新一轮私募融资，目标估值 $165-175B，高于 2025 年 12 月 Series L 的 $134B。CEO Ali Ghodsi 此前在 6 月表示 2026 年\"不是 IPO 的好年份\"，但公司营收年化 run-rate 已达 $6.9B（同比增 80%），且实现正自由现金流。为什么值得继续看： 这是全球估值最高的未上市数据平台公司。若新一轮融资落地，$165-175B 估值将进一步拉大数据平台赛道与纯 AI 模型公司之间的估值对比（Snowflake 市值约 $83B）。对数据平台从业者而言，该估值信号可能影响整个赛道的并购定价和人才市场预期。需要等待什么信号确认： 正式融资公告（含投资方、条款细节），以及是否伴随 S-1 文件提交的信号。",
+      "source": "The Information",
+      "url": "https://www.theinformation.com/articles/databricks-in-talks-to-raise-new-funding-at-up-to-175-billion-valuation",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5333,7 +5393,8 @@
     "2026-07-10",
     "2026-07-13",
     "2026-07-14",
-    "2026-07-15"
+    "2026-07-15",
+    "2026-07-16"
   ],
   "monthly": [
     {

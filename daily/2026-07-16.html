@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-16</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-16 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台架构重心从存算分离转向消除 GPU 饥饿，存储层成 AI 管道新瓶颈</li>
+      <li>云数据平台生态从功能竞争转向应用市场整合，SaaS 集成成平台标配</li>
+      <li>资本为 AI 数据管道的最后一公里付费，开发者工具链整合成新并购主题</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台从分析基础设施转型为 AI 基础设施的信号明确：Cloudera+VAST 基于 NVIDIA 参考设计消除 GPU 饥饿，Snowflake 将平台边界从数据服务扩展到应用交付，产业整合在基础设施层和工具链层同步推进。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。本期为夏季淡季连续第四周 A 板块底部，窗口内无第一优先级厂商战略级发布或关键机构报告。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Cloudera 与 VAST Data 共建 AI 数据平台，消除 GPU 饥饿</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.globenewswire.com/news-release/2026/07/15/cloudera-vast-data-ai-factory">GlobeNewswire</a><br><b>摘要：</b> Cloudera 与 AI 操作系统公司 VAST Data 宣布战略合作，基于 NVIDIA AI Data Platform 参考设计联合交付"AI 工厂"——一个持续摄取、精炼和治理数据并供给 AI 模型训练推理的生产环境。该方案整合 Cloudera 容器化湖仓数据服务与 VAST AI OS（含基于 NVIDIA cuVS 的向量数据库和高性能存储），覆盖数据工程、流处理、分析与 ML 全链路，支持混合云和多云一致部署。双方联合管理 60 EB 客户数据，参考架构与行业方案将在 2026 年持续扩展。<br><b>对数据平台的影响：</b> 该合作标志着传统湖仓厂商加速向 AI 基础设施转型——数据平台的核心命题从"存算分离"演进为"消除 GPU 饥饿"。基于 NVIDIA 参考设计的统一 AI 工厂架构，为混合云环境中的企业提供了一条从数据到推理的标准化路径。VAST 的分解式全共享（DSE）架构作为 AI OS 底座，可能重塑企业级数据平台的存储层选型逻辑。</div>
+</div>
+<div class="item">
+    <h3>Snowflake Marketplace 集成 SaaS 列表正式 GA</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/feature-releases-2026">Snowflake Release Notes</a><br><b>摘要：</b> Snowflake Marketplace 的 Integrated SaaS Listings 功能于 7 月 15 日正式 GA。该功能使 SaaS 提供商能够在 Snowflake 应用市场中直接展示和交付其服务，用户无需离开 Snowflake 平台即可发现、试用和采购第三方 SaaS 产品。<br><b>对数据平台的影响：</b> 这是 Snowflake 将平台边界从数据服务扩展到应用交付的关键一步。Marketplace 从数据交换市场升级为 SaaS 分发渠道，进一步模糊了数据平台与应用平台的边界，与 Databricks Marketplace 的 App 分发形成直接对标。对数据平台采购方而言，这意味着平台选型越来越不只是技术判断，还包括生态可用性考量。</div>
+</div>
+<div class="item">
+    <h3>Databricks 账户自定义 URL 进入公开预览</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july">Databricks Release Notes</a><br><b>摘要：</b> Databricks 于 7 月 15 日推出账户级自定义 URL 功能的公开预览，企业可为所有用户和工作区设置统一品牌化入口（如 acme.databricks.com）。<br><b>对数据平台的影响：</b> 虽然属于体验层优化，但自定义 URL 是企业级平台的标准治理能力——统一入口有助于多工作区环境下的身份管理一致性和安全策略执行。对大企业客户的平台推广有实际价值，但不构成竞争差异化。</div>
+</div>
+<div class="item">
+    <h3>腾讯云 MySQL 本地盘存储超用计费将于 8 月生效</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.tencent.com/announce/detail/2044">腾讯云公告</a><br><b>摘要：</b> 腾讯云 7 月 15 日公告，自 8 月 1 日起对云数据库 MySQL 本地盘实例的存储空间超用部分进行计费，生效前已发生的超用不追溯收取。此举旨在保障服务稳定性和资源使用公平性。<br><b>对数据平台的影响：</b> 这是一次数据库服务成本结构的精细化调整。本地盘实例通常用于高性能场景，超用计费意味着用户需要更精确地管理存储容量规划，或促使部分工作负载向云盘实例迁移（后者通常弹性更强），对腾讯云数据库用户的成本模型有直接影响。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内无关键分析师报告或重要人物原始观点发布。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【收购兼并】Anaconda 收购 Kilo Code，强化企业代码生成能力</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.businesswire.com/news/home/20260715005000/en/Anaconda-Acquires-Kilo-Code">Business Wire</a><br><b>摘要：</b> 数据科学平台公司 Anaconda 于 7 月 15 日宣布收购 AI 代码生成工具 Kilo Code，交易金额未披露。Kilo Code 提供面向企业级开发的 AI 代码生成能力，Anaconda 将将其整合进自身的数据科学与企业 AI 平台，服务于"万亿 Token 企业级部署"战略。<br><b>对数据平台的影响：</b> 此次收购延续了数据科学平台向 AI 开发者工具链纵向整合的趋势。Anaconda 作为 Python 数据科学生态的核心分发者，收购代码生成工具意味着其从"包和环境管理"向"AI 辅助开发全流程"的扩展。对企业数据团队而言，这意味着数据科学工作台的边界正在从 Notebook 延伸到代码生成与自动化，开发者工具链成为平台竞争的新维度。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Databricks 被曝寻求新一轮融资，估值或达 1650-1750 亿美元</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.theinformation.com/articles/databricks-in-talks-to-raise-new-funding-at-up-to-175-billion-valuation">The Information</a><br><b>摘要：</b> 多家媒体报道 Databricks 正在洽谈新一轮私募融资，目标估值 $165-175B，高于 2025 年 12 月 Series L 的 $134B。CEO Ali Ghodsi 此前在 6 月表示 2026 年"不是 IPO 的好年份"，但公司营收年化 run-rate 已达 $6.9B（同比增 80%），且实现正自由现金流。<br><b>为什么值得继续看：</b> 这是全球估值最高的未上市数据平台公司。若新一轮融资落地，$165-175B 估值将进一步拉大数据平台赛道与纯 AI 模型公司之间的估值对比（Snowflake 市值约 $83B）。对数据平台从业者而言，该估值信号可能影响整个赛道的并购定价和人才市场预期。<br><b>需要等待什么信号确认：</b> 正式融资公告（含投资方、条款细节），以及是否伴随 S-1 文件提交的信号。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-16 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
