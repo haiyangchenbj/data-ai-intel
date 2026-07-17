@@ -5304,6 +5304,56 @@
       "source": "The Information",
       "url": "https://www.theinformation.com/articles/databricks-in-talks-to-raise-new-funding-at-up-to-175-billion-valuation",
       "conf": ""
+    },
+    {
+      "date": "2026-07-17",
+      "vendor": "其他",
+      "module": "专题",
+      "title": "NetApp 收购 DataPelago：GPU 加速数据处理下沉到存储层",
+      "summary": "摘要： NetApp 于 7 月 16 日正式宣布收购 AI 数据基础设施公司 DataPelago。DataPelago 的核心技术 Nucleus 是一个通用数据处理引擎，利用 CPU+GPU 异构加速直接在存储层处理数据，宣称可降低基础设施成本 80%、性能提升 10 倍。收购后 DataPelago 将作为 NetApp 全资子公司运营。为什么对数据平台重要： 这笔收购标志着存储基础设施从\"被动数据容器\"向\"主动 AI 计算节点\"的范式转变。DataPelago 的\"零拷贝激活\"（zero-copy activation）架构消除了将数据从存储复制到外部计算集群的传统瓶颈——这是当前企业 AI 部署的最大卡点。NetApp 管理着行业最大规模的企业数据资产，将 GPU 加速嵌入存储层意味着 AI 数据管道从\"搬数据\"模式走向\"就地计算\"模式，可能重塑数据平台架构中存储与计算的边界。",
+      "source": "NetApp 官方新闻稿",
+      "url": "https://investors.netapp.com/news/news-details/2026/NetApp-Acquires-DataPelago-Making-Data-AI-Ready-at-the-Infrastructure-Layer/default.aspx",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-17",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Denodo Platform 9.5 发布：为 Agentic AI 提供\"可激活的上下文\"",
+      "summary": "摘要： 数据虚拟化平台 Denodo 于 7 月 16 日发布 Platform 9.5，定位为\"AI 数据层\"（AI Data Layer），核心能力包括：扩展的企业知识图谱（360 度资产视图）、标准化指标视图（Metric Views）用于统一业务 KPI 定义、增强的对话式开发助手、以及对 Databricks/Azure AI Search/向量搜索/Delta Lake/Iceberg 的连接扩展。平台通过 AI SDK 和 MCP 协议为 AI Agent 提供受治理的实时企业上下文。为什么对数据平台重要： Denodo 9.5 的核心主张——\"Active Context for Agentic AI\"——回应当前企业 AI 从实验到生产的核心瓶颈：Agent 需要的不仅是数据访问，更是可信、实时、语义一致的业务上下文。知识图谱 + 指标视图 + MCP 的组合，标志着数据虚拟化从\"连接层\"升级为\"Agent 上下文基础设施\"。结合 Denodo 在 Gartner 数据集成魔力象限连续六年的领导者地位，这一版本是数据集成领域向 Agentic AI 时代转型的关键信号。",
+      "source": "Denodo 新闻稿（GlobeNewswire）",
+      "url": "https://www.globenewswire.com/news-release/2026/07/16/denodo-platform-95-provides-agentic-ai-with-active-context",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-17",
+      "vendor": "腾讯",
+      "module": "技术",
+      "title": "腾讯云 PostgreSQL 发布 tencentdb_ai 1.4：一行 SQL 完成 RAG 全流程",
+      "summary": "摘要： 腾讯云数据库 TencentDB 于 7 月 16 日发布 PostgreSQL tencentdb_ai 1.4，推出 RAG（检索增强生成）一站式能力。用户只需一行 rag() SQL 函数即可完成从问题向量化、向量库 TopN 召回、Prompt 拼装到模型生成的全流程，彻底消除了此前需要手写四段 SQL 串联多个函数的胶水代码。对数据平台的影响： 这是数据库产品将 AI 推理能力原生嵌入 SQL 引擎的务实路径。RAG 从需要多组件编排的应用层模式变成数据库的内置函数，意味着企业知识库问答、客服辅助、合同审查等场景可以直接在数据库层完成——不需要额外部署向量库、编排服务和中间件。这一方向与 AlloyDB AI 函数、BigQuery AI.AGG 等形成行业趋势：SQL 引擎正在系统性吸收 AI 推理能力。",
+      "source": "腾讯云数据库",
+      "url": "https://new.qq.com/rain/a/20260716A07G2X00",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-17",
+      "vendor": "OceanBase",
+      "module": "技术",
+      "title": "阿里云 AnalyticDB 发布具身多模数据平台 V2.0",
+      "summary": "摘要： 阿里云于 7 月 16 日 14:00 正式发布 AnalyticDB 具身多模数据平台 V2.0，将 Ray、Isaac Sim、Cosmos、GR00T N1 等开源具身智能工具链整合进云原生引擎，构建从数据采集、打标到仿真训练、VLA 微调的端到端数据闭环。平台面向机器人本体企业、数据服务商和高校科研团队。对数据平台的影响： 这是数据库产品化路径向垂直场景纵深的最新案例。AnalyticDB 不再把自己定位为通用数据库，而是为具身智能这一特定 AI 场景提供完整的\"数据→模型\"pipeline。这一方向与 OceanBase 的湖库一体 AI 数据库、火山引擎 Data Agent Lake 等形成国产数据库的共同趋势：从\"通用平台\"走向\"场景锚点\"，以垂直场景的数据闭环深度绑定客户。",
+      "source": "阿里云数据库",
+      "url": "https://www.aliyun.com/activity/database/analyticdb-embodied-ai",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-17",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【降级】Apache Spark 4.2.0 正式发布",
+      "summary": "为什么值得继续看： Apache Spark 4.2.0 于 7 月 14 日发布，处于窗口边缘（早于 7/16 08:00 CST）。作为数据工程领域最广泛使用的分布式计算引擎，新特性版本的发布节点恰逢 Spark 4.x 系列生态趋于成熟的阶段。值得跟踪社区对新版本的采纳速度和关键改进的实际效果。需要等待什么信号确认： 云厂商托管 Spark 服务（AWS EMR、Databricks、Google Dataproc）对新版本的适配时间线，以及社区在生产环境中的性能基准对比反馈。",
+      "source": "Apache Spark 官方",
+      "url": "https://spark.apache.org/releases/spark-release-4-2-0.html",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5394,7 +5444,8 @@
     "2026-07-13",
     "2026-07-14",
     "2026-07-15",
-    "2026-07-16"
+    "2026-07-16",
+    "2026-07-17"
   ],
   "monthly": [
     {

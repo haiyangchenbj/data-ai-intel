@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-17</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-17 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>存储层正在从数据容器演变为AI主动计算引擎</li>
+      <li>企业上下文管理正从应用层下沉为数据平台核心能力</li>
+      <li>数据库产品化进入垂直场景纵深阶段，通用能力让位于领域深度</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期窗口极薄但方向清晰：数据基础设施"智能密度"系统性上升。存储层从被动容器向AI计算节点转型，企业上下文和AI推理加速下沉至数据层，应用层与数据层的边界正在重新划定。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>NetApp 收购 DataPelago：GPU 加速数据处理下沉到存储层</h3>
+    <div class="source">来源：<a href="https://investors.netapp.com/news/news-details/2026/NetApp-Acquires-DataPelago-Making-Data-AI-Ready-at-the-Infrastructure-Layer/default.aspx">NetApp 官方新闻稿</a></div>
+    <div class="body"><b>摘要：</b> NetApp 于 7 月 16 日正式宣布收购 AI 数据基础设施公司 DataPelago。DataPelago 的核心技术 Nucleus 是一个通用数据处理引擎，利用 CPU+GPU 异构加速直接在存储层处理数据，宣称可降低基础设施成本 80%、性能提升 10 倍。收购后 DataPelago 将作为 NetApp 全资子公司运营。<br><b>为什么对数据平台重要：</b> 这笔收购标志着存储基础设施从"被动数据容器"向"主动 AI 计算节点"的范式转变。DataPelago 的"零拷贝激活"（zero-copy activation）架构消除了将数据从存储复制到外部计算集群的传统瓶颈——这是当前企业 AI 部署的最大卡点。NetApp 管理着行业最大规模的企业数据资产，将 GPU 加速嵌入存储层意味着 AI 数据管道从"搬数据"模式走向"就地计算"模式，可能重塑数据平台架构中存储与计算的边界。</div>
+</div>
+<div class="item">
+    <h3>Denodo Platform 9.5 发布：为 Agentic AI 提供"可激活的上下文"</h3>
+    <div class="source">来源：<a href="https://www.globenewswire.com/news-release/2026/07/16/denodo-platform-95-provides-agentic-ai-with-active-context">Denodo 新闻稿（GlobeNewswire）</a></div>
+    <div class="body"><b>摘要：</b> 数据虚拟化平台 Denodo 于 7 月 16 日发布 Platform 9.5，定位为"AI 数据层"（AI Data Layer），核心能力包括：扩展的企业知识图谱（360 度资产视图）、标准化指标视图（Metric Views）用于统一业务 KPI 定义、增强的对话式开发助手、以及对 Databricks/Azure AI Search/向量搜索/Delta Lake/Iceberg 的连接扩展。平台通过 AI SDK 和 MCP 协议为 AI Agent 提供受治理的实时企业上下文。<br><b>为什么对数据平台重要：</b> Denodo 9.5 的核心主张——"Active Context for Agentic AI"——回应当前企业 AI 从实验到生产的核心瓶颈：Agent 需要的不仅是数据访问，更是可信、实时、语义一致的业务上下文。知识图谱 + 指标视图 + MCP 的组合，标志着数据虚拟化从"连接层"升级为"Agent 上下文基础设施"。结合 Denodo 在 Gartner 数据集成魔力象限连续六年的领导者地位，这一版本是数据集成领域向 Agentic AI 时代转型的关键信号。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>腾讯云 PostgreSQL 发布 tencentdb_ai 1.4：一行 SQL 完成 RAG 全流程</h3>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260716A07G2X00">腾讯云数据库</a></div>
+    <div class="body"><b>摘要：</b> 腾讯云数据库 TencentDB 于 7 月 16 日发布 PostgreSQL tencentdb_ai 1.4，推出 RAG（检索增强生成）一站式能力。用户只需一行 `rag()` SQL 函数即可完成从问题向量化、向量库 TopN 召回、Prompt 拼装到模型生成的全流程，彻底消除了此前需要手写四段 SQL 串联多个函数的胶水代码。<br><b>对数据平台的影响：</b> 这是数据库产品将 AI 推理能力原生嵌入 SQL 引擎的务实路径。RAG 从需要多组件编排的应用层模式变成数据库的内置函数，意味着企业知识库问答、客服辅助、合同审查等场景可以直接在数据库层完成——不需要额外部署向量库、编排服务和中间件。这一方向与 AlloyDB AI 函数、BigQuery AI.AGG 等形成行业趋势：SQL 引擎正在系统性吸收 AI 推理能力。</div>
+</div>
+<div class="item">
+    <h3>阿里云 AnalyticDB 发布具身多模数据平台 V2.0</h3>
+    <div class="source">来源：<a href="https://www.aliyun.com/activity/database/analyticdb-embodied-ai">阿里云数据库</a></div>
+    <div class="body"><b>摘要：</b> 阿里云于 7 月 16 日 14:00 正式发布 AnalyticDB 具身多模数据平台 V2.0，将 Ray、Isaac Sim、Cosmos、GR00T N1 等开源具身智能工具链整合进云原生引擎，构建从数据采集、打标到仿真训练、VLA 微调的端到端数据闭环。平台面向机器人本体企业、数据服务商和高校科研团队。<br><b>对数据平台的影响：</b> 这是数据库产品化路径向垂直场景纵深的最新案例。AnalyticDB 不再把自己定位为通用数据库，而是为具身智能这一特定 AI 场景提供完整的"数据→模型"pipeline。这一方向与 OceanBase 的湖库一体 AI 数据库、火山引擎 Data Agent Lake 等形成国产数据库的共同趋势：从"通用平台"走向"场景锚点"，以垂直场景的数据闭环深度绑定客户。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。（NetApp 收购 DataPelago 已在 A 板块）</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Apache Spark 4.2.0 正式发布</h3>
+    <div class="source">来源：<a href="https://spark.apache.org/releases/spark-release-4-2-0.html">Apache Spark 官方</a></div>
+    <div class="body"><b>为什么值得继续看：</b> Apache Spark 4.2.0 于 7 月 14 日发布，处于窗口边缘（早于 7/16 08:00 CST）。作为数据工程领域最广泛使用的分布式计算引擎，新特性版本的发布节点恰逢 Spark 4.x 系列生态趋于成熟的阶段。值得跟踪社区对新版本的采纳速度和关键改进的实际效果。<br><b>需要等待什么信号确认：</b> 云厂商托管 Spark 服务（AWS EMR、Databricks、Google Dataproc）对新版本的适配时间线，以及社区在生产环境中的性能基准对比反馈。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-17 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
