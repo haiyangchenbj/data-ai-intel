@@ -5354,6 +5354,76 @@
       "source": "Apache Spark 官方",
       "url": "https://spark.apache.org/releases/spark-release-4-2-0.html",
       "conf": ""
+    },
+    {
+      "date": "2026-07-20",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 完成 $3B 战略融资，估值跃升至 $1,880 亿，多 AI 治理战略获资本重注",
+      "summary": "来源： Databricks 官方新闻稿摘要： Databricks 于 7 月 16 日宣布签署由 Coatue 领投的新一轮战略融资条款书，估值 $1,880 亿，较今年 2 月的 $1,340 亿跃升 40%。本轮预计夏末完成，募资约 $30 亿，将重点投入 Unity AI Gateway（多 AI 治理）、Genie（对话式分析）和 Lakebase（Serverless Postgres for Agents）三大产品。CEO Ali Ghodsi 提出企业正从 \"tokenmaxxing\" 转向 \"valuemaxxing\"，强调多模型路由和成本治理才是企业 AI 投入产出比的核心。为什么对数据平台重要： 这是 2026 年数据平台赛道最大规模融资，估值隐含市销率远超公开市场的 Snowflake，反映私募市场对\"AI 治理控制点\"的平台价值重估。Ghodsi 明确承认已托管 Kimi 等中国开源模型，表明多 AI 路由层正在成为数据平台新的战略制高点——谁能控制模型选择和成本分配，谁就掌握 AI 时代的数据平台定价权。公司 H1 FY2027 ARR 预计约 $69 亿，核心业务增长 65% 并连续 15 个月加速，数据仓库收入突破 $15 亿 ARR。",
+      "source": "Databricks 官方新闻稿",
+      "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-strategic-round-funding-188-billion-valuation",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-20",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "星环科技在 WAIC 2026 发布 GPU 原生认知数据库，数据库从 CPU 向 GPU 架构范式跃迁",
+      "summary": "来源： 东方财富号摘要： 7 月 17 日 WAIC 2026 开幕当天，星环科技发布面向 AI Agents 的新一代 GPU 原生认知数据库预览版，将数据库角色从数据存储系统重新定义为支撑 AI 持续分析的认知基础设施。该数据库利用 GPU 万级并行计算单元和 TB/s 级显存带宽，在 TPC-DS 基准测试中实现数量级性能飞跃，并集成 11 种模型（关系型、向量、全文、图等）的混合检索分析能力。为什么对数据平台重要： GPU 原生数据库不再是学术概念，已进入产品化阶段。与 Databricks 收购 DataPelago 将 GPU 加速嵌入存储层形成呼应——全球数据基础设施正在经历从\"CPU 为默认计算单元\"到\"GPU 为一等计算单元\"的架构重构。Agent 高频并发访问对 CPU 架构构成根本性瓶颈，GPU 原生数据库给出了一条不同于传统数仓 + GPU 外挂的新技术路径。",
+      "source": "东方财富号",
+      "url": "https://caifuhao.eastmoney.com/news/20260717183825289057050",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-20",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks Genie 进入 Microsoft Teams，Anthropic 合规数据连接器进入 Beta",
+      "summary": "来源： Azure Databricks 2026年7月 Release Notes摘要： Databricks 于 7 月 17 日发布两项重要更新：Genie 对话式分析应用正式进入 Microsoft Teams 公开预览，用户可在 Teams 内直接提问并获得数据洞察；Anthropic 托管摄入连接器 Beta 上线，支持将 Anthropic 合规 API 数据（审计活动、组织、用户、Claude 对话记录等）摄入 Databricks 进行统一治理和分析。对数据平台的影响： Genie 进 Teams 标志着自然语言数据分析从独立产品向企业协作平台的内嵌能力演进——数据分析不再是一个\"去 BI 工具看报表\"的动作，而嵌入日常沟通 workflow。Anthropic 连接器则是多 AI 治理战略的数据基础设施配套：企业需要在同一平台上统一管理和分析所有 AI 服务的使用数据，这才是 Unity AI Gateway 的成本归因和价值证明基础。",
+      "source": "Azure Databricks 2026年7月 Release Notes",
+      "url": "https://learn.microsoft.com/zh-tw/azure/databricks//release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-20",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "Google Cloud AlloyDB 推出数据库原生 AI 推理代理模型，23000 倍吞吐提升",
+      "summary": "来源： InfoQ 中文摘要： Google Cloud AlloyDB 推出数据库原生 AI 推理代理模型功能，用数据库本地推理替代外部大模型调用，内部测试显示吞吐量提升 23000 倍、成本降至 1/6000。同时推出托管 MCP 服务器，使 AI Agent 可通过模型上下文协议直接查询数据库内容，无需团队自建 MCP 基础设施。结合现有 ScaNN 向量搜索（支持 100 亿向量），AlloyDB 正将结构化查询、语义搜索和 LLM 分析统一在同一 SQL 层中。对数据平台的影响： 数据库内嵌 AI 推理是数据平台架构的一个重要方向：将推理计算下推到数据所在层，消除数据搬运延迟和成本。MCP 托管服务则降低了 Agent 接入数据库的门槛——Agent 连接数据库从\"需要中间层\"变成\"数据库原生能力\"。这类能力从 PostgreSQL 生态（AlloyDB 兼容 PG）先落地并非偶然，PG 的可扩展生态让数据库厂商能以插件方式快速实验 AI 功能。",
+      "source": "InfoQ 中文",
+      "url": "https://new.qq.com/rain/a/20260717A05O9R00",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-20",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Qumulo 与 Databricks 合作，通过 OpenSharing 实现地理分布式数据统一治理",
+      "summary": "来源： Qumulo 新闻稿摘要： Qumulo 于 7 月 16 日宣布与 Databricks 建立 ISV 合作伙伴关系，将 Qumulo NeuralSearch 与 Databricks OpenSharing 协议集成，实现跨数据中心、边缘和多云的统一数据治理。用户无需复制数据，即可通过 Unity Catalog 在全球分布的存储节点上搜索、查询和协作处理数据，同时支持 Apache Iceberg 和 Delta Lake 开放表格式。对数据平台的影响： OpenSharing 作为 Databricks 在 DAIS 2026 推出的开放协议，正在吸引存储层厂商主动集成。Qumulo 的合作证明 OpenSharing 不仅适用于 Snowflake/Iceberg 生态，也在向企业混合云存储层渗透。地理分布式 + 开放格式 + 统一治理的组合，正在解决大型企业\"数据在哪里 AI 就在哪里\"的核心部署难题。",
+      "source": "Qumulo 新闻稿",
+      "url": "https://qumulo.com/press-releases/qumulo-announces-neuralsearch-and-isv-partnership-with-databricks",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-20",
+      "vendor": "Databricks",
+      "module": "投融资",
+      "title": "【跟踪】Databricks CEO 明确 2026 年不上市，IPO 窗口推至最早 2027 年",
+      "summary": "来源： 钛媒体为什么值得继续看： Ghodsi 在本轮融资相关采访中再次确认 2026 年\"是糟糕的上市年份\"（SpaceX、OpenAI、Anthropic 扎堆 IPO 将分流资金），公司将继续以私募方式运营。这一判断与今年 2 月融 $50 亿、7 月再融 $30 亿的密集私募节奏吻合——Databricks 实际上选择了\"用私募替代 IPO\"的资本策略。需要等待什么信号确认： Anthropic 和 OpenAI IPO 完成后的市场承接力，以及 Databricks 能否在 2027 年前将 ARR 推至 $100 亿量级以支撑 IPO 估值。",
+      "source": "钛媒体",
+      "url": "https://www.163.com/dy/article/L271GON305118O92.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-20",
+      "vendor": "DuckDB",
+      "module": "技术",
+      "title": "【预告】DuckDB 1.5.5 计划于 7 月 20 日发布，v2.0 预计秋季",
+      "summary": "来源： DuckDB Release Calendar为什么值得继续看： DuckDB 1.5.5 是 v2.0 大版本（预计 2026 年秋季）前的最后一个 patch。社区扩展 gpudb 正在 review 中，目标让 DuckDB 查询跑在 GPU 上。嵌入式分析数据库 + 本地 GPU 加速的组合可能改变边缘/本地 AI 数据分析的工具链格局。需要等待什么信号确认： 1.5.5 正式发布的具体改进内容；gpudb GPU 扩展的合并时间线；v2.0 的功能规划和 breaking changes。",
+      "source": "DuckDB Release Calendar",
+      "url": "https://duckdb.org/release_calendar.html",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5445,7 +5515,8 @@
     "2026-07-14",
     "2026-07-15",
     "2026-07-16",
-    "2026-07-17"
+    "2026-07-17",
+    "2026-07-20"
   ],
   "monthly": [
     {
