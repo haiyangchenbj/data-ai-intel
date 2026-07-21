@@ -5424,6 +5424,26 @@
       "source": "DuckDB Release Calendar",
       "url": "https://duckdb.org/release_calendar.html",
       "conf": ""
+    },
+    {
+      "date": "2026-07-21",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【跟踪】WAIC 2026闭幕——国产数据基础设施路线密集亮相",
+      "summary": "来源： WAIC 2026 官方为什么值得继续看： WAIC 2026（7/17-19，上海）期间，星环科技发布GPU原生认知数据库预览版（将SQL分析、向量检索、图计算、全文搜索全部迁移至GPU），腾讯云ADP 4.0海外版正式出海，蚂蚁数科Agentar 2.0发布。国产数据库厂商在GPU原生和湖库一体两条路线上同步推进，与Databricks LTAP和Snowflake Postgres形成国内外三线并行格局。需要等待什么信号确认： 星环科技GPU原生数据库的正式GA时间及生产环境基准测试结果；腾讯云ADP海外版实际客户采纳数据。",
+      "source": "WAIC 2026 官方",
+      "url": "https://www.worldaic.com.cn/",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-21",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【预告】腾讯云AI DLC智能数据湖平台正式发布",
+      "summary": "来源： 腾讯云大数据为什么值得继续看： 腾讯云将于7月25日在DataFun Agentic AI Summit发布AI DLC（智能数据湖计算），整合Spark+Ray统一计算范式，内置MCP和Skills实现Agent可编排数据底座。这是国内厂商首次尝试将Spark批处理和Ray AI训练统一到单个数据湖平台，与Databricks Lakehouse AI路线形成对标。需要等待什么信号确认： 7/25发布会的具体架构细节、与开源Spark/Ray的兼容策略、客户实证案例。",
+      "source": "腾讯云大数据",
+      "url": "https://cloud.tencent.com/developer/article/2708037",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5516,7 +5536,8 @@
     "2026-07-15",
     "2026-07-16",
     "2026-07-17",
-    "2026-07-20"
+    "2026-07-20",
+    "2026-07-21"
   ],
   "monthly": [
     {
