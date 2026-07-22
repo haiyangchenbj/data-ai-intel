@@ -5444,6 +5444,66 @@
       "source": "腾讯云大数据",
       "url": "https://cloud.tencent.com/developer/article/2708037",
       "conf": ""
+    },
+    {
+      "date": "2026-07-22",
+      "vendor": "阿里云",
+      "module": "专题",
+      "title": "阿里云 EMR AI 助手正式发布：大数据运维进入全栈 AIOps 时代",
+      "summary": "摘要： 阿里云于7月21日正式发布 EMR AI 助手，面向大数据运维场景提供 AIOps 智能运维能力。产品直连集群，基于大模型实现智能诊断、全面巡检、主动推送和专家技能四大核心能力，涵盖 AI 日报自动生成、慢 SQL 根因分析、集群健康巡检、IM 通道告警推送等场景。与通用大模型的区别在于：EMR AI 助手能实时读取集群状态、关联多维指标形成因果链推理、自动编排诊断-优化-验证全流程。目前已支持 EMR Serverless StarRocks，后续将扩展至更多引擎。为什么对数据平台重要： 这是国内主流云厂商首次将 AIOps 以产品化形态嵌入大数据平台，而非停留在\"问答助手\"层面。AI 日报从 50 个监控指标中自动提炼 3 项需关注事项并附带根因推理和处方建议，将大数据运维从\"人工多界面切换排查\"升级为\"AI 主治医生\"模式。对数据平台工程效率的影响直接：厂商声称可提升 10 倍运维效率。更重要的是，它标志着大数据平台的运维范式正在从规则驱动走向 AI 驱动。",
+      "source": "阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1749846",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-22",
+      "vendor": "ClickHouse",
+      "module": "专题",
+      "title": "阿里云 Dataphin V6.2 发布：数据治理平台原生内嵌向量检索与 Agent API",
+      "summary": "摘要： 阿里云智能数据建设与治理平台 Dataphin 于7月21日发布 V6.2 版本。核心更新包括：新增数据集 API，原生支持向量检索和文件下载链接生成，为 AI Agent 提供开箱即用的知识查询服务；新增支持 Milvus 2.6.x 向量数据库作为离线集成数据源；离线物理表新增支持 StarRocks、Doris、SelectDB；数据库 SQL 新增支持 TDSQL、ClickHouse 等；数据质量规则新增超时自动终止与失败重试配置。为什么对数据平台重要： Dataphin V6.2 的核心信号是数据治理平台正在从\"管数据\"升级为\"管 AI 入口\"。数据集 API 原生支持向量检索意味着企业不需要单独搭建向量数据库即可让 Agent 调用治理后的企业数据——Data Governance 与 AI Access 正在融合为一个平台能力。新增 Milvus 数据源和多款 OLAP 引擎支持也表明，国内数据治理平台正在加速兼容开放生态，降低企业对单一技术栈的锁定风险。",
+      "source": "阿里云帮助中心",
+      "url": "https://help.aliyun.com/document_detail/2590656.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-22",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Snowflake CoCo Desktop 正式 GA：数据平台开发工具迈入 Agentic IDE 时代",
+      "summary": "摘要： Snowflake 于7月21日宣布 CoCo Desktop 正式 GA。CoCo Desktop 是一款原生 Mac/Windows 桌面应用，在 IDE 风格的界面中集成了文件编辑器、终端、Agentic AI Loop、Agentic Browser、Agentic Notebook 以及深度 Snowflake 感知能力。用户可在受治理的环境中通过自然语言完成数据探索、开发和管理操作，无需离开 Snowflake 的安全边界。对数据平台的影响： CoCo Desktop GA 代表数据平台工具链的交互范式正在从\"Web 控制台\"向\"Agentic IDE\"迁移。与 Databricks 的 Genie/Agent Bricks 方向一致，Snowflake 选择将 Agent 能力嵌入一个桌面端全功能 IDE 而非 Web 界面，这一选择反映了数据平台对\"开发者体验\"的重视——Agent 不只服务于业务用户的分析问答，更要服务于数据工程师的开发运维全流程。但需注意 CoCo Desktop 依赖于 Snowflake 的 Cortex Code 模型服务，存在一定平台锁定风险。",
+      "source": "Snowflake Documentation",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-21-coco-desktop-ga",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-22",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks 仓库级语句超时与工作空间访问控制 GA：运维精细化和安全合规补全",
+      "summary": "摘要： Databricks 于7月21-22日落地多项功能更新：SQL 仓库级语句超时（Beta，7/21）允许不同仓库设置独立查询超时；Context-based ingress control for workspaces 正式 GA（7/21），支持基于身份、网络来源和请求类型的零信任访问策略；Databricks 内置示例数据集通过 OpenSharing 协议在 Unity Catalog 的 samples catalog 中开放访问（7/22）。对数据平台的影响： 三项更新虽属增量功能，但各自指向不同方向：仓库级超时提升了多租户 SQL 环境的运维精细度；基于上下文的入口控制补全了企业级零信任安全架构的关键缺口；示例数据集通过 OpenSharing 分发则是开放共享协议在平台内部的首次落地验证。三个方向（运维精细化、安全合规、开放共享）共同构成了平台成熟度提升的信号。",
+      "source": "Azure Databricks Release Notes",
+      "url": "https://learn.microsoft.com/en-us/azure/Databricks/release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-22",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】海量数据定向增发申请获上交所受理",
+      "summary": "核心数据： 北京海量数据技术股份有限公司（603138.SH）于2026年7月21日收到上交所通知，其向特定对象发行A股股票的申请已获受理。具体发行规模、定价和募资用途尚未在受理公告中披露，后续需经上交所审核及证监会注册批准。摘要： 海量数据是国内数据库技术服务上市公司，主营业务为面向大中型企事业单位搭建IT基础设施数据平台，提供数据存储与安全、数据库与数据管理、云计算等解决方案。此次定向增发若顺利完成，将为公司数据库产品研发和市场拓展提供资金支持。对数据平台的影响： 在国内信创和AI数据库双重驱动下，国产数据库厂商的资本运作活跃度持续提升。海量数据作为A股少有的纯数据库标的，其再融资进展是观察资本市场对国产数据库赛道定价的重要参考。但受理阶段距离最终获批仍有不确定性，需持续跟踪审核进展和募资用途披露。",
+      "source": "上海证券交易所公告",
+      "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-07-22/603138_20260722_GUJG.pdf",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-22",
+      "vendor": "Neo4j",
+      "module": "技术",
+      "title": "【降级】Apache GeaFlow 0.8.0 发布：流图计算引擎融入向量存储与 MCP 能力",
+      "summary": "为什么值得继续看： Apache GeaFlow（Incubating）于2026年7月发布0.8.0版本，新增向量存储、基于Lucene/Embedding的检索算子、MCP模块和AI模块，同时扩展图算法库（Louvain、标签传播等）和连接器生态（Neo4j、ES、Paimon流式数据源）。这是流批一体图计算引擎首次系统性融入AI能力，方向与\"图计算+向量检索+Agent调用\"的融合趋势高度一致。需要等待什么信号确认： 官方发布的具体日期；MCP模块和AI模块的实际集成深度和使用场景验证；项目从Apache孵化器毕业的时间线。",
+      "source": "同花顺",
+      "url": "https://news.10jqka.com.cn/field/20260721/678331951.shtml",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5537,7 +5597,8 @@
     "2026-07-16",
     "2026-07-17",
     "2026-07-20",
-    "2026-07-21"
+    "2026-07-21",
+    "2026-07-22"
   ],
   "monthly": [
     {
