@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-23</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-23 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>传统基础设施厂商通过收购加速切入AI数据平台赛道</li>
+      <li>中国企业级Agent平台正式出海，从国内竞争进入全球化</li>
+      <li>云原生事件湖仓架构从实验走向商业成熟，事件数据治理产品化提速</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Progress以$400M收购Domo是传统基础设施厂商通过并购切入AI数据平台的案例。腾讯云ADP海外版标志中国企业Agent平台从国内走向全球化。阿里云EventHouse商业化意味着事件湖仓从概念验证进入企业采购清单。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Progress Software $400M收购Domo AI与数据平台业务</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://investors.progress.com/static-files/1e76ae04-58a6-4b45-a630-44984ffd3135">Progress Software Press Release</a><br><b>摘要：</b> Progress Software（NASDAQ: PRGS）于7月22日宣布以$400M现金收购Domo（NASDAQ: DOMO）的AI与数据平台业务，包括其全部资产、员工、客户合同和知识产权。Domo拥有超过2,400家企业客户，平台覆盖数据集成、治理分析、自动化和AI驱动的数据产品。交易为资产收购而非合并，预计在Progress 2026财年内（11月30日前）完成交割。Domo此前因年化经常性收入下降触发贷款违约条款，董事会自春季启动战略审查。<br><b>为什么对数据平台重要：</b> 这是Progress自2023年收购MarkLogic后的第三次数据平台收购，表明传统基础设施软件厂商正通过并购系统性地构建AI数据平台产品栈。Domo在面临财务压力时被收购，反映了独立BI/数据分析平台在AI时代的生存困境——要么自建AI能力，要么被拥有更完整产品栈的厂商整合。$400M对价（约Domo年化营收5x）也提供了当前环境下成熟数据分析平台的估值锚点。</div>
+</div>
+<div class="item">
+    <h3>腾讯云发布ADP 4.0海外版与企业级CodeBuddy IDE</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.tencent.com/developer/article/2712907">腾讯云开发者社区</a><br><b>摘要：</b> 在2026世界人工智能大会（WAIC）期间，腾讯云于7月22日正式发布企业级智能体开发平台ADP 4.0海外版，同步推出CodeBuddy IDE（全流程AI一体化开发工具）。ADP 4.0海外版围绕触达、交互、生态、连接四大维度升级，接入LINE、Telegram等海外主流社交渠道，内置多家国际大模型本地化适配。CodeBuddy IDE定位为覆盖编码、调试、部署全流程的AI开发环境。此外腾讯云还首次系统性展示具身智能全栈布局，WorkBuddy独立App同步上线iOS/Android/鸿蒙。<br><b>为什么对数据平台重要：</b> ADP 4.0海外版发布标志着中国企业级Agent开发平台从国内市场走向全球化竞争，其"Claw模式"（Agent与Workflow双向互调）代表了Agent落地企业的工程化方向——开放场景理解由Agent承担，标准化流程由工作流保证严谨。CodeBuddy IDE的意义在于将AI编程从辅助代码补全升级为覆盖数据工程全流程的一体化开发环境，直接影响数据工程师的工具链选型。</div>
+</div>
+<div class="item">
+    <h3>阿里云EventHouse事件湖仓正式启动商业化</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.aliyun.com/notice/detail?notice-id=118400">阿里云公告</a><br><b>摘要：</b> 阿里云EventBridge旗下EventHouse（事件仓）于2026年7月23日00:00正式结束免费公测并启动商业化收费。EventHouse于2026年2月首次发布，定位为新一代云原生事件湖仓，将高吞吐消息队列、结构化数据库和非结构化对象存储统一抽象为标准事件数据模型，解决事件的"存储、治理与智能分析"问题。<br><b>为什么对数据平台重要：</b> EventHouse商业化的核心信号是"事件湖仓"作为独立产品品类从概念验证走向企业采购清单。这意味着企业对实时事件数据的持久化存储、Schema治理和智能分析的需求已从自有搭建转向采购商业化云服务。EventHouse借鉴Lakehouse架构理念将事件数据纳入统一湖仓治理体系，也代表了流批一体架构中最薄弱层——事件存储层——正在被云厂商产品化填补。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake SHOW CORTEX BASE MODELS 命令正式GA</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/release-notes/2026/other/2026-07-02-container-runtime-2-7">Snowflake Release Notes</a><br><b>摘要：</b> Snowflake于7月23日将SHOW CORTEX BASE MODELS SQL命令正式GA。该命令可列出账户内所有可用的Cortex基础模型，包括生命周期状态（GA/PUPR/PRPR/LEGACY/EOL）、可用区域、Legacy日期和EOL日期。配合RBAC机制，账户管理员可以通过SNOWFLAKE.MODELS.CORTEX_BASE_MODELS_REFRESH存储过程刷新模型对象，并通过GRANT APPLICATION ROLE精细控制不同角色对特定模型的访问权限。<br><b>对数据平台的影响：</b> 该命令的GA标志着Snowflake将AI模型治理正式纳入其数据平台RBAC体系。企业现在可以像管理数据库表权限一样管理大模型访问——哪些部门可用哪些模型、何时需要迁移至替代模型，全部可编程、可审计。这是"数据治理"边界向AI模型层延伸的又一个里程碑，也为在Snowflake上构建AI应用的企业提供了合规采购的基础设施。</div>
+</div>
+<div class="item">
+    <h3>DuckDB 1.5.5 发布</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.duckdb.org/2026/07/22/announcing-duckdb-155.html">DuckDB Blog</a><br><b>摘要：</b> DuckDB于7月22日发布v1.5.5，这是1.5（Variegata）系列的第六个补丁版本，主要包含Bug修复、性能改进和安全补丁。<br><b>对数据平台的影响：</b> DuckDB 1.5系列持续的高频补丁迭代（自2026年3月1.5.0发布起已出6个补丁）反映了嵌入式OLAP引擎在生产环境中被大量使用后的快速成熟过程。作为轻量级分析引擎的事实标准，DuckDB在数据工程工作流（ETL/ELT中间层、本地分析、边缘计算）中的稳定性持续提升，将进一步推动"分析下移"架构的趋势。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。（Progress收购Domo已入A板块。）</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Databricks $30亿融资中文媒体持续扩散——CEO称"GPU正在耗尽"</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_2746a603ed046452">观点网</a><br><b>为什么值得继续看：</b> 7月22日多家中文媒体对Databricks于7月16日宣布的$30亿战略融资进行后续报道，新增细节包括CEO Ali Ghodsi在接受CNBC采访时表示"GPU正在耗尽"——GPU短缺已不是远期规划问题，而是当前制约业务运营的现实瓶颈。Ghodsi同时承认将托管Kimi K3等中国开源模型以满足客户需求，称其是"游戏规则改变者"。中文媒体普遍关注融资后估值跃升至$1,880亿（较2月$1,340亿增长40%）以及IPO时间表推迟至最早2027年。<br><b>需要等待什么信号确认：</b> 关注Databricks本轮融资夏末正式交割时的最终金额和战略投资者名单，以及GPU采购计划的落实情况。Ghodsi"GPU正在耗尽"的表述是否引发其他数据平台厂商跟进披露GPU容量压力，将决定这是否成为一个行业性叙事。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-23 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

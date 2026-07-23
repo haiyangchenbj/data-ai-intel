@@ -5504,6 +5504,66 @@
       "source": "同花顺",
       "url": "https://news.10jqka.com.cn/field/20260721/678331951.shtml",
       "conf": ""
+    },
+    {
+      "date": "2026-07-23",
+      "vendor": "其他",
+      "module": "专题",
+      "title": "Progress Software $400M收购Domo AI与数据平台业务",
+      "summary": "来源： Progress Software Press Release摘要： Progress Software（NASDAQ: PRGS）于7月22日宣布以$400M现金收购Domo（NASDAQ: DOMO）的AI与数据平台业务，包括其全部资产、员工、客户合同和知识产权。Domo拥有超过2,400家企业客户，平台覆盖数据集成、治理分析、自动化和AI驱动的数据产品。交易为资产收购而非合并，预计在Progress 2026财年内（11月30日前）完成交割。Domo此前因年化经常性收入下降触发贷款违约条款，董事会自春季启动战略审查。为什么对数据平台重要： 这是Progress自2023年收购MarkLogic后的第三次数据平台收购，表明传统基础设施软件厂商正通过并购系统性地构建AI数据平台产品栈。Domo在面临财务压力时被收购，反映了独立BI/数据分析平台在AI时代的生存困境——要么自建AI能力，要么被拥有更完整产品栈的厂商整合。$400M对价（约Domo年化营收5x）也提供了当前环境下成熟数据分析平台的估值锚点。",
+      "source": "Progress Software Press Release",
+      "url": "https://investors.progress.com/static-files/1e76ae04-58a6-4b45-a630-44984ffd3135",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-23",
+      "vendor": "腾讯",
+      "module": "专题",
+      "title": "腾讯云发布ADP 4.0海外版与企业级CodeBuddy IDE",
+      "summary": "来源： 腾讯云开发者社区摘要： 在2026世界人工智能大会（WAIC）期间，腾讯云于7月22日正式发布企业级智能体开发平台ADP 4.0海外版，同步推出CodeBuddy IDE（全流程AI一体化开发工具）。ADP 4.0海外版围绕触达、交互、生态、连接四大维度升级，接入LINE、Telegram等海外主流社交渠道，内置多家国际大模型本地化适配。CodeBuddy IDE定位为覆盖编码、调试、部署全流程的AI开发环境。此外腾讯云还首次系统性展示具身智能全栈布局，WorkBuddy独立App同步上线iOS/Android/鸿蒙。为什么对数据平台重要： ADP 4.0海外版发布标志着中国企业级Agent开发平台从国内市场走向全球化竞争，其\"Claw模式\"（Agent与Workflow双向互调）代表了Agent落地企业的工程化方向——开放场景理解由Agent承担，标准化流程由工作流保证严谨。CodeBuddy IDE的意义在于将AI编程从辅助代码补全升级为覆盖数据工程全流程的一体化开发环境，直接影响数据工程师的工具链选型。",
+      "source": "腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/2712907",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-23",
+      "vendor": "阿里云",
+      "module": "专题",
+      "title": "阿里云EventHouse事件湖仓正式启动商业化",
+      "summary": "来源： 阿里云公告摘要： 阿里云EventBridge旗下EventHouse（事件仓）于2026年7月23日00:00正式结束免费公测并启动商业化收费。EventHouse于2026年2月首次发布，定位为新一代云原生事件湖仓，将高吞吐消息队列、结构化数据库和非结构化对象存储统一抽象为标准事件数据模型，解决事件的\"存储、治理与智能分析\"问题。为什么对数据平台重要： EventHouse商业化的核心信号是\"事件湖仓\"作为独立产品品类从概念验证走向企业采购清单。这意味着企业对实时事件数据的持久化存储、Schema治理和智能分析的需求已从自有搭建转向采购商业化云服务。EventHouse借鉴Lakehouse架构理念将事件数据纳入统一湖仓治理体系，也代表了流批一体架构中最薄弱层——事件存储层——正在被云厂商产品化填补。",
+      "source": "阿里云公告",
+      "url": "https://www.aliyun.com/notice/detail?notice-id=118400",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-23",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "Snowflake SHOW CORTEX BASE MODELS 命令正式GA",
+      "summary": "来源： Snowflake Release Notes摘要： Snowflake于7月23日将SHOW CORTEX BASE MODELS SQL命令正式GA。该命令可列出账户内所有可用的Cortex基础模型，包括生命周期状态（GA/PUPR/PRPR/LEGACY/EOL）、可用区域、Legacy日期和EOL日期。配合RBAC机制，账户管理员可以通过SNOWFLAKE.MODELS.CORTEX_BASE_MODELS_REFRESH存储过程刷新模型对象，并通过GRANT APPLICATION ROLE精细控制不同角色对特定模型的访问权限。对数据平台的影响： 该命令的GA标志着Snowflake将AI模型治理正式纳入其数据平台RBAC体系。企业现在可以像管理数据库表权限一样管理大模型访问——哪些部门可用哪些模型、何时需要迁移至替代模型，全部可编程、可审计。这是\"数据治理\"边界向AI模型层延伸的又一个里程碑，也为在Snowflake上构建AI应用的企业提供了合规采购的基础设施。",
+      "source": "Snowflake Release Notes",
+      "url": "https://docs.snowflake.com/release-notes/2026/other/2026-07-02-container-runtime-2-7",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-23",
+      "vendor": "DuckDB",
+      "module": "技术",
+      "title": "DuckDB 1.5.5 发布",
+      "summary": "来源： DuckDB Blog摘要： DuckDB于7月22日发布v1.5.5，这是1.5（Variegata）系列的第六个补丁版本，主要包含Bug修复、性能改进和安全补丁。对数据平台的影响： DuckDB 1.5系列持续的高频补丁迭代（自2026年3月1.5.0发布起已出6个补丁）反映了嵌入式OLAP引擎在生产环境中被大量使用后的快速成熟过程。作为轻量级分析引擎的事实标准，DuckDB在数据工程工作流（ETL/ELT中间层、本地分析、边缘计算）中的稳定性持续提升，将进一步推动\"分析下移\"架构的趋势。",
+      "source": "DuckDB Blog",
+      "url": "https://www.duckdb.org/2026/07/22/announcing-duckdb-155.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-23",
+      "vendor": "Databricks",
+      "module": "投融资",
+      "title": "【降级】Databricks $30亿融资中文媒体持续扩散——CEO称\"GPU正在耗尽\"",
+      "summary": "来源： 观点网为什么值得继续看： 7月22日多家中文媒体对Databricks于7月16日宣布的$30亿战略融资进行后续报道，新增细节包括CEO Ali Ghodsi在接受CNBC采访时表示\"GPU正在耗尽\"——GPU短缺已不是远期规划问题，而是当前制约业务运营的现实瓶颈。Ghodsi同时承认将托管Kimi K3等中国开源模型以满足客户需求，称其是\"游戏规则改变者\"。中文媒体普遍关注融资后估值跃升至$1,880亿（较2月$1,340亿增长40%）以及IPO时间表推迟至最早2027年。需要等待什么信号确认： 关注Databricks本轮融资夏末正式交割时的最终金额和战略投资者名单，以及GPU采购计划的落实情况。Ghodsi\"GPU正在耗尽\"的表述是否引发其他数据平台厂商跟进披露GPU容量压力，将决定这是否成为一个行业性叙事。",
+      "source": "观点网",
+      "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2746a603ed046452",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5598,7 +5658,8 @@
     "2026-07-17",
     "2026-07-20",
     "2026-07-21",
-    "2026-07-22"
+    "2026-07-22",
+    "2026-07-23"
   ],
   "monthly": [
     {
