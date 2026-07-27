@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-27</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-27 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台服务对象正从人转向Agent，国内首个统一算力底座方案落地</li>
+      <li>APEC首开数据促进增长高层会，多边数据治理框架开始成形</li>
+      <li>国家数据局以语义贯通替代格式统一，高质量数据集标准将加速出台</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>周末窗口的核心信号来自中国：腾讯云AI DLC发布标志着国内数据平台从Data+AI走向Agent-Ready的产品化落地，APEC数据高层会为跨境AI数据治理划定多边合作框架。数据平台的第一用户正从人向Agent迁移。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>腾讯云正式发布AI DLC：国内首个生产级Spark+Ray统一智能数据湖平台</h3>
+    <div class="source">来源：<a href="https://cloud.tencent.com/developer/article/2708037">腾讯云开发者社区</a></div>
+    <div class="body"><b>摘要：</b> 7月25日，腾讯云在DataFun Agentic AI Summit上正式发布智能数据湖计算AI DLC，成为国内首个在同一平台上提供生产级Spark+Ray全托管服务的数据湖计算平台。平台通过TCRay（Ray全托管与GPU弹性调度）、Xpark（多模态高性能算子层）、Meson（C++原生加速引擎）三大核心引擎，实现一份算力同时承载大数据处理与AI训练推理，统一数据、元数据与权限。腾讯云提出数据平台正从"服务人的分析与决策"走向"支撑Agent的运行与进化"。CodeBuddy和博世作为首批客户，验证了训练周期从月级压缩至周级、运营成本降约60%的实际效果。<br><b>为什么对数据平台重要：</b> AI DLC打破了传统"数据平台+AI平台"两套架构的割裂——Spark跑CPU集群、Ray跑GPU集群的分离模式导致高达80%的GPU处于数据等待状态。统一底座将模型产物、Agent输出和推理轨迹纳入元数据体系管理，通过内置MCP接口使平台本身可被Agent编排调用。这标志着国内数据平台厂商首次以完整产品形态回应"Agent需要统一上下文基础设施"这一核心瓶颈，与Databricks Lakebase的Agent-Ready叙事形成产品对位。</div>
+</div>
+<div class="item">
+    <h3>APEC框架下首次举行"数据促进增长"高级别圆桌会</h3>
+    <div class="source">来源：<a href="https://www.nda.gov.cn/sjj/swdt/xwfb/0726/20260726230749779349518_pc.html">国家数据局</a></div>
+    <div class="body"><b>摘要：</b> 7月25日，APEC数据促进增长高级别圆桌会在成都召开，国家数据局局长刘烈宏主持。这是APEC框架下首次以"数据促进增长"为主题举行高级别政策交流，27个经济体部长参与。会议发布主席声明，确立三大合作方向：营造开放的数据获取与使用环境、强化数据驱动的创新和应用、深化数据互联互通合作。7月26日至29日还将组织多场主题参访和产业对接活动。<br><b>为什么对数据平台重要：</b> 这是APEC首次将"数据促进增长"提升为独立的高级别议题，标志着跨境数据治理从双边谈判阶段进入多边规则构建阶段。主席声明中"提高数据系统互操作性、减少碎片化、避免数据孤岛"的目标直接关联企业数据平台的跨域部署、多国合规和国际化架构设计。对在中国和亚太地区运营的数据平台厂商而言，该框架为跨境数据产品的合规部署提供了政策预期锚点。</div>
+</div>
+<div class="item">
+    <h3>国家数据局确立"语义贯通"路线，高质量数据集国家标准将加速出台</h3>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7665968031046189587">每日经济新闻</a></div>
+    <div class="body"><b>摘要：</b> 7月24日，国家数据局局长刘烈宏在2026全球数字经济大会数据要素发展论坛上提出，以"语义贯通"破解数据格式壁垒——从重格式统一转向语义贯通，依托元数据挂载和语义映射机制，实现数据自带标准化语义、机器自动识别上下文。刘烈宏宣布将加快出台高质量数据集格式要求、质量评测、数据标注等国家标准，采取"分类施策、分级推进"策略。<br><b>为什么对数据平台重要：</b> "语义贯通替代格式统一"是一次方法论转向——它意味着数据平台的基础设施层不需要追求底层存储格式的一刀切统一，而应将资源投入向上构建可互操作的语义规则层。这对数据治理产品的方向有明确指引：未来数据平台的关键竞争力将从"能管多少种格式"转向"能在多格式之上提供统一语义视图"。高质量数据集国家标准的出台，将为AI训练数据的质量评估建立可度量的公共基线。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks Lakeflow Designer夏季版发布：可视化数据准备平台大幅升级</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/gcp/en/release-notes/product/2026/july">Databricks</a></div>
+    <div class="body"><b>摘要：</b> 7月24日，Databricks发布Lakeflow Designer夏季版更新，新增Prepare（数据清洗）、Enter Data（手动制表）、Select（列选择与重命名）、Visualization（画布内图表）四个算子；输出算子扩展支持写入UC表、物化视图及CSV/Excel/JSON文件；Join算子默认三路输出（未匹配左/匹配/未匹配右）；AI函数算子新增ai_query、ai_parse_document、ai_forecast、ai_prep_search支持。画布交互大幅改进——新增命令面板、目录视图、内联笔记编辑，并支持Declarative Automation Bundles部署���<br><b>对数据平台的影响：</b> Lakeflow Designer从简单的拖拽ETL工具演进为完整的数据工程IDE。关键信号是AI函数被直接嵌入数据准备流水线——数据工程师可在画布上直接调用大模型做文档解析、预测和搜索预处理，无需切换到独立的AI平台。这代表数据准备工具正在系统性地吸收AI能力，将数据工程师与AI工程师的角色边界进一步模糊化。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud发布Agentic Data Cloud方案，面向Agentic AI重构数据基础设施</h3>
+    <div class="source">来源：<a href="https://strategicfocus.com/2026/07/24/whats-new-with-google-cloud-151">Google Cloud</a></div>
+    <div class="body"><b>摘要：</b> 7月24日，Google Cloud正式发布Agentic Data Cloud方案，将数据、AI模型和操作数据库整合为"单一行动系统"。核心理念是通过BigQuery和Spanner的borderless lakehouse与Knowledge Catalog结合，为AI Agent提供跨环境的可信实时上下文。同期发布的State of Infrastructure报告显示，83%的组织认为需要基础设施升级才能支持生产级Agentic AI系统，43%的IT领导者将"与遗留API和数据源的集成困难"列为最大基础设施缺口。<br><b>对数据平台的影响：</b> Google Cloud将Agentic Data Cloud作为独立方案发布，表明其已将Agent就绪从技术能力升级为产品定位。报告数据为数据平台厂商提供了明确的客户痛点验证。关键信号是Google选择"borderless lakehouse"而非集中式数据湖——跨环境数据访问正从技术选型上升为产品战略。</div>
+</div>
+<div class="item">
+    <h3>中国信通院牵头数据编织国际标准获ITU正式立项</h3>
+    <div class="source">来源：<a href="https://k.sina.com.cn/article_5953190046_162d6789e06703lkk8.html">环球网</a></div>
+    <div class="body"><b>摘要：</b> 7月25日，中国信通院宣布其牵头提出的ITU-T F.DF-RefFram《多媒体数据编织系统要求与参考框架》在ITU-T SG21全体会议上正式立项。该标准以"逻辑统一、物理分布"的数据编织架构为核心，拟系统规定跨源异构数据的统一发现、理解、访问、集成、治理和服务化供给框架，覆盖分布式数据发现、语义管理、服务编排和治理控制等共性技术问题。来自中国、美国、德国、日本、韩国等国家的百余名代表参会。<br><b>对数据平台的影响：</b> 数据编织作为Gartner定义的顶级数据管理趋势，此前以国际厂商的私有产品实现为主。中国信通院牵头国际标准立项，标志着中国在数据管理架构层面从"标准跟随者"转向"标准定义者"。这对国内数据治理平台的产品方向有直接牵引——符合该标准的产品将在国际合规方面获得先发优势，也有助于降低国产数据平台在海外市场的接入门槛。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Databricks Runtime 19正式GA，搭载Spark 4.2.0</h3>
+    <div class="source">来源：<a href="https://learn.microsoft.com/da-dk/azure/databricks/release-notes/product/2026/july">Azure Databricks</a></div>
+    <div class="body"><b>为什么值得继续看：</b> DBR 19于7月23日发布，搭载Apache Spark 4.2.0，DBR 18同步转入LTS支持。尽管Spark 4.2.0本身已于7月14日发布并在前期日报覆盖，DBR 19的GA标志着Databricks平台正式完成对Spark 4.x最新主版本的官方打包，Databricks用户的升级窗口正式打开。<br><b>需要等待什么信号确认：</b> 社区反馈和实际迁移中的兼容性表现；Spark 4.2.0在DBR 19托管环境中的性能基准对比。</div>
+</div>
+<div class="item">
+    <h3>【降级】Apache Flink Agents 0.3.1发布，社区投入节奏加快</h3>
+    <div class="source">来源：<a href="https://flink.apache.org/posts/">Apache Flink</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 7月25日发布，为Flink Agents 0.3系列的首个bug修复版本，修复5个bug，新增Flink 2.3发行版支持和安装程序改进。虽属维护版本，但Flink Agents作为Apache Flink在Agentic Streaming方向的产品化载体，0.3.0于6月19日发布后仅35天即跟进修复，表明社区在Agent+流处理融合上的投入节奏正在加快。<br><b>需要等待什么信号确认：</b> Flink Agents从当前预览版到GA的时间线；Agentic Streaming在企业场景的实际落地案例。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Google Cloud llm-d推出GPU协同分时调度，RL训练利用率提升至70%</h3>
+    <div class="source">来源：<a href="https://www.163.com/game/article/DK3UFFO400318PFH_mobile.html">The Register</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 7月24日发布的llm-d协同分时调度方案，通过快照代理、加速器编排器和客户端库三层架构，在RL训练采样与梯度更新交替期间将空闲GPU分时复用给其他作业。早期基准将GPU综合利用率从约40%提升至70%。与cuda-checkpoint集成，已在Kubernetes和Slurm上验证。<br><b>需要等待什么信号确认：</b> 该技术能否从RL训练场景扩展到通用AI训练负载；其他云厂商是否会跟进类似方案；对数据平台中GPU密集型工作负载的资源管理是否产生示范效应。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-27 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
