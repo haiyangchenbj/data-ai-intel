@@ -5564,6 +5564,56 @@
       "source": "观点网",
       "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2746a603ed046452",
       "conf": ""
+    },
+    {
+      "date": "2026-07-24",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks VARIANT 数据类型与列式分解正式 GA",
+      "summary": "来源： Azure Databricks Release Notes摘要： Databricks 正式发布 VARIANT 数据类型及 Variant shredding 列式分解能力。VARIANT 专为半结构化数据设计，支持从 Kinesis、Event Hub、REST API 和 schemaless 数据库摄取 JSON 等灵活格式数据，同时通过自动列式分解实现接近结构化数据的查询性能。从 Databricks Runtime 17.3 起，新建含 VARIANT 列的表自动启用 shredding。为什么对数据平台重要： VARIANT GA 意味着湖仓在半结构化数据处理上不再需要在灵活性和性能之间二选一。传统做法是将 JSON 存为 STRING 后查询时解析（性能差），或预先 ETL 为固定 schema（灵活性差）。VARIANT + shredding 将 schema-on-read 优势工程化，降低了流式半结构化数据入湖的门槛，是湖仓对传统数仓在数据类型覆盖上的关键补齐。",
+      "source": "Azure Databricks Release Notes",
+      "url": "https://learn.microsoft.com/sk-sk/azure/databricks/release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-24",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks Delta 表多语句事务正式 GA",
+      "summary": "来源： Azure Databricks Release Notes摘要： Databricks 正式发布 Unity Catalog 受管 Delta 表的多语句事务支持。开发者可使用 BEGIN ATOMIC ... END 或 BEGIN TRANSACTION ... COMMIT 语法，将跨表的多条 SQL 语句封装为单一原子事务。所有变更要么全部提交，要么全部回滚，确保跨操作的数据一致性。为什么对数据平台重要： 多语句事务 GA 补齐了湖仓在 ACID 事务语义上的关键缺口。此前 Delta Lake 仅支持单表级别的 ACID，跨表写入的一致性依赖应用层协调。多语句事务使湖仓在数据一致性保障上逼近传统关系型数据库，为金融、供应链等强一致性场景的湖仓原生化铺平道路。",
+      "source": "Azure Databricks Release Notes",
+      "url": "https://learn.microsoft.com/sk-sk/azure/databricks/release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-24",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【降级】Databricks 基于角色的访问控制（RBAC）进入公开预览",
+      "summary": "来源： Azure Databricks Release Notes为什么值得继续看： Databricks RBAC 允许用户在工作会话中临时套用特定角色权限，实现排他性数据访问——用户必须主动扮演角色才能触及敏感数据，防止跨项目、跨客户的数据混合。这是数据治理从\"谁可以看什么\"向\"什么时候以什么身份看\"的范式升级。需要等待什么信号确认： GA 时间表及与 Unity AI Gateway 的权限联动设计，特别是 Agent 场景下 RBAC 如何扩展到 MCP 服务和模型调用的运行时治理。",
+      "source": "Azure Databricks Release Notes",
+      "url": "https://learn.microsoft.com/sk-sk/azure/databricks/release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-24",
+      "vendor": "Databricks",
+      "module": "产品",
+      "title": "【跟踪】Databricks 治理中心（Governance Hub）进入 Beta",
+      "summary": "来源： Azure Databricks Release Notes为什么值得继续看： Governance Hub 是 Databricks 在账户级提供的集中式治理监控界面，统一展示数据健康度、AI 使用与成本、成本驱动因素，并附优先级的洞察与建议。这标志着 Databricks 治理能力从功能级（Unity Catalog 权限）向平台级（跨工作区的用量与合规可视化）升级。需要等待什么信号确认： Beta 期用户反馈中是否出现\"治理盲区\"（如跨云、跨账户场景），以及正式 GA 时是否包含自动化策略推荐与执行能力。",
+      "source": "Azure Databricks Release Notes",
+      "url": "https://learn.microsoft.com/sk-sk/azure/databricks/release-notes/product/2026/july",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-24",
+      "vendor": "Snowflake",
+      "module": "产品",
+      "title": "【降级】Snowflake 支持单条 ALTER 语句刷新多个动态表",
+      "summary": "来源： Snowflake Release Notes为什么值得继续看： 7 月 22 日 Snowflake 支持在一条 ALTER 语句中同时刷新多个动态表，简化了 ETL 流水线中的表刷新编排。虽属体验优化，但动态表作为 Snowflake 流批一体数据管线的核心原语，其运维效率提升反映平台在声明式数据工程方向的持续投入。需要等待什么信号确认： Snowflake 是否会在后续版本中将多表刷新与 Dynamic Tables 的 Adaptive Refresh Mode 结合，实现声明式的表间依赖自动编排。",
+      "source": "Snowflake Release Notes",
+      "url": "https://docs.snowflake.com/release-notes/new-features",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5659,7 +5709,8 @@
     "2026-07-20",
     "2026-07-21",
     "2026-07-22",
-    "2026-07-23"
+    "2026-07-23",
+    "2026-07-24"
   ],
   "monthly": [
     {
