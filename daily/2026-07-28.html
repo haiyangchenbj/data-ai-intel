@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-28</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-28 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>Agent 与数据平台交互标准走向生产级，治理首次嵌入协议层</li>
+      <li>云数据库架构迭代进入商业化交付，价格竞争从资源层延伸到存储层</li>
+      <li>数据产业年度议程即将启动，数博会预告释放密集政策与产品信号</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>MCP 2026-07-28 规范完成从连接协议到生产级基础设施的转型，无状态核心+能力治理+全链路追踪三项变化直接回应企业 AI 规模化中的治理盲区。数据平台的 Agent 接入正从定制集成走向标准化，MCP 可能成为新一代生态入口。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>MCP 2026-07-28 规范正式发布：Agent 与数据平台交互接口完成生产级转型</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://nomadx.ae/blog/mcp-2026-07-28-spec-what-changed/">MCP 2026-07-28 Spec Release Notes</a><br><b>摘要：</b> Model Context Protocol（MCP）2026-07-28 版本于今日正式发布，这是协议自 2025 年 11 月移交 Agentic AI Foundation（Linux Foundation 下设）后的首个完整规范周期，也是协议史上规模最大的修订。核心变化包括：取消会话绑定实现无状态核心架构、新增统一能力发现与治理语义、标准化全链路追踪（W3C Trace Context）、强化 OAuth/OIDC 授权体系、引入 MCP Apps 交互式界面，以及首个正式弃用策略。<br><b>为什么对数据平台重要：</b> MCP 是 AI Agent 调用数据平台工具（元数据查询、指标检索、治理化查询、数据新鲜度检查等）的主流标准接口。新规范的三项变化直接重塑数据平台的 Agent 接入架构：(1) 无状态核心使数据工具服务器可水平扩展，不再被会话绑定锁死在单实例；(2) 能力治理语义让平台侧可以限流、审计和缓存 Agent 的工具调用——这正是湖仓治理在 Agent 时代的落地形态；(3) 全链路追踪要求每次调用附带结构化来源信息，使 Agent 的数据操作可审计、可回溯，回应企业在 AI 规模化部署中的合规刚需。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>腾讯云 TDSQL-C MySQL 版架构 2.0 正式商业化</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20260727A057A600">腾讯云公告</a><br><b>摘要：</b> 腾讯云公告，TDSQL-C MySQL 版产品架构 2.0 结束公测，自 2026 年 7 月 27 日起正式商业化计费。计费分为计算资源和存储资源两项，计算价格与架构 1.0 相同，存储价格低于架构 1.0。<br><b>对数据平台的影响：</b> 架构 2.0 商业化标志着腾讯云关系型数据库产品线完成架构代际切换，存储成本降低有利于客户在云原生数据库上承载更大规模数据工作负载。存储价格下探也进一步压缩了传统自建 MySQL 的成本优势空间。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】2026 中国国际大数据产业博览会新闻发布会今日在京举行</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://dsj.guizhou.gov.cn/xwzx/snyw/202607/t20260727_90664745.html">贵州省大数据局公告</a><br><b>为什么值得继续看：</b> 国家数据局副局长余英、贵州省副省长罗强、贵阳市长王宏出席发布，国家数据局综合司司长主持。数博会是中国数据产业最重要的年度政策与产业风向标，发布内容将预示下半年数据要素市场、数据基础设施建设的政策走向和产业重点。<br><b>需要等待什么信号确认：</b> 关注大会主题设定、重点议程板块（是否新增 AI-native 数据基础设施、数据要素流通专题）、以及是否有重大政策文件在大会期间发布。</div>
+</div>
+<div class="item">
+    <h3>【降级】腾讯云数据万象 MetaInsight 智能检索计费大幅降价生效</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://wap.eastmoney.com/a/202607143805600524.html">财联社</a><br><b>为什么值得继续看：</b> 7 月 27 日起 MetaInsight 计费项命名规范调整并优化价格，幅度据称为"大幅降价"。MetaInsight 是腾讯云数据湖仓的智能检索组件，降价降低了企业使用数据智能检索的门槛，但本质是价格策略调整而非产品能力变化，降级收录。<br><b>需要等待什么信号确认：</b> 需关注降价后是否有配套的产品功能升级发布，以及阿里云、华为云等竞品是否跟进类似存储/检索服务的价格调整。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-28 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
