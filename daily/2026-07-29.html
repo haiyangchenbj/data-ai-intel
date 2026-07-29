@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-29</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-29 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台厂商从管数据转向管Agent，安全控制面下移</li>
+      <li>Token被纳入数据要素定价，数据资产计量单元走向标准化</li>
+      <li>下半年数据政策密集释放窗口将至，数博会锚定数据流通与算电协同</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台厂商在AI时代的竞争从"管数据"延伸到"管Agent"——Snowflake以MCP网关切入Agent治理，国内政策层以Token定价切入数据资产计量，两者共同定义Agent时代的新治理基础设施层。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake发布Cortex AI Gateway：数据平台商首次以MCP网关统一治理跨平台AI Agent</h3>
+    <div class="source">来源：<a href="https://www.snowflake.com/en/news/press-releases/snowflake-advances-the-trusted-agentic-enterprise-era-with-unified-monitoring-and-cost-management/">Snowflake Press Release</a></div>
+    <div class="body"><b>摘要：</b> Snowflake在Black Hat 2026上发布Cortex AI Gateway，构建于5月收购的Natoma技术之上，作为集中式Agent控制层统一治理Snowflake自有Agent（CoWork/CoCo）及第三方Agent（Claude Code、Cursor等）。网关支持100+ MCP服务器，提供三大核心能力：集中化Agent访问策略与权限管理、端到端Agent活动审计追踪、统一AI消耗成本监控与预算控制。同步宣布与1Password、Okta、SailPoint等安全厂商的首批第三方Agent身份集成。<br><b>为什么对数据平台重要：</b> 这是数据平台厂商首次从"数据治理"延伸到"Agent互操作治理"的战略级产品发布。Snowflake不再仅定位为数据存储和查询平台，而是试图成为企业Agent生态的控制面——决定谁可以访问哪些模型、哪些工具、哪些数据，并审计所有Agent行为。这一动作回应了企业AI部署的核心痛点：Agent跨系统活动带来安全盲区和成本失控。数据平台的竞争维度正从"谁能管好数据"扩展到"谁能管好Agent"。</div>
+</div>
+<div class="item">
+    <h3>国家数据局首提"词元交易"：将Token定义为可交易数据资产，探索新型数据定价机制</h3>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_4806a681ee507252">财联社</a></div>
+    <div class="body"><b>摘要：</b> 7月28日，国家数据局副局长余英在2026数博会新闻发布会上提出，鼓励基于词元（Token）应用的商业模式创新，探索词元交易等新型交易模式，培育"为优质数据付费"的市场共识。深化词元应用与工业、医疗、金融等领域的深度融合，推动形成以模型应用牵引数据供给、以数据赋能模型迭代的"数据飞轮"闭环。下一步将持续推进行业高质量数据集建设六大专项行动。<br><b>为什么对数据平台重要：</b> "词元交易"概念的正式提出，意味着国家数据局将AI时代的核心计量单位（Token）纳入数据要素定价体系。这是从"数据交易"到"数据价值计量单元标准化"的关键一步——此前数据交易以数据集/API调用为单位，Token级交易将推动数据定价向更细粒度、更贴近AI实际消耗的方向演进。对数据平台而言，未来数据治理不仅要管"哪些数据可被访问"，还需管"数据以何种Token成本被消费"。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无符合准入标准的产品与技术动态。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无符合准入标准的观点与研究发布。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无符合准入标准的资本与公司事件。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】2026数博会定档8月28日贵阳，将发布40余项数据流通与算电协同成果</h3>
+    <div class="source">来源：<a href="https://field.10jqka.com.cn/20260728/c678484079.shtml">券商中国</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 国家数据局副局长余英在7月28日发布会上透露，2026数博会将首次展出数智工厂、算力基础设施、安全智能体等最新技术成果，多家头部企业和行业协会将发布算电协同、数据流通、生成式人工智能等方面的40余项成果。作为国家数据局主导的年度最高规格数据产业盛会，数博会历年是数据政策落地信号的重要观察窗口。<br><b>需要等待什么信号确认：</b> 数博会主论坛Keynote中的政策发布、行业高质量数据集建设的阶段性成果、数据流通基础设施（可信数据空间等）的技术方案落地。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief v4.3</p>
+    <p>信息截至北京时间 2026-07-29 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
