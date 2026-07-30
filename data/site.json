@@ -5774,6 +5774,46 @@
       "source": "券商中国",
       "url": "https://field.10jqka.com.cn/20260728/c678484079.shtml",
       "conf": ""
+    },
+    {
+      "date": "2026-07-30",
+      "vendor": "国家数据局",
+      "module": "专题",
+      "title": "九部门联合印发科技金融数据开发利用通知，可信数据空间首次进入垂直行业试点",
+      "summary": "来源： 券商中国（东方财富）摘要： 人民银行等九部门7月29日联合印发《关于加强科技金融领域数据开发利用的通知》，发布《全国科技金融领域数据开发利用目录1.0》（涵盖企业名单/科创属性/投融资等8大类26个数据指标），明确将开展科技金融可信数据空间创新发展试点，鼓励地方建设省级配套信息设施、推广联合建模等数据融合模式。为什么对数据平台重要： 这是国家数据局成立后首次将\"可信数据空间\"概念嵌入跨部门垂直产业政策——此前可信数据空间更多停留在试点城市和通用框架层面。科技金融场景的高数据敏感性和跨部门协调需求使其成为可信数据空间落地的天然试验场，也将牵引底层数据基础设施（数据目录、隐私计算、联邦学习）的需求。",
+      "source": "券商中国（东方财富）",
+      "url": "https://wap.eastmoney.com/a/202607293825432620.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-30",
+      "vendor": "Databricks",
+      "module": "产品",
+      "title": "腾讯云发布CodeBuddy NPC：首次实现AI Native Git范式，Agent嵌入研发全流程",
+      "summary": "来源： 智东西摘要： 腾讯云7月29日正式发布云端智能体CodeBuddy NPC，开发者可通过@方式向NPC派发任务，NPC自主完成问题调查、方案制定、代码开发与PR提交，并根据CI结果持续修复直到交付可验收成果。这是业内首个提出并落地AI Native Git范式的产品。对数据平台的影响： CodeBuddy NPC代表了一种Agent嵌入数据工程工作流的新范式——AI不再只是代码补全工具，而是作为\"团队成员\"参与完整的Pipeline开发流程。在数据平台领域，这对应着数据工程Agent（自动ETL开发、Pipeline修复、数据质量巡检）的产品化方向，与Databricks Genie Code和Snowflake CoCo形成不同侧重点的工程Agent竞争。",
+      "source": "智东西",
+      "url": "https://www.163.com/dy/article/L30F2V9T051180F7.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-30",
+      "vendor": "OceanBase",
+      "module": "投融资",
+      "title": "【投融资】OceanBase启动A轮融资20-30亿元，年化收入14亿增速70%",
+      "summary": "来源： 华尔街见闻核心数据： 目标融资规模20-30亿元人民币（首轮外部融资）；2026年年化收入超14亿元，同比增长约70%；数千家客户，覆盖金融/运营商/制造/零售等行业。摘要： 蚂蚁集团旗下分布式数据库OceanBase正在与投资者洽谈A轮融资，目标规模约20-30亿元，用于增强独立运营能力并加速向AI数据平台转型。这是OceanBase自2010年成立以来首次外部融资。公司目前年化收入超14亿元、增速70%，在IDC中国分布式数据库市场份额排名第一。OceanBase今年6月已发布湖库一体AI数据库，正在推进对视频等半结构化/非结构化数据的处理能力。对数据平台的影响： OceanBase融资是国产数据库走向独立运营和资本市场的标志性事件——蚂蚁集团数据业务的独立化趋势（继蚂蚁国际A轮融资后）进一步印证。70%的增速和14亿年化收入表明国产分布式数据库的商业化拐点已至，AI数据平台方向（湖库一体+多模态）成为估值叙事的核心驱动力。",
+      "source": "华尔街见闻",
+      "url": "https://www.163.com/dy/article/L30NB0N905198NMR.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-30",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【降级】Databricks Python UDTFs在Unity Catalog中正式GA",
+      "summary": "来源： Databricks Release Notes为什么值得继续看： Databricks于7月28日（US时间）发布Python用户定义表函数（UDTFs）在Unity Catalog中正式GA，支持在SQL FROM子句中调用Python函数返回多行列结果，运行在Serverless/SQL Warehouse上。这是Unity Catalog从数据目录向\"可治理计算\"延伸的增量步骤。需要等待什么信号确认： UDTFs本身是常规功能补全，但若后续出现更多语言（Java/Scala UDTFs已于7/16 GA）+跨引擎支持的组合发布，则构成Unity Catalog作为\"可编程治理层\"的产品化加速信号。",
+      "source": "Databricks Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/july",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5873,7 +5913,8 @@
     "2026-07-24",
     "2026-07-27",
     "2026-07-28",
-    "2026-07-29"
+    "2026-07-29",
+    "2026-07-30"
   ],
   "monthly": [
     {
