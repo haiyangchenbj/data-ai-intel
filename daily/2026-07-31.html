@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-07-31</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-07-31 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>开放表格式正从分析层下沉为流数据的标准着陆格式</li>
+      <li>数据基础设施厂商正向AI操作系统级平台转型，从存储走向激活</li>
+      <li>数据基础设施正从"搬运管道"升级为AI原生的"智能编排层"</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据基础设施正在从"被动存储与搬运"向"主动编排与激活"转型。开放表格式深度嵌入流处理栈成为工程共识，国产厂商和VC分别从产品和资本两侧验证"数据操作系统"正成为AI时代基础设施新品类。周五窗口极薄，A-D仅4条。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>浪潮数据发布自研AI数据操作系统，战略升级为AI基础设施服务商</h3>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_5936a6b42ef47252">浪潮数据官方发布会</a></div>
+    <div class="body"><b>摘要：</b> 2026年7月30日，浪潮数据在北京举办"Data Inspire AI 数据激活智能"战略新品发布会，正式发布自研AI数据操作系统，并宣布从传统云计算/分布式存储服务商升级为AI基础设施服务商。该操作系统定位为打通数据、算力、智能体全链路，解决AI规模化落地中数据孤岛、算力空耗、软硬件割裂等痛点，补齐自主可控的国产AI基础设施底座。<br><b>为什么对数据平台重要：</b> 浪潮数据的战略升级代表国产数据基础设施厂商的范式转变——从"存好数据"转向"激活数据为AI所用"。"AI数据操作系统"这一品类定位直接回应当前企业AI落地的核心瓶颈：数据就绪度不足。浪潮依托十年存算一体化积淀提出的全链路方案，可能加速国内企业从"有数据平台"到"数据平台能喂AI"的跨越。</div>
+</div>
+<div class="item">
+    <h3>AWS MSK 原生集成 Iceberg 流表写入，开放表格式成为流数据一等着陆目标</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/new/">AWS What's New</a></div>
+    <div class="body"><b>摘要：</b> 2026年7月30日，AWS宣布Amazon MSK Express brokers现在可以直接将Apache Kafka数据写入Amazon S3和Apache Iceberg流表（streaming tables）。这一能力消除了在Kafka和Iceberg之间部署额外ETL层的需要，使流数据从产生到持久化在开放表格式中的路径大幅缩短。<br><b>为什么对数据平台重要：</b> AWS将Iceberg流表作为MSK的一等写入目标，标志着开放表格式从"分析层格式"下沉为"流数据默认着陆层"。此前Kafka→Iceberg通常需要Flink/Spark Streaming等中间引擎，MSK原生集成将推动更多企业以Iceberg作为流数据的标准存储格式，加速流批一体架构落地。这是头部云厂商首次在托管流服务中原生内嵌Iceberg写入能力，具有方向性信号意义。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云OpenLake知识存储与记忆存储服务正式公测</h3>
+    <div class="source">来源：<a href="https://help.aliyun.com/knowledge_detail/411258.html">阿里云OpenLake功能发布记录</a></div>
+    <div class="body"><b>摘要：</b> 2026年7月30日，阿里云数据湖OpenLake的知识存储服务和记忆存储服务从邀测转为公测。知识存储提供文档导入、智能解析、向量化到混合检索的一站式RAG能力；记忆存储支持写入对话消息并自动提取长期记忆，适用于AI Agent跨会话上下文管理。<br><b>对数据平台的影响：</b> 这两项服务补齐了AI Agent在数据平台侧的"记忆"基础设施。知识存储解决RAG场景的文档到向量全托管，记忆存储解决Agent跨会话状态持久化——两者共同指向数据平台从"处理人类查询"向"服务Agent上下文"的范式迁移。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】DataBahn完成4000万美元B轮融资，Insight Partners领投</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/databahn-raises-40-million-series-b-led-by-insight-partners-to-accelerate-innovation-across-the-agentic-data-control-plane-302838690.html">PR Newswire</a></div>
+    <div class="body"><b>核心数据：</b> B轮融资4000万美元（累计融资5900万美元），Insight Partners领投，Forgepoint、GTM Capital、S3 Ventures跟投。公司年收入增长400%+，净收入留存率180%，客户零流失。<br><b>摘要：</b> 2026年7月30日，企业数据管道创业公司DataBahn宣布完成4000万美元B轮融资。DataBahn定位为"Agentic Data Control Plane"（智能体数据控制面），其平台从600+数据源摄取、标准化、治理并路由企业遥测数据，在传输过程中智能降噪和富化，仅向AI模型和分析工具推送所需数据，避免全量复制。客户包括MVB Bank、加拿大养老金投资委员会（CPPIB）等。<br><b>对数据平台的影响：</b> DataBahn的融资验证了"Agentic Data Control Plane"作为数据基础设施新品类的市场共识。传统数据管道（Fivetran/Airbyte）解决的是"从A搬到B"的问题，DataBahn解决的是"AI Agent需要什么数据、在传输过程中实时决策"的问题——这是数据集成从ETL向智能编排的品类跃迁。Insight Partners（管理资产超900亿美元）的领投表明顶级VC正重注这一方向。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Google Cloud BigQuery新增UI下载审计日志</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/bigquery-ml/docs/release-notes">Google Cloud BigQuery Release Notes</a></div>
+    <div class="body"><b>为什么值得继续看：</b> BigQuery新增Data Access审计日志的uiDownloadRequest字段，可区分用户通过UI触发的下载行为。这是数据平台治理能力向细粒度审计延伸的信号，但单条功能更新影响力有限，降级收录。<br><b>需要等待什么信号确认：</b> 是否有更多数据平台厂商跟进类似的数据访问行为审计能力，形成行业标配。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-07-31 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

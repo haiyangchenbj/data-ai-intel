@@ -5814,6 +5814,56 @@
       "source": "Databricks Release Notes",
       "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/july",
       "conf": ""
+    },
+    {
+      "date": "2026-07-31",
+      "vendor": "其他",
+      "module": "专题",
+      "title": "浪潮数据发布自研AI数据操作系统，战略升级为AI基础设施服务商",
+      "summary": "摘要： 2026年7月30日，浪潮数据在北京举办\"Data Inspire AI 数据激活智能\"战略新品发布会，正式发布自研AI数据操作系统，并宣布从传统云计算/分布式存储服务商升级为AI基础设施服务商。该操作系统定位为打通数据、算力、智能体全链路，解决AI规模化落地中数据孤岛、算力空耗、软硬件割裂等痛点，补齐自主可控的国产AI基础设施底座。为什么对数据平台重要： 浪潮数据的战略升级代表国产数据基础设施厂商的范式转变——从\"存好数据\"转向\"激活数据为AI所用\"。\"AI数据操作系统\"这一品类定位直接回应当前企业AI落地的核心瓶颈：数据就绪度不足。浪潮依托十年存算一体化积淀提出的全链路方案，可能加速国内企业从\"有数据平台\"到\"数据平台能喂AI\"的跨越。",
+      "source": "浪潮数据官方发布会",
+      "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_5936a6b42ef47252",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-31",
+      "vendor": "AWS",
+      "module": "专题",
+      "title": "AWS MSK 原生集成 Iceberg 流表写入，开放表格式成为流数据一等着陆目标",
+      "summary": "摘要： 2026年7月30日，AWS宣布Amazon MSK Express brokers现在可以直接将Apache Kafka数据写入Amazon S3和Apache Iceberg流表（streaming tables）。这一能力消除了在Kafka和Iceberg之间部署额外ETL层的需要，使流数据从产生到持久化在开放表格式中的路径大幅缩短。为什么对数据平台重要： AWS将Iceberg流表作为MSK的一等写入目标，标志着开放表格式从\"分析层格式\"下沉为\"流数据默认着陆层\"。此前Kafka→Iceberg通常需要Flink/Spark Streaming等中间引擎，MSK原生集成将推动更多企业以Iceberg作为流数据的标准存储格式，加速流批一体架构落地。这是头部云厂商首次在托管流服务中原生内嵌Iceberg写入能力，具有方向性信号意义。",
+      "source": "AWS What's New",
+      "url": "https://aws.amazon.com/new/",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-31",
+      "vendor": "阿里云",
+      "module": "技术",
+      "title": "阿里云OpenLake知识存储与记忆存储服务正式公测",
+      "summary": "摘要： 2026年7月30日，阿里云数据湖OpenLake的知识存储服务和记忆存储服务从邀测转为公测。知识存储提供文档导入、智能解析、向量化到混合检索的一站式RAG能力；记忆存储支持写入对话消息并自动提取长期记忆，适用于AI Agent跨会话上下文管理。对数据平台的影响： 这两项服务补齐了AI Agent在数据平台侧的\"记忆\"基础设施。知识存储解决RAG场景的文档到向量全托管，记忆存储解决Agent跨会话状态持久化——两者共同指向数据平台从\"处理人类查询\"向\"服务Agent上下文\"的范式迁移。",
+      "source": "阿里云OpenLake功能发布记录",
+      "url": "https://help.aliyun.com/knowledge_detail/411258.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-31",
+      "vendor": "Fivetran",
+      "module": "投融资",
+      "title": "【投融资】DataBahn完成4000万美元B轮融资，Insight Partners领投",
+      "summary": "核心数据： B轮融资4000万美元（累计融资5900万美元），Insight Partners领投，Forgepoint、GTM Capital、S3 Ventures跟投。公司年收入增长400%+，净收入留存率180%，客户零流失。摘要： 2026年7月30日，企业数据管道创业公司DataBahn宣布完成4000万美元B轮融资。DataBahn定位为\"Agentic Data Control Plane\"（智能体数据控制面），其平台从600+数据源摄取、标准化、治理并路由企业遥测数据，在传输过程中智能降噪和富化，仅向AI模型和分析工具推送所需数据，避免全量复制。客户包括MVB Bank、加拿大养老金投资委员会（CPPIB）等。对数据平台的影响： DataBahn的融资验证了\"Agentic Data Control Plane\"作为数据基础设施新品类的市场共识。传统数据管道（Fivetran/Airbyte）解决的是\"从A搬到B\"的问题，DataBahn解决的是\"AI Agent需要什么数据、在传输过程中实时决策\"的问题——这是数据集成从ETL向智能编排的品类跃迁。Insight Partners（管理资产超900亿美元）的领投表明顶级VC正重注这一方向。",
+      "source": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/databahn-raises-40-million-series-b-led-by-insight-partners-to-accelerate-innovation-across-the-agentic-data-control-plane-302838690.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-07-31",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "【降级】Google Cloud BigQuery新增UI下载审计日志",
+      "summary": "为什么值得继续看： BigQuery新增Data Access审计日志的uiDownloadRequest字段，可区分用户通过UI触发的下载行为。这是数据平台治理能力向细粒度审计延伸的信号，但单条功能更新影响力有限，降级收录。需要等待什么信号确认： 是否有更多数据平台厂商跟进类似的数据访问行为审计能力，形成行业标配。",
+      "source": "Google Cloud BigQuery Release Notes",
+      "url": "https://cloud.google.com/bigquery-ml/docs/release-notes",
+      "conf": ""
     }
   ],
   "archive": [
@@ -5914,7 +5964,8 @@
     "2026-07-27",
     "2026-07-28",
     "2026-07-29",
-    "2026-07-30"
+    "2026-07-30",
+    "2026-07-31"
   ],
   "monthly": [
     {
