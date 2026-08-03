@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-03</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-03 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>开放表格式从功能追赶转入架构引领，v4地基代码已落地</li>
+      <li>云厂商AI基建的天量投入开始转化为收入加速，市场疑虑正在消退</li>
+      <li>国产数据基建从卖硬件升级为定义AI操作系统和数据库Agent</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本周核心信号：Iceberg 1.11以v4架构和表加密拉高开放格式上限，AWS 37%云增速验证AI基建回报，浪潮AI数据OS和阿里DB Agent代表国产厂商从硬件向软件定义层跃进。共同指向：数据平台正从为人而建，转向为Agent而建。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Apache Iceberg 1.11.0 正式发布：v4 架构基石落地，内置表级加密与服务端扫描规划</h3>
+    <div class="source">来源：<a href="https://iceberg.apache.org/blog/apache-iceberg-1.11.0-release">Apache Iceberg 官方博客</a></div>
+    <div class="body"><b>摘要：</b> Apache Iceberg 1.11.0 于 7 月 31 日正式发布，来自 200+ 贡献者的 1,000+ 次提交构成 1.x 系列最大规模更新。同步发布 Iceberg Go 0.6.0、C++ 0.3.0、Rust 0.10.0 三个语言实现。核心变化包括：REST Catalog 首次支持服务端扫描规划（POST /plan），将元数据遍历从查询引擎卸载至 Catalog 层；内置信封加密（AES-GCM + KMS 三层密钥体系）实现表级零信任存储安全；File Format API 正式定型，为 v4 的 Column Families（列族垂直分区）铺路；SQL UDF 规范首次进入 Catalog 层；新增 Spark 4.1 和 Flink 2.1 支持。Breaking changes：Java 11 支持移除（最低 Java 17），Flink 1.19 和 Spark 3.4 支持移除，DataFusion Comet 集成移除。<br><b>为什么对数据平台重要：</b> 这是 Iceberg 项目从"v3 时代的追赶者"转向"v4 时代的定义者"的分水岭版本。三个架构决策尤其值得关注：(1) 服务端扫描规划将计算从引擎侧转移到 Catalog 侧，实质上是将 Iceberg 从"被动元数据端点"升级为"主动查询优化服务"，这改变了湖仓架构中 Catalog 的角色定位；(2) 表级加密填补了数据湖安全最后一块短板——此前对象存储桶级加密无法防御存储层直接访问，Iceberg 的三层密钥体系让开放格式首次具备企业级合规能力；(3) File Format API + TrackedFile 等 v4 基础类型已在代码中落地，配合社区正在推进的自适应元数据树和单文件提交，v4 不再是一份设计文档而是一组已编译的接口。对于采用 Iceberg 的企业，1.11 意味着可以开始规划 v4 迁移路径，但不应立即投入生产——Java 11 移除和 Flink 1.19/Spark 3.4 移除需要升级现有引擎版本。</div>
+</div>
+<div class="item">
+    <h3>AWS Q2 财报：云收入增速创 18 季度新高，全年资本开支上调至 2,200 亿美元</h3>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260731A02YU400">亚马逊 Q2 2026 财报</a></div>
+    <div class="body"><b>摘要：</b> 亚马逊 7 月 31 日盘后发布 Q2 2026 财报，总营收 2,006 亿美元（+20%，超预期），净利润 626 亿美元（+245%）。AWS 云服务收入 422 亿美元，同比增长 36.7%，为 2021 年以来最快增速，超出华尔街 31% 增长预期；年化营收达 1,690 亿美元；运营利润 166 亿美元（+64%），利润率 39.4%。CEO Andy Jassy 将全年资本开支指引从 2,000 亿美元上调至 2,200 亿美元，并明确表示"即使达到这一水平，2026 年仍无法满足全部需求，2027 年同样存在算力缺口，2028 年订单已提前锁定"。自研芯片 Trainium 和 Graviton 年化收入各自突破 250 亿美元。Anthropic 和 OpenAI 已签署多年、多吉瓦规模的 Trainium 使用承诺。<br><b>为什么对数据平台重要：</b> 这是 AI 基础设施投资逻辑从"投入期焦虑"转向"回报验证期"的关键节点。AWS 37% 的增速表明企业 AI 推理和训练负载正在大规模迁移至云平台，而云基础设施消费天然带动数据库、数据仓库、数据湖等上层数据平台服务——Jassy 在电话会中明确指出"AI 推理需求带动 CPU、数据库等基础资源消耗"。对于数据平台采购决策者，AWS 的资本开支信号意味着：(1) 短期算力供给仍然紧张，自建或混合部署的成本优势窗口在收窄；(2) 自研芯片（Trainium/Graviton）正在从差异化功能变成核心成本项，数据平台选型时需要评估对非 x86 架构的兼容性；(3) OpenAI 和 Anthropic 同时押注 Trainium 暗示模型训练基础设施的多供应商格局正在形成，降低了对单一芯片生态的锁定风险。</div>
+</div>
+<div class="item">
+    <h3>浪潮数据发布自研 AI 数据操作系统，战略升级为 AI 基础设施服务商</h3>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7668913534796874282/">证券日报</a></div>
+    <div class="body"><b>摘要：</b> 浪潮数据 8 月 1 日在北京举办"Data Inspire AI"战略发布会，正式宣布从传统云计算和分布式存储服务商升级为 AI 基础设施服务商，并发布完全自研的 AI 数据操作系统。该系统采用"数据底座+算力引擎"双架构设计："玄同"为面向 AI 的高性能全闪融合存储架构，"万象"为智能体运行环境，统一管理算力、算法、数据三位一体资源。发布会同步展示了生物医药（荣联科技）和超大规模互联网（快手）两个真实落地场景，并启动"Data Inspire AI"产业生态计划。浪潮数据董事长张东将行业痛点归纳为持续演进、数据就绪、生态协同、应用落地四大挑战。<br><b>为什么对数据平台重要：</b> 浪潮此举标志着中国传统 IT 基础设施厂商在 AI 时代的一次系统性升维——不再满足于卖存储和服务器，而是以"操作系统"为锚点定义 AI 基础设施的软件控制面。这一定位与 NVIDIA AI Enterprise、Databricks Lakebase 形成不同层面的对位：浪潮从硬件往上走，定义的是"数据如何流入 AI 工作负载"；而 Databricks 从数据平台往下走，定义的是"AI 工作负载如何在数据之上运行"。两条路径的交叉点在于"智能体运行环境"——浪潮的"万象"和 Databricks 的 Lakebase 都在争夺 Agent 的基础设施层。对国内企业而言，浪潮的方案提供了"私有化部署 AI 基础设施"的国产选项，但生态成熟度和第三方 ISV 支持仍是关键不确定性。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Confluent Platform 8.3 发布：Flink 首次内置 MCP Server，流处理平台向 AI Agent 开放编程接口</h3>
+    <div class="source">来源：<a href="https://www.confluent.io/fr-fr/blog/introducing-confluent-platform-8-3/">Confluent 官方博客</a></div>
+    <div class="body"><b>摘要：</b> Confluent Platform 8.3 于 7 月 31 日正式可用（IBM 同步发布），基于 Apache Kafka 4.3.0，配套 Confluent Platform for Apache Flink 2.4.0。核心新增能力包括：(1) Flink MCP Server——提供 16 个只读调试工具和 20 个写入管理工具，让 AI 编码助手（Claude Code、Codex 等）可直接检查和管理 Flink 资源，所有操作受现有 RBAC 约束；(2) Flink SQL 新增 UDF、Artifact Management 和 Custom Catalogs 支持，允许在不离开 SQL 工作流的情况下引入自定义逻辑和外部数据源；(3) Embedded MDS——将 RBAC 和认证从 Kafka 版本解耦，Flink 控制面可独立管理安全策略；(4) Queues for Kafka (KIP-932) GA，为 Kafka 引入原生队列语义。<br><b>对数据平台的影响：</b> Flink MCP Server 是流处理领域首个面向 AI Agent 的标准化管理接口，其意义不限于运维自动化——它标志着流处理平台的控制面开始从"人工 CLI/API"向"Agent 可编程"转型。对于数据平台团队，这意味着流作业的生命周期管理（部署、监控、故障恢复、扩缩容）可以由 AI Agent 在 RBAC 约束下自主执行，降低流处理运维门槛。但企业需要评估：Agent 对生产流作业的写入权限是否已建立充分的变更审批和回滚机制。</div>
+</div>
+<div class="item">
+    <h3>腾讯云 PostgreSQL 推出数据库代理：明确标注"AI Agent 就绪"，连接层进入 Agent 治理时代</h3>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_6386a6c58bd65552">腾讯云数据库 TencentDB</a></div>
+    <div class="body"><b>摘要：</b> 腾讯云数据库 PostgreSQL 于 7 月 31 日正式推出数据库代理（Database Proxy）服务，通过在数据库实例前端构建全托管高可用代理层，实现客户端连接与后端进程的解耦。核心能力包括：连接池复用化解高并发短连接瓶颈，零应用改造成本（标准 PostgreSQL 协议兼容），全托管免运维。值得注意的是，产品文档明确标注"AI Agent 就绪"——可承接 MCP 工具链、Coding Agent 的瞬时连接风暴，确保数据库实例在 Agent 密集调用场景下稳定运行。<br><b>对数据平台的影响：</b> 这是数据库连接中间件首次将"AI Agent 就绪"作为产品定位的核心卖点，反映了数据库消费方的结构性变化：过去连接池主要解决 Web 应用的高并发短连接问题，现在新增了一类消费者——AI Agent——其工作负载呈现"连接突发性强、会话持有时间长"的独特模式。腾讯云的这一动作暗示，数据库代理正在从"Web 时代的连接治理工具"演变为"Agent 时代的连接基础设施"。对于已部署 AI Agent 访问数据库的企业，这意味着需要在数据库连接层引入专门的治理能力，而非简单复用传统的连接池方案。</div>
+</div>
+<div class="item">
+    <h3>阿里云 Databridge Agent 正式转商业化：AI 原生数据库 Agent 首次进入收费阶段</h3>
+    <div class="source">来源：<a href="https://www.chinastarmarket.cn/detail/2416090">科创板日报</a></div>
+    <div class="body"><b>摘要：</b> 阿里云 AI 原生数据库服务 Databridge Agent 于 8 月 1 日起正式结束公测、全面开启商业化计费。该产品深度融合大模型与数据库运维能力，可自动完成数据库异常排查、性能优化、智能运维等操作。此前公测阶段已吸引大量互联网、金融、制造企业客户参与测试。Databridge Agent 是国内首个从免费公测走向商业化收费的 AI 原生数据库运维 Agent。<br><b>对数据平台的影响：</b> Databridge Agent 的收费标志着"AI 替代 DBA"从概念验证进入商业验证阶段。如果客户愿意为 AI 运维 Agent 付费，意味着市场认可了 AI Agent 在数据库管理场景中的可替代价值，这将加速数据库运维从"人驱动"向"Agent 驱动"的转变。但商业化也意味着客户需要衡量 ROI：Agent 订阅费 vs. 减少的 DBA 人力成本。对于数据平台采购方，这是一个值得跟踪的信号——如果 Databridge 的商业化数据（付费客户数、续费率）表现良好，可能触发更多云厂商跟进推出付费 AI 运维 Agent，改变数据库服务的定价结构。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内（7/31-8/3）Gartner、Forrester、IDC 等机构无新发布的数据平台相关研究报告。Forrester Wave: Data Lakehouses Q3 2026（7/29 发布，Cloudera 获 Leader）略早于窗口，将在后续跟踪。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内（7/31-8/3）无独立的数据平台领域投融资、并购或 IPO 事件。此前 7/31 日报已覆盖的 DataBahn $40M B 轮属上一报告窗口。亚马逊 Q2 财报已纳入 A.2。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Databricks Serverless GPU Web Terminal 进入 Public Preview：GPU 开发工作流向 Web 原生体验迁移</h3>
+    <div class="source">来源：<a href="https://learn.microsoft.com/en-us/azure/Databricks/release-notes/product/2026/july">Databricks 2026年7月 Release Notes</a></div>
+    <div class="body"><b>为什么值得继续看：</b> Databricks 于 7 月 31 日将 Web Terminal 功能扩展至 Serverless GPU 计算（AI Runtime），支持通过浏览器直接运行 shell 命令、监控 GPU 使用率（nvidia-smi）、安装库和管理文件。此前 Web Terminal 仅限标准计算，此次扩展至 GPU 环境意味着 AI/ML 工程师可以在 Databricks 内完成从数据准备到 GPU 调试的全流程，无需切换至本地终端或 SSH。同期发布的 OpenAI Connector（Lakeflow Connect Beta）允许将 OpenAI 组织管理数据（用户、项目、API 密钥、用量、审计日志）导入 Databricks，暗示数据平台正在将 AI 服务商的运营数据纳入治理视野。<br><b>需要等待什么信号确认：</b> Web Terminal on GPU 目前为 Public Preview，距离 GA 的时间线未公布。OpenAI Connector 处于 Beta 阶段且需要 Workspace Admin 在 Previews 页面启用。两个功能的生产就绪度和企业安全合规能力（如 Web Terminal 的会话审计、命令白名单）有待 GA 时确认。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-03 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
