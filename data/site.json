@@ -5934,6 +5934,46 @@
       "source": "Databricks 2026年7月 Release Notes",
       "url": "https://learn.microsoft.com/en-us/azure/Databricks/release-notes/product/2026/july",
       "conf": ""
+    },
+    {
+      "date": "2026-08-04",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 完成收购 Panther，安全湖仓（Security Lakehouse）品类正式确立",
+      "summary": "来源： Databricks 官方博客摘要： Databricks 于 8 月 3 日正式宣布完成对 AI SOC 平台 Panther 的收购。Panther 为 Lakewatch（Databricks 的智能体 SIEM）带来 100+ 开箱即用的集成、检测即代码引擎和 AI 代理驱动的实时告警分类能力。收购完成后，安全团队可在统一湖仓上保留 PB 级全量遥测数据，部署自主 AI 代理完成告警分流与初判。为什么对数据平台重要： 这是 Databricks 首次以完整产品形态将湖仓架构延伸到安全运营领域，正式确立\"Security Lakehouse\"品类。数据平台不再只是分析和 AI 的底座——它正在成为企业全数据（安全、IT、业务）的统一基础设施，传统 SIEM 的独立存储层面临被湖仓吸收的架构压力。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/databricks-completes-acquisition-panther-accelerating-security-lakehouse-era",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-04",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks 推出 Spaces 工作区组织功能",
+      "summary": "来源： Databricks August 2026 Release Notes摘要： 8 月 3 日，Databricks 发布 Spaces 功能，允许用户在编辑器中按文件夹或项目组织工作区，每个 Space 独立保留打开的标签页状态，支持跨会话快速恢复工作上下文。对数据平台的影响： 数据平台编辑体验正在向 IDE 化方向演进。Spaces 解决了大型数据工程项目中多任务并行时的上下文切换成本，也暗示 Databricks 在面向开发者体验的产品化投入在加速——这是与 Snowflake 等以 SQL 分析为核心体验的平台差异化竞争的关键维度。",
+      "source": "Databricks August 2026 Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-04",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks SQL 物化视图与流表自动成本归因上线，ABAC 策略豁免放宽",
+      "summary": "来源： Databricks August 2026 Release Notes摘要： 8 月 3 日更新中，Databricks SQL 的物化视图和流表刷新现在自动继承所在 SQL Warehouse 的自定义标签并传播至账单系统，实现按 Warehouse 的成本归因。同时，Pipeline 管理的 MV/ST 刷新不再要求 Pipeline Owner 豁免 ABAC 策略。对数据平台的影响： 成本归因的自动化是数据平台 FinOps 成熟度的关键指标。此前 MV/ST 的刷新成本难以追溯到具体业务部门，自动标签传播解决了多云环境下最棘手的成本分摊问题。ABAC 豁免放宽则降低了治理策略与数据新鲜度之间的互斥——企业不必在安全和数据时效之间二选一。",
+      "source": "Databricks August 2026 Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-04",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【降级】Databricks Genie One/Agents 免费期延长至 2027 年 1 月",
+      "summary": "来源： Databricks August 2026 Release Notes为什么值得继续看： 8 月 3 日，Databricks 宣布将 Genie One 和 Genie Agents 的免费使用期从原定的 7 月 31 日延长至 2027 年 1 月 31 日。Genie Code 继续享有每月 150 DBU 免费额度。这已是该产品线的第二次免费延期，信号明确——Databricks 正在用长期免费策略培育企业 AI coworker 的用户习惯，而非急于变现。需要等待什么信号确认： 2027 年 1 月后的定价策略（是否转为按席位的 SaaS 订阅或按使用量计费）、免费期内大客户的 DAU/WAU 增长数据，以及是否有竞品（Snowflake Cortex Agents、Google BigQuery Conversational Analytics）跟进类似免费策略。",
+      "source": "Databricks August 2026 Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august",
+      "conf": ""
     }
   ],
   "archive": [
@@ -6036,7 +6076,8 @@
     "2026-07-29",
     "2026-07-30",
     "2026-07-31",
-    "2026-08-03"
+    "2026-08-03",
+    "2026-08-04"
   ],
   "monthly": [
     {

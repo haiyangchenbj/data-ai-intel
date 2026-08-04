@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-04</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-04 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台边界从分析向安全运营延伸，湖仓架构成为统一安全数据底座</li>
+      <li>数据平台开发体验加速IDE化，工作区隔离与成本归因成为标配</li>
+      <li>AI办公助手从收费转向长期免费，平台厂商优先抢用户而非急于变现</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Databricks收购Panther标志着数据平台从分析基础设施向企业全数据底座的战略延伸，安全数据不再需要独立SIEM存储层。同期Spaces和成本归因功能表明，开发者体验和FinOps正从附加功能变成平台层标配。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 完成收购 Panther，安全湖仓（Security Lakehouse）品类正式确立</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/databricks-completes-acquisition-panther-accelerating-security-lakehouse-era">Databricks 官方博客</a><br><b>摘要：</b> Databricks 于 8 月 3 日正式宣布完成对 AI SOC 平台 Panther 的收购。Panther 为 Lakewatch（Databricks 的智能体 SIEM）带来 100+ 开箱即用的集成、检测即代码引擎和 AI 代理驱动的实时告警分类能力。收购完成后，安全团队可在统一湖仓上保留 PB 级全量遥测数据，部署自主 AI 代理完成告警分流与初判。<br><b>为什么对数据平台重要：</b> 这是 Databricks 首次以完整产品形态将湖仓架构延伸到安全运营领域，正式确立"Security Lakehouse"品类。数据平台不再只是分析和 AI 的底座——它正在成为企业全数据（安全、IT、业务）的统一基础设施，传统 SIEM 的独立存储层面临被湖仓吸收的架构压力。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 推出 Spaces 工作区组织功能</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august">Databricks August 2026 Release Notes</a><br><b>摘要：</b> 8 月 3 日，Databricks 发布 Spaces 功能，允许用户在编辑器中按文件夹或项目组织工作区，每个 Space 独立保留打开的标签页状态，支持跨会话快速恢复工作上下文。<br><b>对数据平台的影响：</b> 数据平台编辑体验正在向 IDE 化方向演进。Spaces 解决了大型数据工程项目中多任务并行时的上下文切换成本，也暗示 Databricks 在面向开发者体验的产品化投入在加速——这是与 Snowflake 等以 SQL 分析为核心体验的平台差异化竞争的关键维度。</div>
+</div>
+<div class="item">
+    <h3>Databricks SQL 物化视图与流表自动成本归因上线，ABAC 策略豁免放宽</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august">Databricks August 2026 Release Notes</a><br><b>摘要：</b> 8 月 3 日更新中，Databricks SQL 的物化视图和流表刷新现在自动继承所在 SQL Warehouse 的自定义标签并传播至账单系统，实现按 Warehouse 的成本归因。同时，Pipeline 管理的 MV/ST 刷新不再要求 Pipeline Owner 豁免 ABAC 策略。<br><b>对数据平台的影响：</b> 成本归因的自动化是数据平台 FinOps 成熟度的关键指标。此前 MV/ST 的刷新成本难以追溯到具体业务部门，自动标签传播解决了多云环境下最棘手的成本分摊问题。ABAC 豁免放宽则降低了治理策略与数据新鲜度之间的互斥——企业不必在安全和数据时效之间二选一。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息（Panther 收购已在 A 板块）。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Databricks Genie One/Agents 免费期延长至 2027 年 1 月</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august">Databricks August 2026 Release Notes</a><br><b>为什么值得继续看：</b> 8 月 3 日，Databricks 宣布将 Genie One 和 Genie Agents 的免费使用期从原定的 7 月 31 日延长至 2027 年 1 月 31 日。Genie Code 继续享有每月 150 DBU 免费额度。这已是该产品线的第二次免费延期，信号明确——Databricks 正在用长期免费策略培育企业 AI coworker 的用户习惯，而非急于变现。<br><b>需要等待什么信号确认：</b> 2027 年 1 月后的定价策略（是否转为按席位的 SaaS 订阅或按使用量计费）、免费期内大客户的 DAU/WAU 增长数据，以及是否有竞品（Snowflake Cortex Agents、Google BigQuery Conversational Analytics）跟进类似免费策略。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-04 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
