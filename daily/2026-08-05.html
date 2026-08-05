@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-05</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-05 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>AI治理从附加外挂走向数据平台原生能力，不再独立于数据目录</li>
+      <li>数据平台开发者体验从工具集合演进为集成命令中心</li>
+      <li>下游AI企业反向投资数据基础设施，产业链纵向整合加速</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Unity AI Gateway GA标志着AI治理从附加工具进入数据平台原生层，竞争焦点正从数据处理能力转向AI治理与开发者体验。恺望数据融资中具身智能企业的参投，提示AI数据基础设施的产业链纵向整合正在加速。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks Unity AI Gateway 正式GA：数据平台首次将MCP治理纳入Unity Catalog原生层</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august">Databricks Release Notes</a></div>
+    <div class="body"><b>摘要：</b> Databricks于8月4日正式宣布Unity AI Gateway全面可用（GA）。这是首个将AI服务治理原生集成到数据目录中的数据平台产品，企业可通过Unity Catalog统一控制AI服务访问权限、跨供应商路由和管理AI流量、治理MCP服务器以控制访问与成本，并在一处监控使用量、成本、访问和血缘。部分能力（服务策略和Agent服务）仍处Beta阶段。<br><b>为什么对数据平台重要：</b> 这是数据平台厂商首次将AI治理（特别是MCP协议下的Agent工具链治理）作为数据目录的原生功能发布，而非作为独立附加产品。过去半年企业AI治理面临成本失控、供应商锁定、安全真空三重困境，Unity AI Gateway通过将AI流量治理与数据治理整合到同一框架，标志着数据平台从"数据治理"向"数据+AI统一治理"的战略跃迁。Smart Routing（Beta）进一步引入基于质量/成本/性能的多维模型分流，将定价权从模型厂商向平台层转移。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks Full Page Genie Code GA + Lakeflow Connect 多连接器同步扩展</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august">Databricks Release Notes</a></div>
+    <div class="body"><b>摘要：</b> 8月4日，Databricks同日发布多项产品更新：Full Page Genie Code正式GA，将聊天、笔记本/文件标签页、多聊天并行整合为统一命令中心体验，支持通过Skills、Instructions和MCP服务器个性化配置；Lakeflow Connect同步发布SharePoint连接器GA、Google Drive连接器GA和PagerDuty连接器Beta，进一步扩展数据摄入生态。<br><b>对数据平台的影响：</b> Full Page Genie Code GA标志着数据平台的开发者体验从"工具集合"向"集成命令中心"演进——开发者无需在多个界面间切换即可完成编码、查询和AI辅助开发。Lakeflow Connect的连接器扩展则表明Databricks正在系统性地构建企业SaaS数据摄入网络，将数据平台边界向协作工具和运维工具延伸。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】恺望数据完成逾亿元战略融资，多家具身智能企业反向投资</h3>
+    <div class="source">来源：<a href="https://stcn.com/article/detail/4057607.html">证券时报</a></div>
+    <div class="body"><b>核心数据：</b> 逾亿元人民币规模，北京亦庄产业升级基金、华方资本、天际资本联合领投，鹿明机器人、松延动力、自变量机器人、智元旗下觅蜂科技等头部具身智能公司跟投。<br><b>摘要：</b> 8月4日，全链路AI数据基建科技公司恺望数据宣布完成逾亿元新一轮战略融资。本轮融资资金将重点投向一体化数据交易平台研发、世界模型专项技术人才引进，以及商业、工业、家庭三大领域真实场景的规模化数据产能扩建。值得关注的是，跟投方中包含多家头部具身智能企业——这是下游AI应用企业反向投资上游数据基础设施的典型案例。<br><b>对数据平台的影响：</b> 本轮融资的结构特征（"客户变股东"）释放了一个重要信号：AI产业链正在从上下游分离走向纵向整合。具身智能企业对高质量训练数据的依赖极高，投资数据服务商本质上是向上游锁定数据产能。这种模式若扩散，将重塑AI数据基础设施的竞争格局——数据服务商的定位可能从"外包供应商"升维为"AI生态关键基础设施运营商"。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】工信部批准发布具身智能数据集质量行业标准，构建8维评价体系</h3>
+    <div class="source">来源：<a href="https://www.kunming.cn/news/c/2026-08-05/14064112.shtml">昆明信息港</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 工信部日前批准发布《人工智能 基础共性 具身智能数据集质量标准》等8项行业标准（2026年11月1日实施），由中国信通院联合40余家单位起草，涵盖完整性、一致性、多样性、真实性、易用性、实用性、可扩展性和安全性8个评价维度。该标准标志着具身智能数据从"规模导向"转向"质量导向"——2026年百万小时数据产能被视为研发硬门槛，但数据质量标准的缺失一直是跨厂商数据集互通的瓶颈。<br><b>需要等待什么信号确认：</b> 标准11月正式实施后，关注信通院依托具身智能测试实验室开展的数据集评估工作进展，以及主流具身智能企业（智元、鹿明、松延等）是否将标准纳入数据采购和合作的技术要求。若头部企业率先对标，将加速数据服务商的分化——合规能力成为新的竞争壁垒。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-05 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

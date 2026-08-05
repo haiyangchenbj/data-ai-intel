@@ -5974,6 +5974,46 @@
       "source": "Databricks August 2026 Release Notes",
       "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august",
       "conf": ""
+    },
+    {
+      "date": "2026-08-05",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks Unity AI Gateway 正式GA：数据平台首次将MCP治理纳入Unity Catalog原生层",
+      "summary": "摘要： Databricks于8月4日正式宣布Unity AI Gateway全面可用（GA）。这是首个将AI服务治理原生集成到数据目录中的数据平台产品，企业可通过Unity Catalog统一控制AI服务访问权限、跨供应商路由和管理AI流量、治理MCP服务器以控制访问与成本，并在一处监控使用量、成本、访问和血缘。部分能力（服务策略和Agent服务）仍处Beta阶段。为什么对数据平台重要： 这是数据平台厂商首次将AI治理（特别是MCP协议下的Agent工具链治理）作为数据目录的原生功能发布，而非作为独立附加产品。过去半年企业AI治理面临成本失控、供应商锁定、安全真空三重困境，Unity AI Gateway通过将AI流量治理与数据治理整合到同一框架，标志着数据平台从\"数据治理\"向\"数据+AI统一治理\"的战略跃迁。Smart Routing（Beta）进一步引入基于质量/成本/性能的多维模型分流，将定价权从模型厂商向平台层转移。",
+      "source": "Databricks Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-05",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks Full Page Genie Code GA + Lakeflow Connect 多连接器同步扩展",
+      "summary": "摘要： 8月4日，Databricks同日发布多项产品更新：Full Page Genie Code正式GA，将聊天、笔记本/文件标签页、多聊天并行整合为统一命令中心体验，支持通过Skills、Instructions和MCP服务器个性化配置；Lakeflow Connect同步发布SharePoint连接器GA、Google Drive连接器GA和PagerDuty连接器Beta，进一步扩展数据摄入生态。对数据平台的影响： Full Page Genie Code GA标志着数据平台的开发者体验从\"工具集合\"向\"集成命令中心\"演进——开发者无需在多个界面间切换即可完成编码、查询和AI辅助开发。Lakeflow Connect的连接器扩展则表明Databricks正在系统性地构建企业SaaS数据摄入网络，将数据平台边界向协作工具和运维工具延伸。",
+      "source": "Databricks Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-05",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】恺望数据完成逾亿元战略融资，多家具身智能企业反向投资",
+      "summary": "核心数据： 逾亿元人民币规模，北京亦庄产业升级基金、华方资本、天际资本联合领投，鹿明机器人、松延动力、自变量机器人、智元旗下觅蜂科技等头部具身智能公司跟投。摘要： 8月4日，全链路AI数据基建科技公司恺望数据宣布完成逾亿元新一轮战略融资。本轮融资资金将重点投向一体化数据交易平台研发、世界模型专项技术人才引进，以及商业、工业、家庭三大领域真实场景的规模化数据产能扩建。值得关注的是，跟投方中包含多家头部具身智能企业——这是下游AI应用企业反向投资上游数据基础设施的典型案例。对数据平台的影响： 本轮融资的结构特征（\"客户变股东\"）释放了一个重要信号：AI产业链正在从上下游分离走向纵向整合。具身智能企业对高质量训练数据的依赖极高，投资数据服务商本质上是向上游锁定数据产能。这种模式若扩散，将重塑AI数据基础设施的竞争格局——数据服务商的定位可能从\"外包供应商\"升维为\"AI生态关键基础设施运营商\"。",
+      "source": "证券时报",
+      "url": "https://stcn.com/article/detail/4057607.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-05",
+      "vendor": "信通院",
+      "module": "机构",
+      "title": "【跟踪】工信部批准发布具身智能数据集质量行业标准，构建8维评价体系",
+      "summary": "为什么值得继续看： 工信部日前批准发布《人工智能 基础共性 具身智能数据集质量标准》等8项行业标准（2026年11月1日实施），由中国信通院联合40余家单位起草，涵盖完整性、一致性、多样性、真实性、易用性、实用性、可扩展性和安全性8个评价维度。该标准标志着具身智能数据从\"规模导向\"转向\"质量导向\"——2026年百万小时数据产能被视为研发硬门槛，但数据质量标准的缺失一直是跨厂商数据集互通的瓶颈。需要等待什么信号确认： 标准11月正式实施后，关注信通院依托具身智能测试实验室开展的数据集评估工作进展，以及主流具身智能企业（智元、鹿明、松延等）是否将标准纳入数据采购和合作的技术要求。若头部企业率先对标，将加速数据服务商的分化——合规能力成为新的竞争壁垒。",
+      "source": "昆明信息港",
+      "url": "https://www.kunming.cn/news/c/2026-08-05/14064112.shtml",
+      "conf": ""
     }
   ],
   "archive": [
@@ -6077,7 +6117,8 @@
     "2026-07-30",
     "2026-07-31",
     "2026-08-03",
-    "2026-08-04"
+    "2026-08-04",
+    "2026-08-05"
   ],
   "monthly": [
     {
