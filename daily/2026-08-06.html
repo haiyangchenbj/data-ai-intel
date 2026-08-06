@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-06</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-06 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>AI协作层正从收费附加功能变为数据平台标配入口</li>
+      <li>SaaS数据摄取连接器矩阵快速形成，走向即插即用</li>
+      <li>夏季淡季底部，平台基础能力补齐节奏未减</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Databricks Genie免费延长+全页模式GA表明AI协作层正从变现工具转为平台标配入口。Lakeflow Connect连接器密集GA标志数据摄取从定制工程走向即插即用。8月首周连续薄日但平台层能力建设节奏未变。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks Genie Code全页模式正式GA，Genie One/Agents免费延长至2027年1月</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august">Databricks Release Notes (August 2026)</a></div>
+    <div class="body"><b>摘要：</b> 8月3-4日，Databricks同步发布两项Genie产品线更新：Full Page Genie Code正式GA，将AI开发从嵌入式对话窗口升级为全功能命令中心，支持多会话并行、多文件标签页、MCP服务器集成。同期Genie One与Agents免费使用期从7月31日延长至2027年1月31日。<br><b>为什么对数据平台重要：</b> 两项动作共同指向战略转向——Genie正从收费AI附加功能变为平台标配入口。全页模式使AI开发进入IDE级交互，免费延长则表明Databricks将用户规模置于短期变现之上。数据平台控制点正从治理层向AI交互层前移。</div>
+</div>
+<div class="item">
+    <h3>Databricks Lakeflow Connect连接器密集扩展——SharePoint/Google Drive GA + PagerDuty Beta</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august#sharepoint-connector-ga">Databricks Release Notes (August 2026)</a></div>
+    <div class="body"><b>摘要：</b> 8月4日，Lakeflow Connect同日发布三连接器：SharePoint GA（摄取站点文件与结构化数据）、Google Drive GA（文件引入Databricks分析）、PagerDuty Beta（事件与审计数据）。SaaS数据摄取矩阵已覆盖协作、运维、CRM三大场景。<br><b>为什么对数据平台重要：</b> 三连接器同日GA标志着数据摄取从定制ETL工程走向SaaS即插即用。企业数据平台无需为每个SaaS源编写定制连接器，Lakeflow Connect的矩阵化策略推进了数据平台向企业数据中枢的架构演进。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks MV/ST管道刷新不再需ABAC策略豁免</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august#refresh-materialized-views-and-streaming-tables-without-exempting-the-pipeline-owner-from-abac-policies">Databricks Release Notes (August 2026)</a></div>
+    <div class="body"><b>摘要：</b> 8月3日起，物化视图与流表管道刷新机制更新：受ABAC策略限制的表不再需为管道所有者配置豁免即可正常刷新。此前在多租户环境中须将管道owner加入EXCEPT子句，增加了治理复杂度。<br><b>对数据平台的影响：</b> 这项改动解决了数据治理与管道运维的长期摩擦——强治理环境中管道运维不应要求突破治理边界。ABAC与管道解耦使"治理先行"模式在金融、医疗等强合规行业的技术落地更为可行。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级 08-03】Palantir Q2营收增长93%达$19.35亿，股价单日飙升30%</h3>
+    <div class="source">来源：<a href="https://www.kucoin.com/blog/palantir-q2-2026-earnings-crush-expectations-as-ai-sovereignty-narrative-strengthens">Palantir Q2 2026 Earnings</a></div>
+    <div class="body"><b>为什么值得继续看：</b> Palantir Q2营收$19.35亿（+93% YoY），美国商业收入暴增149%至$7.64亿，运营利润率62%。CEO将增长归因于全球"AI主权"需求爆发。8/4股价单日飙升29.5%，空头亏损$30亿。虽为8/3发布略早于窗口，但其验证的AI应用从概念验证进入大规模部署的判断对数据平台采购有传导效应。<br><b>需要等待什么信号确认：</b> 全年指引上调至$81.5亿能否兑现；美国商业积压$62.4亿的交付节奏；AIP平台是否带动更多数据基础设施采购。</div>
+</div>
+<div class="item">
+    <h3>【预告】Databricks 8月自动升级存量表至catalog commits + deletion vectors</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/whats-coming">Databricks "What's Coming" (August 2026)</a></div>
+    <div class="body"><b>为什么值得继续看：</b> Databricks计划8月起将catalog commits和deletion vectors通过自动升级推广至存量表。继7月覆盖row tracking和Checkpoint V2后，此次扩展至更底层表格式特性，意味着Delta Lake/Iceberg兼容表写入行为将发生全局变化，多引擎混合环境需关注兼容性。<br><b>需要等待什么信号确认：</b> 自动升级生效日期；第三方引擎（Trino/Flink/StarRocks）兼容性测试结果；升级过程中是否有破坏性变更报告。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-06 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

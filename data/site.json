@@ -6014,6 +6014,56 @@
       "source": "昆明信息港",
       "url": "https://www.kunming.cn/news/c/2026-08-05/14064112.shtml",
       "conf": ""
+    },
+    {
+      "date": "2026-08-06",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks Genie Code全页模式正式GA，Genie One/Agents免费延长至2027年1月",
+      "summary": "摘要： 8月3-4日，Databricks同步发布两项Genie产品线更新：Full Page Genie Code正式GA，将AI开发从嵌入式对话窗口升级为全功能命令中心，支持多会话并行、多文件标签页、MCP服务器集成。同期Genie One与Agents免费使用期从7月31日延长至2027年1月31日。为什么对数据平台重要： 两项动作共同指向战略转向——Genie正从收费AI附加功能变为平台标配入口。全页模式使AI开发进入IDE级交互，免费延长则表明Databricks将用户规模置于短期变现之上。数据平台控制点正从治理层向AI交互层前移。",
+      "source": "Databricks Release Notes (August 2026)",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-06",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks Lakeflow Connect连接器密集扩展——SharePoint/Google Drive GA + PagerDuty Beta",
+      "summary": "摘要： 8月4日，Lakeflow Connect同日发布三连接器：SharePoint GA（摄取站点文件与结构化数据）、Google Drive GA（文件引入Databricks分析）、PagerDuty Beta（事件与审计数据）。SaaS数据摄取矩阵已覆盖协作、运维、CRM三大场景。为什么对数据平台重要： 三连接器同日GA标志着数据摄取从定制ETL工程走向SaaS即插即用。企业数据平台无需为每个SaaS源编写定制连接器，Lakeflow Connect的矩阵化策略推进了数据平台向企业数据中枢的架构演进。",
+      "source": "Databricks Release Notes (August 2026)",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#sharepoint-connector-ga",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-06",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks MV/ST管道刷新不再需ABAC策略豁免",
+      "summary": "摘要： 8月3日起，物化视图与流表管道刷新机制更新：受ABAC策略限制的表不再需为管道所有者配置豁免即可正常刷新。此前在多租户环境中须将管道owner加入EXCEPT子句，增加了治理复杂度。对数据平台的影响： 这项改动解决了数据治理与管道运维的长期摩擦——强治理环境中管道运维不应要求突破治理边界。ABAC与管道解耦使\"治理先行\"模式在金融、医疗等强合规行业的技术落地更为可行。",
+      "source": "Databricks Release Notes (August 2026)",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#refresh-materialized-views-and-streaming-tables-without-exempting-the-pipeline-owner-from-abac-policies",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-06",
+      "vendor": "Palantir",
+      "module": "投融资",
+      "title": "【降级 08-03】Palantir Q2营收增长93%达$19.35亿，股价单日飙升30%",
+      "summary": "为什么值得继续看： Palantir Q2营收$19.35亿（+93% YoY），美国商业收入暴增149%至$7.64亿，运营利润率62%。CEO将增长归因于全球\"AI主权\"需求爆发。8/4股价单日飙升29.5%，空头亏损$30亿。虽为8/3发布略早于窗口，但其验证的AI应用从概念验证进入大规模部署的判断对数据平台采购有传导效应。需要等待什么信号确认： 全年指引上调至$81.5亿能否兑现；美国商业积压$62.4亿的交付节奏；AIP平台是否带动更多数据基础设施采购。",
+      "source": "Palantir Q2 2026 Earnings",
+      "url": "https://www.kucoin.com/blog/palantir-q2-2026-earnings-crush-expectations-as-ai-sovereignty-narrative-strengthens",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-06",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【预告】Databricks 8月自动升级存量表至catalog commits + deletion vectors",
+      "summary": "为什么值得继续看： Databricks计划8月起将catalog commits和deletion vectors通过自动升级推广至存量表。继7月覆盖row tracking和Checkpoint V2后，此次扩展至更底层表格式特性，意味着Delta Lake/Iceberg兼容表写入行为将发生全局变化，多引擎混合环境需关注兼容性。需要等待什么信号确认： 自动升级生效日期；第三方引擎（Trino/Flink/StarRocks）兼容性测试结果；升级过程中是否有破坏性变更报告。",
+      "source": "Databricks \"What's Coming\" (August 2026)",
+      "url": "https://docs.databricks.com/aws/en/release-notes/whats-coming",
+      "conf": ""
     }
   ],
   "archive": [
@@ -6118,7 +6168,8 @@
     "2026-07-31",
     "2026-08-03",
     "2026-08-04",
-    "2026-08-05"
+    "2026-08-05",
+    "2026-08-06"
   ],
   "monthly": [
     {
