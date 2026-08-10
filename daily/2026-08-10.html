@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-10</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-10 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库正从事务与分析分离走向单引擎原生HTAP融合</li>
+      <li>存储基础设施厂商通过并购加速向上整合云原生数据服务层</li>
+      <li>AI训练数据供应链开始从分散标注走向质量标准化治理</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据库HTAP正从两套系统走向单引擎融合（阿里云RDS+DuckDB）；存储巨头通过并购向上整合K8s数据服务（Pure+Portworx $370M）；AI数据供应链出现标准化质量门槛与资本化产业联动双轨推进。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云RDS深度集成DuckDB：HTAP自动行列分流打破OLTP/OLAP边界</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://developer.aliyun.com/article/1754417">阿里云开发者社区</a><br><b>摘要：</b> 阿里云RDS MySQL新版推出HTAP自动行列分流能力，首次将DuckDB列存储引擎作为内置分析只读实例深度集成。数据库代理实时解析SQL并自动路由——简单查询和事务操作路由至InnoDB主实例，复杂聚合和大表扫描路由至DuckDB列存实例，全程对应用透明。同时支持MySQL 8.4 LTS并集成AliSQL增强（秒级列修改、大事务优化、并行DDL），RDS PostgreSQL 18对pgvector向量查询性能提升80%。整套方案无需独立数据仓库、无需ETL同步，一套数据库覆盖OLTP+OLAP。<br><b>为什么对数据平台重要：</b> 阿里云选择DuckDB而非自研列存引擎完成HTAP方案，信号明确——嵌入式分析数据库正从开发工具进入企业数据库架构核心。自动SQL路由（而非手动HINT或双写）是HTAP产品化的关键一步：它让分析能力成为数据库的透明能力而非额外负担。这一架构方向（InnoDB+DuckDB双引擎+代理路由）与Snowflake的Unistore和Google AlloyDB的行列混合方案形成差异化对位，也为"一套数据库替代数据仓库"提供了新的工程路径。</div>
+</div>
+<div class="item">
+    <h3>Pure Storage以$370M收购Portworx：存储巨头向上整合K8s数据服务层</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.kotoo.com/k67314">BusinessWire</a><br><b>摘要：</b> Pure Storage宣布以3.7亿美元收购Kubernetes数据服务平台Portworx，这是Pure Storage有史以来最大一笔收购。Portworx是全球2000+企业采用的K8s数据服务平台，为混合云容器环境提供持久存储、高可用、数据保护、安全和跨云迁移能力。收购完成后，Pure Storage将把Portworx的容器数据服务与其数据平台和Pure Service Orchestrator整合，提供覆盖传统应用与云原生应用的统一数据服务。<br><b>为什么对数据平台重要：</b> 存储基础设施厂商向上整合数据服务层的趋势在加速——此前NetApp收购DataPelago（GPU异构加速）、如今Pure收购Portworx（K8s数据服务）。传统存储厂商的收购逻辑从"卖更多硬件"转向"卖数据服务平台"，背后是K8s成为企业默认运行环境后，数据服务的控制点从阵列层上移到编排层。Portworx的K8s数据服务能力让Pure获得了容器化数据基础设施的入口，这也是存储厂商在AI时代保持数据平台话语权的关键落子。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>信通院：首个具身智能数据集质量标准正式发布，填补行业空白</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.toutiao.com/article/7671209990762152454">中国信通院</a><br><b>摘要：</b> 工信部批准发布《人工智能 关键基础技术 具身智能数据集质量要求及评估方法》（YD/T 6771-2026），由中国信通院联合40余家单位起草，将于2026年11月1日实施。标准规定了具身智能数据集质量的八大评价维度（完整性、一致性、多样性、真实性、易用性、实用性、可扩展性、安全性），覆盖数据生产操作规范和组织机制保障，针对性解决当前具身智能数据"量少质低"的结构性矛盾。<br><b>映射到数据平台的判断：</b> 这是AI数据质量标准化从通用AI向垂直领域（具身智能）延伸的标志性事件。标准从"规模导向"转向"质量导向"，意味着AI训练数据的供给正在从粗放采集进入工程化治理阶段。对数据平台而言，数据集质量标准的出台将推动数据标注、清洗、版本管理、质量评估等工具链的产品化需求——这些恰好是数据平台向AI上游延伸的切入点。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】恺望数据完成逾亿元战略融资：具身智能企业反向投资数据基建</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.shangdaovc.cn/h-nd-14438.html">商道创投网</a><br><b>摘要：</b> AI全链路数据基建企业恺望数据完成逾亿元新一轮战略融资，由北京亦庄产业升级基金、华方资本、天际资本联合领投，跟投方包括鹿明机器人、松延动力、自变量机器人、觅蜂科技等具身智能企业。恺望数据覆盖数据定义、实地采集、标注加工、数据流通的完整业务闭环，本轮资金将用于一体化数据交易平台研发和世界模型方向高端人才引进。<br><b>核心数据：</b> 逾亿元人民币，战略融资轮，产业资本+具身智能企业联合投资<br><b>对数据平台的影响：</b> 具身智能企业作为投资方参与数据基建公司的融资轮，揭示了一个值得关注的产业链信号——AI数据供应链的下游客户正在向上游进行战略性投资以锁定高质量数据产能。这与云计算时代SaaS公司投资底层IaaS的逻辑相似，但方向更激进：数据消费者直接投资数据生产者。数据平台在AI时代的战略位置正在从"成本中心"向"竞争性资源"转变。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】腾讯云×Elastic AI搜索技术大会8月21日深圳，ES企业版将重磅发布</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.tencent.com/developer/article/2722478">腾讯云开发者社区</a><br><b>为什么值得继续看：</b> 腾讯云联合Elastic举办的AI搜索技术大会定档8月21日深圳滨海大厦，腾讯云ES企业版将迎来重磅发布，Elastic AI副总裁肖涵领衔，蔚来、腾讯ima等标杆企业分享落地经验。议程覆盖向量搜索、混合检索、RAG和智能体构建。这是腾讯云ES在AI搜索方向的一次重要产品升级节点。<br><b>需要等待什么信号确认：</b> ES企业版的具体功能定位——是传统搜索的企业级增强还是面向Agent场景的AI搜索重新架构；Elastic在中国市场的合作深度与产品方向是否因本次联合发布而进一步绑定。</div>
+</div>
+<div class="item">
+    <h3>【预告】阿里云Agentic DB Day 8月15日杭州：数据库向Agentic形态演进</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://developer.aliyun.com/article/1754024">阿里云开发者社区</a><br><b>为什么值得继续看：</b> 阿里云数据库联合NVIDIA举办的Agentic DB Day杭州站，聚焦数据库向智能体（Agentic）形态演进，现场设议题分享、产品体验区和1v1技术交流。这是阿里云数据库在AI时代的战略方向展示——将Agent能力原生嵌入数据库，而非通过外部工具连接。<br><b>需要等待什么信号确认：</b> 阿里云提出的"Agentic DB"具体产品形态——是RDS/PolarDB的AI功能增强还是全新产品线；NVIDIA的参与方式——是GPU加速数据库推理还是联合定义Agentic数据库参考架构。</div>
+</div>
+<div class="item">
+    <h3>【降级】PyIceberg 0.12.0 RC1投票：View支持与空间数据类型进入Python生态</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.mail-archive.com/dev@iceberg.apache.org/msg14605.html">Apache Iceberg Dev Mailing List</a><br><b>为什么值得继续看：</b> PyIceberg 0.12.0 RC1于8月5日发起投票（投票起点略早于窗口），新增View支持使Python客户端可管理Iceberg视图，引入Geometry和Geography空间数据类型，以及Python 3.14支持。View支持补齐了Iceberg REST Catalog在Python侧的完整性缺口，空间数据类型则拓展了湖仓在GIS场景的边界。<br><b>需要等待什么信号确认：</b> 投票是否通过并正式发布；View支持和空间类型在实际AI/ML工作流中的采纳速度。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-10 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
