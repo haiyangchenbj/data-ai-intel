@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-11</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-11 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>AI推理支出首次超越训练，云基础设施消费结构发生根本性转移</li>
+      <li>传统数仓厂商以Iceberg开放目录正式切入湖仓治理</li>
+      <li>多租户数据分析基础设施从"按密钥隔离"走向"共享计算池"</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Gartner预测AI优化IaaS支出2026年达$420亿（+96%），推理首次超越训练。消费结构转移意味着数据平台架构重心需从训练吞吐转向推理时的上下文供给效率，当天IBM以Iceberg开放目录切入湖仓治理形成独立确认。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Gartner预测AI优化IaaS支出2026年增长96%达$420亿，推理支出首次超越训练</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://gcom.pdo.aws.gartner.com/en/newsroom/press-releases/2026-08-10-gartner-forecasts-worldwide-artificial-intelligence-optimized-iaas-spending-to-grow-96-percent-in-2026">Gartner Press Release</a><br><b>摘要：</b> Gartner 2026年8月发布的最新预测显示，全球AI优化IaaS支出2026年将增长96%至$420亿，2027年进一步增至$661亿（+56.5%）。2026年推理支出（$233亿）首次超过训练支出（$190亿），推理在AI优化IaaS中占比达55%，2027年预计升至59%。<br><b>为什么对数据平台重要：</b> 推理成为AI基础设施主消费模式，标志市场从"模型开发期"进入"生产部署期"。对数据平台而言，架构重心从训练数据管道转向推理上下文供给——存储格式读取性能、向量检索延迟、Agent记忆持久化、跨模型数据路由成为比训练吞吐量更关键的竞争维度。</div>
+</div>
+<div class="item">
+    <h3>IBM Netezza Nexus正式进入开放湖仓目录领域，以Apache Iceberg标准构建多引擎治理层</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.ibm.com/new/announcements/announcing-ibm-netezza-nexus-an-open-lakehouse-catalog-for-apache-iceberg">IBM News</a><br><b>摘要：</b> IBM宣布Netezza Nexus进入Private Tech Preview，是基于Apache Iceberg的开放湖仓目录产品。支持零拷贝多引擎访问、联邦外部目录、OIDC身份认证，内嵌于Netezza引擎。IBM以开放标准治理层而非封闭格式切入湖仓生态。<br><b>为什么对数据平台重要：</b> IBM作为传统企业数仓巨头，选择Apache Iceberg而非自研格式构建湖仓目录，是开放表格式在企业级市场获得主流采纳的关键信号。Netezza Nexus直接与Databricks Unity Catalog、Snowflake Horizon形成竞争，但以"数据库内嵌"和"联邦外部目录"做差异化。这标志湖仓治理从平台绑定走向开放互操作。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>AWS OpenSearch Serverless集合组上限从1,500提升至10,000</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-opensearch-serverless-supports-10000-collections-per-collection-group/">AWS What's New</a><br><b>摘要：</b> 下一代Amazon OpenSearch Serverless将单集合组可容纳集合数从1,500提升至10,000，不同KMS密钥加密的集合可共享同一OCU计算池。<br><b>对数据平台的影响：</b> 大幅降低多租户SaaS场景下的per-tenant搜索分析成本。此前每1,500个集合需拆分独立集合组并各自分配OCU，10,000上限使超大规模多租户部署的运维和成本模型发生实质性简化。搜索与分析基础设施从"隔离部署"向"共享计算池"持续演进。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】AWS DynamoDB Vector Search GA（8月5日），云数据库内嵌AI能力对独立向量DB市场的结构性影响待观察</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-dynamodb-vector-search/">AWS What's New</a><br><b>为什么值得继续看：</b> DynamoDB作为AWS主力NoSQL数据库内嵌向量检索（单毫秒延迟、99%+召回率），消除了为Agent记忆检索单独部署独立向量DB的需求。云厂商将AI基础设施能力吸收为数据库内置功能的趋势正在加速。<br><b>需要等待什么信号确认：</b> 企业对DynamoDB Vector Search的pipeline迁移规模；独立向量数据库厂商（Pinecone、Weaviate等）的客户留存率变化；类似模式是否扩展到Bigtable、Cosmos DB等其他云数据库。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-11 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
