@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-12</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-12 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库架构从集中实例拆解为每Agent独立沙箱+实时同步</li>
+      <li>实时流存储从湖仓附件升级为Agentic Lake标准架构层</li>
+      <li>AI安全治理从企业实践走向行业标准化，八大维度确立</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>Databricks收购Electric与Apache Fluss TLP毕业同日，指向数据平台架构的结构性拆解——数据库从集中实例分裂为每Agent沙箱+实时同步，流存储成为湖仓标准层。基础设施正为Agent成为主要数据消费者重新设计。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks宣布Electric加入，将WASM Postgres（PGlite）带入每个AI Agent沙箱</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/electric-joins-databricks-bring-wasm-postgres-ai-agent-sandboxes">Databricks Blog</a><br><b>摘要：</b> Databricks于8月11日宣布Electric团队加入，将其WASM版Postgres项目PGlite（周下载量从1M增至13M）和实时同步引擎整合进Lakebase生态。PGlite将完整Postgres编译为WebAssembly（<3MB），使每个Agent在沙箱内运行本地Postgres实例，Electric同步引擎则持续将分布式Agent状态同步回中心化Lakebase。此前Databricks已在2025年以约$10亿收购serverless Postgres公司Neon。<br><b>为什么对数据平台重要：</b> 这是Agent时代数据库架构的范式转移。传统应用"一库服务万人"的模型被颠覆：Agent在运行时动态决定数据需求、需要在同一进程中以微秒级延迟访问、并行工作时需要共享最新视图。单个托管Postgres实例无法服务成百上千并发Agent。Databricks的方案将数据库拆解为边缘轻量实例+中心湖仓的双层架构——Lakebase做持久化治理，PGlite做本地上下文，同步层保证一致性。这为"Agent-Native Database"建立了首个端到端参考架构。</div>
+</div>
+<div class="item">
+    <h3>Apache Fluss正式毕业成为Apache顶级项目，湖仓原生实时流存储获得社区最高认可</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.dostor.com/p/100800.html">Dostor</a><br><b>摘要：</b> Apache软件基金会8月11日宣布，由阿里云捐赠的流式存储项目Apache Fluss从孵化器毕业，以全票通过成为顶级项目（TLP）。Fluss在数据湖之上构建湖仓原生实时流存储层，提供秒级更新上下文，定位为Agentic Lake的流存储底座。项目已汇聚157位贡献者、GitHub 2000+ Stars、1700+ PR，在生产环境落地阿里、小红书、爱奇艺、蚂蚁等企业。<br><b>为什么对数据平台重要：</b> Fluss的TLP毕业是湖仓架构演进的关键里程碑——流存储在湖仓中的角色从"可选附加"升级为"标准架构层"。Fluss引入的Lakestream（湖流一体）架构，将实时数据流与湖存储统一，使Agent能够从同一系统中获取历史数据与秒级新鲜上下文。阿里云以Fluss + Paimon + StarRocks构建的Agentic Lake方案，代表了中国厂商在开源数据基础设施领域的战略纵深——不只在单点上竞争，而是在Agent时代的完整数据栈上建立标准。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>ClickHouse pg_clickhouse v0.10发布，TPC-H Q17查询加速884倍</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://clickhouse.com/blog/pg_clickhouse-whats-new-july-2026">ClickHouse Blog</a><br><b>摘要：</b> ClickHouse于8月11日发布PostgreSQL扩展pg_clickhouse v0.10.0，实现子查询完全下推至ClickHouse执行。TPC-H Q17从32.7秒降至37毫秒（884x），Q2从3.4秒降至24毫秒（143x）。TPC-H 22条查询中16条实现完全下推。新增C语言客户端驱动，聚合与函数支持面翻倍，对IN/NOT IN的三值逻辑兼容性做了形式化保证。<br><b>对数据平台的影响：</b> pg_clickhouse实现了"在PostgreSQL接口下使用ClickHouse分析引擎"的零迁移方案——应用层不改SQL，分析查询自动路由至列存引擎。Q17的884x加速表明，当分析子查询能被正确下推时，行存到列存的性能鸿沟可达三个数量级。这对正从PostgreSQL向分析型数据库迁移的团队具有直接的工程参考价值。</div>
+</div>
+<div class="item">
+    <h3>DeltaStream登陆Google Cloud，以持续预计算上下文替代Agent运行时数据管线</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.deltastream.io/blogs/deltastream-is-now-available-on-googlecloud-fresh-context-for-ai-agents-nowon-gcp">DeltaStream Blog</a><br><b>摘要：</b> DeltaStream于8月11日宣布正式支持Google Cloud Platform，将其实时流处理平台扩展到GCP。DeltaStream的核心主张是"Fresh Context for AI Agents"——通过持续处理流式与操作数据，为Agent预构建可即时消费的上下文，避免Agent在每次推理时重复执行Join、聚合和窗口计算等数据工程操作。同步发布的DeltaStream Fusion支持在同一基础设施上同时服务于Agent上下文和实时应用。<br><b>对数据平台的影响：</b> DeltaStream的模式代表了一种正在成型的数据平台新范式：Agent的数据需求从"查询时计算"转向"持续预处理"。这与Databricks+Electric的"本地Postgres+同步"形成互补路径——两者都承认Agent不应在推理时重复执行数据工程，区别在于DeltaStream做集中式流预处理，Databricks做分布式边缘同步。两条路径的共同方向是明确的：Agent时代的数据平台需要把"上下文就绪"作为一级设计目标。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>信通院发布AI安全治理行业标准解读，确立八大维度风险管理框架</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.163.com/dy/article/L42OSOEL0519DDQ2.html">第一财经</a><br><b>摘要：</b> 信通院8月11日就《人工智能 安全治理 系统风险管理能力要求》（YD/T 7173-2026）发布解读。标准7月获工信部批准、11月1日起实施，由信通院联合22家机构共同编制。标准确立八大维度（可靠性、可控性、安全性、公平性、透明性、可解释性、隐私保护性、可问责性），要求AI系统进行"严重、高、中、低"四级风险评估，并提供风险识别清单与应对报告模板，引导企业从"事后补救"转向"前置主动防控"。<br><b>映射到数据平台的判断：</b> AI安全治理标准从行业共识走向有约束力的行业标准，对数据平台的影响直接体现在治理维度。数据平台作为AI系统的数据供给层，需要在其数据血缘、访问控制、模型训练数据溯源等环节内置对八大维度的合规能力。此前数据平台的治理集中在数据质量与权限，现在需要扩展至AI系统全生命周期的风险可追溯性。</div>
+</div>
+<div class="item">
+    <h3>IDC报告：企业活跃智能体2026年将达500万，企业级AI平台从应用孤岛走向统一底座</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://item.btime.com/47sfpabo4fq8l5bai9d48ldbdp8">IDC via 北京时间</a><br><b>摘要：</b> IDC发布《新型企业级AI平台正在兴起，2026》报告，预测中国企业活跃智能体数量将从2025年的近200万跃升至2026年的500万。IDC总结四大趋势：建设主体从IT主导走向业务自助构建、应用深度从单点问答走向嵌入核心业务流、数据支撑从服务分析师走向服务海量智能体、架构形态从应用孤岛走向统一AI底座。<br><b>映射到数据平台的判断：</b> 智能体从200万到500万的规模跃迁，最直接的冲击在数据基础设施层——500万个活跃智能体意味着数据消费主体从人变为Agent，数据访问模式从可预测查询变为运行时动态决策。IDC提出的"统一AI底座"概念，本质上要求数据平台具备多模态数据管理、向量与全文检索、Agent上下文供给、治理与成本归因等复合能力，单一OLAP或单一向量数据库均无法独立承载。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】元点科技（SCALEFORCE）完成数千万元融资，构建筑具身智能数据基础设施</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_6136a7b312763552">钛媒体</a><br><b>摘要：</b> 具身智能数据基础设施公司元点科技于8月11日宣布完成数千万元人民币融资，投资方包括中国具身智能产业方、恒旭资本和凯联资本。公司成立不到三个月即进入运营期，其物理AI操作系统MatrixOS可纳管全球数十万级数采节点，自动化程度超95%，已成为华为昇腾计算生态企业。灯塔客户它石智航千万级数据订单已全面启动。<br><b>核心数据：</b> 数千万元人民币（具体金额未披露）；成立不足三个月即获产业资本投资<br><b>对数据平台的影响：</b> 具身智能企业对数据基础设施的投入正在反向定义数据平台的新需求——物理世界的数据采集、标注、仿真训练需要与结构化业务数据完全不同的数据栈。元点科技的MatrixOS代表的"物理AI数据操作系统"品类，映射到数据平台就是多模态数据管理、仿真数据版本控制、传感器数据流处理等新工作负载。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】科杰科技将在2026数博会首发Keen Agentic OS智能体开发操作系统</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_9636a7ad7a883052">腾讯新闻</a><br><b>为什么值得继续看：</b> 科杰科技宣布将在8月28日贵阳数博会首发Keen Agentic OS，集成训推一体、KeenClaw（数据底座与智能执行耦合）、KeenRouter（Token计费运营）三大能力，同步展出升级后的KeenData Lakehouse多模态湖仓平台。作为国内AI数据基础设施厂商，其"Agent操作系统+湖仓平台"的产品组合直接对标Databricks Lakebase+Agent生态。<br><b>需要等待什么信号确认：</b> 数博会（8/28）发布的产品细节与GA时间线；Keen Agentic OS的Token计费模式是否具有实质差异化；与Databricks Lakebase生态的定位差异。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-12 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
