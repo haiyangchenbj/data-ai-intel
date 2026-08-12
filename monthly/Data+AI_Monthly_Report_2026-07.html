@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI Monthly Report | 2026年7月</title>
+<style>
+  :root {
+    --primary: #7c3aed;
+    --primary-dark: #5b21b6;
+    --primary-light: #ede9fe;
+    --accent: #dc2626;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #1e1b4b;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --green: #059669;
+    --orange: #d97706;
+    --teal: #0891b2;
+    --blue: #2563eb;
+    --rose: #e11d48;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+    color: white;
+    padding: 40px 48px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.3);
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+  .header .period { font-size: 16px; opacity: 0.9; }
+  .header .subtitle { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+
+  /* Verdict Box */
+  .verdict-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--primary);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .verdict-box h2 { font-size: 18px; color: var(--primary); margin-bottom: 16px; }
+  .verdict-box .verdict-text { font-size: 15px; line-height: 1.8; }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    white-space: nowrap;
+  }
+  .badge-verdict { background: var(--primary); }
+  .badge-timeline { background: var(--accent); }
+  .badge-trend { background: var(--blue); }
+  .badge-product { background: var(--teal); }
+  .badge-capital { background: var(--green); }
+  .badge-watchlist { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Timeline */
+  .timeline-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .timeline-table th {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .timeline-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .timeline-table tr:last-child td { border-bottom: none; }
+  .timeline-date { color: var(--text-secondary); white-space: nowrap; font-size: 13px; }
+
+  /* Trend Block */
+  .trend-block {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .trend-block:last-child { border-bottom: none; }
+  .trend-block h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .trend-block .body { font-size: 14px; line-height: 1.85; color: #374151; }
+  .trend-block .body p { margin: 0 0 12px 0; }
+  .trend-block .body p:last-child { margin-bottom: 0; }
+  .trend-block .evidence-box {
+    background: #faf5ff;
+    border-left: 3px solid var(--primary);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #4c1d95;
+    line-height: 1.75;
+  }
+  .trend-block .evidence-box strong { color: var(--primary-dark); }
+  .trend-block .so-what {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 14px;
+    font-size: 13.5px;
+    color: var(--primary-dark);
+    font-weight: 500;
+    line-height: 1.75;
+  }
+
+  /* Verdict paragraphs */
+  .verdict-text p { margin: 0 0 12px 0; }
+  .verdict-text p:last-child { margin-bottom: 0; }
+
+  /* Product Table */
+  .product-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .product-table th {
+    background: #ecfdf5;
+    color: #065f46;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .product-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .product-table tr:last-child td { border-bottom: none; }
+  .impact-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .impact-high { background: #fef2f2; color: #991b1b; }
+  .impact-mid { background: #fffbeb; color: #92400e; }
+  .impact-low { background: #f0fdf4; color: #166534; }
+
+  /* Item */
+  .item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+  .item:last-child { border-bottom: none; }
+  .item h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #374151; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 28px; }
+    .header h1 { font-size: 22px; }
+    .section, .verdict-box { padding: 20px; }
+    .timeline-table, .product-table { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <h1>📊 Data+AI Monthly Report</h1>
+    <div class="period">2026年7月</div>
+    <div class="subtitle">2026-07-01 至 2026-07-31</div>
+  </div>
+
+  <!-- Content will be generated dynamically -->
+  <div class='verdict-box'><h2>📌 月度总判断</h2><div class='verdict-text'><p>7 月核心叙事：<strong>Agent 治理从数据平台内部延伸至跨平台互操作层</strong>，MCP 2026-07-28 规范和 Snowflake/Databricks 双网关将 Agent 可审计治理推向生产级。中国数据政策密集落地——产权登记、"词元交易"、APEC 框架三线并进，数据要素从确权走向定价。资本端 Airtable 折价 89% 出售、Databricks 估值半年飙升 $540 亿，独立数据平台的估值逻辑正在被重写。</p></div></div><div class='section'>
+  <div class='section-header'><span class='badge badge-timeline'>时间线</span><h2>关键事件时间线</h2></div>
+  <table class="timeline-table"><thead><tr><th>日期</th><th>事件</th><th>一句话定位</th></tr></thead><tbody><tr><td>07-01</td><td>Snowflake Dynamic Iceberg Table Replication 正式 GA</td><td>开放格式表跨区域灾备能力成熟，补齐企业级运维缺口</td></tr><tr><td>07-02</td><td>施耐德电气 $31 亿全现金收购工业 AI 数据平台 Cognite</td><td>产业巨头以约 26.5x ARR 溢价收购数据平台，工业数据情境化赛道进入平台整合期</td></tr><tr><td>07-02</td><td>Google BigQuery 对话式分析正式 GA</td><td>NL-to-SQL 成为云数据仓库标配，推理链展示+权限继承降低企业采纳门槛</td></tr><tr><td>07-03</td><td>Together AI $8 亿 C 轮融资（估值 $83 亿）</td><td>AI 算力租赁年预订额突破 $11.5 亿，新云模式分流传统云厂商 AI 推理收入</td></tr><tr><td>07-06</td><td>国家数据局印发《数据产权登记工作指引（试行）》</td><td>数据"三权分置"登记框架全国落地，登记凭证可作为资产入表、融资担保</td></tr><tr><td>07-06</td><td>SAP 完成 Dremio 收购，Apache Iceberg 原生湖仓并入 SAP Business Data Cloud</td><td>企业应用巨头正式将开放湖仓作为 AI 数据就绪层</td></tr><tr><td>07-07</td><td>Databricks Unity AI Gateway 成本治理正式 GA + Genie 全线切换按量付费</td><td>Agent 治理从安全访问延伸至运行时成本控制，数据平台 AI 能力独立商业化</td></tr><tr><td>07-09</td><td>四部门联合印发"人工智能+人社"实施意见（67 个 AI 场景）</td><td>国家数据局成立以来首个跨部委 AI 垂直场景落地方案</td></tr><tr><td>07-09</td><td>Databricks Genie Spaces 更名 Genie Agents</td><td>数据平台 AI 能力品牌独立，从附加功能升级为产品线</td></tr><tr><td>07-10</td><td>信通院发布《数据库发展研究报告（2026 年）》</td><td>中国数据库市场 $94.9 亿（全球 7.2%），2028 年预计 ¥979.74 亿，公有云占比 65.3% 持续扩大</td></tr><tr><td>07-10</td><td>腾讯云 Agent Bucket 正式发布</td><td>为亿级 Agent 提供独立云空间，引入 Space 单元实现系统级隔离</td></tr><tr><td>07-13</td><td>阿里云 PolarDB 发布 AI 数据湖库 Lakebase + 李飞飞提出"AI 就绪数据库"四大支柱</td><td>"数据库一半用户是 Agent、主要输出变为 Token"——国产数据库领导厂商首次明确 AI 原生定位</td></tr><tr><td>07-16</td><td>Cloudera 与 VAST Data 共建 AI 数据平台</td><td>基于 NVIDIA AI Data Platform 参考设计，消除 GPU 饥饿；联合管理 60EB+ 数据</td></tr><tr><td>07-16</td><td>PostgreSQL 19 Beta 2 发布（特性冻结）</td><td>SQL/PGQ 图查询、Temporal 表等企业级特性就绪</td></tr><tr><td>07-17</td><td>星环科技在 WAIC 2026 发布 GPU 原生认知数据库</td><td>国产数据库首次将 SQL/向量/图计算全量置于 GPU，Agent 时代认知基础设施</td></tr><tr><td>07-17</td><td>NetApp 收购 AI 数据基础设施公司 DataPelago</td><td>GPU 异构加速嵌入存储层，"零拷贝"AI 数据处理范式信号</td></tr><tr><td>07-20</td><td>Databricks 完成 $30 亿战略融资（估值 $1880 亿，Coatue 领投）</td><td>半年内两轮 $80 亿密集私募，多 AI 治理战略获资本重注；CEO 明确 2026 不上市</td></tr><tr><td>07-22</td><td>阿里云 EMR AI 助手 + Dataphin V6.2 发布</td><td>大数据运维 AIOps 产品化 + 数据治理平台原生内嵌向量检索与 Agent API</td></tr><tr><td>07-23</td><td>Progress Software $4 亿现金收购 Domo AI 与数据平台业务</td><td>传统基础设施厂商通过并购系统性地构建 AI 数据栈，独立 BI 生存空间持续受压</td></tr><tr><td>07-25</td><td>腾讯云 AI DLC 正式发布：国内首个 Spark+Ray 统一智能数据湖</td><td>训练周期从月级压缩至周级、成本降 60%；平台定位从"服务人"转向"支撑 Agent 运行与进化"</td></tr><tr><td>07-27</td><td>Google Cloud 发布 Agentic Data Cloud 方案</td><td>将 borderless lakehouse + Knowledge Catalog 整合为 Agent 单一行动系统</td></tr><tr><td>07-27</td><td>APEC 首次"数据促进增长"高级别圆桌会（成都，刘烈宏主持）</td><td>27 个经济体参与，确立开放数据环境/数据驱动创新/数据互联互通三大方向</td></tr><tr><td>07-28</td><td>MCP 2026-07-28 规范正式发布</td><td>无状态核心+统一能力发现+全链路追踪，Agent 调用数据平台工具进入可规模化治理阶段</td></tr><tr><td>07-29</td><td>Snowflake 在 Black Hat 发布 Cortex AI Gateway</td><td>数据平台商首次以 MCP 网关统一治理跨平台 AI Agent 的访问、审计与成本</td></tr><tr><td>07-29</td><td>国家数据局首提"词元交易"：将 Token 定义为可交易数据资产</td><td>数据要素市场向 AI 时代计量单元标准化演进</td></tr><tr><td>07-29</td><td>Milvus 3.0 GA（Lake-Native）</td><td>向量数据库可直接在 Iceberg/Parquet/Lance 上构建索引，无需先搬数据</td></tr><tr><td>07-30</td><td>Bending Spoons $12.85 亿全现金收购 Airtable</td><td>低代码数据库平台 89% 折价出售（2021 峰值 $117 亿→$12.85 亿），ARR $4.8 亿（+20% YoY）</td></tr><tr><td>07-30</td><td>九部门联合印发科技金融数据开发利用通知</td><td>可信数据空间首次以垂直产业政策工具形式落地</td></tr><tr><td>07-30</td><td>OceanBase 启动 A 轮融资 ¥20-30 亿（成立以来首次外部融资）</td><td>年化收入 ¥14 亿 +70% YoY（vendor-reported），国产数据库商业化拐点 + AI 转型</td></tr><tr><td>07-31</td><td>AWS MSK 原生集成 Iceberg 流表写入</td><td>开放表格式从分析层下沉为流数据默认着陆层</td></tr></tbody></table>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-trend'>趋势</span><h2>月度趋势分析</h2></div>
+  <div class='trend-block'><h3>趋势一：Agent 治理从"数据层"延伸至"互操作层"，MCP 规范成为关键基础设施 ★★★（高可信）</h3><div class='body'><p><strong>核心判断</strong>：Databricks Unity AI Gateway GA（7/7）、Snowflake Cortex AI Gateway（7/29）与 MCP 2026-07-28 规范在同一个月内完成"产品+标准"双落地，Agent 治理的战场从单一平台内的数据访问控制扩展至跨平台互操作层的统一审计与成本管控。Snowflake 作为数据平台商首次以 MCP 网关统一治理自有及第三方 Agent，Databricks 以 Budgets GA 补齐成本控制，MCP 规范的无状态核心设计使 Agent 调用数据平台工具首次具备可规模化、可审计的工程基础。</p><p><strong>关键事件：</strong></p><table class="product-table"><thead><tr><th>日期</th><th>厂商</th><th>事件</th><th>治理维度</th></tr></thead><tbody><tr><td>07-07</td><td>Databricks</td><td>Unity AI Gateway 成本治理 GA + Genie 按量付费</td><td>运行时成本控制</td></tr><tr><td>07-28</td><td>Anthropic/Google/OpenAI 等</td><td>MCP 2026-07-28 规范正式发布</td><td>互操作标准</td></tr><tr><td>07-29</td><td>Snowflake</td><td>Cortex AI Gateway（Black Hat 发布）</td><td>跨平台审计与访问控制</td></tr><tr><td>07-27</td><td>Google Cloud</td><td>Agentic Data Cloud（lakehouse+Catalog 统一为 Agent 行动系统）</td><td>平台级 Agent 治理</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>MCP 2026-07-28 规范完成了三项关键架构升级：无状态核心（Stateless Core）消除了此前版本的状态耦合问题，统一能力发现（Streamable HTTP + JSON-RPC）使 Agent 发现和调用工具标准化，全链路追踪为每次工具调用提供完整审计链。这标志着 MCP 从实验性协议进入生产级标准。Snowflake Cortex AI Gateway 将治理边界从数据延伸到 Agent——不仅控制谁能访问什么数据，还审计 Agent 在做什么、花了多少钱、调用了哪些第三方工具。Google Cloud Agentic Data Cloud 将 borderless lakehouse 与 Knowledge Catalog 整合为单一行动系统，调研显示 83% 组织需升级基础设施支持 Agentic AI（vendor survey data）。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人应在 Agent 治理能力中新增"跨平台互操作审计"评估维度，要求厂商提供 MCP 兼容路线图；采购方可利用 Snowflake 和 Databricks 网关同步发布窗口进行 POC 对比，重点关注延迟开销和第三方 Agent 兼容性。</div></div><div class='trend-block'><h3>趋势二：中国政府数据政策从"确权"迈入"定价"，制度框架密集落地 ★★★（高可信）</h3><div class='body'><p><strong>核心判断</strong>：7 月中国数据政策在三个维度完成从框架到落地的关键推进——数据产权登记制度全国落地（"三权分置"登记凭证可作为资产入表）、"词元交易"概念首次将 Token 定义为可交易数据资产、APEC 多边框架确立数据跨境治理方向。加上四部门"AI+人社"、九部门科技金融数据两个跨部委垂直方案，数据要素的制度基础设施在一个月内密集成型。</p><p><strong>政策时间线：</strong></p><table class="product-table"><thead><tr><th>日期</th><th>机构</th><th>文件/事件</th><th>核心突破</th></tr></thead><tbody><tr><td>07-06</td><td>国家数据局</td><td>《数据产权登记工作指引（试行）》</td><td>6 章 42 条，确立持有权/使用权/经营权"三权分置"，登记凭证可入表、可融资</td></tr><tr><td>07-09</td><td>人社部等四部门</td><td>"人工智能+人社"实施意见</td><td>5 年三步走覆盖 67 个 AI 场景，首个跨部委 AI 垂直落地方案</td></tr><tr><td>07-27</td><td>国家数据局/APEC</td><td>"数据促进增长"高级别圆桌会</td><td>27 个经济体参与，确立开放数据环境/数据驱动创新/数据互联互通三方向</td></tr><tr><td>07-29</td><td>国家数据局</td><td>数博会发布会首提"词元交易"</td><td>将 Token 定义为可交易数据资产，探索"为优质数据付费"市场共识</td></tr><tr><td>07-30</td><td>央行等九部门</td><td>科技金融数据开发利用通知</td><td>数据开发利用目录 1.0（8 大类 26 指标），可信数据空间首次进入垂直试点</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>国家数据局局长刘烈宏在 7 月多次公开阐述"语义贯通"路线——以元数据和语义映射替代强制格式统一，让数据自带标准化语义。这一路线与 MCP 规范的无状态核心设计思路异曲同工——都是在互操作层面而非存储层面解决问题。APEC 圆桌会是数据跨境治理首次上升到亚太区域多边框架，刘烈宏主持、27 个经济体参与，主席声明确立三大方向，为中国数据平台厂商出海提供了制度性铺垫。"词元交易"概念将数据要素定价推进到 AI 原生计量单元，若能落地将成为全球首个将 Token 纳入数据交易体系的制度创新。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人应将"数据产权登记兼容性"和"Token 计量的数据资产化"纳入下半年产品路线图；面向政企市场的竞品厂商建议尽快与信通院标准体系对接，数据产权登记系统接口将成为政府采购准入门槛；出海厂商应将 APEC 多边框架作为合规路线图基准。</div></div><div class='trend-block'><h3>趋势三：数据平台 AI 能力独立商业化，Agent 驱动的新收入模型成型 ★★（中可信）</h3><div class='body'><p><strong>核心判断</strong>：Databricks Genie 全线切换按量付费（7/7-7/9）、Snowflake Cortex AI Gateway 以网关形式统一治理和计费多平台 Agent，标志着数据平台厂商的 AI 能力从"附赠功能"正式升级为独立商业化产品线。资本端，Databricks $30 亿融资（估值 $1880 亿）明确投向多 AI 治理，Together AI $8 亿 C 轮（估值 $83 亿）验证了算力租赁新云模式的独立商业价值。但 Genie 按量付费的用户接受度和实际收入贡献数据尚未公开，判断主要基于产品定价动作。</p><p><strong>关键数据：</strong></p><table class="product-table"><thead><tr><th>公司</th><th>事件</th><th>关键数字（vendor-reported unless noted）</th></tr></thead><tbody><tr><td>Databricks</td><td>$30 亿融资（Coatue 领投），估值 $1880 亿</td><td>ARR $69 亿（+80%），AI 产品 ARR 超 $17 亿（+70%）；CEO 称"GPU 正在耗尽"</td></tr><tr><td>Together AI</td><td>$8 亿 C 轮，估值 $83 亿</td><td>年预订额突破 $11.5 亿，16 个月内从 B 轮到 C 轮</td></tr><tr><td>OceanBase</td><td>A 轮融资 ¥20-30 亿（首次外部融资）</td><td>年化收入 ¥14 亿 +70% YoY，IDC 中国分布式数据库份额第一</td></tr><tr><td>Databricks</td><td>Genie 全线按量付费（7/7 生效）</td><td>每用户月免 150 DBU，超出按 LLM 消耗计费</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>Databricks CEO Ali Ghodsi 在融资报道中直言"GPU 正在耗尽"是当前的业务瓶颈而非远期规划，同时确认将托管 Kimi K3 等中国开源模型。这一表态揭示了 Agent 时代数据平台面临的结构性张力：Agent 越多→模型调用越多→GPU 需求越大→成本和供应链压力越大。Snowflake Cortex AI Gateway 作为数据平台商首次以 MCP 网关统一治理跨平台 Agent 的访问、审计与成本，其定价模型若以 Agent 调用次数或 Token 消耗计费，将开创数据平台"Agent 流量变现"模式。OceanBase 在 6 月发布湖库一体 AI 数据库后，7 月即启动成立以来首次外部融资，$14 亿年化收入 +70% 增速（vendor-reported）表明国产数据库 AI 转型正在获得资本市场估值溢价。</p></div><div class='so-what'><strong>So what：</strong>采购方应关注数据平台 AI 能力的定价模型，按量付费的波动性可能使年度成本远超固定许可模式，建议在合同中约定成本预警和上限机制；数据平台负责人应对 Genie/CoCo/Cortex AI Gateway 等 Agent 化产品的单位经济模型做独立测算，避免"Agent 越多→账单越大"的预算失控。</div></div><div class='trend-block'><h3>趋势四：国产数据基础设施 AI 原生化从单点发布走向全栈对齐 ★★★（高可信）</h3><div class='body'><p><strong>核心判断</strong>：腾讯云 AI DLC（Spark+Ray 统一湖仓）、阿里云 PolarDB Lakebase（湖库一体）、星环科技 GPU 原生数据库三者在一个月内密集发布，分别从计算引擎、数据库架构和芯片层三个维度推进 AI 原生化。与 6 月火山引擎 Data Agent Pro 和 SelectDB Agent 引擎形成连续，国产数据基础设施的 AI 转型已从"个别厂商的差异化动作"变为"头部厂商的结构性对齐"，跨厂商共识强度显著。</p><p><strong>关键事件：</strong></p><table class="product-table"><thead><tr><th>日期</th><th>厂商</th><th>产品</th><th>核心声明（vendor-reported）</th></tr></thead><tbody><tr><td>07-10</td><td>腾讯云</td><td>Agent Bucket</td><td>为亿级 Agent 提供独立云空间，S3 接口接入，内置多模态检索</td></tr><tr><td>07-13</td><td>阿里云</td><td>PolarDB Lakebase</td><td>湖库一体统一管理多模态数据，模型算子化在 SQL 中直接调用 AI 模型</td></tr><tr><td>07-17</td><td>星环科技</td><td>GPU 原生认知数据库（预览版）</td><td>SQL/向量/图计算全量 GPU 化，11 种模型混合检索</td></tr><tr><td>07-17</td><td>阿里云</td><td>AnalyticDB 具身多模数据平台 V2.0</td><td>整合 Ray/Isaac Sim/Cosmos 工具链，数据库从通用平台走向垂直场景</td></tr><tr><td>07-22</td><td>阿里云</td><td>EMR AI 助手 + Dataphin V6.2</td><td>大数据运维 AIOps 产品化 + 治理平台原生向量检索</td></tr><tr><td>07-25</td><td>腾讯云</td><td>AI DLC 智能数据湖</td><td>Spark+Ray 统一，训练周期月→周、成本降 60%（vendor claim）</td></tr><tr><td>07-31</td><td>阿里云</td><td>OpenLake 知识存储与记忆存储公测</td><td>为 Agent 提供一站式 RAG 文档处理和跨会话记忆管理</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>李飞飞在 PolarDB 开发者大会上提出的"AI 就绪数据库"四大支柱——数据库一半用户是 Agent、主要输出变为 Token、湖库一体多模态、模型算子化——是国产数据库领导厂商迄今最清晰的 AI 原生定位宣言。星环科技 GPU 原生认知数据库直接对标"Agent 时代的认知基础设施"，利用 GPU 万级并行计算实现数量级性能提升。腾讯云 AI DLC 定位为国内首个 Spark+Ray 统一智能数据湖，训练周期从月级压缩至周级、成本降 60%（vendor claim），平台定位从"服务人"转向"支撑 Agent 运行与进化"。三家路径各不相同（湖库一体 / GPU 原生 / 引擎统一），但终点一致：让数据平台成为 Agent 的原生栖息地而非外部依赖。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人建议将"是否为 Agent 原生设计"作为下半年选型的独立评估维度，重点考察 MCP 支持、自然语言驱动能力和 Token 级计费模型；采购方应关注国产厂商 GPU 原生路线的实际生产验证——星环科技预览版和阿里云 AnalyticDB V2.0 均为早期阶段，建议以 POC 为主。</div></div><div class='trend-block'><h3>趋势五：数据平台 M&A 进入"价值重估"周期，独立平台被系统性整合 ★★（中可信）</h3><div class='body'><p><strong>核心判断</strong>：Airtable $12.85 亿被 Bending Spoons 收购（较 2021 年峰值折价 89%）、Domo $4 亿被 Progress 收购、Cognite $31 亿被施耐德收购，三笔交易在 7 月密集出现，均以显著低于历史峰值的价格成交。独立数据/BI 平台的退出路径正在从 IPO 转向被传统基础设施或产业巨头整合，估值逻辑从"增长故事"切换为"战略能力补齐"。同时苏赛门 S1 提交和 Databricks 密集私募替代 IPO，进一步印证了公开市场对数据平台估值的不确定性。</p><p><strong>三笔代表性交易：</strong></p><table class="product-table"><thead><tr><th>买方</th><th>目标</th><th>收购价</th><th>历史峰值估值</th><th>折价</th></tr></thead><tbody><tr><td>Bending Spoons</td><td>Airtable</td><td>$12.85 亿（EV）</td><td>$117 亿（2021）</td><td>-89%</td></tr><tr><td>Progress Software</td><td>Domo</td><td>$4 亿（现金）</td><td>~$30 亿（2021）</td><td>-87%</td></tr><tr><td>施耐德电气</td><td>Cognite</td><td>$31 亿（全现金）</td><td>未公开（2021 年 Softbank 领投轮估值 ~$16 亿）</td><td>约 2x</td></tr></tbody></table><p><strong>补充观察：</strong></p><p>Airtable 作为低代码数据库平台代表，ARR $4.8 亿（+20% YoY）、50 万+组织客户、80% Fortune 100 采用率，却以仅 2.7x ARR 的企业价值成交——远低于 Snowflake（~20x）和 Databricks（~27x）的估值倍数。这说明"有数据平台能力≠有数据平台估值"，真正的溢价在于 AI 工作负载黏性和多引擎生态锁定能力。Progress Software 收购 Domo 是其第三次数据平台收购，传统基础设施厂商正在通过并购系统性地构建 AI 数据栈。Bending Spoons 7 月 1 日纳斯达克上市、同月即宣布收购 Airtable，其"并购→深度转型→持续优化"的运营模式对 SaaS 数据平台形成新的退出范式。</p></div><div class='so-what'><strong>So what：</strong>数据平台负责人应评估现有 BI/数据分析工具的供应商可持续性——独立 BI 平台被整合的趋势明确，建议优先选择有数据平台生态深度捆绑的产品；采购方应在合同中加入控制权变更条款，确保被收购后服务不中断。</div></div>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-product'>产品</span><h2>Product &amp; Tech 月度盘点</h2></div>
+  <table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>影响</th></tr></thead><tbody><tr><td>07-01</td><td>Snowflake</td><td>Dynamic Iceberg Table Replication 正式 GA + SHOW CORTEX BASE MODELS GA</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-02</td><td>Google Cloud</td><td>BigQuery 对话式分析 GA（自然语言查询跨云湖仓）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-07</td><td>Databricks</td><td>Unity AI Gateway 成本治理 GA + Genie 全线按量付费</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-09</td><td>Databricks</td><td>Genie 进入 Microsoft Teams 预览、Anthropic 合规数据连接器 Beta</td><td><span class='impact-tag impact-mid'>中</span></td></tr><tr><td>07-10</td><td>腾讯云</td><td>Agent Bucket 正式发布</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-10</td><td>Google Cloud</td><td>Bigtable 原生 MCP 工具上线</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-13</td><td>阿里云</td><td>PolarDB 发布 AI 数据湖库 Lakebase</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-14</td><td>Snowflake</td><td>Dynamic Iceberg Table Clone GA + CREATE OR ALTER GA（24 种对象类型）</td><td><span class='impact-tag impact-mid'>中</span></td></tr><tr><td>07-16</td><td>Cloudera + VAST Data</td><td>基于 NVIDIA AI Data Platform 共建 AI 工厂</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-16</td><td>PostgreSQL</td><td>19 Beta 2 发布（SQL/PGQ + Temporal 表特性冻结）</td><td><span class='impact-tag impact-mid'>中</span></td></tr><tr><td>07-16</td><td>腾讯云</td><td>PostgreSQL tencentdb_ai 1.4：一行 SQL 完成 RAG 全流程</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-16</td><td>阿里云</td><td>AnalyticDB 具身多模数据平台 V2.0</td><td><span class='impact-tag impact-mid'>中</span></td></tr><tr><td>07-17</td><td>星环科技</td><td>GPU 原生认知数据库（预览版）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-20</td><td>Databricks</td><td>Genie 进入 Microsoft Teams + OpenSharing 数据共享生态扩展</td><td><span class='impact-tag impact-mid'>中</span></td></tr><tr><td>07-20</td><td>Google Cloud</td><td>AlloyDB 列存引擎加速 HNSW 预览（向量检索吞吐提升 4x）</td><td><span class='impact-tag impact-mid'>中</span></td></tr><tr><td>07-22</td><td>Snowflake</td><td>CoCo Desktop GA（Agentic IDE 嵌入原生桌面）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-22</td><td>阿里云</td><td>EMR AI 助手发布 + Dataphin V6.2（数据集 API 原生向量检索）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-23</td><td>阿里云</td><td>EventHouse 事件湖仓正式商业化</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-24</td><td>Databricks</td><td>VARIANT 数据类型 + 列式分解 GA + Delta 表多语句事务 GA</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-25</td><td>腾讯云</td><td>AI DLC 智能数据湖平台正式发布（Spark+Ray 统一）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-27</td><td>Google Cloud</td><td>Agentic Data Cloud 方案发布</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-27</td><td>Databricks</td><td>Lakeflow Designer 夏季版发布（可视化数据准备 + AI 函数）</td><td><span class='impact-tag impact-mid'>中</span></td></tr><tr><td>07-28</td><td>MCP 社区</td><td>MCP 2026-07-28 规范正式发布</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-29</td><td>Snowflake</td><td>Cortex AI Gateway 发布（Black Hat）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-29</td><td>Milvus/Zilliz</td><td>Milvus 3.0 GA（Lake-Native，External Collections + Loon 存储引擎）</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-31</td><td>AWS</td><td>MSK Express brokers 原生集成 Iceberg 流表写入</td><td><span class='impact-tag impact-high'>高</span></td></tr><tr><td>07-31</td><td>阿里云</td><td>OpenLake 知识存储与记忆存储服务公测</td><td><span class='impact-tag impact-mid'>中</span></td></tr><tr></tr></tbody></table>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-capital'>资本</span><h2>Capital &amp; Corporate 月度盘点</h2></div>
+  <table class="product-table"><thead><tr><th>日期</th><th>类型</th><th>事件</th><th>核心数据</th></tr></thead><tbody><tr><td>07-02</td><td>收购</td><td>施耐德电气 $31 亿全现金收购工业 AI 数据平台 Cognite</td><td>Cognite 2025 年营收超 $1.7 亿，约 26.5x ARR</td></tr><tr><td>07-03</td><td>融资</td><td>Together AI $8 亿 C 轮</td><td>估值 $83 亿，沙特阿美创投领投，英伟达参投；年预订额突破 $11.5 亿（vendor claim）</td></tr><tr><td>07-06</td><td>收购完成</td><td>SAP 完成 Dremio 收购</td><td>5/4 宣布，7/6 交割；Dremio 湖仓并入 SAP Business Data Cloud</td></tr><tr><td>07-06</td><td>收购完成</td><td>SAP 完成 Prior Labs 收购</td><td>Tabular Foundation Models 团队，承诺 4 年 €10 亿投入</td></tr><tr><td>07-16</td><td>融资</td><td>Anaconda 收购 AI 代码生成工具 Kilo Code</td><td>金额未披露，数据科学平台向 AI 辅助开发延伸</td></tr><tr><td>07-16</td><td>融资</td><td>Databricks 被曝寻求新一轮融资</td><td>估值 $165-175B（7/20 正式 close 时确认为 $188B）</td></tr><tr><td>07-17</td><td>收购</td><td>NetApp 收购 AI 数据基础设施公司 DataPelago</td><td>金额未披露，GPU 加速数据处理嵌入存储层</td></tr><tr><td>07-20</td><td>融资</td><td>Databricks 完成 $30 亿战略融资</td><td>估值 $1880 亿（较 2 月 +40%），Coatue 领投，投向多 AI 治理/对话分析/Agent 数据库</td></tr><tr><td>07-23</td><td>收购</td><td>Progress Software $4 亿现金收购 Domo AI 与数据平台</td><td>Domo 服务 2400+ 企业客户</td></tr><tr><td>07-30</td><td>融资</td><td>OceanBase 启动 A 轮融资 ¥20-30 亿</td><td>成立以来首次外部融资，年化收入 ¥14 亿 +70% YoY（vendor-reported）</td></tr><tr><td>07-30</td><td>收购</td><td>Bending Spoons $12.85 亿全现金收购 Airtable</td><td>Airtable ARR $4.8 亿（+20% YoY），50 万+组织客户，80% Fortune 100</td></tr><tr><td>07-31</td><td>融资</td><td>DataBahn $4000 万 B 轮</td><td>Insight Partners 领投，定位 Agentic Data Control Plane，年收入 +400%</td></tr><tr></tr></tbody></table><p style='font-size:14px;margin-top:14px;line-height:1.7'><strong>月度资本流向：</strong>7 月资本呈现四条主线：
+
+1. <strong>独立数据平台的估值重定价</strong>——Airtable（$12.85 亿，较峰值 -89%）和 Domo（$4 亿，较峰值 -87%）以大幅折价被收购，ARR 倍数仅 2-3x，远低于 Snowflake/Databricks 的 20-27x。市场在"有数据平台功能"和"有数据平台生态锁定"之间划出了清晰的价格分界线。
+
+2. <strong>AI 推理算力成为比数据平台更大的资本磁石</strong>——Together AI $8 亿 C 轮（年预订额 $11.5 亿）、Databricks 融资明确投向 GPU 基础设施（CEO 称"GPU 正在耗尽"），资本市场注意力持续从数据平台向上游推理层倾斜。
+
+3. <strong>国有资本加速入场数据基础设施</strong>——OceanBase 首轮外部融资 ¥20-30 亿、DeepSeek 上轮融资国家大基金领投（6 月），国产数据库和大模型企业的资本化明确以"自主可控"为锚。
+
+4. <strong>并购方从科技巨头扩展至传统产业和 PE</strong>——施耐德（工业自动化）收购 Cognite、Progress Software（基础设施软件）收购 Domo、Parabellum（PE）收购 Crux Informatics（7/1），数据平台收购方群体多样化，退出渠道不再依赖科技巨头。</p>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-watchlist'>跟踪</span><h2>Watchlist 月度复盘</h2></div>
+  <h3 style='font-size:15px;margin-bottom:8px;color:var(--green)'>✅ 已确认 / 已落地</h3><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>Databricks Unity AI Gateway 成本治理 GA + Genie 按量付费</strong> — 7 月 7 日生效，Agent 运行时成本控制正式产品化</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>MCP 2026-07-28 规范</strong> — 无状态核心+统一能力发现+全链路追踪，生产级标准落地</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>Snowflake Cortex AI Gateway</strong> — 7 月 29 日 Black Hat 发布，数据平台首次以 MCP 网关统一治理跨平台 Agent</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>腾讯云 AI DLC</strong> — 7 月 25 日正式发布，Spark+Ray 统一智能数据湖，国内首个生产级实现</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>国家数据局数据产权登记指引</strong> — 7 月 6 日印发，"三权分置"全国统一登记体系落地</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>Databricks $30 亿融资</strong> — 估值 $1880 亿，明确投向多 AI 治理，CEO 确认 2026 年不上市</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>Milvus 3.0 Lake-Native</strong> — 7 月 29 日 GA，向量数据库支持 Iceberg/Parquet 原生检索</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>阿里云 PolarDB Lakebase + 李飞飞 AI 就绪数据库宣言</strong> — 国产数据库 AI 原生定位最清晰表达</div><div class='item'><span style='color:var(--green);margin-right:6px'>✅</span><strong>星环科技 GPU 原生认知数据库</strong> — WAIC 2026 发布预览版，GPU 全量计算国产首例</div>
+  <h3 style='font-size:15px;margin-bottom:8px;margin-top:16px;color:var(--orange)'>🔄 仍在跟踪</h3><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Databricks LTAP 生产验证进展</strong> — 6 月 DAIS 发布，GA 时间表和首批生产客户案例待确认</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Snowflake Natoma 集成路线图</strong> — 6 月 Summit 宣布收购，Cortex AI Gateway 是否纳入待观察</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Snowflake Datastream GA</strong> — 6 月 Private Preview，GA 时间表未明确</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Informatica Headless IDMC Databricks/Snowflake 集成</strong> — Microsoft Foundry 和 Google Cloud 已 GA，Databricks/Snowflake 仍为 Private Preview，目标 Summer 2026 GA</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>NVIDIA Vera CPU 在 Databricks 实际部署</strong> — DAIS 宣布合作，实际性能验证和规模部署时间表未知</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Iceberg V4 规范进展</strong> — 相对路径和内容统计提案社区投票状态；OpenSharing 生态扩展（Qumulo 加入后更多厂商待确认）</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>dbt Core v2.0 正式 GA</strong> — 7 月 23 日 Alpha 2 发布，正式 GA 时间表和社区迁移情况待观察</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>CustomerLake GA 时间表</strong> — Databricks 首个垂直 Martech 产品从 Private Preview 进入 GA 的时点</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>DeepSeek 首轮融资官方确认</strong> — 6 月多家媒体确认，DeepSeek 官方尚未发布正式声明</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Anthropic IPO 进程</strong> — 6 月秘密提交 S-1，目标 2026 年 10 月 IPO，承销商和发行规模待确认</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Apache Flink 3.0 / Paimon 2.0 / Fluss 1.0 社区采纳</strong> — FFA 2026 发布后社区贡献者增长数据；Flink Agents 0.3.1（7/27）显示社区投入节奏加快</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Microsoft Fabric GPU 加速数仓</strong> — 7 月早期预览启动，实际基准对比待公布</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>国家数据局"词元交易"制度细节</strong> — 概念提出（7/29），交易规则和试点方案待出台</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>九部门科技金融可信数据空间试点</strong> — 通知发布（7/30），首批试点名单和合作厂商待确认</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Airtable/Domo 收购交割与整合</strong> — 均预计年底前完成，整合效果待观察</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>OceanBase A 轮融资领投方和估值</strong> — 启动融资（7/30），具体条款待披露</div><div class='item'><span style='color:var(--orange);margin-right:6px'>🔄</span><strong>Databricks RBAC 公开预览</strong> — 7/24 进入预览，GA 时间表及与 Unity AI Gateway 的 Agent 级权限联动待确认</div>
+  <h3 style='font-size:15px;margin-bottom:8px;margin-top:16px;color:var(--blue)'>📅 下月重点关注</h3><div class='item'><span style='color:var(--blue);margin-right:6px'>1.</span><strong>Databricks LTAP GA 时间表 + 首批客户案例</strong> — 6 月 DAIS 发布的架构级变革能否在 Q3 兑现</div><div class='item'><span style='color:var(--blue);margin-right:6px'>2.</span><strong>Snowflake Natoma + Cortex AI Gateway 整合进展</strong> — MCP 网关层是否纳入 Natoma 能力</div><div class='item'><span style='color:var(--blue);margin-right:6px'>3.</span><strong>2026 数博会（8/28 贵阳）政策与产品发布</strong> — 国家数据局年度最高规格会议，预计 40+ 成果发布</div><div class='item'><span style='color:var(--blue);margin-right:6px'>4.</span><strong>国家数据局"词元交易"细则</strong> — Token 数据资产的交易规则和定价机制</div><div class='item'><span style='color:var(--blue);margin-right:6px'>5.</span><strong>腾讯云 AI DLC 首批生产客户与性能基准</strong> — 国内首个 Spark+Ray 统一平台的落地验证</div><div class='item'><span style='color:var(--blue);margin-right:6px'>6.</span><strong>MCP 2026-07-28 规范的厂商采纳速度</strong> — Databricks/Snowflake/Google Cloud 的协议升级时间表</div><div class='item'><span style='color:var(--blue);margin-right:6px'>7.</span><strong>星环科技 GPU 原生数据库从预览到商业化的进展</strong> — Agent 时代认知基础设施的验证节点</div><div class='item'><span style='color:var(--blue);margin-right:6px'>8.</span><strong>Airtable / Domo 收购审批进展</strong> — 监管审批和整合路线图</div><div class='item'><span style='color:var(--blue);margin-right:6px'>9.</span><strong>OceanBase A 轮融资完成与估值公布</strong> — 国产数据库 AI 转型资本定价基准</div><div class='item'><span style='color:var(--blue);margin-right:6px'>10.</span><strong>Anthropic IPO 进程</strong> — S-1 公开版本和发行定价区间（6 月秘密提交，目标 10 月 IPO）</div><div class='item'><span style='color:var(--blue);margin-right:6px'>11.</span><strong>Databricks RBAC GA + Governance Hub 路线图</strong> — 治理能力从功能级向平台级升级的时点</div>
+</div><div class='section'>
+  <div class='section-header'><span class='badge badge-verdict'>延伸</span><h2>延伸阅读</h2></div>
+  <p><a href='https://spec.modelcontextprotocol.io/' target='_blank'><strong>MCP 2026-07-28 Specification</strong></a><br/>MCP 规范的正式发布版本，完成无状态核心、统一能力发现和全链路追踪三大架构升级，是 Agent 调用数据平台工具进入生产级治理的基础设施标准。</p><p><a href='https://www.snowflake.com/blog/cortex-ai-gateway/' target='_blank'><strong>Snowflake Cortex AI Gateway: Unifying AI Agent Governance</strong></a><br/>Snowflake 在 Black Hat 2026 发布的 Cortex AI Gateway 技术细节，首次以 MCP 网关统一治理自有及第三方 AI Agent 的访问、审计与成本。</p><p><a href='https://zilliz.com/blog/milvus-3-0-lake-native' target='_blank'><strong>Zilliz: Milvus 3.0 — Making the World's Most Adopted Vector Database Lake-Native</strong></a><br/>Milvus 3.0 的 Lake-Native 架构详解，External Collections 支持在 Iceberg/Parquet/Lance/Vortex 上直接构建向量索引，消除数据搬迁成本。</p><p><a href='https://www.databricks.com/blog/multi-ai-governance-unity-ai-gateway' target='_blank'><strong>Databricks: Completing the Multi-AI Governance Vision</strong></a><br/>Databricks Unity AI Gateway 成本治理 GA 和 Genie 按量付费的完整说明，多 AI 治理从安全访问到成本控制的闭环。</p>
+</div>
+
+  <div class="footer">
+    <p>Data+AI Monthly Report</p>
+  </div>
+</div>
+</body>
+</html>

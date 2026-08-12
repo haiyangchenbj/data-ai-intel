@@ -6417,24 +6417,29 @@
   ],
   "monthly": [
     {
-      "ym": "026-03",
+      "ym": "2026-03",
       "file": "monthly/Data+AI_Monthly_Report_2026-03.html",
-      "title": "Data+AI 情报月报 026-03"
+      "title": "Data+AI 情报月报 2026-03"
     },
     {
-      "ym": "026-04",
+      "ym": "2026-04",
       "file": "monthly/Data+AI_Monthly_Report_2026-04.html",
-      "title": "Data+AI 情报月报 026-04"
+      "title": "Data+AI 情报月报 2026-04"
     },
     {
-      "ym": "026-05",
+      "ym": "2026-05",
       "file": "monthly/Data+AI_Monthly_Report_2026-05.html",
-      "title": "Data+AI 情报月报 026-05"
+      "title": "Data+AI 情报月报 2026-05"
     },
     {
-      "ym": "026-06",
+      "ym": "2026-06",
       "file": "monthly/Data+AI_Monthly_Report_2026-06.html",
-      "title": "Data+AI 情报月报 026-06"
+      "title": "Data+AI 情报月报 2026-06"
+    },
+    {
+      "ym": "2026-07",
+      "file": "monthly/Data+AI_Monthly_Report_2026-07.html",
+      "title": "Data+AI 情报月报 2026-07"
     }
   ],
   "reports": [
