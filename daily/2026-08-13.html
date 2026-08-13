@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-13</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-13 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据智能竞争从全栈自研转向生态协作落地</li>
+      <li>数据工程能力正被开源标准化为生态通用件</li>
+      <li>具身智能数据基础设施成为独立融资赛道</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据智能竞争正从模型转向数据工程化：国内云厂商以开放底座联手行业伙伴切入智能体，国际厂商把 CDC 等数据工程能力开源标准化，具身智能则把数据基础设施推向独立赛道。三线同指一处——高质量数据准备正成为 AI 落地的真正瓶颈与价值高地。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>华为云联合滴普科技发布数据智能方案，切入行业智能体</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.163.com/dy/article/L450N18H0530NLC9.html">中国基金报</a><br><b>摘要：</b> 8月12日，华为云与滴普科技在北京联合发布面向智能制造、零售的数据智能联合方案，围绕"数据—治理—模型—智能体"全链路打通数据孤岛。华为云提供云基础设施、算力底座与智果（AgentArts）智能体平台，滴普开放 FastData 数据智能与 DeepWorks 智能体平台。<br><b>为什么对数据平台重要：</b> 华为云明确不以自研闭环承接行业智能体上层，而是把数据治理到智能体应用的上层开放给深耕行业的滴普。这标志着国内云厂商的数据智能竞争逻辑从"全栈自研"转向"生态协作"，行业 Know-How 沉淀正成为数据平台的价值高地。</div>
+</div>
+<div class="item">
+    <h3>Databricks AUTO CDC 增强：双时态追踪上线、部分更新 GA、开源进 Spark 4.2</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/taking-auto-cdc-next-level-solving-hardest-real-world-use-cases">Databricks 官方博客</a><br><b>摘要：</b> Databricks 将 Spark Declarative Pipelines 的 AUTO CDC 升级，新增 Bitemporal 双时态追踪（业务时间与系统时间独立建模），Partial Updates 正式 GA，并将 AUTO CDC Type 1 的 Python API 贡献进开源 Apache Spark 4.2。<br><b>为什么对数据平台重要：</b> CDC 是数据工程中最易出错的手写 MERGE 重灾区。双时态追踪直接回应 SEC Rule 17a-4 与 FINRA 的点位审计重构需求，Partial Updates 解决 NULL 覆盖导致的数据损坏。更关键的是能力开源进 Spark 4.2，标准化 CDC 从闭源平台能力变为跨引擎通用件。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>瑞银调研：企业 AI 支出从"堆 Token"转向"抠 ROI"</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://guba.eastmoney.com/news,cfhpl,1757999084,1229034599342114,d.html">智通财经（转述瑞银调研）</a><br><b>核心观点：</b> 瑞银调研显示，企业 AI 解决方案几乎全部托管在 AWS、Azure、Google Cloud；Databricks、Palantir、Snowflake 在数据管理层扮演关键角色；数据库层面有调研对象提到"上层用 Redis 和 Postgres"，指向 MongoDB 在 AI 工作负载上正面临实质性竞争。<br><b>映射到数据平台的判断：</b> AI 支出风向从堆 Token 转向抠 ROI，映射到数据平台即采购决策从"先上平台"转向"看单位产出"。Databricks、Snowflake 的独立地位获头部券商调研背书，而 MongoDB 等独立数据库面临开源 Postgres、Redis 的替代压力，是采购市场格局的明确信号。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】元点科技 40 天完成两轮融资，押注具身智能数据基础设施</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.sina.com.cn/tech/roll/2026-08-12/doc-inimzivt3722428.shtml">投资界（新浪财经）</a><br><b>核心数据：</b> 40 天完成两轮融资，投资方含恒旭资本、凯联资本及国内顶级具身智能产业方；灯塔客户它石智航千万级数据订单已全面启动。<br><b>摘要：</b> 成立不足三个月的具身智能数据基础设施公司元点科技（SCALEFORCE）首次披露融资，创始人郭江亮为百度智能云创始成员。公司打造物理 AI 操作系统 MatrixOS，自研 ADA 数据泛化引擎（真机成功率 65%→92%）与 GDP 数据质量引擎（可用转化率 80%）。<br><b>对数据平台的影响：</b> 具身智能高质量物理交互数据缺口超 99%（全球可用总量仅约 50 万小时），数据采集、清洗、泛化、管理正成为独立产业环节。这是"数据基础设施"逻辑从互联网数据向物理世界数据的延伸，为数据平台厂商开辟新品类。</div>
+</div>
+<div class="item">
+    <h3>【投融资】艾欧智能完成数亿元融资，加码机器人数据基础设施</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://guba.eastmoney.com/news,cjpl,1757732850.html">科创板日报</a><br><b>核心数据：</b> 数亿元融资，顺为资本、松禾资本、深创投联合投资，并获头部机器人本体企业战略投资。<br><b>摘要：</b> 机器人与具身智能数据基础设施企业艾欧智能（IO-AI Tech）完成数亿元融资，资金用于核心产品研发、团队搭建与全球市场拓展，完善机器人遥操作数据采集、人类数据采集、数据管理与训练闭环。<br><b>对数据平台的影响：</b> 与元点科技同日披露，形成"具身智能数据基础设施"融资小高潮。2026 上半年国内具身智能赛道融资 935 亿元、同比涨 5 倍，数据层作为具身智能竞争下半场的核心瓶颈，正吸引独立资本与本体厂商双重押注。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Ryanair 与 Google Cloud 签署五年数据与 AI 合作</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/ryanair-and-google-cloud-announce-five-year-data-and-ai-partnership-302849171.html">PR Newswire</a><br><b>为什么值得继续看：</b> 欧洲最大航空公司 Ryanair 将向 3.5 万名员工部署 Google Cloud 数据与 AI 平台（Gemini Enterprise + Google Workspace），并采用双云策略支撑 2034 年 3 亿旅客目标。这是航空业数据平台规模化采购案例。<br><b>需要等待什么信号确认：</b> 后续是否带动其他欧洲航司跟进 Google Cloud 数据与 AI 平台；Gemini Enterprise 在企业数据治理与工作流自动化上的实际落地成效。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-13 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

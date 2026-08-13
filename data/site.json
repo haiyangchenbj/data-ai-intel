@@ -6304,6 +6304,66 @@
       "source": "腾讯新闻",
       "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_9636a7ad7a883052",
       "conf": ""
+    },
+    {
+      "date": "2026-08-13",
+      "vendor": "华为",
+      "module": "专题",
+      "title": "华为云联合滴普科技发布数据智能方案，切入行业智能体",
+      "summary": "来源： 中国基金报摘要： 8月12日，华为云与滴普科技在北京联合发布面向智能制造、零售的数据智能联合方案，围绕\"数据—治理—模型—智能体\"全链路打通数据孤岛。华为云提供云基础设施、算力底座与智果（AgentArts）智能体平台，滴普开放 FastData 数据智能与 DeepWorks 智能体平台。为什么对数据平台重要： 华为云明确不以自研闭环承接行业智能体上层，而是把数据治理到智能体应用的上层开放给深耕行业的滴普。这标志着国内云厂商的数据智能竞争逻辑从\"全栈自研\"转向\"生态协作\"，行业 Know-How 沉淀正成为数据平台的价值高地。",
+      "source": "中国基金报",
+      "url": "https://www.163.com/dy/article/L450N18H0530NLC9.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-13",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks AUTO CDC 增强：双时态追踪上线、部分更新 GA、开源进 Spark 4.2",
+      "summary": "来源： Databricks 官方博客摘要： Databricks 将 Spark Declarative Pipelines 的 AUTO CDC 升级，新增 Bitemporal 双时态追踪（业务时间与系统时间独立建模），Partial Updates 正式 GA，并将 AUTO CDC Type 1 的 Python API 贡献进开源 Apache Spark 4.2。为什么对数据平台重要： CDC 是数据工程中最易出错的手写 MERGE 重灾区。双时态追踪直接回应 SEC Rule 17a-4 与 FINRA 的点位审计重构需求，Partial Updates 解决 NULL 覆盖导致的数据损坏。更关键的是能力开源进 Spark 4.2，标准化 CDC 从闭源平台能力变为跨引擎通用件。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/taking-auto-cdc-next-level-solving-hardest-real-world-use-cases",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-13",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "瑞银调研：企业 AI 支出从\"堆 Token\"转向\"抠 ROI\"",
+      "summary": "来源： 智通财经（转述瑞银调研）核心观点： 瑞银调研显示，企业 AI 解决方案几乎全部托管在 AWS、Azure、Google Cloud；Databricks、Palantir、Snowflake 在数据管理层扮演关键角色；数据库层面有调研对象提到\"上层用 Redis 和 Postgres\"，指向 MongoDB 在 AI 工作负载上正面临实质性竞争。映射到数据平台的判断： AI 支出风向从堆 Token 转向抠 ROI，映射到数据平台即采购决策从\"先上平台\"转向\"看单位产出\"。Databricks、Snowflake 的独立地位获头部券商调研背书，而 MongoDB 等独立数据库面临开源 Postgres、Redis 的替代压力，是采购市场格局的明确信号。",
+      "source": "智通财经（转述瑞银调研）",
+      "url": "https://guba.eastmoney.com/news,cfhpl,1757999084,1229034599342114,d.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-13",
+      "vendor": "百度",
+      "module": "投融资",
+      "title": "【投融资】元点科技 40 天完成两轮融资，押注具身智能数据基础设施",
+      "summary": "来源： 投资界（新浪财经）核心数据： 40 天完成两轮融资，投资方含恒旭资本、凯联资本及国内顶级具身智能产业方；灯塔客户它石智航千万级数据订单已全面启动。摘要： 成立不足三个月的具身智能数据基础设施公司元点科技（SCALEFORCE）首次披露融资，创始人郭江亮为百度智能云创始成员。公司打造物理 AI 操作系统 MatrixOS，自研 ADA 数据泛化引擎（真机成功率 65%→92%）与 GDP 数据质量引擎（可用转化率 80%）。对数据平台的影响： 具身智能高质量物理交互数据缺口超 99%（全球可用总量仅约 50 万小时），数据采集、清洗、泛化、管理正成为独立产业环节。这是\"数据基础设施\"逻辑从互联网数据向物理世界数据的延伸，为数据平台厂商开辟新品类。",
+      "source": "投资界（新浪财经）",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-08-12/doc-inimzivt3722428.shtml",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-13",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】艾欧智能完成数亿元融资，加码机器人数据基础设施",
+      "summary": "来源： 科创板日报核心数据： 数亿元融资，顺为资本、松禾资本、深创投联合投资，并获头部机器人本体企业战略投资。摘要： 机器人与具身智能数据基础设施企业艾欧智能（IO-AI Tech）完成数亿元融资，资金用于核心产品研发、团队搭建与全球市场拓展，完善机器人遥操作数据采集、人类数据采集、数据管理与训练闭环。对数据平台的影响： 与元点科技同日披露，形成\"具身智能数据基础设施\"融资小高潮。2026 上半年国内具身智能赛道融资 935 亿元、同比涨 5 倍，数据层作为具身智能竞争下半场的核心瓶颈，正吸引独立资本与本体厂商双重押注。",
+      "source": "科创板日报",
+      "url": "https://guba.eastmoney.com/news,cjpl,1757732850.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-13",
+      "vendor": "Google",
+      "module": "产品",
+      "title": "【跟踪】Ryanair 与 Google Cloud 签署五年数据与 AI 合作",
+      "summary": "来源： PR Newswire为什么值得继续看： 欧洲最大航空公司 Ryanair 将向 3.5 万名员工部署 Google Cloud 数据与 AI 平台（Gemini Enterprise + Google Workspace），并采用双云策略支撑 2034 年 3 亿旅客目标。这是航空业数据平台规模化采购案例。需要等待什么信号确认： 后续是否带动其他欧洲航司跟进 Google Cloud 数据与 AI 平台；Gemini Enterprise 在企业数据治理与工作流自动化上的实际落地成效。",
+      "source": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/ryanair-and-google-cloud-announce-five-year-data-and-ai-partnership-302849171.html",
+      "conf": ""
     }
   ],
   "archive": [
@@ -6413,7 +6473,8 @@
     "2026-08-07",
     "2026-08-10",
     "2026-08-11",
-    "2026-08-12"
+    "2026-08-12",
+    "2026-08-13"
   ],
   "monthly": [
     {
