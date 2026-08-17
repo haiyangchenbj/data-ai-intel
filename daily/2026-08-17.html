@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-17</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-17 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库竞争焦点从存储性能转向为智能体提供上下文与记忆</li>
+      <li>数据平台工具链加速走向声明式与基础设施即代码</li>
+      <li>湖仓与数据库的可移植性正成为新的竞争卖点</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>这是夏季周末的稀薄窗口，窗口内信息虽少，但指向同一个方向：数据基础设施的竞争焦点正从「算力与存储规模」迁移到「能否为智能体提供可信上下文」。国产数据库厂商在这一迁移上的动作比国际厂商更密集，值得持续跟踪其分层产品化的落地节奏。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云 PolarDB 推出 Agentic Database 形态，服务主体从人转向智能体</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://help.aliyun.com/zh/polardb/polardb-for-postgresql/what-is-polardb-postgresql-agentic-database">阿里云官方文档：什么是 PolarDB PostgreSQL Agentic Database</a><br><b>摘要：</b> PolarDB 推出面向海量 AI Agent 场景的 Agentic Database 新形态（公测），具备秒级拉起、秒级 Branch、Scale to Zero 弹性、基于 OSS 的低成本存储与面向 MCP 的 Agent Native 访问，服务主体从「人」转向「智能体」。阿里云同期在 8 月 15 日「Agentic DB Day」系统阐述 Agentic DB 三层架构：入口层 AIDBS 以自然语言调起数据库的使用、管理与开发；数据能力层 RDS ContextDB 沉淀业务知识资产、Tair 语义缓存按语义匹配历史提问直接返回；底座层 PolarDB LakeBase 提供可持久化工作空间、AnalyticDB AgenticLake 支撑全模态数据实时分析。<br><b>为什么对数据平台重要：</b> 阿里云把「数据库服务智能体」从单点能力打包为「入口—数据能力—底座」的成体系架构，明确数据库工作负载从确定性 SQL 扩展到多步推理与多智能体协作。这标志着国内头部云厂商的 Agentic DB 战略从概念进入分层产品化落地，竞争焦点从存储/计算性能转向智能体上下文、记忆与可审计执行。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>ClickHouse 将 ClickStack 可观测性资源纳入 Terraform Provider 管理</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://clickhouse.com/blog/clickstack-terraform-provider">ClickHouse Blog: Announcing support for ClickStack in the ClickHouse Terraform provider</a><br><b>摘要：</b> ClickHouse 官方 Terraform provider 自 v3.25 起（beta）支持 ClickStack 资源，覆盖自托管与 ClickHouse Cloud 两种部署形态。仪表盘、告警、数据源、保存的搜索、连接与 Webhook 等可观测性资源可纳入版本控制，走 terraform plan/apply 工作流。<br><b>对数据平台的影响：</b> 把可观测性配置纳入 IaC，意味着数据平台的可观测性基础设施从「UI 手工配置」走向「代码化、可评审、可回滚」，降低 staging/生产等多环境配置漂移，映射到工程效率维度。</div>
+</div>
+<div class="item">
+    <h3>云器 Lakehouse 完成全球 8 朵云与 3 种 CPU 架构适配</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://juejin.cn/post/7673490766201634831">云器科技（掘金官方账号）</a><br><b>摘要：</b> 云器 Lakehouse 完成国内外 8 朵主流云平台适配（国内阿里云、腾讯云、火山引擎、华为云、百度智能云；海外 AWS、Google Cloud、Microsoft Azure），并兼容 Intel、AMD、ARM 三种 CPU 架构。企业可按业务选择云，无需为使用数据平台迁就基础设施。<br><b>对数据平台的影响：</b> 中小湖仓厂商以「增量计算 + Single-Engine」架构实现多云与多芯片适配，降低企业数据平台对单一云厂商的绑定，映射到采购与市场格局维度，也代表国产湖仓出海的工程能力补课。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】MongoDB Atlas 将运营数据库定位为智能体检索与内存层</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://investors.mongodb.com/news-releases/news-release-details/mongodb-atlas-now-delivers-industry-leading-context-retrieval">MongoDB Newsroom（PRNewswire）</a><br><b>为什么值得继续看：</b> MongoDB 在 Build Fest 发布 Atlas Managed MCP Server（连接 Claude Code、Codex、Grok Build、Devin）、Voyage AI 自动化嵌入、voyage-code-4 代码检索模型与流处理向量检索，把运营数据库定位为智能体的内存与检索层。原始发布日期为 8 月 13 日美国时间，早于本期 72 小时窗口，故降级收录。<br><b>需要等待什么信号确认：</b> 观察 Managed MCP Server 的实际采用量与「运营数据库即智能体内存层」定位是否被 Snowflake、Databricks 跟进，以及自动嵌入带来的检索成本是否可控。</div>
+</div>
+<div class="item">
+    <h3>【降级】火山引擎发布 Data Agent「一客一策」与 AI 数据湖「AI 算子广场」</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.toutiao.com/article/7674028748894683671">码农财经（今日头条，转述火山引擎 FORCE Link 青岛站）</a><br><b>为什么值得继续看：</b> 火山引擎在 8 月 13 日 FORCE Link AI 创新巡展青岛站发布 Data Agent「一客一策」能力与 AI 数据湖「AI 算子广场」功能，是字节系押注 AI 数据基础设施的最新信号。原始发布日期 8 月 13 日，早于本期窗口，降级收录。<br><b>需要等待什么信号确认：</b> 等待火山引擎官方对「一客一策」「AI 算子广场」的正式产品文档与 GA 时间表，确认其与 DataLeap、Data Agent 产品线的整合路径。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-17 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
