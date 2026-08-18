@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-18</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-18 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>单位推理成本下降，反而推高智能体工作流总成本</li>
+      <li>传统数据库厂商以多云消费模式争夺上云主动权</li>
+      <li>具身智能数据供给平台化，运营商与产业资本加速入场</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今日三大信号同指一个方向：数据平台竞争正从算得快转向算得省、算得可控。推理成本悖论让成本治理成刚需，多云消费模式挤压传统上云路径，具身数据平台化把数据要素从文本延伸向物理世界——数据基础设施价值正在被重新定价。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Gartner 发布"推理成本悖论"：Agent 工作流推理成本 2028 年前将增逾 5 倍</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.gartner.com/en/newsroom/press-releases/2026-08-17-gartner-predicts-ai-inference-costs-per-agentic-workflow-will-increase-more-than-fivefold-through-2028">Gartner Newsroom</a><br><b>摘要：</b> Gartner 8/17 发布预测，单个 Agentic 工作流的 AI 推理成本到 2028 年将增长 5 倍以上。分析师 Will Sommer 提出"推理悖论"：单位 token 成本持续下降，但更复杂的工作流消耗远超聊天机器人的 token 数量，导致总体成本不降反升——与基础聊天机器人相比，路由到 Agentic 推理模型至少让推理成本增加 5 倍。<br><b>为什么对数据平台重要：</b> 这一判断把"推理成本治理"从模型层议题上移到数据平台层：企业需要在平台内实现推理分层、多模型路由与编排，按任务复杂度动态匹配成本档位。对数据平台厂商而言，"帮客户省 token"正成为与"算得更快"并列的核心卖点，也是 Unity AI Gateway、Cortex 等 AI 网关产品的价值锚点。</div>
+</div>
+<div class="item">
+    <h3>Oracle AI Database@AWS 扩展至 22 个区域，ExaDB-XS 消费模式落地</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.techrepublic.com/article/news-oracle-ai-database-aws-exadata-22-regions/">TechRepublic</a><br><b>摘要：</b> Oracle 与 AWS 深化数据库合作，将 Exadata Database Service on Exascale Infrastructure（ExaDB-XS）扩展至亚太、欧洲和美洲的 22 个 AWS 区域。ExaDB-XS 采用按量计费，计算与存储可独立扩展，最低约 $0.336/ECPU/小时，并可经 AWS Marketplace 按 1 或 12 个月短期合约采购，替代此前 4 年、月付 $4,540 起的本地订阅。<br><b>为什么对数据平台重要：</b> Oracle 以"多云 + 消费化"重构传统数据库的上云路径，直接回应企业数据驻留、延迟与监管合规诉求。Exadata 从重资产许可走向按需计费，标志传统企业数据库巨头正用云原生弹性定价逻辑，与云厂商自有数据库在 AWS 平台上正面争夺迁移与现代化负载。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】具身数据平台觅蜂科技完成数亿元融资，中国电信领投</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.163.com/dy/article/L4HE9BS90512D3VJ.html">新京报贝壳财经</a><br><b>核心数据：</b> 数亿元融资，中国电信领投，张江集团跟投，红杉中国、元启创新等老股东追加；半年内三轮融资。<br><b>摘要：</b> 智元机器人孵化的"一站式物理 AI 数据服务平台"觅蜂科技 8/17 宣布完成新一轮数亿元融资。资金将用于建设具身智能数据平台型供给基础设施，扩大无本体采集硬件 MEgo 系列量产，加速千万小时级物理交互数据产能。IT 桔子数据显示，2026 上半年 25 家中国具身智能数据公司合计吸金超 170 亿元。<br><b>对数据平台的影响：</b> 具身智能数据的采集、治理、闭环评测正形成独立于互联网文本数据的新供给体系，并与运营商云网基础设施深度绑定（中国电信联合打造"云网+具身数据"方案）。这揭示数据要素竞争的下一战场正从语言数据向物理交互数据延伸。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】矩阵起源入选 Gartner 数据管理 Coolest Vendor 并完成 A 轮融资</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.163.com/dy/article/L4IDSQ1A0552YZST.html">数据猿</a><br><b>为什么值得继续看：</b> 矩阵起源（MatrixOrigin）入选 Gartner《数据管理领域最具创新力厂商》2026，成为四家入选厂商中唯一中国公司，其 MatrixOne Intelligence 将 HTAP、数据湖、内置 LLM 网关与 Agent Runtime 收敛于同一平台，并以"Git-for-Data"版本化机制支撑智能体上下文复现。Gartner 报告原始发布日期为 7/29，超出 24 小时窗口，故降级收录。<br><b>需要等待什么信号确认：</b> 矩阵起源 A 轮融资的确切金额与估值、以及 Gartner 报告原文对其技术差异化定位的完整表述。</div>
+</div>
+<div class="item">
+    <h3>【预告】《数据智能体研究报告（2026）》征求意见稿发布</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.isc.org.cn/article/30075177847877632.html">中国互联网协会</a><br><b>为什么值得继续看：</b> 中国互联网协会联合信通院 8/17 发布《数据智能体研究报告（2026）》征求意见稿，首次系统性梳理数据采集、治理、分析、运营、合规、安全等 12 类数据智能体，并同步征集落地案例。这标志着"数据智能体（Data Agent）"作为独立赛道进入行业标准与研究视野。<br><b>需要等待什么信号确认：</b> 征求意见与案例征集 9/5 截止后正式版的发布，以及报告对数据智能体市场规模与分类标准的最终界定。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-18 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
