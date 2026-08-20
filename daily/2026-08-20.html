@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-20</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-20 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据主权从口号变成可部署产品，计算开始迁往数据所在地</li>
+      <li>流处理平台向本地与私有云下沉，统一管控成为竞争新焦点</li>
+      <li>数据与治理成 AI 时代少数受益赛道，采购逻辑转向信任</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台竞争正从"云上集中"转向"数据所在处"：主权与本地化诉求推动厂商把计算迁往数据、而非迁移数据，流处理与湖仓平台同步向私有与主权环境下沉。分析师把数据与治理列为 AI 时代少数受益赛道，采购逻辑转向"谁能守住数据与信任"。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Cloudera 发布 Anywhere Cloud，数据主权从叙事变为可部署产品</h3>
+    <div class="source">来源：<a href="https://www.cloudera.com/about/news-and-blogs/press-releases/2026-08-19-cloudera-powers-the-agentic-ai-era-with-cloudera-anywhere-cloud.html">Cloudera 官方新闻稿</a></div>
+    <div class="body"><b>摘要：</b> 8 月 19 日，Cloudera 发布 Cloudera Anywhere Cloud，一款面向"主权时代"的模块化混合数据与 AI 平台。平台基于 Apache Iceberg 零拷贝标准和统一零信任数据 fabric，支持工作负载在公有云、主权云、私有数据中心乃至隔离气隙网络间自由运行，内置自动 PII 遮蔽与持续审计血缘，配套 agentic copilot 与 self-service marketplace 蓝图实现分钟级部署。<br><b>为什么对数据平台重要：</b> 数据主权首次从营销叙事变成可部署的产品形态。Cloudera 的"workload-to-data"（把计算迁往数据、而非迁移数据）与 Databricks Storage Ecosystem、AWS 主权云、Oracle Sovereign Cloud 同向竞争，标志数据平台采购逻辑正从"把数据搬到云"转向"把平台带到数据所在地"，直接影响企业在主权与合规约束下的架构选型。</div>
+</div>
+<div class="item">
+    <h3>Confluent 发布 Confluent Platform for Apache Flink，流处理下沉到本地与私有云</h3>
+    <div class="source">来源：<a href="https://www.confluent.io/blog/2026-q3-confluent-cloud-launch/">Confluent 官方博客</a>（8/19 媒体转载确认）</div>
+    <div class="body"><b>摘要：</b> 8 月 19 日，Confluent 宣布 Confluent Platform for Apache Flink 全面可用，将 Flink 流处理能力扩展到本地与私有云环境，配套 Confluent Manager for Apache Flink（CMF）统一 Kafka 与 Flink 的管控平面，并发布 WarpStream Orbit 简化向 BYOC 部署模型的迁移。<br><b>为什么对数据平台重要：</b> 流处理从"云端托管"扩展到"本地企业级"，与 Cloudera Anywhere Cloud 在同一天呼应"把处理带到数据所在处"的方向。CMF 把 Kafka + Flink 的运维从分散工具收敛为单一控制层，回应企业流处理在私有环境下的治理与规模化需求，映射"架构 + 治理"双重维度。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Alteryx 上线 Alteryx One: Google Edition，BigQuery 原生原地分析</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/alteryx-launches-alteryx-one-google-edition-on-google-cloud-marketplace-302853295.html">PR Newswire</a></div>
+    <div class="body"><b>摘要：</b> 8 月 19 日，Alteryx 在 Google Cloud Marketplace 上线 Alteryx One: Google Edition，通过 Live Query for BigQuery 实现数据原地分析，无需移动或复制数据，并推出 BigQuery AI Tools 把 Gemini AI 能力嵌入治理化分析工作流。<br><b>对数据平台的影响：</b> 数据分析工具链进一步"云内嵌"，no-code 分析直接在 BigQuery 原地执行，减少数据搬运与重复，映射"工程效率 + 采购"维度——工具与云数据平台的原生绑定正成为新的集成范式，也加速了独立分析工具的云平台化生存策略。</div>
+</div>
+<div class="item">
+    <h3>AWS 为 SageMaker Notebooks 接入可信身份传播，数据治理按用户细粒度授权</h3>
+    <div class="source">来源：<a href="https://www.daily-aws.com/headlines/20260819">AWS 官方公告</a></div>
+    <div class="body"><b>摘要：</b> 8 月 19 日，AWS 宣布 Amazon SageMaker Notebooks 支持 Trusted Identity Propagation（TIP），与 Amazon Athena、Redshift、EMR Serverless 打通，让每个 notebook 用户的 IAM Identity Center 身份贯穿到 Lake Formation，实现按用户的数据边界（表/列/行）与 CloudTrail 审计归因。<br><b>对数据平台的影响：</b> 数据治理从"共享执行角色"升级为"按用户身份细粒度授权"，解决分析工作负载中"谁访问了哪些数据"的隔离与审计难题，映射"治理"维度——per-user data boundaries 正在成为云数据平台分析栈的标配能力。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>Forrester 发布 AI Disruption Model：数据与治理是 AI 时代少数受益赛道</h3>
+    <div class="source">来源：<a href="https://investor.forrester.com/news-releases/news-release-details/forrester-introduces-ai-disruption-model-assess-ais-impact">Forrester 官方新闻</a></div>
+    <div class="body"><b>核心观点：</b> 8 月 19 日，Forrester 发布 AI Disruption Model，用九大因素评估 17 个技术和服务类别、200+ 市场。核心结论是 AI 收益分布不均：仅三类市场（基础设施、数据与 AI、身份与安全）明确受益；劳动力密集的知识工作行业（转型服务、软件实施、创意服务等）受最大颠覆；多数企业软件被"重塑"而非"取代"。<br><b>映射到数据平台的判断：</b> 分析师首次用结构化模型把"数据管理、治理与数据平台"列为 AI 规模化的少数受益赛道，为数据平台采购提供分析师背书，也提示"数据与信任优势、切换成本、监管摩擦"是 AI 时代抗颠覆的核心护城河，采购端据此可把预算向 agentic-ready 的数据与治理厂商倾斜。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】伦敦数据 fabric 公司 Prevalent AI 完成 2200 万美元增长投资</h3>
+    <div class="source">来源：<a href="https://www.startup.eu/investments/prevalent-ai-22-m-08-2026">Startup.eu</a></div>
+    <div class="body"><b>核心数据：</b> 2200 万美元增长投资，Integrity Growth Partners 领投，为公司九年历史首笔 primary 融资。<br><b>摘要：</b> Prevalent AI 把碎片化企业数据清洗、连接、情境化为"主权知识图谱"，先从网络安全切入，计划用本轮资金扩展至金融犯罪分析、运营情报、合规与企业 AI 场景，并加速美国市场扩张。<br><b>对数据平台的影响：</b> 数据 fabric / 知识图谱赛道持续获资本关注，且以"主权"为核心卖点，与当天 Cloudera Anywhere Cloud 的数据主权主线呼应，映射"采购与市场格局"维度——数据基础设施的估值叙事正从"连接数据"上移为"情境化 + 主权治理"。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】腾讯云 SQL Server 2025 Enterprise：内建 AI 向量检索，正式开放时间待确认</h3>
+    <div class="source">来源：<a href="https://cloud.tencent.com/document/product/238/59293">腾讯云产品动态</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 腾讯云 8 月 19 日通过公众号正式宣传 SQL Server 2025 Enterprise，内建 AI 向量检索（VECTOR 数据类型、DiskANN 向量索引、VECTOR_SEARCH 函数）与 T-SQL 调外部 AI 模型，全面支持单/双/多节点及只读实例，是国内云数据库"内建 AI"方向的产品化落地。<br><b>需要等待什么信号确认：</b> 官方产品动态页显示该版本 7 月 28 日已有"全新发布"记录，8 月 19 日为公众号二次宣传，需确认"正式全面开放"的准确时间节点，以及国内企业对数据库内建 AI 向量检索的实际采用率。</div>
+</div>
+<div class="item">
+    <h3>【预告】国家数据局 8/28 主办数据基础设施与数据标准化主题交流活动</h3>
+    <div class="source">来源：<a href="https://finance.sina.com.cn/jjxw/2026-08-19/doc-ininuzma2774637.shtml">新浪财经/贵阳日报</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 国家数据局将于 8 月 28 日在数博会（贵阳）主办"数据基础设施和数据标准化"主题交流活动，中国信通院、电子标准院、国家数据发展研究院承办，聚焦数据要素价值释放，是数据基础设施政策与标准的重要发布窗口。<br><b>需要等待什么信号确认：</b> 活动发布的数据基础设施与数据标准化相关成果，以及是否出台新的数据基础设施标准、试点政策或高质量数据集建设指引。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-20 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

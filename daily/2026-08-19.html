@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-19</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-19 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>国产大数据引擎在权威性能基准上大幅反超，极致性价比成为新赛点</li>
+      <li>模型路由从手工选择走向平台自动决策，AI 成本治理成新焦点</li>
+      <li>数据平台原生接入智能体接口，Agent 就绪从叙事落到协议</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台竞争正从"功能是否齐全"转向"能否同时做到算得快、算得省、接得稳"：性能基准的突破与 AI 推理成本的治理化在同一天交汇，标志厂商竞争的胜负手从存储与计算能力，上移到为智能体场景提供既高效又可控的统一底座。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>腾讯云数据湖计算 DLC 刷新 TPC-DS 100TB 性能与性价比双项世界纪录</h3>
+    <div class="source">来源：<a href="https://www.tpc.org/tpcds/results/tpcds_last_ten_results5.asp">TPC 官方榜单</a>（腾讯云官方 8/18 披露）</div>
+    <div class="body"><b>摘要：</b> 8 月 18 日腾讯云官方披露，其数据湖计算 DLC 在 TPC-DS 100TB 官方基准上以 6.54 亿 QphDS 综合性能刷新世界纪录，约为此前最高纪录的 10 倍；单位性能成本降至 11.04 元，约为此前六分之一，成为该榜单性能与性价比双领先的大数据计算平台。支撑成绩的引擎来自天穹平台自研 SuperSQL 统一计算引擎，以自研向量化底座 TEngine、CPU/GPU 异构计算与 vRDMA 软硬协同 Shuffle 实现超大规模场景的性能突破。<br><b>为什么对数据平台重要：</b> 这是国产大数据引擎首次在 TPC-DS 100TB 这一最大规模权威基准上同时拿下性能与性价比双项纪录，标志国内厂商在超大规模数据分析的计算底座上从"跟随"转向"领先"。同日，腾讯云天穹 DataAgent 还以 76.23% 准确率登顶企业级 Text-to-SQL 评测 Spider 2.0-Lite，性能与智能体能力双线验证 AI DLC 面向 Agent-Ready 场景的定位。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 为 Cortex AI Gateway 引入动态模型路由</h3>
+    <div class="source">来源：<a href="https://investors.snowflake.com/news/news-details/2026/Snowflake-Unlocks-Better-AI-Economics-with-Dynamic-Model-Routing-Delivering-More-Value-to-Customers/default.aspx">Snowflake 官方新闻</a></div>
+    <div class="body"><b>摘要：</b> 8 月 18 日，Snowflake 宣布在 Cortex AI Gateway 及旗舰 AI 产品（CoCo、CoWork）中引入动态模型路由，按任务复杂度、质量与成本自动选择最优模型，并新增 DeepSeek-V4-Flash 0731、GLM-5.3 等开放模型。内部测试显示，混合模型路由在 dbt 流水线场景 token 效率最高提升 3 倍，工程团队完成相同 PR 数时 token 效率提升 25%。<br><b>为什么对数据平台重要：</b> 动态模型路由把"用哪个模型"的决策从开发团队手工选择交给平台自动执行，直接回应前一日 Gartner 预警的"推理成本悖论"——单位 token 降价反推高总成本。Snowflake 与 Databricks Smart Routing（8/13）、Nvidia Switchyard（8/11）在同一周内先后落地模型路由，标志 AI 成本治理正成为数据平台厂商的竞争新焦点。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks Document Intelligence 推出 Precision Mode</h3>
+    <div class="source">来源：<a href="https://www.databricks.com/blog/databricks-document-intelligence-pushing-frontier-complex-document-extraction">Databricks 官方博客</a></div>
+    <div class="body"><b>摘要：</b> 8 月 18 日，Databricks 为其文档提取 API ai_extract 推出 Precision Mode，以定制微调提取模型 + agentic harness（分阶段推理、子代理并行提取、结果合并）处理长文档、超长输出与复杂 schema，在约 9000 份复杂文档基准上比最强前沿模型高 7 个点。<br><b>对数据平台的影响：</b> Precision Mode 直接提升企业把非结构化文档（合同、发票、财报）转成结构化数据入湖仓的精度，让"文档数据入湖"从粗抽取走向可信抽取，是数据平台数据摄取层向 Agent 化工程的一次能力升级。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局启动首批数据领域国际合作试点（10 地）</h3>
+    <div class="source">来源：<a href="https://news.qq.com/rain/a/20260818A0ANFT00">每日经济新闻</a></div>
+    <div class="body"><b>核心观点：</b> 8 月 18 日，国家数据局在 2026 上合组织数字经济论坛新闻发布会上宣布，首批数据领域国际合作试点在上海、海南、福州、厦门、泉州、长沙、广州、深圳、横琴、南宁等 10 地开展，围绕数据跨境流动便利化、数字基础设施互联互通、数据规则对接、数据标准互认等 6 方面 20 项试点事项，实行"一地一策"推进。<br><b>映射到数据平台的判断：</b> 数据跨境流动与数据标准互认是数据平台"治理"维度的政策底座。试点为数据平台厂商出海与数据要素国际流通提供可复制的制度框架，直接影响企业数据平台在跨境场景的合规架构设计。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Microsoft Fabric 原生 MCP 架构落地（Local GA / Remote Preview）</h3>
+    <div class="source">来源：<a href="https://dev.to/om_shree_0709/microsoft-fabric-just-exposed-its-mcp-architecture-heres-what-it-actually-changes-for-data-teams-1i4e">dev.to 技术分析</a></div>
+    <div class="body"><b>为什么值得继续看：</b> Fabric Local MCP 已正式可用（开放源码本地 MCP server，让 AI 助手深度调用 Fabric API 与 OneLake），Remote MCP 进入 Preview（云端 MCP server，供 Copilot Studio 自主智能体操作工作区），OneLake MCP 工具同步上线。微软把 MCP 作为数据平台原生智能体接口，而非自建 Agent 框架。<br><b>需要等待什么信号确认：</b> 官方 GA 公告的确切发布日期，以及 Remote MCP 转 GA 的时间线、企业客户对"数据平台 MCP 原生化"的实际采用率。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-19 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
