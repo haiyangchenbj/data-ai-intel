@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-25</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-25 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>资本加速涌向 AI 基础设施，头部厂商融资创纪录</li>
+      <li>数据资产直接变现为模型能力，专有数据成护城河</li>
+      <li>云服务形态从为人设计转向为智能体设计，数据底座需重写</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>融资与并购活跃度回升，云厂商与数据厂商同步加码 Agent 化与数据资产化：行业共识正从引擎性能比拼转向智能体服务能力与数据资产变现的双重竞争，数据底座重构成为 AI 落地前置条件。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>阿里巴巴 800 亿港元配售定价，100% 投入 AI 基础设施</h3>
+    <div class="source">来源：<a href="https://www.alibabagroup.com/en-US/document-2028384807859257344">阿里巴巴集团公告</a></div>
+    <div class="body"><b>摘要：</b> 阿里巴巴 8 月 24 日宣布完成 800 亿港元新股配售定价，7.1 亿股、每股 112.70 港元，为香港上市公司史上最大一级后续发行、年内全球第三大。所得款项净额 100% 用于投资全栈 AI 能力，包括扩大升级 AI 基础设施；启动不足一小时获超额认购，主权财富基金等长线资金为主，预计 8 月 26 日交割。同期财报显示 AI 相关产品年化收入已突破 495 亿元。<br><b>为什么对数据平台重要：</b> 云厂商资本开支竞赛进入千亿港元级新量级，AI 基础设施（算力、存储与数据底座）成为融资的第一去向；数据平台作为 AI 基础设施的"数据层"直接受益于资本投入，同时头部云厂商围绕 AI-Ready 数据底座的军备竞赛将显著提速。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud 与 Verizon 达成战略合作，Agentic Data Cloud 支撑企业 AI 转型</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/google-cloud-announces-strategic-partnership-with-verizon-to-scale-enterprise-ai-302857825.html">PR Newswire</a></div>
+    <div class="body"><b>摘要：</b> Google Cloud 8 月 24 日宣布与 Verizon 达成战略合作：Verizon 将部署全栈 AI（Gemini Enterprise + 数据基础设施），覆盖客户体验、自主网络智能、营销自动化与员工生产力；Gemini Enterprise 已处理其每月大部分入站电话与在线咨询。Verizon 多年将遗留数据湖整合至 Google Cloud 的 Agentic Data Cloud，作为企业级智能的统一数据底座与单一事实来源。<br><b>为什么对数据平台重要：</b> 大型电信企业把"统一数据底座"列为 AI 转型前提，Agentic Data Cloud 这类云原生产品承接企业数据湖整合需求；企业 AI 落地正在从"模型选型"前移到"数据底座整合"，云厂商的数据平台成为企业 AI 战略的入口与护城河。</div>
+</div>
+<div class="item">
+    <h3>Elastic 完成收购 Deductive AI，AI 推理内建到可观测性</h3>
+    <div class="source">来源：<a href="https://www.businesswire.com/news/home/20260824863894/en/">Business Wire</a></div>
+    <div class="body"><b>摘要：</b> Elastic 8 月 24 日宣布完成对 Deductive AI 的收购。Deductive AI 提供 AI 驱动的生产问题调查平台，其 AI SRE 智能体可收集证据、形成并检验假设，跨代码、遥测与组织知识推理根因，强化学习 harness 让每次调查改进下一次。收购将 AI 调查能力并入 Elastic Observability，从"检测到解决"缩短故障处置时间，客户迁移期间服务不受影响。<br><b>为什么对数据平台重要：</b> 搜索与可观测性厂商以收购方式把 AI 根因分析内建进平台，标志遥测数据（日志、指标、链路）成为 AI 推理的高价值语料，AI 原生能力正从模型层下渗到数据密集型平台；可观测性数据平台迎来 AI 化并购窗口。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>AWS 增强 SageMaker HyperPod 的 Ray 支持，托管 Ray 免写 Kubernetes 清单</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-sagemaker-hyperpod-ray">AWS What's New</a></div>
+    <div class="body"><b>摘要：</b> AWS 8 月 24 日宣布 SageMaker HyperPod 增强对 Ray 的支持：数据科学家可在 SageMaker Studio 可视化创建、编辑、监控与删除 Ray 集群，免写 YAML 清单；内置 Grafana 可观测性与单点登录 Ray Dashboard；训练获得节点自动恢复与挂起任务检测、分层检查点；Ray Serve 推理支持分层 KV 缓存与 JumpStart 模型直达，开源 Ray 代码无需修改即可运行。<br><b>对数据平台的影响：</b> 托管 Ray 把"分布式集群运维"从数据科学家工作中剥离，ML 训练与数据处理工程门槛显著下降；云厂商正把 AI 训练与推理基础设施商品化，数据平台与计算平台边界进一步向"AI 工作负载即服务"收拢。</div>
+</div>
+<div class="item">
+    <h3>Thomson Reuters 发布自研模型 Thomson：专有数据资产以零头成本构建垂直智能</h3>
+    <div class="source">来源：<a href="https://stockhouse.com/news/press-releases/2026/08/24/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier">Stockhouse（CNW）</a></div>
+    <div class="body"><b>摘要：</b> Thomson Reuters 8 月 24 日发布自研大模型 Thomson：以开源模型为基础，投入 4000 万美元做中训与后训，语料来自 Westlaw、Practical Law、Checkpoint、Reuters 数十年专有内容，评测对标前沿模型。模型先在 CoCounsel Legal 落地，小型开源权重版本已发布 Hugging Face 供学术与非商业使用。<br><b>对数据平台的影响：</b> 以不到前沿实验室 1% 的成本，用专有数据资产构建垂直前沿模型，实证"数据资产即模型能力"路径；对数据平台行业是强信号——高质量专有数据价值将随 AI 变现重估，数据治理、资产化与垂直语料管线的 ROI 逻辑被强化。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>携程 UBT 从 ClickHouse 迁移 StarRocks 存算分离：查询提速 7 倍、存储减半</h3>
+    <div class="source">来源：<a href="https://blog.csdn.net/StarRocks/article/details/153530204">StarRocks 官方博客（CSDN）</a></div>
+    <div class="body"><b>核心观点：</b> 携程将用户行为追踪系统（UBT，日均新增 30TB）从 ClickHouse 迁移至 StarRocks 存算分离架构：平均查询耗时从 1.4 秒降至 203 毫秒、P95 延迟 800 毫秒，存储量减少一半，节点从 50 个降至 40 个；链路由 gohangout+ClickHouse 替换为 Flink+StarRocks，实时与离线分析走向统一。<br><b>映射到数据平台的判断：</b> 国内头部互联网在大规模生产负载上验证了存算分离与 MPP 的性能成本双赢；查询性能、存储成本与运维复杂度的组合优化仍是数据平台选型的核心标尺，存算分离正从概念走向工程标配。</div>
+</div>
+<div class="item">
+    <h3>腾讯云王义成：AI 原生数据库的变道逻辑是应对 Agent 带来的"未知"</h3>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L540J90Q05316FM3.html">ITPUB 学院（网易转载）</a></div>
+    <div class="body"><b>核心观点：</b> DTCC 2026 采访中，腾讯云副总裁王义成提出：Agent 正成为数据库的"新用户"，数据范式、流量洪峰与系统压力均不可预测，过去基于"人使用数据库"的设计前提需要重新设计；腾讯云已推出覆盖基础设施层、数据库层到上层应用层的完整 AI 原生产品矩阵，应对 Agent 时代的转型。<br><b>映射到数据平台的判断：</b> 数据平台设计前提正从"人使用"转向"Agent 使用"，预测性负载模型失效，弹性、自治与安全成为硬要求；国内头部云厂商已把"Agent 就绪"作为数据底座重构的主线，数据库与数据平台进入范式重写窗口。</div>
+</div>
+<div class="item">
+    <h3>Kai Waehner：流处理被高估，消息队列与 API 往往够用</h3>
+    <div class="source">来源：<a href="https://www.kai-waehner.de/blog/2026/08/24/when-not-to-use-stream-processing-messaging-and-apis-are-often-enough">Kai Waehner Blog</a></div>
+    <div class="body"><b>核心观点：</b> Kai Waehner 8 月 24 日发文：Confluent 用非流处理架构重写 Stream Monitoring（冷启动从 15-50 分钟降至约 1 分钟，分区支持从 12 万增至 40 万）；Kestra 2.0 弃用 Kafka Streams 改回队列架构。连续处理、查询、API 调用是三种不可互换的交互模式，监控与编排类场景常被过度使用流处理。<br><b>映射到数据平台的判断：</b> 流处理厂商内部也在做"架构降级"——引擎选型应回归需求本质而非技术潮流；对数据平台建设者，事件驱动、拉取与请求响应三种模式需按场景匹配，避免为流而流增加基础设施复杂度与成本。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】枢途科技完成近亿元天使+++轮，具身智能数据管线受资本追捧</h3>
+    <div class="source">来源：<a href="https://finance.sina.cn/2026-08-24/detail-inipkzxu6095941.d.html">投资界（新浪财经转载）</a></div>
+    <div class="body"><b>核心数据：</b> 近亿元天使+++轮融资，投资方含基石资本、南山战新投、苏州趋势资本、能量守恒资本、杭实集团与西湖科创投；此前已完成数千万元天使++轮。公司成立于 2024 年，已沉淀数据数十万小时、总量 3600 万余条、覆盖 260 个品类场景；国内估值超百亿的具身智能企业中 60% 以上为其客户。<br><b>摘要：</b> 枢途科技定位"以视频为核心的具身智能数据管线"基础设施：依托高精度视频升维、跨域映射等技术，将互联网视频转化为可学习、可迁移的多模态数据，并建成覆盖任务设计、行为采集、数据治理、智能结构化与定制交付的工业化生产体系。<br><b>对数据平台的影响：</b> 数据管线与数据工程叙事向物理 AI 延展——具身智能训练依赖"人类行为数据"的工业化生产，数据采集、清洗、结构化、质检的工程能力从数字世界复制到物理世界，数据平台市场半径显著扩大。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】OceanBase seekdb 启动"多模态混合搜索"内容系列，AI 原生数据库营销升温</h3>
+    <div class="source">来源：<a href="https://dev.to/oug/stop-stitching-your-rag-stack-why-we-built-seekdb-41cg">DEV Community（OceanBase 团队）</a></div>
+    <div class="body"><b>为什么值得继续看：</b> OceanBase 首款 AI 原生数据库 seekdb（2025 年 11 月发布并开源，Apache 2.0）本周启动"seekdb magic"系列内容，主打向量+全文+标量+GIS 多模态统一混合搜索与"不拼接 RAG 栈"叙事；产品本身非新发布，但内容营销密集化表明厂商正在 AI 数据库赛道加码开发者教育。<br><b>需要等待什么信号确认：</b> seekdb 的社区采用规模与生产级案例（当前 2500+ stars 仍处早期）；混合搜索是否成为国产 AI 数据库主流形态、后续正式版本迭代节奏，以及 OceanBase 生态（PowerRAG/PowerMem）能否沉淀出可持续的开发者网络。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-25 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

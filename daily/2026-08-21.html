@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-21</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-21 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库正从存取工具重构为智能体的记忆中枢与行动通道</li>
+      <li>数据工程算力转向 GPU 异构加速，零改造提速成为竞争点</li>
+      <li>数据仓库治理向日志级可观测与分钟级容灾下沉，合规倒逼架构升级</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>国内云厂商正把数据库产品线整体转向智能体底座，从服务人转向服务智能体，多模统一、语义记忆、权限治理成为新一代数据库选型标准；国际厂商则在数据工程的性能与治理两端同步加码，采购逻辑从单一引擎能力转向端到端的智能体数据底座。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>腾讯云发布 AI 数据底座 TDSQL Nexa，数据库全面面向 Agent 重构</h3>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L4Q0UIAL05118HA4.html">雷峰网</a></div>
+    <div class="body"><b>摘要：</b> 8 月 20 日，在 2026 DTCC 中国数据库技术大会上，腾讯云正式发布面向 AI 时代的数据底座 TDSQL Nexa，将事务处理、全文及向量检索、AI 计算、大规模分析统一到一个数据平台，并通过 Nexa Knowledge 沉淀业务语义，为每个 Agent 配置独立身份与行列级权限。腾讯云测试显示，在可观测场景中相比开源组合方案计算性能提升 10 倍以上、成本降低 60% 以上；结合业务语义后 Agent 生成的 SQL 基本无需人工修改。<br><b>为什么对数据平台重要：</b> 这是国内云厂商首次以「Agent 数据底座」为定位发布完整数据库产品，将多模统一承载、Agent 原生架构、语义与记忆、治理与自治四类能力产品化。腾讯云同期披露 TDSQL-C 已服务 50 万开发者、Agent Memory 开源 80 天获 2 万 GitHub Stars、DatabaseClaw 现网故障 3 分钟定位，标志着数据库服务对象从人转向 Agent 由叙事进入生产落地，为国内厂商的 Agentic Database 竞速确立了产品化样板。</div>
+</div>
+<div class="item">
+    <h3>Cloudera 联合 NVIDIA 为 Spark 4.1 引入原生 GPU 加速，数据工程走向异构算力</h3>
+    <div class="source">来源：<a href="https://www.cloudera.com/about/news-and-blogs/press-releases/2026-08-20-cloudera-teams-with-nvidia-to-lower-cloud-compute-spend-and-accelerate-apache-spark-pipelines.html">Cloudera</a></div>
+    <div class="body"><b>摘要：</b> 8 月 20 日，Cloudera 在 EVOLVE Singapore 上宣布，在 Cloudera Data Engineering 中为 Apache Spark 4.1 引入由 NVIDIA CUDA-X 库 cuDF 驱动的原生 GPU 加速，用户无需改写 PySpark 或 SQL 代码即可获得最高 4 倍的工作负载加速，同时降低云基础设施成本，可跨公有云、私有云、主权云和本地环境一致部署。<br><b>为什么对数据平台重要：</b> 数据准备速度正成为 AI 落地的前置瓶颈，Cloudera 调研显示 84% 受访者称 AI 工作负载推高了基础设施成本。将 GPU 加速内嵌到 Spark 引擎并以零代码方式交付，意味着数据工程从 CPU 通用算力向 GPU 异构算力的迁移不再需要重写作业，把性能提升的决策门槛降到最低，也把数据就绪速度重新拉回数据平台竞争的前沿。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>AWS Redshift 系统表接入 S3 Tables，突破 7 天保留限制</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/blogs/big-data/long-term-system-tables-retention-in-amazon-redshift-with-amazon-s3-tables/">AWS Big Data Blog</a></div>
+    <div class="body"><b>摘要：</b> Amazon Redshift 系统表集成 Amazon S3 Tables，自动将系统表日志以 Apache Iceberg 格式投递到 S3 Tables，突破原有的 7 天保留限制，支持自定义保留周期，可被 Redshift、Athena、Glue、EMR 等 Iceberg 兼容引擎直接查询。<br><b>对数据平台的影响：</b> 把数据仓库的可观测性数据开放为 Iceberg 格式并长期保留，既降低合规审计与跨仓性能分析的工程成本，也顺应了日志数据开放化的趋势——运维数据不再锁在专有系统表内，而是成为可被任意开放引擎消费的数据资产。</div>
+</div>
+<div class="item">
+    <h3>EDB WarehousePG 灾难恢复 GA，数仓恢复从数天压缩到分钟级</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/edb-brings-postgres-proven-disaster-recovery-to-petabyte-scale-warehousepg-where-downtime-is-not-possible-302855918.html">PR Newswire</a></div>
+    <div class="body"><b>摘要：</b> EnterpriseDB 宣布其 Postgres AI for WarehousePG 的灾难恢复能力 GA，为 petabyte 级分析数仓提供跨基础设施边界的容灾恢复。某银行部署案例中，恢复点回放平均从近两天缩短到 16 分钟（约 180 倍加速），全量备份从 44 小时降至约 11 小时。<br><b>对数据平台的影响：</b> 当 AI 智能体、分析师和业务团队依赖实时分析数据做决策，数仓宕机的恢复时间从「天」级压缩到「分钟」级，直接把容灾从最佳实践变成可测试、可衡量的能力。其基于开源 Barman 与 WAL 的实现延续了 Postgres 团队熟悉的运维栈，降低主权/混合环境自建容灾的专有技术锁定。</div>
+</div>
+<div class="item">
+    <h3>MongoDB Atlas 支持 FOCUS v1.3 成本报告，FinOps 数据标准化</h3>
+    <div class="source">来源：<a href="https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-support-for-focus-v1-3-cost-and-usage-reports">MongoDB</a></div>
+    <div class="body"><b>摘要：</b> MongoDB Atlas 现以 FinOps 开放成本与使用规范（FOCUS）v1.3 格式交付成本和使用数据，提供含货币、折扣、账户/项目映射、SKU 类别等属性的标准化账单数据集，可通过 Atlas Admin API 或账单 UI 获取。<br><b>对数据平台的影响：</b> 跨多云和 SaaS 厂商的成本分析长期受制于各不相同的账单格式，FOCUS v1.3 的落地让 Atlas 账单无需自定义 SKU 映射即可接入统一 FinOps 管线。这是成本治理标准化的具体进展，也反映数据平台厂商开始把「可被统一成本平台消费」作为账单数据的默认能力。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】数据提供商 YipitData 探索出售，估值或达 25-30 亿美元</h3>
+    <div class="source">来源：<a href="https://runtimewire.com/article/yipitdata-explores-sale-above-2-5-billion">Runtime Wire（转述 Reuters）</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 据 Reuters 报道，另类数据提供商 YipitData 正探索出售，估值区间 25-30 亿美元，Goldman Sachs 正测试战略买家与 PE 兴趣，其 2026 年目标年经常性收入约 2.8 亿美元。报道指出投资者对专有数据集的兴趣上升，部分因为独特数据可支撑 AI 模型，部分因为信息资产在 AI 压低通用软件价值时仍能保值。<br><b>需要等待什么信号确认：</b> 交易能否落地及最终估值倍数（报道的 9-11 倍 ARR 区间是否兑现），将检验「专有数据集」作为 AI 时代可防御资产的定价逻辑，也是数据要素资产化在另类数据领域的市场试金石。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-21 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

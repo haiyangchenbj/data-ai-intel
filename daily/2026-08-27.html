@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-27</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-27 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>开源分析引擎被云巨头收编，格局加速重构</li>
+      <li>芯片龙头财报超预期，算力与资本开支双景气</li>
+      <li>智能体需求带动轻量引擎，资本密集进场</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>开源分析引擎迎来云化分水岭：AWS 收编嵌入式引擎龙头，英伟达财报验证算力与资本开支双景气，智能体驱动轻量分析与可观测需求共振。竞争主轴从存储与引擎绑定，转向引擎、算力与生态的多维整合，开放数据栈正被云巨头重塑。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>AWS 签署协议收购 DuckLabs：DuckDB 开源路线不变，嵌入式引擎纳入云底座</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/blogs/big-data/aws-and-ducklabs-building-the-future-of-analytics-together/">AWS 官方博客</a> ｜ <a href="https://www.aboutamazon.com/news/company-news/aws-ducklabs">Amazon News</a></div>
+    <div class="body"><b>摘要：</b> 8 月 26 日，AWS 宣布已签署协议收购 DuckLabs（DuckDB 母公司），预计 9 月初完成交割。DuckLabs 团队 30 余人留在阿姆斯特丹，创始人 Hannes Mühleisen 与 Mark Raasveldt 继续领导团队及开源项目技术方向。DuckDB、DuckLake、Quack 及全部扩展保持 MIT 开源，由非营利 DuckDB 基金会继续监管，基金会将设立利益相关方咨询委员会影响项目方向。AWS 表示将深化 DuckDB 与 S3、Redshift、Athena、EMR、Glue 等分析服务的集成，并已在内部（Amazon Quick 仪表盘引擎）使用 DuckDB 查询 S3 Tables。<br><b>为什么对数据平台重要：</b> 这是"嵌入式分析引擎云化收编"的标志性事件：DuckDB 主打 1TB 以下日常查询的极致性能，天然契合 Agent 高频、探索式的小查询模式，AWS 借收购补齐"SQL 直查 S3 数据"的轻量能力，对 Snowflake、Databricks 形成新竞争维度；同时"公司被收购、基金会保持治理"的 Tabular→Databricks 模式再现，开源信任与商业整合并行，开放数据栈生态边界进一步向云巨头收拢。</div>
+</div>
+<div class="item">
+    <h3>英伟达 Q2 财报超预期：营收 962 亿美元增 106%，首次提前一年给 2028 财年增约 70% 指引</h3>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7678498473196503571/">北京日报客户端</a> ｜ <a href="https://www.toutiao.com/article/7678508347821277732/">每日经济新闻</a></div>
+    <div class="body"><b>摘要：</b> 美东 8 月 26 日盘后（北京时间 8/27 凌晨），英伟达公布 2027 财年 Q2（截至 7/26）财报：营收 962 亿美元，同比增 106%、环比增 18%，超分析师预期（919-952 亿区间）；GAAP 净利 596.88 亿增 126%；毛利率 75%。数据中心收入 890 亿增 117%，其中超大规模云客户 487 亿、AI 云与工业企业客户 403 亿；边缘计算 72 亿增 27%。Q3 指引营收 1080 亿美元（±2%，不含中国区数据中心收入），超市场预期的 1030 亿；首次提前一年给出指引：2028 财年营收增约 70%，远超市场预期的 45%。客户承诺订单从 1190 亿飙升至 2790 亿美元，AWS 承诺额外部署 200 万 GPU。盘后涨超 4%。<br><b>为什么对数据平台重要：</b> 财报验证 AI 算力需求"仍在加速而非见顶"，直接打消市场对 AI 资本开支进入"消化期"的疑虑；数据中心收入中"AI 云与工业企业客户"（403 亿，增 138%）增速快于超大规模云，意味着除云厂商外，数据平台与 AI 服务的采购方结构正多元化；2028 财年 70% 指引 + 2.79 万亿美元承诺订单，为数据平台所在的基础设施扩张周期提供了更长的确定性窗口。</div>
+</div>
+<div class="item">
+    <h3>Reuters 新闻档案上架 Snowflake Marketplace，路透把新闻资产转成授权 AI 基础设施</h3>
+    <div class="source">来源：<a href="https://runtimewire.com/article/reuters-news-archive-snowflake-marketplace-enterprise-ai">RuntimeWire</a></div>
+    <div class="body"><b>摘要：</b> 8 月 26 日，Reuters 将其新闻与多媒体档案通过 Snowflake Marketplace 向企业开放：覆盖 1987 年至今的五种语言新闻内容，企业可在 Snowflake 平台内授权用于 AI 应用、事件监测、行业研究与分析工具，定价与模型训练用途未披露（与 AP Intelligence 明示训练权限不同，Reuters 留给采购方与授权协议确认）。Reuters 战略业务发展总监 Erika Young 表示，该集成支持在保护 Reuters 知识产权的前提下开展 AI 开发。此前 7 月 8 日 Reuters 已推出 MCP 服务器，让授权系统在 AI 工作流中检索订阅内容。<br><b>为什么对数据平台重要：</b> 这是"内容即数据服务"在数据平台分销的样板：新闻档案与客户的内部数据、AI 工作负载同处一个平台，省去独立摄取管道；对数据平台而言，Marketplace 从"卖第三方数据"升级为"卖授权式 AI 语料"，数据确权与合规成为平台增值层，数据交易从 API 时代进入平台内授权时代。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>中科曙光将发布新一代词元加速存储方案，推理存储从计算配套走向主动协同</h3>
+    <div class="source">来源：<a href="https://www.cls.cn/detail/2464753">财联社（科创板日报）</a></div>
+    <div class="body"><b>摘要：</b> 8 月 26 日，在 2026 全球闪存峰会上，中科曙光分布式存储产品部总经理石静透露，公司将于 2026 数博会期间正式发布新一代词元加速存储方案，基于存算协同理念，针对长上下文多轮对话、高并发推理、轻量级硬件部署等 AI 推理场景，缓解推理过程中的重复计算与数据调度瓶颈。"词元时代，存储不能再只是计算的配套设备，要主动向前，与应用协同。"其 ParaStor 分布式存储已应用于国内首个全国产十万卡 AI 超集群曙光 8000（登峰）。赛迪顾问《中国分布式存储市场研究报告（2026）》显示，中科曙光在 AI、教育、具身智能、自动驾驶四个行业市场第一，AI 存储连续三年居首。<br><b>对数据平台的影响：</b> 大模型从集中训练走向规模化推理，词元成为产出与成本计量单位，存储从"算力配套"升级为"推理效率变量"；与海外英伟达财报中"内存成本高企"形成呼应，存算协同成为推理成本治理的新竞争维度，也直接关系到数据平台在 Agent 高频查询场景下的单位成本结构。</div>
+</div>
+<div class="item">
+    <h3>DuckDB 2.0 路线确认：Quack 客户端协议转正、40 倍加速，基金会保持治理主导</h3>
+    <div class="source">来源：<a href="https://duckdb.org/2026/08/26/ducklabs-to-join-aws.html">DuckDB 官方公告</a> ｜ <a href="https://duckdb.org/library/what-next-for-duckdb">DuckDB 创始人访谈</a></div>
+    <div class="body"><b>摘要：</b> 收购官宣当日，DuckDB 官方同步确认 2.0 技术路线不变并加速推进：2.0 将引入客户端/服务器模式（Quack 协议转正）、宣称 40 倍性能加速与稳定 C API，计划秋季发布；DuckDB、DuckLake、Quack 全部项目由 DuckDB 基金会（类比 Apache 基金会）继续治理，AWS 承诺长期加大投入，基金会将新增利益相关方咨询委员会。创始人以 Tabular→Databricks 类比说明"公司可售、基金会不动"的模式：项目开源治理与商业收编相互独立，AWS 已是 DuckDB 两年大客户（曾资助 Iceberg 相关开发）。<br><b>对数据平台的影响：</b> DuckDB 2.0 的客户端/服务器模式意味着嵌入式引擎正式进入"可托管、可服务化"阶段，为 AWS 将其包装为云服务扫清技术前提；对分析引擎市场，DuckDB 从开发库升级为云原生服务候选，将直接冲击传统数仓的轻量查询层，开放生态与云托管两条路线在开源分析引擎上首次合流。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>ClickHouse 年度经常性收入突破 3.5 亿美元：OpenAI 一年内将日志管理从 Datadog 迁移过来</h3>
+    <div class="source">来源：<a href="https://dealroom.co/news/146838-clickhouse-arr-passes-350m-as-ai-agents-fuel-database-demand">Dealroom（源自 The Information）</a></div>
+    <div class="body"><b>摘要：</b> 8 月 26 日报道（The Information 首发），ClickHouse 年度经常性收入（ARR）突破 3.5 亿美元，较 5 月增长 40%。增长核心驱动是 OpenAI：过去一年 OpenAI 将包括日志管理在内的部分业务从 Datadog 迁移至 ClickHouse（J.P. Morgan 分析师 Mark Murphy 5 月报告记录）；Datadog 本月因最大客户（未具名）削减支出单日跌 19%。ClickHouse 今年 1 月融资估值 150 亿美元，收购 Langfuse 后切入可观测性市场，CEO Aaron Katz 表示"若想明年现金流转正完全可以"，但选择投入增长。<br><b>对数据平台的影响：</b> AI Agent 每步操作都产生日志与追踪数据，"智能体驱动的可观测性"成为分析引擎需求新引擎，ClickHouse 以开源+低成本+高性能从日志分析切入，正面挑战 Datadog 按量计费模式；对数据平台是工程效率维度的需求信号——Agent 规模化的前提是可观测与低成本分析底座。</div>
+</div>
+<div class="item">
+    <h3>OliverAI 获 Menlo Ventures 与 Unusual Ventures 联合 pre-seed 投资，专为智能体重建分析引擎</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/menlo-ventures-and-unusual-ventures-back-oliver-ai-to-redefine-data-infrastructure-for-agentic-ai-302860322.html">PR Newswire</a></div>
+    <div class="body"><b>摘要：</b> 8 月 26 日，OliverAI 宣布获得 Menlo Ventures 与 Unusual Ventures 联合 pre-seed 投资（金额未披露），创始人 Praneet Sharma（前 Datadog/New Relic）、Grace Johnson 与 Toby O'Brien（前 Datadog 销售）共同打造 OliverDB——为 Agentic AI 设计的分析平台：AI 智能体可实时探查企业数据，自称在 ClickBench 基准（ClickHouse 开源基准）测试中 CPU 上比 ClickHouse 快数百倍、GPU 上数千倍（内部测试，未独立审计）；配套 Agent Flight Control 提供 Agent 级访问治理与 MCP 服务器策略控制，模型群组（model swarm）以多个小模型并行降低 token 开销。<br><b>对数据平台的影响：</b> "现有分析基础设施为人类而建、不为 Agent 而建"成为新的创业共识，OliverAI 与 ClickHouse Agentic Data Stack、Snowflake/Databricks Agent 工具链同台竞争，说明智能体工作负载正从"平台功能"升格为"独立基础设施品类"；治理（Agent 级权限）+性能（探索式查询）双卖点指向 Agent 规模化部署的真实瓶颈。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>ClickHouse 与 Cribl 收到战略收购接洽，CEO 均表态拒绝出售坚持独立【传闻】</h3>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L59IS02B05568W0A.html">网易财经（环球市场播报，源自 The Information 记者）</a></div>
+    <div class="body"><b>摘要：</b> 8 月 26 日（The Information）报道，ClickHouse 自 1 月融资后已收到多家战略收购方接洽，CEO Aaron Katz 明确表示"不会出售公司，要继续独立发展"；可观测数据管道公司 Cribl 同期披露 ARR 接近 4 亿美元（较 2 月增 33%），CEO Clint Sharp 称计划未来两三年内 IPO，服务 Zoom、ServiceNow、希尔顿等客户，上一轮融资（2024 年 8 月）估值 35 亿美元。Grafana 同期称营收提速，部分来自 AI 助手增长。该赛道整体被 AI 智能体数据需求带动，成为并购与 IPO 双向活跃区。<br><b>对数据平台的影响：</b> 数据管道与可观测基础设施在智能体时代价值重估，独立厂商坚持自主发展的姿态，与 AWS 收编 DuckLabs 的整合路径形成对照——"独立做强 or 卖身云巨头"成为开源数据基础设施的岔路口，市场格局可能在未来数个季度快速收敛。</div>
+</div>
+<div class="item">
+    <h3>阿里云 Token Plan 接入千问，账户订阅与云 MaaS 计费打通【降级：8/25 发布】</h3>
+    <div class="source">来源：<a href="https://developer.aliyun.com/article/1757766">阿里云开发者社区</a> ｜ <a href="https://www.aitop100.cn/infomation/details/34532.html">AITOP100</a></div>
+    <div class="body"><b>摘要：</b> 8 月 25 日，千问 APP 与 PC 端上线阿里云 Token Plan 接入功能：用户在"工作助理"中绑定百炼 API Key 后，复杂任务（操作浏览器、调用 Skill、生成文档等）优先消耗 Token Plan 订阅额度，Token 实时从百炼账户扣除，订阅制与 API 按量计费打通。Token Plan 个人版三档（Lite 39 元/月、Standard 139 元/月、Pro 499 元/月，限时价），团队版降价至 150 元/座席/月，与 Coding Plan（200 元/月固定费）形成差异化。原始发布时间 8/25 略早于本窗口，降级跟踪。<br><b>对数据平台的影响：</b> "订阅制与 API 计费打通"是 AI 算力消费化的关键一步：云 MaaS 计费账户化、额度跨端复用，把"按量付费的弹性"与"订阅的确定性"缝合，为数据平台面向 Agent 场景的计费模型（类似 ClickHouse 类引擎的订阅化）提供先行样本；国内 Agent 开发者的成本预期管理进入新阶段。</div>
+</div>
+<div class="item">
+    <h3>英伟达毛利率 Q4 触底 71-72%，内存成本飙升向数据平台传导【跟踪】</h3>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7678508347821277732/">每日经济新闻</a> ｜ <a href="https://www.toutiao.com/article/7678498473196503571/">北京日报客户端</a></div>
+    <div class="body"><b>摘要：</b> 英伟达 CFO Colette Kress 在 Q2 电话会上表示，内存（HBM/DRAM）价格极端高企，预计至少到 2028 财年供应仍是增长瓶颈，毛利率将在 Q4 触底 71-72%（Q2 为 75%，Q3 指引 74%）；公司正与 SK 海力士建立多年技术合作推动下一代内存。数据中心"收入含金量"分析显示，内存成本已成为 AI 基础设施成本结构中最大的上升项，并随服务器涨价（8 月已报道超 15%）向下游传导。<br><b>对数据平台的影响：</b> 内存涨价直接推高内存密集型分析引擎（DuckDB、ClickHouse 类列存/向量化引擎）与数据平台的单位成本，存算成本结构变化或影响下一轮数据平台定价与采购决策；与中科曙光"词元加速存储"、ClickHouse 低成本分析形成共振，成本治理成为数据平台竞争的关键维度，列入持续跟踪。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-27 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

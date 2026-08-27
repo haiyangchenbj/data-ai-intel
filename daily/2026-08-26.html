@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-26</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-26 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>公共数据示范场景扩容，数据要素市场化提速</li>
+      <li>云巨头 AI 开支转向表外融资，资本结构承压</li>
+      <li>云迁移评估 AI 化提速，开源表格式生态成熟</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>政策与资本双重信号指向 AI 基础设施投入加速：公共数据示范场景扩至 150 个，云厂商表外承诺超 3 万亿美元；谷歌以生成式 AI 重构云迁移评估、Iceberg 多语言实现同日发布，数据平台同步经历需求扩容与供给结构变化。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局发布第五批 50 个公共数据"跑起来"示范场景，累计达 150 个</h3>
+    <div class="source">来源：<a href="https://www.nda.gov.cn/sjj/swdt/xwfb/0825/20260825204140175751047_pc.html">国家数据局新闻发布会文字实录</a></div>
+    <div class="body"><b>摘要：</b> 8 月 25 日上午，国家数据局举办"数据价值化 我们在行动"系列发布会第五场，发布第五批 50 个公共数据"跑起来"示范场景。至此五批累计 150 个示范场景全面铺开：全国一体化公共数据资源登记超 30 万项、覆盖国民经济全部 97 个大类，31 省区市及新疆生产建设兵团均已开展登记业务；25 省实质性开展授权运营，江苏、福建已出台授权运营产品和服务试行收费标准。第五批申报 731 份创历史新高，交通运输、社会管理、医疗健康、应急管理领域占比 32%，中宣部等 12 个部委首次参与申报。<br><b>为什么对数据平台重要：</b> 公共数据资源开发利用从"试点示范"走向"规模化制度化"，登记、授权运营、定价收费形成完整制度闭环；对数据平台是需求侧强信号——公共数据"一本账"登记、授权运营与数据产品交易都需要数据治理、目录与流通基础设施承接，数据要素市场化直接拉动数据平台建设投入。</div>
+</div>
+<div class="item">
+    <h3>摩根士丹利：五大云厂商与英伟达等 AI 表外承诺超 3.1 万亿美元</h3>
+    <div class="source">来源：<a href="https://finance.sina.com.cn/stock/t/2026-08-26/doc-inipqxfy5379855.shtml">新浪财经（界面新闻）</a></div>
+    <div class="body"><b>摘要：</b> 摩根士丹利 8 月 25 日研报显示，Alphabet、亚马逊、Meta、微软、甲骨文五家超大规模云厂商及英伟达、博通，通过担保、租赁及其他财务支持形式，合计承诺超 3.1 万亿美元用于第三方 AI 基础设施支出，其中 Alphabet 以 8900 亿美元居首（主要为采购承诺）。云厂商未折现承诺总额超 2.7 万亿美元，约等同于其当前三年经营性现金流；该群体 2027 年预计现金资本开支超 1.2 万亿美元、预期现金流约 1 万亿美元。摩根士丹利估算，云厂商超四成营收正被重新投入 AI 资本开支，Alphabet 与亚马逊二季度自由现金流已转负。<br><b>为什么对数据平台重要：</b> AI 基础设施融资从"现金投入"转向"表外承诺+租赁+债务"组合，资本结构承压意味着云厂商未来采购节奏更依赖外部资本成本；数据平台作为 AI 基础设施的"数据层"，其扩张周期将与云厂商资本开支的财务可持续性深度绑定，成本效率与资本回报将成为采购决策的核心变量。</div>
+</div>
+<div class="item">
+    <h3>谷歌 Migration Center 接入 Gemini 快速评估：云迁移规划从数周压缩至分钟级</h3>
+    <div class="source">来源：<a href="https://gixtools.net/2026/08/google-adds-ai-powered-assessments-to-migration-center-to-speed-up-cloud-migration-planning">Network World（GIXtools 转载）</a></div>
+    <div class="body"><b>摘要：</b> 谷歌 8 月 25 日宣布为云迁移评估服务 Migration Center 新增由 Gemini 驱动的快速评估（Quick Assessments）功能：用户输入高层级基础设施数据或 VMware 导出文件，系统自动构建 Compute Engine 成本模型，实现近实时的总拥有成本（TCO）建模与自动化服务映射，并支持通过对话方式实时查询与调整评估结果。此前迁移评估需数周采集数据、依赖咨询公司与系统集成商；分析师指出该功能大幅压缩迁移规划早期的时间与成本，但 AI 生成的 TCO 输出应视为方向性筛选估算而非投资级业务案例。<br><b>为什么对数据平台重要：</b> 云迁移评估 AI 化降低企业上云决策门槛，AI 正从"数据平台内部的附加能力"变成"数据平台获取客户的第一触点"；工程效率维度上，迁移评估的自动服务映射与成本建模将重构 SI/咨询环节，云厂商用生成式 AI 抢占迁移入口，数据平台选型窗口前移。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Apache Iceberg 多语言实现同日发布：Go 0.6.0 / Rust 0.9.0 / C++ 0.3.0</h3>
+    <div class="source">来源：<a href="https://iceberg.apache.org/blog/apache-iceberg-rust-0.9.0-release/">Apache Iceberg 官方博客</a></div>
+    <div class="body"><b>摘要：</b> Apache Iceberg 社区 8 月 25 日（UTC）同日发布三个语言实现版本：iceberg-go 0.6.0（约 200 个 PR、40 位贡献者，其中 26 位首次贡献）、iceberg-rust 0.9.0（109 个 PR、28 位贡献者）、iceberg-cpp 0.3.0（140 余个 PR、23 位贡献者）。三个版本分别提供 Go、Rust、C++ 原生读写与管理 Iceberg 表的能力，并强化与 DataFusion Comet 等查询引擎的集成（加速 Spark 对 Iceberg 表的读取）。<br><b>对数据平台的影响：</b> 开放表格式从 JVM 生态走向全语言生态，引擎无关的数据格式标准进一步夯实；多语言实现同步迭代降低非 Java 技术栈接入湖仓的壁垒，数据基础设施互操作标准化的进程加速，对国内 Paimon/StarRocks 等开放格式生态是同步利好信号。</div>
+</div>
+<div class="item">
+    <h3>Precisely 获 IDC MarketScape 全球数据智能平台软件 2026 领导者</h3>
+    <div class="source">来源：<a href="https://finance.yahoo.com/technology/ai/articles/precisely-named-leader-idc-marketscape-130000512.html">PR Newswire</a></div>
+    <div class="body"><b>摘要：</b> Precisely 8 月 25 日宣布被《IDC MarketScape：全球数据智能平台软件 2026 厂商评估》（Doc #US54118226，2026 年 8 月）评为"领导者"。IDC 评估突出其三项优势：以数据质量为核心（覆盖剖析、标准化、匹配、清洗、转换与持续可观测，且日益智能化、agentic 化）、位置智能与增强能力、混合执行架构——执行代理可触达云、私有云、本地与大型主机数据，控制面保持托管 SaaS，敏感数据可留在防火墙内。IDC 研究副总裁 Stewart Bond 指出，数据质量、治理、增强与混合交付能力构成其 AI-ready 数据的信任基础。<br><b>对数据平台的影响：</b> 数据智能平台（质量+目录+血缘+治理）被 IDC 明确为 AI-ready 数据的前置能力，数据质量从"合规项"升级为"AI 竞争力"；对国内数据治理厂商，AI 原生化（agentic 执行代理、规则自动化）正成为全球评估的新标尺，治理能力与 AI 就绪度的绑定将重塑采购标准。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>IDC：2025 年中国 AI 基础数据服务市场 62.62 亿元，需求转向"任务数据"</h3>
+    <div class="source">来源：<a href="https://www.chinanews.com/cj/2026/08-25/10684062.shtml">中国新闻网</a></div>
+    <div class="body"><b>核心观点：</b> IDC 8 月 25 日发布《中国人工智能基础数据服务市场研究报告，2025》：2025 年市场规模 62.62 亿元、同比增长 27.8% 超出预期，预计 2026 年增至 78.34 亿元，2025-2030 年复合增长率 19.6%。竞争格局上，Appen 以 11.5% 份额居首、百度 10.6% 次之，市场整体集中度低（其他占比 56.3%）。报告提出三大趋势：数据需求从大规模采集转向任务数据（Agent 执行轨迹、多步骤任务规划、工具调用及企业流程数据）；标注模式从纯人工转向人机协同（模型生成-AI 评价-专家校验-强化学习闭环）；数据类型从泛多模态聚焦至生产行为信息，商业模式从"按数据量计费"向"按模型效果/解决方案计费"转型。<br><b>映射到数据平台的判断：</b> Agent 执行轨迹成为数据服务市场的新数据资产类型，直接印证"Agent 数据管线"是数据平台的下一阶段核心需求；数据服务市场集中度低意味着工具化、平台化玩家仍有整合空间，按效果计费的商业模式将倒逼数据质量与治理能力成为核心卖点。</div>
+</div>
+<div class="item">
+    <h3>IDC MarketScape 中国 Data Agent 2026：OceanBase 入选"领导者"象限</h3>
+    <div class="source">来源：<a href="https://www.modb.pro/db/2092195873581768704">墨天轮（IDC 报告披露）</a></div>
+    <div class="body"><b>核心观点：</b> IDC 发布《IDC MarketScape：中国 Data Agent 2026 年厂商评估》，OceanBase 凭借产品实力入选"领导者"类别、居行业第一梯队。报告入选标准涵盖收入规模、产品技术实力、市场表现与生态建设、未来发展战略；厂商需具备通过 Agent 技术实现数据工程化的能力（数据集成、存储、治理、分析与决策），覆盖金融、政府、互联网、能源、工业等关键领域，且在中国有实际落地项目、至少 2 个企业级用户案例。IDC FutureScape 预测，到 2028 年 60% 的中国 500 强企业将部署企业级 Data Agent，实现动态数据处理、管理、治理与追踪。<br><b>映射到数据平台的判断：</b> Data Agent 从概念叙事进入可评估的厂商市场，IDC 为数据平台厂商确立了"Agent 数据工程化能力"的新竞争坐标系；中国厂商（OceanBase）凭湖库一体 AI 数据库进入第一梯队，与全球 Databricks/谷歌 Agentic Data Cloud 的 Agent 数据底座竞速形成对应，Agent 数据工程能力成为数据平台下一轮采购的准入指标。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】英伟达系 AI 云 Lambda 洽谈 30 亿美元融资，估值或超 120 亿美元</h3>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L577H2760519QIKK.html">智通财经（金融界）</a></div>
+    <div class="body"><b>核心数据：</b> 彭博 8 月 25 日报道，英伟达支持的 AI 云服务商 Lambda 正洽谈最高 30 亿美元融资，估值或达 120 亿美元以上，为最快明年 IPO 铺路；公司预计今年营收超 15 亿美元，两周前刚定价 9.26 亿美元投资级定期贷款（穆迪 Baa2，私募新云首个投资级评级）。融资谈判仍在进行、条款未最终敲定。<br><b>摘要：</b> Lambda 属于"新云"（Neocloud）阵营——面向 AI 公司出租 GPU 与 AI 基础设施而非托管全栈服务，与 CoreWeave（Q2 营收 25.75 亿美元、backlog 1040 亿美元）、Nebius（同比增 454%）展开竞争。本轮融资是私募金融市场对新云商业模式需求、增长能见度与估值区间的集中测试，GPU 利用率、客户集中度、资本效率与自由现金流是投资者关注焦点。<br><b>对数据平台的影响：</b> 算力供给侧资本市场化加速，GPU 租赁商业模式获一级市场重估；对数据平台采购方，算力供给多元化与竞争加剧有望缓解算力成本压力，数据平台可将更多预算投向数据处理与治理层，而非锁定在昂贵算力上。</div>
+</div>
+<div class="item">
+    <h3>【投融资】fileAI 获 SMBC Asia Rising Fund 与 Singtel Innov8 投资，发力非结构化数据治理</h3>
+    <div class="source">来源：<a href="https://www.file.ai/blog/smbc-asia-rising-fund-and-singtel-innov8-back-fileai-as-enterprise-ai-adoption-accelerates-across-asia">fileAI 官方博客</a></div>
+    <div class="body"><b>核心数据：</b> fileAI 8 月 25 日宣布获得三井住友银行旗下 SMBC Asia Rising Fund 与新加坡电信旗下 Singtel Innov8 的投资（金额未披露），资金用于日本市场扩张与金融服务业能力深化。同日发布 fileScout——AI 原生非结构化数据映射与利用方案，可显著降低企业处理非结构化数据的 token 成本。<br><b>摘要：</b> fileAI 是新加坡企业智能公司，旗下 fileForge 平台聚焦复杂业务流程自动化，以代理化数据采集、验证、匹配与对账，将非结构化文档转化为干净、可验证、审计级的记录，直接写入企业运营系统。继 6 月与 JR 东日本旗下 JRE Ventures 达成合作后，本轮投资进一步连接亚洲银行与电信企业生态，覆盖合同与报表抽取、KYC、对账与监管报送等场景。<br><b>对数据平台的影响：</b> 亚洲本土金融机构与电信资本开始系统性押注"企业非结构化数据治理"赛道，非结构化数据成为企业 AI 落地的关键数据基础；对数据平台厂商，文档级数据处理、代理化工作流与审计追踪能力正从差异化功能变为企业 AI 采购的标配要求。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Anthropic 拟以最高 2 万亿美元估值 IPO，或成史上最大上市</h3>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L4UC59M40550B1DU.html">财联社（科创板日报）</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 8 月 22 日《纽约时报》等报道，Anthropic 承销银行正与潜在投资者讨论：IPO 可能募资超 1000 亿美元、估值最高 2 万亿美元，将超越 SpaceX（6 月 IPO 估值 1.77 万亿美元、募资 857 亿美元）成为史上最大 IPO；公司年化收入超 650 亿美元（上季度营收 116 亿美元），6 月已提交上市申请，预计未来几周公布招股书、9-10 月挂牌。（8/22 报道，超窗口降级跟踪）<br><b>需要等待什么信号确认：</b> 招股书披露的估值区间与募资规模、投资者对高收费可持续性与开源模型冲击的质疑如何回应、算力获取与数据中心建设阻力是否写入风险因素；若 2 万亿美元估值落地，将重塑 AI 资本定价锚并进一步抬升基础设施投入预期，数据平台需求侧长期受益。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】内存成本飙升，英伟达 AI 服务器价格普遍上涨超 15%</h3>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7676947202559853083">财联社（今日头条转载）</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 彭博 8 月 22 日报道，因存储芯片成本飙升，英伟达已通知部分最大客户：搭载其 AI 芯片的服务器价格将普遍上涨超 15%，涨价适用于明年年初出货的系统，涉及 Vera Rubin 与 Grace Blackwell 产品线。摩根士丹利估算 Vera Rubin VR200 NVL72 机架售价约 780 万美元，其中存储成本约 200 万美元，较上一代 GB300 机架飙升 435%；三星、SK 海力士、美光在 AI 基础设施需求爆发中掌握空前定价权。（8/22 报道，超窗口降级跟踪）<br><b>需要等待什么信号确认：</b> 涨价向服务器制造商与数据中心运营商的传导幅度、英伟达下周三财报对毛利率的影响、云厂商自研芯片与国产算力的替代节奏；AI 基础设施成本上涨将沿算力→存储→数据平台采购预算传导，数据平台成本结构或面临重估。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】腾讯云与卡尔动力深化 AI 基础设施协同，自动驾驶数据管线再添案例</h3>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260825A0BO9H00">界面新闻（腾讯新闻转载）</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 8 月 25 日，腾讯云与卡尔动力宣布深化 AI 基础设施协同，围绕 L4 级自动驾驶货运模型训练、推理与数据处理开展合作，以云上算力等支撑规模化运营。继 8/24 枢途科技具身智能数据管线融资、8/19 信通院具身智能训练场报告之后，自动驾驶与物理世界场景的数据处理需求再次成为云厂商 AI 基础设施的重点投放方向。<br><b>需要等待什么信号确认：</b> 合作是否沉淀为可复用的数据处理管线产品、L4 货运场景对云端数据平台（标注、仿真、回放、模型迭代）的具体架构需求，以及云厂商"行业数据管线"模式能否从自动驾驶复制到具身智能、工业等其他物理世界 AI 场景。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-26 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
