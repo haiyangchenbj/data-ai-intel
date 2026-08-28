@@ -7064,6 +7064,106 @@
       "source": "每日经济新闻",
       "url": "https://www.toutiao.com/article/7678508347821277732/",
       "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 在 VLDB 2026 披露 Lakebase 架构：第三代云数据库以对象存储承载事务与实时分析",
+      "summary": "摘要： 8 月 27 日，Databricks 发布 VLDB 2026 大会预告博客：联创 Reynold Xin 主题演讲提出\"数据库工程第三个黄金时代\"，正式披露第三代云数据库架构 Lakebase——serverless PostgreSQL 计算与存储解耦，数据与 WAL 直接落云对象存储（开放格式），秒级冷启动、Git 式 copy-on-write 分支，面向 AI Agent 数百万短生命周期分支数据库需求；同步提出 LTAP（湖事务分析处理）概念，LakehouseRT（新 Reyden 引擎）实现开放湖存储上的实时低延迟分析，与 Lakebase 组合构成首个真正 LTAP 系统；另有 AutoLiquid 自动聚类（95% 工作负载超越人工选键）、Ultron 基于历史的查询优化（中位 join 延迟改善 25%）、Spark Structured Streaming microbatch pipelining（吞吐最高 3 倍）。为什么对数据平台重要： 这是云数据库面向 Agent 工作负载的架构级回应：数百万短生命周期、深度分支的数据库需求直接颠覆传统 OLTP 单体架构假设；Lakebase 以\"Postgres + 开放湖存储 + 分支\"组合，与此前收购 Electric（PGlite 进入 Agent 沙箱）构成完整技术路线；LTAP 统一事务与分析，为\"数据库为智能体而重构\"提供国际厂商的架构范本，与国产 Agentic DB（TDSQL Nexa、PolarDB Agentic 基座）形成对位参照。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/building-ai-era-lakebase-streaming-and-lakehouse-innovations-vldb-2026",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Google Cloud 宣布 BigQuery 自治数据平台：数据工程与数据科学智能体全面可用",
+      "summary": "摘要： 8 月 27 日，Google Cloud 宣布 BigQuery 自治数据平台创新：数据工程 agent（GA，内嵌 BigQuery pipelines，覆盖管道构建、数据准备、异常检测与元数据生成）、数据科学 agent（GA，内嵌 Colab，自动特征工程、模型选择与训练）、Looker 对话分析（preview，与 DeepMind 合作，语义层使准确率提升约三分之二）、BigQuery knowledge engine（preview，Gemini 分析 schema 关系与查询历史、动态生成元数据与业务术语）、语义搜索 GA；全部 Gemini 赋能能力纳入现有定价层级、无附加费用。为什么对数据平台重要： 主流云数仓首次把\"数据工程与数据科学\"两个岗位的核心工作整体交给智能体，Agent 从辅助查询进入生产数据链路；knowledge engine 将元数据与语义治理自动化，\"自治数据平台\"成为云厂商面向 Agent 工作负载的完整叙事，与 Databricks 智能体工具链、微软 Fabric 数据 agent 形成三强竞争。",
+      "source": "Google Cloud 数据分析公告（Cloud Ace 转述）",
+      "url": "https://id.cloud-ace.com/resources/what-s-new-for-data-analytics-in-the-ai-driven-autonomous-and-agentic-era",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "腾讯",
+      "module": "专题",
+      "title": "腾讯云大数据接入 WorkBuddy：六款引擎与专业数据智能体经标准接口进入 Agent 平台",
+      "summary": "摘要： 8 月 27 日，腾讯云大数据宣布接入 WorkBuddy：基于数据分析智能体 TCDataAgent-AVA 打造三类专家 Agent（大数据分析专家、大数据工程专家、大数据智能管家），覆盖文件与引擎数据分析、建模调优、集群监控与故障排查；六款引擎（EMR、DLC、ES、TCHouse-C/D/X）连接器陆续上架，基于 MCP 标准接口完成接入，同一套能力不绑定单一平台，其他第三方 Agent 平台同样可调用；数据访问始终在用户授权账号与权限边界内，灰度测试中。为什么对数据平台重要： 国内云厂商首次以\"引擎连接器 + 专业数据 Agent\"组合接入通用 Agent 工作台，数据平台能力从\"人用界面\"沉淀为\"Agent 可调用资产\"；MCP 标准化使引擎与专家能力可跨平台复用——数据平台服务对象从人转向 Agent 的接口层正在成型。",
+      "source": "腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/article/2732949",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks OpenSharing 支持共享外部 Delta 表：跨目录数据共享进入公开预览",
+      "summary": "摘要： 8 月 27 日，Databricks Release Notes 更新：OpenSharing 现支持共享 foreign Delta tables（在 OneLake、Hive metastore、AWS Glue 等外部 catalog 注册的 Delta 格式表）public preview。Provider 可将外部 Delta 表加入 share，recipient 以只读方式访问共享数据。对数据平台的影响： 开放表格式的共享层与目录解耦——外部 catalog 中的 Delta 表也能进入 Delta Sharing 网络，跨平台数据交换摩擦进一步降低；在 Iceberg 与 Delta 双格式竞争背景下，Databricks 持续把 Delta 生态做成\"目录无关\"的互操作网络，对采用多目录架构的企业是直接利好。",
+      "source": "Databricks Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/august",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "火山引擎",
+      "module": "投融资",
+      "title": "火山引擎发布具身智能数据基建方案：采集到训练全链路，头部企业十五家深度合作",
+      "summary": "摘要： 8 月 27 日，火山引擎发布具身智能数据基础设施建设方案（基于 8/24 世界机器人大会具身智能论坛）：覆盖数据采集、处理、标注、管理、仿真、训练全链路闭环；Seedance 视频生成做数据增广（生成符合重力、碰撞、摩擦等物理规律的可训练数据，第一视角转第三视角）；豆包 VLM 自动打标（毫秒级视频分割与语义标注，准确率 90% 以上）；底层 AI 数据湖提供多模态异构数据分布式存储与 CPU+GPU 混合加速。国内估值 TOP20 具身企业中 15 家已深度合作（星海图、千寻智能、上纬新材等）。对数据平台的影响： 国内云厂商把\"具身智能数据底座\"产品化——从数据采集工具升级为覆盖增广、标注、仿真的全链路数据基础设施，数据规模与转化效率成为具身竞争分水岭；与 8/19 五一视界 AperData、8/13 具身数据融资潮构成连续信号，物理世界数据平台成为云厂商新战场。",
+      "source": "同花顺财经",
+      "url": "https://news.10jqka.com.cn/20260827/c679350668.shtml",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "Databricks",
+      "module": "产品",
+      "title": "Databricks 推出 Governance Hub：账户级统一治理与成本下钻（8/26 发布）",
+      "summary": "摘要： 8 月 26 日，Databricks 发布 Governance Hub——账户级智能治理面板：统一查看跨工作区资产与权限，FinOps 团队可下钻定位成本驱动因素，支持自然语言查询（与 Genie 联动），面向跨工作区治理需求规模化企业，发布日略早于本窗口、按补录收录。对数据平台的影响： 数据治理从工作区级走向账户级统一视图，\"成本驱动因素\"成为治理对象，FinOps 与治理同屏；延续 8 月初成本归因类功能（MV/ST 成本归因）的治理下沉趋势，账户级治理正成为多云数据平台企业级采购的标配方向。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/introducing-governance-hub-intelligent-account-level-governance-over-your-databricks-estate",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "星环科技",
+      "module": "投融资",
+      "title": "星环科技通过港交所上市聆讯：中国最大独立 AI 基础设施软件供应商拟双重上市【IPO】",
+      "summary": "摘要： 8 月 27 日港交所披露，星环科技（688031.SH）通过港交所主板上市聆讯，海通国际独家保荐。弗若斯特沙利文数据：按收入计为中国第五大 AI 基础设施软件供应商（2025 年份额 2.7%），同时为最大独立供应商；全球首家通过 TPC-DS 测试及官方审计的数据库企业，首家入选 Gartner 数据仓库与数据管理解决方案魔力象限的中国企业。产品覆盖 TDH/TDC、ArgoDB/KunDB、TDS、LLMOps/MLOps、TKH，服务 1800 余家客户（含 105 家财富中国 500 强），复购收入占比超 70%；已在中国香港、新加坡、加拿大设立子公司。对数据平台的影响： 国产数据基础设施厂商继 A 股后登陆港股，为 AI 基础设施软件打开国际资本市场通道；\"TPC-DS 官方审计 + Gartner 魔力象限\"说明工程验证与分析师认可已成为国产数据平台国际化的通行证；双重上市为星环海外扩张（港新加子公司）提供资金与品牌支撑。",
+      "source": "智通财经",
+      "url": "https://new.qq.com/rain/a/20260828A02GFS00?refer=cp_1009",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "微软",
+      "module": "投融资",
+      "title": "据称英伟达 129 亿美元收购 Hugging Face：开源 AI 生态核心节点纳入芯片巨头版图【传闻】",
+      "summary": "摘要： The Information 8/26 援引知情人士：英伟达已同意以 129 亿美元收购 Hugging Face（估值超 130 亿，约为年化收入 1.5 亿美元的 80 倍），谈判接近完成但协议未正式签署、仍可能破裂；微软曾接触但未继续。Hugging Face 托管超 300 万公开模型、100 万数据集，年化收入两个月内从 1 亿增至 1.5 亿；若达成将为英伟达史上最大并购之一。同期 Stripe 刚以超 80 亿美元收购 AI 模型路由平台 OpenRouter，AI\"中间层\"基础设施成战略抢购核心标的。对数据平台的影响： 开源模型生态的分发渠道与技术情报被芯片巨头掌控，开源 AI 生态的战略价值首次获如此高资本定价；对数据平台，模型与数据中间层的整合加速，平台侧开源模型接入层与生态治理可能随之重塑；属传闻、未证实，列入跟踪。",
+      "source": "财联社",
+      "url": "https://www.cls.cn/detail/2466186",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "腾讯",
+      "module": "技术",
+      "title": "腾讯云 DataBuddy 披露企业大数据 Agent 实践：运行时、权限、语义、治理四层边界【降级：8/21 AICon 分享，8/27 报道】",
+      "summary": "摘要： 8 月 27 日 InfoQ 报道，腾讯云 DataBuddy 团队在 AICon 全球人工智能开发与应用大会分享企业大数据 Agent 实践：以 Runtime（运行时）、权限、语义、治理四层边界，解决\"动作可控、结果可信、经验可进化\"三大难题。事件发生于 8/21-23 AICon 深圳站，原始日期早于本窗口、8/27 报道上线，标注降级跟踪。对数据平台的影响： 企业级数据 Agent 的边界设计（权限、语义、治理）成为规模化落地关键；与 TDSQL Nexa（数据库侧 Agent 底座）、WorkBuddy 接入（接口侧）共同构成腾讯云 Agent 数据栈三件套，数据平台竞争从功能清单走向\"Agent 可信任性\"设计。",
+      "source": "InfoQ（经腾讯网转载）",
+      "url": "https://view.inews.qq.com/a/20260827A07M0T00",
+      "conf": ""
+    },
+    {
+      "date": "2026-08-28",
+      "vendor": "微软",
+      "module": "投融资",
+      "title": "Anthropic 与 Nscale 达成 450 亿美元算力协议：IPO 前算力长单密集落地【跟踪】",
+      "summary": "摘要： 8 月 27 日报道，Anthropic 与 Nscale 签署 6 年期、约 460 兆瓦电力容量的算力交易（西弗吉尼亚州 Monarch 园区，微软原租户退出后接手），Nscale 将部署英伟达 Vera Rubin NVL72 系统，2027 年末开始交付；这是 Anthropic 近期密集签署算力协议之一（此前已签 Fluidstack 500 亿、Volta Infra 100 亿、SpaceX 450 亿），IPO 估值预期最高 2 万亿美元，Q2 营收 115 亿美元、首次调整后盈利。对数据平台的影响： AI 头部实验室以长期算力合同锁定基础设施，算力长单成为 IPO 前资产负债表的核心资产；对上期英伟达财报\"客户承诺订单 2790 亿\"构成配套验证，Agent 数据工作负载的算力成本结构继续由头部实验室定价，算力景气传导至数据平台的链路保持完整。",
+      "source": "网易 AI 快报（源自 The Decoder/彭博）",
+      "url": "https://www.163.com/dy/article/L5CHN1ID0531G0IB.html",
+      "conf": ""
     }
   ],
   "archive": [
@@ -7184,7 +7284,8 @@
     "2026-08-24",
     "2026-08-25",
     "2026-08-26",
-    "2026-08-27"
+    "2026-08-27",
+    "2026-08-28"
   ],
   "monthly": [
     {

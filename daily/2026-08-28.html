@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-28</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-28 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库进入第三代架构：湖上事务与实时分析一体</li>
+      <li>主流云数仓智能体全面可用，工程与科学岗首当其冲</li>
+      <li>国产数据平台以智能体形态接入通用工作台</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台全面进入智能体时代：云数据库以分支化架构服务海量智能体，主流数仓把工程与科学岗位交给智能体，国产平台经标准接口接入通用工作台；开源生态同步成资本争夺焦点，中间层并购密集。星环科技聆讯通过，国产数据基础设施加速登陆国际资本市场。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 在 VLDB 2026 披露 Lakebase 架构：第三代云数据库以对象存储承载事务与实时分析</h3>
+    <div class="source">来源：<a href="https://www.databricks.com/blog/building-ai-era-lakebase-streaming-and-lakehouse-innovations-vldb-2026">Databricks 官方博客</a></div>
+    <div class="body"><b>摘要：</b> 8 月 27 日，Databricks 发布 VLDB 2026 大会预告博客：联创 Reynold Xin 主题演讲提出"数据库工程第三个黄金时代"，正式披露第三代云数据库架构 Lakebase——serverless PostgreSQL 计算与存储解耦，数据与 WAL 直接落云对象存储（开放格式），秒级冷启动、Git 式 copy-on-write 分支，面向 AI Agent 数百万短生命周期分支数据库需求；同步提出 LTAP（湖事务分析处理）概念，LakehouseRT（新 Reyden 引擎）实现开放湖存储上的实时低延迟分析，与 Lakebase 组合构成首个真正 LTAP 系统；另有 AutoLiquid 自动聚类（95% 工作负载超越人工选键）、Ultron 基于历史的查询优化（中位 join 延迟改善 25%）、Spark Structured Streaming microbatch pipelining（吞吐最高 3 倍）。<br><b>为什么对数据平台重要：</b> 这是云数据库面向 Agent 工作负载的架构级回应：数百万短生命周期、深度分支的数据库需求直接颠覆传统 OLTP 单体架构假设；Lakebase 以"Postgres + 开放湖存储 + 分支"组合，与此前收购 Electric（PGlite 进入 Agent 沙箱）构成完整技术路线；LTAP 统一事务与分析，为"数据库为智能体而重构"提供国际厂商的架构范本，与国产 Agentic DB（TDSQL Nexa、PolarDB Agentic 基座）形成对位参照。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud 宣布 BigQuery 自治数据平台：数据工程与数据科学智能体全面可用</h3>
+    <div class="source">来源：<a href="https://id.cloud-ace.com/resources/what-s-new-for-data-analytics-in-the-ai-driven-autonomous-and-agentic-era">Google Cloud 数据分析公告（Cloud Ace 转述）</a></div>
+    <div class="body"><b>摘要：</b> 8 月 27 日，Google Cloud 宣布 BigQuery 自治数据平台创新：数据工程 agent（GA，内嵌 BigQuery pipelines，覆盖管道构建、数据准备、异常检测与元数据生成）、数据科学 agent（GA，内嵌 Colab，自动特征工程、模型选择与训练）、Looker 对话分析（preview，与 DeepMind 合作，语义层使准确率提升约三分之二）、BigQuery knowledge engine（preview，Gemini 分析 schema 关系与查询历史、动态生成元数据与业务术语）、语义搜索 GA；全部 Gemini 赋能能力纳入现有定价层级、无附加费用。<br><b>为什么对数据平台重要：</b> 主流云数仓首次把"数据工程与数据科学"两个岗位的核心工作整体交给智能体，Agent 从辅助查询进入生产数据链路；knowledge engine 将元数据与语义治理自动化，"自治数据平台"成为云厂商面向 Agent 工作负载的完整叙事，与 Databricks 智能体工具链、微软 Fabric 数据 agent 形成三强竞争。</div>
+</div>
+<div class="item">
+    <h3>腾讯云大数据接入 WorkBuddy：六款引擎与专业数据智能体经标准接口进入 Agent 平台</h3>
+    <div class="source">来源：<a href="https://cloud.tencent.com/developer/article/2732949">腾讯云开发者社区</a></div>
+    <div class="body"><b>摘要：</b> 8 月 27 日，腾讯云大数据宣布接入 WorkBuddy：基于数据分析智能体 TCDataAgent-AVA 打造三类专家 Agent（大数据分析专家、大数据工程专家、大数据智能管家），覆盖文件与引擎数据分析、建模调优、集群监控与故障排查；六款引擎（EMR、DLC、ES、TCHouse-C/D/X）连接器陆续上架，基于 MCP 标准接口完成接入，同一套能力不绑定单一平台，其他第三方 Agent 平台同样可调用；数据访问始终在用户授权账号与权限边界内，灰度测试中。<br><b>为什么对数据平台重要：</b> 国内云厂商首次以"引擎连接器 + 专业数据 Agent"组合接入通用 Agent 工作台，数据平台能力从"人用界面"沉淀为"Agent 可调用资产"；MCP 标准化使引擎与专家能力可跨平台复用——数据平台服务对象从人转向 Agent 的接口层正在成型。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks OpenSharing 支持共享外部 Delta 表：跨目录数据共享进入公开预览</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august">Databricks Release Notes</a></div>
+    <div class="body"><b>摘要：</b> 8 月 27 日，Databricks Release Notes 更新：OpenSharing 现支持共享 foreign Delta tables（在 OneLake、Hive metastore、AWS Glue 等外部 catalog 注册的 Delta 格式表）public preview。Provider 可将外部 Delta 表加入 share，recipient 以只读方式访问共享数据。<br><b>对数据平台的影响：</b> 开放表格式的共享层与目录解耦——外部 catalog 中的 Delta 表也能进入 Delta Sharing 网络，跨平台数据交换摩擦进一步降低；在 Iceberg 与 Delta 双格式竞争背景下，Databricks 持续把 Delta 生态做成"目录无关"的互操作网络，对采用多目录架构的企业是直接利好。</div>
+</div>
+<div class="item">
+    <h3>火山引擎发布具身智能数据基建方案：采集到训练全链路，头部企业十五家深度合作</h3>
+    <div class="source">来源：<a href="https://news.10jqka.com.cn/20260827/c679350668.shtml">同花顺财经</a> ｜ <a href="https://www.163.com/dy/article/L5CHN1ID0531G0IB.html">网易 AI 快报</a></div>
+    <div class="body"><b>摘要：</b> 8 月 27 日，火山引擎发布具身智能数据基础设施建设方案（基于 8/24 世界机器人大会具身智能论坛）：覆盖数据采集、处理、标注、管理、仿真、训练全链路闭环；Seedance 视频生成做数据增广（生成符合重力、碰撞、摩擦等物理规律的可训练数据，第一视角转第三视角）；豆包 VLM 自动打标（毫秒级视频分割与语义标注，准确率 90% 以上）；底层 AI 数据湖提供多模态异构数据分布式存储与 CPU+GPU 混合加速。国内估值 TOP20 具身企业中 15 家已深度合作（星海图、千寻智能、上纬新材等）。<br><b>对数据平台的影响：</b> 国内云厂商把"具身智能数据底座"产品化——从数据采集工具升级为覆盖增广、标注、仿真的全链路数据基础设施，数据规模与转化效率成为具身竞争分水岭；与 8/19 五一视界 AperData、8/13 具身数据融资潮构成连续信号，物理世界数据平台成为云厂商新战场。</div>
+</div>
+<div class="item">
+    <h3>Databricks 推出 Governance Hub：账户级统一治理与成本下钻（8/26 发布）</h3>
+    <div class="source">来源：<a href="https://www.databricks.com/blog/introducing-governance-hub-intelligent-account-level-governance-over-your-databricks-estate">Databricks 官方博客</a></div>
+    <div class="body"><b>摘要：</b> 8 月 26 日，Databricks 发布 Governance Hub——账户级智能治理面板：统一查看跨工作区资产与权限，FinOps 团队可下钻定位成本驱动因素，支持自然语言查询（与 Genie 联动），面向跨工作区治理需求规模化企业，发布日略早于本窗口、按补录收录。<br><b>对数据平台的影响：</b> 数据治理从工作区级走向账户级统一视图，"成本驱动因素"成为治理对象，FinOps 与治理同屏；延续 8 月初成本归因类功能（MV/ST 成本归因）的治理下沉趋势，账户级治理正成为多云数据平台企业级采购的标配方向。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>星环科技通过港交所上市聆讯：中国最大独立 AI 基础设施软件供应商拟双重上市【IPO】</h3>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260828A02GFS00?refer=cp_1009">智通财经</a></div>
+    <div class="body"><b>摘要：</b> 8 月 27 日港交所披露，星环科技（688031.SH）通过港交所主板上市聆讯，海通国际独家保荐。弗若斯特沙利文数据：按收入计为中国第五大 AI 基础设施软件供应商（2025 年份额 2.7%），同时为最大独立供应商；全球首家通过 TPC-DS 测试及官方审计的数据库企业，首家入选 Gartner 数据仓库与数据管理解决方案魔力象限的中国企业。产品覆盖 TDH/TDC、ArgoDB/KunDB、TDS、LLMOps/MLOps、TKH，服务 1800 余家客户（含 105 家财富中国 500 强），复购收入占比超 70%；已在中国香港、新加坡、加拿大设立子公司。<br><b>对数据平台的影响：</b> 国产数据基础设施厂商继 A 股后登陆港股，为 AI 基础设施软件打开国际资本市场通道；"TPC-DS 官方审计 + Gartner 魔力象限"说明工程验证与分析师认可已成为国产数据平台国际化的通行证；双重上市为星环海外扩张（港新加子公司）提供资金与品牌支撑。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>据称英伟达 129 亿美元收购 Hugging Face：开源 AI 生态核心节点纳入芯片巨头版图【传闻】</h3>
+    <div class="source">来源：<a href="https://www.cls.cn/detail/2466186">财联社</a> ｜ <a href="https://www.toutiao.com/article/7678657063463043625/">澎湃新闻</a></div>
+    <div class="body"><b>摘要：</b> The Information 8/26 援引知情人士：英伟达已同意以 129 亿美元收购 Hugging Face（估值超 130 亿，约为年化收入 1.5 亿美元的 80 倍），谈判接近完成但协议未正式签署、仍可能破裂；微软曾接触但未继续。Hugging Face 托管超 300 万公开模型、100 万数据集，年化收入两个月内从 1 亿增至 1.5 亿；若达成将为英伟达史上最大并购之一。同期 Stripe 刚以超 80 亿美元收购 AI 模型路由平台 OpenRouter，AI"中间层"基础设施成战略抢购核心标的。<br><b>对数据平台的影响：</b> 开源模型生态的分发渠道与技术情报被芯片巨头掌控，开源 AI 生态的战略价值首次获如此高资本定价；对数据平台，模型与数据中间层的整合加速，平台侧开源模型接入层与生态治理可能随之重塑；属传闻、未证实，列入跟踪。</div>
+</div>
+<div class="item">
+    <h3>腾讯云 DataBuddy 披露企业大数据 Agent 实践：运行时、权限、语义、治理四层边界【降级：8/21 AICon 分享，8/27 报道】</h3>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260827A07M0T00">InfoQ（经腾讯网转载）</a></div>
+    <div class="body"><b>摘要：</b> 8 月 27 日 InfoQ 报道，腾讯云 DataBuddy 团队在 AICon 全球人工智能开发与应用大会分享企业大数据 Agent 实践：以 Runtime（运行时）、权限、语义、治理四层边界，解决"动作可控、结果可信、经验可进化"三大难题。事件发生于 8/21-23 AICon 深圳站，原始日期早于本窗口、8/27 报道上线，标注降级跟踪。<br><b>对数据平台的影响：</b> 企业级数据 Agent 的边界设计（权限、语义、治理）成为规模化落地关键；与 TDSQL Nexa（数据库侧 Agent 底座）、WorkBuddy 接入（接口侧）共同构成腾讯云 Agent 数据栈三件套，数据平台竞争从功能清单走向"Agent 可信任性"设计。</div>
+</div>
+<div class="item">
+    <h3>Anthropic 与 Nscale 达成 450 亿美元算力协议：IPO 前算力长单密集落地【跟踪】</h3>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L5CHN1ID0531G0IB.html">网易 AI 快报（源自 The Decoder/彭博）</a></div>
+    <div class="body"><b>摘要：</b> 8 月 27 日报道，Anthropic 与 Nscale 签署 6 年期、约 460 兆瓦电力容量的算力交易（西弗吉尼亚州 Monarch 园区，微软原租户退出后接手），Nscale 将部署英伟达 Vera Rubin NVL72 系统，2027 年末开始交付；这是 Anthropic 近期密集签署算力协议之一（此前已签 Fluidstack 500 亿、Volta Infra 100 亿、SpaceX 450 亿），IPO 估值预期最高 2 万亿美元，Q2 营收 115 亿美元、首次调整后盈利。<br><b>对数据平台的影响：</b> AI 头部实验室以长期算力合同锁定基础设施，算力长单成为 IPO 前资产负债表的核心资产；对上期英伟达财报"客户承诺订单 2790 亿"构成配套验证，Agent 数据工作负载的算力成本结构继续由头部实验室定价，算力景气传导至数据平台的链路保持完整。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-28 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
