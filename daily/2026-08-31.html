@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-08-31</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-08-31 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据消费主体从人转向智能体，湖仓形态随之向多模态演进</li>
+      <li>分析型数据平台的座次重估中，能否承接智能体读写成新标尺</li>
+      <li>数据平台厂商正把对话式分析的产出沉淀为可复用的智能体资产</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>周末窗口内政策与研究机构给出同向信号：数据基础设施的竞争焦点正从查询性能转向面向智能体的供给质量、安全治理与成本可控。国内供给侧扩张与海外座次重排同时发生，本周密集财报将检验厂商把这一转向变现的真实进度。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>华为云在数博会发布 AI-Ready 数据基础设施全链路能力</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.stdaily.com/web/gdxw/2026-08/29/content_571850.html">科技日报</a><br><b>摘要：</b> 8 月 28 日数博会数据要素大会上，华为混合云总裁顾雪军提出大模型与智能体正成为新的数据消费主体，大数据平台将从传统湖仓向多模态湖仓、数据智能体演进；华为云 Stack 围绕可靠管数、高效供数、智能用数、可信流通四环构建全链路能力，其中 AI DataLake 多模智能数据湖主打打通 AI 数据供给瓶颈，DataArts 支持统一接入 IT/OT/ET/KT 四类数据、内置 40 余种处理算子。<br><b>为什么对数据平台重要：</b> 头部厂商把多模态湖仓与数据智能体作为下一代平台形态公开定义，政企市场的评估框架正从面向人的分析转向面向智能体的数据供给链路；混合云底座上的管数、供数、用数、流通能力清单，会成为国内政企采购 AI 数据基础设施时的对照项。</div>
+</div>
+<div class="item">
+    <h3>Futurum Signal 重排数据智能平台座次，读写型智能体成为采购新标尺</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://futurumgroup.com/press-release/autonomy-over-analytics-the-read-write-decree-rewiring-enterprise-data-platforms/">Futurum Group</a><br><b>摘要：</b> Futurum 8 月 28 日发布 Signal 报告《Autonomy Over Analytics》，以 LTAP 就绪度与 Token FinOps 等新维度重排数据智能平台市场：Databricks、Snowflake 稳居 Elite，Oracle 凭 AI Database 26ai 录得最大分值涨幅，Google Cloud 因商业摩擦与产品改名被降级至 Leader 区。报告判断企业采购正从只读分析转向能承接智能体高频回写的融合架构，市场到 2031 年将达 1.2 万亿美元。<br><b>为什么对数据平台重要：</b> 机构把 Agent 场景写进了采购评分：能否安全承接机器速度写入、提供亚秒级治理与逐智能体成本核算，取代查询性能与生态规模成为新门槛。座次重排给二线平台留出窗口，也提示国内厂商可把 LTAP 与 Token FinOps 作为长期能力对标维度。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks Genie One 更新：从给出答案到交付成果</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/beyond-answers-new-genie-one-features-turn-insights-action">Databricks 官方博客</a><br><b>摘要：</b> Databricks 8 月 28 日发布 Genie One 一批新功能：macOS 原生桌面应用进入 beta 且会话与网页版互通；文档支持草拟、评论、版本历史与 PDF 导出；新增 Genie Ontology 片段与文件上传充实企业上下文；对话可一键沉淀为可复用的 Genie Agent，并经 MCP 写入与外部工具互通。<br><b>对数据平台的影响：</b> 对话式分析的竞争点正从答案质量转向成果交付与复用：答案成为文档、对话沉淀为受治理约束的智能体。桌面常驻入口把数据工作从浏览器迁向工作流，数据平台厂商需重估对话入口、协作链路与智能体复用在产品版图中的位置。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局数博会集中释放数据要素政策信号</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.people.com.cn/BIG5/n1/2026/0829/c1004-40788542.html">人民网</a><br><b>核心观点：</b> 国家数据局局长刘烈宏 8 月 28 日在数博会披露：全国累计建成高质量数据集超 12.6 万个、总量超 1815PB，较 3 月增长 89%；《中国数据产业发展报告(2026)》显示 2025 年数据产业规模 6.78 万亿元、同比增长 15.7%，与 AI 高度相关的数据产品和服务占产值七成以上；下一步深入实施强基扩容、标注攻坚等高质量数据集建设六大行动，并把词元作为数据要素价值释放的新路径加以引导。<br><b>映射到数据平台的判断：</b> 政策把高质量数据集供给与词元经济置于中心位置，国内数据平台的考核项正从存储计算规模转向面向 AI 的供给质量与可计量的服务单元；标注、本体论、数据编织被点名，产品路线可对照布局，政企 AI 数据供给链路将持续获得政策资源。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【财报发布】Elastic 新财年开局超指引，大客户净增创纪录</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://ir.elastic.co/News--Events/news/news-details/2026/Elastic-Reports-First-Quarter-Fiscal-2027-Financial-Results/default.aspx">Elastic 投资者关系</a><br><b>核心数据：</b> Q1 FY2027 营收 4.78 亿美元（+15%）；cRPO 11.53 亿美元（+21%）、RPO 18.54 亿美元（+27%）；ACV 超 10 万美元客户单季净增 80+ 家创历史新高、总数超 1800 家；非 GAAP 营业利润率 16.2%；财报次日股价上涨 19.31%。<br><b>摘要：</b> Elastic 8 月 27 日美股盘后发布新财年首季业绩，关键指标全部超指引并上调全年展望；超 10 万美元 ACV 客户中约 37% 已使用其 AI 功能（一年前约 21%），季内发布 VectorDB index mode、Elasticsearch 9.5 Columnar Mode 预览，并收购 Deductive AI 补强可观测性智能体。<br><b>对数据平台的影响：</b> 搜索与向量检索层在 AI 应用栈中的议价能力获得财报级验证，企业以长期合同锁定检索与向量能力，RPO 高增印证这一趋势；同类厂商的 AI 功能渗透率与大客户数正成为估值锚点，检索层与数据平台的边界竞争会继续升温。[补录 08-28]</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】MongoDB 新季财报（9 月 1 日盘后）</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/mongodb-inc-announces-date-of-second-quarter-fiscal-2027-earnings-call-302842874.html">PR Newswire</a><br><b>为什么值得继续看：</b> MongoDB 将于 9 月 1 日美股盘后发布截至 7 月 31 日的季度业绩，市场预期营收约 7.35 亿美元。Atlas 消费趋势与 AI 应用负载对收入的实际贡献，是检验通用数据库向 AI 数据平台叙事兑现度的直接样本。<br><b>需要等待什么信号确认：</b> Atlas 收入增速与消费型收入占比、管理层对 AI 相关需求的量化表述，以及全年指引是否随需求上调。</div>
+</div>
+<div class="item">
+    <h3>【预告】Snowflake 二季财报（9 月 2 日盘后）</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.snowflake.com/en/news/press-releases/snowflake-to-announce-financial-results-for-the-second-quarter-of-fiscal-2027/">Snowflake 官方公告</a><br><b>为什么值得继续看：</b> Snowflake 将于 9 月 2 日美股盘后发布 FY2027 二季业绩。Futurum 新近将其列入最高梯队，市场将检验 AI Data Cloud 叙事下的产品收入增速、消费趋势与智能体相关收入的可见性，上季末 RPO 92.1 亿美元的高基数能否继续抬升是关键。<br><b>需要等待什么信号确认：</b> 产品收入增速与净收入留存率（上季 126%）、管理层对智能体负载收入的量化口径，以及全年产品收入指引的上调幅度。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-08-31 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
