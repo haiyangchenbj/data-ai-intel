@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-01</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-01 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>头部云厂商收编嵌入式分析引擎，单机查询与对象存储加速融合</li>
+      <li>AI 算子进入数仓 SQL，语义处理与模型调用同仓闭环</li>
+      <li>检索与数据准备环节进入计费时代，数据智能体成本模型成型</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台竞争重心从集中式算力转向单机效率与对象存储原生查询的融合，AI 算子与智能体检索同时进入核心计费体系。云厂商正把 Agent 时代的数据访问、模型调用与数据准备变成平台原生能力并完成定价，数据基础设施的 AI 化进入收费阶段。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>AWS 官宣收购 DuckDB 开发公司 DuckLabs，开源项目保持独立基金会治理</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-welcome-ducklabs-to-the-team-agentic-resource-discovery-ard-and-more-august-31-2026/">AWS 官方博客</a><br><b>摘要：</b> AWS 在 8 月 31 日官方周报中确认已签署最终协议收购 DuckDB 背后的阿姆斯特丹公司 DuckLabs，协议于 8 月 26 日签署，预计 9 月初完成交割。DuckDB、DuckLake、Quack 等开源项目继续由独立的 DuckDB 基金会治理并保持 MIT 许可，创始人 Hannes Mühleisen 与 Mark Raasveldt 留在阿姆斯特丹继续主导技术方向，AWS 同时配发副总裁 Andy Warfield 的署名文章阐述"分析物理学改变"的底层判断。<br><b>为什么对数据平台重要：</b> DuckDB 是嵌入式分析与 Agent 交互式探查场景的事实标准引擎，AWS 明确计划将其速度与 S3、Redshift、Athena、EMR、Glue、SageMaker 等服务结合。收购对象是团队而非代码，这意味着 lakehouse 竞争的焦点从表格式扩展到"谁雇佣核心引擎开发团队"，开源治理与技术路线中立性将成为所有依赖 DuckDB 的厂商（包括 Snowflake、Databricks 生态）必须重新评估的风险项。</div>
+</div>
+<div class="item">
+    <h3>腾讯云 TCHouse 发布 AI Function，AI 算子直接进入数仓 SQL</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.tencent.com/developer/article/2734817">腾讯云开发者社区</a><br><b>摘要：</b> 腾讯云 TCHouse 正式发布 AI Function，将情感分析、内容生成、结构化拆解等 AI 算子内置进数仓 SQL 引擎，像调用普通函数一样在 SQL 中直接使用大模型能力，数据不出仓即可完成文本语义处理，官方称 Token 成本最高可降 99.8%。典型场景覆盖短剧内容工业化生产、电商客诉、内容风控、金融研报与法律合同等海量文本分析。<br><b>为什么对数据平台重要：</b> 这条路线把模型调用从"导出数据、外部脚本、结果回灌"的长链路压缩为数仓内的一行 SQL，重新定义了非结构化数据在数仓内的处理成本结构。AI 算子按 Token 计费并入平台账单，意味着数仓开始对语义处理能力直接定价，数据平台与模型服务的边界在产品层面被打通，同类能力将成为云数仓的标配竞争项。</div>
+</div>
+<div class="item">
+    <h3>阿里云 OpenSearch Agentic Search 2.0 正式商业化，智能体检索转向按量计费</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://help.aliyun.com/en/open-search/search-platform/product-overview/agentic-search-2-0-commercialization-announcement">阿里云官方公告</a><br><b>摘要：</b> 8 月 31 日零点起，阿里云 OpenSearch 的 Agentic Search 2.0 搜索智能体正式退出公测转入商业化运营，按实际 Token 消耗以量计费。已开通公测的服务不会自动延续，用户需在控制台重新启用服务，官方要求业务提前规划避免线上受影响。<br><b>为什么对数据平台重要：</b> 智能体检索从免费公测转为按 Token 计费，是 Agent 时代检索基础设施商业化的标志性节点：面向智能体的数据检索被明确定价为独立收入项，而非搜索产品的附属功能。采购方需要把智能体检索的 Token 消耗纳入数据平台成本模型，检索厂商之间的竞争也将从功能对比转向单位成本的比拼。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 详解 Lakebase Postgres 双向自动扩缩容架构</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/autoscaling-lakebase-postgres">Databricks 官方博客</a><br><b>摘要：</b> Databricks 工程博客详解 Lakebase Postgres 的自动扩缩容实现：由于存储解耦并独立持久化在对象存储上，计算层可在不中断连接的情况下随负载双向伸缩，系统在 100 毫秒、5 秒、20 秒三个时间尺度上分别追踪内存、CPU 与工作集估计，生产数据库每月可完成超过 3.2 万次规格调整，目标是停止为用不到的峰值容量付费。<br><b>为什么对数据平台重要：</b> Lakebase 代表湖仓平台向事务型工作负载延伸的方向，双向实时伸缩把"按峰值预留"的数据库成本模型改为"跟随负载"模型，直接改变 Agent 大量创建短生命周期数据库场景下的单位经济。三层时间尺度的控制回路设计对自建数据库平台也有工程参考价值。</div>
+</div>
+<div class="item">
+    <h3>华为云数博会发布系列化数据智能生态解决方案，联合伙伴覆盖治理到 Agent 开发</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.cet.com.cn/wzsy/kjzx/10530954.shtml">中国经济新闻网</a><br><b>摘要：</b> 华为云在数博会期间的数据智能生态沙龙上，与滴普科技、蓝凌、软通动力、数新智能联合发布四项数据智能生态解决方案，覆盖数据智能平台、智能知识管理、数据中台与治理、多云大数据管理，延伸至数据 Agent 智能应用开发全链路。同场安永提出 AI 时代数据治理正经历从结构化到多模态、静态规则到动态智能、事后处理到实时治理的三个范式转变。<br><b>为什么对数据平台重要：</b> 头部云厂商把数据领域上层应用开放给伙伴共建，配合"企业约八成精力投入数据准备"的判断，数据准备与治理环节正在成为生态分工的新利润池。多云管理方案宣称可降低跨境企业五云治理成本四成，治理与数据准备的智能化外包将成为平台选型的新评估维度。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局推出四项新举措：数据标注试点、词元商业模式、央国企数据开放</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.bjdch.gov.cn/ztzl/tzdc/tzdt/gjdt/202608/t20260831_4843727.html">北京市东城区人民政府转载</a><br><b>核心观点：</b> 国家数据局宣布系列新举措加快数据产业发展：在 32 个城市启动新一批数据标注先行先试；探索适配产业实际的词元商业模式；14 家央国企开放超 60 亿条高价值数据；完善数据要素相关学科专业布局。数博会发布的《中国数据产业发展报告（2026）》显示 2025 年产业规模达 6.78 万亿元，与 AI 高度相关的数据产品和服务占总产值七成以上。<br><b>映射到数据平台的判断：</b> 词元（Token）商业模式首次进入国家层面政策表述，数据标注基地扩容与央国企高价值数据开放将直接扩大国内数据平台在标注、治理、流通环节的市场空间，服务央国企数据开放的平台厂商与词元计费基础设施将获得政策确定性支撑。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】数据平台财报周：MongoDB 今晚、Snowflake 明晚放榜</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/mongodb-inc-announces-date-of-second-quarter-fiscal-2027-earnings-call-302842874.html">MongoDB 财报日官方公告</a><br><b>为什么值得继续看：</b> MongoDB 于美股 9 月 1 日盘后（北京时间 9 月 2 日早间）发布二季财报，Snowflake 于 9 月 2 日盘后（北京时间 9 月 3 日早间）发布二季财报，市场关注 Snowflake 净收入留存率能否守住 126% 及全年产品收入指引，以及 AI 数据云收入贡献的量化披露。<br><b>需要等待什么信号确认：</b> Snowflake 的 NRR 与 AI 产品收入占比、MongoDB 文档与向量场景的收入增速，两者共同验证 AI 负载是否真的在拉动数据平台消费。</div>
+</div>
+<div class="item">
+    <h3>【降级】英伟达据报将以 129 亿美元收购 Hugging Face</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.panewslab.com/zh/articles/01a055da-0145-746e-815d-990124d72432">PANews 融资周报</a><br><b>为什么值得继续看：</b> 多家媒体周报援引知情人士称英伟达同意以 129 亿美元收购开源 AI 平台 Hugging Face，交易金额约为其 2023 年估值的三倍，但截至目前双方均未通过官方渠道公布完整交易细节，若属实将是英伟达史上最大收购案之一。<br><b>需要等待什么信号确认：</b> 双方官方公告或监管申报文件；交易结构中对 Hugging Face 开源治理与数据集平台中立性的安排。</div>
+</div>
+<div class="item">
+    <h3>【预告】VLDB 2026 本周波士顿举行，湖仓与流处理研究密集发布</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://vldb.org/2026/">VLDB 官网</a><br><b>为什么值得继续看：</b> VLDB 2026 于 8 月 31 日至 9 月 4 日在波士顿举行，数据库与数据管理领域顶级会议，Databricks 已率先发布 Lakebase Postgres 自动扩缩容、流处理吞吐与自动表聚类等系统工程文章，预计本周将有更多厂商围绕湖仓优化、Agent 数据访问发布成果。<br><b>需要等待什么信号确认：</b> 会议期间各厂商官方博客与论文的实际发布，尤其自动优化技术向开源引擎与云服务的产品化时间表。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-01 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
