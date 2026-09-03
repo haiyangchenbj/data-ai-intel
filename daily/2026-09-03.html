@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-03</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-03 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>云数仓 AI 叙事进入财报兑现期，市场按真实拉动重新定价</li>
+      <li>时序大模型下沉进流处理，实时智能免独立建模成为新形态</li>
+      <li>检索与数仓向智能体原生演进，多模态混合检索成新标配</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>云数仓 AI 叙事进入财报兑现期，Snowflake 产品营收连续三季加速、盘后大涨，验证 AI 真实拉动。时序基础模型下沉进流处理，实时预测与异常检测免建独立 ML 栈；检索与数仓向 Agent 原生演进，文件推理、混合检索成新标配。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake 二季报产品营收增 37% 连续三季加速，AI 兑现盘后大涨 23%</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm">Snowflake 官方财报（SEC 8-K）</a><br><b>摘要：</b> Snowflake 9 月 2 日盘后公布 2027 财年第二季度财报，兑现昨日 Watchlist 预告。产品营收 14.92 亿美元（同比 +37%，连续第三个季度加速），总营收 15.47 亿（+35%），调整后 EPS 0.62 美元超预期。净收入留存率维持在 126%，剩余履约义务 90 亿美元（+30%），年化超百万美元客户 828 家（+27%）。AI 是核心驱动：CoCo 账户突破 9100 个（单季新增超 2000），CoWork 扩展至 5800 个账户，上半年上线超 330 项产品功能。公司上调全年产品营收指引至 60.7 亿美元（+36%，原 58.4 亿），非 GAAP 营业利润率指引升至 14.5%。盘后股价大涨约 23%。<br><b>为什么对数据平台重要：</b> 这是继 MongoDB 之后数据平台 AI 叙事的第二个财报兑现，且方向相反——Snowflake 用"产品营收连续三季加速 + AI 收入显著提升"证明 AI 负载真实拉动增长，坐实"agentic enterprise runs on Snowflake"的叙事。NRR 守住 126% 是关键信号：AI 工作负载在存量客户中真实增购，而非仅靠新客。对比前一日 MongoDB 因"AI 已计入价格"盘后重挫，Snowflake 盘后大涨 23%，表明市场对不同厂商的 AI 兑现度开始分化定价。对采购方与竞品的启示：AI 收入已成为数据云增长的第二引擎，但兑现节奏与指引透明度决定估值弹性。</div>
+</div>
+<div class="item">
+    <h3>IBM 携手 Confluent 把时序基础模型塞进流处理，实时预测免建独立 ML 栈</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.ibm.com/new/announcements/ibm-granite-time-series-models-bring-real-time-forecasting-and-anomaly-detection-to-confluent-cloud">IBM 官方公告</a><br><b>摘要：</b> IBM 与 Confluent 9 月 2 日宣布，IBM Granite Time Series 时序基础模型以 Early Access 形式落地 Confluent Cloud，将预测与异常检测直接嵌入企业数据流。四款互补模型——PatchTST-FM-r1（概率预测）、FlowState-r1.1（采样率无关）、TTM-r3（效率优先）、TSPulse（异常检测与补值）——均小参数设计（1M 至 260M 参数、免 GPU、CPU 推理），通过 Flink SQL 的 AI_FORECAST 与 AI_DETECT_ANOMALIES 函数直接调用，单参数即可切换模型、无需重构流水线。推理结果写回 Kafka topic，供告警、看板、湖仓与 AI 智能体消费。Confluent 管理模型 serving、扩缩容与运行，无需独立 ML 环境；Confluent Platform 本地化支持后续推出。<br><b>为什么对数据平台重要：</b> 时序智能正从"每个数据集一个定制模型"的工程项目，变成"流内可调用的函数"。传统路径下团队只能为少数高价值序列建模，其余靠安全库存与冗余兜底；时序基础模型一次预训练、跨未见序列泛化，把预测下沉到数据产生之处，消除 ETL 延迟导致的"批处理预测落地即过时"。对数据平台团队，这压缩了"流处理 + 独立 ML 栈"的架构价值，实时预测、异常检测与优化能力成为流平台的即取即用功能；对采购方，CPU 免 GPU 推理与零配置模型切换，把时序智能的成本门槛大幅拉低。</div>
+</div>
+<div class="item">
+    <h3>Oracle Exadata 在 AWS 上正式 GA，数据库巨头与云巨头走向互操作</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.dbta.com/Editorial/News-Flashes/Oracle-and-AWS-Strengthen-Partnership-as-Adoption-of-Oracle-AI-Database-at-AWS-Accelerates-176385.aspx">DBTA</a><br><b>摘要：</b> Oracle 与 AWS 9 月 2 日深化合作，Oracle Exadata Database Service on Exascale Infrastructure 在 Oracle AI Database@AWS 上正式 GA，并扩展至 22 个 AWS Region，双方签署长期战略合作协议。这意味着企业可以在 AWS 内运行原生 Oracle Exadata 数据库服务，叠加 Oracle 的 AI Database 能力，同时享受 AWS 的弹性与区域覆盖。此前 Oracle Database@AWS 已逐步铺开，此次 GA 将 Exascale 基础设施层带入，进一步降低客户将 Oracle 核心负载迁上 AWS 的门槛。<br><b>为什么对数据平台重要：</b> 数据库巨头与云巨头的合作从"竞争对立"走向"混合云互操作"，标志企业数据库上云路径的进一步清晰化。对采购方，这削弱了"锁定单一云"的顾虑——Oracle 核心工作负载可跑在 AWS 上，同时保留 Exadata 的性能与自治能力；对云厂商格局，Oracle 以"数据库 + AI 数据库"嵌入 AWS，AWS 以区域覆盖与弹性换取企业级负载，是存量企业数据库市场云化的重要信号。值得跟踪的是 Oracle AI Database@AWS 的采用速度，以及 Azure、Google Cloud 会否跟进同类互操作。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云发布 ES AI 引擎版，无状态多租户架构瞄准亿级 Agent 检索</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.aliyun.com/product/news/29983">阿里云产品动态</a><br><b>摘要：</b> 阿里云 9 月 2 日发布检索分析服务 Elasticsearch 版「AI 引擎版」，基于 OSS 的无状态多租户架构，将 OSS 作为唯一持久化存储，写入层与查询层无状态设计、计算/缓存/存储解耦。核心能力包括：Slice 原生多租户隔离（一租户一 Slice，支持亿级租户规模、沉睡租户不占资源）、全文 + 向量混合检索（同一引擎支持 BM25、结构化过滤、向量与混合检索，面向千亿级向量与毫秒级查询）、秒级零拷贝分支（copy-on-write，适配评测/灰度/A/B/回滚）与 Scale-to-Zero 自动弹性。兼容现有 Elasticsearch API、查询 DSL 与生态工具，并与 mem-0、FalconSeek、SearchLake 结合，面向企业知识库、RAG、AI Coding 及垂直领域检索。<br><b>为什么对数据平台重要：</b> 检索引擎正在从"单集群全文搜索"重构为"面向智能体的大规模多租户数据底座"。Agent 时代的一个用户、一个 Agent、一个代码仓库都可能成为独立检索租户，绝大多数长期沉睡、少数突发活跃，选型问题从"用哪种向量索引"升级为"如何管理海量租户及其冷热数据"。阿里云用 OSS 持久化 + 无状态计算 + 租户级 Slice 回应这一负载，把成本与活跃数据线性挂钩，与 Snowflake/腾讯云 TDSQL NEXA 的"对象存储原生 + 弹性计费"路线同向。对采购方，冷热分离与"不访问不付费"的多租户检索，是 Agent 规模化后控制检索成本的关键杠杆。</div>
+</div>
+<div class="item">
+    <h3>Databricks Genie Agents 支持文件推理，表与文档联合分析开放 API</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/expanding-genie-agents-deep-analysis-file-reasoning-and-more">Databricks 官方博客</a><br><b>摘要：</b> Databricks 9 月 2 日扩展 Genie Agents 能力。Agent mode（多步推理循环）对全部 Genie Agents 开放，并新增 Agent Mode API，开发者可将多步推理集成到自定义应用、聊天机器人与定时报告，经 Server-Sent Events 流式返回，支持可视化与数据表。核心新增是文件推理：Agent 可分析 Unity Catalog volumes 中存储的 PDF、文档、幻灯片与图片，最多挂载 10 个 volumes，在同一对话中结合结构化数据与非结构化内容回答跨类型问题（如"流失客户最多的区域及其离职访谈主题"），全程遵守 Unity Catalog 权限。Genie Code 同步增强，可用自然语言创建 Agent 基线、诊断失败、总结反馈趋势。<br><b>为什么对数据平台重要：</b> 智能体正从"只查结构化表"进化到"表 + 文档联合推理"，把非结构化数据纳入受治理的分析闭环。关键在治理边界：文件推理始终沿用提问者权限，且内容搜索索引会提升检索速度但也让敏感内容更易被发现，构建者需收敛 volumes 范围、只索引必要内容。对数据平台团队，这印证了"受治理的多模态数据访问"是 Agent 数据底座的核心能力——不是让 Agent 读更多，而是让它在权限边界内读得更准、答得可追溯。对采购方，表与文档联合分析能否替代部分 ETL 与非结构化分析工具，值得以自有负载验证。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 发布 Big Book of AgentOps，把智能体治理沉淀为运营手册</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/announcing-databricks-big-book-agentops">Databricks 官方博客</a><br><b>摘要：</b> Databricks 9 月 2 日发布 Big Book of AgentOps，将 AgentOps 定义为智能体上线后构建、评估、部署、治理、观测与改进的运营纪律，并沉淀为可复制的运营手册。全书六大章节：四种 Agent 架构及其反模式、四种部署架构（从单 workspace 到多账户多 Agent 企业拓扑）、七阶段项目管线、评估与反馈闭环、适配非确定性系统的 DevOps 实践、干系人对齐与成本归属。核心理念是 Agent 的每个运行时选择（工具调用、检索、权限检查、重试）都是质量/风险/延迟/成本的变量，只看最终输出会漏掉全部。手册附客户实证：FactSet 文本转代码智能体准确率提升 44%，DXC 平台 TCO 降 30%，ICE 文本转 SQL 达 77% 句法准确率（均为厂商披露、未给基线）。<br><b>为什么对数据平台重要：</b> AgentOps 从概念走向可操作的运营方法论，标志行业重心从"模型能力"转向"智能体运行的可靠性、可观测与成本治理"。对数据平台团队，这直接衔接 7 月 Prefect 收购 Dagster、9 月 Orchestra 的 Agentic Control Plane 等信号——数据编排与智能体治理正在融合，成为数据平台的竞争卡位。手册把成本归属、最小权限、评估集建设等做法前置，回应了"智能体规模一上去，账单与权限先失控"的普遍焦虑。需注意手册方法论 Databricks 原生（Unity Catalog/Gateway/MLflow），非 Databricks 栈团队需自行映射。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】VLDB 2026 进入"第三黄金时代"叙事，Databricks 与阿里云同日主旨演讲</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://vldb.org/2026/">VLDB 2026</a><br><b>为什么值得继续看：</b> VLDB 2026 本周（8/31-9/4）持续发布成果。Databricks 联合创始人兼首席架构师 Reynold Xin 发表主旨演讲《数据库工程的三个黄金时代》，提出 AI Agent 改变软件工程生命周期，带来操作型分析、向量检索等新负载与高并发、迭代式 OLTP 新使用模式，据此提出 Lakebase 架构（存储计算分离应用于 OLTP），并以 LTAP（Lake Transactional Analytical Processing）统一 Lakebase 与 Lakehouse。Databricks 现场展示 AutoLiquid（自动聚类，95% 案例优于人工调参）与 Ultron（历史负载查询优化，join 延迟中位数降 25%）。阿里云 CTO 周靖人 9 月 3 日上午（ET）主旨演讲聚焦 Qwen、Wan 大模型训练与推理系统。<br><b>需要等待什么信号确认：</b> Lakebase 与 LTAP 架构的技术细节与开源/产品化时间表；本周剩余厂商官方博客与论文（自动优化、GPU 原生、Agent 数据访问方向）能否转化为云服务能力；阿里云周靖人演讲对"数据库与大模型协同"的产业级主张。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】英伟达据报 129 亿美元收购 Hugging Face，仍待官方确认</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.panewslab.com/zh/articles/01a055da-0145-746e-815d-990124d72432">PANews 融资周报</a><br><b>为什么值得继续看：</b> 多家媒体周报援引知情人士称英伟达同意以 129 亿美元收购开源 AI 平台 Hugging Face，约为其 2023 年估值三倍，但双方尚未通过官方渠道公布交易细节。Hugging Face 是模型与数据集分发枢纽，其开源治理与数据集平台中立性对数据资产格局影响重大。<br><b>需要等待什么信号确认：</b> 双方官方公告或监管申报文件；交易结构中对 Hugging Face 开源治理与数据集平台中立性的安排。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】AI 训练数据商 AfterQuery 据报估值 32 亿美元，五个月涨十倍</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.36kr.com/p/3966110624537860">智东西（转引福布斯）</a><br><b>为什么值得继续看：</b> 据《福布斯》援引两名知情人士，美国 AI 训练数据初创公司 AfterQuery 估值已达 32 亿美元（约 215 亿人民币），较五个月前的 3 亿美元增长约十倍；该公司据称已实现盈利，并为新一轮融资确定了领投方，但具体融资金额与投资方身份尚未公布，AfterQuery 拒绝置评。其平台汇集近 10 万名专业人士，为前沿大模型提供专家推理数据、强化学习环境与模型评测服务，数据已用于英伟达 Nemotron 3 Ultra 模型训练。创始人年仅 22-23 岁，从 YC 2025 冬季批次到独角兽仅约 18 个月，为 YC 史上最快。<br><b>需要等待什么信号确认：</b> 新一轮融资的正式公告与金额、投资方；其与英伟达、Thinking Machines Lab 及中国 AI 实验室合作的实际规模；训练数据供应链从基础标注向专家复杂任务数据的迁移节奏。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-03 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
