@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-04</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-04 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>流式计算补上状态化短板，实时信号开始直接服务智能体</li>
+      <li>数据平台竞争焦点从存算能力转向智能体就绪度</li>
+      <li>治理从合规成本转变为智能体可调用的语义资产</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台正从为人服务转向为智能体服务：流式计算补上状态化、数据智能体市场首次定级、治理转为语义资产，三条主线把竞争分水岭从存算性能推进到智能体读得懂、用得上的语义与治理底座。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Google BigQuery 连续查询新增有状态处理（Preview）</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/">Google Cloud Blog</a><br><b>摘要：</b> BigQuery 连续查询（continuous queries）新增有状态处理能力，进入 Preview，流式查询可直接使用 JOIN、聚合与窗口函数，计算 30 分钟移动平均等随时间变化的指标，为下游应用与 AI 智能体提供更丰富的实时信号。<br><b>为什么对数据平台重要：</b> 流式处理长期受限于无状态语义，状态化补齐后，流内即可完成跨记录聚合与关联，减少对外部状态存储与批处理回填的依赖，是流批一体架构的关键补强，也直接服务智能体对实时上下文的需求。</div>
+</div>
+<div class="item">
+    <h3>IDC 发布中国 Data Agent 评估：阿里云登顶领导者 [补录 09-01]</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://developer.aliyun.com/article/1760307">阿里云开发者社区（IDC MarketScape 报告解读）</a><br><b>摘要：</b> IDC 发布《IDC MarketScape：中国 Data Agent 2026 年厂商评估》，18 家入选厂商仅 4 家进入领导者象限，阿里云在产品能力与战略规划两个维度均取得最高分；IDC 预测到 2028 年 60% 的中国 500 强企业将部署企业级 Data Agent。<br><b>为什么对数据平台重要：</b> Data Agent 被定义为将数据集成、治理、分析、决策串联为自动化闭环的新一代数据智能范式，代表从「数据支撑 AI」向「AI 自主管理数据」的转型；相比 2025 年同类评估 8 家领导者，本轮门槛显著提高，全栈能力与 AI 原生程度成为新的竞争分水岭。[补录 09-01]</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Google Dataflow 管道更新支持 stop-and-replace（GA）</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/">Google Cloud Blog</a><br><b>摘要：</b> Dataflow 管道更新新增 stop-and-replace 能力并正式可用（GA），以并行管道加速新旧管道迁移、减少业务中断，同时支持对排空（drain）设置超时，防止管道卡顿时的成本失控。<br><b>对数据平台的影响：</b> 流式管道升级长期是运维痛点，stop-and-replace 将迁移从串行切换改为并行过渡，降低升级窗口的业务风险，并引入成本护栏，直接提升流式数据管道的工程效率与可运维性。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks：智能体从试点到生产的差距在数据与治理基础</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://technode.global/2026/09/03/databricks-kunal-taneja-ai-agents-pilot-production-qa/">TNGlobal（Kunal Taneja 专访）</a><br><b>核心观点：</b> Databricks APJ 现场工程副总裁 Kunal Taneja 提出，智能体从试点走向生产的瓶颈几乎从不在于模型本身，而在于数据与治理基础；智能体需要新鲜、有血缘、受权限约束的数据，且治理应统一覆盖数据、模型、智能体与工具，成本应以「单任务成功产出」而非词元价格衡量。<br><b>映射到数据平台的判断：</b> 观点将智能体的数据底座问题显式化——交易与分析系统分离、权限割裂会直接放大智能体自主决策的风险，指向以统一目录（Unity Catalog/Gateway）为治理底座、以 Lakebase 类架构承接智能体实时读写的数据平台设计方向。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】海量数据定增募资调减至 7.02 亿元，聚焦 HTAP 与多模态时序数据库</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.163.com/dy/article/L5U18LII05568W0A.html">新浪财经（网易转载）</a><br><b>核心数据：</b> 拟募集资金总额不超过 7.02 亿元，全部投向新一代高性能混合事务分析数据库、多模态时序数据库两大主业项目。<br><b>摘要：</b> A 股国产数据库厂商海量数据（Vastbase）披露对上交所定增问询函的回复，将原多模态时序数据库项目的部分资金调减，最终募资上限降至 7.02 亿元；两个募投项目均为现有 Vastbase 产品线的迭代升级，不涉及全新品类。<br><b>对数据平台的影响：</b> 国产数据库厂商继续加码 HTAP 与时序、向量多模态方向，反映信创场景下「单引擎承载事务+分析」「单库兼容时序+向量」成为明确的资本投入主线。</div>
+</div>
+<div class="item">
+    <h3>【投融资】Zeit AI 完成约 430 万欧元融资，做自然语言数据工程师</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.trysignalbase.com/news/funding/zeit-ai-secures-5m-funding-round">Signalbase（EU-Startups）</a><br><b>核心数据：</b> 融资约 430 万欧元，投资方包括 Y Combinator、牛津大学种子基金、Sequoia Capital Scout Fund 与 SAP 创始人基金 HPVC。<br><b>摘要：</b> 慕尼黑初创 Zeit AI（YC S24）宣布完成种子轮融资，定位「欧洲的自主数据工程师」，让员工以自然语言查询表格数据、无需 SQL 与手工表格处理，将数据洞察能力下沉到非技术岗位。<br><b>对数据平台的影响：</b> 自然语言取数是 Data Agent 落地的先导场景，Zeit AI 的融资印证「让非技术人员直接问数」方向持续获得资本关注，与 IDC 对 Data Agent 商业分析先行的判断形成呼应。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】VLDB 2026：智能体数据系统成为核心议题</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.modb.pro/db/2095327672410923008">墨天轮（绩隐金早报）</a><br><b>为什么值得继续看：</b> VLDB 2026（8/31–9/4，波士顿）将「AI Agent 时代的数据系统」列为核心议题之一，数据库研究从「性能优化」转向「AI-Ready 架构重构」；阿里云周靖人于 9/3 演讲聚焦大模型训练、后训练与推理系统，腾讯云数据库 DBTalk「顶会三连击」覆盖系统演进、云原生数据基础设施与测评三个方向。<br><b>需要等待什么信号确认：</b> 大会闭幕后的完整 recap 与论文合集，确认「Agentic Data System」是否会沉淀为可落地的系统设计与基准，而非停留在学术议题。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Snowflake 宣布三年 3 亿美元加码沙特市场</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.saudiarabiabreakingnews.com/post/leap-2026-attracts-857-million-in-new-technology-investments-on-third-day">沙特通讯社（SPA，LEAP 2026）</a><br><b>为什么值得继续看：</b> Snowflake 在 LEAP 2026 上宣布 3 亿美元投资，用于开设区域总部、于 2026 下半年新增两个云区域并培训 2.5 万人，是数据平台龙头在中东市场扩张的明确动作，叠加前日财报上调全年指引，反映其增长势能的区域外溢。<br><b>需要等待什么信号确认：</b> 两个云区域的正式上线时间与客户落地情况，以及该区域扩张对 Snowflake 产品收入的实际贡献。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-04 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
