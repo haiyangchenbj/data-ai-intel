@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI Monthly Report | 2026年8月</title>
+<style>
+  :root {
+    --primary: #7c3aed;
+    --primary-dark: #5b21b6;
+    --primary-light: #ede9fe;
+    --accent: #dc2626;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #1e1b4b;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --green: #059669;
+    --orange: #d97706;
+    --teal: #0891b2;
+    --blue: #2563eb;
+    --rose: #e11d48;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+    color: white;
+    padding: 40px 48px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.3);
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+  .header .period { font-size: 16px; opacity: 0.9; }
+  .header .subtitle { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+
+  /* Verdict Box */
+  .verdict-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--primary);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .verdict-box h2 { font-size: 18px; color: var(--primary); margin-bottom: 16px; }
+  .verdict-box .verdict-text { font-size: 15px; line-height: 1.8; }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    white-space: nowrap;
+  }
+  .badge-verdict { background: var(--primary); }
+  .badge-timeline { background: var(--accent); }
+  .badge-trend { background: var(--blue); }
+  .badge-product { background: var(--teal); }
+  .badge-capital { background: var(--green); }
+  .badge-watchlist { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Timeline */
+  .timeline-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .timeline-table th {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .timeline-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .timeline-table tr:last-child td { border-bottom: none; }
+  .timeline-date { color: var(--text-secondary); white-space: nowrap; font-size: 13px; }
+
+  /* Trend Block */
+  .trend-block {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .trend-block:last-child { border-bottom: none; }
+  .trend-block h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .trend-block .body { font-size: 14px; line-height: 1.85; color: #374151; }
+  .trend-block .body p { margin: 0 0 12px 0; }
+  .trend-block .body p:last-child { margin-bottom: 0; }
+  .trend-block .evidence-box {
+    background: #faf5ff;
+    border-left: 3px solid var(--primary);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #4c1d95;
+    line-height: 1.75;
+  }
+  .trend-block .evidence-box strong { color: var(--primary-dark); }
+  .trend-block .so-what {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 14px;
+    font-size: 13.5px;
+    color: var(--primary-dark);
+    font-weight: 500;
+    line-height: 1.75;
+  }
+
+  /* Verdict paragraphs */
+  .verdict-text p { margin: 0 0 12px 0; }
+  .verdict-text p:last-child { margin-bottom: 0; }
+
+  /* Product Table */
+  .product-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .product-table th {
+    background: #ecfdf5;
+    color: #065f46;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .product-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .product-table tr:last-child td { border-bottom: none; }
+  .impact-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .impact-high { background: #fef2f2; color: #991b1b; }
+  .impact-mid { background: #fffbeb; color: #92400e; }
+  .impact-low { background: #f0fdf4; color: #166534; }
+
+  /* Item */
+  .item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+  .item:last-child { border-bottom: none; }
+  .item h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #374151; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 28px; }
+    .header h1 { font-size: 22px; }
+    .section, .verdict-box { padding: 20px; }
+    .timeline-table, .product-table { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <h1>📊 Data+AI Monthly Report</h1>
+    <div class="period">2026年8月</div>
+    <div class="subtitle">2026-08-01 至 2026-08-31</div>
+  </div>
+
+  <!-- Content will be generated dynamically -->
+  <div class="verdict-box"><h2>📌 月度总判断</h2><div class="verdict-text"><p>8 月，多家厂商围绕 Agent 的运行需求调整数据库、工程、治理与成本控制能力。公开动作集中在数据库状态与分支、MCP 接口、代理身份、模型路由和开放湖仓能力。多数能力仍处于公测、Beta、预览或灰度阶段，生产采用范围与商业贡献有待后续客户案例和财报验证。</p></div></div><div class="section"><div class="section-header"><span class="badge badge-timeline">时间线</span><h2>关键事件时间线</h2></div><table class="timeline-table"><thead><tr><th>日期</th><th>事件</th><th>一句话定位</th></tr></thead><tbody><tr><td>08-03</td><td>腾讯云 Agent Memory 2.0.0 发布</td><td>Team Memory 与 Memory Hub 将代码、文档、对话和技能纳入可管理的团队记忆资产。</td></tr><tr><td>08-03</td><td>Databricks 完成对 Panther 的收购</td><td>Panther 的安全运营工作流和检测能力进入 Databricks 的 lakehouse 路线。</td></tr><tr><td>08-06</td><td>Apache Fluss 成为 Apache 顶级项目</td><td>湖仓原生流存储获得 Apache 软件基金会的项目治理确认。</td></tr><tr><td>08-07</td><td>Snowflake Native Apps 的 Cortex Agents 与 MCP Server GA</td><td>应用内 Agent、MCP 工具和跨应用通信获得正式产品入口。</td></tr><tr><td>08-10</td><td>IBM Netezza Nexus 进入 Private Tech Preview</td><td>IBM 以 Apache Iceberg 开放目录切入多引擎数据治理。</td></tr><tr><td>08-11</td><td>Databricks 宣布 Electric 团队加入</td><td>PGlite 与实时同步能力进入 Lakebase 路线，服务 Agent 沙箱的本地状态。</td></tr><tr><td>08-13</td><td>Databricks 完成 50 亿美元战略融资</td><td>官方披露资金继续投向 Lakebase、Genie 与 Unity AI Gateway。</td></tr><tr><td>08-13</td><td>阿里云 PolarDB PostgreSQL Agentic Database 开启公测</td><td>秒级拉起、Branch、Scale to Zero、OSS 存储和 MCP 接口组合面向 Agent 工作负载。</td></tr><tr><td>08-18</td><td>腾讯云 DLC 的 TPC-DS 100TB 测试结果进入审核</td><td>TPC 结果页披露性能与价格性能数据，状态为 In Review。</td></tr><tr><td>08-18</td><td>Snowflake 宣布 Cortex AI Gateway 动态模型路由</td><td>模型选择开始按质量、速度、客户偏好和成本进行平台级权衡，后续状态为 Private Preview。</td></tr><tr><td>08-19</td><td>Cloudera 发布 Anywhere Cloud</td><td>混合数据与 AI 平台支持跨公有云、主权基础设施和私有数据中心部署工作负载。</td></tr><tr><td>08-20</td><td>阿里云 Flink 上线 AI Native Ops 独立入口</td><td>智能诊断、巡检、技能管理与 Token 用量进入统一入口；部分能力仍在公测。</td></tr><tr><td>08-21</td><td>AWS Glue 6.0 GA</td><td>托管 Spark 4.1 完整支持 Apache Iceberg v3，AWS 官方称价格较此前版本下调 30%。</td></tr><tr><td>08-21</td><td>腾讯云与 Elastic 联合宣布 ES 企业版及合作升级</td><td>AI 搜索、模型接入和 Agent 连接成为双方合作的产品方向。</td></tr><tr><td>08-21</td><td>AWS 发布 ADOP 参考架构</td><td>数据工程 Agent 在构建期生成可审查产物，经 CI/CD 部署到生产环境。</td></tr><tr><td>08-24</td><td>Elastic 完成对 Deductive AI 的收购</td><td>AI 驱动的根因调查能力将被整合进 Elastic Observability，具体路线图待后续发布。</td></tr><tr><td>08-24</td><td>BigQuery 数据 Agent 可观测性进入 Preview</td><td>平台开始支持观测 Agent 及其对话的性能、采用情况、延迟和成本。</td></tr><tr><td>08-26</td><td>Databricks 发布 Governance Hub Beta</td><td>数据治理、AI 使用和成本进入账户级统一视图。</td></tr><tr><td>08-26</td><td>Amazon 签署收购 DuckLabs 的最终协议</td><td>交易仍待惯常交割条件完成；DuckDB 保持由独立基金会治理的开源项目。</td></tr><tr><td>08-27</td><td>Databricks 在 VLDB 2026 分享 Lakebase、LakehouseRT 与 LTAP 架构</td><td>会议分享聚焦面向 Agent 工作负载的存算分离、分支数据库与湖上实时分析。</td></tr><tr><td>08-27</td><td>腾讯云大数据的连接器与专家开始灰度接入 WorkBuddy</td><td>六款引擎相关连接器陆续上架，专家和连接器处于灰度测试。</td></tr><tr><td>08-27</td><td>Elastic 发布 FY2027 Q1 财报</td><td>营收 4.78 亿美元，同比增长 15%；长期合同指标继续增长。</td></tr><tr><td>08-28</td><td>国家数据局举办数博会并持续释放数据供给政策信号</td><td>高质量数据集、公共数据开发利用和数据标准化成为大会相关议题。</td></tr><tr><td>08-26</td><td>阿里巴巴完成 800 亿港元新股配售</td><td>配售净额用于全栈 AI 能力及 AI 基础设施投入。</td></tr></tbody></table></div><div class="section"><div class="section-header"><span class="badge badge-trend">趋势</span><h2>月度趋势分析</h2></div><div class="trend-block"><h3>趋势一：数据库出现面向 Agent 状态、分支与上下文的产品探索（中可信）</h3><div class="evidence-box"><strong>核心判断：</strong>Databricks 与阿里云已公开展示面向 Agent 工作负载的数据库能力，包括本地状态、中心治理、快速分支和资源弹性。公开生产案例、服务边界和规模化采用信息仍有限。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>已公开能力</th></tr></thead><tbody><tr><td>08-11</td><td><a href="https://www.databricks.com/blog/electric-joins-databricks-bring-wasm-postgres-ai-agent-sandboxes" target="_blank" rel="noopener noreferrer">Databricks / Electric</a></td><td>Electric 团队加入 Databricks</td><td>PGlite 为 Agent 沙箱提供本地 WASM Postgres，Electric Sync 负责同步分布式状态。</td></tr><tr><td>08-13</td><td><a href="https://www.alibabacloud.com/help/tc/polardb/polardb-for-postgresql/polardb-agentic-postgresql-public-beta" target="_blank" rel="noopener noreferrer">阿里云 PolarDB</a></td><td>Agentic Database 公测</td><td>秒级创建与 Branch、Scale to Zero、OSS 存储和标准 MCP Server；公测不承诺 SLA。</td></tr><tr><td>08-27</td><td><a href="https://www.vldb.org/2026/keynotes.html" target="_blank" rel="noopener noreferrer">Databricks / VLDB</a></td><td>Lakebase 与 LTAP 架构分享</td><td>存算分离 Postgres、对象存储 WAL 与 Copy-on-Write 分支面向 Agent 工作负载设计。</td></tr></tbody></table><p>Databricks 的 Electric 路线将本地低延迟上下文与 Lakebase 中的中心化数据层连接起来。阿里云 PolarDB 公测则把 Branch、弹性启停和 MCP 接口组合为 Agent 数据库形态。两者的共同点是将 Agent 任务的短生命周期、并发隔离和状态同步纳入数据库设计。</p><p>VLDB 分享属于架构与研究工作披露，不能视为新增 GA 产品或生产验证。该趋势目前反映的是产品路线的聚合，而非成熟度相同的市场结论。</p><p><strong>评估要点：</strong><br/>- 状态隔离、分支回收、同步冲突与中心审计是否覆盖实际任务链路。<br/>- 本地沙箱与中心数据层之间的身份、密钥和数据最小化同步边界。<br/>- 公测服务的地域覆盖、SLA、计费和生产负载案例。</p></div></div><div class="trend-block"><h3>趋势二：Agent 接口、代理身份与调用成本进入数据平台控制面（高可信）</h3><div class="evidence-box"><strong>核心判断：</strong>Snowflake、Databricks 与腾讯云的产品动态显示，Agent 工具调用、代理身份、模型选择和成本归因正在进入数据平台的原生能力范围；不同产品的 GA、Beta、Preview 与灰度状态需分别判断。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>状态与治理维度</th></tr></thead><tbody><tr><td>08-07</td><td><a href="https://docs.snowflake.com/release-notes/2026/other/2026-08-07-native-apps-agents-mcp-ga" target="_blank" rel="noopener noreferrer">Snowflake</a></td><td>Native Apps 的 Cortex Agents 与 MCP Server</td><td>GA；支持跨应用通信、caller grants 与 feature policies。</td></tr><tr><td>08-18</td><td><a href="https://investors.snowflake.com/news/news-details/2026/Snowflake-Unlocks-Better-AI-Economics-with-Dynamic-Model-Routing-Delivering-More-Value-to-Customers/default.aspx" target="_blank" rel="noopener noreferrer">Snowflake</a></td><td>Cortex AI Gateway 动态模型路由</td><td>宣布后拟进入 Private Preview；按质量、速度、客户偏好和成本路由。</td></tr><tr><td>08-21</td><td><a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august.html" target="_blank" rel="noopener noreferrer">Databricks</a></td><td>ABAC 上下文属性</td><td>Beta；可识别代理代用户访问，并据此应用行过滤和列掩码。</td></tr><tr><td>08-26</td><td><a href="https://www.databricks.com/blog/introducing-governance-hub-intelligent-account-level-governance-over-your-databricks-estate" target="_blank" rel="noopener noreferrer">Databricks</a></td><td>Governance Hub</td><td>Beta；账户级查看数据治理、AI 使用和成本。</td></tr><tr><td>08-27</td><td><a href="https://cloud.tencent.com/developer/article/2732949" target="_blank" rel="noopener noreferrer">腾讯云</a></td><td>大数据引擎连接器与专家接入 WorkBuddy</td><td>灰度测试；基于 MCP 等标准接口，数据访问保留原有授权边界。</td></tr></tbody></table><p>Snowflake 在 Native Apps 中将 Agent 与 MCP Server 作为可授予、可审批的对象，Databricks 以 ABAC 上下文属性与账户级治理扩展现有控制面，腾讯云则将引擎和专家能力以连接器形态输出至 Agent 工作台。这些动作覆盖了接口、身份、审计与成本的不同层面。</p><p>Snowflake 的动态模型路由涉及效率数据时，相关数值来自厂商内部测试，未经独立基准验证。本月更稳定的信号是，多模型选择、Token 消费和代理身份已成为平台产品的明确治理对象。</p><p><strong>评估要点：</strong><br/>- 委托链路、工具调用范围、审计记录和任务级权限是否可追溯。<br/>- 模型路由的可解释性、回退规则、预算阈值与模型供应商边界。<br/>- Beta、Preview 和灰度能力在生产控制面中的覆盖限制。</p></div></div><div class="trend-block"><h3>趋势三：开放湖仓能力延伸到托管 ETL、目录与数据驻留部署（高可信）</h3><div class="evidence-box"><strong>核心判断：</strong>Apache、IBM、AWS 与 Cloudera 的 8 月动态显示，开放湖仓能力已被用于项目治理、开放目录、托管 ETL 与数据驻留部署等不同产品路径。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>已公开能力</th></tr></thead><tbody><tr><td>08-06</td><td><a href="https://news.apache.org/foundation/entry/the-apache-software-foundation-announces-new-top-level-projects-5" target="_blank" rel="noopener noreferrer">Apache Fluss</a></td><td>成为 Apache 顶级项目</td><td>面向实时分析和 AI 的 lakehouse-native streaming storage 获得项目治理确认。</td></tr><tr><td>08-10</td><td><a href="https://www.ibm.com/new/announcements/announcing-ibm-netezza-nexus-an-open-lakehouse-catalog-for-apache-iceberg" target="_blank" rel="noopener noreferrer">IBM</a></td><td>Netezza Nexus 进入 Private Tech Preview</td><td>基于 Iceberg 的开放湖仓目录，支持多引擎治理、联邦目录和零拷贝访问。</td></tr><tr><td>08-19</td><td><a href="https://www.cloudera.com/about/news-and-blogs/press-releases/2026-08-19-cloudera-powers-the-agentic-ai-era-with-cloudera-anywhere-cloud.html" target="_blank" rel="noopener noreferrer">Cloudera</a></td><td>Anywhere Cloud 发布</td><td>支持在公有云、主权基础设施和私有数据中心部署与治理工作负载。</td></tr><tr><td>08-21</td><td><a href="https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/" target="_blank" rel="noopener noreferrer">AWS Glue</a></td><td>Glue 6.0 GA</td><td>Spark 4.1 完整支持 Iceberg v3；AWS 官方称价格较此前 Glue 版本降低 30%。</td></tr></tbody></table><p>AWS Glue 6.0 将 Iceberg v3 的 VARIANT、deletion vectors 与空间类型带入托管 Spark。IBM Netezza Nexus 与 Cloudera Anywhere Cloud 分别从目录和部署形态切入开放生态。它们并不代表同一种产品模型，但共同降低了开放格式在不同计算引擎和数据驻留环境中的使用门槛。</p><p>价格、性能和迁移成本仍取决于数据规模、并发、区域、Catalog 兼容性和跨云网络路径。开放格式降低格式锁定，并不自动消除运维和迁移成本。</p><p><strong>评估要点：</strong><br/>- 数据格式、Catalog、权限模型和跨云网络路径能否共同满足现有架构。<br/>- 托管 ETL 的运行时升级对现有作业、依赖库和治理策略的影响。<br/>- 私有与主权环境中的交付边界、运维责任和成本模型。</p></div></div><div class="trend-block"><h3>趋势四：数据工程 Agent 主要落在构建期与辅助运维环节（中可信）</h3><div class="evidence-box"><strong>核心判断：</strong>本月公开能力集中在管道设计、代码与配置生成、元数据补全、诊断和巡检。AWS 的参考架构明确将 Agent 放在构建期，生产环境运行的是经审查和 CI/CD 部署的确定性产物。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>已公开能力</th></tr></thead><tbody><tr><td>08-20</td><td><a href="https://www.alibabacloud.com/help/en/flink/realtime-flink/product-overview/aug-20-2026" target="_blank" rel="noopener noreferrer">阿里云 Flink</a></td><td>AI Native Ops 独立入口上线</td><td>智能诊断、智能巡检、技能管理与 Token 用量统一呈现；智能巡检仍在公测。</td></tr><tr><td>08-21</td><td><a href="https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours/" target="_blank" rel="noopener noreferrer">AWS</a></td><td>ADOP 参考架构发布</td><td>子代理生成 PySpark、SQL、Airflow DAG 与策略，经 CI/CD 部署。</td></tr><tr><td>08-13 / 08-24</td><td><a href="https://cloud.google.com/bigquery/docs/release-notes" target="_blank" rel="noopener noreferrer">Google Cloud</a></td><td>BigQuery 数据 Agent 更新</td><td>管道元数据补全进入 Preview；Agent 与对话的性能、采用情况、延迟和成本观测进入 Preview。</td></tr><tr><td>08-27</td><td><a href="https://cloud.google.com/bigquery/docs/release-notes" target="_blank" rel="noopener noreferrer">Google Cloud</a></td><td>Data Engineering Agent HIPAA 合规更新</td><td>官方 release note 记录其 HIPAA 合规状态更新。</td></tr></tbody></table><p>AWS ADOP 提供的路径是让 Agent 在开发环境辅助生成可审查的产物，而非由模型在生产运行时直接接管数据管道。阿里云 Flink 和 BigQuery 的更新则覆盖诊断、巡检、元数据和可观测性。</p><p>公开资料尚不足以证明 Agent 已替代成熟的编排、数据质量与变更管理体系。其当前价值更多反映在工程效率与辅助运维，组织分工变化取决于实际交付方式。</p><p><strong>评估要点：</strong><br/>- 生成的代码、DAG、策略与元数据是否可审阅、可测试、可回滚。<br/>- Agent 访问元数据、日志和数据质量规则时是否继承既有权限与审计语义。<br/>- 参考架构、Preview 与公测能力的生产责任边界。</p></div></div><div class="trend-block"><h3>趋势五：国内市场同时出现性能、检索上下文与数据供给信号（中可信）</h3><div class="evidence-box"><strong>核心判断：</strong>腾讯云、国家数据局和相关公开活动分别涉及基准性能、企业检索与高质量数据供给。这些是并行信号，尚不足以证明已形成统一的产品路线或采购趋势。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/机构</th><th>事件</th><th>已公开信息</th></tr></thead><tbody><tr><td>08-18</td><td><a href="https://www.tpc.org/tpcds/results/tpcds_result_detail5.asp?id=126080401&amp;version=4" target="_blank" rel="noopener noreferrer">腾讯云 DLC / TPC</a></td><td>TPC-DS 100TB 测试结果进入审核</td><td>结果页显示 653,611,141 QphDS@100TB、11.04 CNY/kQphDS@100TB，状态为 In Review。</td></tr><tr><td>08-21</td><td><a href="https://events.elastic.co/elasticaisearchtechday?utm_campaign=eswechat-rm&amp;utm_medium=email&amp;utm_source=event-REPLACEwithEventNAME" target="_blank" rel="noopener noreferrer">腾讯云 × Elastic</a></td><td>AI 搜索技术大会及 ES 企业版联合发布</td><td>官方活动页面确认大会与发布会；全面可用范围和 SLA 未在该页面披露。</td></tr><tr><td>08-27</td><td><a href="https://cloud.tencent.com/developer/article/2732949" target="_blank" rel="noopener noreferrer">腾讯云大数据</a></td><td>连接器与专家灰度接入 WorkBuddy</td><td>EMR、DLC、ES、TCHouse-C、TCHouse-D、TCHouse-X 等能力陆续上架。</td></tr><tr><td>08-25</td><td><a href="https://www.nda.gov.cn/sjj/swdt/wszb/sjjzhwmzxd5/list/index_pc.html" target="_blank" rel="noopener noreferrer">国家数据局</a></td><td>发布第五批公共数据“跑起来”示范场景</td><td>新增 50 个示范场景，累计 150 个；公共数据与社会、企业数据融合应用持续扩展。</td></tr></tbody></table><p>腾讯云 DLC 的数值来自 TPC 官方结果页，但该结果处于审核状态，不能视为最终认证或业务场景的直接外推。腾讯云与 Elastic 的联合发布显示搜索能力正被用于模型与 Agent 连接场景，实际产品可用范围仍需依据正式产品文档确认。</p><p>国家数据局第五批示范场景将公共数据开发利用延伸至交通、社会管理、医疗健康和应急管理等领域。高质量数据集、标注、数据流通与多模态处理是否形成统一的政企采购链路，仍需由后续项目验证。</p><p><strong>评估要点：</strong><br/>- 基准测试、产品性能和客户案例的口径应分开验证。<br/>- 检索、结构化数据访问与 Agent 调用是否运行在统一身份、数据分级和审计边界内。<br/>- 政策信号、试点项目和成熟采购需求之间的转化速度。</p></div></div></div><div class="section"><div class="section-header"><span class="badge badge-product">产品</span><h2>Product &amp; Tech 月度盘点</h2></div><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>状态</th></tr></thead><tbody><tr><td>08-03</td><td>腾讯云</td><td>Agent Memory 2.0.0：Team Memory 与 Memory Hub</td><td>正式版本发布</td></tr><tr><td>08-03</td><td>Databricks</td><td>Panther 安全运营能力进入 lakehouse 路线</td><td>收购完成</td></tr><tr><td>08-06</td><td>Apache Fluss</td><td>成为 Apache 顶级项目</td><td>项目治理状态</td></tr><tr><td>08-07</td><td>Snowflake</td><td>Native Apps 中 Cortex Agents 与 MCP Server</td><td>GA</td></tr><tr><td>08-10</td><td>IBM</td><td>Netezza Nexus 开放 Iceberg 目录</td><td>Private Tech Preview</td></tr><tr><td>08-13</td><td>阿里云</td><td>PolarDB PostgreSQL Agentic Database</td><td>公测，不承诺 SLA</td></tr><tr><td>08-18</td><td>Snowflake</td><td>Cortex AI Gateway 动态模型路由</td><td>宣布，拟进入 Private Preview</td></tr><tr><td>08-19</td><td>Cloudera</td><td>Anywhere Cloud 混合数据与 AI 平台</td><td>发布</td></tr><tr><td>08-20</td><td>阿里云</td><td>Flink AI Native Ops 独立入口</td><td>发布；部分能力公测</td></tr><tr><td>08-21</td><td>AWS</td><td>Glue 6.0：Spark 4.1 与 Iceberg v3</td><td>GA</td></tr><tr><td>08-21</td><td>AWS</td><td>ADOP 数据工程 Agent 方法论</td><td>参考架构</td></tr><tr><td>08-24</td><td>Google Cloud</td><td>BigQuery 数据 Agent 可观测性</td><td>Preview</td></tr><tr><td>08-26</td><td>Databricks</td><td>Governance Hub</td><td>Beta</td></tr><tr><td>08-27</td><td>Databricks</td><td>Lakebase、LakehouseRT 与 LTAP 架构</td><td>VLDB 技术分享</td></tr><tr><td>08-27</td><td>腾讯云</td><td>大数据引擎连接器和数据专家接入 WorkBuddy</td><td>灰度测试</td></tr></tbody></table></div><div class="section"><div class="section-header"><span class="badge badge-capital">资本</span><h2>Capital &amp; Corporate 月度盘点</h2></div><table class="product-table"><thead><tr><th>日期</th><th>类型</th><th>事件</th><th>核心数据与状态</th></tr></thead><tbody><tr><td>08-03</td><td>收购</td><td>Databricks 完成对 Panther 的收购</td><td>交易条款未披露；安全运营工作流和检测能力将进入 lakehouse 路线。</td></tr><tr><td>08-11</td><td>团队整合</td><td>Electric 团队加入 Databricks</td><td>交易条款未披露；PGlite 与实时同步能力进入 Lakebase 路线。</td></tr><tr><td>08-13</td><td>融资</td><td>Databricks 完成战略融资</td><td>50 亿美元，投后估值 1900 亿美元；年化收入运行率超 70 亿美元、同比增长超 80%，均为官方披露。</td></tr><tr><td>08-24</td><td>收购</td><td>Elastic 完成对 Deductive AI 的收购</td><td>交易条款未披露；现有客户继续获得支持，产品整合路线图待后续发布。</td></tr><tr><td>08-26</td><td>收购协议</td><td>Amazon 签署收购 DuckLabs 的最终协议</td><td>交易待惯常交割条件完成；DuckDB 保持由独立基金会治理并维持 MIT 许可。</td></tr><tr><td>08-26</td><td>财报</td><td>Elastic 发布 FY2027 Q1 业绩</td><td>营收 4.78 亿美元，同比增长 15%；cRPO 11.53 亿美元，同比增长 21%；RPO 18.54 亿美元，同比增长 27%。</td></tr><tr><td>08-26</td><td>股权融资</td><td>阿里巴巴完成新股配售</td><td>710,000,000 股、每股 112.70 港元；所得净额用于全栈 AI 能力及 AI 基础设施。</td></tr></tbody></table><div class="body" style="margin-top:16px"><p><strong>月度资本流向：</strong></p><ul><li>Databricks 的融资与 Electric 团队加入，分别提供资本投入和团队整合信号，重点指向 Agent 数据库、数据交互和多模型治理方向。</li><li>Panther 与 Deductive AI 两笔交易延伸了数据平台与可观测性产品的安全运营能力，具体整合节奏尚未披露。</li><li>Amazon 对 DuckLabs 的协议显示云厂商继续关注嵌入式分析引擎；交易尚未完成，DuckDB 的独立开源治理安排保持不变。</li><li>Elastic Q1 的 cRPO 和 RPO 增速高于营收增速，反映其长期合同指标仍在增长。</li><li>阿里巴巴配售资金用途指向全栈 AI 和基础设施投入，其对数据平台需求的传导速度仍需后续财报和资本开支观察。</li></ul></div></div><div class="section"><div class="section-header"><span class="badge badge-watchlist">跟踪</span><h2>Watchlist 月度复盘</h2></div><h3 style="font-size:15px;margin:16px 0 8px;color:var(--orange)">🔄 仍在跟踪</h3><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>Lakebase 与 LTAP 的生产采用</strong>：公开资料主要为架构与会议分享，生产客户、SLA 和性能边界仍有限。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>PolarDB Agentic Database 的公测进展</strong>：地域覆盖、SLA、MCP 安全模型与客户负载验证待后续发布。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>模型路由的成本与质量收益</strong>：厂商内部测试与企业级独立复现之间仍有距离。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>Databricks ABAC 代理上下文覆盖范围</strong>：不同认证方式和产品路径的身份传播边界需要逐项核实。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>Amazon 对 DuckLabs 的交易交割</strong>：团队整合方式、DuckDB 社区路线图与产品影响待公告。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>数据工程 Agent 的生产职责边界</strong>：公开能力多集中在构建期、辅助运维、Preview 或公测阶段。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>公共数据示范场景的产品化收益</strong>：地方授权运营、数据流通与标准化采购节奏尚未完全公开。</div><h3 style="font-size:15px;margin:16px 0 8px;color:var(--blue)">📅 9 月重点关注</h3><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>Snowflake 与 MongoDB 财报中有关消费趋势和 AI 工作负载的披露。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>Lakebase、LTAP 与 PolarDB Agentic Database 的生产采用、服务边界和客户案例。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>模型路由、代理身份治理和账户级成本治理的成熟度。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>AWS Glue 6.0 的 Iceberg v3 迁移与客户采用。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>腾讯云 ES 企业版和大数据 MCP 连接器的客户实践。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>高质量数据集、公共数据授权运营与数据标准化的后续项目。</div></div><div class="section"><div class="section-header"><span class="badge badge-verdict">延伸</span><h2>延伸阅读</h2></div><p><strong><a href="https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales" target="_blank" rel="noopener noreferrer">Databricks：50 亿美元战略融资与 70 亿美元年化收入运行率</a></strong>  <br/>融资、营收、Lakebase 与 Unity AI Gateway 的官方披露。</p><p><strong><a href="https://docs.snowflake.com/release-notes/2026/other/2026-08-07-native-apps-agents-mcp-ga" target="_blank" rel="noopener noreferrer">Snowflake：Native Apps 的 Cortex Agents 与 MCP Server GA</a></strong>  <br/>跨应用 Agent 调用、工具暴露和消费者授权的原始发布说明。</p><p><strong><a href="https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/" target="_blank" rel="noopener noreferrer">AWS：Glue 6.0 与 Iceberg v3</a></strong>  <br/>托管 Spark、价格调整和 Iceberg v3 能力的官方发布。</p><p><strong><a href="https://www.vldb.org/2026/keynotes.html" target="_blank" rel="noopener noreferrer">VLDB 2026：Databricks Lakebase 与 LTAP 主题演讲</a></strong>  <br/>关于 Agent 工作负载、存算分离 Postgres 和 LTAP 架构的技术原始材料。</p><p><strong><a href="https://www.tpc.org/tpcds/results/tpcds_result_detail5.asp?id=126080401&amp;version=4" target="_blank" rel="noopener noreferrer">腾讯云：DLC 的 TPC-DS 100TB 结果页</a></strong>  <br/>测试口径、性能、价格性能和审核状态。</p><p><strong><a href="https://ir.elastic.co/News--Events/news/news-details/2026/Elastic-Reports-First-Quarter-Fiscal-2027-Financial-Results" target="_blank" rel="noopener noreferrer">Elastic：FY2027 Q1 财报</a></strong>  <br/>搜索、AI、安全与可观测性业务的财务与长期合同指标。</p></div>
+
+  <div class="footer">
+    <p>Data+AI Monthly Report</p>
+  </div>
+</div>
+</body>
+</html>
