@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-07</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-07 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>算力巨头向上游收编模型与数据分发入口，开源生态进入整合期</li>
+      <li>云数据库运维走向智能体接管，产品代际更替提速</li>
+      <li>国产数据库借区域排名出海，打开第二增长曲线</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>三条主线：算力巨头收编开源模型分发入口，数据供应链话语权向上游集中；云数据库运维走向智能体接管，选型调优自动化；国产数据库借区域排名打开海外第二增长曲线。数据平台竞争从存算性能，推进到分发入口、运维智能体与区域市场三个新战场。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>NVIDIA 官宣 129.3 亿美元收购 Hugging Face [补录 09-03]</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20260905A04E6000">InfoQ 中文（NVIDIA 官方博客编译）</a><br><b>摘要：</b> NVIDIA 于 9/3 官宣（9/2 签署最终协议）以 129.3 亿美元收购全球最大开源模型与数据集平台 Hugging Face，其中约 119 亿美元现金、最高 10 亿美元员工股权保留，预计 2027 上半年交割；平台托管超 300 万模型、50 万数据集、1800 万开发者。NVIDIA 承诺维持平台中立开放与多加速器兼容，但美欧反垄断审查是最大变数。<br><b>为什么对数据平台重要：</b> 这是算力巨头向「模型发现—分发—部署」入口与数据集供应链上游延伸的标志性事件，把开发者默认依赖的开源模型仓库纳入芯片生态，直接改写 AI 数据供应链与开放生态的话语权格局，也是继此前传闻后的正式落地。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud 发布数据库运维 AI 智能体</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.qq.com/rain/a/20260906A062YZ00">InfoQ（Google Cloud 官方博客）</a><br><b>摘要：</b> Google Cloud 推出 Onboarding Agent（自然语言选型）与 Observability Agent（多源遥测关联根因分析）两款数据库运维智能体，深度集成 Gemini Cloud Assist，覆盖 Cloud SQL、Spanner、AlloyDB、Bigtable、Firestore 与 Memorystore；相关能力可通过 MCP 服务器接入现有工作流。<br><b>为什么对数据平台重要：</b> 数据库「选型—部署—诊断—调优」全生命周期开始由智能体接管，标志云数据库运维从工具化走向 Agent 化，治理能力与工程效率成为云数据平台新的竞争维度。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云 PolarDB-X 1.0 发布退市公告</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://help.aliyun.com/zh/polardb/polardb-for-xscale/announcement-cloud-native-database-polardb-x-1-0-delisting-announcement">阿里云帮助中心</a><br><b>摘要：</b> 阿里云宣布云原生数据库 PolarDB-X 1.0（原 DRDS）启动退市，分三阶段推进：2026/10/15 停止新购、2027/4/15 停止续费与变配、2027/10/15 全面停止服务；官方建议迁移至 PolarDB-X 2.0 企业版，并提供可视化评估迁移工具覆盖结构迁移、全量与增量同步、校验与回滚。<br><b>对数据平台的影响：</b> 云数据库进入存量代际更替期，上一代分布式架构产品被明确退役，用户被迫向新一代云原生分布式架构迁移；对采购方是明确的升级窗口信号，对厂商则是产品线收敛与资源聚焦的治理动作。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>Omdia：OceanBase 位居亚太分布式数据库市场第一</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.bbtnews.com.cn/2026/0906/604918.shtml">北京商报（Omdia《2026 年亚洲及大洋洲分布式数据库市场研究》）</a><br><b>核心观点：</b> 按 2025 年收入计算，OceanBase 以 15.5% 份额位居亚太分布式数据库市场第一，领先腾讯云 TDSQL、Google Cloud Spanner、华为云 GaussDB 与阿里云 PolarDB-X。<br><b>映射到数据平台的判断：</b> 国产数据库厂商首次在第三方区域市场排名中超越海外云巨头，标志「替代 Oracle」叙事之后，海外拓局成为国产数据库的第二增长曲线；需注意该排名为 Omdia 口径并经厂商 PR 放大，市场界定与收入口径应交叉验证。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body"></div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Snowflake 10-Q 披露两笔 AI 收购对价</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.toutiao.com/article/7681828369704452642/">南财智讯（Snowflake 10-Q 季报）</a><br><b>为什么值得继续看：</b> Snowflake 提交 10-Q，披露 6 月完成对 Natoma Labs（企业级 AI 智能体 MCP 平台）收购、对价约 1.28 亿美元，2 月完成对 Observe（AI 可观测性）收购、对价约 5.96 亿美元；并修订三年期 AI 服务商协议，最低采购承诺增至 3.9 亿美元。<br><b>需要等待什么信号确认：</b> Natoma Labs 的 MCP 能力如何整合进 Snowflake 产品线，以及两笔收购对产品收入的实际贡献。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】每日互动 AIBI 登上 BIRD-Bench NL2SQL 榜单</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.toutiao.com/article/7682196992801456678">今日头条（A2M 峰会报道）</a><br><b>为什么值得继续看：</b> 9/4–9/5 上海 A2M 峰会上，每日互动展示 AIBI 智能问数产品，在 BIRD-Bench NL2SQL 榜单上拿下效率全球第四、准确率全球第六，标志自然语言问数从演示走向可量化基准竞争。<br><b>需要等待什么信号确认：</b> BIRD-Bench 榜单完整口径与排名细节，以及 AIBI 是否进入正式商业化发布阶段。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-07 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
