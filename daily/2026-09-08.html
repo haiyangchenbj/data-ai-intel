@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-08</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-08 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>开放表格式标准升级，湖仓一体架构在云数仓中加速落地</li>
+      <li>国产云数据库内核能力进阶，相关子查询并行化补上性能短板</li>
+      <li>Agent 时代可信决策基础设施获青睐，治理成数据平台新卖点</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>开放表格式标准在云数仓中加速落地，湖仓一体从选型选项走向默认架构；国产云数据库以内核级优化补齐性能短板，与海外厂商的工程能力差距收窄；Agent 时代资本涌向可信决策基础设施，治理与可审计性成为数据平台竞争的新维度。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>AWS Redshift 支持 Apache Iceberg v3</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://targetsocialmedia.com/2026/09/07/aws-weekly-roundup-claude-fable-5-1-on-aws-amazon-linux-2027-preview-aws-certified-ai-business-strategist-and-more-september-7-2026">AWS 官方周报（转载）</a><br><b>摘要：</b> AWS 9/7 周报确认，Amazon Redshift 现支持读写 Apache Iceberg v3 表，新增默认列值、行谱系（row lineage）与删除向量（deletion vectors）支持，覆盖 Graviton 预置集群与 Redshift Serverless。数据湖分析可直接读写 v3 格式 Iceberg 表，与湖上其他引擎共享同一套开放表格式。<br><b>为什么对数据平台重要：</b> 开放表格式正从 v2 向 v3 演进，删除向量与行谱系是 v3 的核心增量；主流云数仓对 v3 的跟进，标志湖仓一体的开放表格式进入新一轮标准化，进一步降低数据湖与数仓之间的格式壁垒。</div>
+</div>
+<div class="item">
+    <h3>腾讯云 PostgreSQL 内核支持相关子查询并行执行</h3>
+    
+    <div class="body"><b>来源：</b> <a href="http://view.inews.qq.com/a/20260907A0AIY700">腾讯云数据库 TencentDB（腾讯新闻转载）</a><br><b>摘要：</b> 腾讯云数据库 PostgreSQL 内核支持相关子查询（SubPlan）并行执行，开启 tencentdb_enable_subplan_parallel 参数后，含相关子查询的 SQL 也能多核并行。基于 PostgreSQL 18 内核，在 32 核测试机上同类 SQL 获得 4.2 倍加速。<br><b>为什么对数据平台重要：</b> 相关子查询是业务 SQL 常见写法，原生 PostgreSQL 对其"一刀切"禁止并行是长期性能短板；在内核层绕过该限制，标志国产云数据库进入内核级工程能力比拼，而非停留在兼容性增强。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】中科世通亨奇完成近 5 亿元 B 系列融资</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.163.com/dy/article/L67R01V10550B1DU.html">科创板日报（网易转载）</a><br><b>核心数据：</b> 近 5 亿元 B 系列融资，为"数据智能与 AI"赛道内单笔最大金额；中国兵器集团下属南方德茂基金、北京市信息产业基金、联通创投等共同投资，老股东乐礼资本连续三次加注。<br><b>摘要：</b> 中科世通亨奇为中科院孵化的可信智能决策基础设施服务商，以自研 AOS（智能本体空间）为核心打造"世通灵境"产品体系，对标 Palantir。资金将用于 AOS 核心技术研发、产品体系升级，并推动能力从国防等高可信场景向运营商、金融、能源电力、政府治理等行业复制。<br><b>对数据平台的影响：</b> Agent 时代资本开始为"可信决策基础设施"下注，治理、权限、审计与可追溯性从数据平台的外挂承诺变为内核能力，反映数据平台竞争从模型与算力转向可信执行。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】中国电信 TeleAgent 接入企查查 MCP 数据平台</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.toutiao.com/article/7682649850730562083">东方网（今日头条转载）</a><br><b>为什么值得继续看：</b> 中国电信自研星辰智能体 TeleAgent 接入企查查 MCP 智能体数据平台，打通对公开户、客户尽调、贷后风控三大场景，实现数据不出域、流程全线上、结论可审计。<br><b>需要等待什么信号确认：</b> 企查查 MCP 数据平台的开放范围与商业化模式，以及更多数据平台厂商是否会跟进以 MCP 协议向 Agent 输出合规数据。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Starburst × Emisha 战略合作共建 AI-Ready 数据平台</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.emishaglobal.com/news/emisha-and-starburst-announce-strategic-partnership-to-deliver-ai-ready-data-platforms-across-apac">Emisha 官方公告</a><br><b>为什么值得继续看：</b> Starburst 与 Emisha 达成战略合作，将 Emisha 的数据治理与质量能力同 Starburst 联邦查询平台结合，面向 APAC 提供 AI-Ready 数据平台，主打跨数据湖、仓库与业务系统的联邦 SQL 分析。<br><b>需要等待什么信号确认：</b> 合作是否落地为具体客户与联合产品，以及"联邦查询 + 治理"组合在 APAC 市场的实际渗透。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】英矽智能 × 墨卓生物共建 AI-Ready 多组学数据基础设施</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.qq.com/rain/a/20260907A040MB00">人民财讯（腾讯新闻转载）</a><br><b>为什么值得继续看：</b> 英矽智能与墨卓生物签署战略合作，墨卓的单细胞多组学数据将系统性注入英矽智能 Pharma.AI 平台数据仓库，为生成生物学平台提供训练与验证，构建 AI-Ready 多组学数据基础设施。<br><b>需要等待什么信号确认：</b> AI-Ready 数据基础设施在生物医药垂直行业的复制路径，及其对通用数据平台治理与血缘能力的参照意义。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-08 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
