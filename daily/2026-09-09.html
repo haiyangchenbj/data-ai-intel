@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-09</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-09 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据驻留与主权合规从可选项变成云数据库标配</li>
+      <li>现代数据栈核心层的重写进入发布冲刺阶段</li>
+      <li>数据存储与治理能力正在走向自主化</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期没有颠覆性发布，但多条信号同向：云数据库把驻留与主权合规做成标配，开源数据栈重写收尾，存储治理自主化。数据平台的竞争重心正在从性能转向治理与合规，这将成为下一阶段采购与选型的关键变量。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Google Cloud SQL 区域端点正式 GA，补齐数据驻留合规能力</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/sql/docs/mysql/release-notes">Google Cloud Cloud SQL 发布说明</a><br><b>摘要：</b> Google Cloud 宣布 Cloud SQL for MySQL 与 SQL Server 的区域端点（Regional Endpoints）正式 GA，可通过区域专属 URL 访问实例。网络流量与 TLS 终止均限定在实例所在区域，减少对全球前端基础设施的依赖。<br><b>为什么对数据平台重要：</b> 区域端点提供强区域隔离与区域内负载均衡，专为满足 ITAR、Assured Workloads 等数据驻留与主权标准设计。对受监管行业的数据平台而言，"数据不出区"从架构约束变为可配置能力，补齐了托管数据库的驻留合规拼图。</div>
+</div>
+<div class="item">
+    <h3>dbt Core 2.0 发布第二个候选版本，Rust 重写临近 GA</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://github.com/dbt-labs/dbt-core/releases/tag/v2.0.0-rc.2">dbt-labs/dbt-core v2.0.0-rc.2</a><br><b>摘要：</b> dbt Labs 发布 dbt Core 2.0.0-rc.2，这是 Rust 重写版（Fusion 引擎）的第二个候选版本，主要补充 ClickHouse 单元测试支持与 Databricks 视图修复等修复项。2.0 版以 Rust 引擎替换 Python 运行时，官方称大型项目解析速度显著提升。<br><b>为什么对数据平台重要：</b> dbt 是现代数据栈的核心转换层，其运行时从 Python 迁移到 Rust 是一次底层架构重构。候选版本连续发布意味着 2.0 正式版临近，数据团队需评估解析器语法收紧（未定义宏、缺失变量在解析期报错）对存量项目的影响。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Quantum 发布自主数据管理方案 ADM，主攻存储成本与治理</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.businesswire.com/news/home/20260908492194/en/">Quantum 新闻稿</a><br><b>摘要：</b> 存储与数据管理厂商 Quantum 发布 Autonomous Data Management（ADM），将数据智能与自动化策略驱动动作结合，通过提升主存储容量与可用性、精简备份与基础设施支出，降低非结构化数据的存储成本与风险。<br><b>对数据平台的影响：</b> ADM 面向 AI 数据湖与大规模非结构化数据场景，把"看清数据、按策略自动化处置"做成产品能力，映射到数据平台的成本与治理两个维度。对在自建存储上承载 AI 工作负载的企业，提供了一条降低存储 TCO、收紧数据风险的路径。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局局长刘烈宏：数据要素市场化与全国一体化数据市场加速</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/0908/20260908091721448477945_pc.html">国家数据局署名文章</a><br><b>核心观点：</b> 刘烈宏在署名文章中提出"十五五"期间推进数字中国建设的重点：加快全国一体化算力网与数据基础设施建设，健全数据产权登记体系，建设开放共享安全的全国一体化数据市场，深化"数据要素×"行动并建立全国数据资源"一本账"。<br><b>映射到数据平台的判断：</b> 政策方向明确指向数据基础设施与数据要素市场的制度化——数据产权登记、"一本账"、跨主体可信数据空间等，将直接决定企业数据平台的治理架构与合规投入重点，数据要素流通的制度成本有望下降。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内融资与收购事件多为数据中心、电力、电信等基础设施，未映射到数据平台六维，不纳入。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】DuckDB v2.0 Cyanoptera 定档 10 月下旬</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://duckdb.org/2026/09/02/try-duckdb-20-alpha">DuckDB 官方博客</a><br><b>为什么值得继续看：</b> DuckDB v2.0 已特性冻结并发布 alpha，官方预告 10 月下旬 GA，将带来 server mode（远程 SQL、多租户）、VARIANT 半结构化类型、原生触发器与异步 I/O 等架构级变更，把嵌入式分析引擎推向可远程部署形态。<br><b>需要等待什么信号确认：</b> v2.0 正式 GA 的准确日期，以及 server mode 与 VARIANT 在存储格式与解析器重构下的兼容性与迁移路径是否清晰。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-09 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

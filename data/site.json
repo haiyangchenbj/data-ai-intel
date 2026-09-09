@@ -7714,6 +7714,56 @@
       "source": "人民财讯（腾讯新闻转载）",
       "url": "https://news.qq.com/rain/a/20260907A040MB00",
       "conf": ""
+    },
+    {
+      "date": "2026-09-09",
+      "vendor": "Google",
+      "module": "专题",
+      "title": "Google Cloud SQL 区域端点正式 GA，补齐数据驻留合规能力",
+      "summary": "来源： Google Cloud Cloud SQL 发布说明摘要： Google Cloud 宣布 Cloud SQL for MySQL 与 SQL Server 的区域端点（Regional Endpoints）正式 GA，可通过区域专属 URL 访问实例。网络流量与 TLS 终止均限定在实例所在区域，减少对全球前端基础设施的依赖。为什么对数据平台重要： 区域端点提供强区域隔离与区域内负载均衡，专为满足 ITAR、Assured Workloads 等数据驻留与主权标准设计。对受监管行业的数据平台而言，\"数据不出区\"从架构约束变为可配置能力，补齐了托管数据库的驻留合规拼图。",
+      "source": "Google Cloud Cloud SQL 发布说明",
+      "url": "https://cloud.google.com/sql/docs/mysql/release-notes",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-09",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "dbt Core 2.0 发布第二个候选版本，Rust 重写临近 GA",
+      "summary": "来源： dbt-labs/dbt-core v2.0.0-rc.2摘要： dbt Labs 发布 dbt Core 2.0.0-rc.2，这是 Rust 重写版（Fusion 引擎）的第二个候选版本，主要补充 ClickHouse 单元测试支持与 Databricks 视图修复等修复项。2.0 版以 Rust 引擎替换 Python 运行时，官方称大型项目解析速度显著提升。为什么对数据平台重要： dbt 是现代数据栈的核心转换层，其运行时从 Python 迁移到 Rust 是一次底层架构重构。候选版本连续发布意味着 2.0 正式版临近，数据团队需评估解析器语法收紧（未定义宏、缺失变量在解析期报错）对存量项目的影响。",
+      "source": "dbt-labs/dbt-core v2.0.0-rc.2",
+      "url": "https://github.com/dbt-labs/dbt-core/releases/tag/v2.0.0-rc.2",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-09",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "Quantum 发布自主数据管理方案 ADM，主攻存储成本与治理",
+      "summary": "来源： Quantum 新闻稿摘要： 存储与数据管理厂商 Quantum 发布 Autonomous Data Management（ADM），将数据智能与自动化策略驱动动作结合，通过提升主存储容量与可用性、精简备份与基础设施支出，降低非结构化数据的存储成本与风险。对数据平台的影响： ADM 面向 AI 数据湖与大规模非结构化数据场景，把\"看清数据、按策略自动化处置\"做成产品能力，映射到数据平台的成本与治理两个维度。对在自建存储上承载 AI 工作负载的企业，提供了一条降低存储 TCO、收紧数据风险的路径。",
+      "source": "Quantum 新闻稿",
+      "url": "https://www.businesswire.com/news/home/20260908492194/en/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-09",
+      "vendor": "国家数据局",
+      "module": "机构",
+      "title": "国家数据局局长刘烈宏：数据要素市场化与全国一体化数据市场加速",
+      "summary": "来源： 国家数据局署名文章核心观点： 刘烈宏在署名文章中提出\"十五五\"期间推进数字中国建设的重点：加快全国一体化算力网与数据基础设施建设，健全数据产权登记体系，建设开放共享安全的全国一体化数据市场，深化\"数据要素×\"行动并建立全国数据资源\"一本账\"。映射到数据平台的判断： 政策方向明确指向数据基础设施与数据要素市场的制度化——数据产权登记、\"一本账\"、跨主体可信数据空间等，将直接决定企业数据平台的治理架构与合规投入重点，数据要素流通的制度成本有望下降。",
+      "source": "国家数据局署名文章",
+      "url": "https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/0908/20260908091721448477945_pc.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-09",
+      "vendor": "DuckDB",
+      "module": "技术",
+      "title": "【预告】DuckDB v2.0 Cyanoptera 定档 10 月下旬",
+      "summary": "来源： DuckDB 官方博客为什么值得继续看： DuckDB v2.0 已特性冻结并发布 alpha，官方预告 10 月下旬 GA，将带来 server mode（远程 SQL、多租户）、VARIANT 半结构化类型、原生触发器与异步 I/O 等架构级变更，把嵌入式分析引擎推向可远程部署形态。需要等待什么信号确认： v2.0 正式 GA 的准确日期，以及 server mode 与 VARIANT 在存储格式与解析器重构下的兼容性与迁移路径是否清晰。",
+      "source": "DuckDB 官方博客",
+      "url": "https://duckdb.org/2026/09/02/try-duckdb-20-alpha",
+      "conf": ""
     }
   ],
   "archive": [
@@ -7842,7 +7892,8 @@
     "2026-09-03",
     "2026-09-04",
     "2026-09-07",
-    "2026-09-08"
+    "2026-09-08",
+    "2026-09-09"
   ],
   "monthly": [
     {
