@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-10</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-10 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>检索层从外挂服务变成数据平台内置能力</li>
+      <li>AI 数据复利循环正在重塑存储成本结构</li>
+      <li>数据基建融资向物理 AI 数据赛道外溢</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期信号密度偏低但方向清晰：数据平台竞争重心正从性能转向"谁更懂数据"。检索层被收编为平台内置能力，存储经济学因 AI 数据复利循环被重估，数据基建融资外溢到物理 AI 数据赛道。AI 正把数据平台从查询引擎推向数据价值操作系统。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 发布自适应检索模型，检索层从外挂能力变成平台内置件</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/adaptive-instructed-retriever-frontier-quality-search-2x-lower-latency">Databricks 官方博客</a><br><b>摘要：</b> Databricks 发布 Adaptive Instructed-Retriever，一种小型自定义检索模型，在单一检索层内同时支持并行单步检索与顺序多步检索，由模型自适应决定每个请求需要多少步，证据足够时提前停止。官方称其检索质量追平 Claude Sonnet 5、GPT-5.6 Luna 与 DeepSeek-V4-Flash 等前沿模型，端到端延迟降低一半（以上为厂商自测，未经独立验证）。<br><b>为什么对数据平台重要：</b> 检索层是数据智能体的关键瓶颈——既要准又要快。Databricks 把它做成数据平台的内置可训练能力（用自有 AI Runtime 训练），意味着"怎么找数"从外挂 RAG 服务变成平台原生层，并服务 Genie Code、Genie One、Genie Agents 三个数据智能体产品线。数据平台厂商正在把 agentic 检索收编为平台能力，压缩点状检索方案商的空间。</div>
+</div>
+<div class="item">
+    <h3>IDC 白皮书：AI 数据复利循环正在重估存储成本结构</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.westerndigital.com/en-au/company/newsroom/press-releases/2026/2026-09-09-wd-new-research-reveals-the-reshaping-of-ai-infrastructure-economics-as-data-persists-and-compounds">西部数据新闻稿</a><br><b>摘要：</b> IDC 白皮书《Built for Scale: The Enduring Role of HDDs in the AI Era》（WD 赞助，763 名决策者调研）指出 AI 正创造"数据复利循环"：94.7% 的受访企业因 AI 存储更多数据，85.4% 报告数据湖增长，59.4% 认为 AI 生成数据（合成数据、推理输出、模型日志）是数据湖增长的首要驱动；74.3% 因 AI 延长数据保留期，75.9% 将冷数据重新在线以支撑 AI 负载。<br><b>为什么对数据平台重要：</b> 该研究把数据平台的成本维度重新放到台前——98.2% 的决策者把每 TB 的 TCO 列为重要考量，74.6% 的企业数据驻留在温、冷、冷门层。它揭示了一个市场转折：AI 基础设施的叙事正从"算力周期"转向"数据经济学"，数据持续生成、留存并复利增长，存储容量与取回速度成为决定 AI 能走多远的架构变量。注意该白皮书由存储厂商 WD 赞助，结论带厂商视角，需独立验证。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>火山引擎 LAS 1.5.2 发版，多模态数据湖补强视频与空间感知算子</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.volcengine.com/docs/6492/1554424">火山引擎功能发布记录</a><br><b>摘要：</b> 火山引擎 AI 数据湖服务 LAS 发布 1.5.2 版本，新增视频编辑增强版 2.0 算子（直通生成、关键帧编辑、换脸、主体替换、风格迁移），扩展视频精细理解预置模板（音频理解、语音转写、动作时序标注），新增手部 21 关键点与三维姿态估计的空间感知能力，并开放数据集标签管理 OpenAPI 与本地导出。<br><b>对数据平台的影响：</b> LAS 把多模态数据（视频、音频、空间感知）的处理算子持续下沉到数据湖服务层，AI 数据湖正从"存储+查询"走向"面向大模型的算子与数据工厂"。对需要多模态训练数据的团队，算子内置意味着更短的从原始素材到可用数据集的链路，映射到数据平台的工程效率维度。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内唯一机构研究（IDC 白皮书）已按"关键机构报告中的市场转折判断"升入 A 板块，其余无数据平台专项报告，不纳入。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】无问智科完成数亿元 A 轮，加码物理 AI 数据基建</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.163.com/dy/article/L6D28IEL0514R9OJ.html">环球网</a><br><b>核心数据：</b> 数亿元 A 轮融资，洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融等老股东超额追投；系年内第二笔大额融资。<br><b>摘要：</b> 无问智科定位物理 AI 数据基础设施，旗下"无垠"数据基座平台与"无穹"世界模拟器构成"世界模型×数据工厂×世界模拟器"体系，覆盖真实数据采集、自动化生产、世界重建与物理仿真。公司称已沉淀数十万小时真实物理交互数据、月度产能超 2 万小时，SimReady 资产构建时间从 3 天缩至 5 分钟。<br><b>对数据平台的影响：</b> 具身智能的数据瓶颈正催生独立的数据基础设施赛道，资本向"数据基座+世界模拟器"下注。这虽不在传统湖仓/数仓主线内，但标志数据基础设施的概念边界向物理 AI 数据外溢，对关注数据平台长期演进的方向有参照意义。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item"><div class="body">本期窗口内无新增数据平台核心投融资事件</div></div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-10 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

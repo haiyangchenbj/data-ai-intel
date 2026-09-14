@@ -7764,6 +7764,156 @@
       "source": "DuckDB 官方博客",
       "url": "https://duckdb.org/2026/09/02/try-duckdb-20-alpha",
       "conf": ""
+    },
+    {
+      "date": "2026-09-10",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 发布自适应检索模型，检索层从外挂能力变成平台内置件",
+      "summary": "来源： Databricks 官方博客摘要： Databricks 发布 Adaptive Instructed-Retriever，一种小型自定义检索模型，在单一检索层内同时支持并行单步检索与顺序多步检索，由模型自适应决定每个请求需要多少步，证据足够时提前停止。官方称其检索质量追平 Claude Sonnet 5、GPT-5.6 Luna 与 DeepSeek-V4-Flash 等前沿模型，端到端延迟降低一半（以上为厂商自测，未经独立验证）。为什么对数据平台重要： 检索层是数据智能体的关键瓶颈——既要准又要快。Databricks 把它做成数据平台的内置可训练能力（用自有 AI Runtime 训练），意味着\"怎么找数\"从外挂 RAG 服务变成平台原生层，并服务 Genie Code、Genie One、Genie Agents 三个数据智能体产品线。数据平台厂商正在把 agentic 检索收编为平台能力，压缩点状检索方案商的空间。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/adaptive-instructed-retriever-frontier-quality-search-2x-lower-latency",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-10",
+      "vendor": "IDC",
+      "module": "专题",
+      "title": "IDC 白皮书：AI 数据复利循环正在重估存储成本结构",
+      "summary": "来源： 西部数据新闻稿摘要： IDC 白皮书《Built for Scale: The Enduring Role of HDDs in the AI Era》（WD 赞助，763 名决策者调研）指出 AI 正创造\"数据复利循环\"：94.7% 的受访企业因 AI 存储更多数据，85.4% 报告数据湖增长，59.4% 认为 AI 生成数据（合成数据、推理输出、模型日志）是数据湖增长的首要驱动；74.3% 因 AI 延长数据保留期，75.9% 将冷数据重新在线以支撑 AI 负载。为什么对数据平台重要： 该研究把数据平台的成本维度重新放到台前——98.2% 的决策者把每 TB 的 TCO 列为重要考量，74.6% 的企业数据驻留在温、冷、冷门层。它揭示了一个市场转折：AI 基础设施的叙事正从\"算力周期\"转向\"数据经济学\"，数据持续生成、留存并复利增长，存储容量与取回速度成为决定 AI 能走多远的架构变量。注意该白皮书由存储厂商 WD 赞助，结论带厂商视角，需独立验证。",
+      "source": "西部数据新闻稿",
+      "url": "https://www.westerndigital.com/en-au/company/newsroom/press-releases/2026/2026-09-09-wd-new-research-reveals-the-reshaping-of-ai-infrastructure-economics-as-data-persists-and-compounds",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-10",
+      "vendor": "火山引擎",
+      "module": "技术",
+      "title": "火山引擎 LAS 1.5.2 发版，多模态数据湖补强视频与空间感知算子",
+      "summary": "来源： 火山引擎功能发布记录摘要： 火山引擎 AI 数据湖服务 LAS 发布 1.5.2 版本，新增视频编辑增强版 2.0 算子（直通生成、关键帧编辑、换脸、主体替换、风格迁移），扩展视频精细理解预置模板（音频理解、语音转写、动作时序标注），新增手部 21 关键点与三维姿态估计的空间感知能力，并开放数据集标签管理 OpenAPI 与本地导出。对数据平台的影响： LAS 把多模态数据（视频、音频、空间感知）的处理算子持续下沉到数据湖服务层，AI 数据湖正从\"存储+查询\"走向\"面向大模型的算子与数据工厂\"。对需要多模态训练数据的团队，算子内置意味着更短的从原始素材到可用数据集的链路，映射到数据平台的工程效率维度。",
+      "source": "火山引擎功能发布记录",
+      "url": "https://www.volcengine.com/docs/6492/1554424",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-10",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】无问智科完成数亿元 A 轮，加码物理 AI 数据基建",
+      "summary": "来源： 环球网核心数据： 数亿元 A 轮融资，洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融等老股东超额追投；系年内第二笔大额融资。摘要： 无问智科定位物理 AI 数据基础设施，旗下\"无垠\"数据基座平台与\"无穹\"世界模拟器构成\"世界模型×数据工厂×世界模拟器\"体系，覆盖真实数据采集、自动化生产、世界重建与物理仿真。公司称已沉淀数十万小时真实物理交互数据、月度产能超 2 万小时，SimReady 资产构建时间从 3 天缩至 5 分钟。对数据平台的影响： 具身智能的数据瓶颈正催生独立的数据基础设施赛道，资本向\"数据基座+世界模拟器\"下注。这虽不在传统湖仓/数仓主线内，但标志数据基础设施的概念边界向物理 AI 数据外溢，对关注数据平台长期演进的方向有参照意义。",
+      "source": "环球网",
+      "url": "https://www.163.com/dy/article/L6D28IEL0514R9OJ.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-11",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "OpenAI 为 ChatGPT Work 上线 Data agent，对话界面开始收编企业语义层",
+      "summary": "来源： OpenAI 官方公告摘要： OpenAI 于 9 月 10 日推出 ChatGPT Work 的 Data agent，用户在输入框键入 @data 即可以自然语言提问。它连接 Amazon Redshift、Google BigQuery、Snowflake、Databricks、ClickHouse、MongoDB、Datadog 等数据源，并读取 dbt、GitHub、Snowflake Horizon、Databricks Genie Ontology 及 BI 看板作为业务上下文，把提问转成分析与可交互 dashboard，还能在 Tableau、Power BI、Sigma、ThoughtSpot、Omni、Oracle BI 内直接构建与操作。管理员控制数据连接与角色权限，查询继承连接账户已有的表、行、列级权限。为什么对数据平台重要： 这是「对话界面收编数据平台」的标志性动作——通用助手不再只是生成 SQL，而是直接消费企业语义层，把指标定义、权限、血缘当作上下文。对数据平台厂商意味着语义层与治理能力正成为被上层对话入口调用的基础设施，谁掌握可信语义层谁就掌握 AI 时代入口；传统 BI 工具也面临被对话界面替代或收编的压力。",
+      "source": "OpenAI 官方公告",
+      "url": "https://openai.com/index/put-data-to-work/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-11",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Oracle 发布 AI Data Platform，企业本体构建走向自动化",
+      "summary": "来源： Oracle 2027 财年 Q1 财报新闻稿摘要： Oracle 在 9 月 10 日发布的 2027 财年 Q1 财报中宣布新的 Oracle AI Data Platform，可自动生成企业 Ontology（定义业务核心概念、关系与规则的模型）。新闻稿直言 Palantir 通过为每位客户手工构建企业本体开创了私有数据 AI，而 Oracle 把这一过程全自动化，使其廉价、易用、快速，让任何企业都能用前沿 AI 模型在其私有数据上推理、并用 AI agent 自动化业务流程。同份财报披露云基础设施营收三位数增长，全年营收指引上调至至少 900 亿美元。为什么对数据平台重要： 企业本体从 Palantir 的「手工咨询服务」走向「平台自动生成」，是数据平台价值重心上移的信号——竞争从存储与查询，转向「把企业私有数据的语义结构自动整理成 AI 可调用的上下文」。这直接对标 Palantir，也呼应 Snowflake 在本体层、Databricks 在语义层的布局，本体层正在成为 AI 数据平台的下一个争夺点。",
+      "source": "Oracle 2027 财年 Q1 财报新闻稿",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-11",
+      "vendor": "Cloudera",
+      "module": "专题",
+      "title": "Cloudera 与 Mistral 达成主权 AI 战略合作，前沿模型下沉到数据所在地",
+      "summary": "来源： Cloudera 新闻稿摘要： Cloudera 与 Mistral 于 9 月 10 日宣布战略合作，把 Mistral 的前沿模型与工具（推理、对话、编码、文档智能、语音）集成进 Cloudera 混合数据与 AI 平台，覆盖其客户管理的 30 exabytes 数据，支持公有云、本地、边缘及完全 air-gapped 环境部署，并集成 Mistral Forge 让企业基于自有数据定制训练模型，数据与智能的归属权都留在客户手中。为什么对数据平台重要： 这是「主权 AI」落地的代表性动作——把模型与推理下沉到企业数据所在处，而非把数据搬到模型。对数据平台厂商意味着采购逻辑分化：合规敏感行业（金融、制造、电信）更倾向数据不出域的私有部署路径，主权 AI 成为混合数据平台的差异化卖点，也把「数据在哪、模型就在哪」推向架构设计前台。",
+      "source": "Cloudera 新闻稿",
+      "url": "https://www.cloudera.com/about/news-and-blogs/press-releases/2026-09-10-cloudera-and-mistral-partner-to-bring-specialized-sovereign-intelligence-to-enterprise-data.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-11",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Apache Iceberg 通过 read restrictions 与 catalog labels 两项新规范，统一开放湖仓治理",
+      "summary": "来源： Databricks 官方博客摘要： Databricks 博客（9 月 10 日）介绍 Apache Iceberg REST Catalog 社区新通过的两项规范：read restrictions（读限制）与 catalog labels（目录标签）。read restrictions 让受信任引擎（如安全配置的 Trino）代表目录执行行过滤与列掩码；catalog labels 让跨目录联邦时通过 Open API 交换轻量键值元数据（PII 标记、业务域、语义提示等）。两者与既有 Cross-Engine ABAC 共同构成跨引擎、跨目录治理的三种模式。对数据平台的影响： 治理元数据首次像数据一样可跨引擎、跨目录移植，是开放湖仓「治理即数据」的关键一步。对多目录联邦（Unity Catalog、Snowflake、Lake Formation 等）的企业，意味着不必为每个引擎或目录重复实现权限逻辑，治理策略可标准化交换，显著降低异构环境的治理工程成本。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/unifying-governance-across-engines-and-catalogs-open-lakehouse",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-11",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "【降级】Snowflake World Tour 首次落地中国，主推 Agentic Control Plane 与本体层",
+      "summary": "来源： InfoQ 深度复盘为什么值得继续看： 9 月 8 日 Snowflake World Tour 首次落地中国（上海），主题聚焦 Agentic Enterprise。全球产品总裁 Christian Kleinerman 提出「Agentic Control Plane」（智能体控制平面），把模型选择、Agent Identity/Policy、Prompt 保护、预算控制统一收拢；首席架构师贾天下提出「事实只存一份、业务含义单独管理」的本体架构，并披露内部测试：编程智能体直连 SQL 准确率 24.1%，加入治理上下文后升至 86.3%，单次提问成本从 1.76 美元降至 0.59 美元。亚太区高管披露 CoWork 全球企业用户超 5000、CoCo 超 9000。需要等待什么信号确认： 原始事件（9 月 8 日）超出窗口，本条目为 9 月 10 日深度复盘的降级收录。需跟踪 Snowflake 是否把 Agentic Control Plane 与本体能力作为后续产品主线、以及中国市场的落地节奏与客户实证能否兑现「上下文决定 AI 可信」的判断。",
+      "source": "InfoQ 深度复盘",
+      "url": "https://www.toutiao.com/article/7683899328712278580",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-14",
+      "vendor": "星环科技",
+      "module": "专题",
+      "title": "星环科技启动 H 股招股，成首家 18C 章赴港上市的 A 股公司",
+      "summary": "摘要： 9 月 11 日，星环科技（06727.HK）启动港股招股（9 月 11 日至 16 日），计划 9 月 21 日登陆港交所主板，成为首家按港交所《上市规则》第 18C 章赴港上市的 A 股公司。全球发售 1401.08 万股 H 股（占发行完成后总股本约 10.37%），招股价区间 49 至 61 港元，最多募资约 8.55 亿港元，基石投资者为浪潮信息旗下 Electronic Channel 与洛阳科创。募资约 30% 投向「AI×数据」全栈研发升级。为什么对数据平台重要： 星环科技按 2025 年收入计为中国第五大 AI 基础设施软件提供商（份额 2.7%）、首家入选 Gartner 数据仓库魔力象限的中国企业，产品覆盖 TDH/TDC 大数据平台、ArgoDB/KunDB 分布式数据库、TDS 数据开发治理等。其登陆港股形成 A+H 双市场格局，标志着国产数据平台核心厂商进入双通道融资阶段，后续研发与出海投入节奏值得跟踪。",
+      "source": "香港商报",
+      "url": "https://www.hkcd.com.hk/hkcdweb/content/2026/09/11/content_8774361.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-14",
+      "vendor": "其他",
+      "module": "专题",
+      "title": "国家数据产权登记服务系统上线，全国统一登记制度落地",
+      "summary": "摘要： 9 月 11 日，国家数据产权登记服务系统（sjcqdj.nda.gov.cn）上线试运行，全国统一的数据产权登记制度进入落地实施阶段。该系统落实《数据产权登记工作指引（试行）》确立的「一次登记、全国通用」原则，统一登记对象、类型、流程、审查标准、效力与系统（六统一），面向全国提供登记公示与结果查询核验服务。为什么对数据平台重要： 系统将数据产权登记结果全国汇集、互认，直接支撑数据流通交易、数据资产入表、融资担保、作价入股、纠纷解决等场景。北京、上海、深圳三家数交所首批纳入登记机构目录。对数据平台而言，产权确权与合规凭证从「各自为政」转向「全国统一」，治理与数据要素市场化交易的成本结构将随之改变。",
+      "source": "国家数据局",
+      "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/0911/20260911171614017938821_pc.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-14",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks OpenSharing 外部 Iceberg 表与 schema 共享正式 GA",
+      "summary": "摘要： Databricks 宣布「通过 OpenSharing 共享外部 Iceberg 表」与「共享外部 schema 与表」两项能力于 9 月 11 日正式 GA。提供商可通过 Lakehouse Federation 联合来自外部 Iceberg 目录的 Iceberg 表，并分享给使用外部 Iceberg 客户端的接收方；外部 schema/表的共享无需把数据复制进 Databricks（在提供方侧物化数据，产生计算与存储成本）。对数据平台的影响： 这是开放湖仓互操作的一步关键落地：Databricks 联邦的外部数据资产首次可经 OpenSharing 直接分享给平台外部的 Iceberg 客户端，打破「联邦数据只能在平台内消费」的边界。对采用混合湖仓架构的企业，跨平台共享不再强制复制数据，治理与互操作的成本显著下降。",
+      "source": "Databricks 2026 年 9 月发布说明",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-14",
+      "vendor": "Palantir",
+      "module": "投融资",
+      "title": "【投融资】悦点科技完成数千万元 Pre-A，从知识图谱延伸至企业智能体",
+      "summary": "核心数据： 数千万元 Pre-A 轮融资，盈富泰克领投、水木创投跟投；付费客户近 100 家，已盈亏平衡，2023–2025 年订单与收入复合增速超 300%，2026 上半年收入超 2025 全年。摘要： 悦点科技完成数千万元 Pre-A，资金拟用于 AIGO 训练、AI FDE Model 研发与已验证场景复制。公司脱胎于明略集团知识图谱产品线，产品 Knora-AI 以业务本体（Ontology）组织业务对象与关系，再由智能体跨系统完成查询、判断与执行，长期对标 Palantir，面向大型国央企与民营制造企业。对数据平台的影响： 悦点科技把企业知识图谱的「数据组织能力」延伸到「可执行任务的智能体」，触碰的是企业数据平台从「问答」走向「决策执行」的边界。其 AI FDE（现场交付工程师）思路试图用模型降低私有化部署与场景构建对专家/实施团队的依赖，是数据智能交付效率的一个值得观察的方向。",
+      "source": "投中网",
+      "url": "https://news.qq.com/rain/a/20260911A05JC900",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-14",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】海量数据定增申请获上交所审核通过",
+      "summary": "核心数据： 2026 年度向特定对象发行 A 股申请获上交所审核通过，尚需中国证监会同意注册。摘要： 海量数据（603138.SH）9 月 11 日公告，其 2026 年度向特定对象发行 A 股股票的申请获上交所审核通过，后续将提交中国证监会注册。海量数据主营 HTAP 与时序数据库产品，此前已披露本次定增方案。对数据平台的影响： 定增审核通过是再融资进入注册环节的关键节点。对 HTAP/时序数据库这一国产数据库细分赛道，头部厂商能否顺利完成再融资，直接影响其后续研发与市场投入节奏，也是观察国产数据库资本环境温度的一个信号。",
+      "source": "东方财富·公司公告",
+      "url": "https://data.eastmoney.com/notices/detail/603138/AN202609111829271945.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-14",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "【降级】斜跃智能完成数亿元天使+轮，自建具身数据采集平台",
+      "summary": "为什么值得继续看： 斜跃智能 9 月 12 日宣布完成数亿元天使+轮，由线性资本、钧山资本等参与。这家家庭具身基础模型公司已自建 Ego 数据采集设备与数据平台，计划年内跑通采集、清洗、标注到训练的完整数据能力。虽主战场在具身智能而非通用数据平台，但其自建数据采集与处理链路是「数据基础设施向垂直训练场景延伸」的一个样本。需要等待什么信号确认： 其 Ego 数据采集平台是否对外开放或沉淀为独立数据产品，还是仅服务于自有具身模型训练；数据采集规模与清洗标注的自动化程度能否形成可复用的行业能力。",
+      "source": "新京报贝壳财经",
+      "url": "https://news.qq.com/rain/a/20260912A04OOB00",
+      "conf": ""
     }
   ],
   "archive": [
@@ -7893,7 +8043,10 @@
     "2026-09-04",
     "2026-09-07",
     "2026-09-08",
-    "2026-09-09"
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14"
   ],
   "monthly": [
     {

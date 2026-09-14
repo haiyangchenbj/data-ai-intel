@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-14</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-14 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>国产数据平台厂商加速登陆港股，双市场融资通道正在打开</li>
+      <li>数据产权登记从制度走向落地，全国统一确权通道开始运转</li>
+      <li>开放湖仓的跨平台共享进入可用阶段，联邦数据无需复制即可互通</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期窗口三条主线指向同一方向：数据要素市场的制度基座与数据平台的技术基座，都在从概念共识走向可操作落地，国产数据平台厂商则借资本市场补足研发弹药。对平台决策者，开放互操作与确权合规正从可选加分项变为采购与架构的默认前提。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>星环科技启动 H 股招股，成首家 18C 章赴港上市的 A 股公司</h3>
+    <div class="source">来源：<a href="https://www.hkcd.com.hk/hkcdweb/content/2026/09/11/content_8774361.html">香港商报</a></div>
+    <div class="body"><b>摘要：</b> 9 月 11 日，星环科技（06727.HK）启动港股招股（9 月 11 日至 16 日），计划 9 月 21 日登陆港交所主板，成为首家按港交所《上市规则》第 18C 章赴港上市的 A 股公司。全球发售 1401.08 万股 H 股（占发行完成后总股本约 10.37%），招股价区间 49 至 61 港元，最多募资约 8.55 亿港元，基石投资者为浪潮信息旗下 Electronic Channel 与洛阳科创。募资约 30% 投向「AI×数据」全栈研发升级。<br><b>为什么对数据平台重要：</b> 星环科技按 2025 年收入计为中国第五大 AI 基础设施软件提供商（份额 2.7%）、首家入选 Gartner 数据仓库魔力象限的中国企业，产品覆盖 TDH/TDC 大数据平台、ArgoDB/KunDB 分布式数据库、TDS 数据开发治理等。其登陆港股形成 A+H 双市场格局，标志着国产数据平台核心厂商进入双通道融资阶段，后续研发与出海投入节奏值得跟踪。</div>
+</div>
+<div class="item">
+    <h3>国家数据产权登记服务系统上线，全国统一登记制度落地</h3>
+    <div class="source">来源：<a href="https://www.nda.gov.cn/sjj/swdt/xwfb/0911/20260911171614017938821_pc.html">国家数据局</a></div>
+    <div class="body"><b>摘要：</b> 9 月 11 日，国家数据产权登记服务系统（sjcqdj.nda.gov.cn）上线试运行，全国统一的数据产权登记制度进入落地实施阶段。该系统落实《数据产权登记工作指引（试行）》确立的「一次登记、全国通用」原则，统一登记对象、类型、流程、审查标准、效力与系统（六统一），面向全国提供登记公示与结果查询核验服务。<br><b>为什么对数据平台重要：</b> 系统将数据产权登记结果全国汇集、互认，直接支撑数据流通交易、数据资产入表、融资担保、作价入股、纠纷解决等场景。北京、上海、深圳三家数交所首批纳入登记机构目录。对数据平台而言，产权确权与合规凭证从「各自为政」转向「全国统一」，治理与数据要素市场化交易的成本结构将随之改变。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks OpenSharing 外部 Iceberg 表与 schema 共享正式 GA</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september">Databricks 2026 年 9 月发布说明</a></div>
+    <div class="body"><b>摘要：</b> Databricks 宣布「通过 OpenSharing 共享外部 Iceberg 表」与「共享外部 schema 与表」两项能力于 9 月 11 日正式 GA。提供商可通过 Lakehouse Federation 联合来自外部 Iceberg 目录的 Iceberg 表，并分享给使用外部 Iceberg 客户端的接收方；外部 schema/表的共享无需把数据复制进 Databricks（在提供方侧物化数据，产生计算与存储成本）。<br><b>对数据平台的影响：</b> 这是开放湖仓互操作的一步关键落地：Databricks 联邦的外部数据资产首次可经 OpenSharing 直接分享给平台外部的 Iceberg 客户端，打破「联邦数据只能在平台内消费」的边界。对采用混合湖仓架构的企业，跨平台共享不再强制复制数据，治理与互操作的成本显著下降。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】悦点科技完成数千万元 Pre-A，从知识图谱延伸至企业智能体</h3>
+    <div class="source">来源：<a href="https://news.qq.com/rain/a/20260911A05JC900">投中网</a></div>
+    <div class="body"><b>核心数据：</b> 数千万元 Pre-A 轮融资，盈富泰克领投、水木创投跟投；付费客户近 100 家，已盈亏平衡，2023–2025 年订单与收入复合增速超 300%，2026 上半年收入超 2025 全年。<br><b>摘要：</b> 悦点科技完成数千万元 Pre-A，资金拟用于 AIGO 训练、AI FDE Model 研发与已验证场景复制。公司脱胎于明略集团知识图谱产品线，产品 Knora-AI 以业务本体（Ontology）组织业务对象与关系，再由智能体跨系统完成查询、判断与执行，长期对标 Palantir，面向大型国央企与民营制造企业。<br><b>对数据平台的影响：</b> 悦点科技把企业知识图谱的「数据组织能力」延伸到「可执行任务的智能体」，触碰的是企业数据平台从「问答」走向「决策执行」的边界。其 AI FDE（现场交付工程师）思路试图用模型降低私有化部署与场景构建对专家/实施团队的依赖，是数据智能交付效率的一个值得观察的方向。</div>
+</div>
+<div class="item">
+    <h3>【投融资】海量数据定增申请获上交所审核通过</h3>
+    <div class="source">来源：<a href="https://data.eastmoney.com/notices/detail/603138/AN202609111829271945.html">东方财富·公司公告</a></div>
+    <div class="body"><b>核心数据：</b> 2026 年度向特定对象发行 A 股申请获上交所审核通过，尚需中国证监会同意注册。<br><b>摘要：</b> 海量数据（603138.SH）9 月 11 日公告，其 2026 年度向特定对象发行 A 股股票的申请获上交所审核通过，后续将提交中国证监会注册。海量数据主营 HTAP 与时序数据库产品，此前已披露本次定增方案。<br><b>对数据平台的影响：</b> 定增审核通过是再融资进入注册环节的关键节点。对 HTAP/时序数据库这一国产数据库细分赛道，头部厂商能否顺利完成再融资，直接影响其后续研发与市场投入节奏，也是观察国产数据库资本环境温度的一个信号。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】斜跃智能完成数亿元天使+轮，自建具身数据采集平台</h3>
+    <div class="source">来源：<a href="https://news.qq.com/rain/a/20260912A04OOB00">新京报贝壳财经</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 斜跃智能 9 月 12 日宣布完成数亿元天使+轮，由线性资本、钧山资本等参与。这家家庭具身基础模型公司已自建 Ego 数据采集设备与数据平台，计划年内跑通采集、清洗、标注到训练的完整数据能力。虽主战场在具身智能而非通用数据平台，但其自建数据采集与处理链路是「数据基础设施向垂直训练场景延伸」的一个样本。<br><b>需要等待什么信号确认：</b> 其 Ego 数据采集平台是否对外开放或沉淀为独立数据产品，还是仅服务于自有具身模型训练；数据采集规模与清洗标注的自动化程度能否形成可复用的行业能力。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-14 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-11</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-11 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>对话助手开始直接接管企业语义层与报表能力</li>
+      <li>企业本体层成为 AI 数据平台的下一竞争焦点</li>
+      <li>主权 AI 把前沿模型下沉到企业数据所在地</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期主线是语义与上下文：对话助手开始调用企业语义层，企业本体构建走向自动化，主权 AI 让模型贴近数据。数据平台竞争重心从「数据放在哪」转向「数据意味着什么」，语义层与本体层成为 AI 时代价值高地，也在重塑 BI 与治理边界。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>OpenAI 为 ChatGPT Work 上线 Data agent，对话界面开始收编企业语义层</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://openai.com/index/put-data-to-work/">OpenAI 官方公告</a><br><b>摘要：</b> OpenAI 于 9 月 10 日推出 ChatGPT Work 的 Data agent，用户在输入框键入 @data 即可以自然语言提问。它连接 Amazon Redshift、Google BigQuery、Snowflake、Databricks、ClickHouse、MongoDB、Datadog 等数据源，并读取 dbt、GitHub、Snowflake Horizon、Databricks Genie Ontology 及 BI 看板作为业务上下文，把提问转成分析与可交互 dashboard，还能在 Tableau、Power BI、Sigma、ThoughtSpot、Omni、Oracle BI 内直接构建与操作。管理员控制数据连接与角色权限，查询继承连接账户已有的表、行、列级权限。<br><b>为什么对数据平台重要：</b> 这是「对话界面收编数据平台」的标志性动作——通用助手不再只是生成 SQL，而是直接消费企业语义层，把指标定义、权限、血缘当作上下文。对数据平台厂商意味着语义层与治理能力正成为被上层对话入口调用的基础设施，谁掌握可信语义层谁就掌握 AI 时代入口；传统 BI 工具也面临被对话界面替代或收编的压力。</div>
+</div>
+<div class="item">
+    <h3>Oracle 发布 AI Data Platform，企业本体构建走向自动化</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm">Oracle 2027 财年 Q1 财报新闻稿</a><br><b>摘要：</b> Oracle 在 9 月 10 日发布的 2027 财年 Q1 财报中宣布新的 Oracle AI Data Platform，可自动生成企业 Ontology（定义业务核心概念、关系与规则的模型）。新闻稿直言 Palantir 通过为每位客户手工构建企业本体开创了私有数据 AI，而 Oracle 把这一过程全自动化，使其廉价、易用、快速，让任何企业都能用前沿 AI 模型在其私有数据上推理、并用 AI agent 自动化业务流程。同份财报披露云基础设施营收三位数增长，全年营收指引上调至至少 900 亿美元。<br><b>为什么对数据平台重要：</b> 企业本体从 Palantir 的「手工咨询服务」走向「平台自动生成」，是数据平台价值重心上移的信号——竞争从存储与查询，转向「把企业私有数据的语义结构自动整理成 AI 可调用的上下文」。这直接对标 Palantir，也呼应 Snowflake 在本体层、Databricks 在语义层的布局，本体层正在成为 AI 数据平台的下一个争夺点。</div>
+</div>
+<div class="item">
+    <h3>Cloudera 与 Mistral 达成主权 AI 战略合作，前沿模型下沉到数据所在地</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.cloudera.com/about/news-and-blogs/press-releases/2026-09-10-cloudera-and-mistral-partner-to-bring-specialized-sovereign-intelligence-to-enterprise-data.html">Cloudera 新闻稿</a><br><b>摘要：</b> Cloudera 与 Mistral 于 9 月 10 日宣布战略合作，把 Mistral 的前沿模型与工具（推理、对话、编码、文档智能、语音）集成进 Cloudera 混合数据与 AI 平台，覆盖其客户管理的 30 exabytes 数据，支持公有云、本地、边缘及完全 air-gapped 环境部署，并集成 Mistral Forge 让企业基于自有数据定制训练模型，数据与智能的归属权都留在客户手中。<br><b>为什么对数据平台重要：</b> 这是「主权 AI」落地的代表性动作——把模型与推理下沉到企业数据所在处，而非把数据搬到模型。对数据平台厂商意味着采购逻辑分化：合规敏感行业（金融、制造、电信）更倾向数据不出域的私有部署路径，主权 AI 成为混合数据平台的差异化卖点，也把「数据在哪、模型就在哪」推向架构设计前台。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Apache Iceberg 通过 read restrictions 与 catalog labels 两项新规范，统一开放湖仓治理</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/unifying-governance-across-engines-and-catalogs-open-lakehouse">Databricks 官方博客</a><br><b>摘要：</b> Databricks 博客（9 月 10 日）介绍 Apache Iceberg REST Catalog 社区新通过的两项规范：read restrictions（读限制）与 catalog labels（目录标签）。read restrictions 让受信任引擎（如安全配置的 Trino）代表目录执行行过滤与列掩码；catalog labels 让跨目录联邦时通过 Open API 交换轻量键值元数据（PII 标记、业务域、语义提示等）。两者与既有 Cross-Engine ABAC 共同构成跨引擎、跨目录治理的三种模式。<br><b>对数据平台的影响：</b> 治理元数据首次像数据一样可跨引擎、跨目录移植，是开放湖仓「治理即数据」的关键一步。对多目录联邦（Unity Catalog、Snowflake、Lake Formation 等）的企业，意味着不必为每个引擎或目录重复实现权限逻辑，治理策略可标准化交换，显著降低异构环境的治理工程成本。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内唯一具观点价值的内容来自 Snowflake World Tour 中国首秀（9 月 8 日举办），原始事件超出时效窗口，已按规则降级收录至 E 板块，不重复纳入。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。窗口内 Oracle Q1 FY2027 财报的核心增量（AI Data Platform 自动生成企业 Ontology）已按其数据平台产品属性升入 A 板块，云基础设施营收增长属泛云财务数据、与数据平台映射不足，不单独纳入。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Snowflake World Tour 首次落地中国，主推 Agentic Control Plane 与本体层</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.toutiao.com/article/7683899328712278580">InfoQ 深度复盘</a><br><b>为什么值得继续看：</b> 9 月 8 日 Snowflake World Tour 首次落地中国（上海），主题聚焦 Agentic Enterprise。全球产品总裁 Christian Kleinerman 提出「Agentic Control Plane」（智能体控制平面），把模型选择、Agent Identity/Policy、Prompt 保护、预算控制统一收拢；首席架构师贾天下提出「事实只存一份、业务含义单独管理」的本体架构，并披露内部测试：编程智能体直连 SQL 准确率 24.1%，加入治理上下文后升至 86.3%，单次提问成本从 1.76 美元降至 0.59 美元。亚太区高管披露 CoWork 全球企业用户超 5000、CoCo 超 9000。<br><b>需要等待什么信号确认：</b> 原始事件（9 月 8 日）超出窗口，本条目为 9 月 10 日深度复盘的降级收录。需跟踪 Snowflake 是否把 Agentic Control Plane 与本体能力作为后续产品主线、以及中国市场的落地节奏与客户实证能否兑现「上下文决定 AI 可信」的判断。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-11 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
