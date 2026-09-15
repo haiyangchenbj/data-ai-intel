@@ -7914,6 +7914,86 @@
       "source": "新京报贝壳财经",
       "url": "https://news.qq.com/rain/a/20260912A04OOB00",
       "conf": ""
+    },
+    {
+      "date": "2026-09-15",
+      "vendor": "dbt",
+      "module": "专题",
+      "title": "dbt Core 2.0 正式 GA：Rust 重写完成，分析工程工具链进入代际切换",
+      "summary": "来源： dbt-core v2.0.0 Release摘要： dbt Core 2.0.0 正式 GA，标志 Rust 重写从候选版转入稳定版，带来全新执行引擎与扩展的平台集成能力。为什么对数据平台重要： dbt 是分析工程的事实标准工具，其底层引擎重写改变性能上限与扩展方式，直接关系到大量依赖 dbt 建模的数据团队的升级节奏与迁移评估。",
+      "source": "dbt-core v2.0.0 Release",
+      "url": "https://github.com/dbt-labs/dbt-core/releases/tag/v2.0.0",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-15",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 为 Spark 有状态流查询推出无损分区重配（Public Preview）",
+      "summary": "来源： Announcing On-Demand State Repartitioning摘要： Spark Structured Streaming 有状态流查询新增 On-Demand State Repartitioning（Public Preview），可在不丢失 checkpoint 状态的前提下调整分区数，适用于 Databricks Runtime 18 LTS 及以上、RocksDB 状态存储。Coveo 案例显示 S3 API 调用成本下降约 40%。为什么对数据平台重要： 有状态流查询的分区数长期是\"启动时一次性决定、改动需重建状态\"的架构短板，无损分区重配让流作业可随负载弹性伸缩而不中断，降低长期运行流作业的成本与运维压力。",
+      "source": "Announcing On-Demand State Repartitioning",
+      "url": "https://www.databricks.com/blog/announcing-demand-state-repartitioning-apache-sparktm-structured-streaming-databricks",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-15",
+      "vendor": "ClickHouse",
+      "module": "技术",
+      "title": "腾讯云 TCHouse-C 上线存算分离弹性版（公测）",
+      "summary": "来源： 腾讯云 TCHouse-C 产品动态摘要： TCHouse-C 上线全新弹性版（公测），采用存储计算分离架构，计算节点无状态、数据持久化到共享托管存储，支持以计算资源组为维度独立弹性伸缩，并默认开启冷热分层。对数据平台的影响： ClickHouse 托管服务走向存算分离，面向潮汐负载与海量数据场景提供更低的存储成本与更快的弹性扩缩，对齐云原生湖仓的架构演进方向。",
+      "source": "腾讯云 TCHouse-C 产品动态",
+      "url": "https://cloud.tencent.com/document/api/664/51826",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-15",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "Snowflake AI_SUMMARIZE 支持多模态主题摘要（Public Preview）",
+      "summary": "来源： Snowflake Release Notes摘要： Snowflake Cortex AI_SUMMARIZE 现支持多模态内容（Public Preview），可用单一 SQL 函数对文本、图片、图表、报告、合同等内容自动提取主题、事实与关系，无需自定义 prompt、模型选型或文档处理管线。对数据平台的影响： 多模态内容摘要下沉为 SQL 原生能力，降低非结构化数据处理的工程门槛，强化「数据与 AI 在同一平台内」的产品主张，影响企业摘要类分析管线的技术选型。",
+      "source": "Snowflake Release Notes",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-14-ai-summarize-multimodal-preview",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-15",
+      "vendor": "SelectDB",
+      "module": "技术",
+      "title": "Apache Doris 披露授权绕过漏洞（CVE-2026-68570）",
+      "summary": "来源： NVD CVE-2026-68570摘要： Apache Doris 披露 Incorrect Authorization 漏洞（CVE-2026-68570，CWE-863），已认证用户可绕过权限检查读取未授权数据。影响 2.0.0–2.1.*、3.0.0–3.0.*、4.0.0 低于 4.0.8、4.1.0 低于 4.1.4，建议升级至 4.0.8 或 4.1.4。对数据平台的影响： Doris 是主流开源 OLAP 分析引擎，授权绕过直接影响数据安全边界，使用方需尽快升级并核查权限基线，是数据平台治理维度的一次高优先级处置。",
+      "source": "NVD CVE-2026-68570",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68570",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-15",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】Synapse Analytics 完成 1300 万美元 A 轮，加码金融机构决策基础设施",
+      "summary": "来源： Synapse Analytics Blog核心数据： 1300 万美元 A 轮，累计融资 1700 万美元；Partech 领投，Algebra Ventures、Silicon Badia 参投；估值未披露。摘要： 阿布扎比公司 Synapse Analytics 融资 1300 万美元，构建面向受监管金融机构的 agentic decisioning 基础设施，模型可部署在客户自有边界内（on-premise、私有云、sovereign cloud、air-gapped），让信用与风险团队直接构建、仿真、版本化并部署风险策略。对数据平台的影响： 映射数据主权与治理维度——受监管机构要求 AI 决策留在自有边界内，催生「决策基础设施」细分赛道，印证数据治理与主权正在成为 AI 落地的基础约束。",
+      "source": "Synapse Analytics Blog",
+      "url": "https://synapse-analytics.io/blog/synapse-analytics-raised-13m-to-drive-ai-powered-decisioning-for-financial-institutions",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-15",
+      "vendor": "IDC",
+      "module": "机构",
+      "title": "【降级】IDC：中国 AI 数据基础设施市场 2030 年达 738 亿美元",
+      "summary": "来源： 解放日报·上观新闻为什么值得继续看： IDC 在 9/10 外滩大会发布研究，预测 2025–2030 年中国 AI 数据基础设施市场复合增速 37.7%，2030 年达 738 亿美元（2035 年 1548 亿美元）；其中 AI 数据智能为增速最快细分（48.2%）。原始发布超出本期时效窗口，故降级收录。需要等待什么信号确认： 关注 IDC 官方是否刊发完整报告，以及国产数据库厂商据此调整 AI 数据底座产品叙事的后续动作。",
+      "source": "解放日报·上观新闻",
+      "url": "https://www.jfdaily.com/staticsg/res/html/web/newsDetail.html?id=1174592&sid=11",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-15",
+      "vendor": "DuckDB",
+      "module": "技术",
+      "title": "【跟踪】DuckDB 2.0 alpha 测试显示 S3 读取性能提升 2–3 倍",
+      "summary": "来源： MotherDuck Blog为什么值得继续看： MotherDuck 披露 DuckDB 2.0 alpha 早期测试，通过异步 I/O 将网络下载与 CPU 解码解耦，在单机笔记本上对 S3 大型 Parquet/CSV 的读取性能提升 2–3 倍，另有递归 CTE 与 VARIANT 类型增强。alpha 明确非生产可用。需要等待什么信号确认： 关注 10 月 21 日 v2.0.0（Cyanoptera）正式 GA，以及异步 I/O 在生产环境的实测验证与扩展生态适配。",
+      "source": "MotherDuck Blog",
+      "url": "https://motherduck.com/blog/why-duckdb-20-is-faster",
+      "conf": ""
     }
   ],
   "archive": [
@@ -8046,7 +8126,8 @@
     "2026-09-09",
     "2026-09-10",
     "2026-09-11",
-    "2026-09-14"
+    "2026-09-14",
+    "2026-09-15"
   ],
   "monthly": [
     {
