@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-16</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-16 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>归因分析能力下沉为数据库内置原语</li>
+      <li>批处理引擎补齐暂停恢复与推理算力</li>
+      <li>面向智能体的专用数据库获资本加码</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天的数据平台动向聚焦一条主线：分析引擎与数据库把归因、推理等能力收编为智能体可直接调用的原生原语，面向智能体的专用数据库同时获得资本加码。对买方而言，多数能力刚发布或未经验证，宜纳入评估清单而非立即跟进。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Google BigQuery 推出增强分析函数，把归因分析收编为 Agent 可调用的 SQL 原语</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs">Agent-ready analytics: Unlocking insights with BigQuery augmented analytics</a><br><b>摘要：</b> BigQuery 新增 AI.KEY_DRIVERS、AI.CAUSAL_EFFECT、ML.CORRELATION、ML.DETECT_CHANGE_POINTS、ML.TREND、ML.SEASONALITY 六个增强分析表值函数（TVF），用 AI、机器学习与统计方法定位指标变化根因、量化因果影响、识别趋势与季节性；输出结构化 SQL，可封装为 Agent 的 skill 并链式调用，分析在数据所在处就地执行。<br><b>为什么对数据平台重要：</b> 把「为什么指标变了」这类归因分析从外部 BI 与数据科学工具收编为数据平台内置、Agent 可直接调用的 SQL 原语，是「Agent-Ready 数据平台」主线的实质性落地，降低了 Agent 做自动化调查的工程门槛。</div>
+</div>
+<div class="item">
+    <h3>Google Dataflow 批处理暂停/恢复正式 GA，并接入 RTX PRO 6000 Blackwell GPU</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/data-analytics/new-dataflow-features-to-enable-large-scale-ai-workloads">Announcing Pause/Resume and NVIDIA RTX PRO 6000 Blackwell GPU support in Dataflow</a><br><b>摘要：</b> Dataflow 批处理作业暂停/恢复正式 GA，长跑作业失败后可从中断点续跑而非全量重跑，也可主动暂停以应对外部条件变化；同时支持 G4 VM 上的 NVIDIA RTX PRO 6000 Blackwell GPU（96GB vGPU、1.6TB/s 带宽），可在作业内直接跑 70B+ 参数模型推理，并复用 RunInference、GPU 弹性伸缩等原生能力。<br><b>为什么对数据平台重要：</b> 暂停/恢复补齐批处理引擎的容错与成本短板，GPU 接入把大模型推理下沉进数据处理流水线，是计算引擎在「工程效率 + 推理算力」两个维度上的同步强化。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】CADDi 完成 1.14 亿美元 D 轮，制造业 AI 数据平台估值达 12 亿美元</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://fortune.com/2026/09/15/caddi-manufacturing-startup-valuation-funding-round-series-d-exclusive/">Exclusive: Manufacturing AI startup CADDi valued at $1.2 billion following $114 million Series D</a><br><b>核心数据：</b> 1.14 亿美元 D 轮，估值 12 亿美元（较 2025 年 3 月的 4.7 亿美元翻倍多），累计融资 2.34 亿美元；Moore Strategic Ventures、Coreline Ventures、丰田 Woven Capital、Recruit HR Tech Fund 等 8 家参投。<br><b>摘要：</b> CADDi 从 CAD 图纸检索（CADDi Drawer）扩展为「制造业 AI 数据平台」，整合 CAD 文件、ERP、HR 等多系统数据供人与 AI Agent 使用；新增 CADDi Agent 与 6 个工作流产品，用自研模型解析图纸、通用大模型处理文档，捕获资深工程师的隐性知识。<br><b>对数据平台的影响：</b> 映射「数据智能 + 工程效率」维度——把制造场景多源异构数据统一结构化、供 Agent 消费，是垂直行业「AI 数据平台」的典型样本，也印证工业 Agent 数据层的机会。</div>
+</div>
+<div class="item">
+    <h3>【投融资】Keewano 完成 1200 万美元种子轮，推出面向 AI Agent 的事件序列数据库</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://siliconangle.com/2026/09/15/startup-keewano-launches-agent-focused-database-and-pulls-in-12m-in-funding/">Startup Keewano launches agent-focused database and pulls in $12M in funding</a><br><b>核心数据：</b> 1200 万美元 Seed，Hetz Ventures 领投，a16z speedrun、Remagine Ventures、DIG Ventures 参投；估值未披露。<br><b>摘要：</b> KeewanoDB 以「实体」为主键按序存储完整事件序列，Agent 可直接在库内通过 MCP 运行分析脚本，无需 ETL 或表扁平化；公司称 2.5 亿事件半秒内查询，客户从 BigQuery/Snowflake 摄取数据声称 token 节省约 84%（厂商自述，未独立验证）。<br><b>对数据平台的影响：</b> 映射「Agent-Ready 数据平台」维度——「数据库为 Agent 重新设计」的新兴方向，与云厂商多模态数据底座叙事同向，但性能数据未独立审计，需观察落地。</div>
+</div>
+<div class="item">
+    <h3>【投融资】KKR 与 Neuberger 收购医疗数据协作平台 Datavant 少数股权</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.businesswire.com/news/home/20260914276822/en/">Datavant Announces Significant Minority Investment from Neuberger and KKR</a><br><b>核心数据：</b> 少数股权，金额未披露；KKR（Strategic Investments Group）与 Neuberger（Capital Solutions + Private Markets）投资，现有控股方 New Mountain Capital 保留控制权，预计 2026 Q4 交割。<br><b>摘要：</b> Datavant 是美国最大健康数据生态之一，覆盖 8 万+ 医疗服务方、连接前 100 大医疗系统中 75 家，让患者级数据在医疗机构、支付方、生命科学公司间安全交换与组织。<br><b>对数据平台的影响：</b> 映射「数据协作 + 治理」维度——医疗数据协作平台获大型机构加码，反映隐私合规约束下「数据可协作、不可出域」的基础设施价值。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Redis 8.10 发布：紧凑哈希内存占用最高降 50%</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://redis.io/blog/announcing-redis-810-compact-hash-jsonpath-extensions-performance-improvements-and-more/">Announcing Redis 8.10: Compact Hash, JSONPath extensions, performance improvements, & more</a><br><b>为什么值得继续看：</b> 紧凑哈希（hash templates）让同构哈希共享字段名，内存最高降 50%，配套 HIMPORT 批量写入吞吐提升至 2 倍；另有增量备份恢复、JSONPath 扩展。原始发布为 9/14，超出本期窗口，故跟踪收录。<br><b>需要等待什么信号确认：</b> 关注紧凑哈希对存量 HSET 数据的转换路径（需 HIMPORT 或重启 RDB 重载）对生产升级的实际影响，以及 Lettuce 等客户端生态跟进。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-16 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

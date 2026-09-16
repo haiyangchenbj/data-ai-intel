@@ -7994,6 +7994,66 @@
       "source": "MotherDuck Blog",
       "url": "https://motherduck.com/blog/why-duckdb-20-is-faster",
       "conf": ""
+    },
+    {
+      "date": "2026-09-16",
+      "vendor": "Google",
+      "module": "专题",
+      "title": "Google BigQuery 推出增强分析函数，把归因分析收编为 Agent 可调用的 SQL 原语",
+      "summary": "来源： Agent-ready analytics: Unlocking insights with BigQuery augmented analytics摘要： BigQuery 新增 AI.KEY_DRIVERS、AI.CAUSAL_EFFECT、ML.CORRELATION、ML.DETECT_CHANGE_POINTS、ML.TREND、ML.SEASONALITY 六个增强分析表值函数（TVF），用 AI、机器学习与统计方法定位指标变化根因、量化因果影响、识别趋势与季节性；输出结构化 SQL，可封装为 Agent 的 skill 并链式调用，分析在数据所在处就地执行。为什么对数据平台重要： 把「为什么指标变了」这类归因分析从外部 BI 与数据科学工具收编为数据平台内置、Agent 可直接调用的 SQL 原语，是「Agent-Ready 数据平台」主线的实质性落地，降低了 Agent 做自动化调查的工程门槛。",
+      "source": "Agent-ready analytics: Unlocking insights with BigQuery augmented analytics",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-16",
+      "vendor": "Google",
+      "module": "专题",
+      "title": "Google Dataflow 批处理暂停/恢复正式 GA，并接入 RTX PRO 6000 Blackwell GPU",
+      "summary": "来源： Announcing Pause/Resume and NVIDIA RTX PRO 6000 Blackwell GPU support in Dataflow摘要： Dataflow 批处理作业暂停/恢复正式 GA，长跑作业失败后可从中断点续跑而非全量重跑，也可主动暂停以应对外部条件变化；同时支持 G4 VM 上的 NVIDIA RTX PRO 6000 Blackwell GPU（96GB vGPU、1.6TB/s 带宽），可在作业内直接跑 70B+ 参数模型推理，并复用 RunInference、GPU 弹性伸缩等原生能力。为什么对数据平台重要： 暂停/恢复补齐批处理引擎的容错与成本短板，GPU 接入把大模型推理下沉进数据处理流水线，是计算引擎在「工程效率 + 推理算力」两个维度上的同步强化。",
+      "source": "Announcing Pause/Resume and NVIDIA RTX PRO 6000 Blackwell GPU support in Dataflow",
+      "url": "https://cloud.google.com/blog/products/data-analytics/new-dataflow-features-to-enable-large-scale-ai-workloads",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-16",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】CADDi 完成 1.14 亿美元 D 轮，制造业 AI 数据平台估值达 12 亿美元",
+      "summary": "来源： Exclusive: Manufacturing AI startup CADDi valued at $1.2 billion following $114 million Series D核心数据： 1.14 亿美元 D 轮，估值 12 亿美元（较 2025 年 3 月的 4.7 亿美元翻倍多），累计融资 2.34 亿美元；Moore Strategic Ventures、Coreline Ventures、丰田 Woven Capital、Recruit HR Tech Fund 等 8 家参投。摘要： CADDi 从 CAD 图纸检索（CADDi Drawer）扩展为「制造业 AI 数据平台」，整合 CAD 文件、ERP、HR 等多系统数据供人与 AI Agent 使用；新增 CADDi Agent 与 6 个工作流产品，用自研模型解析图纸、通用大模型处理文档，捕获资深工程师的隐性知识。对数据平台的影响： 映射「数据智能 + 工程效率」维度——把制造场景多源异构数据统一结构化、供 Agent 消费，是垂直行业「AI 数据平台」的典型样本，也印证工业 Agent 数据层的机会。",
+      "source": "Exclusive: Manufacturing AI startup CADDi valued at $1.2 billion following $114 million Series D",
+      "url": "https://fortune.com/2026/09/15/caddi-manufacturing-startup-valuation-funding-round-series-d-exclusive/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-16",
+      "vendor": "Snowflake",
+      "module": "投融资",
+      "title": "【投融资】Keewano 完成 1200 万美元种子轮，推出面向 AI Agent 的事件序列数据库",
+      "summary": "来源： Startup Keewano launches agent-focused database and pulls in $12M in funding核心数据： 1200 万美元 Seed，Hetz Ventures 领投，a16z speedrun、Remagine Ventures、DIG Ventures 参投；估值未披露。摘要： KeewanoDB 以「实体」为主键按序存储完整事件序列，Agent 可直接在库内通过 MCP 运行分析脚本，无需 ETL 或表扁平化；公司称 2.5 亿事件半秒内查询，客户从 BigQuery/Snowflake 摄取数据声称 token 节省约 84%（厂商自述，未独立验证）。对数据平台的影响： 映射「Agent-Ready 数据平台」维度——「数据库为 Agent 重新设计」的新兴方向，与云厂商多模态数据底座叙事同向，但性能数据未独立审计，需观察落地。",
+      "source": "Startup Keewano launches agent-focused database and pulls in $12M in funding",
+      "url": "https://siliconangle.com/2026/09/15/startup-keewano-launches-agent-focused-database-and-pulls-in-12m-in-funding/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-16",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】KKR 与 Neuberger 收购医疗数据协作平台 Datavant 少数股权",
+      "summary": "来源： Datavant Announces Significant Minority Investment from Neuberger and KKR核心数据： 少数股权，金额未披露；KKR（Strategic Investments Group）与 Neuberger（Capital Solutions + Private Markets）投资，现有控股方 New Mountain Capital 保留控制权，预计 2026 Q4 交割。摘要： Datavant 是美国最大健康数据生态之一，覆盖 8 万+ 医疗服务方、连接前 100 大医疗系统中 75 家，让患者级数据在医疗机构、支付方、生命科学公司间安全交换与组织。对数据平台的影响： 映射「数据协作 + 治理」维度——医疗数据协作平台获大型机构加码，反映隐私合规约束下「数据可协作、不可出域」的基础设施价值。",
+      "source": "Datavant Announces Significant Minority Investment from Neuberger and KKR",
+      "url": "https://www.businesswire.com/news/home/20260914276822/en/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-16",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "【跟踪】Redis 8.10 发布：紧凑哈希内存占用最高降 50%",
+      "summary": "来源： Announcing Redis 8.10: Compact Hash, JSONPath extensions, performance improvements, & more为什么值得继续看： 紧凑哈希（hash templates）让同构哈希共享字段名，内存最高降 50%，配套 HIMPORT 批量写入吞吐提升至 2 倍；另有增量备份恢复、JSONPath 扩展。原始发布为 9/14，超出本期窗口，故跟踪收录。需要等待什么信号确认： 关注紧凑哈希对存量 HSET 数据的转换路径（需 HIMPORT 或重启 RDB 重载）对生产升级的实际影响，以及 Lettuce 等客户端生态跟进。",
+      "source": "Announcing Redis 8.10: Compact Hash, JSONPath extensions, performance improvements, & more",
+      "url": "https://redis.io/blog/announcing-redis-810-compact-hash-jsonpath-extensions-performance-improvements-and-more/",
+      "conf": ""
     }
   ],
   "archive": [
@@ -8127,7 +8187,8 @@
     "2026-09-10",
     "2026-09-11",
     "2026-09-14",
-    "2026-09-15"
+    "2026-09-15",
+    "2026-09-16"
   ],
   "monthly": [
     {
