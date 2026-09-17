@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-17</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-17 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据工程工具链开始围绕智能体所需的受治理上下文重新改造</li>
+      <li>数据平台的区域部署从成本与合规考量转向地缘风险定价</li>
+      <li>机构测算显示支出重心正从算力硬件移向数据层与工程能力</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台这一轮改造的落点，正从单引擎性能竞争转向智能体可用性：谁能把上下文、权限与成本控制收进同一底座，谁就掌握企业采用节奏。区域部署口径也在变，灾备与地缘风险开始进入架构预算。机构测算进一步印证，价值正从算力层下沉到数据层。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Fivetran 与 dbt Labs 在 dbt Summit 2026 发布 dbt v2 GA，并推出面向智能体上下文的 Context Layer</h3>
+    <div class="source">来源：<a href="https://courses.getdbt.com/blog/fivetran-dbt-labs-announces-new-capabilities-to-make-enterprise-data-agent-ready-at-dbt-summit">Fivetran + dbt Labs Announces New Capabilities to Make Enterprise Data Agent-Ready at dbt Summit 2026</a></div>
+    <div class="body"><b>摘要：</b> Fivetran 与 dbt Labs 在拉斯维加斯 dbt Summit 2026（9 月 15—18 日）宣布 dbt v2 与 dbt State 正式 GA。dbt v2 是引擎的完整 Rust 重写，解析 1 万个模型的项目比 v1 快最多 10 倍，并能在运行前给出错误、列校验与血缘反馈；dbt State 通过检查仓库元数据与模型 SQL 决定每次运行构建、跳过、克隆还是延迟，以减少不必要的仓库计算。Core 与 Fusion 双引擎时代结束，改为 dbt v1（Python）与 dbt v2（Rust）两个版本，均保持 Apache 2.0 与安全支持。同期发布 Fivetran Context Layer 私有测试版，以开源 Agents Schema 标准把 dbt 结构化语义与文档、Slack 讨论等非结构化知识统一为智能体上下文，通过 MCP 与主流 AI 工具访问；dbt Charts 公测版以版本化 YAML 定义受治理 BI；Lake Compute 私有测试版是基于 DuckDB 的单节点 SQL 引擎，直接对 Apache Iceberg 表运行 dbt 模型。公司同时提出"开放数据基础设施"愿景，主张存储、计算、数据移动、转换与可视化各层可独立选型。<br><b>为什么对数据平台重要：</b> 这是数据工程工具链一次方向性的职责扩展。dbt 过去输出的是可运行的 SQL 与测试，现在把"测试、契约、血缘、指标定义"直接当作智能体可消费的上下文资产，并试图把上下文层的标准开放出来。对企业而言，这意味着已经沉淀的 dbt 项目可以不必重建就获得一层 Agent 接口；对平台竞争而言，上下文层正在从各家自定义的语义层，变成一个带开源标准、可被多方实现的新战场。Lake Compute 用 DuckDB 单节点引擎直查 Iceberg，则进一步压低了转换负载的算力成本。</div>
+</div>
+<div class="item">
+    <h3>Databricks 未来三年在新加坡投资逾 3.5 亿美元，总部与人员规模四倍扩张</h3>
+    <div class="source">来源：<a href="https://www.databricks.com/company/newsroom/press-releases/databricks-invest-more-us350-million-singapore-enterprise-ai">Databricks to Invest More Than US$350 Million in Singapore as Enterprise AI Adoption Accelerates</a></div>
+    <div class="body"><b>摘要：</b> Databricks 宣布未来三年在新加坡投资逾 3.5 亿美元，在 IOI Central Boulevard Towers 启用 3.2 万平方英尺的新区域总部，办公面积扩大至四倍，本地员工从 250 人翻倍至 500 人以上，并将新加坡定位为亚太及日本区域枢纽、对接新加坡国家 AI 战略。公司将 Lakebase（无服务器 Postgres）、Genie（AI 协作层）与 Unity Gateway（多 AI 控制平面）作为企业智能体的上下文、治理与成本控制底座对外阐述，其中 Unity Gateway 负责跨智能体、工具与模型的路由与用量治理。区域新客户包括 iFAST、新加坡海关与 Singtel，既有客户涵盖 Airwallex、GovTech Singapore、LG 电子、渣打银行与丰田。<br><b>为什么对数据平台重要：</b> 这是数据平台头部厂商在亚太把"区域枢纽 + 本地合规身份"作为竞争手段的明确动作，也把三条产品线（运行态数据库、协作层、AI 控制平面）打包成一个面向智能体时代的整体叙事。对区域采购方而言，供应商的本地交付与政府、金融行业资质，正在与产品能力一同成为选型变量；对同区域其他厂商而言，头部厂商用资本投入锁定区域生态的窗口正在收紧。</div>
+</div>
+<div class="item">
+    <h3>Gartner：2026 年全球 AI 支出预计达 2.7 万亿美元，数据类细分同步加速</h3>
+    <div class="source">来源：<a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026">Gartner Forecasts Worldwide AI Spending to Grow 49.5% in 2026</a></div>
+    <div class="body"><b>摘要：</b> Gartner 预测 2026 年全球 AI 支出达 2.7 万亿美元，同比增长 49.5%，其中 AI 基础设施 1.48 万亿美元为最大单项，且对内存涨价带来的成本压力不敏感。与数据平台直接相关的细分同步加速：AI Data 从 2025 年 26.3 亿美元增至 2026 年 31.3 亿美元，2027 年达 64.8 亿美元；面向数据科学与机器学习的 AI 平台从 2025 年 194 亿美元增至 2027 年 356 亿美元。Gartner 把 2026 年 AI 应用开发平台增速从 28% 上修至 39%，生成式 AI 模型从 110% 上修至 117%，并首次将跨职能智能体与助手从 AI 软件中拆分单列，同时新增消费级智能体与助手口径。Gartner 判断企业在服务采购上正从大规模转型项目转向围绕既有软件内嵌 AI 能力的小型项目。<br><b>为什么对数据平台重要：</b> 这份预测给出了支出结构变化的方向：增量最大的仍是基础设施，但增速上修最明显的是应用开发平台与模型，而数据类细分的绝对规模在两年内近乎翻倍。更关键的是需求侧描述——企业更倾向用现有供应商软件里已内嵌的 AI 能力，而不是另起转型项目。对数据平台厂商而言，这解释了两件事：把智能体能力直接做进既有数据栈，比单独卖一层 AI 平台更容易被采购；同时数据层正成为承载这些内嵌能力的实际落点。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>ClickHouse 首次进入 dbt Platform，并发布基于 dbt v2 的适配器公测版</h3>
+    <div class="source">来源：<a href="https://clickhouse.com/blog/clickhouse-is-now-available-on-the-dbt-platform">ClickHouse is now available on the dbt platform</a></div>
+    <div class="body"><b>摘要：</b> ClickHouse 在 dbt Summit 2026 期间宣布两项进展。一是面向 dbt v2（Rust 引擎）的 ClickHouse 适配器进入公测，通过 ADBC 驱动、基于 Apache Arrow 标准连接，并随开源 dbt 二进制一起发布；二是 ClickHouse 作为原生支持的数据仓库进入 dbt Platform，当前为私有测试阶段，是 dbt Platform 上首个由合作伙伴构建的 v2 适配器。原有的 Python 适配器 dbt-clickhouse 自 2021 年起持续维护，目前支持 dbt 1.12，覆盖 table、view、incremental、microbatch 物化、seed、snapshot、contract 与数据及单元测试等能力，并支持 ClickHouse 专有的物化视图、字典与分布式表物化，超过 2000 个团队在生产环境使用。<br><b>对数据平台的影响：</b> 适配器从 Python 换成 Rust + ADBC 之后，接入成本与性能特性都会变化，这会影响正在评估分析引擎的数据团队对 ClickHouse 的接入路径判断。更重要的是，dbt Platform 开始接纳合作伙伴自建的 v2 适配器，意味着 dbt 生态从"引擎适配由 dbt Labs 主导"转向"引擎厂商自带适配进入平台"，这会加快各分析引擎在统一转换层上的正面竞争。</div>
+</div>
+<div class="item">
+    <h3>TileDB 更名 Tile.ai，发布企业 AI 数据基座私有预览并完成战略融资</h3>
+    <div class="source">来源：<a href="https://www.tiledb.com/blog/tiledb-is-now-tile-ai">TileDB rebrands as Tile.ai, names new CEO and secures strategic investment</a></div>
+    <div class="body"><b>摘要：</b> 开源数组引擎 TileDB 宣布更名 Tile.ai，并推出 Enterprise AI Data Substrate 私有预览——一层受治理的数据基座，让企业 AI 与外部智能体能够在不搬迁数据的前提下，原地发现、访问与使用敏感数据，并保留血缘与可复现性。公司任命前 Merck、Alexion 首席信息官 George Llado 为 CEO，创始人 Stavros Papadopoulos 转任首席产品官；同时宣布由现有投资方 Two Bear Capital 领投、Amgen Ventures 跟投的战略融资，金额未披露。TileDB 数组引擎继续以开源项目形式在 TileDB 名下维护。<br><b>对数据平台的影响：</b> 又一个"把治理层单独产品化"的案例，切的是受监管行业最痛的一点：数据不能搬，但 AI 要用。路径上它选择了原地激活而非集中汇聚，与会话上下文层、语义层厂商形成正面竞争。对买方而言，值得关注的是这类"数据就地治理"方案的权限模型能否复用现有目录体系，否则会新增一层需要独立运维的控制面。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud 9 月 16 日更新：BigQuery 推出迁移血缘服务预览</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/release-notes#September_16_2026">Google Cloud release notes — September 16, 2026</a></div>
+    <div class="body"><b>摘要：</b> Google Cloud 9 月 16 日更新中，BigQuery 新增迁移血缘服务预览版，可可视化源数据库中的数据流与对象依赖关系，用于规划数据仓库迁移、评估改动影响范围。Datastream 将 MongoDB 扩展 JSON 的规范模式设为 MongoDB 到 BigQuery 新数据流的默认格式，通过显式标注每个 BSON 类型避免数值精度损失、提升数据保真度，旧数据流需显式配置才切换。同批更新还包括 Backup and DR 基于标签与自动保护策略的资源级备份（预览），以及 Filestore 区域级服务小容量实例正式可用、支持 100 GiB 起按 1 GiB 递增。<br><b>对数据平台的影响：</b> 迁移血缘服务的价值在于把"迁移前评估"从人工梳理变成可视图，直接对应当前大量企业在异构数据库向云数仓迁移时最大的不确定性；MongoDB 规范模式转为默认，则降低了文档型数据入库时的隐性精度风险。两项都属渐进式改进，不改变能力边界，但都指向同一件事：迁移与数据保真度正在成为云数仓默认体验的一部分，而不是需要单独采购的工具。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>IDC：2025 年中国金融行业分布式事务型数据库市场增长 32.1%，腾讯以 22.2% 居首</h3>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1076856135_121400326">IDC《中国金融行业分布式事务型数据库市场份额，2025》（钛媒体报道）</a></div>
+    <div class="body"><b>核心观点：</b> IDC 于 9 月 16 日发布《中国金融行业分布式事务型数据库市场份额，2025》，2025 年该市场规模达 3.7 亿美元，同比增长 32.1%。厂商份额为腾讯 22.2%、OceanBase 21.4%、金篆信科 18.4%、阿里巴巴 16.8%、华为 11.1%、PingCAP 4.3%。同期发布的《中国银行业本地部署分布式事务型数据库市场份额，2025》显示该细分市场约 1.99 亿美元、同比增长 47.0%，金篆信科以 28.7% 居首、OceanBase 21.7%、华为 13.2%。IDC 中国企业软件市场研究经理王楠指出，市场增长动力已从早期概念验证与外围系统替换，转向核心系统改造、存量扩容与存量项目续费；AI 能力是厂商产品路线图的重要组成部分，但 2025 年尚未成为收入的核心驱动力，金融客户采购决策更看重迁移全流程的可控能力，数据库产品与迁移服务的边界正在消融，商业模式也从许可证销售向全生命周期运维、保障与升级服务延伸。<br><b>映射到数据平台的判断：</b> 这份数据把"国产替代红利期结束"说得比较清楚：外围系统替换的存量机会在减少，接下来的份额争夺发生在核心系统的存量改造与续费上，而这两件事拼的是迁移工具与服务体系，不是单纯的数据库内核性能。所谓 AI 能力在 2025 年还没有被客户放进采购决策的权重表，意味着厂商在金融市场的 AI 叙事暂时属于加分项而非成交项。对买方而言，评估重心应从功能清单转向迁移可控性、异构兼容与长期运维成本的合同条款。</div>
+</div>
+<div class="item">
+    <h3>ISG：2026 年数据管理买方指南评估 68 家厂商，Databricks 在三份指南中居首</h3>
+    <div class="source">来源：<a href="https://www.morningstar.com/news/business-wire/20260916104842/data-management-builds-framework-for-ai-to-safely-scale-isg-says">Data Management Builds Framework for AI to Safely Scale, ISG says</a></div>
+    <div class="body"><b>核心观点：</b> 技术研究与咨询机构 ISG 发布 2026 年数据管理与运营买方指南系列，共评估 68 家厂商，覆盖数据管理与运营、数据质量与数据可观测性、数据完整性、数据智能与数据产品、数据工程五份指南。Databricks 在数据管理与运营、数据智能与数据产品、数据工程三份指南中获评 Overall Leader；在数据管理与运营中紧随其后的是 Pentaho 与 IBM。ISG 数据与分析技术合伙人 Kathy Rudy 表示，企业普遍把数据可用性视为 AI 应用的显著挑战，许多企业在把 AI 推向生产之前需要先补强数据能力；ISG 研究总监 Matt Aslett 预计到 2028 年三分之二的企业将采用敏捷协作的 DataOps 实践。报告同时指出，治理正从合规动作变成支撑分析提速与智能体落地的护栏，主数据管理与数据智能平台被用来维持"单一可信版本"。<br><b>映射到数据平台的判断：</b> 这份评估的落点不是引擎性能，而是"能否支撑 AI 上生产"，其结论与企业侧的实际反馈一致：瓶颈在数据可用性与治理成熟度。Databricks 在多份指南中同时居首，说明其把治理、目录与工程能力打包成单一评估对象的策略在第三方评估框架里成立——而这恰恰是很多专做单点工具（质量、可观测性、编目）的厂商最不利的位置。对买方而言，指南的实际用途是提醒：评估 AI 数据栈时应把"能否通过治理审计"作为一票项，而不是事后补丁。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】AWS 确认中东两区域部分客户数据永久不可恢复 [补录 09-15]</h3>
+    <div class="source">来源：<a href="https://www.theregister.com/off-prem/2026/09/16/aws-says-wartime-damage-means-some-middle-east-cloud-resources-are-gone-for-good/5296830">AWS says wartime damage means some Middle East cloud resources are gone for good</a></div>
+    <div class="body"><b>为什么值得继续看：</b> AWS 在健康仪表板更新中确认，巴林区域（me-south-1）与阿联酋区域 mec1-az2 可用区中"独占存放"的资源与数据已无法恢复访问，原话是"基础设施损坏跨越多可用区，超出了区域与多可用区服务的设计承受能力"。事件起于 3 月伊朗无人机对巴林、阿联酋数据中心的多次打击，4 月第二个巴林可用区中断，7 月 IRGC 再次袭击巴林剩余设施。AWS 已暂停两区域客户计费，建议客户启用灾备计划、从其他区域的备份恢复，并将在未来数月更新基础设施替换进展、2027 年初更新巴林运营计划。这是公有云"区域级失效边界"第一次以永久数据丢失的形式被确认，直接冲击跨区域灾备架构与数据驻留策略的市场认知。本条为 9 月 15 日事件，媒体 9 月 16 日集中报道，超出 24 小时窗口，降级收录。<br><b>需要等待什么信号确认：</b> AWS 何时公布巴林区域是否重新开服、受影响客户能否获得合同层面的赔偿或 SLA 处置，以及其他主要云厂商是否调整区域韧性的对外披露口径与多区域容灾建议。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】星环科技 H 股招股结束，超额认购 47.7 倍，9 月 21 日挂牌</h3>
+    <div class="source">来源：<a href="https://i.ifeng.com/c/8wT3zkjbRfX">新股消息｜星环科技（06727）招股结束 超购 47.7 倍</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 星环科技（688031.SH／06727.HK）于 9 月 11 日至 16 日在港交所招股并结束认购，截至 9 月 16 日上午 11 时孖展约 20.8 亿港元，以公开发售部分集资额 4274 万港元计超额认购 47.7 倍。公司计划发行约 1401.1 万股 H 股，招股价 49 至 61 港元，集资最多 8.5 亿港元，每手 100 股，预计 9 月 21 日主板挂牌。募资用途中 30% 用于以"人工智能×数据"推动产品堆栈研发、20% 用于产品与方案堆栈升级、15% 用于境内外重点市场销售渠道与团队、20% 用于战略投资。作为国内 AI 与大数据基础设施软件领域少数纯标的，其定价与首日表现是观察国产数据平台资产受资本市场认可度的直接窗口。<br><b>需要等待什么信号确认：</b> 9 月 17 日的定价结果与最终发售价落在 49 至 61 港元区间的具体位置、9 月 18 日公布的配售结果与机构认购结构，以及 9 月 21 日挂牌首日表现。</div>
+</div>
+<div class="item">
+    <h3>【降级】Perplexity 自研键值存储替换托管数据库，延迟与成本同步下降</h3>
+    <div class="source">来源：<a href="https://letsdatascience.com/news/perplexity-deploys-cobbledb-for-ai-search-storage-bf8f0f68">Perplexity Deploys CobbleDB for AI Search Storage</a></div>
+    <div class="body"><b>为什么值得继续看：</b> Perplexity 在 9 月 14 日的工程博客中披露，已用自研键值热存储 CobbleDB 替换搜索链路中的托管键值数据库读取路径，生产环境批读延迟中位数从 31.4 毫秒降至 5.6 毫秒，p99 从 123 毫秒降至 24.2 毫秒，内部成本模型估算相对原方案至少节省 20%。架构上把持久文档状态、更新投递与低延迟查询服务三层解耦，热存储基于 RocksDB、按哈希 URL 分片，每个分区三副本，读取优先同可用区路由，副本滞后时动态故障转移。项目由两名工程师主导、借助数百个编码智能体在约两个月内完成。需注意延迟与成本数据均由公司自行给出，未提供完整方法学与第三方复核。本条为 9 月 14 日事件，超出 24 小时窗口，降级收录。<br><b>需要等待什么信号确认：</b> 是否有第三方或客户侧的独立验证、CobbleDB 是否按承诺开源并公布完整成本模型，以及同类 AI 原生高读负载场景是否会形成"托管数据库成本到阈值后自研"的可复制路径。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-17 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
