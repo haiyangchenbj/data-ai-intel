@@ -8164,6 +8164,106 @@
       "source": "Perplexity Deploys CobbleDB for AI Search Storage",
       "url": "https://letsdatascience.com/news/perplexity-deploys-cobbledb-for-ai-search-storage-bf8f0f68",
       "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "华为",
+      "module": "专题",
+      "title": "华为云 Stack 发布面向智能体的混合云架构，数据能力走通四条链路",
+      "summary": "摘要： 华为全联接大会 2026 期间，华为云发布面向智能体的混合云架构 Next，把云基础设施、数据、AI 与生态四项能力一并升级。数据侧提出可靠管数、高效供数、智能用数、可信流通四条链路，落地载体包括大数据存算分离、多模数据湖 AI DataLake 与智能数据决策平台 DataArts。同一大会的商业市场峰会上，华为还发布面向存储侧的一体化 AI 数据平台方案。为什么对数据平台重要： 这是国内主力厂商把数据平台的改造目标明确挂在智能体使用场景上的一次集中表述：数据不只是给人看报表，而要能被 Agent 直接调用。四条链路中的「高效供数」与「可信流通」正是当前 Agent 落地最缺的两段，把它写进混合云架构，意味着政企私有化场景的选型标准会随之上移。",
+      "source": "华为云新闻稿：华为云Stack\"All for AI\"，点亮行业数智新时代",
+      "url": "https://www.huaweicloud.com/news/2026/20260917212419917.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "Snowflake",
+      "module": "专题",
+      "title": "Snowflake 接入德国主权云 STACKIT，把开放格式写成「可脱离」条款",
+      "summary": "摘要： Snowflake 宣布与 Schwarz Digits 旗下云服务 STACKIT 集成，为德国金融、医疗、国防、能源等受监管行业提供数据主权选项。集成后加密密钥由 STACKIT 欧盟境内基础设施持有，客户数据以 Apache Iceberg 开放格式存储，在主要技术供应商不可用时仍可被其他开源工具读取。双方各自持有 BSI C5 认证，后续将推进更完整的主权部署形态。为什么对数据平台重要： 欧洲主权云要的是可验证的控制，而非合同承诺。Snowflake 给出的解法是把密钥管辖权交给本地伙伴、把数据形态交给开放表格式。后者尤其关键：Iceberg 在这里不只是分析格式，而是客户的退出通道。这会成为全球数据平台进入受监管市场的参照模板，也会抬高国内厂商在政务与金融私有化场景的架构门槛。",
+      "source": "Snowflake 官方博客：Data Sovereignty Demands More Than a Promise",
+      "url": "https://www.snowflake.com/en/blog/snowflake-integration-stackit-data-sovereignty/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "微软",
+      "module": "专题",
+      "title": "诺基亚把电信数据底座接进 Microsoft Fabric，Agent 直接跑网络运维",
+      "summary": "摘要： 诺基亚 9 月 17 日宣布扩大与微软合作，将 Nokia Data Suite 与 Microsoft Fabric 整合为统一的电信数据底座。Data Suite 提供预制电信数据产品与「玻璃盒」式数据质量管控、电信语义建模，Fabric 提供 OneLake 存储、分析工具与 AI 原生应用。首批场景为 VoNR 语音自动保障、无线接入网地理体验分析与预测性维护，方案已可商用，支持多云、混合与本地部署。为什么对数据平台重要： 这是「行业语义层 + 通用数据平台」组合的标准样本：垂直数据产品负责口径与质量，通用平台负责存储、治理与算力。运营商把跨厂商、跨域网络数据准备时间从数周压到分钟级，说明语义建模的复用价值已经高过自建管道。对数据平台厂商的含义是，行业 Know-how 正在成为平台选型的决定项。",
+      "source": "Mobile Europe 报道：Nokia, Microsoft target faster AI adoption in telecom networks",
+      "url": "https://www.mobileeurope.co.uk/nokia-microsoft-ai",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "AWS",
+      "module": "技术",
+      "title": "Amazon S3 Express One Zone 新增 7 个区域，低延迟对象存储覆盖面扩大",
+      "summary": "摘要： AWS 宣布 S3 Express One Zone 在 7 个新区域开放。该存储类别面向延迟敏感的查询与训练数据读取，此前仅在少数区域可用，区域扩容后跨区域数据编排不必再为访问低延迟层而做数据搬迁。对数据平台的影响： 数据湖的性能分层长期是架构约束：热数据放低延迟存储、冷数据放标准桶，代价是跨区域一致性复杂。低延迟层覆盖更多区域，会削弱「为性能把数据集中到少数区域」的必要性，进而改变数据驻留方案的设计空间。属于能力覆盖面的常规扩张，但会压平湖上查询的成本曲线。",
+      "source": "AWS What's New：Amazon S3 Express One Zone is now available in 7 additional AWS Regions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/s3-express-one-zone-7-regions/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "EDB",
+      "module": "技术",
+      "title": "Yugabyte 扩展 Agent 数据层：AMP 与 Meko 两条产品线并披露上半年客户增速",
+      "summary": "摘要： Yugabyte 公布公司历史上最强的上半年：新付费客户同比增超 125%，开源 YugabyteDB 下载企业超 900 家，分布式 PostgreSQL 已支撑 500 万以上部署集群、覆盖 100 多个国家。产品侧两条线成型：AMP 是无服务器、可缩容至零的多租户 PostgreSQL，支持写时复制分支；Meko 面向多智能体系统提供共享上下文引擎，官方称上线以来智能体每日创建的库数量增长 10 倍。对数据平台的影响： Agent 场景把数据库需求拆成两个新方向——大量短生命周期、可随时丢弃的实例，以及跨智能体共享的上下文与决策留痕。AMP 与 Meko 分别对应两者，且都建在同一套分布式 PostgreSQL 之上。这个思路对国内分布式数据库厂商有直接参照意义：与其新造一套 Agent 数据库，不如在既有引擎上加多租户与上下文原语。",
+      "source": "StorageNewsletter 转载 Yugabyte 官方公告",
+      "url": "https://www.storagenewsletter.com/2026/09/17/yugabyte-accelerates-agentic-ai-momentum-with-new-product-lines-global-expansion-and-industry-recognition",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "国家数据局",
+      "module": "机构",
+      "title": "国家数据局刊发数据产权登记指引解读，明确三维度审查与负面清单",
+      "summary": "核心观点： 国家数据局在官网刊发专家解读，阐释《数据产权登记工作指引（试行）》的审查原则：以合理审慎为基准，围绕数据描述准确性、数据来源合规性、数据产权明确性三个维度开展审查，并列出 5 项不予登记的负面清单。解读强调登记审查不得越位评价数据商业价值，登记机构对登记结果准确性依法承担责任，并配套过错追责与损害赔偿机制。映射到数据平台的判断： 产权登记的价值最终取决于凭证能否在流通交易、资产入表、融资担保场景被采信，而这三个场景都要求平台侧提供可追溯的数据来源与血缘证据。政策把审查责任明确落在登记环节，反而把「数据从哪来、经过哪些加工」的举证压力传给了数据平台。具备完整血缘与元数据治理能力的平台，会在数据资产化链条上获得议价权。",
+      "source": "国家数据局：专家解读｜坚持质量优先、合理审慎 提升数据产权登记公信力",
+      "url": "https://www.nda.gov.cn/sjj/zwgk/zjjd/0917/20260917151732994456872_pc.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "Anthropic",
+      "module": "投融资",
+      "title": "【投融资】MIND 完成 7200 万美元 B 轮，把防泄漏重做成面向 AI 的数据治理层",
+      "summary": "核心数据： B 轮 7200 万美元，Crosspoint Capital Partners 领投，累计融资 1.12 亿美元；上一轮 3000 万美元 A 轮距今约一年。公司称过去一年营收增长超 17 倍、客户数增长 8 倍，年化收入约 1000 万美元；市场消息称本轮估值约 3 亿美元。摘要： MIND 定位 AI 原生数据防泄漏平台，覆盖 SaaS、生成式与 Agentic AI 工具、终端、本地文件服务器与邮件，通过多层分类引擎同时判断内容与上下文，并提供自主处置与实时阻断。公司同时披露已加入 Anthropic 的 Cyber Verification Program，并取得 ISO/IEC 42001 认证。对数据平台的影响： 数据安全的边界已经从「人把文件发给谁」扩展到「智能体在读什么、把什么带出去」。DLP 从终端合规工具变成覆盖 Agent 数据流动的治理层，这个方向会挤压传统数据治理厂商的空间，也会让平台侧的数据访问审计从加分项变成采购硬指标。",
+      "source": "PR Newswire：MIND Raises $72M Series B Funding to Bring Complete DLP to the AI Era",
+      "url": "https://www.prnewswire.com/news-releases/mind-raises-72m-series-b-funding-to-bring-complete-dlp-to-the-ai-era-302881118.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "IDC",
+      "module": "机构",
+      "title": "【降级】IDC 发布中国 AI 就绪数据存储基础设施 2026 厂商评估",
+      "summary": "为什么值得继续看： IDC MarketScape 从当前能力与长期战略两维评估厂商，报告判断 AI 就绪的数据基础设施正从「配套设施」升级为「核心基础设施」，竞争焦点从单一存储性能转向全栈数据平台能力，训练阶段的 Checkpoint 高吞吐与推理阶段的 KV Cache 管理成为新的采购驱动因素。需要等待什么信号确认： 目前只检索到厂商侧的入选通报，未获得 IDC 官方报告页与完整象限图，无法确认入围厂商名单与象限分布。待 IDC 官网公开报告摘要后复核，并观察该报告是否被国内厂商用作智算与政务项目的投标依据。",
+      "source": "网易转载大京新闻网报道（引 IDC 报告 CHC54132926）",
+      "url": "https://www.163.com/news/article/L71UTUQG00019UD6.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "【跟踪】Couchbase 推出 AI Data Plane，为生产环境 Agent 提供统一数据层",
+      "summary": "为什么值得继续看： CRN 在 9 月 17 日的软件动态中记录，Couchbase 发布 AI Data Plane，目标是给生产环境运行的 AI 智能体提供单一的、受治理的数据层。这与近期多起数据库厂商动作方向一致：把数据库从「被应用调用」改造成「被智能体调用」，并在同一层解决权限与审计。需要等待什么信号确认： 目前仅见媒体报道标题级信息，未见官方产品页、架构说明或 GA 状态。需要确认它是独立新产品还是既有云服务的能力包，以及它如何处理多租户隔离与上下文持久化；在此之前不作为产品发布收录。",
+      "source": "CRN 软件动态（9 月 17 日）",
+      "url": "https://www.crn.com/news/software/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "华为",
+      "module": "技术",
+      "title": "【预告】华为全联接大会 2026 余下议程：数据与 AI 分会场",
+      "summary": "为什么值得继续看： 大会 9 月 17 日至 19 日在上海举办，首日以算力与基础设施为主，数据侧只给出了四条链路的框架性表述。按往届节奏，数据与 AI 分会场通常在次日集中释放具体产品版本、GA 时间与迁移工具。需要等待什么信号确认： 关注 9 月 18 日至 19 日分会场是否披露 AI DataLake、DataArts、大数据存算分离的具体版本号与商用节奏，以及是否给出面向智能体的数据处理接口或语义层规范。这些细节决定首日发布是架构宣示还是可落地的产品路线。",
+      "source": "华为全联接大会 2026 官网",
+      "url": "https://www.huawei.com/cn/events/huaweiconnect",
+      "conf": ""
     }
   ],
   "archive": [
@@ -8299,7 +8399,8 @@
     "2026-09-14",
     "2026-09-15",
     "2026-09-16",
-    "2026-09-17"
+    "2026-09-17",
+    "2026-09-18"
   ],
   "monthly": [
     {
