@@ -8264,6 +8264,96 @@
       "source": "华为全联接大会 2026 官网",
       "url": "https://www.huawei.com/cn/events/huaweiconnect",
       "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "谷歌云为无边界湖仓加上跨云缓存，跨云查询只需搬动不到 5% 的数据",
+      "summary": "摘要： 谷歌云 9 月 19 日宣布无边界湖仓（Borderless Lakehouse）新增跨云缓存与跨云连接两项预览能力。跨云缓存在子文件块粒度缓存列式数据，配合 Iceberg 默认压缩，官方称跨云查询通常只需传输所处理数据不到 5%；在演示中第二次查询的缓存命中率达到 94.8%。缓存默认使用谷歌托管密钥加密，并按项目与区域隔离，同时继续对 Databricks Unity Catalog、AWS Glue、Snowflake Horizon 等目录做联邦。为什么对数据平台重要： 跨云分析长期卡在数据搬运的成本与一致性上。把缓存下沉到子文件块粒度、只传输查询真正用到的列块，等于用「计算就近」替换「数据集中」，跨云湖仓的总体拥有成本因此进入可接受区间。这会削弱「为性能把数据集中到单一云」的合理性，也让目录联邦成为跨云访问的默认入口，湖仓的竞争点从数据放在哪里转向缓存与目录策略。",
+      "source": "Google Cloud 博客：Accelerating the borderless Lakehouse: Announcing preview of cross-cloud caching",
+      "url": "https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-cross-cloud-caching-and-connections",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "华为",
+      "module": "专题",
+      "title": "华为云在华为全联接大会定义 Agentic Cloud，把记忆存储做成基础设施",
+      "summary": "摘要： 9 月 18 日，华为云 CEO 周跃峰在华为全联接大会 2026 发表主题演讲，提出 Agentic Infra 新范式，称已服务 3500 余家客户。会上灵衢昇腾 950 智算集群服务全球上线，将于 9 月 30 日国内商用、11 月 30 日海外商用，官方称 Token 吞吐较上一代提升 20%；同时发布 CMS 记忆存储方案，构建 PB 级记忆空间。企业级智能体平台智果 AgentArts 与开源版 openJiuwen 已服务 100 多家企业，后者计划 12 月 30 日面向海外商用。为什么对数据平台重要： 华为云把智能体的三种刚需——算力、记忆、上下文——直接定义为基础设施，其中记忆存储与 AI 数据平台里的知识库、记忆库、KV Cache 库都落在存储与数据侧。这意味着数据平台的选型标准里会新增一项「能否为智能体保存并快速取回过程状态」。对国内厂商而言，谁先把记忆与上下文的存取做成标准能力，谁就更有机会拿到 Agent 场景的默认入口。",
+      "source": "东方网：共建 Agentic Cloud！华为云发布系列 AI 能力 加速智能体规模化落地",
+      "url": "https://nw.eastday.com/bjzx/20260918/efa4a2f143ae4d68b834a3c53d448b1f.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Starburst 把扫描规划交给目录层，Databricks Unity Catalog 一次策略跨引擎生效",
+      "summary": "摘要： 9 月 18 日，Starburst 宣布 Enterprise 481-e STS 通过 Iceberg REST 的 /plan 端点支持服务端扫描规划，任何实现该端点的 REST 目录都可代引擎规划扫描，并返回待读文件与受限凭证。首个深度集成对象是 Databricks Unity Catalog：其 ScanAPI 会按调用者身份评估 ABAC 策略，先把行过滤与列掩码应用好、物化成临时数据文件，再把文件位置与作用域凭证交给引擎。为什么对数据平台重要： 跨引擎治理的难点在于，表级权限可以跨引擎复用，但行过滤、列掩码这类细粒度策略过去要在每个引擎各写一遍。把策略判断挪到目录服务端、只把已脱敏的数据交给引擎，让治理回到「一次定义、处处生效」。这条路与 Snowflake 用开放规范限定可信读取引擎的做法同向，说明湖仓的治理中心正从引擎转向目录。",
+      "source": "Starburst 博客：Announcing Server-Side Scan Planning with Starburst and Databricks",
+      "url": "https://www.starburst.io/blog/announcing-server-side-scan-planning-with-starburst-and-databricks/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "谷歌云为 AlloyDB 与 Cloud SQL 引入原生 BM25，混合检索不再需要独立后端",
+      "summary": "摘要： 9 月 19 日，谷歌云宣布 AlloyDB 与 Cloud SQL for PostgreSQL 17+ 预览原生 BM25 索引，由开源的 pg_textsearch 扩展实现。此前要获得 BM25 排序需额外部署全文检索后端，现在 BM25 与向量索引可在同一张表上共存，AlloyDB 提供内置混合检索 UDF，用 RRF 融合两路结果；官方称 AlloyDB 的 ScaNN 与 HNSW 索引相比标准 PostgreSQL 向量检索最高快 6 到 10 倍。对数据平台的影响： 向量数据库与全文检索引擎的边界正在被数据库自身吞掉。混合检索内建之后，企业少维护一套同步链路，RAG 与数据智能体的检索层可以退回数据所在的事务库。这会压缩独立检索引擎的空间，也让「数据库即检索底座」成为 RAG 架构的默认选项。",
+      "source": "Google Cloud 博客：Announcing Native BM25 Ranking in AlloyDB and Cloud SQL",
+      "url": "https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql/",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "华为",
+      "module": "技术",
+      "title": "华为云数据库发布 GaussDB 开发者版本，并升级 TaurusDB 存算分离",
+      "summary": "摘要： 9 月 18 日华为全联接大会期间，华为云数据库发布 GaussDB 开发者版本，提供公有云与混合云两种模式，公有云版支持 90 天免费试用。TaurusDB 升级存算分离与 Serverless 架构，支持语义混合查询并可直接调用模型，官方称性能领先 30%、语义算子使成本优化 50%、资源利用率提升 90%；GaussDB 透明多写可节省 60% 存储空间。数据库运维智能体集成 20 万运维案例与 200 个 CLI 工具。对数据平台的影响： 把模型调用下沉到一条 SQL、把运维交给智能体，本质是让数据库自己承担原本由上层平台完成的工作；存算分离与透明多写则直接改写成本与可用性曲线。对国内厂商的含义是，数据库的 Agent 化正在弹性、语义与自治三个层面同时展开，需要的能力比增加一个对话入口要重得多。",
+      "source": "今日头条（华为云中国官方号）：华为云数据库筑牢数据根基，智启 Agentic 新时代",
+      "url": "https://www.toutiao.com/article/7686820449728119331",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "Snowflake 开放 Iceberg 表分区演进，改分区规格不再重写历史数据",
+      "summary": "摘要： 9 月 18 日，Snowflake 宣布其托管的 Iceberg 表正式支持分区演进（GA）。用户可在建表后新增、删除或替换分区字段，无需重写已有数据：新写入的数据按新规格落盘，存量数据保持不动。该能力支持 Apache Iceberg v2 规范中的全部分区变换。对数据平台的影响： 分区一旦定错，传统方案只能重写整张表，代价高且影响在线服务。分区演进把「改分区」降级为元数据操作，让湖仓表的物理布局能随查询模式持续调整。这是开放表格式相对封闭数仓的一项结构性优势，也会成为采购时比较冰山下成本的重要依据。",
+      "source": "Snowflake 文档发布说明：Apache Iceberg tables: Partition evolution (General availability)",
+      "url": "https://docs.snowflake.com/release-notes/2026/other/2026-09-18-iceberg-partition-evolution-ga",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "腾讯",
+      "module": "技术",
+      "title": "【预告】腾讯云数据分析智能体将发布新版本，主打数据工程与智能运维",
+      "summary": "为什么值得继续看： 腾讯云 9 月 20 日预告，其数据分析智能体 TCDataAgent 将于 9 月 22 日下午发布新版本 AVA，面向数据分析、数据工程与智能运维场景提供数据分析专家、数据工程专家、智能管家等 Agent 能力。官方称将演示通过统一入口调用该智能体连接数据湖、EMR、数据仓库与检索等引擎，完成数据湖任务、集群运维与搜索诊断等具体工作。需要等待什么信号确认： 关注发布后是否给出可独立复现的能力清单、与既有引擎的连接方式，以及面向企业客户的商用时间与计费口径。判断标准是它属于产品能力补强，还是把数据平台的交互入口整体交给智能体。",
+      "source": "腾讯云开发者社区：预告｜Data Agent 升级发布：从大数据分析到 Data+AI 数字员工",
+      "url": "https://cloud.tencent.com/developer/article/2747409",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "Iceberg",
+      "module": "技术",
+      "title": "【降级】亚马逊云科技中国区域汇总 7 至 9 月的 86 项服务更新",
+      "summary": "为什么值得继续看： 亚马逊云科技 9 月 20 日发布中国区域阶段性服务更新汇总，覆盖北京与宁夏两个区域，时间跨度为 7 月 1 日至 9 月 15 日。其中与数据平台相关的包括：Glue 6.0 降价 30%、Redshift RG 实例性能最高达上代 2.4 倍且每 vCPU 价格降低 30%、DynamoDB 支持实时向量搜索、Kinesis Data Streams 可把流数据持续写入 S3 Tables 的 Iceberg 表并最多降低 60% 成本。需要等待什么信号确认： 多项更新的原始发布时间早于本期窗口，此处按阶段汇总降级收录，用于观察中国区域的价格与能力竞争节奏。需分别回溯 Redshift RG、DynamoDB 向量搜索等能力的首发日期与适用区域，避免把汇总当成本期新事件。",
+      "source": "腾讯新闻（观点网）：亚马逊云科技中国区域 7 至 9 月推出 86 项服务更新，Glue 6.0 降价 30%",
+      "url": "https://news.qq.com/rain/a/20260920A07JPM00",
+      "conf": ""
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "Flink",
+      "module": "技术",
+      "title": "【预告】Apache Iceberg 1.12 与 Iceberg Rust 0.11 临近发布，含破坏性变更",
+      "summary": "为什么值得继续看： Dremio 9 月 18 日盘点了临近发布的 Apache Iceberg 1.12.0 与 Iceberg Rust 0.11.0：前者携带约 210 个已合并 PR，补齐地理空间类型、Variant 支持与 Flink 删除向量，并移除 Spark 3.4 支持与带行数据的 position deletes；后者加入端到端表加密与更强的 v3 读取，但改动了 REST 认证与扫描 API。两个版本目前均未正式发布。需要等待什么信号确认： 关注两个版本的正式发布说明与各引擎支持矩阵，尤其是写入侧对 v3 行谱系与删除向量的正确性——部分引擎的 v3 实现存在静默返回错误的已知问题。升级前应按官方矩阵逐项核对读写引擎。",
+      "source": "Dremio 博客：Preview of Upcoming Apache Iceberg 1.12 and Iceberg Rust 0.11",
+      "url": "https://www.dremio.com/blog/preview-of-upcoming-apache-iceberg-1-12-and-iceberg-rust-0-11-new-features-and-breaking-changes/",
+      "conf": ""
     }
   ],
   "archive": [
@@ -8400,7 +8490,8 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-21"
   ],
   "monthly": [
     {

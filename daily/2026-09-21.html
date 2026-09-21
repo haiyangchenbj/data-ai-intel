@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-21</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-21 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>跨云数据访问成本被压到新低，本地缓存开始取代数据搬迁</li>
+      <li>数据治理从引擎内部上移到目录层，策略一次定义跨引擎生效</li>
+      <li>智能体基础设施正把记忆与上下文纳入平台核心能力</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天三条主线指向同一件事：数据平台的边界正从把数据搬进来转向让计算靠过去。跨云缓存把远端数据的访问成本压到可接受区间，目录层则接管了原本分散在各引擎里的治理策略。当智能体成为主要使用者，竞争的分水岭会是记忆与上下文的组织能力。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>谷歌云为无边界湖仓加上跨云缓存，跨云查询只需搬动不到 5% 的数据</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-cross-cloud-caching-and-connections">Google Cloud 博客：Accelerating the borderless Lakehouse: Announcing preview of cross-cloud caching</a></div>
+    <div class="body"><b>摘要：</b> 谷歌云 9 月 19 日宣布无边界湖仓（Borderless Lakehouse）新增跨云缓存与跨云连接两项预览能力。跨云缓存在子文件块粒度缓存列式数据，配合 Iceberg 默认压缩，官方称跨云查询通常只需传输所处理数据不到 5%；在演示中第二次查询的缓存命中率达到 94.8%。缓存默认使用谷歌托管密钥加密，并按项目与区域隔离，同时继续对 Databricks Unity Catalog、AWS Glue、Snowflake Horizon 等目录做联邦。<br><b>为什么对数据平台重要：</b> 跨云分析长期卡在数据搬运的成本与一致性上。把缓存下沉到子文件块粒度、只传输查询真正用到的列块，等于用「计算就近」替换「数据集中」，跨云湖仓的总体拥有成本因此进入可接受区间。这会削弱「为性能把数据集中到单一云」的合理性，也让目录联邦成为跨云访问的默认入口，湖仓的竞争点从数据放在哪里转向缓存与目录策略。</div>
+</div>
+<div class="item">
+    <h3>华为云在华为全联接大会定义 Agentic Cloud，把记忆存储做成基础设施</h3>
+    <div class="source">来源：<a href="https://nw.eastday.com/bjzx/20260918/efa4a2f143ae4d68b834a3c53d448b1f.html">东方网：共建 Agentic Cloud！华为云发布系列 AI 能力 加速智能体规模化落地</a></div>
+    <div class="body"><b>摘要：</b> 9 月 18 日，华为云 CEO 周跃峰在华为全联接大会 2026 发表主题演讲，提出 Agentic Infra 新范式，称已服务 3500 余家客户。会上灵衢昇腾 950 智算集群服务全球上线，将于 9 月 30 日国内商用、11 月 30 日海外商用，官方称 Token 吞吐较上一代提升 20%；同时发布 CMS 记忆存储方案，构建 PB 级记忆空间。企业级智能体平台智果 AgentArts 与开源版 openJiuwen 已服务 100 多家企业，后者计划 12 月 30 日面向海外商用。<br><b>为什么对数据平台重要：</b> 华为云把智能体的三种刚需——算力、记忆、上下文——直接定义为基础设施，其中记忆存储与 AI 数据平台里的知识库、记忆库、KV Cache 库都落在存储与数据侧。这意味着数据平台的选型标准里会新增一项「能否为智能体保存并快速取回过程状态」。对国内厂商而言，谁先把记忆与上下文的存取做成标准能力，谁就更有机会拿到 Agent 场景的默认入口。</div>
+</div>
+<div class="item">
+    <h3>Starburst 把扫描规划交给目录层，Databricks Unity Catalog 一次策略跨引擎生效</h3>
+    <div class="source">来源：<a href="https://www.starburst.io/blog/announcing-server-side-scan-planning-with-starburst-and-databricks/">Starburst 博客：Announcing Server-Side Scan Planning with Starburst and Databricks</a></div>
+    <div class="body"><b>摘要：</b> 9 月 18 日，Starburst 宣布 Enterprise 481-e STS 通过 Iceberg REST 的 /plan 端点支持服务端扫描规划，任何实现该端点的 REST 目录都可代引擎规划扫描，并返回待读文件与受限凭证。首个深度集成对象是 Databricks Unity Catalog：其 ScanAPI 会按调用者身份评估 ABAC 策略，先把行过滤与列掩码应用好、物化成临时数据文件，再把文件位置与作用域凭证交给引擎。<br><b>为什么对数据平台重要：</b> 跨引擎治理的难点在于，表级权限可以跨引擎复用，但行过滤、列掩码这类细粒度策略过去要在每个引擎各写一遍。把策略判断挪到目录服务端、只把已脱敏的数据交给引擎，让治理回到「一次定义、处处生效」。这条路与 Snowflake 用开放规范限定可信读取引擎的做法同向，说明湖仓的治理中心正从引擎转向目录。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>谷歌云为 AlloyDB 与 Cloud SQL 引入原生 BM25，混合检索不再需要独立后端</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql/">Google Cloud 博客：Announcing Native BM25 Ranking in AlloyDB and Cloud SQL</a></div>
+    <div class="body"><b>摘要：</b> 9 月 19 日，谷歌云宣布 AlloyDB 与 Cloud SQL for PostgreSQL 17+ 预览原生 BM25 索引，由开源的 pg_textsearch 扩展实现。此前要获得 BM25 排序需额外部署全文检索后端，现在 BM25 与向量索引可在同一张表上共存，AlloyDB 提供内置混合检索 UDF，用 RRF 融合两路结果；官方称 AlloyDB 的 ScaNN 与 HNSW 索引相比标准 PostgreSQL 向量检索最高快 6 到 10 倍。<br><b>对数据平台的影响：</b> 向量数据库与全文检索引擎的边界正在被数据库自身吞掉。混合检索内建之后，企业少维护一套同步链路，RAG 与数据智能体的检索层可以退回数据所在的事务库。这会压缩独立检索引擎的空间，也让「数据库即检索底座」成为 RAG 架构的默认选项。</div>
+</div>
+<div class="item">
+    <h3>华为云数据库发布 GaussDB 开发者版本，并升级 TaurusDB 存算分离</h3>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7686820449728119331">今日头条（华为云中国官方号）：华为云数据库筑牢数据根基，智启 Agentic 新时代</a></div>
+    <div class="body"><b>摘要：</b> 9 月 18 日华为全联接大会期间，华为云数据库发布 GaussDB 开发者版本，提供公有云与混合云两种模式，公有云版支持 90 天免费试用。TaurusDB 升级存算分离与 Serverless 架构，支持语义混合查询并可直接调用模型，官方称性能领先 30%、语义算子使成本优化 50%、资源利用率提升 90%；GaussDB 透明多写可节省 60% 存储空间。数据库运维智能体集成 20 万运维案例与 200 个 CLI 工具。<br><b>对数据平台的影响：</b> 把模型调用下沉到一条 SQL、把运维交给智能体，本质是让数据库自己承担原本由上层平台完成的工作；存算分离与透明多写则直接改写成本与可用性曲线。对国内厂商的含义是，数据库的 Agent 化正在弹性、语义与自治三个层面同时展开，需要的能力比增加一个对话入口要重得多。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 开放 Iceberg 表分区演进，改分区规格不再重写历史数据</h3>
+    <div class="source">来源：<a href="https://docs.snowflake.com/release-notes/2026/other/2026-09-18-iceberg-partition-evolution-ga">Snowflake 文档发布说明：Apache Iceberg tables: Partition evolution (General availability)</a></div>
+    <div class="body"><b>摘要：</b> 9 月 18 日，Snowflake 宣布其托管的 Iceberg 表正式支持分区演进（GA）。用户可在建表后新增、删除或替换分区字段，无需重写已有数据：新写入的数据按新规格落盘，存量数据保持不动。该能力支持 Apache Iceberg v2 规范中的全部分区变换。<br><b>对数据平台的影响：</b> 分区一旦定错，传统方案只能重写整张表，代价高且影响在线服务。分区演进把「改分区」降级为元数据操作，让湖仓表的物理布局能随查询模式持续调整。这是开放表格式相对封闭数仓的一项结构性优势，也会成为采购时比较冰山下成本的重要依据。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】腾讯云数据分析智能体将发布新版本，主打数据工程与智能运维</h3>
+    <div class="source">来源：<a href="https://cloud.tencent.com/developer/article/2747409">腾讯云开发者社区：预告｜Data Agent 升级发布：从大数据分析到 Data+AI 数字员工</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 腾讯云 9 月 20 日预告，其数据分析智能体 TCDataAgent 将于 9 月 22 日下午发布新版本 AVA，面向数据分析、数据工程与智能运维场景提供数据分析专家、数据工程专家、智能管家等 Agent 能力。官方称将演示通过统一入口调用该智能体连接数据湖、EMR、数据仓库与检索等引擎，完成数据湖任务、集群运维与搜索诊断等具体工作。<br><b>需要等待什么信号确认：</b> 关注发布后是否给出可独立复现的能力清单、与既有引擎的连接方式，以及面向企业客户的商用时间与计费口径。判断标准是它属于产品能力补强，还是把数据平台的交互入口整体交给智能体。</div>
+</div>
+<div class="item">
+    <h3>【降级】亚马逊云科技中国区域汇总 7 至 9 月的 86 项服务更新</h3>
+    <div class="source">来源：<a href="https://news.qq.com/rain/a/20260920A07JPM00">腾讯新闻（观点网）：亚马逊云科技中国区域 7 至 9 月推出 86 项服务更新，Glue 6.0 降价 30%</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 亚马逊云科技 9 月 20 日发布中国区域阶段性服务更新汇总，覆盖北京与宁夏两个区域，时间跨度为 7 月 1 日至 9 月 15 日。其中与数据平台相关的包括：Glue 6.0 降价 30%、Redshift RG 实例性能最高达上代 2.4 倍且每 vCPU 价格降低 30%、DynamoDB 支持实时向量搜索、Kinesis Data Streams 可把流数据持续写入 S3 Tables 的 Iceberg 表并最多降低 60% 成本。<br><b>需要等待什么信号确认：</b> 多项更新的原始发布时间早于本期窗口，此处按阶段汇总降级收录，用于观察中国区域的价格与能力竞争节奏。需分别回溯 Redshift RG、DynamoDB 向量搜索等能力的首发日期与适用区域，避免把汇总当成本期新事件。</div>
+</div>
+<div class="item">
+    <h3>【预告】Apache Iceberg 1.12 与 Iceberg Rust 0.11 临近发布，含破坏性变更</h3>
+    <div class="source">来源：<a href="https://www.dremio.com/blog/preview-of-upcoming-apache-iceberg-1-12-and-iceberg-rust-0-11-new-features-and-breaking-changes/">Dremio 博客：Preview of Upcoming Apache Iceberg 1.12 and Iceberg Rust 0.11</a></div>
+    <div class="body"><b>为什么值得继续看：</b> Dremio 9 月 18 日盘点了临近发布的 Apache Iceberg 1.12.0 与 Iceberg Rust 0.11.0：前者携带约 210 个已合并 PR，补齐地理空间类型、Variant 支持与 Flink 删除向量，并移除 Spark 3.4 支持与带行数据的 position deletes；后者加入端到端表加密与更强的 v3 读取，但改动了 REST 认证与扫描 API。两个版本目前均未正式发布。<br><b>需要等待什么信号确认：</b> 关注两个版本的正式发布说明与各引擎支持矩阵，尤其是写入侧对 v3 行谱系与删除向量的正确性——部分引擎的 v3 实现存在静默返回错误的已知问题。升级前应按官方矩阵逐项核对读写引擎。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-21 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
