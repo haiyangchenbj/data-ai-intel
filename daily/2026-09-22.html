@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-22</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-22 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据确权从制度设计走进可交易凭证，资产化路径开始闭环</li>
+      <li>国产数据平台厂商完成两地上市，资本开始重估数据基础设施</li>
+      <li>机构把上下文抬到基础设施位置，AI落地的瓶颈回到数据侧</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天的两条主线都在数据平台的外围：资产化让数据从内部资源变成可确权、可交易的资产，资本化让国产厂商拿到持续投入的通道。技术侧的增量仍在把外挂能力收进平台内部，治理与上下文被当作基础设施来建，采购的比较维度随之改变。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>星环科技在香港联交所主板挂牌，国产数据平台厂商完成 A+H 两地上市</h3>
+    <div class="source">来源：<a href="https://epaper.cs.com.cn/zgzqb/html/2026-09/22/nw.D110000zgzqb_20260922_5-B033.htm">中国证券报：星环信息科技（上海）股份有限公司关于境外上市股份（H 股）挂牌并上市交易的公告</a></div>
+    <div class="body"><b>摘要：</b> 9 月 21 日，星环科技（688031.SH / 06727.HK）本次全球发售的 1401.08 万股 H 股在香港联交所主板挂牌交易。按每股 49 港元计算，扣除承销佣金及其他费用后所得款项净额约 6.3 亿港元，基石投资者包括浪潮信息全资附属公司及洛阳科创集团。公司 H 股自上市当日起调入沪港通与深港通下的港股通标的名单。按 2025 年收入计，星环科技在中国 AI 基础设施软件市场排名第五、为其中最大的独立厂商，并连续多年位列中国大数据平台专业厂商市场份额第一。<br><b>为什么对数据平台重要：</b> 国产数据平台厂商第一次以 A+H 结构拿到境内外两个资本市场的持续融资通道，竞争的落点因此从产品对标扩展到投入能力与生态建设的双线拉锯。独立厂商的身份在巨头夹击下也获得一层结构性保护：客户在采购时可以把「不在云厂商体系之内」当成一项可核验的差异。对买方而言，供应商的长期投入能力将变得和产品能力一样需要评估。</div>
+</div>
+<div class="item">
+    <h3>国家数据局发放首批数据产权登记凭证，56 家主体拿到数据持有权与经营权证明</h3>
+    <div class="source">来源：<a href="https://www.nda.gov.cn/sjj/swdt/mtsy/0921/20260921120942131211051_pc.html">国家数据局（转载央视新闻直播间）：我国首批数据产权「身份证」发放 支持数据资源确认为企业资产</a></div>
+    <div class="body"><b>摘要：</b> 9 月 21 日，国家数据局披露首批数据产权登记凭证已陆续发放，共 56 家企业和机构取得数据持有权、使用权与经营权的有效证明。获证主体包括国有企业、事业单位和民营企业三类，覆盖医疗健康、交通运输、信息技术、科学研究等十余个行业，其中与人工智能应用相关场景的登记数据超过 15 份。目前登记可在北京、上海、深圳三地数据交易所办理，凭证有效期一般为 5 年，可用于数据交易、数字贸易、融资担保与作价入股，并支持企业把数据资源确认为资产。<br><b>为什么对数据平台重要：</b> 确权凭证把数据从「内部资源」变成「可入表、可质押、可交易」的资产，这直接改写数据平台的立项逻辑：治理、目录与血缘不再只是合规成本，而是资产凭证的上游供给。在审查围绕数据描述准确性、来源合规性、产权明确性三个维度展开的前提下，谁的元数据与来源留痕做得完整，谁就更容易帮客户通过登记。数据治理由此从技术项目升级为资产化流程中的必要环节。</div>
+</div>
+<div class="item">
+    <h3>Gartner 预测：忽视治理文化的组织到 2027 年将无法成功治理 AI</h3>
+    <div class="source">来源：<a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-21-gartner-predicts-60-percent-of-organizations-that-ignore-data-governance-culture-challenges-will-fail-to-govern-ai-successfully-by-2027">Gartner 新闻稿：Gartner Predicts 60% of Organizations That Ignore Data Governance Culture Challenges Will Fail to Govern AI Successfully by 2027</a></div>
+    <div class="body"><b>摘要：</b> 9 月 21 日，Gartner 在孟买举行的数据与分析峰会首日给出预测：到 2027 年，未能解决数据与分析治理中文化挑战的组织里有 60% 将无法成功治理 AI。Gartner 2026 年 3 月对 223 位数据与分析负责人的调研显示，文化阻力以 60% 超过资金约束的 40%，成为治理项目失败的首要原因。同场会议提出的 2030 年三大转向中，第二条明确要求把「上下文」当作关键基础设施，让智能体在受治理的上下文里取到数据。<br><b>为什么对数据平台重要：</b> 把治理失败的首要原因归到文化与落地方式而不是工具缺失，会把采购评估的重心从功能清单推向组织适配度。更可注意的是「上下文即关键基础设施」这个提法：它把语义层、元数据与权限体系从配套能力提升为智能体的运行前提，与近期各家把治理策略上移到目录层、把业务语义收进平台的动作同向。数据平台的预算理由因此从「存与算」扩展到「让智能体可信地取数」。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake 为 Cortex Agents 增加会话压缩接口，把长对话折叠成紧凑表示</h3>
+    <div class="source">来源：<a href="https://docs.snowflake.com/release-notes/2026/other/2026-09-21-cortex-agents-compact-api-preview">Snowflake 发布说明：Cortex Agents Compact API（Preview）</a></div>
+    <div class="body"><b>摘要：</b> 9 月 21 日，Snowflake 预览 agent:compact 接口：它把一段对话历史压缩成紧凑表示，再交给后续的 agent:run 请求使用。官方称压缩会话历史可以降低 token 消耗，并帮助对话保持在模型的上下文窗口之内。该接口既支持调用方直接传入对话记录，也支持读取存储在 Cortex Agent threads 中的会话。<br><b>对数据平台的影响：</b> 智能体落地的成本瓶颈正在从模型单价转向上下文管理。把历史压缩做进平台接口，等于承认上下文裁剪是平台应当承担的工程问题，而不是每个应用自己拼装。这与数据库把向量与全文检索收进内核是同一条路：数据平台正在把智能体的运行时开销纳入自己的成本曲线，采购时的比较项也随之增加一项「上下文治理」。</div>
+</div>
+<div class="item">
+    <h3>谷歌云把 AlloyDB 列式引擎用作向量索引的内存缓存，向量检索能力正式可用</h3>
+    <div class="source">来源：<a href="https://docs.cloud.google.com/alloydb/docs/release-notes">AlloyDB 发布说明：AlloyDB Columnar Engine as a read-optimized in-memory cache for HNSW vector indexes（GA）</a></div>
+    <div class="body"><b>摘要：</b> 9 月 21 日，谷歌云宣布 AlloyDB 的列式引擎可以充当 HNSW 向量索引的读优化内存缓存，该能力正式可用（GA）。官方称这一组合可加快向量检索速度，并提升向量工作负载的每秒查询数。此前该能力在 2026 年 4 月处于预览阶段。<br><b>对数据平台的影响：</b> 向量检索的性能优化正在从独立检索系统的索引层，转移到数据库自身的缓存与列式引擎里。这与谷歌云近期把全文检索内建到同一产品线是同一路数：数据库厂商用既有内核能力承接原本属于专用检索后端的负载，企业在架构上因此少掉一层同步链路，独立向量与全文检索系统的空间被持续压缩。RAG 与数据智能体的检索层会更快退回数据所在的事务库。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】Feldera 完成 2150 万美元融资，把湖仓查询的刷新成本压到只与数据变更量成比例</h3>
+    <div class="source">来源：<a href="https://www.feldera.com/blog/announcing-our-series-a-and-seed">Feldera 博客：Announcing our Series A and Seed</a></div>
+    <div class="body"><b>核心数据：</b> 融资总额 2150 万美元，其中 A 轮 1540 万美元由 Inovia Capital 领投，Costanoa Ventures 与 Battery Ventures 参与；种子轮由 Costanoa Ventures 领投，Ion Stoica 参与。公司称客户把仓库计算账单降低 95% 以上，数据新鲜度从小时级降至秒级，单节点处理速度达每秒数百万条记录。<br><b>摘要：</b> 9 月 21 日，Feldera 宣布完成 A 轮与种子轮合计 2150 万美元融资。其引擎基于增量视图维护（IVM）与 DBSP 理论，把复杂 SQL 视图转换成增量程序，只对发生变化的数据重算，因而不必周期性重跑全量批处理。团队来自 VMware 研究部门，相关成果曾获 VLDB 2023 最佳论文。<br><b>对数据平台的影响：</b> 增量计算拆开了「新鲜度与成本只能二选一」这个长期假设。如果维护成本随变更量而不是数据量增长，实时视图就不必再依赖独立的流处理链路，湖仓能在更小的算力上保持准实时。这对以批处理次数为核心的平台定价模型构成直接压力，也让「数据有多新」成为可量化、可采购的指标。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】数巅智能宣布数亿元级多轮融资，金额为区间且多轮合并披露</h3>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L7CBE87M05198R3E.html">投资界（网易转载）：数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 数巅智能（北京数巅科技）宣布继 2025 年 6 月的 pre-A 轮之后，再完成数亿元级多轮融资，投资方包括中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本与深圳力合，君联、赛富、红鸟启航等老股东连续追加。公司产品覆盖 X-Engine 虚拟化语义引擎、行业语义层、山河元枢专家大模型与多智能体平台，官方称已服务 300 余家行业头部客户。本条按降级收录：融资以「多轮合并、数亿元级」的区间口径披露，未给出准确金额与领投方，也未见公司一手公告，事实颗粒度不足以进入资本板块主体。<br><b>需要等待什么信号确认：</b> 需要等到单轮金额、估值与领投方被明确披露，或由投资方发布正式公告。判断标准是这些资金能否转化为可复现的产品指标与客户案例，而不是只停留在股东名单上。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-22 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
