@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-23</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-23 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台把上下文与记忆收进自身，智能体成为平台的新主线</li>
+      <li>数据要素政策从确权转向行业落地，要与智能体供给对接</li>
+      <li>非结构化数据的治理成为 AI 就绪瓶颈，机构给出支出指引</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天的动作集中在两处：数据平台把上下文、语义与记忆变成自有能力，智能体的运行底座成为竞争新战场；政策与机构研判同时指向落地环节，数据要素要走向行业供给，非结构化数据要先治理才能进 AI。采购的比较维度因此多出上下文供给与多模态治理两项。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云在云栖大会发布大数据 AI 平台升级，首推 AI 原生大数据服务 ADA</h3>
+    <div class="source">来源：<a href="https://segmentfault.com/a/1190000048312513">阿里云大数据 AI 技术（官方账号）：数据·智能·进化：Agent 时代的数据与 AI 基础设施</a></div>
+    <div class="body"><b>摘要：</b> 9 月 22 日，2026 云栖大会上，阿里云副总裁、计算平台事业部负责人汪军华发布大数据 AI 平台全线升级。全新发布 AI 原生大数据服务（ADA），采用多智能体协同架构，用户在统一对话入口用自然语言即可调用离线、实时、流式分析、AI 训推与搜索等不同计算引擎；OpenLake 进一步迈向 Agentic Lake，以 DataWorks 构建跨引擎语义层并把各引擎能力开放给智能体；Flink 推出 Streaming Agent，支持全模态变更接入与流式 AI 处理，并提供按记录动态编排与长中短期记忆；Hologres 优化器通过持续反馈迭代在四个月内自主发现并完成 28 项优化，优化器性能提升 100%、湖上查询性能提升 38%，并登顶 TPC-H 3000GB 规模测试；MaxCompute AI 计算引擎统一调度 CPU、GPU、Token 三类资源并首次发布行业 Skill；人工智能平台 PAI-DLC 3.0、EMR Serverless Spark 与 StarRocks、新一代高性能存储 CPFS 同步发布。<br><b>为什么对数据平台重要：</b> 上下文工程、语义层与记忆接入被当作平台自有能力来做，而不是留给应用侧各自组装。数据平台的边界因此从「存与算」扩到「供给可信上下文并承载智能体运行」，采购时的比较项随之从存储与算力扩展到上下文供给能力与引擎对智能体的开放程度。</div>
+</div>
+<div class="item">
+    <h3>Teradata 把 Tera 升级为智能体同事，新增上下文引擎与执行编排层</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/teradata-transforms-tera-into-an-agentic-coworker-introduces-tera-context-engine-and-tera-harness-302885832.html">Teradata 新闻稿：Teradata Transforms Tera into an Agentic Coworker; Introduces Tera Context Engine and Tera Harness</a></div>
+    <div class="body"><b>摘要：</b> 9 月 22 日，Teradata 宣布把 Tera 演进为面向企业数据工作的智能体同事，新增三部分能力：Tera Context Engine 是厂商中立的上下文与编排层，用原生上下文图把元数据、血缘、语义与业务含义保留为关系而非拍平成关系表，可读写既有记录系统，并不限于 Teradata 管理的数据；Tera Harness 是把任务路由到合适技能、工具、数据与模型的执行层；Agent Skills 面向数据工程、数据分析与数据科学预置。官方基准称，在同一 Opus 5 模型下运行 SWE-bench Pro，Tera 比通用编码智能体少消耗 73% 的 token、完成任务快 42%、总成本低 58%；在 data-eng-bench 上每个可靠解决任务的成本比同类方案低 53%。<br><b>为什么对数据平台重要：</b> 与阿里云同日提出「上下文引擎 + 执行编排」两件套，说明数据平台厂商开始把智能体的上下文供给与执行编排当成自己的产品层。两家的共同选择意味着这一层正在成为可比口径：谁能稳定供给带血缘与权限的可信上下文，谁就能承接企业智能体的运行时。需要注意上述性能结论均为厂商自建基准。</div>
+</div>
+<div class="item">
+    <h3>国家数据局启动十大行业数据资源开发利用攻坚行动</h3>
+    <div class="source">来源：<a href="https://www.nda.gov.cn/sjj/swdt/mtsy/0922/20260922092042919196317_pc.html">国家数据局（转载央视新闻）：聚焦十大行业、破除数据开发利用难点 国家最新举措</a></div>
+    <div class="body"><b>摘要：</b> 9 月 22 日，国家数据局披露国家层面将推出新举措，重点在工业制造、医疗健康、金融服务、交通物流、现代农业、能源电力、文化旅游、教育、商贸流通、公共事业十大行业开展数据资源开发利用攻坚行动。官方表述包括：加快推动国家数据基础制度在地方和重点行业落地；鼓励组建行业数据创新联合体，围绕行业高价值场景推动公共数据与企业数据、社会数据融合应用；构建符合人工智能发展需求的治数用数模式，创新数据、模型、智能体一体化服务能力。首轮攻坚任务率先在安徽启动，重点围绕汽车与医疗健康两个行业。<br><b>为什么对数据平台重要：</b> 政策口径第一次把「数据、模型、智能体一体化服务能力」写进行业攻坚要求，意味着数据治理与供给要按智能体可用为标准来设计，而不只是按报表可用。以行业创新联合体与场景牵引推进，也会改变数据项目的立项与验收口径：能否把行业高价值场景的数据真正打通并交付给智能体，会成为衡量项目成效的标尺。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>谷歌云把 BigQuery 数据代理接入 Gemini Enterprise，用 Agent Registry 托管凭据</h3>
+    <div class="source">来源：<a href="https://docs.cloud.google.com/bigquery/docs/release-notes">BigQuery 发布说明（2026 年 9 月 22 日）</a></div>
+    <div class="body"><b>摘要：</b> 9 月 22 日，谷歌云在 BigQuery 发布说明中宣布：现在可以把 BigQuery 数据代理发布到 Gemini Enterprise——通过把代理注册到 Agent Registry，并使用 Google 托管凭据导入。当 BigQuery 与 Gemini Enterprise 位于同一 Google Cloud 项目、且配置了匹配的 Agent Gateway 区域时，就无需手动复制 Agent-to-Agent JSON 卡片，也无需自行配置 OAuth 客户端凭据。该能力处于 Preview 阶段。<br><b>对数据平台的影响：</b> 数据代理的注册、凭据与代理间通信被平台接管，企业把数据能力接给外部智能体时少掉一层自建鉴权与集成代码。语义与权限随之跟着注册表走，而不是每个客户端各写一份，这会让「接入成本」从项目工作量变成配置项，也让权限一致性更容易被审计。</div>
+</div>
+<div class="item">
+    <h3>AWS Glue Data Quality 上线生成式规则推荐，几秒内给出全列覆盖规则</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/about-aws/whats-new/2026/09/glue-data-quality-rule-recommendations/">AWS What's New：AWS Glue Data Quality delivers context-specific rule recommendations in seconds</a></div>
+    <div class="body"><b>摘要：</b> 9 月 22 日，AWS 宣布 Glue Data Quality 现在可以在几秒内生成数据质量规则，缩短为数据目录中的表建立质量检查所需的时间。这一能力通过规则推荐的新增 Advanced mode 交付：由生成式 AI 识别数据背后的意图，提出反映数据实际使用方式的业务相关规则，给出一套覆盖每一列、可立即使用的规则集，无需手动设置。该模式可用于新接入数据集的规则冷启动，也可用于在大规模数据湖上建立基线检查，审阅并调整后可保存为规则集立即开始监控。Advanced mode 在亚太、加拿大、欧洲与美国的指定区域可用。<br><b>对数据平台的影响：</b> 数据质量规则的起草从逐条手写变成审阅 AI 建议，治理项目的启动成本明显下降，但也把责任重心从工具能力转到审阅环节——规则对不对，取决于谁来复核。数据目录里元数据的完整度与准确度会直接决定推荐质量，这让元数据建设从配套工作变成前置条件。</div>
+</div>
+<div class="item">
+    <h3>Databricks 的 Genie One MCP 正式可用，以 Unity Gateway 托管服务对外治理</h3>
+    <div class="source">来源：<a href="https://www.databricks.com/blog/genie-one-mcp-now-generally-available">Databricks 博客：The Genie One MCP is now Generally Available</a></div>
+    <div class="body"><b>摘要：</b> 9 月 22 日，Databricks 宣布 Genie One MCP 服务器正式可用，形态是 Unity Gateway 内的托管 MCP 服务，把 Genie 作为会话工具通过模型上下文协议暴露给任意 MCP 客户端或智能体。它让外部智能体用单一接口取用 Genie One 对结构化与非结构化数据的洞察，答案以 Genie 本体为基底；每一次调用都执行 Unity Catalog 权限校验并配套细粒度策略与审计日志。此前的 Beta 端点已废弃，将于 2026 年 10 月 31 日停用。<br><b>对数据平台的影响：</b> 语义层开始通过 MCP 对外供给，而权限、审计与消费计量都落在平台侧，企业不必为每个客户端单独适配语义与权限。代价是语义治理的质量成为所有外部智能体答案一致性的共同前提：本体若维护不及时，错误会以相同的形状扩散到全部接入的客户端。</div>
+</div>
+<div class="item">
+    <h3>MetaKarta v12 发布语义中枢，把治理好的定义编译成数据库与 BI 的原生制品</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/metakarta-v12-unifies-enterprise-metadata-management-for-ai-bi-and-databases-302885192.html">PR Newswire：MetaKarta v12 Unifies Enterprise Metadata Management for AI, BI, and Databases</a></div>
+    <div class="body"><b>摘要：</b> 9 月 22 日，Meta Integration Technology 宣布 MetaKarta v12 正式可用，新增 Semantic Hub：把 Power BI、Tableau、Looker、MicroStrategy、SAP BusinessObjects、IBM Cognos 与 Oracle OBIEE 中既有的语义资产反向工程后集中治理，再编译为原生制品——Snowflake 语义视图、Databricks 指标视图、Oracle 分析视图、Power BI 语义模型、Tableau 逻辑模型与 LookML。同一套权威定义同时以编译上下文的形式供给 AI 智能体，且编译产物在查询执行前就已就位，厂商自有执行引擎不进入查询路径。产品提供 400 余个连接器与基于解析器的列级血缘。<br><b>对数据平台的影响：</b> 语义不再是某一家的私有资产，而是可迁移、迁移后仍然生效的制品，这直接削弱了「用语义层锁定客户」的旧逻辑，也把治理项目的产出物从文档变成可部署的编译产物。对买方而言，语义定义的归属与可携带性因此成为可以写进合同的条款。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>Gartner：非结构化数据是 AI 就绪缺失的一环，多模态数据管理 2027 年将占数据管理支出四成</h3>
+    <div class="source">来源：<a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-22-gartner-data-and-analytics-summit-2026-india-day-2-highlights">Gartner 新闻稿：Gartner Data & Analytics Summit 2026 India: Day 2 Highlights</a></div>
+    <div class="body"><b>核心观点：</b> 9 月 22 日，Gartner 在孟买数据与分析峰会第二天给出多项判断：到 2027 年，面向多模态数据管理的 IT 支出将占数据管理技术与服务总支出的 40%；2025 至 2029 年，用于 AI 数据就绪的支出份额将增长七倍；到 2028 年，试图自行搭建非结构化元数据方案的相关负责人，其成本将比直接使用既有文档与记录解决方案高出 300% 以上。分析师同时指出，几乎所有生成式 AI 与智能体场景都需要从非结构化数据中抽取实体、做向量嵌入与语义增强，再与结构化数据管道编排在一起，因此建议把结构化与非结构化数据的治理实践合并，并持续评估数据策略与 AI 策略是否对齐。<br><b>映射到数据平台的判断：</b> 把非结构化治理的支出占比给到具体数字，等于承认数据湖与目录的下一轮投入重心在文档、音视频等非结构化资产的元数据与权限，而不是继续加码结构化仓库。自建方案成本高出三倍以上这一条，会直接影响企业是采购目录能力还是内部自研的判断，也把「AI 就绪」从一次性数据清洗变成持续运营的治理能力。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【收购兼并】Progress 以 4 亿美元完成收购 Domo 的 AI 与数据平台业务</h3>
+    <div class="source">来源：<a href="https://investors.progress.com/node/28971">Progress Software 投资者关系新闻稿：Progress Software Completes Acquisition of Domo's AI and Data Platform Business</a></div>
+    <div class="body"><b>核心数据：</b> 交易对价为 4 亿美元现金，以自有现金与既有循环信贷额度支付，资产购买协议签署于 2026 年 7 月 22 日。被收购业务带来 2,400 余家企业客户，以及包括头部云数据仓库厂商在内的全球战略伙伴关系。出售方保留净经营亏损结转，公司更名为 Huckleberry.ai，自 9 月 24 日起在纳斯达克以 HUCK 交易，交割后账上现金约 2.21 亿美元、保留净经营亏损结转逾 9 亿美元。<br><b>摘要：</b> 9 月 22 日，Progress Software 宣布完成对 Domo 的 AI 与数据平台业务几乎全部资产及员工的收购，并承担部分负债。被收购资产包括云原生的商业智能、数据可视化、报表、数据集成与分析、嵌入式与分布式分析、工作流与流程自动化、AI 数据产品与智能体，以及数据治理与管理能力，将并入 Progress 既有数据平台产品线。Progress 首席执行官把这次收购的理由表述为「上下文与控制」——企业缺的不再是 AI 技术本身，而是建立在可信数据之上的上下文，以及治理、安全与监督构成的控制。交易为资产购买而非公司合并，Domo 上市主体保留亏损结转等资产单独存续。<br><b>对数据平台的影响：</b> 独立 BI 与分析厂商的资产正在被基础设施软件商吸收，买方逻辑是补齐智能体运行所必需的治理与上下文层。对客户而言，可选供应商数量在减少，迁移与锁定风险的评估窗口同步收窄，续约时的议价空间也会被重新定价。</div>
+</div>
+<div class="item">
+    <h3>【投融资】Snorkel AI 完成 3.5 亿美元 E 轮，估值 35 亿美元</h3>
+    <div class="source">来源：<a href="https://snorkel.ai/blog/data-2-0-and-the-research-era-of-ai-data">Snorkel AI 博客（联合创始人兼 CEO Alex Ratner）：Data 2.0 and the research era of AI data</a></div>
+    <div class="body"><b>核心数据：</b> E 轮融资 3.5 亿美元，估值 35 亿美元，由 Insight 与 S32 联合领投。公司称其数据即服务业务自 2025 年 9 月上线以来增长超过 18 倍，在公告当周年化收入运行率突破 3.75 亿美元。上一轮为 2025 年 5 月的 1 亿美元 D 轮，当时估值 13 亿美元。公司称目前为前沿实验室、超大规模云厂商、企业与美国联邦机构提供数据与环境。<br><b>摘要：</b> 9 月 22 日，Snorkel AI 宣布完成 E 轮融资。公司把其数据开发平台描述为「智能体数据工厂」：由领域专家设计场景、任务与评分标准，再由专用模型与智能体扩展环境、把人力的投入引导到目标分布与模型错误模式上，并承担实时反馈与提交后质量核验。公司称在代码数据场景中，专用智能体与专家联合质检使质检效率提升 50% 以上、审阅准确率相比仅使用通用模型的基线提高 15 个百分点以上，并将这套人类反馈作为弱监督反哺智能体本身。多模态与评测环境是其后续投入方向。<br><b>对数据平台的影响：</b> 数据供给正在变成一条以智能体为生产工具的流水线，训练与评测数据的生产环节被工业化。这会把数据工程的工具链预期整体抬高：企业不只关心数据存得下，还关心能否批量生产、核验与追溯训练和评测数据。厂商自报的效率提升数字需要在自有负载上复核后再引用。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】Snowflake 的智能体可观测能力即将进入私有预览</h3>
+    <div class="source">来源：<a href="https://www.snowflake.com/en/blog/ai-agent-observability-monitor-debug-optimize-llm-applications/">Snowflake 博客：Improve AI Performance, Quality and Cost with Agent Observability</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 9 月 22 日，Snowflake 介绍即将进入私有预览的 Agent Observability。它可选用兼容 OpenTelemetry 的 SDK 采集提示、补全、检索结果、工具调用、token 用量与会话标识，在 Agent Explorer 中跨 trace、会话与对话检索，并对生产流量运行在线「大模型作为裁判」的评测，把幻觉、护栏失效与低质量回答暴露出来。存储侧强调两个开放标准：通过 OTLP 端点原生采集，并支持把遥测放在 Iceberg 表上、由兼容引擎通过开放 REST 目录访问，底层是分离存储与计算的遥测湖仓基础。官方把 10 月 22 日设为发布活动。<br><b>需要等待什么信号确认：</b> 需要等私有预览与正式可用之后真实的留存成本与查询性能数据，尤其是长链路 trace 的保留成本是否确实低于采样方案——这是它与既有可观测产品拉开差距的关键论据。同时要看 Iceberg 上承载遥测的做法能否被其他引擎稳定复用，而不是只在自家产品内成立。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】SereneDB 开源 Krummelanke，把全文与向量检索做进湖上数据</h3>
+    <div class="source">来源：<a href="https://www.accessnewswire.com/newsroom/en/business-and-professional-services/serenedb-launches-krummelanke-the-fastest-search-and-analytical-1224680">ACCESS Newswire（SereneDB 发布稿）：SereneDB Launches Krummelanke</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 9 月 22 日，柏林初创公司 SereneDB 发布首个可用于生产的版本 Krummelanke，以 Apache 2.0 开源，兼容 PostgreSQL 与 Elastic 的既有接口，把全文与向量检索和分析计算放进同一引擎与同一查询计划，直接在对象存储上的 Parquet 与 Iceberg 表上建索引而不复制数据，并在数据层对智能体做角色与权限控制。公司称其检索内核自 2014 年起持续开发，并同步公开可复现的对比基准与配置。创始人团队此前长期从事搜索技术，公司已于 2025 年 12 月完成 210 万美元 pre-seed 轮。<br><b>需要等待什么信号确认：</b> 目前性能结论来自厂商自建的公开基准，需要第三方复现与生产环境验证后再引用；多节点计算与存储分离仍在公开路线图上，规模化能力与故障域扩展尚待确认。判断的抓手是看它能否被真正的湖仓用户当作检索层接入，而不只停留在设计伙伴名单上。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-23 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
