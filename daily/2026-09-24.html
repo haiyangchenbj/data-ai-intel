@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-24</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-24 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>云与 AI 基建转向区域化与主权化，本地算力成为竞争焦点</li>
+      <li>数据平台把智能体当核心组件内嵌，治理与审计成为前置条件</li>
+      <li>增量计算与语义检索持续下沉到引擎层，减少对独立组件的依赖</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天两条线并行：云厂商把 AI 基建当国家级项目投，区域与主权成为采购硬约束；数据平台把智能体、语义层与治理内建为平台组件。前者决定数据平台的落点，后者决定它能否被智能体信任。稀缺的不再是模型，而是可审计的执行与可信的上下文。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云在云栖大会宣布新一轮全球基础设施扩建，并把国际 AI 产品组合推向 Agent-Native 云</h3>
+    <div class="source">来源：<a href="https://www.alibabacloud.com/blog/alibaba-cloud-expands-global-infrastructure-and-ai-portfolio-to-accelerate-enterprise-ai-adoption_603594">Alibaba Cloud（官方博客）：Alibaba Cloud Expands Global Infrastructure and AI Portfolio to Accelerate Enterprise AI Adoption</a></div>
+    <div class="body"><b>摘要：</b> 9 月 23 日，阿里云在 2026 云栖大会上宣布，未来 12 个月将在土耳其、芬兰、荷兰首次设立云计算地域节点，并扩建马来西亚、德国、阿联酋、法国和中国香港的数据中心，全球现有 31 个地域、107 个可用区。阿里云智能首席技术官、国际业务总裁李飞飞表示，公司已从 AI 原生基础设施走向 Agent-Native 云架构。同日发布三项面向国际市场的 AI 产品：Smart Studio 让企业以自有品牌搭建模型即服务平台，官方称同硬件下吞吐比标准开源框架高 505%；Smart Fusion 以统一标准 API 编排多模型，官方称可降低约 50% 的 Token 支出；Smart Video 面向短剧与广告，支持最长一小时视频与 20 多种语言。<br><b>为什么对数据平台重要：</b> 数据平台的可售范围跟着区域走，欧洲与中东新增节点直接改写跨国企业在数据驻留与合规上的可选集合；而多模型编排层若成为采购标准件，数据平台在 Agent 负载中的成本结构与议价位置也会被重新定义——上下文与推理的账单将从模型侧转移到编排侧，平台必须能说清自己省下的那部分。</div>
+</div>
+<div class="item">
+    <h3>微软发布中东框架：2030 年前投入超 100 亿美元云与 AI 基建，把数字韧性列为核心支柱</h3>
+    <div class="source">来源：<a href="https://blogs.microsoft.com/on-the-issues/2026/09/23/microsoft-strengthens-its-commitment-to-the-middle-east-by-investing-in-technology-digital-resilience-and-people/">Microsoft On the Issues（官方博客）：Microsoft strengthens its commitment to the Middle East by investing in technology, digital resilience, and people</a></div>
+    <div class="body"><b>摘要：</b> 9 月 23 日，微软发布覆盖科威特、卡塔尔、沙特阿拉伯和阿联酋的中东框架，计划到 2030 年在当地投入超过 100 亿美元的资本与运营支出，用于扩大云和 AI 基础设施容量并交付长期基础设施承诺；另计划投入超过 4 亿美元建设海底与陆地网络连接，扩大区域数据流量承载。框架把数字韧性列为核心支柱，向上述四国符合条件者开放数据保护主权与业务连续性承诺，并配套主权公有云、主权私有云与相关防护能力；同时深化与 HUMAIN、G42、QAI 及科威特政府的合作，延续到 2030 年培训超过 420 万人。微软表示，地区冲突强化了数字韧性与数字主权之间的关联。<br><b>为什么对数据平台重要：</b> 主权云与业务连续性承诺一旦成为区域采购的准入条件，数据平台的可用区选择、备份与恢复能力、以及跨境数据流设计都要按主权承诺重写；海底与陆地连接的投资方向也决定了未来这些区域的跨域数据搬运成本。数据基建的竞争正在从「有没有机房」转向「能不能给出可核验的韧性与主权条款」。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>OceanBase 发布通信 AI 一体化数据解决方案，把 AI 计算下沉到数据库层</h3>
+    <div class="source">来源：<a href="https://xie.infoq.cn/article/9d7c4aa9d6db2a1065877eda4">InfoQ 写作社区（OceanBase 数据库官方账号）：传统数据库 VS AI 数据平台：通信核心系统架构演进的 4 个维度</a></div>
+    <div class="body"><b>摘要：</b> 在 2026 中国国际信息通信展览会（9 月 22—24 日，北京）上，OceanBase 披露已覆盖中国移动、中国联通、中国电信三大运营商近 4000 个核心节点，年稳定服务超过 10 亿移动端用户，并正式发布通信 AI 一体化数据解决方案。方案以湖库一体引擎为基础，把用户账单、网络指标、位置信令等结构化数据与客服录音、故障图片、网优视频、巡检日志等非结构化数据纳入同一引擎存储、检索、计算与治理；进一步把 AI 混合搜索与 AI 算子下沉到数据库层，使 OLTP、OLAP 与 AI 计算在同一引擎协同处理，减少跨系统流转。方案同时引入数据上下文（数据语义与治理）与应用上下文（RAG、Memory），并称可支撑通信行业三大方向下的六大生产级 AI 场景。<br><b>对数据平台的影响：</b> 非结构化数据与结构化数据同引擎、AI 算子与事务处理同引擎，指向的是「数据不动、计算动」的架构选择：省掉的不只是搬运成本，还有跨系统权限与血缘的对齐成本。对同时跑核心业务与 AI 场景的行业客户而言，数据库与数据平台的边界会因此变得模糊，选型时的比较项会从「哪套引擎更快」转向「能不能在一个引擎里同时满足事务一致性与 AI 特征计算」。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 动态表增量刷新开始支持非确定性聚合函数</h3>
+    <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-09-23-nondeterministic-agg-incremental-dynamic-tables">Snowflake 发布说明（2026 年 9 月 23 日）：Non-deterministic aggregate functions are supported with dynamic table incremental refresh（正式可用）</a></div>
+    <div class="body"><b>摘要：</b> 9 月 23 日，Snowflake 发布说明称，APPROX_COUNT_DISTINCT、APPROX_PERCENTILE、APPROX_TOP_K 等非确定性聚合函数现已支持动态表增量刷新，可用于 INCREMENTAL、AUTO 与 ADAPTIVE 三种刷新模式。增量刷新下这些函数仅支持出现在 SELECT 子句，可作为 GROUP BY 聚合或窗口函数使用，ANY_VALUE 仍不支持；函数返回近似值而非精确结果。<br><b>对数据平台的影响：</b> 去重计数、分位数这类近似聚合此前是把全量刷新当作代价来接受的，现在可以按增量维护，意味着大规模指标类动态表的刷新成本与延迟结构都会变化。代价是精确性被显式让渡了一部分，治理侧需要把「哪些下游指标允许近似」写进数据契约，否则近似值会沿着血缘一路传导到对账环节。</div>
+</div>
+<div class="item">
+    <h3>Aiven 的 Runtime 与 DataHub 正式可用，把智能体的运行位置与数据地图一起交付</h3>
+    <div class="source">来源：<a href="https://aiven.io/press/aiven-launches-runtime-and-datahub-enabling-ai-agents">Aiven（官方新闻稿）：Aiven launches Runtime and DataHub enabling AI agents to securely work with live production data</a></div>
+    <div class="body"><b>摘要：</b> 9 月 23 日，Aiven 宣布 Runtime 与 DataHub 正式可用。Runtime 让应用与 AI 智能体在客户既有环境内、紧邻数据运行，数据无需离开自身边界；任何可放进容器的应用或智能体都能运行，适用于在实时生产数据上作业的智能体、告警与监控服务、内部工具与在数据源头执行的任务，目前已在 AWS 与 Google Cloud 提供，Azure 随后。DataHub 基于开源 DataHub 全托管，提供不限用户数、无按席位许可的目录服务，带 99.9% 可用性承诺与超过 100 个连接器，可接入 BigQuery、Snowflake、dbt、MongoDB 等；官方称压力测试下约 100 个智能体与用户并发查询时实体查找保持在 100 毫秒以内。<br><b>对数据平台的影响：</b> 把智能体的执行位置放到数据旁、再把可信上下文集中到目录里，是对「数据不出域」与「智能体可用」这对矛盾的直接回答：算力可以搬，治理边界不搬。不限用户数的目录定价也针对目录类项目最常见的失败模式——席位预算与采用率互相挤压。对买方而言，这两件事拆开看都不新，但一起交付意味着上下文供给与执行位置可以按同一套治理口径审计。</div>
+</div>
+<div class="item">
+    <h3>Apache Doris 修复前端元数据服务认证绕过与 JDBC 远程代码执行两个漏洞</h3>
+    <div class="source">来源：<a href="https://www.openwall.com/lists/oss-security/2026/09/23/10">oss-security 邮件列表（Apache 安全公告）：CVE-2026-31377: Apache Doris: Improper Authentication Allows Unauthorized Access to FE Meta Service</a></div>
+    <div class="body"><b>摘要：</b> 9 月 23 日，Apache Doris 披露两个漏洞。CVE-2026-31377 为认证不当（CWE-287）：前端元数据服务的若干端点依赖客户端提供的节点信息做认证，未对请求方做充分认证，在特定网络配置下未认证的远程攻击者可绕过访问控制、读取内部元数据接口，可能暴露集群敏感信息，CVSS 3.1 评分 7.5；受影响版本为 2.0.0 至 4.0.8 之前、以及 4.1.0 至 4.1.4 之前，1.2.x 及更早不受影响。CVE-2026-96443 为 JDBC 驱动地址校验不足，特权用户可在前端节点上实现远程代码执行，影响范围为 2.0.5 至 4.1.3。官方建议升级到 4.0.8 或 4.1.4。<br><b>对数据平台的影响：</b> 元数据服务是集群的权限中枢，未认证可读意味着拓扑、库表与外部目录目标都可能被枚举，风险不在数据被直接改写，而在后续的定向横向移动。这类漏洞的处置顺序也与常规补丁相反：先把前端 HTTP 与元数据端口收敛到可信网络，再按发行版节奏打补丁；对把 OLAP 控制面与数据面混部在同一网络段的部署，这是一次必须复核的网络架构检查。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>谷歌云数据云负责人 Andi Gutmans：真正的开放不是多云部署，而是开放格式与单一入口</h3>
+    <div class="source">来源：<a href="https://enterpriseit.news/google-cloud-bets-on-borderless-data-and-a-smarter-way-to-contextualise-for-the-ai-era">Enterprise IT News：Google Cloud bets on "borderless" data and a smarter way to contextualise for the AI era</a></div>
+    <div class="body"><b>核心观点：</b> 谷歌云数据云总经理 Andi Gutmans 在 9 月 23 日刊出的访谈中提出「无边界湖仓」与「知识目录」两条主线。他认为多数厂商自称开放只是因为能在多云上运行，「那不代表开放」，真正的开放要以 Apache Iceberg 等开放表格式打破 Snowflake、Databricks、AWS、Azure 之间的墙，并配合低成本的跨云互联消除出网费用，同时把湖仓的边界扩展到 Oracle、SQL Server、Postgres 等运营系统与本地环境。知识目录是上下文供给的核心：用智能体持续富化、分类与关联元数据，形成元数据反馈闭环，再由检索层决定「取哪一段上下文」——他称这是谷歌搜索能力带来的差异，目标是「用最少的上下文拿到最好的结果」，从而降低 Token 消耗与不必要的工具调用。<br><b>映射到数据平台的判断：</b> 上下文供给被明确当成一项成本工程来做：衡量的不是能接多少元数据，而是每单位预测质量需要多少上下文与多少次工具调用。若这一口径被客户接受，数据平台的比较维度会从存储与算力延伸到「上下文效率」，而开放格式与零出网成本则是把客户从既有厂商引擎上解耦的前置条件。需要注意的是，这是厂商高管的单方判断，其「最开放」的自我定位尚无第三方评估佐证。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】面向智能体工作负载的数据平台 Silk 完成 4500 万美元增长资本融资</h3>
+    <div class="source">来源：<a href="https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/silk-closes-45-million-growth-capital-facility-to-scale-the-data-1225570">ACCESS Newswire（官方新闻稿）：Silk Closes $45 Million Growth Capital Facility to Scale the Data Layer for Agentic AI</a></div>
+    <div class="body"><b>核心数据：</b> 融资金额 4500 万美元（增长资本）；由 Avenue Capital Group 领投，红杉资本、S Capital VC、Vintage Investment Partners、Ibex Investors、West Coast Equity Partners 等新老投资方参与。公司自述其平台在客户生产部署中可实现最高 10 倍性能提升与最高 69% 的云成本下降（厂商口径，均为「最高可达」）。<br><b>摘要：</b> 9 月 23 日，Silk 宣布完成 4500 万美元增长资本融资。资金用于扩大数据平台的工程投入、扩展对新型云、主权云与推理云服务商的覆盖，并加深在 AWS、Azure 与 Google Cloud 上的企业落地。公司把融资动因归结为需求从以训练为中心的基础设施转向智能体驱动的生产负载，并援引第三方数据称每日 AI 智能体请求量同比增长超过 1700%，认为智能体的突发式访问模式会让通用云数据基础设施出现不可预测的延迟与成本失稳。<br><b>对数据平台的影响：</b> 智能体带来的负载特征（高并发、突发、读写交织）正在被资金单独立项，这说明「为 Agent 重做数据层」已经具备可融资的品类叙事，而不只是既有平台的附加功能。对买方而言，需要区分的是叙事与产能：融资公告里的性能与成本数字均为厂商自述口径，真正的验证要落在是否能在自有负载上复现。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】腾讯云 DataBuddy 正式发布：智能体原生 Data + AI 工作台</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/tencent-cloud-launches-tencent-cloud-databuddy-an-agent-native-data--ai-workbench-302885865.html">PR Newswire（腾讯云官方新闻稿）：Tencent Cloud Launches Tencent Cloud DataBuddy, an Agent-Native Data + AI Workbench</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 腾讯云正式发布 DataBuddy，是继 CodeBuddy 与 WorkBuddy 之后的第三款助手级产品，定位全托管的智能体原生 Data + AI 工作台。平台把智能体作为核心组件嵌入，使其理解业务逻辑、执行运维任务并在有治理、有审计、有数据管控的框架内运行，开放数据工程、数据治理、数据分析、数据科学四类场景；三层底座为业务语义层 Unity Semantics（官方称分析准确率 95.9%，普通自然语言转 SQL 为 83.5%）、Agent Runtime 与统一 DataOps、MLOps、AIOps 的 OneOps，官方口径为数据团队效率提升 5 至 10 倍、模型部署周期由 30 天压缩到 7 天。目前已在中国、泰国、韩国、印尼上线，欧洲、北美与南美在推进中。该新闻稿原始发布日期为 9 月 22 日，超出本期 24 小时时效窗口，按 T-1 回看机制补录并降级收录。[补录 09-22]<br><b>需要等待什么信号确认：</b> 语义层 95.9% 的准确率是否有第三方基准或客户侧复现；四类智能体场景中数据治理与数据科学两类在真实企业里的落地比例；以及「接入既有 OLAP 引擎、数据不出域」这一路径在实际采购中的占比——它决定了这个平台究竟是被当作替代品还是增量层。</div>
+</div>
+<div class="item">
+    <h3>【预告】Apache Doris 5.0 多模湖仓：湖表 Variant 半结构化数据读写进入预告第五篇</h3>
+    <div class="source">来源：<a href="https://cloud.tencent.com/developer/article/2750101">腾讯云开发者社区（SelectDB 技术团队）：Apache Doris 高性能 Open Lake Variant 读写技术解析（含对比数据）</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 这是 Doris 5.0 多模湖仓预告系列的第五篇，主题是 Iceberg、Paimon 湖表中 Variant 半结构化数据的读写。官方介绍从 4.2 起即可直接查询湖表半结构化数据，支持按嵌套字段过滤、聚合、关联并写回湖表，本轮测试称相比 Spark 冷跑综合加速 15.10 倍、热跑 19.14 倍，拆列场景热跑综合加速达 58.64 倍，部分 Paimon 测试超过 106 倍。这些均为厂商自测口径。<br><b>需要等待什么信号确认：</b> Doris 5.0 正式发布与发行说明确认 Variant 读写进入稳定版本，以及第三方在真实湖表规模上复现加速比；在此之前，加速数据只能视为方向指引而非选型依据。</div>
+</div>
+<div class="item">
+    <h3>【降级】Apache Iceberg 1.12.0 与 Polaris 1.8.0 因许可问题推迟发版，Parquet 提案推进</h3>
+    <div class="source">来源：<a href="https://dev.to/alexmercedcoder/apache-data-lakehouse-weekly-september-15-to-23-2026-41mi">Apache Data Lakehouse Weekly（社区周报，覆盖 2026 年 9 月 15—23 日）</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 该周报覆盖区间为 9 月 15 日至 23 日，单项发布日期跨越本期窗口，按降级收录。核心信息是发版流程而非功能：Iceberg 1.12.0 在首轮候选投票后被审阅者发现站点打包资源缺少许可声明，进入第二个候选版本；Polaris 1.8.0 因 NOTICE 缺项与文件头错误两次投票失败，目录迁移工具进入第四个候选版本。设计层同步推进：Parquet 的模块化 Footer 与向量类型进入评审，Iceberg 物化视图规范接近投票，DataFusion 接管 Iceberg 的 Rust 集成，Apache Ossie 推进首个源码版本并提出可供目录实现的 REST API。<br><b>需要等待什么信号确认：</b> Iceberg 1.12.0 与 Polaris 1.8.0 正式发版及其发行说明；Parquet 向量类型与模块化 Footer 是否进入正式提案与发布计划。版本发布时间直接决定下游引擎与目录的兼容矩阵，值得在选型窗口前盯住。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-24 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
