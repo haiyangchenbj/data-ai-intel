@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-09-25</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-09-25 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>业务人员熟悉的界面正在成为数据平台争夺的新入口</li>
+      <li>智能体负载倒逼数据库与湖仓重写隔离与计费方式</li>
+      <li>上下文与记忆从会话临时态转为可治理的长期资产</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天的共同动作是把智能体从能调用数据推进到被平台信任：入口下沉到业务界面，执行层为突发并发做隔离，上下文进入治理与计费范围。数据平台的竞争点正从引擎速度转向能否同时满足隔离、审计与成本可控。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 收购电子表格初创 Row Zero，把电子表格改成受治理的分析入口</h3>
+    <div class="source">来源：<a href="https://www.databricks.com/company/newsroom/press-releases/databricks-acquires-row-zero-bringing-live-governed-spreadsheets">Databricks 官方新闻稿：Databricks Acquires Row Zero, Bringing Live, Governed Spreadsheets to Genie</a></div>
+    <div class="body"><b>摘要：</b> 9 月 24 日，Databricks 宣布收购云端电子表格初创 Row Zero，交易金额未披露。Row Zero 由前 AWS 与 Tableau 工程师创立，2025 年 5 月完成 1000 万美元融资，可承载超过 100 万行实时数据；收购后其表格界面将接入智能体同事 Genie，并运行在 Genie Ontology、Unity Catalog 与 Unity Gateway 之上，用户权限、数据刷新、导出限制与操作审计随数据一并生效。公司联合创始人 Patrick Wendell 称，随着财务、运营与销售团队采用 Genie，无缝的表格体验是必需项；官方新闻稿把要解决的问题指向企业内规模最大的未治理数据管道——被导出到各处的散落表格。<br><b>为什么对数据平台重要：</b> 这次收购把数据平台的入口从 SQL 编辑器与 BI 看板挪到业务人员每天在用的表格，代价是治理与审计必须跟着界面一起下沉：只要有人在表格里写公式、跑模型、让智能体代劳，血缘、权限与审计就得在表格这一层成立。对平台厂商而言，竞争点从「谁的查询更快」转向「谁能把最不守规矩的分析方式关进治理边界」；对买方而言，评估重点在于表格里的写入能否回落到受管表、智能体在表格中的每一步是否留痕。</div>
+</div>
+<div class="item">
+    <h3>谷歌云为智能体重构运维数据库：AlloyDB 秒级开出沙箱实例并可按需归零</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/blog/products/databases/announcing-postgresql-for-agents-in-alloydb">Google Cloud 官方博客：Announcing PostgreSQL for agents in AlloyDB</a></div>
+    <div class="body"><b>摘要：</b> 9 月 24 日，谷歌云宣布 AlloyDB 提供面向智能体的 PostgreSQL 能力（预览）。做法是在数秒内按需开出沙箱化数据库实例，这些实例与主库、备库和只读副本完全隔离，共享 Colossus 存储层并读取生产数据的实时副本，官方称可实现亚毫秒 I/O 与每秒超过 300 万次查询；智能体任务结束后实例自动缩容到零，按实际用量计费。实例使用完整的 AlloyDB PostgreSQL 引擎，可同时跑分析、向量、全文与空间检索，并可直接联邦查询 BigQuery 与 Spark 上的湖仓数据，无需额外 ETL。Manhattan Associates 首席技术官称，可在不影响核心交易处理的前提下支撑多智能体同时协作。<br><b>为什么对数据平台重要：</b> 智能体带来的不是稳定的读负载，而是突发、高并发、不可预测的查询洪峰。谷歌云给出的答案是给智能体开出用完即弃的隔离副本，而不是让它与生产共用读副本——这会改写数据平台的容量规划方式：从按峰值预留容量转向按推理循环计费，也把「隔离」从安全要求变成架构与成本要求。对运维数据库与数据平台而言是同一个问题：智能体的访问是否与生产负载在物理上分开，账单能否按任务归集。</div>
+</div>
+<div class="item">
+    <h3>Starburst Enterprise 482-e LTS：Iceberg 物化视图改为增量刷新，同时移除多项遗留组件</h3>
+    <div class="source">来源：<a href="https://www.starburst.io/blog/starburst-enterprise-delivers-incremental-iceberg-materialized-views-query-speed-improvements-and-enhanced-ai-intelligence/">Starburst 官方博客：Starburst Enterprise Delivers Incremental Iceberg Materialized Views, Query Speed improvements and Enhanced AI Intelligence</a></div>
+    <div class="body"><b>摘要：</b> 9 月 24 日，Starburst 发布 Starburst Enterprise 482-e LTS。核心变化包括：Iceberg 物化视图支持计划化的仅追加增量刷新（公开预览），此前刷新需对历史数据全量重算；Starburst Metastore 支持开放 Iceberg REST Catalog 规范并内置托管凭据（公开预览）；查询速度在内部基准下提升 10%；大查询可超出可用内存以避免 OOM（公开预览）；PyStarburst 支持 Arrow 协议，取数最快提升 7 倍；AIDA 增加 Token 消耗监控页与外部 MCP 服务器 OAuth 扩展。该版本同时移除打包的 Hive Metastore 镜像、旧版云存储文件系统、snowflake_jdbc 连接器与 Alluxio 支持，并反转 CHAR 与 VARCHAR 的隐式转换行为，升级前须按文档完成迁移。<br><b>为什么对数据平台重要：</b> 增量刷新把物化视图从「全量重算的代价」变成可持续维护的预计算产物，这是把遗留 Hive 管线上移到 Iceberg 的关键前置条件之一。同一版本集中移除四类遗留组件并反转类型转换语义，说明开放湖仓的迁移窗口正在关闭：继续使用打包元数据服务、旧对象存储配置或密码认证的集群，会在下一个 LTS 前后集中承压。升级清单本身构成选型信号，历史包袱越少的平台，下一个版本的迁移成本越低。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake 同日两项正式可用：流式写入支持分区托管 Iceberg 表，动态表增量刷新支持 VALUES 子句</h3>
+    <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-partitioned-iceberg-ga">Snowflake 发布说明（2026 年 9 月 24 日）：Snowpipe Streaming: Partitioned Apache Iceberg tables（正式可用）</a></div>
+    <div class="body"><b>摘要：</b> 9 月 24 日，Snowflake 发布两项正式可用更新。其一，Snowpipe Streaming 支持向分区化的 Snowflake 托管 Iceberg 表写入，覆盖 Iceberg v2 与 v3，写入使用表当前的分区规范，弹性通道与命名通道均支持，但不含 Snowpipe Streaming Classic 与外部管理的 Iceberg 表。其二，VALUES 子句可用于动态表增量刷新，适用于 INCREMENTAL、AUTO 与 ADAPTIVE 三种模式，典型场景是把常量集当作小型查找表在 FROM 子句中与基表关联。<br><b>对数据平台的影响：</b> 托管 Iceberg 表的写入路径补齐分区能力后，流式入库不必再在「分区带来的性能」与「格式的开放性」之间二选一，这会实际影响实时链路的落地形态：既要低延迟写入，又要让外部引擎读到同一份数据。增量刷新支持常量查找表则是在细节上降低刷新成本——常量集不再触发全量重算。两项都属能力补课型更新，补的正是把流式与开放湖表拼在一起时最常被卡住的位置。</div>
+</div>
+<div class="item">
+    <h3>PhoenixAI 成为 Cloudera 基础数据库伙伴，实时数据库进入其私有云与主权云市场</h3>
+    <div class="source">来源：<a href="https://www.morningstar.com/news/pr-newswire/20260924ph55717/phoenixai-joins-cloudera-as-a-foundational-database-partner">PR Newswire（官方新闻稿，经 Morningstar 发布）：PhoenixAI Joins Cloudera as a Foundational Database Partner</a></div>
+    <div class="body"><b>摘要：</b> 9 月 24 日，PhoenixAI（原 CelerData，StarRocks 开源项目创建团队）宣布与 Cloudera 达成战略合作，成为其混合数据与 AI 平台及 Cloudera Anywhere Cloud Marketplace 的基础数据库伙伴。客户可在 Cloudera 的私有云与主权云环境中直接部署 PhoenixAI 数据库引擎，官方称可对实时流数据与湖仓格式数据提供亚秒级 SQL 查询，就地查询而无需反规范化、预聚合或额外 ETL，并支持细粒度角色权限与按查询审计。双方将在 Cloudera EVOLVE26（10 月 27 日，纽约）现场演示。<br><b>对数据平台的影响：</b> 这项合作把两件事绑在一起：实时查询引擎进入以自托管与主权部署为卖点的数据平台市场，并以「数据留在客户环境」为默认前提。对买方而言，实时分析引擎的可选集合从公有云托管服务扩展到私有化与主权场景，评估维度也随之改变——不只看查询延迟，还要看它能否在客户自有集群里满足权限、审计与数据驻留要求。</div>
+</div>
+<div class="item">
+    <h3>谷歌云在巴西峰会上补齐智能体治理件：项目空间、技能注册表与智能体沙箱</h3>
+    <div class="source">来源：<a href="https://www.googlecloudpresscorner.com/2026-09-24-Google-Cloud-Expands-in-Brazil-to-Power-the-Next-Generation-of-Agentic-AI">Google Cloud 官方新闻稿：Google Cloud Expands in Brazil to Power the Next Generation of Agentic AI</a></div>
+    <div class="body"><b>摘要：</b> 9 月 24 日，谷歌云在巴西峰会宣布 Gemini Enterprise 与 Data Cloud 的多项新能力：Projects 为员工或团队提供持久化的文件与上下文空间，保留共享的组织记忆与运行状态；Skills Registry 集中治理技能，规定哪些技能可被某个智能体、个人或团队使用；Agent Sandbox 提供隔离环境，供智能体编译执行代码、使用命令行乃至浏览器。同日确认巴西技术基础设施到 2030 年翻倍，自 10 月 15 日起 Gemini Enterprise 在巴西支持本土数据处理与灾备；São Paulo 区域上线搭载 NVIDIA RTX PRO 6000 Blackwell 的 G4 实例，并扩大本地前置工程师团队。<br><b>对数据平台的影响：</b> 持久化项目空间、技能注册表与隔离沙箱，本质上是把智能体的上下文、权限与执行环境当作平台资产来管，这与数据平台正在做的元数据、权限与运行隔离是同一件事的两个入口。若企业把技能注册表当作智能体能力的准入清单，数据侧必须回答：每一份被技能读取的数据是否都在同一套权限与审计口径下，沙箱里的执行结果能否追溯到受管表。区域侧动作则提醒数据驻留仍是采购硬约束。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】阿里云提出 Context Engine：上下文被定义为需要统一治理的新型数据资产</h3>
+    <div class="source">来源：<a href="https://hainan.ifeng.com/c/8wfxR8S9AC7">凤凰网海南：阿里云提出 Context Engine，让企业全域数据成为 Agent 的实时上下文</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 在 2026 云栖大会（9 月 22—24 日，杭州）技术主论坛上，阿里云 CTO 李飞飞提出围绕模型、执行框架与上下文三个维度加持智能体落地，并称让智能体持续理解企业知识、业务状态与执行反馈，是决定能力上限也最难标准化的一环；Context Engine 的目标是把企业全域数据转化为实时上下文，让智能体从「知道什么」走向「此刻应该做什么」。同场推出的配套产品包括面向企业的实时上下文与记忆数据服务 Agent Context，以及以「一份数据、多种引擎、统一治理」为架构的 ApsaraLakebase；官方披露的参考案例包括小红书以共享上下文支撑数千名员工智能体协同。该议题的具体发生日无法从公开报道确证（大会会期跨本期窗口），报道日为 9 月 24 日，故降级收录；产品能力与效率数字均为厂商口径。<br><b>需要等待什么信号确认：</b> 上下文与记忆作为数据资产能否形成可落地的治理口径——跨会话复用后的版本一致性、权限继承与失效清理目前尚无成熟标准；官方给出的 Token 效率与复杂知识任务准确率提升是否有第三方或客户侧复现。</div>
+</div>
+<div class="item">
+    <h3>【降级】Gartner 2026 年战略云平台服务魔力象限：阿里云据报首次进入领导者象限</h3>
+    <div class="source">来源：<a href="https://www.cinn.cn/xf/2026/09-24/01qePxR1.html">中国工业新闻网：AI 算力竞赛升级，全球云厂商竞速数据中心与全栈能力</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 报道称阿里云在 Gartner 2026 年度全球《战略云平台服务魔力象限》报告中首次进入领导者象限，成为该象限唯一的中国与亚太厂商，与 AWS、微软、谷歌、Oracle 并列，并称 Gartner 将其定位从云基础设施厂商转向 AI 原生与智能体原生云厂商。该结论来自媒体转述，Gartner 报告原始发布日与完整象限名单未能在本期核实，按降级收录。<br><b>需要等待什么信号确认：</b> Gartner 官方报告页面的发布日期与完整厂商名单；以及象限位置在客户采购中的实际权重——若确实影响采购短名单，厂商的叙事重心会进一步从算力规模转向全栈与智能体能力。</div>
+</div>
+<div class="item">
+    <h3>【降级】Okta 牵头十二家厂商成立 Blueprint 联盟，智能体身份治理出现跨厂商参考架构</h3>
+    <div class="source">来源：<a href="https://cyberinsider.co.uk/vendors-agree-blueprint-for-ai-agents">Cyber Insider：Vendors agree blueprint for AI agents</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 该联盟由 Okta 牵头，创始成员包括 AWS、CrowdStrike、Databricks、Docker、谷歌云、Salesforce、ServiceNow、Wiz、Zscaler 等十二家，把 Okta 今年 3 月发布的智能体安全蓝图扩展为跨厂商参考架构，主张智能体应被视为一等身份，而不是用户或应用的延伸。框架覆盖智能体发现与身份分配、任务级授权、可追溯委派、运行时监控，以及令牌吊销、会话终止、网络隔离等应急收敛手段，并计划用 MCP、OCSF、SSF、CAEP 等开放标准做互操作测试。该联盟于 9 月 22 日在 Okta 用户大会期间宣布，超出本期 24 小时窗口，故降级收录。<br><b>需要等待什么信号确认：</b> 联盟是否按承诺公布跨厂商信号共享的测试结果与参考集成；Okta 计划在第三、第四季度交付的智能体网关与端点发现等控制是否按期可用。治理承诺只有落到可执行的阻断动作上，才会对数据平台的权限与审计设计形成实际约束。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-09-25 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
