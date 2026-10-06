@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-05</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-05 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库的默认创建者从人变成了智能体</li>
+      <li>数据平台的隔离与计费单位下沉到单个智能体</li>
+      <li>头部厂商用零息可转债为并购与算力补充弹药</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>智能体已经取代人成为数据库的主要创建者：平台必须把创建成本、隔离与治理下沉到单个智能体这一层，头部厂商则用零息可转债为并购与算力蓄力。数据平台的竞争焦点正从引擎与存储能力，转向能否以近乎零成本承载海量短生命周期的数据环境。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Supabase 同日宣布收购 Turso 并完成 1.5 亿美元融资，把数据库按智能体逐个交付</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html">PR Newswire（Supabase 官方新闻稿）：Supabase Announces $150M in New Funding and Turso Acquisition</a></div>
+    <div class="body"><b>摘要：</b> 10 月 2 日，Supabase 在 Select 大会上一份新闻稿宣布两项交易：完成 1.5 亿美元新融资，由新加坡主权基金 GIC 领投，Alphabet 旗下 CapitalG、IronArc 与 SquarePeg 参投；同时收购以 Rust 重写 SQLite 的数据库公司 Turso，交易金额未披露。此轮距其 6 月 5 亿美元 F 轮仅四个月，部分资金用于员工流动性，其余投入面向智能体的新功能。公司披露目前每月新增逾 100 万用户与约 400 万个数据库，其中约 70% 由智能体或 AI 工具创建，数据库创建量同比增长约 600%。Turso 的盘云架构把预写日志放在对象存储上，单台服务器可托管数百万个数据库、按需加载并在闲置时挂起；创始人 Glauber Costa 将出任 Supabase 智能体服务负责人，Turso 产品继续独立运营并保持开源。同日发布的还有 Supabase Compute 沙箱、声明式 Schema 2.0 与应用自带 MCP server。<br><b>为什么对数据平台重要：</b> 数据库的默认创建者从人变成智能体之后，创建成本、隔离边界与治理方式都得重算：为每个智能体配一个可丢弃的独立库，比在共享库上用权限模型划分更便宜，也更符合「出错只污染一个沙箱」的隔离要求。代价在治理侧——嵌入式引擎的库文件本身没有角色、授权与策略，这些只能在数据库之外补建，而这一步通常在负载已经存在之后才发生。对厂商而言，竞争点从「谁的引擎更快」转向「谁能以近零成本承接海量短生命周期数据库」，Postgres 承担持久负载、嵌入式引擎承担一次性任务的两年层结构正在成形。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 完成 37.5 亿美元零息可转债发行，资金明确指向并购与战略投资</h3>
+    <div class="source">来源：<a href="https://www.stocktitan.net/sec-filings/SNOW/8-k-snowflake-inc-reports-material-event-c605b2b96119.html">Snowflake 8-K（2026 年 10 月 2 日提交）：完成 0.00% 可转换优先票据私募发行</a></div>
+    <div class="body"><b>摘要：</b> 10 月 2 日，Snowflake 就 37.5 亿美元零息可转换优先票据向美国证券交易委员会提交 8-K。票据分两档：20 亿美元 2029 年 10 月 15 日到期、17.5 亿美元 2031 年 10 月 15 日到期，两档票息均为 0.00% 且本金不累积，也不设常规利息支出。初始转股价分别约为 500.38 美元与 483.98 美元，较 9 月 28 日 328.12 美元的参考价分别溢价约 52.5% 与 47.5%。公司同步执行上限约 820.30 美元的看涨期权对冲，把全部转股情形的潜在稀释压到约 3% 量级。净募资约 37 亿美元，其中约 5.48 亿美元用于回购 2027 年到期的既有可转债，其余用于一般公司用途，官方口径包含回购股票、收购或对互补业务的战略投资。<br><b>为什么对数据平台重要：</b> 这笔交易把头部数据平台的弹药从留存收益扩展到零息长期债务：没有利息支出，稀释被上限期权压住，而资金用途明确写着收购与战略投资。对买方而言，未来一年数据平台的并购竞价会更激烈，整合风险也随之上升；对同赛道厂商而言，真正拉开的不是产品功能，而是融资成本与资本结构的差距——用零息债务补充并购预算的能力，不是每家都能复制。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>谷歌云 BigQuery 同日两项更新：Rust SDK 正式可用，数据工程智能体增加轻量模型支持</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/bigquery/docs/release-notes">BigQuery 发布说明（2026 年 10 月 2 日）</a></div>
+    <div class="body"><b>摘要：</b> 10 月 2 日，BigQuery 发布说明中两项更新生效：BigQuery 的 Rust SDK 正式可用；Data Engineering Agent 新增对 gemini-3.7-flash 模型的支持，覆盖 us、eu 与 global 多区域端点。<br><b>对数据平台的影响：</b> Rust SDK 补齐了 BigQuery 客户端的多语言覆盖，对以 Rust 构建的数据服务、连接器与自研引擎是一块新拼图，也让「同一个仓被任意语言栈直连」这件事更彻底。把数据工程智能体的底层模型扩到更轻的档位，则是在同一套智能体工作流里留出成本与延迟的可选空间。两项都属于「把平台能力接到开发者与智能体已有工具链上」的补课型更新，不改变架构，但会影响选型时的语言与成本口径。</div>
+</div>
+<div class="item">
+    <h3>Databricks 把 Unity Catalog 连接扩到通用 JDBC，ai_extract 标准模式换用新检查点</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/gcp/en/release-notes/product/2026/october">Databricks 发布说明（2026 年 10 月，含 10 月 2 日条目）</a></div>
+    <div class="body"><b>摘要：</b> 10 月 2 日，Databricks 发布说明列出两项更新：JDBC 版 Unity Catalog 连接正式可用，覆盖 Serverless 计算、DBR 19 及以上与 2025.40 及以上 SQL 仓库，并支持 SSL 证书，基于 OAuth 的机器对机器认证仍为 Beta；ai_extract 的标准（默认）模式启用新的模型检查点，官方称速度提升 2.3 倍、整体质量同步改善且不额外计费。<br><b>对数据平台的影响：</b> 把 Unity Catalog 的连接从自有客户端扩展到通用 JDBC，意味着外部 BI、自研应用与数据科学工具可以直接在治理边界内访问受管表，并用机器身份而非共享密钥完成认证。这回答的是一个常见审计问题：第三方工具接入后，权限、行级过滤与血缘是否照样生效。抽取函数的提速则落在成本侧，对以非结构化数据入湖为主的团队更直接。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 给 Native App 中的 Cortex Agents 加了事件日志脱敏</h3>
+    <div class="source">来源：<a href="https://docs.snowflake.com/release-notes/2026/other/2026-10-02-native-apps-agent-observability">Snowflake 发布说明（2026 年 10 月 2 日）：Native Apps：Observability for Cortex Agents</a></div>
+    <div class="body"><b>摘要：</b> 10 月 2 日，Snowflake 发布说明称 Native App 中 Cortex Agents 的可观测性新增能力：当应用通过 REST 的 agent:run 接口或 SQL 的 DATA_AGENT_RUN 发起运行时，Snowflake 在把记录写入消费方事件表之前，会对编排方撰写的内容做脱敏处理，以保护编排方的知识产权。<br><b>对数据平台的影响：</b> 这一步处理的是可观测性与知识产权之间的冲突：消费方既要能查到智能体执行了哪些操作、由谁授权，又不能顺带看到编排方的提示词与编排逻辑。把脱敏放在平台写日志这一层，等于把「什么算敏感上下文」的判定从应用侧收回平台侧。随着智能体横向流动，谁能同时提供审计可见性与商业机密保护，会成为平台选型的一项硬指标。</div>
+</div>
+<div class="item">
+    <h3>AWS 同日更新数据库与缓存细节：Aurora DSQL 支持部分索引，Valkey 接入 OpenTelemetry</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-dsql-partial-indexes/">AWS What's New（2026 年 10 月 2 日）：Aurora DSQL 支持部分索引</a></div>
+    <div class="body"><b>摘要：</b> 10 月 2 日，AWS 发布多项更新，与数据平台直接相关的有两项：Amazon Aurora DSQL 支持部分索引，可只对满足条件的数据行建索引，从而缩小索引体积并降低写入开销；Amazon ElastiCache for Valkey 支持 OpenTelemetry 指标与更细粒度的监控数据。<br><b>对数据平台的影响：</b> 部分索引把「只索引活跃子集」这一经典优化带进无服务器分布式 SQL 数据库，直接作用在索引体积与写放大这两项成本上；Valkey 侧接入 OpenTelemetry 则把缓存层并入既有的可观测栈，少维护一套专有监控。两项都属于细节层面的成本与运维改良，方向上一致：减少不必要的数据复制与工具重复。</div>
+</div>
+<div class="item">
+    <h3>Neon 把 embedding 生成并入 AI Gateway，与聊天模型共用端点与凭证</h3>
+    <div class="source">来源：<a href="https://neon.com/blog/generate-embeddings-with-neon-ai-gateway">Neon 博客（2026 年 10 月 2 日）：Generate embeddings with Neon AI Gateway</a></div>
+    <div class="body"><b>摘要：</b> 10 月 2 日，Neon 宣布其 AI Gateway 现在可以在与聊天模型相同的 OpenAI 兼容端点、同一套凭证下生成 embedding。对使用 Postgres 与 pgvector 的团队而言，向量生成与应用侧调用不再需要单独接入一家 embedding 服务。<br><b>对数据平台的影响：</b> 把 embedding 生成收进数据库网关，省掉的是数据在数据库与模型服务之间来回搬的一段链路，同时让向量写入与检索调用的凭证、配额与计费口径统一。这类「把模型调用挪到数据旁边」的做法，正在成为向量检索落地的常见形态：减少的是跨系统的信任与治理缝隙，而不只是几次网络调用。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Apache Iceberg 1.12.0 发布：类型能力补齐，细粒度读取限制先进规范</h3>
+    <div class="source">来源：<a href="https://iceberg.apache.org/blog/apache-iceberg-1.12.0-release/">Apache Iceberg 官方博客：Apache Iceberg 1.12.0 Release</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 9 月 29 日，Iceberg 社区发布 1.12.0，包含 777 次提交、来自 142 位贡献者。亮点包括 Variant 与 geospatial 类型的读写支持、Flink 新增把 equality delete 转换为删除向量的维护任务、Spark 4.1 的 Hilbert 曲线聚类，以及规范层新增 loadTable 的细粒度读取限制——由目录侧决定行过滤与列脱敏策略、读取端强制执行，且规定读端无法执行任何一条限制时必须让查询失败，而不是静默返回原始数据。该版本同时移除 Spark 3.4 与 Flink 2.0 支持并废弃一批 API。原始发布日期早于本期窗口，故降级收录。<br><b>需要等待什么信号确认：</b> 规范给了接口，实现还没跟上：1.12.0 中没有任何读取端真正执行读取限制，目录今天返回限制对象会被所有消费方静默忽略。需要观察各引擎与目录何时落地这套动作，才能判断开放湖仓的细粒度治理是纸面标准还是可用能力，也才能判断它是否会改变「开放格式治理必须依赖厂商客户端」的既有取舍。</div>
+</div>
+<div class="item">
+    <h3>【降级】Cloudflare 把数据平台更名为 Basin 并全面可用，主打 Iceberg 加零出口费</h3>
+    <div class="source">来源：<a href="https://cloudflare.net/news/news-details/2026/Cloudflare-Launches-Basin-A-More-Open-and-Accessible-Data-Platform-for-Developers/default.aspx">Cloudflare 官方新闻稿：Cloudflare Launches Basin, A More Open and Accessible Data Platform for Developers</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 10 月 1 日，Cloudflare 将原 Cloudflare Data Platform 正式更名为 Basin 并宣布全面可用：数据以 Apache Iceberg 表格式存放在 R2 对象存储上，提供摄入（Pipelines）、目录（Catalog）与无服务器 SQL 三段能力，DuckDB、Spark、Snowflake、PyIceberg 等可直接读取同一份表。官方称单条摄入流最高可达 3GB/s、SQL 支持 190 多个标量与聚合函数，并明确跨云、跨区域查询不收取出口费。Cloudflare 同时说明 Basin 面向更开放的 serverless 分析场景，并不打算替换所有数仓部署。原始发布日期早于本期窗口，故降级收录。<br><b>需要等待什么信号确认：</b> 官方未公布单位价格、服务等级承诺与独立基准，大规模查询的单位成本需要买方自行压测；同时，V3 类型支持、更细粒度命名空间与表级授权、辖区支持等路线图项目都还没有交付日期。零出口费能否转化成实际的「表可搬」体验，取决于这些缺口补齐的速度。</div>
+</div>
+<div class="item">
+    <h3>【降级】谷歌云 Spanner queues 正式可用：把消息队列写进数据库的同一个事务</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/spanner/docs/queues/queues-overview">Google Cloud Spanner 文档：Spanner queues 概览</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 谷歌云 Spanner queues 现已正式可用（该能力自 9 月 17 日起生效，官方博客 10 月 2 日发文详解）。队列以普通表行的形式存在 Spanner 内部，入队就是读写事务里的一次写入，让「改状态」与「派发下一步任务」要么一起提交、要么一起回滚，替代传统的发件箱加中继模式；同时提供定时投递、消息租约与逐条确认、流式 SQL 拉取消费，以及用标准 SQL 查询积压与超时。谷歌把面向智能体的「决定并执行」列为主要场景，可用于工具调用后的状态落库、多智能体交接与人工审批超时。原始可用日期早于本期窗口，故按博客发布日降级收录。<br><b>需要等待什么信号确认：</b> 官方只承诺至少一次投递与最多一次确认，外部副作用仍需调用方自己实现幂等，这一点在文档里写得很明确；队列容量跟随已有计算实例，纯事件洪流仍更适合专用消息中间件。需要观察其他数据库厂商是否跟进数据库内队列这一原语，以及它会不会改变智能体编排层的选型。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-05 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

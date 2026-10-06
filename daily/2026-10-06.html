@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-06</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-06 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>目录可移植性成了开放湖仓的新竞赛面</li>
+      <li>物化视图从引擎内部下沉为跨引擎可读的开放资产</li>
+      <li>智能体的连接与运维动作被收进平台策略层</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>开放湖仓的竞争重心正从读写能力转向可移植与可治理：目录可以移交表的所有权，物化视图以开放格式跨引擎共享，智能体的连接被收进平台自身的策略层。三者共同指向迁移成本下降、治理边界上移——对买方是筹码，对厂商是新的准入门槛。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 把 UNREGISTER 提交进 Iceberg REST 目录规范，给表的所有权一个标准移交动作</h3>
+    <div class="source">来源：<a href="https://www.databricks.com/blog/unlocking-data-portability-preventing-catalog-lock-register-and-unregister-apis">Databricks 博客：Unlocking Data Portability: Preventing Catalog Lock-in with REGISTER and UNREGISTER APIs</a></div>
+    <div class="body"><b>摘要：</b> 10 月 5 日，Databricks 发文介绍 REGISTER 与 UNREGISTER 两个目录端点，其中 UNREGISTER 由 Databricks 提交进 Apache Iceberg REST 目录规范。开放表格式解决了数据能被多个引擎读取，却没有解决表在目录之间的移交：过去只能靠 DROP，而 DROP 会连底层数据与元数据一并清理；只用 REGISTER 又会造成两个目录都认为自己拥有同一张表，由于 Iceberg 目录彼此不通信，第一次写入就会把表分叉，出现查询结果不一致并静默丢数据。UNREGISTER 让原目录显式放弃控制并交还下一个目录所需的元数据指针，整个移交不复制、不重写任何数据文件，表仍留在客户自己的存储桶里。REGISTER 目前在 Unity Catalog 上处于私有预览。<br><b>为什么对数据平台重要：</b> 这把「反锁定」从存储层推进到目录层。此前厂商的开放叙事集中在「数据以开放格式存在你自己的桶里」，但目录掌握着表的最新状态与提交协调权，只要目录不可替换，数据就仍然被拴住。给出一个标准化的移交动作之后，迁移成本从重写管道降到一次登记加一次注销，买方在续约谈判中的位置随之改变。它也带出下一个治理问题：谁有权批准一次注销、这次操作如何被审计，会成为平台侧新增的策略点。</div>
+</div>
+<div class="item">
+    <h3>Amazon Redshift 支持 Iceberg 物化视图，把预计算结果变成跨引擎可读的开放表</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/blogs/big-data/materialize-once-query-anywhere-introducing-iceberg-materialized-views-in-amazon-redshift/">AWS Big Data 博客：Materialize once, query anywhere: Introducing Iceberg materialized views in Amazon Redshift</a></div>
+    <div class="body"><b>摘要：</b> 10 月 5 日，AWS 宣布 Amazon Redshift 支持 Iceberg 物化视图：把一次昂贵的连接与聚合在 Redshift 内算好，结果以标准 Apache Iceberg 表存放在 Amazon S3，Athena、Spark、SageMaker 与 AWS Glue 等引擎可直接读取，不需要复制数据。增量刷新跟踪 Iceberg 快照，对 SUM、COUNT 与非聚合查询只重算发生变化的分区。该能力仅支持 Redshift Serverless 与 RG（Graviton）实例，RA3 与 DC2 不在支持范围。官方给出的场景包括分层架构、AI 特征存储、通过合并计算做成本优化与受治理的数据共享，并说明它与既有的物化视图互补：需要跨引擎访问时用 Iceberg 物化视图，需要 Redshift 内最低读延迟时用原有物化视图。<br><b>为什么对数据平台重要：</b> 物化视图过去是引擎内部的私有资产，加速换来的是绑定。把它写成开放格式之后，加速层和被加速层第一次解耦：同一份预计算结果既能服务仓库内的低延迟查询，也能作为特征源或共享数据集被其他引擎消费，重复计算与口径漂移同时被压缩。代价在能力边界上——类型支持与实例型号的限制意味着这一步是渐进替换，而不是所有仓库负载都能平移。它也让「谁的物化视图能被别人读」成为湖仓互操作比较里的一个新项目。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 推出面向广告行业的 AI Gateway，用受治理的 MCP 把平台信号接进智能体</h3>
+    <div class="source">来源：<a href="https://www.snowflake.com/en/blog/ai-agents-in-advertising/">Snowflake 博客：Building a Governed Path for AI Agents in Advertising</a></div>
+    <div class="body"><b>摘要：</b> 10 月 5 日，Snowflake 介绍 AI Gateway for Advertising，该能力目前处于预览，通过受治理的 Model Context Protocol 集成接入 Meta 与 TikTok，早期客户为 PMG。它与 Cortex Agents 相连，把企业侧的上下文（业务定义、历史表现）与平台侧的实时信号（投放、商品目录健康度、转换诊断）放在一起，让智能体基于同一套定义与指标解释表现变化，并给出可在策略内执行、由投放经理逐步确认与观察的建议。官方说明该能力建立在 Snowflake 于 2026 年 5 月对 Natoma 企业级 MCP 平台的收购之上，后续会接入更多平台。<br><b>为什么对数据平台重要：</b> 智能体接入外部系统，问题往往不是连不上，而是连上之后看到的是各平台自己的口径。把 MCP 连接收进数据平台并挂上企业侧的定义与权限，等于把「智能体能做什么、按谁的规则做、谁批准」从各应用侧收回到平台侧。对买方而言，这决定了智能体的输出能否被审计；对平台厂商而言，这是一条新的护城河位置——连接器本身易复制，连接器之上的策略层与语义层不易复制。行业化只是起点，同一套做法可以平移到任何以外部平台信号为输入的决策场景。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>AWS 用一个 MCP 工具把 Redshift 的集群运维审查自动化</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/blogs/big-data/run-an-automated-operational-review-with-the-amazon-redshift-mcp-server/">AWS Big Data 博客：Run an automated operational review with the Amazon Redshift MCP server</a></div>
+    <div class="body"><b>摘要：</b> 10 月 5 日，AWS 发文介绍开源 Amazon Redshift MCP server 中的 review_cluster 工具。用户用自然语言提出请求，工具即对集群做一次完整诊断，覆盖表设计、工作负载管理、节点利用率与数据摄入等 12 个诊断域，返回按影响与实施成本排序、并逐条附上官方文档链接的建议；使用时需要为数据库用户授予 sys:monitor 角色。官方建议把这类审查变成常规动作：每周一次，以及重大表结构变更后、大额数据加载后或预期高峰前各跑一次，并用变更前后的对比验证效果。文章称，原本需要专家花数小时拼诊断脚本、解读系统视图并汇总结论的工作，现在一次请求即可完成。<br><b>对数据平台的影响：</b> 智能体在这里拿到的不是查询能力，而是运维能力：读系统视图、给出改配置的建议。收益是审查的频次与一致性明显提高，代价是权限边界要重新划——工具默认应是只读的，任何变更仍要经人工确认，而「谁授权了这次诊断、诊断结果进了谁的记录」需要在平台侧有答案。谁先把可被智能体调用的运维动作收敛成一套有明确权限与审计的能力集，谁在规模化运维上先省下人力。</div>
+</div>
+<div class="item">
+    <h3>Starburst 发布 Icehouse Console，把 Iceberg 的表维护与元数据开销挪出查询集群</h3>
+    <div class="source">来源：<a href="https://www.starburst.io/blog/engineering-the-data-foundation-for-production-ai-and-analytics">Starburst 博客：Engineering the Data Foundation for Production AI and Analytics</a></div>
+    <div class="body"><b>摘要：</b> 10 月 5 日，Starburst 发布 Starburst Icehouse Console 与一批引擎级优化。Console 是 Galaxy 内面向 Iceberg 的统一管理面，跨目录提供表发现、优化、监控与治理，在创建目录时自动推断并登记表结构，并持续监测以吸收 schema 漂移；引擎侧新增 Iceberg 物化视图的定时增量刷新（按用户指定的增量列只处理新增行）、把压缩、孤儿文件清理与快照过期卸载到独立的无服务器执行引擎（支持可续跑的压缩与进度上报），以及把清单解析与分片生成从协调节点下推到工作节点。规格侧补齐 Iceberg v3 类型映射（含 Geometry 与 Geography）与 REST 目录集成，支持短期凭证下发；此外还有跨目录动态分配的全局文件系统缓存，以及官方称可把单集群查询并发提高到 2 至 3 倍的协调优化。<br><b>对数据平台的影响：</b> 三处值得单独看。增量刷新物化视图与无服务器表维护直接对准「传统管道留在 Hive 上」的沉淀成本，把维护开销从查询集群剥走，避免重 MERGE 之后的小文件拖垮生产查询；把元数据规划下推到工作节点，官方称可让协调节点规格减半，说明大规模 Iceberg 的瓶颈已经转移到元数据解析而不是扫描本身；v3 地理类型的原生映射则意味着带空间维度的分析可以留在开放格式里做。这类优化不改变架构，但会改变同一个负载的单位成本。</div>
+</div>
+<div class="item">
+    <h3>Litmus Data Catalog 正式可用，把工业 OT 侧的元数据补成一层治理</h3>
+    <div class="source">来源：<a href="https://www.accessnewswire.com/newsroom/en/industrial-and-manufacturing/litmus-launches-general-availability-of-litmus-data-catalog-1231833">ACCESS Newswire（Litmus 官方新闻稿）：Litmus Launches General Availability of Litmus Data Catalog</a></div>
+    <div class="body"><b>摘要：</b> 10 月 5 日，Litmus 宣布 Litmus Data Catalog 正式可用，此前对既有客户处于私有预览。产品面向工业数据，从 PLC、SCADA 与 HMI、历史库、OPC 服务器、边缘网关、工业物联网平台、云数仓与 ERP 等 OT 与 IT 系统采集元数据，形成统一的发现、血缘与治理层：可把 KPI 追溯到产出它的具体点位标签，跨厂区统一资产与指标定义，并在任何人做变更前给出下游影响分析；同时提供归属、业务词汇表、分层域与审计轨迹，以及 schema 漂移检测。官方称其只读取元数据、不动运行数据，可与既有企业或云数据目录互补，补上后者不覆盖的 OT 侧元数据。客户包括 Panasonic、Niagara Bottling 与 Poclain Hydraulics。<br><b>对数据平台的影响：</b> 工业 AI 卡住的地方常常不是连通性而是元数据：点位标签的含义、归属与血缘缺失，模型就无法解释自己依赖什么，KPI 也只能在厂区与报表之间各说各话。把元数据目录铺到 OT 与 IT 之间，等于在数据平台的治理边界之外再补一层源头语义。对数据平台厂商而言，这意味着与工业数据平台的接口不只是数据接入，还包括语义与血缘的双向映射，否则接入的数据无法被治理体系接住。</div>
+</div>
+<div class="item">
+    <h3>Diskover Data 与 NetApp 合作，把非结构化数据的发现与编目接进企业存储</h3>
+    <div class="source">来源：<a href="https://www.prnewswire.com/news-releases/diskover-data-collaborates-with-netapp-to-bring-discovery-and-control-to-file-intensive-workloads-302898418.html">PR Newswire（Diskover Data 官方新闻稿）：Diskover Data collaborates with NetApp to bring discovery and control to file-intensive workloads</a></div>
+    <div class="body"><b>摘要：</b> 10 月 5 日，Diskover Data 宣布与 NetApp 合作，把其面向非结构化数据的发现与编目能力扩展到 ONTAP 与 StorageGRID 环境，主攻媒体娱乐、半导体设计（EDA）与生命科学等文件密集型行业，相关产品自 11 月起可通过 NetApp 采购。Diskover 的 DataDiscovery 用专用扫描器就地索引元数据，采集归属、权限、年龄、成本与项目上下文，形成可搜索、受治理的目录，并按项目、用户、组、年龄与存储层级给出成本，支持分摊与提前识别冗余数据。官方称客户通常可回收 10% 至 30% 的存储占用，大环境中超过 300 万美元，投资回报期在 30 至 60 天。平台部署在客户自有环境内，不要求改变存储方式。<br><b>对数据平台的影响：</b> 非结构化数据的价值取决于能否被检索、解释与问责，元数据目录是入口。把成本口径落到项目与用户，则把「数据治理」翻译成财务部门能看懂的指标，这也是治理项目能拿到预算的现实路径。对买方来说，真正要比的是目录能否覆盖异构存储、以及它的成本归因是否经得起审计，而不是扫描器数量的多少。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【收购兼并】施耐德电气以约 226 亿美元收购 PTC，用工程与设计数据搭工业 AI 的数据底座</h3>
+    <div class="source">来源：<a href="https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191dex991.htm">PTC 8-K 附件（双方联合新闻稿）：Schneider Electric to acquire PTC, creating the next level of Energy and Industrial Intelligence</a></div>
+    <div class="body"><b>摘要：</b> 10 月 5 日，施耐德电气与 PTC 宣布签署最终协议，施耐德以每股 205 美元全现金收购 PTC 全部股份，股权估值约 226 亿美元，隐含企业价值约 237 亿美元，相当于 2027 年预期调整后 EBITA 的 21 倍（计入全部协同后 13 倍）；较 PTC 上一个收盘价溢价 42.3%，较公告前 30 个交易日成交量加权均价溢价 46.1%。这是施耐德史上最大并购，规模超过其 2023 年约 110 亿美元收购 AVEVA。资金来自最多 60 亿欧元新股与最多 170 亿欧元新债，预计 2027 年第三季度完成，需 PTC 股东与监管批准。PTC 在 2025 财年营收 27.4 亿美元，调整后 EBITA 利润率约 40%，服务超过 3 万家客户。官方称交易将形成贯穿产品与机器、流程与能源系统的统一数字主线，并由一个情境化的 AI 数据底座支撑；这是继 2026 年 6 月约 31 亿美元收购工业数据平台 Cognite 之后的又一步。市场反应分化：PTC 盘前一度涨逾 34%，施耐德在巴黎早盘下跌近 10%。<br><b>为什么对数据平台重要：</b> 这笔交易把工业数据层的定价权重新分配给一家同时供应数据中心物理基础设施的公司：AVEVA 覆盖流程工业软件，Cognite 提供工业数据底座，PTC 带来产品设计到运维的工程数据与血缘，三者叠加之后，工业 AI 的上下文将更多由单一供应商掌握。对数据平台买方而言，影响落在两端：工业数据接入的谈判对手数量减少，而以「数据是 AI 的关键层」为估值的软件资产，在利率与情绪波动中更容易被巨头收走。收购方 CEO 在电话会上把「数据正在成为非常关键的一层」作为交易逻辑，也说明数据平台的位置正在被上游工业与基础设施厂商重新定价。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】北京市发布《“十五五”时期数智北京发展规划》，把数据产权登记与词元经济写进五年框架</h3>
+    <div class="source">来源：<a href="https://www.nda.gov.cn/sjj/swdt/dfdt/1005/20261005092055894357866_pc.html">国家数据局地方动态：北京市人民政府关于印发《“十五五”时期数智北京发展规划》的通知</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 国家数据局网站于 10 月 5 日转发该通知，文件本身由北京市人民政府于 2026 年 9 月 27 日签发。规划在数据要素与算力两条线上给出五年目标，涉及数据产权登记全覆盖、数据基础设施标准体系、词元（Token）经济相关部署，以及十万卡级国产智能算力集群等内容。因文件签发日早于本期窗口，此处仅按转载日降级收录，具体条款与配套细则仍需回到原文核对。<br><b>需要等待什么信号确认：</b> 规划给出的是方向与目标，不是落地口径。真正影响数据平台选型的是三件事：数据产权登记如何与现有的目录、血缘和权限体系对接；词元经济相关表述会不会落成可交易的计量与结算规则；国产算力集群的规模目标如何转化为可采购的算力供给。需要观察配套实施方案与试点名单，才能判断这是一份远景文件还是一套即将生效的规则。</div>
+</div>
+<div class="item">
+    <h3>【预告】Snowflake 年度大会更名为 Expedition 2026，11 月 3 日起线上举行</h3>
+    <div class="source">来源：<a href="https://investors.snowflake.com/news/news-details/2026/Snowflake-to-Showcase-Enterprise-Wide-Agentic-Transformation-at-EXPEDITION-2026-with-Industry-Speakers-Including-Satya-Nadella/default.aspx">Snowflake 投资者关系（Business Wire）：Snowflake to Showcase Enterprise-Wide Agentic Transformation at EXPEDITION 2026, with Industry Speakers Including Satya Nadella</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 10 月 5 日，Snowflake 宣布其年度大会由原先的开发者大会 BUILD 更名并升级为 Expedition 2026，改为线上举行：美洲时段为 11 月 3 日至 5 日，全球其他地区为 11 月 4 日至 6 日，注册免费对外开放。议程从纯技术开发者扩展为技术、市场与销售、财务三条线，并设面向管理者的 Leaders Track 与面向实操者的 Builders Track。官方把首日称为「全年第二大产品时刻」，称将围绕受治理的数据底座、企业 AI 上下文与智能体工作流进入生产发布新能力；首日的对话环节由 Snowflake CEO 与微软董事长兼首席执行官参与（官方注明为预录制）。<br><b>需要等待什么信号确认：</b> 更名与议程分层本身是市场动作：从面向开发者的会议扩到业务职能，意味着厂商把智能体的买单方从工程团队推向业务线，也意味着产品叙事需要同时说服两类预算。需要等首日发布的具体内容，才能判断「全年第二大产品时刻」对应的是新品类还是既有能力的整合，以及智能体治理这条叙事最终落在哪一层产品上。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-06 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
