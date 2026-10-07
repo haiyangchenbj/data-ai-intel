@@ -8944,6 +8944,106 @@
       "source": "Snowflake 投资者关系（Business Wire）：Snowflake to Showcase Enterprise-Wide Agentic Transformation at EXPEDITION 2026, with Industry Speakers Including Satya Nadella",
       "url": "https://investors.snowflake.com/news/news-details/2026/Snowflake-to-Showcase-Enterprise-Wide-Agentic-Transformation-at-EXPEDITION-2026-with-Industry-Speakers-Including-Satya-Nadella/default.aspx",
       "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "微软",
+      "module": "专题",
+      "title": "戴尔把统一语义层与企业知识图谱加进 AI 数据平台，让智能体在客户自有数据中心内取用业务上下文",
+      "summary": "摘要： 10 月 6 日，戴尔扩展 Dell AI Data Platform，新增三件能力。统一语义层（Unified Semantic Layer）为结构化与非结构化数据给出一致的业务含义、规则、定义与可搜索词表，可导入既有本体与分类体系，并接入 NVIDIA Auto-Ontology 开源库来构建知识图谱。企业知识图谱（Enterprise Knowledge Graph）用元数据、血缘与查询历史刻画数据之间的关联，并在智能体提问时拉取它被允许看到的表、数据产品、多模态数据与向量索引。知识代理（Knowledge Agents）以知识图谱中某一主题的切片为唯一依据，客户可设定其数据可见范围、答案质量门槛与花费上限。三件能力都运行在客户自有数据中心内。数据处理侧，Dell Data Processing Engine 基于 NVIDIA cuDF 与 Apache Arrow，官方 9 月自测（PowerEdge R770 配 RTX PRO 4500 Blackwell Server Edition，默认配置、未调优）较纯 CPU 平均约 3.9 倍、批处理峰值 20.4 倍。存储侧 PowerScale 单集群租户上限提升到 500，新增 NFS over mTLS 与租户级 RBAC，并推出托管版 PowerScale for Microsoft Azure 与开源的 Storage Performance Tool。时间线：语义层、知识图谱与知识代理定于 2027 年上半年，PowerScale 多租户与安全更新 11 月，加速引擎 12 月，工具与服务当天可用。为什么对数据平台重要： 戴尔把过去分散在数据目录、治理工具与检索中间件里的三件事，直接做进数据平台本体，并且保留在客户机房内。对买方，这解决的是\"智能体看到的业务概念各系统含义不同\"这一层问题——语义与图谱一旦由平台统一供给，接入新模型或新应用就不必再逐一对齐口径。更值得注意的是位置选择：语义层与知识图谱恰恰承载最敏感的信息，把它们留在本地，等于把主权与合规从\"事后过滤\"改成\"架构默认\"。代价同样清晰——三件能力都排到 2027 年上半年，加速与存储更新先行，说明语义与治理这一层仍是长周期投入，短期可采购的只有性能与多租户。",
+      "source": "Dell Technologies 投资者关系（官方新闻稿）：Dell Technologies Turns Enterprise Data Into Trusted Context for AI Agents",
+      "url": "https://investors.delltechnologies.com/news-releases/news-release-details/dell-technologies-turns-enterprise-data-trusted-context-ai",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "微软",
+      "module": "专题",
+      "title": "Precisely 把六类数据管理能力合并进统一平台，并用 AI Studio 缩短从试验到生产的路径",
+      "summary": "摘要： 10 月 6 日，Precisely 发布统一数据管理平台 Precisely Platform 与 AI Studio。平台把数据集成、数据质量、数据治理、位置智能、主数据管理与客户沟通六类能力合并到同一套元数据与语义基础之上，规则或策略定义一次即贯穿全部组件，且允许数据就地管理，不要求先迁移到单一生态。每一项数据资产可携带质量与治理评分，官方希望企业把评分当作判断数据是否适合喂给 AI 的依据。平台内置 AI 助手 Gio，并新增 MCP 服务器，把平台与既有产品开放给 Claude、Microsoft Copilot、ChatGPT 等助手。AI Studio 提供成型的应用、代理与技能，立即可用并提供 30 天免费试用：用户既可在样本数据上试跑，也可通过 Precisely 托管的 MCP 连接把代理与技能下载到自有环境运行，覆盖地址地理编码、治理流程发起、数据复制管道配置，以及财产分析、房地产情报等落地场景。SiliconANGLE 报道称 Platform 处于预览、计划 2027 年初正式可用，Precisely 现有客户超过 12,000 家、覆盖 92% 的财富 500 强。为什么对数据平台重要： \"AI 就绪数据\"长期是一句口号，这里被拆成可采购的组件。企业要治理散落在云湖仓、主机与 ERP 里的数据，过去往往要拼装多套工具各自维护规则、各自定义口径；把六类能力压到同一语义层上，等于把\"定义一次、处处生效\"从目标变成产品约束，也让质量与治理评分成为跨系统可比的口径——这是智能体做决策前真正缺的前置条件。对买方，问题随之从\"哪家质量工具更强\"变成\"谁的单点规则库能覆盖我全部数据资产\"；对厂商，位置智能与预链接富化数据是难以复制的差异点，但把治理边界收进一家，也意味着新的绑定。",
+      "source": "PR Newswire（Precisely 官方新闻稿）：Precisely Launches AI Studio to Jumpstart Enterprise AI Development",
+      "url": "https://www.prnewswire.com/news-releases/precisely-launches-ai-studio-to-jumpstart-enterprise-ai-development-302899815.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "DuckDB",
+      "module": "专题",
+      "title": "Polars 2.0 把流式执行设为默认并开放核外落盘，SQL 升为一等接口",
+      "summary": "摘要： 10 月 6 日，Polars 发布 2.0。最直接的变化是惰性查询的默认执行引擎切换为流式：对 LazyFrame 调用 collect 不再走原路径，多数查询的内存占用与性能因此改善，代价是连接、分组与逆透视等操作默认不再保证行序，需要行序的用户要显式设置 maintain_order=True。2.0 同时默认开启核外（spill-to-disk）执行，内存占用约到 80% 时开始落盘、默认磁盘预算 64 GB，当前覆盖排序、窗口函数与多数表达式，连接与分组尚未支持。SQL 在这一版被当作一等接口，优化器侧补齐连接重排、公共子计划消除与动态谓词、布隆过滤器，并新增基于 Arrow MapType 的 Map 数据类型与更严格的类型检查（schema 不匹配在计划编译期即报错）。官方在 TPC-H 与 TPC-DS（SF10/SF100）自测中称，SQL 引擎在除一项外的所有对比中领先 DuckDB 1.5.6、DuckDB 2.0 alpha 与 DataFusion 54.0.0，并公开了复现仓库；同时承认在 192 线程机器上小数据查询存在固定开销，限制到 32 线程反而更优，称已定位原因、将在后续版本修复。为什么对数据平台重要： 版本号跨越的背后是一个执行模型的取舍：把流式设为默认，等于承认\"先把数据全读进内存再算\"的做法在真实负载下不再是合理默认，代价是用户必须重新审视依赖行序的逻辑。核外落盘更进一步，让一部分原本会因超出内存而失败的作业改走磁盘——虽然连接与分组暂不支持，边界仍然清晰。对数据平台团队，这里的信号有两层：一是本地表的查询引擎正在向\"默认省内存、可预期失败\"收敛，选型时应把内存行为与失败模式纳入基准，而不只看吞吐排名；二是官方自测与复现仓库并行发布，说明引擎对比的举证标准已从跑分转向可复核。",
+      "source": "Polars 官方发布博客：Release of Polars 2.0",
+      "url": "https://pola.rs/posts/release-polars-2",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "ScyllaDB 在 X Cloud 加入 BM25 全文检索，与向量检索并存做混合检索",
+      "summary": "摘要： 10 月 6 日，ScyllaDB 宣布 X Cloud 的 2026.3 版本新增全文检索，以 BM25 相关性排序提供关键词检索，与既有的向量检索并存。官方列出的能力包括布尔与短语检索、按语言的解析器与词干化、单表多个全文索引、同一张表上同时建立全文与向量索引、CQL 原生查询，以及运行在独立可扩缩容的索引节点上、常驻内存的索引结构。公司把两类检索定位为互补：向量检索负责语义相近，全文检索负责精确词与短语，应用可在同一份数据上同时使用并组合结果做混合检索，面向 RAG、AI 代理、客服系统、商品目录与技术检索等场景。CEO Dor Laor 表示全文检索把 X Cloud 的能力扩展到文本检索领域；P99 CONF 将设一场\"ScyllaDB 原生全文检索对 OpenSearch\"的基准分享。对数据平台的影响： 这是检索能力向数据库内核回收的又一个样本。把全文检索做进主打低延迟的实时数据库，等于把过去必须外挂搜索引擎才能覆盖的一类查询收进同一个一致性域，减少第二套索引与第二个故障面。对选型而言，判断标准从\"有没有全文检索\"转向\"混合检索的排序融合与运维代价\"——索引节点独立扩缩容意味着存储与检索成本可以分开核算，这往往才是能否替换掉既有搜索集群的关键。真正的验证在生产负载与横向基准，不在功能清单。",
+      "source": "BigDATAwire（ScyllaDB 官方新闻稿转载）：ScyllaDB X Cloud Introduces High-Performance Full-Text Search",
+      "url": "https://www.hpcwire.com/bigdatawire/this-just-in/scylladb-x-cloud-introduces-high-performance-full-text-search/",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "Google",
+      "module": "投融资",
+      "title": "Nasuni 把非结构化数据的治理与 AI 激活并在一个文件数据平台上",
+      "summary": "摘要： 10 月 6 日，Nasuni 宣布 AI Activate 与 Resilio 6.0 正式可用、Enterprise Search 于本季度稍后推出，并把 8 月收购的 DryvIQ 并入，组成其称为\"运营文件数据平台\"的产品组合：内容智能与治理、自动化治理策略、高性能文件访问与搜索、受治理的 AI 激活，全部建立在单一全局命名空间之上。DryvIQ 侧可在 40 多个仓库（含 Microsoft 365、Google Drive、Box、Amazon S3 与本地 NAS）内识别内容，覆盖 550 种文件格式与 75 种以上语言，识别 PII、PHI 与 PCI 数据，日均扫描数百 TB。AI Activate 通过开放 MCP 把 AI 直连企业文件数据，权限在 AI 看到任何内容之前先行校验，使 AI 基于实时运营文件工作。Resilio 6.0 用点对点分发在商用硬件上把文件传输速度提升到最高 200 Gbps，不需要 VPN 或专用缓存设备。官方同时提出 PSYCHIC 框架定义\"AI 就绪数据\"。对数据平台的影响： 非结构化数据的价值取决于能否被检索、解释与问责，而这三件事的前提是一份受治理的原件。把权限校验放在 AI 之前、并沿用既有权限而非为每个 AI 工具重建，回应的是\"每接一个新工具就要重批一条数据管道\"的现实成本。对数据平台厂商，这意味着非结构化数据的接入不只是文件协议对接，还要能把既有的命名空间、权限与版本语义映射进平台治理体系；对买方，比较点在于治理是附加层还是架构层——前者随工具增加而增加审批，后者一次定义、持续复用。",
+      "source": "Nasuni 官方新闻稿：Nasuni Delivers First-of-its-Kind Operational File Data Platform for the AI Era with the Additions of AI Activate, Enterprise Search, Resilio 6.0, and DryvIQ",
+      "url": "https://www.nasuni.com/press-release/nasuni-delivers-first-of-its-kind-operational-file-data-platform-for-the-ai-era-with-the-additions-of-ai-activate-enterprise-search-resilio-6-0-and-dryviq",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "Anaconda 把代理集群与自主红队代理带进 AI 开发平台，并推出公开的代理事故登记",
+      "summary": "摘要： 10 月 6 日，Anaconda 扩展其平台，把代理式开发与自主安全测试并置：Kilo Agent Swarms 首次进入 VS Code，多个代理可拆分任务、并行构建并共享上下文；自主红队代理对模型、代理与 MCP 连接在 300 多个攻击类别上持续模拟攻击并实时调整策略；运行时护栏可批准、修改或阻断风险行为。最受关注的是 Agent Incident Registry——官方称其为业内首个公开、可溯源核验的代理事故登记，让企业独立确认安全声明，不必只依赖厂商自述。官方引用 Enkrypt AI 的研究：四个月内扫描 25,264 个 MCP 服务器上的 268,210 个代理工具，73% 存在漏洞。平台还新增 main-x 一般可用（合计 19,000 个以上经策展的包）、77 个经策展的开源模型目录与 Anaconda MCP；上述能力建立在对 Kilo Code、Enkrypt AI 与 Outerbounds 的收购之上，官方称完全集成的企业版要到 2027 年初。对数据平台的影响： 它把代理的安全与问责从合规议题变成采购项。代理一旦能调用企业的工具与数据，\"它做了什么、有没有越权、如何复现\"就必须有独立可查的记录——第三方事故登记的意义在于把厂商自证变成外部可核验。对数据平台团队，这提示两件事：代理的身份、权限与调用日志会像数据血缘一样成为治理对象；而包与模型目录的策展与来源证明正从软件开发延伸为 AI 供应链的基础能力。需要留意的是集成仍在进行，除 Outerbounds 外的多项能力要到 2027 年初才齐备。",
+      "source": "Anaconda 官方新闻稿：Anaconda Brings Agent Swarms and Autonomous Red-Team Agents to the AI Dev Factory",
+      "url": "https://www.anaconda.com/press/agent-swarms-red-team-agents-ai-dev-factory",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "AXON Networks 发布数据治理与 AI 主权层，把策略绑在数据上随其移动",
+      "summary": "摘要： 10 月 6 日，AXON Networks 发布 AXON Datum，称其为面向电信、企业与机构（含政府）的数据治理与 AI 主权层，作为 AXON Maestro 平台的组成部分。Datum 在数据进入环境时记录来源、完成分类，并施加控制访问、驻留、使用与迁移的策略，这些控制随数据在系统、应用与 AI 环境之间移动而持续生效。产品给出四条能力：分类（按敏感度打标并全生命周期保持）、治理（设定谁可用、在何条件下、为何目的）、执行（在授权前校验身份、分类与组织策略）、审计（留存摄入、访问、策略决策与变更记录）。它不要求替换既有数据湖或存储，而是在其上叠加一层治理能力，并可据策略决定数据是否可送往超大规模云或移出组织环境。客户 Cassava Technologies 的负责人称，应把治理层建在 AI 层之前，而非出事之后再补。产品将于 10 月 6 日至 7 日在达拉斯 TM Forum Innovate Americas 现场演示。对数据平台的影响： 关键是治理位置的前移：把策略绑在数据本身、在数据层执行，才有办法回答\"这次自动化决策依据的是哪一版数据、哪条策略、谁授权\"。对数据平台厂商，这提示治理能力需要从目录里的元数据下沉到数据路径上的执行点，否则数据一旦流向外部 AI，控制就只剩事后审计。对买方，判断点在于治理层能否与既有存储共存而不制造第二个副本——这决定了它是可选叠加层，还是必须重构的前提。",
+      "source": "AXON Networks 官方新闻稿：AXON Networks Launches AXON Datum, the Industry's First Data Governance and AI Sovereignty Layer",
+      "url": "https://news.axon-networks.com/2026/10/axon-networks-launches-axon-datum.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【收购兼并】Algolia 收购 Velou，把多模态属性提取补进商品检索",
+      "summary": "核心数据： 交易条款未披露；Algolia 年搜索量接近 2 万亿次、客户约 18,000 家；Velou 成立于纽约，积累八年零售分类体系与商品图谱，其公开案例显示 Get The Label 在 6 个月内新增 19 万个以上属性、站内搜索带来收入增长 60%，Everything5pounds 属性增长 85%、搜索转化率提升 33%。摘要： 10 月 6 日，检索平台 Algolia 宣布收购 Velou。Velou 做的是从商品目录的文本与图片中提取上下文属性的多模态 AI，附带现成的零售分类体系与商品图谱；并入后，这些能力将接进 Algolia 的检索栈，把非结构化目录转成可被检索与推理的结构化属性。官方援引 Adobe Analytics 数据称，今年 7 月由 AI 引荐至美国零售站点的流量同比上升 62%。交易金额未披露。对 Algolia 而言，这是在\"检索层\"之外补齐数据加工层：属性提取的覆盖度直接决定检索、推荐与代理能用到多少商品信息。对数据平台的影响： 这条把检索与数据工程接到了一起：商品属性提取本质上是一次自动化的、面向 AI 消费的数据建模，它决定了下游检索、推荐与代理能否用上这些数据。对数据平台团队，值得记的是这类\"从原始目录到结构化属性\"的加工正在被并入检索侧，而不完全交给企业数据管道；也就是非结构化到结构化的转换，正在成为检索产品的内建能力。这类能力一旦被检索厂商吸收，企业侧需要评估的就不再是\"要不要自建抽取作业\"，而是\"检索供应商能否直接消费我的原始目录\"。",
+      "source": "Algolia 官方新闻稿：Algolia Acquires Velou",
+      "url": "https://www.algolia.com/about/news/algolia-acquires-velou",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "【降级】印度尼西亚通过《一数据印尼》法案，把国家数据标准与目录写进法律",
+      "summary": "为什么值得继续看： 10 月 6 日，印度尼西亚国会全会通过《一数据印尼》（Satu Data Indonesia）法案，共 20 章 141 条，法案委员会与政府代表在前一日（10 月 5 日）就已达成一致。法律把国家基础数据置于国家控制之下，作为发展规划、财政与预算、社会救助发放等事项的首要参考；要求统一数据标准、元数据与参考编码，建立国家数据目录，并按\"只问一次\"原则实现跨机构复用；设立直接向总统汇报的一数据机构；封闭数据的境外访问与传输须经国会批准；数据运营方须在 24 小时内报告事件；第 129 至 135 条对数据操纵与网络攻击设定最高 15 年监禁，并由国家公职人员实施时加重三分之一。法规同时明确不把物理数据库集中到单一机构，数据所有权仍归原始机构，治理标准则从中央部委下沉到村级。因属他国立法政策、与数据平台产品无直接映射，此处按降级收录。需要等待什么信号确认： 落地口径取决于配套实施规则：国家数据目录与元数据标准如何与既有的数据平台目录、血缘与权限体系对接；封闭数据出境须经国会批准在实际操作中如何界定与执行；24 小时事件报告如何与平台侧的审计与告警链路衔接。对在印尼有数据业务的机构，需要观察监管细则与首批执行案例，才能判断合规成本落在架构层还是流程层。",
+      "source": "ANTARA News：DPR approves One Data Indonesia Bill to be enacted into law",
+      "url": "https://en.antaranews.com/news/434332/dpr-approves-one-data-indonesia-bill-to-be-enacted-into-law",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-07",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "【降级】Snowflake Horizon 目录开始支持 S3 兼容存储上的 Iceberg 表",
+      "summary": "为什么值得继续看： 该博客发布于 10 月 5 日，早于本期 24 小时窗口，故按降级收录。内容为：Horizon Catalog（基于 Apache Polaris 构建）此前只支持 Amazon S3、Azure Storage 与 Google Cloud Storage 上的 Iceberg 表被外部引擎读写；本次私有预览把支持范围扩到任何讲 S3 线协议的存储，包括 MinIO、Ceph、Wasabi、Backblaze B2、Cloudflare R2、IDrive e2 以及客户自建集群。机制是 Horizon 充当翻译层，按存储的实际身份解析出引擎可读的路径形式（Azure 为 abfss://，GCS 为 gs://，S3 兼容存储为标准 s3://），Snowflake 内部存储模型不暴露在开放元数据中。既有角色与授权随表沿用，外部引擎经 Iceberg REST Catalog API 发起的操作会进入 Access History，与 Snowflake SQL 活动共用一条审计轨迹。存量表需要一次仅重写元数据、不动数据的更新，预览期由官方团队代为执行。官方称正在开发为各存储平台下发受限凭证的能力。需要等待什么信号确认： 判断这一步的意义要看两件事：一是受限凭证下发能力何时落地——在它可用之前，引擎仍需以静态密钥访问对象存储，安全边界与合规可行性受限，这也是官方在\"接下来\"一节里唯一列出的待办；二是私有预览转为正式可用后，存算分离与主权云场景是否真能因此省掉一份数据副本。需要继续跟踪 Horizon 对更多存储后端与目录协议的支持进度。",
+      "source": "Snowflake 工程博客：Introducing S3-compatible storage support for Iceberg tables in Snowflake Horizon Catalog",
+      "url": "https://www.snowflake.com/en/blog/engineering/s3-compatible-storage-iceberg-horizon-catalog/",
+      "conf": ""
     }
   ],
   "archive": [
@@ -9087,7 +9187,8 @@
     "2026-09-24",
     "2026-09-25",
     "2026-10-05",
-    "2026-10-06"
+    "2026-10-06",
+    "2026-10-07"
   ],
   "monthly": [
     {
