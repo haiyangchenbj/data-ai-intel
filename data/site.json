@@ -9144,6 +9144,106 @@
       "source": "Futurum Group：AWS Embeds DuckDB in Aurora to Collapse Operational and Lakehouse Silos",
       "url": "https://futurumgroup.com/insights/aws-embeds-duckdb-in-aurora-to-collapse-operational-and-lakehouse-silos/",
       "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Google Cloud 发布通用 Gemini agent，同时把开放 Iceberg 表的联邦扩到 Databricks、Snowflake 与 AWS 三家目录",
+      "summary": "摘要： 10 月 8 日，Google Cloud CEO Thomas Kurian 在 Gemini at Work 2026 上发布 Gemini agent：用户给的是\"目标而非指令\"，agent 自行拆解任务、跨模型路由、在企业既有策略下执行，并对外暴露统一 API。数据平台侧同步升级三处：Knowledge Catalog 让 agent 直接读取 Databricks、dbt、LookML 与 SAP 中的数据指标定义；Smart Storage 就地富化非结构化对象，把上下文写回对象本身并继承既有安全设定；Borderless Lakehouse 零拷贝直读 Salesforce Data 360、SAP、ServiceNow 与 Workday，并声明可联邦跨 Databricks Unity Catalog、Snowflake Polaris 与 AWS Glue 的开放 Iceberg 表。官方援引客户案例称 Bloomberg Media 的 SQL 查询准确率提升 63%，Etsy 迁移 3PB 后关键数据 join 快 60%。为什么对数据平台重要： 目录是当前锁定的实际位置——谁判定\"当前版本的表是哪一份\"，谁就掌握跨引擎准入。把联邦对象从自家湖扩到三家外部目录，等于承认目录层正从\"厂商资产\"变成\"可被多方读取的公共入口\"，这与前一日微软与 Snowflake 对 Apache Ossie 的承诺是同一方向。决定绑定深浅的仍是两个细节：跨目录读取是只读还是可写，以及凭证由谁签发——只要写入与凭证仍归各自平台，联邦就停在\"能看不能改\"，这恰恰是买方需要逐项追问的地方。",
+      "source": "Google Cloud 官方博客：Welcome to Gemini at Work 2026 — Introducing the Gemini agent",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "Snowflake",
+      "module": "专题",
+      "title": "Snowflake 在 Cortex AI Functions 中推出专用决策模型 Snowflake Decision，把高频判断交给小型专用模型",
+      "summary": "摘要： 10 月 8 日，Snowflake 推出 Snowflake Decision（private preview），一个经 AI_COMPLETE 函数调用的决策模型，面向分类、打分、过滤与路由这类高频、答案有界的任务。它返回结构化答案——类别、分数或 0 到 1 的是非概率，供工作流直接消费；一次调用可同时回答多个问题。官方强调的卖点是治理继承：调用运行在 Cortex AI Functions 内，既有的访问控制、权限与审计策略自动适用于每一次决策。厂商自测称其在 29 项 Jev Decision Index 0.2.1 benchmark 上得分 57.63，为参与评测的 72 个模型中的最高分，并注明受接口限制只运行了基准子集。为什么对数据平台重要： 这条把\"AI 进数据平台\"的默认路径拆开了：过去逢任务就调通用大模型，成本与延迟被最昂贵的能力绑架；现在把高频、低推理复杂度的判断交给专用小模型，只在真正需要复杂推理时才上大模型。对买方，意义在于这类工作负载的单价可以被重新定价，而\"治理自动继承\"决定它能否直接用于受监管数据。判断成色要看两件事：评测是厂商自测、基准子集与选项上限都会影响可比性；以及它能否在客户自己的高容量表上跑出同等准确率。",
+      "source": "Snowflake 官方博客：Introducing Snowflake Decision in Cortex AI Functions",
+      "url": "https://www.snowflake.com/en/blog/snowflake-decision-cortex-ai-functions/",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Valcon 与 Databricks 合作推出气隙本地数据平台 DDP，把主权部署做成云上平台的镜像",
+      "summary": "摘要： 10 月 8 日，欧洲咨询公司 Valcon 宣布与 Databricks 合作，面向欧洲与英国的公共部门、国防、金融服务与国家关键基础设施推出 Disconnected Data Platform（DDP）——一套本地、气隙的数据平台。方案设计是\"云-本地同构\"：一般云端负载继续跑在 Databricks，最敏感、必须留在本地的负载交给 DDP，两侧保持一致的平台体验。官方称 DDP 已用于加速 BAE Systems 的企业数据平台项目。Valcon 是 Databricks 金牌合作伙伴，本次合作的目标是让组织在满足主权、安全与监管要求的同时，仍能采用现代 AI 与分析能力。为什么对数据平台重要： 主权要求此前常把敏感客户挡在托管数据平台之外，可行方案要么是昂贵的私有化部署，要么是功能受限的裁剪版。把\"云上平台的镜像\"作为独立形态交付，等于承认数据平台需要第三种部署形态——既非纯公有云，也非传统私有化，而是与云侧同构、可双向互操作的气隙版本。对买方，关键判断是同构的程度：若气隙侧与云侧在功能、版本与治理模型上持续同步，迁移成本才可控；反之，气隙版会迅速落后成孤岛。这条也呼应了同日 Google Cloud 把联邦扩到外部目录的方向——数据的物理位置，正成为与数据可读性并列的采购诉求。",
+      "source": "Valcon 官方新闻稿：Valcon launches highly secure, on-premises, air-gapped data platform, partnering with Databricks",
+      "url": "https://valcon.com/insights/news/valcon-databricks-secure-data-platform",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "Elastic",
+      "module": "技术",
+      "title": "Elastic 把 AI SRE 内建进 Observability，用四个引擎做\"不依赖告警规则\"的故障定位",
+      "summary": "摘要： 10 月 8 日，Elastic 宣布 Elastic nightshift AI SRE 进入 private preview，内建于 Elastic Observability，在 Serverless 上于早期访问期免费。它由四个引擎组成：Context 从遥测、代码、runbook 与 wiki 中抽取实体与关系，并累积每次调查的长期记忆；Detection 不依赖告警规则持续评估遥测，把跨服务的相关信号归并为单个 Significant Event；Investigation 从任意告警（含外部工具）出发，并行验证多个根因假设并给出证据；Remediation 推荐修复并可按需执行。官方称知识图谱会连接 GitHub 源码，指向可能引入异常的那个 commit。新闻稿援引 NeuBird AI 2026 年 4 月的研究称，78% 的组织在过去一年至少遇到过一次\"没有告警、客户先发现\"的事故。对数据平台的影响： 这条落在可观测性，但机制与数据平台高度同构：真正难的是把\"系统知识\"变成 agent 可用的上下文——实体关系、代码链接、历史事故记忆，正是数据平台里语义目录在做的事。Detection 明说不依赖人手写规则，等于承认\"规则驱动\"在这类高基数数据上已到极限，转向模型驱动的异常发现。对数据平台厂商，可借鉴的是\"展示推理过程与盲区\"这一设计：agent 给出结论同时列出每一步查询与无法验证的部分，这是把 agent 接进生产数据之前的信任前提。",
+      "source": "Elastic 官方新闻稿：Elastic Introduces Elastic nightshift AI SRE to Investigate with the Full Context Others Can't Afford to Keep",
+      "url": "https://ir.elastic.co/News--Events/news/news-details/2026/Elastic-Introduces-Elastic-nightshift-AI-SRE-to-Investigate-with-the-Full-Context-Others-Cant-Afford-to-Keep/default.aspx",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "微软",
+      "module": "投融资",
+      "title": "微软在开源博客说明 AI 时代的数据库布局，Azure HorizonDB 与 DocumentDB 并列",
+      "summary": "摘要： 10 月 8 日，微软在其开源博客上梳理了面向 AI 时代的开源数据库投资：Azure DocumentDB 是基于开源 DocumentDB 引擎、由 Linux Foundation 治理的 MongoDB 兼容托管服务，开发者可用熟悉的 MongoDB 工具与驱动，支持本地、混合与多云；Azure HorizonDB 处于 preview，是微软下一代云原生、PostgreSQL 兼容的数据库服务，面向高性能关键业务与 AI 负载；此外还有托管的 Azure Database for PostgreSQL 与 MySQL。文章同时预告微软将以白金赞助商身份参加 10 月的 All Things Open 2026，并列出与 PostgreSQL、MongoDB 兼容性相关的分享场次。对数据平台的影响： 这条的价值在于把\"兼容\"与\"治理归属\"分开看：产品兼容一个开源生态，不等于该项目治理交给社区。微软把 DocumentDB 交给 Linux Foundation 治理并开源，而 Azure HorizonDB 只做 PostgreSQL 兼容、未声明开源内核，两种姿态并存，说明厂商在\"借生态\"与\"让渡控制权\"之间各有取舍。对买方，判断绑定风险的依据不是\"是否兼容 PostgreSQL 或 MongoDB\"，而是该服务的内核与扩展能否迁移、治理话语权在谁手里——这也正是本期目录层竞争在数据库侧的映射。",
+      "source": "Microsoft Open Source 官方博客：Open-source databases in the AI era — Meet Microsoft at All Things Open",
+      "url": "https://opensource.microsoft.com/blog/2026/10/08/open-source-databases-in-the-ai-era-meet-microsoft-at-all-things-open",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "Teleskope 发布数据安全 co-pilot Kosmo，架构上不允许其自主执行变更",
+      "summary": "摘要： 10 月 8 日，数据安全平台 Teleskope 宣布 Kosmo 正式可用，一套面向数据安全团队的 co-pilot，由 Search、Triage、Remediation、Policy、Reporting 五个专门 agent 支撑单一自然语言入口。它不只回答当前问题，还会主动指出下一步该排查哪批暴露面、哪类模式值得固化为策略、该把结果交给哪个数据 owner，并能为 PCI DSS、CIS、CCPA、NIST、PIPEDA 等框架生成报告。官方强调一条架构约束：Kosmo 没有任何能执行变更的工具，只做读取、推理与提议，任何改动都要人等批准；所有查询都在提问者自身权限下执行，送入模型的只有分类标签、计数与资源标识，不含文件内容。发布前它已在十余家客户的 beta 中运行。对数据平台的影响： 这条给出一个反直觉但实用的设计取向：把 agent 的价值限定在\"想清楚该做什么\"，而不是\"替你做\"。对数据治理与安全场景，这恰是最稳妥的落地路径——治理的难点从来不是执行修复，而是决定本季度该处理什么、以及怎么向数据 owner 与董事会解释，这些判断过去依赖稀缺的资深经验。对数据平台厂商，值得记的是\"查询以提问者身份执行、敏感内容不进模型\"这两条边界，它们是 agent 能跨越安全团队、被更大范围使用的前提；也说明当下 agent 产品的竞争点，正从能力转向可授予的权限范围。",
+      "source": "GlobeNewswire（Teleskope 官方新闻稿）：Teleskope Launches Kosmo, an AI Co-Pilot for Data Security Teams",
+      "url": "https://www.globenewswire.com/news-release/2026/10/08/3377591/0/en/teleskope-launches-kosmo-an-ai-co-pilot-for-data-security-teams.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "国家数据局",
+      "module": "技术",
+      "title": "政协委员撰文：数据产权统一登记的制度效能，取决于能否转化为市场活力",
+      "summary": "核心观点： 10 月 8 日，中国政协网刊出委员建言文章，围绕数据产权统一登记展开。背景是\"十五五\"规划提出构建全国统一的数据产权登记体系，国家数据局 7 月印发《数据产权登记工作指引（试行）》，9 月 11 日国家数据产权登记服务系统上线试运行。文章的核心判断是：制度框架建立不等于价值自然释放，衡量改革成效不能只看建了多少平台、登记了多少数据、挂牌了多少产品，而要看高价值数据能否持续供给、能否低成本可信流通。作者据此提出三条路径——以权责利匹配推动高价值数据\"供得出\"、以统一规则保障数据\"流得动\"、以价值创造导向推动数据\"用得好\"。映射到数据平台的判断： 文章点出的\"不敢供、不愿供、不会供\"，本质是数据供给侧的权责利不对等：供数部门承担安全、个人信息保护与质量审核多重责任，却缺少免责边界与激励。这与数据平台侧的技术议题直接相连——要把\"授权一次、多方复用\"做成现实，登记环节必须产出可被机器读取的权属与授权凭据，否则每一次跨机构调用仍要重复合规核验。对数据平台厂商，这是一个明确的需求信号：谁能把登记、授权与调用计量打通成可审计的工程链条，谁就能承接跨机构数据流通的底座。",
+      "source": "中国政协网：以数据产权统一登记激发数据要素市场活力",
+      "url": "https://www.cppcc.gov.cn/wylz/wyjy/202610/t20261008_908119.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "Iceberg",
+      "module": "投融资",
+      "title": "【人事】Starburst 任命 Kerman Lau 为首席财务官，前 Moveworks CFO",
+      "summary": "核心数据： 任命即时生效、薪酬未披露；Kerman Lau 从业 25 年以上，此前任 Moveworks CFO，经历该公司被 ServiceNow 收购；Starburst 定位为\"面向受治理数据与 AI 的企业智能平台\"，基于 Trino 与 Apache Iceberg 构建，主打跨本地、多云与混合架构的联邦访问。摘要： 10 月 8 日，Starburst 宣布任命 Kerman Lau 为首席财务官，负责财务组织并参与增长战略、经营表现与资本配置。官方给出的背景是：企业加速采用 AI 后，agentic 负载与人类负载并行增长，\"可信任、受治理的数据与业务上下文\"变得关键，Starburst 想让 AI 平台与应用在没有事先把数据集中到单一平台的前提下，从试点走向生产。CEO Justin Borgman 强调要\"在关键机会上积极投入，同时建立扩张所需的财务纪律\"。Lau 本人称 Starburst 正处在企业技术最大转向的位置上，其能力是\"给任何负载——人写的或 agent 发的——提供到达所需数据的网关\"。对数据平台的影响： 这条的价值不在人事本身，而在它把公司的对外叙事钉在一条路线上：不做数据集中，改做联邦访问。这与本期 A 板块\"目录层成为跨平台入口\"是同一判断的两面——一旦买方接受\"数据不搬、按需联邦\"，厂商的竞争点就从存储与算力转向目录覆盖广度与治理一致性。引入一位经历过 SaaS 高速扩张与并购整合的 CFO，通常意味着公司准备进入以资本效率与规模化经营为主线的阶段。对买方，可观察的抓手是其联邦覆盖的目录名单是否继续扩大，以及治理能力是否从\"可读\"推进到\"可写\"。",
+      "source": "Business Wire（Starburst 官方新闻稿）：Starburst Appoints Kerman Lau as Chief Financial Officer",
+      "url": "https://www.morningstar.com/news/business-wire/20261008889845/starburst-appoints-kerman-lau-as-chief-financial-officer",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "Gartner",
+      "module": "机构",
+      "title": "【跟踪】Gartner：2026 年全球 AI 支出预计达 2.59 万亿美元，AI 基础设施占比超四成",
+      "summary": "为什么值得继续看： 10 月 8 日的市场评论援引 Gartner 预测：2026 年全球 AI 支出预计达 2.59 万亿美元，较 2025 年的 1.76 万亿美元增长 47%，2027 年进一步升至 3.49 万亿美元；其中 AI 基础设施以 1.43 万亿美元占该年总支出的 45% 以上。Gartner 分析师 John-David Lovelock 称 2026 年将是\"拐点年\"。这条本身不涉及具体产品，但它给出的是数据平台预算所处的水位线：当资本开支以每年百亿美元级、并主要压在算力与数据中心上时，数据侧的目录、治理与语义层投入会更依赖\"降本\"而非\"扩容\"的叙事。值得继续跟踪的是，这份预测如何在后续季度被修正，以及基础设施之外的分析与数据管理子项是否被单列。需要等待什么信号确认： 一是 Gartner 是否在正式新闻稿中单列数据与分析软件的支出子项——子项能否被拆出，决定这条预测能否直接支撑数据平台的采购叙事；二是主要云厂商的季度资本开支指引是否与 47% 的增速一致，若实际增速回落，说明\"拐点年\"的判断需要下修；三是这类第三方市场评论稿与 Gartner 官方新闻稿之间的口径差异，引用时应回到 Gartner 原始声明核对，避免把二手转述当成一手结论。",
+      "source": "Nasdaq / PR Newswire（Wall Street Investor 市场评论）：$2.6 Trillion and Climbing — Where the AI Spending Is Going",
+      "url": "https://www.nasdaq.com/press-release/26-trillion-and-climbing-where-ai-spending-going-2026-10-08",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-09",
+      "vendor": "SelectDB",
+      "module": "技术",
+      "title": "【跟踪】Apache Doris 发布 4.1.5-rc01，实时分析型数据库继续按增量节奏迭代",
+      "summary": "为什么值得继续看： 10 月 8 日，Apache Doris 发布 4.1.5-rc01，属候选发布（RC）而非正式版本，衔接 9 月 29 日的稳定版 4.1.4.1。Doris 的定位在近几个版本中持续向\"面向 AI agent 的实时分析与混合检索数据库\"靠拢：原生内置向量索引，支持在库内直接做向量检索与传统 SQL 的混合查询，并允许在 SQL 中调用大模型完成摘要、情感分析等任务，从而把一部分外部向量库的职责收进分析型数据库。其存算分离与 S3 对象存储支持，则是湖仓架构下的成本路径。这条按 RC 收录，不作为正式发布。需要等待什么信号确认： 一是 RC 转为正式版的时间点，以及 4.1.5 相对 4.1.4 的实质变更清单——RC 阶段的变更说明往往不完整，需等正式发布说明；二是\"SQL 内调用大模型\"这条能力在受治理数据上的权限与审计如何落地，这决定它能否进入企业生产；三是混合检索路线在客户侧的采用情况，即有多少场景真的把向量检索从独立数据库迁回分析型数据库，这决定该方向是产品卖点还是实际需求。",
+      "source": "Apache Doris 官方发布页（GitHub Releases）",
+      "url": "https://github.com/apache/doris/releases",
+      "conf": ""
     }
   ],
   "archive": [
@@ -9289,7 +9389,8 @@
     "2026-10-05",
     "2026-10-06",
     "2026-10-07",
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-09"
   ],
   "monthly": [
     {
