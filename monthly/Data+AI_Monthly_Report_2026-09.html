@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI Monthly Report | 2026年9月</title>
+<style>
+  :root {
+    --primary: #7c3aed;
+    --primary-dark: #5b21b6;
+    --primary-light: #ede9fe;
+    --accent: #dc2626;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #1e1b4b;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --green: #059669;
+    --orange: #d97706;
+    --teal: #0891b2;
+    --blue: #2563eb;
+    --rose: #e11d48;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+    color: white;
+    padding: 40px 48px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.3);
+  }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+  .header .period { font-size: 16px; opacity: 0.9; }
+  .header .subtitle { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+
+  /* Verdict Box */
+  .verdict-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--primary);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .verdict-box h2 { font-size: 18px; color: var(--primary); margin-bottom: 16px; }
+  .verdict-box .verdict-text { font-size: 15px; line-height: 1.8; }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    white-space: nowrap;
+  }
+  .badge-verdict { background: var(--primary); }
+  .badge-timeline { background: var(--accent); }
+  .badge-trend { background: var(--blue); }
+  .badge-product { background: var(--teal); }
+  .badge-capital { background: var(--green); }
+  .badge-watchlist { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Timeline */
+  .timeline-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .timeline-table th {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .timeline-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .timeline-table tr:last-child td { border-bottom: none; }
+  .timeline-date { color: var(--text-secondary); white-space: nowrap; font-size: 13px; }
+
+  /* Trend Block */
+  .trend-block {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .trend-block:last-child { border-bottom: none; }
+  .trend-block h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .trend-block .body { font-size: 14px; line-height: 1.85; color: #374151; }
+  .trend-block .body p { margin: 0 0 12px 0; }
+  .trend-block .body p:last-child { margin-bottom: 0; }
+  .trend-block .evidence-box {
+    background: #faf5ff;
+    border-left: 3px solid var(--primary);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #4c1d95;
+    line-height: 1.75;
+  }
+  .trend-block .evidence-box strong { color: var(--primary-dark); }
+  .trend-block .so-what {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 14px;
+    font-size: 13.5px;
+    color: var(--primary-dark);
+    font-weight: 500;
+    line-height: 1.75;
+  }
+
+  /* Verdict paragraphs */
+  .verdict-text p { margin: 0 0 12px 0; }
+  .verdict-text p:last-child { margin-bottom: 0; }
+
+  /* Product Table */
+  .product-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .product-table th {
+    background: #ecfdf5;
+    color: #065f46;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .product-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+  }
+  .product-table tr:last-child td { border-bottom: none; }
+  .impact-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .impact-high { background: #fef2f2; color: #991b1b; }
+  .impact-mid { background: #fffbeb; color: #92400e; }
+  .impact-low { background: #f0fdf4; color: #166534; }
+
+  /* Item */
+  .item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+  .item:last-child { border-bottom: none; }
+  .item h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #374151; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 28px; }
+    .header h1 { font-size: 22px; }
+    .section, .verdict-box { padding: 20px; }
+    .timeline-table, .product-table { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <h1>📊 Data+AI Monthly Report</h1>
+    <div class="period">2026年9月</div>
+    <div class="subtitle">2026-09-01 至 2026-09-30</div>
+  </div>
+
+  <!-- Content will be generated dynamically -->
+  <div class="verdict-box"><h2>📌 月度总判断</h2><div class="verdict-text"><p>9 月，Agent 数据平台竞争从模型连接转向治理与运行时，MCP 托管、Agent 注册表与会话治理相继 GA 或进入预览。开放湖仓成为默认数据接口，查询能力下沉到 Iceberg 数据湖。国内数据要素制度开始发放登记凭证。资本向 AI 数据基础设施集中，并购、融资与 IPO 同步活跃。</p></div></div><div class="section"><div class="section-header"><span class="badge badge-timeline">时间线</span><h2>关键事件时间线</h2></div><table class="timeline-table"><thead><tr><th>日期</th><th>事件</th><th>一句话定位</th></tr></thead><tbody><tr><td>09-01</td><td>阿里云 OpenSearch Agentic Search 2.0 正式商业化</td><td>智能体检索从公测转向按量计费。</td></tr><tr><td>09-02</td><td>MongoDB 发布 FY2027 Q2 财报</td><td>营收同比增 30% 创数年新高，AI 检索产品化提速，盘后股价重挫 14%。</td></tr><tr><td>09-02</td><td>腾讯云正式公开 TDSQL NEXA</td><td>对象存储与开放格式组合为 Agent 多模数据底座。</td></tr><tr><td>09-02</td><td>Google BigQuery Graph 正式 GA</td><td>图查询原生进入数仓并支持跨云原地遍历。</td></tr><tr><td>09-03</td><td>Snowflake 发布 FY2027 Q2 财报</td><td>产品营收同比增 37% 连续三季加速，AI 收入兑现推动盘后大涨 23%。</td></tr><tr><td>09-03</td><td>Oracle Exadata 在 AWS 上正式 GA</td><td>数据库巨头与云巨头的互操作进一步落地。</td></tr><tr><td>09-03</td><td>NVIDIA 官方宣布以 129.3 亿美元收购 Hugging Face</td><td>官方博客确认，Hugging Face 保持开放平台与多云中立定位。</td></tr><tr><td>09-08</td><td>AWS Redshift 支持 Apache Iceberg v3</td><td>开放表格式覆盖 AWS 主力云数仓。</td></tr><tr><td>09-11</td><td>OpenAI 为 ChatGPT Work 上线 Data agent</td><td>对话界面开始收编企业语义层数据访问。</td></tr><tr><td>09-10</td><td>Oracle 发布 AI Data Platform</td><td>随 FY2027 Q1 财报披露，企业本体构建走向自动化。</td></tr><tr><td>09-11</td><td>Apache Iceberg 通过 read restrictions 与 catalog labels 两项新规范</td><td>开放湖仓治理走向跨引擎、跨目录统一。</td></tr><tr><td>09-14</td><td>国家数据产权登记服务系统上线</td><td>全国统一数据产权登记制度落地。</td></tr><tr><td>09-14</td><td>Databricks OpenSharing 外部 Iceberg 表与 schema 共享 GA</td><td>湖上开放共享能力进入正式可用。</td></tr><tr><td>09-15</td><td>dbt Core 2.0 正式 GA</td><td>Rust 重写完成，分析工程工具链进入代际切换。</td></tr><tr><td>09-17</td><td>Crusoe 宣布 Series F 首次交割</td><td>39 亿美元 initial closing，投后估值 309 亿美元。</td></tr><tr><td>09-18</td><td>Nscale 向 SEC 提交 Form S-1</td><td>AI 云基础设施公司启动赴纽交所 IPO 流程，定价未定。</td></tr><tr><td>09-18</td><td>华为全联接大会：华为云定义 Agentic Cloud</td><td>记忆存储与面向智能体的混合云架构集中发布（9/18-21）。</td></tr><tr><td>09-21</td><td>国家数据局发放首批 56 家数据产权登记凭证</td><td>数据持有权与经营权获得凭证化确认。</td></tr><tr><td>09-22</td><td>星环科技在港交所主板挂牌</td><td>国产数据平台厂商完成 A+H 两地上市。</td></tr><tr><td>09-22</td><td>云栖大会发布 ADA 与 Agent-Native 云升级</td><td>阿里云 9/22-24 集中发布大数据 AI 平台与全球扩建计划。</td></tr><tr><td>09-22</td><td>Progress 以 4 亿美元完成收购 Domo 的 AI 与数据平台业务</td><td>交易交割完成，BI 与数据平台资产易主。</td></tr><tr><td>09-23</td><td>Databricks Genie One MCP 正式可用</td><td>以 Unity Gateway 托管服务对外治理 MCP 调用。</td></tr><tr><td>09-24</td><td>Databricks 宣布收购 Row Zero</td><td>受治理的实时电子表格接入 Genie；金额未披露。</td></tr><tr><td>09-29</td><td>MongoDB 发布 9.0、Atlas Infinite 与 Atlas Agent Engine</td><td>9.0 为 GA，后两者为 Public Preview。</td></tr><tr><td>09-30</td><td>AWS Aurora PostgreSQL 支持直接查询 Iceberg 与 Parquet 数据湖</td><td>运营数据库与开放湖仓数据联合查询，商业区与 GovCloud 可用。</td></tr></tbody></table></div><div class="section"><div class="section-header"><span class="badge badge-trend">趋势</span><h2>月度趋势分析</h2></div><div class="trend-block"><h3>趋势一：Agent 数据平台从模型连接走向治理与运行时（高可信）</h3><div class="evidence-box"><strong>核心判断：</strong>9 月的公开动作显示，Agent 与数据平台的集成焦点从&quot;能否连上模型&quot;转向凭据托管、身份注册、会话治理和成本观测；相关能力多数为 GA 或 Preview，生产验证仍集中早期。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>状态与治理维度</th></tr></thead><tbody><tr><td>09-11</td><td><a href="https://openai.com/index/put-data-to-work/" target="_blank" rel="noopener noreferrer">OpenAI</a></td><td>ChatGPT Work 上线 Data agent</td><td>对话界面直接调用企业语义层数据。</td></tr><tr><td>09-23</td><td><a href="https://www.databricks.com/blog/genie-one-mcp-now-generally-available" target="_blank" rel="noopener noreferrer">Databricks</a></td><td>Genie One MCP 正式可用</td><td>GA；以 Unity Gateway 托管服务对外治理 MCP 调用。</td></tr><tr><td>09-22</td><td><a href="https://docs.cloud.google.com/bigquery/docs/release-notes" target="_blank" rel="noopener noreferrer">Google Cloud</a></td><td>BigQuery 数据代理接入 Gemini Enterprise</td><td>Agent Registry 托管智能体凭据与身份。</td></tr><tr><td>09-24</td><td><a href="https://aiven.io/press/aiven-launches-runtime-and-datahub-enabling-ai-agents" target="_blank" rel="noopener noreferrer">Aiven</a></td><td>Runtime 与 DataHub 正式可用</td><td>智能体运行位置与数据地图一起交付。</td></tr><tr><td>09-29</td><td><a href="https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-atlas-agent-engine-to-put-ai-agents-in-production-without-a-new-stack" target="_blank" rel="noopener noreferrer">MongoDB</a></td><td>Atlas Agent Engine</td><td>Public Preview；面向 Agent 生产化免新建技术栈。</td></tr></tbody></table><p>OpenAI 把 Data agent 放进通用工作界面，Databricks 和 Google Cloud 分别以 MCP 网关和 Agent Registry 治理调用与凭据，MongoDB 与 Aiven 把 Agent 运行时和数据地图打包为独立产品层，Microsoft Fabric 则在 9 月将 <a href="https://go.microsoft.com/fwlink/p/?linkid=2224550" target="_blank" rel="noopener noreferrer">Fabric IQ MCP Server、Core MCP Server 与 Data-agent MCP 任务批量转入 GA</a>。方向一致：谁托管身份、谁记录审计、谁归因成本。</p><p>这些能力的治理口径（委托链路、工具调用范围、成本归因粒度）尚未有跨厂商统一标准，采购评估需逐项对照。</p><p><strong>评估要点：</strong><br/>- Agent 凭据托管、审计记录与任务级权限是否可追溯、可撤销。<br/>- MCP/注册表类能力的多引擎覆盖范围与锁定程度。<br/>- GA 与 Preview 能力在生产控制面中的责任边界差异。</p></div></div><div class="trend-block"><h3>趋势二：开放湖仓成为默认数据接口（高可信）</h3><div class="evidence-box"><strong>核心判断：</strong>9 月 AWS、Databricks、Snowflake、Google、Starburst 的动作显示，Iceberg 已从存储格式上升为查询、共享与治理的默认接口，开放湖仓与运营数据库的边界开始融合。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>已公开能力</th></tr></thead><tbody><tr><td>09-08</td><td><a href="https://targetsocialmedia.com/2026/09/07/aws-weekly-roundup-claude-fable-5-1-on-aws-amazon-linux-2027-preview-aws-certified-ai-business-strategist-and-more-september-7-2026" target="_blank" rel="noopener noreferrer">AWS</a></td><td>Redshift 支持 Iceberg v3</td><td>开放表格式进入 AWS 主力云数仓。</td></tr><tr><td>09-11</td><td><a href="https://www.databricks.com/blog/unifying-governance-across-engines-and-catalogs-open-lakehouse" target="_blank" rel="noopener noreferrer">Apache Iceberg</a></td><td>read restrictions 与 catalog labels 规范</td><td>治理语义写入开放表格式规范层。</td></tr><tr><td>09-14</td><td><a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september" target="_blank" rel="noopener noreferrer">Databricks</a></td><td>OpenSharing 外部 Iceberg 表共享 GA</td><td>外部 Iceberg 表与 schema 共享正式可用。</td></tr><tr><td>09-21</td><td><a href="https://docs.snowflake.com/release-notes/2026/other/2026-09-18-iceberg-partition-evolution-ga" target="_blank" rel="noopener noreferrer">Snowflake</a></td><td>Iceberg 表分区演进 GA</td><td>修改分区规格不再重写历史数据。</td></tr><tr><td>09-25</td><td><a href="https://www.starburst.io/blog/starburst-enterprise-delivers-incremental-iceberg-materialized-views-query-speed-improvements-and-enhanced-ai-intelligence/" target="_blank" rel="noopener noreferrer">Starburst</a></td><td>482-e LTS</td><td>Iceberg 物化视图改为增量刷新。</td></tr><tr><td>09-30</td><td><a href="https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/" target="_blank" rel="noopener noreferrer">AWS</a></td><td>Aurora PostgreSQL 直接查询 Iceberg 与 Parquet</td><td>运营数据库与数据湖联合查询；官方称无额外产品收费，查询消耗 Aurora 计算资源并产生 S3 请求费用。</td></tr></tbody></table><p>月内三条线同时推进：规范层（Iceberg 治理规范、1.12 预览）、引擎层（Redshift、Snowflake 分区演进、Starburst 增量刷新）和融合层（Aurora 直接查询数据湖、BigQuery 连续查询输出写入 Iceberg managed tables、S3 Tables 支持 Iceberg v3 数据类型）。开放格式覆盖了从事务数据库到对象存储的完整链路。</p><p>格式开放降低锁定，不自动消除迁移与运维成本；跨引擎查询的性能与计费口径需按各厂商文档分别评估。</p><p><strong>评估要点：</strong><br/>- 联合查询类能力的计费模型（计算资源与 S3 请求费用）与性能边界。<br/>- Catalog、权限模型与治理规范在各引擎间的一致性。<br/>- Iceberg 1.12 因许可问题推迟发版对升级节奏的影响。</p></div></div><div class="trend-block"><h3>趋势三：数据库为 Agent 重构状态、弹性与上下文（中可信）</h3><div class="evidence-box"><strong>核心判断：</strong>多家数据库厂商开始把 Agent 会话状态、记忆、沙箱与秒级弹性下沉为数据库原生能力；产品形态各异，多数处于 Preview 或发布初期，生产案例有限。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>状态</th></tr></thead><tbody><tr><td>09-18</td><td><a href="https://www.crn.com/news/software/" target="_blank" rel="noopener noreferrer">Couchbase</a></td><td>AI Data Plane</td><td>面向生产环境 Agent 的统一数据层。</td></tr><tr><td>09-18</td><td><a href="https://www.storagenewsletter.com/2026/09/17/yugabyte-accelerates-agentic-ai-momentum-with-new-product-lines-global-expansion-and-industry-recognition" target="_blank" rel="noopener noreferrer">Yugabyte</a></td><td>AMP 与 Meko 两条产品线</td><td>扩展 Agent 数据层；客户增速为公司自报。</td></tr><tr><td>09-21</td><td><a href="https://nw.eastday.com/bjzx/20260918/efa4a2f143ae4d68b834a3c53d448b1f.html" target="_blank" rel="noopener noreferrer">华为云</a></td><td>Agentic Cloud 记忆存储</td><td>全联接大会发布；记忆存储成为基础设施组件。</td></tr><tr><td>09-22</td><td><a href="https://docs.snowflake.com/release-notes/2026/other/2026-09-21-cortex-agents-compact-api-preview" target="_blank" rel="noopener noreferrer">Snowflake</a></td><td>Cortex Agents Compact API</td><td>Preview；长对话折叠为紧凑表示。</td></tr><tr><td>09-25</td><td><a href="https://cloud.google.com/blog/products/databases/announcing-postgresql-for-agents-in-alloydb" target="_blank" rel="noopener noreferrer">Google Cloud</a></td><td>AlloyDB 面向 Agent 的沙箱实例</td><td>秒级开出、按需归零。</td></tr><tr><td>09-29</td><td><a href="https://investors.mongodb.com/news-releases/news-release-details/mongodb-launches-mongodb-90-best-version-ever-built-and-atlas" target="_blank" rel="noopener noreferrer">MongoDB</a></td><td>Atlas Infinite</td><td>Public Preview；性能与吞吐数字为厂商披露基准。</td></tr></tbody></table><p>Google 的沙箱实例解决 Agent 任务的短生命周期隔离，华为云把跨会话记忆上移为平台组件，Snowflake 压缩会话表示以控制上下文成本。三者共同指向：Agent 工作负载的状态管理正在成为数据库的新设计约束。</p><p>阿里云在云栖大会期间提出的 Context Engine 属于概念口径，产品化状态待官方文档确认，此处仅作信号记录。</p><p><strong>评估要点：</strong><br/>- 会话状态、记忆与分支数据的生命周期管理和回收机制。<br/>- 沙箱实例的身份隔离与中心数据层之间的权限边界。<br/>- Preview 阶段能力在 SLA、地域覆盖与计费上的限制。</p></div></div><div class="trend-block"><h3>趋势四：国内数据要素制度从文件走向凭证与行动（高可信）</h3><div class="evidence-box"><strong>核心判断：</strong>9 月国内数据要素政策从制度文件进入执行载体：统一登记系统上线、首批凭证发放、行业攻坚行动启动，确权、流通与资产化路径开始有了可核验的操作层。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>机构</th><th>事件</th><th>已公开信息</th></tr></thead><tbody><tr><td>09-01</td><td><a href="https://www.bjdch.gov.cn/ztzl/tzdc/tzdt/gjdt/202608/t20260831_4843727.html" target="_blank" rel="noopener noreferrer">国家数据局</a></td><td>四项新举措</td><td>数据标注试点、词元商业模式、央国企数据开放。</td></tr><tr><td>09-09</td><td><a href="https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/0908/20260908091721448477945_pc.html" target="_blank" rel="noopener noreferrer">国家数据局</a></td><td>局长署名文章</td><td>数据要素市场化与全国一体化数据市场建设加速。</td></tr><tr><td>09-14</td><td><a href="https://www.nda.gov.cn/sjj/swdt/xwfb/0911/20260911171614017938821_pc.html" target="_blank" rel="noopener noreferrer">国家数据局</a></td><td>数据产权登记服务系统上线</td><td>全国统一登记制度落地。</td></tr><tr><td>09-21</td><td><a href="https://www.nda.gov.cn/sjj/swdt/mtsy/0921/20260921120942131211051_pc.html" target="_blank" rel="noopener noreferrer">国家数据局</a></td><td>首批 56 家主体取得登记凭证</td><td>凭证可用于交易、融资担保、作价入股等场景。</td></tr><tr><td>09-23</td><td><a href="https://www.nda.gov.cn/sjj/swdt/mtsy/0922/20260922092042919196317_pc.html" target="_blank" rel="noopener noreferrer">国家数据局</a></td><td>十大行业数据资源开发利用攻坚行动</td><td>聚焦行业数据开发利用难点。</td></tr></tbody></table><p>登记凭证把数据持有权与经营权变成可核验的法律操作对象，这是制度供给与市场交易之间的关键一步。凭证可支持的交易、融资担保与作价入股属于制度用途，尚未等同普遍形成的数据交易市场。</p><p>同期工信部《&quot;人工智能+软件&quot;专项行动实施方案》（文件落款 9/2、新闻发布会 9/11）提出 2028、2030 年目标，属政策规划口径，不是已实现成果。</p><p><strong>评估要点：</strong><br/>- 凭证跨区域互认、质押融资与入表的实际落地案例。<br/>- 登记审查维度（三维度审查与负面清单）对企业数据资产化的影响。<br/>- 攻坚行动从政策到采购需求的转化速度。</p></div></div><div class="trend-block"><h3>趋势五：检索与上下文成为数据平台内置能力（中可信）</h3><div class="evidence-box"><strong>核心判断：</strong>混合检索、自适应检索与上下文管理开始从外挂组件转为数据平台内置件；检索层的竞争从&quot;能不能搜&quot;转向延迟、成本与治理。</div><div class="body"><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>状态</th></tr></thead><tbody><tr><td>09-01</td><td><a href="https://help.aliyun.com/en/open-search/search-platform/product-overview/agentic-search-2-0-commercialization-announcement" target="_blank" rel="noopener noreferrer">阿里云</a></td><td>OpenSearch Agentic Search 2.0 商业化</td><td>智能体检索转向按量计费。</td></tr><tr><td>09-03</td><td><a href="https://www.aliyun.com/product/news/29983" target="_blank" rel="noopener noreferrer">阿里云</a></td><td>ES AI 引擎版发布</td><td>无状态多租户架构；&quot;亿级 Agent 检索&quot;为厂商口径。</td></tr><tr><td>09-10</td><td><a href="https://www.databricks.com/blog/adaptive-instructed-retriever-frontier-quality-search-2x-lower-latency" target="_blank" rel="noopener noreferrer">Databricks</a></td><td>自适应检索模型</td><td>检索层成为平台内置件；性能数字为厂商披露。</td></tr><tr><td>09-17</td><td><a href="https://courses.getdbt.com/blog/fivetran-dbt-labs-announces-new-capabilities-to-make-enterprise-data-agent-ready-at-dbt-summit" target="_blank" rel="noopener noreferrer">Fivetran × dbt</a></td><td>Context Layer</td><td>dbt Summit 发布；面向智能体的企业上下文。</td></tr><tr><td>09-21</td><td><a href="https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql/" target="_blank" rel="noopener noreferrer">Google Cloud</a></td><td>AlloyDB 与 Cloud SQL 原生 BM25</td><td>混合检索不再需要独立检索后端。</td></tr><tr><td>09-22</td><td><a href="https://docs.cloud.google.com/alloydb/docs/release-notes" target="_blank" rel="noopener noreferrer">Google Cloud</a></td><td>AlloyDB 列式引擎作向量索引内存缓存</td><td>GA。</td></tr></tbody></table><p>数据库内置 BM25 与向量缓存压缩了&quot;数据库+独立检索引擎&quot;的架构分层，检索精度与延迟数字均来自厂商披露、未经独立基准验证。dbt 的 Context Layer 则把上下文治理前移到语义层。</p><p><strong>评估要点：</strong><br/>- 内置检索与独立检索引擎在规模、成本与更新时效上的差距。<br/>- 语义层上下文与企业现有指标口径的兼容成本。<br/>- 按量计费模式下 Agent 高频检索的实际成本曲线。</p></div></div></div><div class="section"><div class="section-header"><span class="badge badge-product">产品</span><h2>Product &amp; Tech 月度盘点</h2></div><table class="product-table"><thead><tr><th>日期</th><th>厂商/项目</th><th>事件</th><th>状态</th></tr></thead><tbody><tr><td>09-01</td><td>阿里云</td><td>OpenSearch Agentic Search 2.0 商业化</td><td>按量计费</td></tr><tr><td>09-01</td><td>腾讯云</td><td>TCHouse AI Function：AI 算子进入数仓 SQL</td><td>发布</td></tr><tr><td>09-02</td><td>腾讯云</td><td>TDSQL NEXA：对象存储与开放格式的 Agent 多模数据底座</td><td>正式公开</td></tr><tr><td>09-02</td><td>Google Cloud</td><td>BigQuery Graph</td><td>GA</td></tr><tr><td>09-03</td><td>Oracle</td><td>Exadata on AWS</td><td>GA</td></tr><tr><td>09-07</td><td>Google Cloud</td><td>数据库运维 AI 智能体</td><td>发布</td></tr><tr><td>09-08</td><td>AWS</td><td>Redshift 支持 Iceberg v3</td><td>发布</td></tr><tr><td>09-09</td><td>Google Cloud</td><td>Cloud SQL 区域端点</td><td>GA</td></tr><tr><td>09-10</td><td>Databricks</td><td>自适应检索模型</td><td>发布</td></tr><tr><td>09-11</td><td>OpenAI</td><td>ChatGPT Work Data agent</td><td>上线</td></tr><tr><td>09-10</td><td>Oracle</td><td>AI Data Platform</td><td>发布</td></tr><tr><td>09-10</td><td>Cloudera × Mistral</td><td>主权 AI 战略合作：专用模型下沉到数据所在地</td><td>合作发布</td></tr><tr><td>09-11</td><td>Apache Iceberg</td><td>read restrictions 与 catalog labels 规范</td><td>规范通过</td></tr><tr><td>09-14</td><td>Databricks</td><td>OpenSharing 外部 Iceberg 表与 schema 共享</td><td>GA</td></tr><tr><td>09-15</td><td>dbt Labs</td><td>dbt Core 2.0</td><td>GA</td></tr><tr><td>09-15</td><td>Databricks</td><td>Spark 有状态流查询无损分区重配</td><td>Public Preview</td></tr><tr><td>09-15</td><td>腾讯云</td><td>TCHouse-C 存算分离弹性版</td><td>公测</td></tr><tr><td>09-17</td><td>Fivetran × dbt</td><td>Context Layer</td><td>发布</td></tr><tr><td>09-18</td><td>华为云</td><td>Stack 面向智能体的混合云架构</td><td>发布</td></tr><tr><td>09-21</td><td>Google Cloud</td><td>AlloyDB 与 Cloud SQL 原生 BM25</td><td>发布</td></tr><tr><td>09-21</td><td>Snowflake</td><td>Iceberg 表分区演进</td><td>GA</td></tr><tr><td>09-22</td><td>Snowflake</td><td>Cortex Agents Compact API</td><td>Preview</td></tr><tr><td>09-23</td><td>阿里云</td><td>云栖大会发布 ADA、OpenLake 等大数据 AI 平台升级</td><td>大会发布</td></tr><tr><td>09-23</td><td>Databricks</td><td>Genie One MCP</td><td>GA</td></tr><tr><td>09-23</td><td>Teradata</td><td>Tera 升级为智能体同事，新增上下文引擎与执行编排层</td><td>发布</td></tr><tr><td>09-24</td><td>Aiven</td><td>Runtime 与 DataHub</td><td>正式可用</td></tr><tr><td>09-24</td><td>腾讯云</td><td>DataBuddy：智能体原生 Data + AI 工作台</td><td>正式发布</td></tr><tr><td>09 月</td><td>Microsoft Fabric</td><td>Fabric IQ MCP Server、Core MCP Server 与 Data-agent MCP 任务批量 GA，Fabric IQ 进入 Microsoft 365 Copilot</td><td>GA</td></tr><tr><td>09-25</td><td>Snowflake</td><td>Snowpipe Streaming 分区 Iceberg 表</td><td>GA</td></tr><tr><td>09-25</td><td>Starburst</td><td>Enterprise 482-e LTS（Iceberg 物化视图增量刷新）</td><td>发布</td></tr><tr><td>09-25</td><td>Google Cloud</td><td>AlloyDB 面向 Agent 的沙箱实例</td><td>发布</td></tr><tr><td>09-29</td><td>MongoDB</td><td>9.0</td><td>GA</td></tr><tr><td>09-29</td><td>MongoDB</td><td>Atlas Infinite 与 Atlas Agent Engine</td><td>Public Preview</td></tr><tr><td>09-30</td><td>AWS</td><td>Aurora PostgreSQL 直接查询 Iceberg 与 Parquet</td><td>发布</td></tr></tbody></table></div><div class="section"><div class="section-header"><span class="badge badge-capital">资本</span><h2>Capital &amp; Corporate 月度盘点</h2></div><table class="product-table"><thead><tr><th>日期</th><th>类型</th><th>事件</th><th>核心数据与状态</th></tr></thead><tbody><tr><td>09-02</td><td>财报</td><td>MongoDB 发布 FY2027 Q2 业绩</td><td>营收同比增长 30%；AI 检索产品化提速，盘后股价下跌 14%。</td></tr><tr><td>09-03</td><td>财报</td><td>Snowflake 发布 FY2027 Q2 业绩</td><td>产品营收同比增长 37%，连续三季加速；盘后股价上涨 23%。</td></tr><tr><td>09-10</td><td>财报</td><td>Oracle 发布 FY2027 Q1 业绩</td><td>总营收 193 亿美元（+30%），OCI 收入 74 亿美元（+121%）；RPO 达 6640 亿美元（同比增 2090 亿），Q1 新签 AI 云合同超 300 亿美元。</td></tr><tr><td>09-03</td><td>收购</td><td>NVIDIA 官方宣布收购 Hugging Face</td><td>129.3 亿美元；Hugging Face 保持开放平台与多云中立定位，交割与整合安排待后续披露。</td></tr><tr><td>09-04</td><td>定增</td><td>海量数据定增募资调减至 7.02 亿元</td><td>聚焦 HTAP 与多模态时序数据库；9/14 获上交所审核通过。</td></tr><tr><td>09-08</td><td>融资</td><td>中科世通亨奇完成近 5 亿元 B 系列融资</td><td>国内数据智能方向。</td></tr><tr><td>09-16</td><td>融资</td><td>CADDi 完成 1.14 亿美元 D 轮</td><td>制造业 AI 数据平台，估值 12 亿美元。</td></tr><tr><td>09-16</td><td>股权投资</td><td>KKR 与 Neuberger 收购 Datavant 少数股权</td><td>医疗数据协作平台。</td></tr><tr><td>09-17</td><td>融资</td><td>Crusoe 宣布 Series F 首次交割</td><td>39 亿美元 initial closing，投后估值 309 亿美元；后续交割待完成。</td></tr><tr><td>09-17</td><td>投资</td><td>Databricks 未来三年在新加坡投资逾 3.5 亿美元</td><td>总部与人员规模四倍扩张。</td></tr><tr><td>09-17</td><td>战略融资</td><td>TileDB 更名 Tile.ai 并完成战略融资</td><td>金额未披露；企业 AI 数据基座 Private Preview。</td></tr><tr><td>09-18</td><td>融资</td><td>MIND 完成 7200 万美元 B 轮</td><td>面向 AI 时代的数据防泄漏治理。</td></tr><tr><td>09-18</td><td>IPO</td><td>Nscale 向 SEC 提交 Form S-1</td><td>拟纽交所上市；发行股数与价格区间未定，登记声明尚未生效。</td></tr><tr><td>09-22</td><td>IPO</td><td>星环科技在港交所主板挂牌</td><td>首家 18C 章赴港上市的 A 股数据平台公司，超购 47.7 倍。</td></tr><tr><td>09-22</td><td>收购</td><td>Progress 完成 Domo AI 与数据平台业务收购</td><td>4 亿美元，交易交割完成。</td></tr><tr><td>09-22</td><td>融资</td><td>Snorkel AI 完成 3.5 亿美元 E 轮</td><td>估值 35 亿美元；ARR 与增长指标为公司自报（vendor-reported）。</td></tr><tr><td>09-22</td><td>融资</td><td>Feldera 完成 2150 万美元融资</td><td>湖仓查询增量刷新成本与数据变更量成比例。</td></tr><tr><td>09-24</td><td>融资</td><td>Silk 完成 4500 万美元增长资本融资</td><td>面向智能体工作负载的数据平台。</td></tr><tr><td>09-24</td><td>收购</td><td>Databricks 宣布收购 Row Zero</td><td>金额未披露；受治理电子表格接入 Genie。</td></tr><tr><td>09-24</td><td>投资</td><td>微软宣布中东数字框架</td><td>2030 年前投入超 100 亿美元云与 AI 基建，计划口径。</td></tr><tr><td>09-24</td><td>扩建</td><td>阿里云宣布新一轮全球基础设施扩建</td><td>含 2032 年数据中心容量目标，计划口径。</td></tr><tr><td>09-28</td><td>可转债</td><td>Snowflake 可转换优先票据定价</td><td>SEC 8-K 表述 9/28 完成，定价稿称销售预计 10/1 交割，契约日期为 10/1；文件口径存在差异，以 SEC 后续披露为准。</td></tr></tbody></table><div class="body" style="margin-top:16px"><p><strong>月度资本流向：</strong></p><ul><li>AI 数据资产成为千亿美元级并购标的：NVIDIA 以 129.3 亿美元收购 Hugging Face，叠加 Progress 对 Domo 业务的 4 亿美元交割与 Databricks 收购 Row Zero，模型社区、BI 资产与分析入口同月易主。</li><li>基础设施资本开支向 GPU 云与主权基建集中：Crusoe 39 亿美元首次交割、Nscale 启动 IPO、微软中东 100 亿美元框架、阿里云全球扩建，均为计划或分阶段口径。</li><li>一级市场围绕 Agent 数据层定价：Snorkel（估值 35 亿美元）、Silk、Feldera、Keewano 等融资均以 Agent/AI 数据基础设施为叙事。</li><li>二级市场按 AI 收入兑现度分化定价：MongoDB 营收增 30% 但盘后跌 14%，Snowflake 产品营收增 37% 且 AI 兑现盘后涨 23%，市场对&quot;AI 投入何时变成收入&quot;的容忍度在下降。</li><li>国内资本通道对数据平台厂商重启：星环科技完成 A+H 两地上市、海量数据定增过会、中科世通亨奇完成 B 系列，港股 18C 章成为新通道。</li></ul></div></div><div class="section"><div class="section-header"><span class="badge badge-watchlist">跟踪</span><h2>Watchlist 月度复盘</h2></div><h3 style="font-size:15px;margin:16px 0 8px;color:var(--green)">✅ 已发布或状态已确认</h3><div class="item"><span style="color:var(--green);margin-right:6px">✅</span><strong>dbt Core 2.0</strong>：GA，Rust 重写完成。</div><div class="item"><span style="color:var(--green);margin-right:6px">✅</span><strong>Databricks OpenSharing 外部 Iceberg 表共享</strong>：GA；同月 Genie One MCP 正式可用。</div><div class="item"><span style="color:var(--green);margin-right:6px">✅</span><strong>Google BigQuery Graph 与 Oracle Exadata on AWS</strong>：均为 GA。</div><div class="item"><span style="color:var(--green);margin-right:6px">✅</span><strong>MongoDB 9.0</strong>：GA；Atlas Infinite 与 Atlas Agent Engine 为 Public Preview。</div><div class="item"><span style="color:var(--green);margin-right:6px">✅</span><strong>AWS Aurora PostgreSQL 直接查询 Iceberg/Parquet</strong>：商业区与 AWS GovCloud 可用。</div><div class="item"><span style="color:var(--green);margin-right:6px">✅</span><strong>国家数据产权登记服务系统上线</strong>；首批 56 家主体取得登记凭证。</div><div class="item"><span style="color:var(--green);margin-right:6px">✅</span><strong>星环科技</strong>：完成 A+H 两地上市。</div><h3 style="font-size:15px;margin:16px 0 8px;color:var(--orange)">🔄 仍在跟踪</h3><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>Snowflake 可转债</strong>：8-K 与定价稿对完成/交割日期表述存在差异（9/28 vs 10/1），契约日期为 10/1；以 SEC 后续文件为准。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>NVIDIA 收购 Hugging Face</strong>：交割进度与 HF 独立运营安排待披露。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>Nscale IPO</strong>：定价与发行规模未定；Crusoe Series F 后续 tranche 待完成。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>Amazon 收购 DuckLabs</strong>：8 月签署最终协议，交割与 DuckDB 社区治理安排待公告。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>阿里云 SLS DataAgent 商业化</strong>：中文通知与英文公告分别标注 9/21 与 9/30，计划 10/8 结束公测并启动收费；实际收费生效待确认。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>华为昇腾 950 国内商用（计划 9/30）与 CloudTable 转商</strong>：官方为计划口径，按期生效未获事后确认。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>云栖大会发布的 ADA、OpenLake、Streaming Agent 等</strong>：GA 节奏与生产案例待官方文档。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>阿里云 Context Engine</strong>：目前为大会概念口径，产品化状态待确认。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>Apache Iceberg 1.12 与 Polaris 1.8.0</strong>：因许可问题推迟发版。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>MongoDB Atlas Infinite 性能数字</strong>：厂商披露基准（vendor-reported），未经独立验证。</div><div class="item"><span style="color:var(--orange);margin-right:6px">🔄</span><strong>Snowflake World Tour 中国首站（9 月上旬）</strong>：Agentic Control Plane 与本体层主张目前来自媒体复盘，官方口径与产品化节奏待确认。</div><h3 style="font-size:15px;margin:16px 0 8px;color:var(--blue)">📅 10 月重点关注</h3><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>SLS DataAgent 10 月 8 日转商是否按期生效及定价口径。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>Nscale IPO 定价与首日表现；Crusoe 后续交割进展。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>Snowflake 可转债 10/1 契约后续披露与资金用途。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>云栖大会 ADA/OpenLake 与腾讯云 DataBuddy、数据分析智能体新版本的 GA 落地。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>数据产权凭证扩围与十大行业攻坚行动的首批项目。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>国内厂商 Q3 财报中 AI 数据平台的收入口径。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>Iceberg 1.12 发版与 Parquet 提案进展。</div><div class="item"><span style="color:var(--blue);margin-right:6px">📅</span>Aurora 直接查询 Iceberg 的客户采用与独立性能验证。</div></div><div class="section"><div class="section-header"><span class="badge badge-verdict">延伸</span><h2>延伸阅读</h2></div><p><strong><a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/" target="_blank" rel="noopener noreferrer">NVIDIA：To Acquire Hugging Face</a></strong>  <br/>黄仁勋 9 月 3 日官方宣布，129.3 亿美元对价与开放平台承诺的原始表述。</p><p><strong><a href="https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/" target="_blank" rel="noopener noreferrer">AWS：Aurora PostgreSQL 直接查询 Iceberg 与 Parquet 数据湖</a></strong>  <br/>运营数据库与开放湖仓联合查询的官方发布，含计费口径说明。</p><p><strong><a href="https://www.alibabagroup.com/en-US/document-2041268239081668608" target="_blank" rel="noopener noreferrer">Alibaba Group：云栖大会官方回顾</a></strong>  <br/>Agentic Cloud、AgentCore、全球区域扩张与 2032 年容量目标的官方口径。</p><p><strong><a href="https://investors.progress.com/node/28971" target="_blank" rel="noopener noreferrer">Progress Software：完成 Domo AI 与数据平台业务收购</a></strong>  <br/>4 亿美元交割的投资者关系新闻稿。</p><p><strong><a href="https://www.sec.gov/Archives/edgar/data/1640147/000164014726000043/snow-20260928.htm" target="_blank" rel="noopener noreferrer">Snowflake：可转换优先票据 SEC 8-K</a></strong>  <br/>可转债完成表述与 10/1 契约日期的原始文件。</p><p><strong><a href="https://www.nda.gov.cn/sjj/swdt/mtsy/0921/20260921120942131211051_pc.html" target="_blank" rel="noopener noreferrer">国家数据局：首批数据产权登记凭证发放</a></strong>  <br/>56 家主体取得凭证与制度用途的官方表述。</p></div>
+
+  <div class="footer">
+    <p>Data+AI Monthly Report</p>
+  </div>
+</div>
+</body>
+</html>
