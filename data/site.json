@@ -9384,6 +9384,126 @@
       "source": "Apache 基金会 Community Over Code Glasgow 2026 官方活动页",
       "url": "https://communityovercode.apache.org/events/glasgow-2026/",
       "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "Snowflake",
+      "module": "专题",
+      "title": "Snowflake 语义视图进入 IDE：Semantic Studio 正式 GA",
+      "summary": "来源： Snowflake Blog摘要： Snowflake 宣布 Semantic Studio 正式可用，把语义视图编写从 Snowsight 的单页编辑器搬进 Workspaces，与团队已有的 SQL、Notebook、dbt 项目并列。新版本加入 Snowflake CoCo 深度集成、git 版本管理与体验改进，语义视图成为团队仓库中的一个文件。为什么对数据平台重要： 语义视图如今被每个智能体和每个 BI 工具读取，一行改动能同时影响全部消费方。把它变成有作者、有理由、可回滚的仓库文件，等于让语义层复用既有的代码评审、评测与 CI/CD 链路，治理位置从运行时前移到交付时。",
+      "source": "Snowflake Blog",
+      "url": "https://www.snowflake.com/en/blog/semantic-studio-ga/",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "微软",
+      "module": "专题",
+      "title": "微软开源 PostgreSQL 运维智能体，把告警变成答案",
+      "summary": "来源： Microsoft Open Source Blog摘要： 微软开源博客发布面向 PostgreSQL 运维的数据库智能体，把监控告警、日志与运行状态组织成可理解的结论与处置建议，并在 Microsoft Fabric 的 Database Hub 提供单一面板做可观测。为什么对数据平台重要： 数据库运维长期依赖专家跨页面、跨命令拼接信息；把这条链路交给智能体，等于把运维知识沉淀为产品能力，也让\"智能体托管基础设施日常操作\"从概念落到可复用的开源件，直接冲击数据库可观测与运维工具链的形态。",
+      "source": "Microsoft Open Source Blog",
+      "url": "https://opensource.microsoft.com/blog/2026/10/12/from-alerts-to-answers-the-future-of-postgresql-operations-is-intelligent",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "Google",
+      "module": "专题",
+      "title": "Google Cloud 把多元时序基础模型 TimesFM 3.0 放进 BigQuery",
+      "summary": "来源： Google Cloud Blog摘要： Google Cloud 发布 BigQuery TimesFM 3.0（预览），支持多元时间序列预测，用于需求、销量与容量等业务量的预测，官方称其在多个公开预测基准上取得领先。为什么对数据平台重要： 预测能力从需要单独搭建的数据科学工程，下沉为仓库内可调用的原生能力。当基础模型直接长在分析引擎里，数据平台开始承担\"分析与预测同栈\"的角色，也会改变企业为时序建模单独采购工具与算力的做法。",
+      "source": "Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-timesfm-3-0-with-multivariate-time-series-forecasting",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "VAST Data",
+      "module": "技术",
+      "title": "VAST Data 与 DigitalOcean 扩大合作，把存储、数据库与向量检索合并成一层",
+      "summary": "来源： VAST Data摘要： VAST Data 宣布扩大与 DigitalOcean 的战略合作，把 VAST AI OS 部署进 DigitalOcean 的 AI 原生云。DigitalOcean 提供托管的 Agent Data Services，代理与 AI 应用在其中读写上下文，数据落地即建索引、可按语义检索，并落在单一租户隔离目录内。对数据平台的影响： 官方称这一形态取消了独立的向量数据库与 ETL 管道，由内置治理控制每个代理的读写权限。若成立，会把\"对象存储＋向量库＋管道\"的三件套压缩成一层底座，改变智能体数据层的架构选型与成本结构。",
+      "source": "VAST Data",
+      "url": "https://www.vastdata.com/press-releases/vast-data-digitalocean-partnership-ai-native-cloud",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "AWS",
+      "module": "技术",
+      "title": "AWS Glue Data Quality 新增结果查询 API",
+      "summary": "来源： AWS SDK for Go v2 发版说明摘要： AWS 在 Glue 服务 SDK 中新增数据质量结果查询接口 GetDataQualityResultV2、BatchGetDataQualityResultV2 与 ListDataQualityResultsV2，可返回来自任意受支持数据处理引擎发布的数据质量评估结果。对数据平台的影响： 数据质量结果不再绑定单一引擎，多引擎管道的质量结论可以统一取回与比对，为跨引擎的数据治理与流水线门禁提供统一的数据面。",
+      "source": "AWS SDK for Go v2 发版说明",
+      "url": "https://newreleases.io/project/github/aws/aws-sdk-go-v2/release/release-2026-10-12",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "火山引擎",
+      "module": "技术",
+      "title": "火山引擎 DataLeap 更新 LeapAgent One 与数据探索 Skill",
+      "summary": "来源： 火山引擎功能发布记录摘要： 火山引擎 DataLeap 发布记录显示，LeapAgent One 新增会话分享链接、支持直接打开与预览 CSV/TSV、升级运维诊断与健康检查，并新增 dataleap-data-explorer、dataleap-requirement-to-code 两个 Skill，同时上线资源包计费。对数据平台的影响： 数据开发平台正在把\"数据探索\"和\"需求转码\"拆成可复用的 Skill，并叠加按量计费，说明国内厂商开始把智能体能力做成平台内的标准工序，而非附带的聊天入口。",
+      "source": "火山引擎功能发布记录",
+      "url": "https://www.volcengine.cn/docs/6260/2172408?lang=zh",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "火山引擎",
+      "module": "技术",
+      "title": "火山引擎 EMR AI 助手接入豆包工作平台",
+      "summary": "来源： 火山引擎 EMR AI 助手介绍摘要： 火山引擎开源大数据平台 EMR 的 AI 助手以连接器形式上架豆包工作平台，用户可用自然语言诊断 Spark 作业，结果覆盖任务状态、资源使用、执行耗时、失败信息与优化建议，文中称任务耗时从 53 秒压缩至 10 秒。对数据平台的影响： 大数据诊断从控制台走向通用办公入口，专业诊断能力被包装成办公软件里的一个插件。数据平台的触达面因此从数据团队扩展到普通办公用户，跨系统排查的成本也被转移到平台侧。",
+      "source": "火山引擎 EMR AI 助手介绍",
+      "url": "https://view.inews.qq.com/a/20261012A059XL00",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "腾讯云 TDSQL-C 新架构推出分支能力，为智能体提供数据沙箱",
+      "summary": "来源： 腾讯云数据库产品文章摘要： 腾讯云 TDSQL-C MySQL 版新架构 2.0 推出分支能力（Branch），基于读写快照与共享数据基线快速创建可读写实例，克隆目标控制在 1 分钟内，用于 Agent Sandbox 与 AI Coding 验证。对数据平台的影响： 智能体改 SQL、调索引、修数据都需要接近生产的数据环境。把\"一键克隆出隔离副本\"做成新架构面向 AI 的首个能力，等于用存储快照解决智能体试错的污染问题，方向与 Databricks 的数据库分支一致。",
+      "source": "腾讯云数据库产品文章",
+      "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_6846acc906d78352",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "Atlassian CEO Mike Cannon-Brookes：企业上下文图谱才是护城河",
+      "summary": "来源： 20VC 播客（2026-10-12）核心观点： Cannon-Brookes 在 20VC 访谈中称\"无头化是无脑下注\"：智能体不会替代所有界面，价值会转向可信工作流与新鲜的企业上下文。Atlassian 的核心押注不是模型也不是聊天机器人，而是持续更新的团队图谱，他并称多数\"自研模型\"只是对他人模型的微调。映射到数据平台的判断： 他把组织上下文定义为需要保持新鲜的事实索引，而非囤积的原始数据，这与数据平台语境里的语义层、元数据与上下文工程同构；也提示评估数据平台时要看上下文能否被智能体按权限取用，而不只看存得多寡。",
+      "source": "20VC 播客（2026-10-12）",
+      "url": "https://podlexicon.com/browse/episodes/20vc-atlassian-ceo-on-why-agents-wont-replace-interfaces-why-enterprises-wont-trust-chinese-models-w-20261012",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "Snowflake",
+      "module": "投融资",
+      "title": "【人事】Snowflake 聘请数据库科学家 Jeff Naughton 任 Technical Fellow",
+      "summary": "来源： Snowflake 投资者关系核心数据： Naughton 为 ACM Fellow、ACM 软件系统奖（Gamma 并行数据库系统）共同获奖者，此前任 Celonis 高级副总裁兼 Fellow，更早任 Google 杰出科学家，并长期担任威斯康星大学麦迪逊分校讲席教授。摘要： Snowflake 宣布 Jeff Naughton 以 Technical Fellow 身份加入，与 AI 研究负责人协作，把系统研究成果转化为平台能力。官方口径是智能体的兴起对企业数据基础设施提出更快、更自适应的新要求。对数据平台的影响： 聘请基础数据库科学家，说明厂商判断智能体带来的压力落在存储与执行引擎的底层假设上，而不只是上层接口。这会加剧数据平台在系统研究人才上的争夺。",
+      "source": "Snowflake 投资者关系",
+      "url": "https://investors.snowflake.com/news/news-details/2026/Pioneer-Jeff-Naughton-One-of-the-Most-Influential-Database-Scientists-of-This-Generation-Joins-Snowflake-to-Advance-Data-Systems-for-the-Agentic-Enterprise/default.aspx",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【降级】Responsive 加入 Databricks，用于加速 Lakebase 与 Neon",
+      "summary": "来源： TechFabric 分析为什么值得继续看： Databricks 将获得一支擅长在对象存储上做日志结构化存储的团队；目前 Lakebase 的恢复窗口上限约 30 天、并发活跃计算约 20 个，这两条限制是设计上的主要瓶颈。该\"加入\"公告未给出接口、配额或时间表，短期不宜据此规划。需要等待什么信号确认： 官方 Databricks 公告给出明确的接口变更、配额调整或时间表；Lakebase 恢复窗口或并发计算上限出现可验证的上调。",
+      "source": "TechFabric 分析",
+      "url": "https://www.techfabric.com/blog/responsive-joins-databricks-lakebase-neon",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-13",
+      "vendor": "信通院",
+      "module": "机构",
+      "title": "【降级】中国信通院《2026 存力发展报告》：先进存力占比升至三成",
+      "summary": "来源： 中国经济网报道为什么值得继续看： 报道援引报告数据，截至 2026 年 6 月底全国数据存力总规模 2021EB、同比增长 11%，先进存力占比升至 32%、规模超 640EB；信通院称推理数据量已超过训练数据量，数据角色从\"被存储的对象\"转向\"被理解的知识与被调用的记忆\"。需要等待什么信号确认： 报告原始发布页与发布时间可唯一确认；先进存力的统计口径与测算方法公开，便于与其他机构数据交叉比对。",
+      "source": "中国经济网报道",
+      "url": "https://www.ce.cn/xwzx/kj/202610/t20261012_3254400.shtml",
+      "conf": ""
     }
   ],
   "archive": [
@@ -9531,7 +9651,8 @@
     "2026-10-07",
     "2026-10-08",
     "2026-10-09",
-    "2026-10-12"
+    "2026-10-12",
+    "2026-10-13"
   ],
   "monthly": [
     {
