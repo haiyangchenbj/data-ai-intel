@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-14</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-14 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>非结构化数据的语义处理正从外挂脚本变成数仓原生函数</li>
+      <li>数据权限的治理边界正从表级下探到行级与字段级</li>
+      <li>开放表格式的并发写瓶颈开始由引擎侧承担消化</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台的竞争焦点正从功能覆盖转向智能体能否安全、可审计地调用数据。当天三件事分别落在语义计算原生化、权限颗粒度收紧、开放表并发冲突的引擎侧消化上，共同指向同一条路径：让智能体拿到的上下文可算、可授权、可并发写入。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Google Cloud 把自然语言驱动的语义聚合做成仓库内原生函数</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/bigquery/docs/release-notes">BigQuery 发行说明</a><br><b>摘要：</b> Google Cloud 在 BigQuery 发行说明中确认，`AI.AGG` 函数正式可用，可按自然语言指令对非结构化输入数据做语义聚合；同日生成式 AI 函数新增对 gemini-4-argon 模型的支持。<br><b>为什么对数据平台重要：</b> 过去要在数仓之外拼一套检索加模型调用才能完成的"按语义归并"，现在成为 SQL 层的聚合算子。语义计算下沉进引擎后，非结构化数据不必先转成结构化字段再分析，数据平台在向量检索之外多承担一类语义计算职责，外挂式语义处理工具的空间相应收窄。</div>
+</div>
+<div class="item">
+    <h3>AWS 为简化版行级安全提供新接口，权限治理继续下沉</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://newreleases.io/project/github/aws/aws-sdk-go-v2/release/release-2026-10-13">AWS SDK for Go v2 发版说明</a><br><b>摘要：</b> AWS 在当日发布的 SDK 变更说明中为 Lake Formation 增加一批新接口与配套文档，用于简化版行级安全（Simple Row-level Security）。<br><b>为什么对数据平台重要：</b> 行级安全长期需要按表逐条拼接策略并绑定身份，配置成本高、易漂移。收敛成托管接口后，行过滤具备与列级掩码接近的可运维性，权限颗粒度从"表"下探到"行"，敏感数据在授权链条上被整体开放的空间随之缩小。</div>
+</div>
+<div class="item">
+    <h3>Redshift 自动消解 Iceberg 表的并发写冲突</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/blogs/big-data/resolving-concurrent-write-conflicts-for-apache-iceberg-tables-in-amazon-redshift/">AWS Big Data Blog</a><br><b>摘要：</b> AWS 大数据博客说明，Amazon Redshift 现在会自动解决对 Apache Iceberg 表的多数并发写入：当写入操作实际不重叠时，引擎按操作、分区与文件三个层级做 rebase 后直接提交，此前这类事务会失败并要求重试。<br><b>为什么对数据平台重要：</b> 开放表格式的卖点是多引擎、多写入者共享一份数据，但并发提交冲突是实际落地时最常撞上的工程墙。把非重叠写入的 rebase 放进引擎，等于把湖仓的并发正确性从"应用自己重试"转成"平台保证"，多写者架构的采用门槛随之下降。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 流处理支持运行中调整 shuffle 分区</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/october">Databricks 产品发行说明</a><br><b>摘要：</b> Databricks 产品发行说明显示，按需状态重分区（On-demand state repartitioning）正式可用，可在不丢弃检查点状态的前提下，调整有状态 Structured Streaming 查询或 Lakeflow 管道的 shuffle 分区数。<br><b>对数据平台的影响：</b> 有状态流任务的并行度过去绑定在作业定义里，扩缩容意味着重启并重放状态。允许运行期改分区数，等于把并行度从部署参数变成运维动作，流处理作业的调优窗口被打开。</div>
+</div>
+<div class="item">
+    <h3>AWS Glue 零 ETL 集成可为 S3 Tables 指定自定义命名空间</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://newreleases.io/project/github/aws/aws-sdk-js-v3/release/v3.1151.0">AWS SDK for JavaScript v3 发版说明</a><br><b>摘要：</b> AWS 在当日 SDK 变更说明中列出 Glue 的新能力：在 Glue 零 ETL 集成中为 S3 Tables 添加自定义命名空间。<br><b>对数据平台的影响：</b> 零 ETL 此前按平台默认规则为复制来的表落位命名，容易与既有目录结构冲突。允许自定义命名空间后，自动复制产生的资产可以沿用企业原有命名约定，目录治理不会被"自动化的便利"反向侵蚀。</div>
+</div>
+<div class="item">
+    <h3>DataSync 增强模式扩展文件系统与元数据支持</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/datasync-enhanced-openzfs-nfs42-metadata/">AWS What's New</a><br><b>摘要：</b> AWS 宣布 DataSync 增强模式新增对 FSx for OpenZFS、NFS 4.2 的支持，并增加对象元数据控制能力。<br><b>对数据平台的影响：</b> 迁移与持续同步是数据平台落地的第一道工序，元数据能否原样保留，决定迁移后是否需要重建目录与权限。把元数据控制纳入同步能力，减少的是迁移后的返工量，而不是迁移本身的耗时。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 细化敏感数据分类的失败信息</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-10-13-sensitive-data-classification-errors-retry">Snowflake 发行说明</a><br><b>摘要：</b> Snowflake 发行说明显示，敏感数据分类的自动分类失败时给出更具体的错误信息，DATA_CLASSIFICATION_LATEST 视图开始报告一组已定义的 ERROR_MESSAGE 值，并在可用时附带来源错误码。<br><b>对数据平台的影响：</b> 分类覆盖率是数据治理的入门指标，但"失败原因不明"会让治理团队把时间花在排查而不是修复上。错误码结构化之后，分类失败可以接入监控与告警链路——治理动作成立的前提是它可被观测。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【收购兼并】Helium Ventures 收购开源客户数据管道 Jitsu</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/helium-ventures-announces-jitsu-acquisition-and-product-expansion-302906656.html">PR Newswire</a><br><b>核心数据：</b> Jitsu 2020 年成立，曾获 200 万美元种子轮，由 Costanoa Ventures 领投、Y Combinator 等参与；云版 Business 每月 99 美元含 200 万活跃事件，超出部分每百万 40 美元；本次交易金额未披露。<br><b>摘要：</b> Helium Ventures 宣布收购开源客户数据平台 Jitsu，并同步披露产品扩张：新增反向 ETL、托管 ClickHouse、Kubernetes operator 与 DuckDB/MotherDuck 等目标端；Jitsu 继续以 MIT 许可开源、自托管不设用量上限，现有云版定价不变。<br><b>对数据平台的影响：</b> 采集层过去常被当作"管道上的小工具"，如今被收入投资组合并配套托管数仓，说明事件数据的第一公里正在被重新定价——采集、转换与轻量存储被打包成一层，它与数据仓库的职责边界进一步模糊。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】LSEG 洽谈约 35 亿美元收购信贷数据商 Octus</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.globalbankingandfinance.com/lseg-talks-buy-octus-about-3-5-billion">Global Banking & Finance Review（引路透）</a><br><b>为什么值得继续看：</b> 若成交，交易会把交易所集团的数据与分析版图延伸进私募信贷与杠杆融资情报；Octus 由 Permira 持有，称其订阅的专业信贷人员超过 4 万人，并已有 AI 嵌入的工作流。目前仅为洽谈阶段，未定案、未披露交易结构，且消息源为媒体报道而非双方公告。<br><b>需要等待什么信号确认：</b> LSEG 与 Permira 发布正式收购公告或提交监管文件；交易金额、对价形式与整合方案公开。</div>
+</div>
+<div class="item">
+    <h3>【降级】Salesforce 签协议收购分析初创 Loops，并入 Tableau</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-loops/">Salesforce News</a><br><b>为什么值得继续看：</b> Loops 的产品按自然语言提问业务表现、解释指标变动原因，并通过 Slack 与邮件主动推送异常；Salesforce 计划把其技术与团队并入 Tableau，强化"从看到到行动"的代理式分析叙事。该公告的官方发布日为 10-12，已超出本期 24 小时窗口，故降级收录。<br><b>需要等待什么信号确认：</b> 交易在 Salesforce 2027 财年早期完成交割；Loops 能力以何种形态进入 Tableau、是否沿用既有语义模型与权限模型，给出明确时间表。</div>
+</div>
+<div class="item">
+    <h3>【预告】Apache 社区年会进行中，会前一天设 Lakehouse Day</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://communityovercode.apache.org/">Apache 社区年会官网</a><br><b>为什么值得继续看：</b> 会期为 10-11 至 10-14，会前一天单独设 Lakehouse Day，议题集中在数据湖仓与开放表格式的跨项目协作。截至本期，未检索到可回溯到原始发布页的跨项目路线图或版本发布。<br><b>需要等待什么信号确认：</b> 社区博客或项目邮件列表给出可回溯的版本发布、路线图变更或新孵化项目公告；分会场内容被整理为正式 recap。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-14 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

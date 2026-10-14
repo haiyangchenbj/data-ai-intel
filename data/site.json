@@ -9504,6 +9504,116 @@
       "source": "中国经济网报道",
       "url": "https://www.ce.cn/xwzx/kj/202610/t20261012_3254400.shtml",
       "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "Google",
+      "module": "专题",
+      "title": "Google Cloud 把自然语言驱动的语义聚合做成仓库内原生函数",
+      "summary": "来源： BigQuery 发行说明摘要： Google Cloud 在 BigQuery 发行说明中确认，AI.AGG 函数正式可用，可按自然语言指令对非结构化输入数据做语义聚合；同日生成式 AI 函数新增对 gemini-4-argon 模型的支持。为什么对数据平台重要： 过去要在数仓之外拼一套检索加模型调用才能完成的\"按语义归并\"，现在成为 SQL 层的聚合算子。语义计算下沉进引擎后，非结构化数据不必先转成结构化字段再分析，数据平台在向量检索之外多承担一类语义计算职责，外挂式语义处理工具的空间相应收窄。",
+      "source": "BigQuery 发行说明",
+      "url": "https://cloud.google.com/bigquery/docs/release-notes",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "AWS",
+      "module": "专题",
+      "title": "AWS 为简化版行级安全提供新接口，权限治理继续下沉",
+      "summary": "来源： AWS SDK for Go v2 发版说明摘要： AWS 在当日发布的 SDK 变更说明中为 Lake Formation 增加一批新接口与配套文档，用于简化版行级安全（Simple Row-level Security）。为什么对数据平台重要： 行级安全长期需要按表逐条拼接策略并绑定身份，配置成本高、易漂移。收敛成托管接口后，行过滤具备与列级掩码接近的可运维性，权限颗粒度从\"表\"下探到\"行\"，敏感数据在授权链条上被整体开放的空间随之缩小。",
+      "source": "AWS SDK for Go v2 发版说明",
+      "url": "https://newreleases.io/project/github/aws/aws-sdk-go-v2/release/release-2026-10-13",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "AWS",
+      "module": "专题",
+      "title": "Redshift 自动消解 Iceberg 表的并发写冲突",
+      "summary": "来源： AWS Big Data Blog摘要： AWS 大数据博客说明，Amazon Redshift 现在会自动解决对 Apache Iceberg 表的多数并发写入：当写入操作实际不重叠时，引擎按操作、分区与文件三个层级做 rebase 后直接提交，此前这类事务会失败并要求重试。为什么对数据平台重要： 开放表格式的卖点是多引擎、多写入者共享一份数据，但并发提交冲突是实际落地时最常撞上的工程墙。把非重叠写入的 rebase 放进引擎，等于把湖仓的并发正确性从\"应用自己重试\"转成\"平台保证\"，多写者架构的采用门槛随之下降。",
+      "source": "AWS Big Data Blog",
+      "url": "https://aws.amazon.com/blogs/big-data/resolving-concurrent-write-conflicts-for-apache-iceberg-tables-in-amazon-redshift/",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "Databricks",
+      "module": "产品",
+      "title": "Databricks 流处理支持运行中调整 shuffle 分区",
+      "summary": "来源： Databricks 产品发行说明摘要： Databricks 产品发行说明显示，按需状态重分区（On-demand state repartitioning）正式可用，可在不丢弃检查点状态的前提下，调整有状态 Structured Streaming 查询或 Lakeflow 管道的 shuffle 分区数。对数据平台的影响： 有状态流任务的并行度过去绑定在作业定义里，扩缩容意味着重启并重放状态。允许运行期改分区数，等于把并行度从部署参数变成运维动作，流处理作业的调优窗口被打开。",
+      "source": "Databricks 产品发行说明",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "AWS",
+      "module": "产品",
+      "title": "AWS Glue 零 ETL 集成可为 S3 Tables 指定自定义命名空间",
+      "summary": "来源： AWS SDK for JavaScript v3 发版说明摘要： AWS 在当日 SDK 变更说明中列出 Glue 的新能力：在 Glue 零 ETL 集成中为 S3 Tables 添加自定义命名空间。对数据平台的影响： 零 ETL 此前按平台默认规则为复制来的表落位命名，容易与既有目录结构冲突。允许自定义命名空间后，自动复制产生的资产可以沿用企业原有命名约定，目录治理不会被\"自动化的便利\"反向侵蚀。",
+      "source": "AWS SDK for JavaScript v3 发版说明",
+      "url": "https://newreleases.io/project/github/aws/aws-sdk-js-v3/release/v3.1151.0",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "AWS",
+      "module": "产品",
+      "title": "DataSync 增强模式扩展文件系统与元数据支持",
+      "summary": "来源： AWS What's New摘要： AWS 宣布 DataSync 增强模式新增对 FSx for OpenZFS、NFS 4.2 的支持，并增加对象元数据控制能力。对数据平台的影响： 迁移与持续同步是数据平台落地的第一道工序，元数据能否原样保留，决定迁移后是否需要重建目录与权限。把元数据控制纳入同步能力，减少的是迁移后的返工量，而不是迁移本身的耗时。",
+      "source": "AWS What's New",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/datasync-enhanced-openzfs-nfs42-metadata/",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "Snowflake",
+      "module": "产品",
+      "title": "Snowflake 细化敏感数据分类的失败信息",
+      "summary": "来源： Snowflake 发行说明摘要： Snowflake 发行说明显示，敏感数据分类的自动分类失败时给出更具体的错误信息，DATA_CLASSIFICATION_LATEST 视图开始报告一组已定义的 ERROR_MESSAGE 值，并在可用时附带来源错误码。对数据平台的影响： 分类覆盖率是数据治理的入门指标，但\"失败原因不明\"会让治理团队把时间花在排查而不是修复上。错误码结构化之后，分类失败可以接入监控与告警链路——治理动作成立的前提是它可被观测。",
+      "source": "Snowflake 发行说明",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-13-sensitive-data-classification-errors-retry",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "ClickHouse",
+      "module": "投融资",
+      "title": "【收购兼并】Helium Ventures 收购开源客户数据管道 Jitsu",
+      "summary": "来源： PR Newswire核心数据： Jitsu 2020 年成立，曾获 200 万美元种子轮，由 Costanoa Ventures 领投、Y Combinator 等参与；云版 Business 每月 99 美元含 200 万活跃事件，超出部分每百万 40 美元；本次交易金额未披露。摘要： Helium Ventures 宣布收购开源客户数据平台 Jitsu，并同步披露产品扩张：新增反向 ETL、托管 ClickHouse、Kubernetes operator 与 DuckDB/MotherDuck 等目标端；Jitsu 继续以 MIT 许可开源、自托管不设用量上限，现有云版定价不变。对数据平台的影响： 采集层过去常被当作\"管道上的小工具\"，如今被收入投资组合并配套托管数仓，说明事件数据的第一公里正在被重新定价——采集、转换与轻量存储被打包成一层，它与数据仓库的职责边界进一步模糊。",
+      "source": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/helium-ventures-announces-jitsu-acquisition-and-product-expansion-302906656.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【降级】LSEG 洽谈约 35 亿美元收购信贷数据商 Octus",
+      "summary": "来源： Global Banking & Finance Review（引路透）为什么值得继续看： 若成交，交易会把交易所集团的数据与分析版图延伸进私募信贷与杠杆融资情报；Octus 由 Permira 持有，称其订阅的专业信贷人员超过 4 万人，并已有 AI 嵌入的工作流。目前仅为洽谈阶段，未定案、未披露交易结构，且消息源为媒体报道而非双方公告。需要等待什么信号确认： LSEG 与 Permira 发布正式收购公告或提交监管文件；交易金额、对价形式与整合方案公开。",
+      "source": "Global Banking & Finance Review（引路透）",
+      "url": "https://www.globalbankingandfinance.com/lseg-talks-buy-octus-about-3-5-billion",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "Salesforce",
+      "module": "投融资",
+      "title": "【降级】Salesforce 签协议收购分析初创 Loops，并入 Tableau",
+      "summary": "来源： Salesforce News为什么值得继续看： Loops 的产品按自然语言提问业务表现、解释指标变动原因，并通过 Slack 与邮件主动推送异常；Salesforce 计划把其技术与团队并入 Tableau，强化\"从看到到行动\"的代理式分析叙事。该公告的官方发布日为 10-12，已超出本期 24 小时窗口，故降级收录。需要等待什么信号确认： 交易在 Salesforce 2027 财年早期完成交割；Loops 能力以何种形态进入 Tableau、是否沿用既有语义模型与权限模型，给出明确时间表。",
+      "source": "Salesforce News",
+      "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-loops/",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-14",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "【预告】Apache 社区年会进行中，会前一天设 Lakehouse Day",
+      "summary": "来源： Apache 社区年会官网为什么值得继续看： 会期为 10-11 至 10-14，会前一天单独设 Lakehouse Day，议题集中在数据湖仓与开放表格式的跨项目协作。截至本期，未检索到可回溯到原始发布页的跨项目路线图或版本发布。需要等待什么信号确认： 社区博客或项目邮件列表给出可回溯的版本发布、路线图变更或新孵化项目公告；分会场内容被整理为正式 recap。",
+      "source": "Apache 社区年会官网",
+      "url": "https://communityovercode.apache.org/",
+      "conf": ""
     }
   ],
   "archive": [
@@ -9652,7 +9762,8 @@
     "2026-10-08",
     "2026-10-09",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
   ],
   "monthly": [
     {
