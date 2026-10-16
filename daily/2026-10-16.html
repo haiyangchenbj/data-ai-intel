@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-16</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-16 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>事务库与分析库之间的数据搬运，正被数据库原生复制能力替代</li>
+      <li>数据平台的主权化竞争从数据放在哪，延伸到由谁来运营</li>
+      <li>AI 调用成本治理从账单后置审计，转向平台内建配额管控</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>头部厂商把同一件事做进产品结构：数据怎么进来由数据库原生复制接管，由谁运营写进主权合作条款，花多少token用配额锁进平台。数据平台竞争焦点从存算性能转向接入、运营权与成本可预测性。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake Postgres 数据镜像正式 GA：数据库原生复制取代 CDC 管道</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.snowflake.com/en/blog/data-mirroring-ga-snowflake-postgres/">Snowflake Blog</a><br><b>摘要：</b> Snowflake 10 月 15 日宣布 Postgres 数据镜像正式可用。用户通过 CREATE_MIRROR 命令或 Snowsight 界面，即可将 Snowflake Postgres 中的表秒级镜像到 Snowflake：插入、更新、删除持续同步，schema 变更与新增表自动接入。底层基于开源 pg_lake 扩展，经标准逻辑复制把变更写入 Apache Iceberg 表，变更数据不落入私有格式。镜像表自带 $live 视图合并已应用数据与在途变更，附 7 天 $changes 变更流；单源事务在目标端整体落库，重写入表以追加代替 upsert 保持性能，由 Snowflake 无服务器计算按事务批应用，无需部署外部复制设施。可用范围覆盖 AWS 与 Azure 上 Snowflake Postgres 所在全部区域。<br><b>为什么对数据平台重要：</b> 事务库到分析平台的 CDC 管道长期是数据团队最重的运维负担之一，厂商把复制能力内建、并以开放格式（Iceberg 表与开源 pg_lake）承载，正在把数据接入层从独立工具的竞争变成平台自带能力。SimCorp 与 Simfoni 案例显示自建同步与中间件可被一条命令替代，Ericsson 借此合并四个遗留库并把数据处理时间压缩九成九，直接影响 CDC 工具与数据集成链路的采购逻辑。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 与 Orange Business 达成主权云合作意向，聚焦法国受监管市场</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.snowflake.com/en/blog/snowflake-orange-business-sovereign-ai-france/">Snowflake Blog</a><br><b>摘要：</b> Snowflake 10 月 15 日宣布与 Orange Business 达成合作意向，由后者担任其在法国市场的运营伙伴：平台运营（管理、监控、支持、事件响应）由受欧盟法律约束的欧洲团队执行，客户合同直接与 Orange Business 签订；环境按法国网络安全局 SecNumCloud 资质路径与欧盟 SEAL 运营框架建设，依托 Bleu 等主权基础设施。数据以 Apache Iceberg 开放表格式存于 S3 兼容存储保留可携性；Cortex AI 在可信边界内提供自托管、开源与前沿模型的统一调用，单一模型不可用或触发合规顾虑时可在不改应用代码与数据管道的前提下切换。<br><b>为什么对数据平台重要：</b> 欧洲主权数据平台的竞争条款正从数据放在哪扩展到由谁运营、合同跟谁签。继上月接入德国主权云之后，Snowflake 把法国的运营权交给本地电信运营商，本地化运营、开放表格式与模型可移植性正在构成受监管市场平台准入的结构性组合，跨境云厂商在欧数据业务的合规与合约设计需按此模板重估。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>BigQuery 生成式 AI 函数 token 成本管理 GA：四项每日配额锁住 AI 查询开销</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/data-analytics/using-bigquerys-generative-ai-cost-management-features">Google Cloud Blog</a><br><b>摘要：</b> Google 10 月 14 日发布官方指南，详解 BigQuery 生成式 AI 函数基于 token 的成本管理正式可用：管理员在 IAM 配额体系中按项目与用户两级设置四项每日 token 配额，覆盖 AI.GENERATE、AI.CLASSIFY、AI.AGG 等全部大模型生成类函数；配额跨区域全局汇总，输出侧计入思考 token。支持 Cloud Quotas API、gcloud 与 Terraform 自动化管理，配套 AI.COUNT_TOKENS 预估输入规模。查询超限时执行层立即停止发送模型调用而非事后拦截，支持部分结果按比例返回；嵌入类函数因所用模型成本更低，不在配额范围内。<br><b>对数据平台的影响：</b> SQL 内直接调用大模型把推理开销藏进查询，账单不可预测成为规模化采用的阻力。把预算护栏做进执行层并按 token 计量，标志着 AI 函数从能力发布进入治理配套阶段；配额可经 Terraform 进版本管理，组织级 AI 查询成本管控与外置 FinOps 工具的边界需重新划分。[补录 10-14]</div>
+</div>
+<div class="item">
+    <h3>Databricks Private Network Gateway 公测：Serverless 私网接入从逐条打通改为一次接入</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/introducing-private-network-gateway">Databricks Blog</a><br><b>摘要：</b> Databricks 10 月 14 日宣布 Private Network Gateway 进入公测（Azure 公测、AWS 私测、Google Cloud 开发中）：一个厂商托管网关把无服务器计算与客户私网打通，客户只需在虚拟网络中委托一个子网，既有路由、DNS 与防火墙规则即决定可达范围。支持私库摄取、自建 Agent 调用私有 MCP 服务、从私有仓库安装依赖、出口流量经自有防火墙过滤审计，并对 SaaS 呈现客户自有源 IP。它取代此前每个资源单独部署私端点、负载均衡与代理虚拟机的模式，按网络而非端点扩展，网关边界与访问控制保留在客户侧。<br><b>对数据平台的影响：</b> 客户调研显示七成半以上的团队因网络配置复杂而把负载留在经典计算上，接入复杂度直接压制无服务器架构的采用。把私网打通从逐资源工程变成单网关配置并保留客户网络主权，降低了无服务器形态在金融等受监管行业的落地阻力，或加速存量数仓负载向无服务器计算迁移。[补录 10-14]</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】云与 AI 支出治理平台 North.cloud 完成 6000 万美元 B 轮融资</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/northcloud-raises-60m-series-b-to-unify-spend-intelligence-and-enable-full-automation-across-cloud-ai-and-data-302909322.html">PR Newswire</a><br><b>核心数据：</b> B 轮 6000 万美元，PeakSpan Capital 领投，Litquidity Ventures、Companyon Ventures、Alpaca、Uncommon Denominator、Gaingels、Mana Ventures 参投；平台管理云支出近 20 亿美元，累计帮客户节省超 4 亿美元，客户留存率 98.8%。<br><b>摘要：</b> North.cloud 10 月 15 日宣布完成 B 轮融资。该公司定位为云、AI 与数据支出的财务操作系统，本轮融资前刚发布 v3 版本补齐对三大公有云的覆盖，并与主流模型厂商及 Snowflake 建立原生集成；其 TokenFlow 把模型用量、归因、预算与财务控制并入云支出同一管理体系，Autobot 承诺阶梯引擎自动优化折扣承诺。客户包括 AssemblyAI、Atlan、SnapLogic、Imply 等数据与 AI 基础设施公司。<br><b>对数据平台的影响：</b> AI 功能同时触达云、模型与数据平台多个计费域，支出治理正从分工具人工对账走向跨域自动化，资本把 FinOps 从成本工具重定价为数据平台的配套财务层；数据平台采购决策中成本侧话语权上升，厂商与 FinOps 平台的原生集成会成为竞标加分项。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Snowflake 与 Lumen 合作私有连接方案，把企业内网数据接入分析平台</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.snowflake.com/en/blog/snowflake-lumen-private-connectivity-ai/">Snowflake Blog</a><br><b>为什么值得继续看：</b> Snowflake 10 月 15 日宣布与 Lumen Technologies 深化合作：其数据连接代理以容器形态运行在 Lumen 基础设施上，经 Lumen 私有网络连接分散在企业数据中心与边缘的数据，全程不经公网，配合 Openflow 完成入湖接入。双方称历史上私网开通需五到八个月，方案目标是开通即用。医疗、金融、电信与政务行业大量数据因公网传输不合规而滞留本地，这是 Snowflake 数据接入版图向边缘与私有部署侧的延伸。<br><b>需要等待什么信号确认：</b> 首批商用客户与定价是否公布、私网开通周期是否真从月级降到天级、与公有云厂商自有私连方案的功能差异能否成立。</div>
+</div>
+<div class="item">
+    <h3>【降级】数巅智能披露多轮数亿元融资，产业资本入局 Data Agent 赛道</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://hn.china.com/gundong/2026-10/15/content_1020267763.html">中华网河南</a><br><b>为什么值得继续看：</b> 10 月 15 日媒体报道企业级数据智能公司数巅智能披露多轮累计数亿元融资：老股东君联资本连续加码，中国中车先战略入股再落地业务采购，中石油昆仑资本、镔鑫钢铁等产业资本入局。公司由前蚂蚁集团计算存储首席架构师何昌华创立，主攻企业级 Data Agent。披露为多轮汇总口径、缺单轮金额与估值，且未见公司官方公告，按规则降级收录。<br><b>需要等待什么信号确认：</b> 单轮金额与估值口径是否披露、中国中车业务采购的规模与范围、Data Agent 产品在央国企的标杆落地案例。</div>
+</div>
+<div class="item">
+    <h3>【降级】据报道 Modal Labs 完成 7.5 亿美元 D 轮融资</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20261015A05BEQ00">腾讯网</a><br><b>为什么值得继续看：</b> 10 月 15 日媒体快讯称云端 AI 计算基础设施平台 Modal Labs 获得 7.5 亿美元 D 轮融资，Accel 领投，多家机构跟投。Modal 面向机器学习与数据密集型应用提供弹性算力调度，覆盖金融、医疗等场景。核心产品属 AI 基础设施而非数据平台六维核心，且暂未见公司官方公告，按规则降级收录；其融资规模可作 AI 基础设施资本热度与算力供给格局的观察样本。<br><b>需要等待什么信号确认：</b> 公司官方确认与资金用途、GPU 供给规模与数据工作负载收入占比、估值口径与后续产品方向。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-16 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
