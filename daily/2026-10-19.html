@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-19</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-19 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>开放表格式补上仓库级事务，湖仓替代数仓进入深水区</li>
+      <li>智能体的数据入口被平台化，跨云直连对手目录成标配</li>
+      <li>对象存储长出文件系统语义，数据质量检查收进计算引擎</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台的两条争夺线同时收紧：事务保证与数据入口都在被收进平台本体，开放表格式既是通用底座也是被各家直接互连的对象；国内市场跟进全球节奏的周期已缩到数月，存储接口与数据质量这类基础能力正快速对齐。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 多语句事务正式 GA：开放表格式上首次原生支持跨表事务</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/transactions-are-generally-available-advancing-warehousing-lakehouse">Databricks Blog</a><br><b>摘要：</b> Databricks 10 月 16 日宣布多语句事务正式可用，覆盖 Unity Catalog 托管的 Delta Lake 与 Apache Iceberg 表，官方称其为首个在两类开放表格式上原生支持多语句、多表事务的湖仓架构。开发者可把多步变更作为一个原子单元提交或回滚，并与存储过程、临时表、SQL 脚本组合，事务还能写入流式表；Unity Catalog 行级安全与列掩码在事务读写中继续生效，行级并发让多个事务并行写同一张表的不同行。数据集成商 Fivetran 借此把维度表关闭旧版本与写入新版本合并为一次原子提交，删掉一整类一致性修复代码；健康科技公司 Accolade 每天在生产环境运行约 1700 笔事务处理理赔数据，无需为事务保证再架一套独立数仓。<br><b>为什么对数据平台重要：</b> 跨表事务保证是传统数仓守住关键负载的最后一道护城河，此前迁移湖仓的组织要么放弃多表原子性、要么保留并行仓库承担双份数据与治理。Databricks 把这道能力做进开放表格式并以行级并发承压，仓库级工作负载向湖仓迁移的最后一个技术理由被抽掉，直接改写数仓与湖仓的选型天平，也给仓库形态厂商的开放兼容策略加压。</div>
+</div>
+<div class="item">
+    <h3>Google 把 borderless Lakehouse 接进 Gemini，Agent 直连竞对目录数据</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-integrates-with-gemini">Google Cloud Blog</a><br><b>摘要：</b> Google 10 月 15 日详解 borderless Lakehouse 与 Gemini 的新集成（预览版）：数据源经 Lakehouse 目录联邦直接接入 Gemini，业务用户可用自然语言跨云查询记录，智能体用同一份数据完成推理与代码生成，无需移动数据，首批可接 Databricks Unity Catalog 与 Snowflake Horizon。同期一批年初发布的特性转正：跨云互连与跨云缓存、BigQuery 对 Iceberg V3 规范的支持、BigQuery 与托管 Spark 的 Iceberg 表读写互操作、AlloyDB 湖仓联邦、与 AWS Glue 及两家竞对目录的双向目录联邦缓存、Knowledge Catalog 集成、Salesforce/SAP/Workday 与 Confluent Tableflow 零拷贝集成、经 Dataflow 同步 Delta Lake 资产。Google 称客户对 Iceberg 的使用量自 2025 年初以来增至三倍以上，Etsy 用 borderless Lakehouse 统一 3PB 数据、管道查询提速六成。<br><b>为什么对数据平台重要：</b> 智能体落地的主要瓶颈从模型能力转向数据可达性，Google 的解法是把自家模型做成横跨各家的数据前门：不搬数据、经目录联邦直连 Unity Catalog 与 Horizon，跨云缓存与专线消除延迟和出口成本。平台竞争的界面随之从存储引擎上移到目录与语义层，谁被接进谁的智能体前门，直接影响平台在智能体时代的数据入口份额。[补录 10-15]</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>TiDB Cloud 在 SCaiLE 2026 集中发布：Premium 商用计划、BYOC 公测与智能体持久工作区</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.pingcap.com/press-release/tidb-scaile-2026-announcements">PingCAP 官方新闻稿</a><br><b>摘要：</b> PingCAP 10 月 15 日在 SCaiLE 2026 大会发布一揽子 TiDB Cloud 更新：TiDB Cloud Premium 计划 11 月正式商用，提供资源隔离、自动扩缩容与私有连接；自带云部署 BYOC 与 TiDB Cloud Filesystem 进入公开预览，后者给智能体一个跨会话持久的文件工作区，保存的代码与上下文在新沙箱中可续用；TiDB Cloud Starter 开放 PostgreSQL 兼容公测。公司同时宣布计划在 2026 年底前开源新一代架构 TiDB X 的核心代码。规模化案例集中展示智能体建库形态：Manus 平台已运行超 150 万个 TiDB Cloud 集群，Moonshot AI 的 Kimi 用 Filesystem 支撑超百万个持久文件系统，Atlassian 把 750 多个 PostgreSQL 集群合并为 16 个 TiDB 集群。<br><b>对数据平台的影响：</b> 数据库厂商正把智能体当作一等负载类型设计产品：会话间持久的文件系统、按需建库、自带云部署，都是在把智能体的生命周期管理做进数据层。PostgreSQL 生态兼容让 MySQL 系厂商反向吸收最大开源数据库的开发者群体，TiDB X 开源计划则把托管云的核心架构变成可审视的公共资产，影响国产数据库在智能体场景的选型逻辑。[补录 10-15]</div>
+</div>
+<div class="item">
+    <h3>AWS 中国区推出 S3 Files：对象存储桶可直接挂载为文件系统</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.amazonaws.cn/new/2026/amazon-s3-files-making-s3-buckets-accessible-as-file-systems/">亚马逊云科技中国公告</a><br><b>摘要：</b> AWS 10 月 16 日在中国区公告推出 Amazon S3 Files，让 S3 存储桶能以共享文件系统的形式被计算资源直接访问，数据始终留在 S3。该能力构建在 Amazon EFS 之上，维护桶内对象的视图并把文件系统操作转换为高效的 S3 请求，应用无需改代码即可用文件工具读写对象存储；数千个计算资源可同时挂载同一个 S3 文件系统实现跨集群共享，配合缓存提供 TB/s 级聚合读取吞吐，桶内新旧数据无需迁移。基于文件的应用、机器学习数据准备与智能体共享状态等场景无需再在对象存储与文件存储之间复制同步。该能力今年 4 月已在海外区域正式可用，本次为中国区域落地。<br><b>对数据平台的影响：</b> 数据湖主体在对象存储上、而基于文件的工具与训练管线要求文件语义，是湖仓架构长期存在的接口断层，通常靠独立文件网关或双写同步弥合。S3 Files 把文件接口做进对象存储本体并保留桶为唯一事实源，省去复制与同步链路，也降低智能体工作流读写湖内数据的工程成本；国内数据平台与对象存储的组合选型可参考这一接口方向。</div>
+</div>
+<div class="item">
+    <h3>Snowflake Iceberg v3 表升级与表达式默认值正式可用</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-10-16-iceberg-v3-upgrade-expression-defaults-ga">Snowflake Release Notes</a><br><b>摘要：</b> Snowflake 10 月 16 日宣布 Apache Iceberg v3 表升级与表达式默认值正式可用。既有 v2 表经 ALTER ICEBERG TABLE 语句原地升级到 v3，保留表名、权限与下游引用，无需重建；默认值、行谱系、删除向量与新数据类型等 v3 特性随之解锁，Snowflake 托管表与经 Iceberg REST 目录管理的外部表均可升级，含目录关联数据库中的表。v3 表新增 SQL 表达式、序列与自增列作为列默认值，可求值为常量的表达式写入 Iceberg 元数据，其余默认值经新参数控制仅对 Snowflake 写入生效；升级为不可逆操作，托管表可在保留期内用 Time Travel 回退 v2。<br><b>对数据平台的影响：</b> Iceberg v3 已从规范演进进入主流平台全面落地阶段：Google 同期宣布 BigQuery 支持 V3 规范，Snowflake 把原地升级与表达式默认值做进托管服务。默认值、行谱系与删除向量直接改善行级更新与 schema 演进的工程成本，开放表格式版本升级的迁移摩擦被压到一条语句，平台间兼容性竞争进一步聚焦 v3 特性覆盖度。</div>
+</div>
+<div class="item">
+    <h3>Amazon EMR 支持 Spark 作业原生数据质量检查</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.amazonaws.cn/new/2026/amazon-emr-supports-native-data-quality-checks/">亚马逊云科技中国公告</a><br><b>摘要：</b> AWS 10 月 16 日在中国区公告 Amazon EMR 支持 Apache Spark 作业中的原生数据质量检查。EMR Data Quality 由 Amazon Glue 数据质量能力驱动，使用与 Glue 相同的声明式规则语言与 API，在两个引擎上提供一致体验，不额外收费；可在 EC2、EKS 与无服务器部署模式下与 Apache Iceberg、Apache Hudi、Delta Lake 表结合使用。数据工程团队可在坏数据进入下游系统前于作业内联发现质量问题，无需构建维护独立的验证基础设施。<br><b>对数据平台的影响：</b> 数据质量验证正从外挂工具链收编为计算引擎内置能力，规则定义在 Glue 与 EMR 间复用意味着质量规则开始跟随表与作业而不是跟随工具。对自建验证层的团队，引擎内置检查改变其在质量工具上的投入方向；对国产引擎厂商，Spark 侧内建质量能力会成为对标清单上的常规项。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】Gartner IT Symposium/Xpo 2026 本周开幕，CIO 议程将给出平台风向</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.businesswire.com/news/home/20261015675848/en/">Business Wire</a><br><b>为什么值得继续看：</b> Gartner 年度旗舰大会 IT Symposium/Xpo 于 10 月 19 日至 22 日在奥兰多举行，面向 CIO 与高级 IT 决策者，超过 180 家技术厂商参展。历届大会期间 Gartner 集中发布 CIO 调研、技术成熟度曲线与战略预测，其数据平台与 AI 支出的判断直接影响企业采购议程，展会同期厂商发布密集。<br><b>需要等待什么信号确认：</b> 大会期间发布的年度 CIO 与技术高管调研结果、数据与 AI 基础设施相关支出预测与优先级排名，以及主要厂商借会发布的平台动作。</div>
+</div>
+<div class="item">
+    <h3>【预告】DuckDB 2.0 发布定档，进程内分析引擎迎来跨代版本</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://duckdb.org/release_calendar.html">DuckDB Release Calendar</a><br><b>为什么值得继续看：</b> DuckDB 官方发布日历将 2.0.0 定在 10 月 21 日、2.0.1 定在 11 月 18 日，官方提示日期可能为保证质量而顺延。当前稳定版为 9 月 28 日发布的 1.5.6，长期支持线为 1.4。作为被广泛嵌入数据栈的进程内分析引擎，2.0 是其从 1.0 以来的最大版本节点，大版本的 API 与文件格式兼容性变化将影响下游工具链适配节奏。<br><b>需要等待什么信号确认：</b> 2.0.0 是否如期发布、新版本的能力变化与兼容性说明、下游数据工具的适配公告。</div>
+</div>
+<div class="item">
+    <h3>【预告】Google 定档 11 月 4 日 Agentic Data Cloud 活动</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-integrates-with-gemini">Google Cloud Blog</a><br><b>为什么值得继续看：</b> Google Cloud 在 borderless Lakehouse 博客中预告 11 月 4 日举办 Agentic Data Cloud Event，由产品负责人讲解智能体时代的数据架构。活动紧接本轮 borderless Lakehouse 与 Gemini 集成发布，预计给出其智能体数据战略的下一步路线，包括目录联邦、跨云访问与知识目录的演进方向。<br><b>需要等待什么信号确认：</b> 活动日程与议题清单、是否发布新的智能体数据访问能力、目录联邦与跨云缓存的支持范围扩展。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-19 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
