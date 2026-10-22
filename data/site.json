@@ -10064,6 +10064,136 @@
       "source": "腾讯云 API 文档",
       "url": "https://cloud.tencent.com/document/api/1806/121811",
       "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "DuckDB",
+      "module": "专题",
+      "title": "DuckDB 2.0.0 LTS 发布：Quack 协议转正，VARIANT 成为一等列类型",
+      "summary": "来源： DuckDB 官方博客摘要： DuckDB 10 月 21 日发布 2.0.0 LTS「Cinnamon Teal」，把 Quack 协议由试验特性转为正式标准并新增 CONNECT 语句，远程下推优化器可把查询下推到 PostgreSQL、MySQL 等外部系统。VARIANT 升为一等列类型，新增 CREATE TRIGGER（BEFORE/AFTER、行级与语句级）、异步 I/O 与 NEAREST 邻接连接，重写 PEG 解析器并提供 C API v2，同时移除 ICU 依赖。官方在 TPC-H 实测中称，CLI Agent 模式使模型读取输出量减少 59%。破坏性变更在于 2.0 写入的数据库文件旧版本无法读取，LTS 支持至 2027 年 10 月，1.5 版本延至 2027 年 3 月。为什么对数据平台重要： DuckDB 正从一个本地分析库变成跨系统查询入口，下推优化器把 PostgreSQL、MySQL 纳入联邦范围，VARIANT 让半结构化数据不必再外挂解析表。对平台团队有查询层与治理层两层含义：查询层上，联邦与半结构化能力正向嵌入式形态下沉，「是否需要单独上一套查询引擎」这一决策的权重在变轻；治理层上，2.0 写入旧版读不了属于破坏性变更，跨版本共享数据文件的方案都要重新核对兼容边界，升级窗口需要按季度设定硬约束而非跟随社区节奏。",
+      "source": "DuckDB 官方博客",
+      "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "Google",
+      "module": "专题",
+      "title": "BigQuery ObjectRef 正式可用：非结构化对象以原生列引用，零拷贝进入分析查询",
+      "summary": "来源： Google Cloud 官方博客摘要： Google Cloud 10 月 21 日宣布 BigQuery 的 ObjectRef 正式可用。非结构化对象以原生 ObjectRef 列引用云存储中的文件，无需复制或加载进仓；单条 SQL 或自然语言查询即可把多个对象与结构化上下文一并传给 Gemini，全保真 ETL 留在 SQL 内完成。实现上通过追踪存储对象的版本号保证查询结果可复现，权限与审计沿用统一的 IAM 体系，GA 还新增了终端用户凭证（End User Credentials）支持。为什么对数据平台重要： 这把「非结构化数据进分析」从「先做 ETL 再入仓」改成「以引用方式就地参与查询」，直接压缩数据平台在接入环节的搬运、转换与存储成本，文档、图片、音视频等对象的处理链路不再需要独立管道。变化的重心在治理而非查询：对象引用一旦进入表结构，权限粒度、审计留痕与结果可复现性必须同时成立，任何一环缺失都会让这类引用在生产环境里站不住，平台团队需要先补齐引用级权限模型再推广。",
+      "source": "Google Cloud 官方博客",
+      "url": "https://cloud.google.com/blog/products/data-analytics/analyze-unstructured-data-in-bigquery-with-objectref",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "Gartner",
+      "module": "专题",
+      "title": "Gartner：2027 年全球 IT 支出增至 7.35 万亿美元，数据中心系统增幅 55.5%",
+      "summary": "来源： Gartner 新闻稿摘要： Gartner 10 月 21 日发布预测，2027 年全球 IT 支出将增长 15% 至 7.35 万亿美元。其中数据中心系统支出从 8790 亿美元增至 1.366 万亿美元，增幅 55.5%；基础设施即服务从 2920 亿美元增至 3670 亿美元，增幅 25.7%。报告指出内存价格上行（memflation）正在挤压终端用户的可负担性，并把 AI 基础设施首次定性为「技术平台加可投资资产类别」。为什么对数据平台重要： 数据中心系统与 IaaS 的支出增幅被单独拉出来，意味着未来一年云上数据基础设施的扩容节奏有明确的外部锚点，容量规划与预算编制不必再靠厂商口径倒推。更关键的是定性变化：AI 基础设施被列为可投资资产类别，这类支出在企业财务上从项目成本转为可折旧资产，直接影响自建与采购的决策口径——比拼总拥有成本还是比拼单位算力成本，结论会不同。对数据平台而言，采购谈判的权重正在从单价转向长期承诺量与退出条款。",
+      "source": "Gartner 新闻稿",
+      "url": "https://gcom.pdo.aws.gartner.com/en/newsroom/press-releases/2026-10-21-gartner-forecasts-worldwide-it-spending-to-grow-15-percent-in-2027-totaling-7-point-35-trillion",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks AI Runtime 正式可用：湖仓内托管 serverless GPU 训练",
+      "summary": "来源： Databricks 官方博客摘要： Databricks 10 月 21 日宣布 AI Runtime 正式可用，训练任务可直接在湖仓内以 serverless 方式使用 GPU。Unity Catalog 统一管理数据访问、检查点与日志，warm serverless GPU 池配合镜像懒加载实现秒级启动，AIR Skills 用一句自然语言把任务从 Kubernetes 或 SLURM 迁入，并原生集成 Lakeflow；MLflow 同步带来新的观测体验与 Genie Code。官方案例称，8 卡 A100 单节点换用 16 卡 H100 多节点后训练周期从 7 天压缩到 48 小时，数字为厂商口径；平台侧提供虚机级隔离、PrivateLink 与 serverless 出网管控，成本可在计费系统表中查询。对数据平台的影响： 训练算力从独立集群收回湖仓内部，特征、模型与运行日志共享同一套目录与权限，模型生命周期不再需要跨系统同步版本；代价是训练负载与交互查询共享同一份平台资源，容量与配额规划需要同时覆盖两类负载。对平台团队的关键变化在成本结构：GPU 以按需服务形式计价后，训练任务的可比基准从单卡时薪转向空闲率与启动开销，warm 池的预留策略直接决定账单形状。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/ai-runtime-generally-available",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "Iceberg",
+      "module": "技术",
+      "title": "DuckLake 1.1 规范发布：嵌套 schema、epoch 分区变换与精确字符串统计",
+      "summary": "来源： DuckLake 官方博客摘要： DuckLake 10 月 21 日发布 1.1 规范及配套 DuckDB 扩展，与 DuckDB 2.0 同步。需迁移到新规范才能获得的能力包括嵌套 schema、VARIANT 内联扩展到 PostgreSQL 与 SQLite 目录、NULL 类型、epoch 分区变换（对齐 Iceberg 约定）、单文件多快照 Puffin 删除文件、精确字符串统计与行组计数；不迁移也可获得的包括建表时直接声明排序与分区、更聪明的文件裁剪、compaction 时间窗与更广的 Parquet 类型导入。迁移为可选项，官方称目录操作相比 1.0 最高提升两个数量级（以 10 万行内联提交、PostgreSQL 目录计）。对数据平台的影响： 湖仓格式的竞争正在转向目录本身的表达力与操作效率，行组计数与精确字符串统计这两项直接影响文件裁剪是否需要额外读取文件尾部，在对象存储上意味着每个文件一次额外请求能否省掉；epoch 分区变换向 Iceberg 约定靠拢，则是在降低多引擎共存的分区语义翻译成本。对平台团队，迁移为 opt-in 这一点很重要：规范演进与存量兼容被解耦，升级可以按业务域分批推进，但需要提前评估嵌套 schema 与内联策略对既有目录的影响。",
+      "source": "DuckLake 官方博客",
+      "url": "https://ducklake.select/2026/10/21/ducklake-11",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "StarRocks",
+      "module": "技术",
+      "title": "镜舟科技发布 MIP 企业级 AI 数据平台：StarRocks 之上叠加语义层与 Data Agent",
+      "summary": "来源： 镜舟科技官方公众号摘要： 镜舟科技 10 月 20 日举办线上产品发布会，正式发布 MirrorShip Intelligence Platform（MIP），产品战略从实时分析拓展到统一的数据分析与智能平台。平台分三层：统一数据底座 MirrorData（MirrorBase 实时分析引擎与 MirrorLake 开放湖仓存储，含对象存储、Iceberg、Paimon、MetaStore 与自研 MSS）、企业级语义层 MirrorMind（Semantic View 定义指标维度与计算规则，Knowledge Context 承载术语与口径来源，支持类似 Git 的分支与版本管理）、Data Agent 运行环境 MirrorPilot（自然语言分析与 API 接入），MirrorControl 贯穿三层提供治理、安全与审计。同场发布面向数据平台人员的 DevOps Agent。落地策略为复用客户已有集群、数据湖、指标体系与权限资产，不要求重建数据平台。对数据平台的影响： 国内厂商把「口径定义属于数据库对象、由引擎强制执行」作为差异化主张，语义层的竞争从独立中间件形态回到引擎内建形态，采购评估项随之从是否具备语义层转向语义定义能否在查询执行层被约束。对平台团队的可迁移部分是资源隔离与统一治理的组合方式：Agent 查询与既有报表负载并行运行时的配额划分、审计留痕与结果可复现，是这套架构中可以直接借用的工程切面。发布会材料中的对比数字均来自厂商口径，落地效果需以自有负载验证。 [补录 10-20]",
+      "source": "镜舟科技官方公众号",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg5MTg0NDM2OQ==&mid=2247490374&idx=1&sn=0caf1ff8e6bb572c5ad822694ee94b54",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "TDengine TSDB 3.4.3.3 上线：流计算分层闭环与虚拟表跨层引用",
+      "summary": "来源： 涛思数据官方博客摘要： 涛思数据 10 月 20 日发布 TDengine TSDB 3.4.3.3，方向集中在流计算、虚拟表与查询关联。流计算新增 ROLLUP BY，按路径型标签自动展开祖先路径，一条流同时产出产线、车间、工厂各层汇总；事件窗口开始条件支持多层嵌套条件树，嵌套窗口支持 2 至 8 层窗口链，流可固定各自时区与周起始日。虚拟表新增 BASE ON 模型继承、列与标签跨层引用、跨精度引用与精确分位数。企业版允许 MySQL、PostgreSQL、InfluxDB 的外部表直接作为流的触发表或参与计算。查询侧放宽普通 JOIN 条件限制，支持标量相关子查询，并新增 TEXT 与 FILE 内联数据源。对数据平台的影响： 分层汇总与多层事件窗口把过去需要多条流任务加应用层拼接的工业现场闭环压进一条流，流计算任务的数量与维护成本随之下降，这是工程效率维度的直接收益。更值得注意的是虚拟表的模型继承与跨层引用，设备模型可以分层定义、底层改字段上层自动生效，工业数据建模的重复定义问题得到缓解；企业版把外部工单与质检表直接接入流计算，则意味着流与批的边界在时序场景里进一步模糊。对平台团队，外部表参与计算的权限下推与一致性边界需要单独评估。 [补录 10-20]",
+      "source": "涛思数据官方博客",
+      "url": "https://www.taosdata.com/tdengine-engineering/39910.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "Gartner",
+      "module": "机构",
+      "title": "Gartner David Smith：到 2031 年训练与推理分离，data gravity 成为核心原则",
+      "summary": "来源： Gartner IT Symposium/Xpo 2026 Day 3 Highlights核心观点： Gartner 分析师 David Smith 在 IT Symposium/Xpo 2026 奥兰多场次提出，AI 正在超过云成为 IT 的最大趋势；到 2031 年，超过一半企业的模型将来自与数据不同的环境，多数企业会把训练与推理分开部署，甚至分用不同云厂商。他据此把 data gravity 提为多数企业云与 AI 战略的核心原则——数据所在的位置重新决定系统组织方式。映射到数据平台的判断： 这条判断把「数据与模型分离部署」从工程选项提升为默认架构前提，直接影响数据平台的架构设计：跨环境、跨云的调度、元数据同步与权限贯通不再是可选项，而是必须提前建设的底座。对采购与市场格局而言，data gravity 原则意味着数据位置一旦固化，后续的模型服务与推理算力采购会被动跟随位置走，跨云数据搬运的成本要在方案阶段就计入，而不是等到迁移时再谈。",
+      "source": "Gartner IT Symposium/Xpo 2026 Day 3 Highlights",
+      "url": "https://gcom.pdo.aws.gartner.com/en/newsroom/press-releases/2026-10-21-gartner-it-symposium-xpo-2026-orlando-day-3-highlights",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "Gartner",
+      "module": "机构",
+      "title": "Gartner Nate Suda：只有 4% 的非科技公司披露了可归因的 AI 降本",
+      "summary": "来源： Gartner IT Symposium/Xpo 2026 Day 3 Highlights核心观点： Gartner 分析师 Nate Suda 在同一场次提出，AI 降本需要被检验而不是被相信。他统计了标普 1200 指数中的非科技公司，2026 年上半年只有 4% 出现足以单独披露的 AI 降本，并给出三项检验方法：约束检验（成本是否真的构成约束）、转化检验（收益是否已转化为可计量结果）、主张检验（降本宣称能否被独立佐证）。映射到数据平台的判断： 这条数据修正的是采购决策的默认假设——多数企业的 AI 预算目前并未释放出可核对的成本节约，因此以「AI 降本」为前提的容量削减或平台替换方案需要重新验证。对数据平台团队，三项检验可以直接用作供应商评估框架：向厂商索要自有负载上的成本前后对照、区分约束型与转化型收益、要求对降本宣称提供可独立核验的证据。厂商基准与客户自述的成本数字，应被视为待验证的宣称而非既定前提。",
+      "source": "Gartner IT Symposium/Xpo 2026 Day 3 Highlights",
+      "url": "https://gcom.pdo.aws.gartner.com/en/newsroom/press-releases/2026-10-21-gartner-it-symposium-xpo-2026-orlando-day-3-highlights",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "Red Hat",
+      "module": "投融资",
+      "title": "【财报发布】IBM 第三季度营收 171.03 亿美元，数据业务增长 19%",
+      "summary": "来源： IBM Newsroom 财报公告核心数据： 营收 171.03 亿美元（按固定汇率增长 6%）；GAAP 毛利率 56.8%（同比下降 50 个基点）；经营现金流 40.25 亿美元，自由现金流 30.27 亿美元（同比增加 7 亿美元）；软件收入 78.04 亿美元，增长 8%；数据业务增长 19%；Red Hat 增长 11%，交易处理增长 9%，基础设施收入 37.07 亿美元、增长 4%。全年固定汇率营收增长 4% 至 5% 的指引维持，自由现金流指引上调至同比增加 10 亿美元以上。摘要： IBM 于美股 10 月 21 日盘后发布第三季度业绩，即北京时间 10 月 22 日凌晨。数据业务增长 19%，电话会将其归因于 2026 年 3 月 17 日完成收购并表的 Confluent，表述为「数据业务增长 20%，受 Confluent 持续强劲支持」。管理层同时表示 72% 的组织实时数据基础设施仍然不足，并推出与数仓湖仓互补的 Confluent Streamhouse，用于持续捕获、转换与查询实时数据。对数据平台的影响： 一次收购在并表八个多月后贡献出接近两成的数据业务增速，实时流平台的商业价值在财报口径上已经被验证，实时数据基础设施从成本中心转为可量化的增长线。对平台团队有两层含义：其一，72% 的组织实时数据基础设施不足这一数字可作为自身投入优先级的外部参照；其二，Streamhouse 与湖仓互补的定位，说明实时与离线架构短期内仍会并存而非互相替代，实时层的建设预算需要单独规划而非从湖仓预算里挤。Confluent 交易处理增长 9% 则提示事件流与事务处理负载在合并后的口径上开始互相印证。",
+      "source": "IBM Newsroom 财报公告",
+      "url": "https://newsroom.ibm.com/2026-10-21-IBM-RELEASES-THIRD-QUARTER-RESULTS",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "【跟踪】Snowflake 指定区域服务中断 INC20000301 已恢复，根因分析待发布",
+      "summary": "来源： Snowflake 官方状态页为什么值得继续看： Snowflake 于 10 月 21 日 18:00 UTC 起在指定区域发生重大服务中断，影响时段至 21:25 UTC，受影响面包括登录、Snowsight、查询执行、虚拟仓库恢复与 Snowpipe 及 Snowpipe Streaming 文件摄取，定时任务亦可能未按计划运行。服务已恢复正常运营，初步根因指向云服务层在指定区域应用的一项配置变更与既有设置相互作用，导致大量实例被下线并在登录、查询执行与数据摄取上形成级联失败。此前同日 06:18 至 07:06 UTC 的 INC20000299 已恢复，根因为流量路由基础设施不可用。官方承诺在 5 个工作日内提供根因分析报告。需要等待什么信号确认： 等待 INC20000301 的根因分析报告，以及 INC20000299 的根因分析是否指向同一层配置管理问题。若两份报告显示同源，则该厂商在指定区域的基础设施变更管控存在流程缺口，跨区域容灾方案与故障切换策略需要重新复核；若根因彼此独立，则影响面更接近常规变更事故，无需调整架构假设。",
+      "source": "Snowflake 官方状态页",
+      "url": "https://status.snowflake.com/history",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "华为",
+      "module": "技术",
+      "title": "【降级】深演智能与华为云签署合作备忘录，尚未形成正式业务合同",
+      "summary": "来源： 香港交易所披露易公告为什么值得继续看： 深演智能 10 月 21 日公告与华为云签署合作备忘录，华为云将提供云基础设施、算力及智能体平台（AgentArts）能力，双方优先在汽车与零售场景开展试点。公告由董事会主席黄晓南代表签署，公司注册地为香港。合作方是云厂商而非数据平台厂商，主营方向为智能营销，业务重心与数据平台核心场景不重合。需要等待什么信号确认： 该事项目前仅为合作意向，双方尚未签署正式业务合同，具体投入规模、试点范围与落地时间表均未披露，因此本期按降级处理。后续观察点是是否出现正式合同或可量化的落地案例，以及华为云在该合作中提供的算力与智能体平台能力是否延伸至客户自有的数据平台环境。",
+      "source": "香港交易所披露易公告",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1021/2026102101092_c.pdf",
+      "conf": ""
+    },
+    {
+      "date": "2026-10-22",
+      "vendor": "阿里云",
+      "module": "技术",
+      "title": "【降级】阿里云 PolarDB PostgreSQL 2026.10 引入 DuckDB 列存表引擎",
+      "summary": "来源： 阿里云 PolarDB 新版本更新说明为什么值得继续看： 阿里云 PolarDB PostgreSQL 14 的小版本更新说明中，首次出现「支持使用 DuckDB 作为列存表引擎，并通过 CSI Worker IPC 访问数据」的表述，同时新增 polar_default_duckdb_table_engine 参数，并修复 DuckDB 表引擎映射错误与 TRUNCATE 后表大小统计错误等问题。这把「一个 PostgreSQL 实例同时承接行存事务与列存分析」的路径推进了一步，此前该能力已通过列存索引（IMCI）形态存在。需要等待什么信号确认： 官方文档仅以「2.0.14.22.49.0（2026.10）」这一月级小版本号标注本次更新，未给出确切发布日期，也未说明该能力的可用范围、是否限于分布式版或商业版，因此本期按降级处理，不作为产品发布事件。后续需等待官方发布公告或带确切日期的版本说明，确认上线时间与可用边界，再评估其在混合负载场景下的适用性。",
+      "source": "阿里云 PolarDB 新版本更新说明",
+      "url": "https://help.aliyun.com/document_detail/468881.htm",
+      "conf": ""
     }
   ],
   "archive": [
@@ -10218,7 +10348,8 @@
     "2026-10-16",
     "2026-10-19",
     "2026-10-20",
-    "2026-10-21"
+    "2026-10-21",
+    "2026-10-22"
   ],
   "monthly": [
     {
