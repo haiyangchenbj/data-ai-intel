@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-26</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-26 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据访问控制的难点正在从授权转向跨域身份传递</li>
+      <li>检索正在下沉为查询语言的内建函数而非独立服务</li>
+      <li>大厂正把分析工具与智能体团队收编进统一数据部门</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期几条动作指向同一件事：身份传递、检索调用、工具接入与用量计量正在一起变成数据平台的标准件。竞争焦点随之落到治理面——谁能把它们收进同一套权限与成本口径，谁就掌握下一轮采购话语权。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>AWS Lake Formation 支持跨 Region 细粒度数据访问：受信身份传播打通跨区身份</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/blogs/big-data/enable-cross-region-fine-grained-data-access-with-aws-lake-formation-and-trusted-identity-propagation/">AWS 官方博客</a><br><b>摘要：</b> AWS 10 月 23 日发布博客，介绍如何结合 Lake Formation 与 Trusted Identity Propagation（TIP）实现跨 Region 的细粒度数据访问，文中说明这是三篇系列的第一篇。该机制要求生产方与消费方属于同一 AWS Organizations 并共用同一个组织级 Identity Center 实例，在 Glue Data Catalog 中以资源链接引用对方数据、用外部 Schema 引用对方目录，两种方式都不再依赖跨账号长期密钥。官方示例中生产方位于悉尼（ap-southeast-2），消费方位于圣保罗（sa-east-1），并在 Lake Formation 控制台明确勾选"仅使用 IAM 访问控制选项"。配套能力包括 Identity Center 的跨 Region 身份平面、AWS RAM 的跨 Region 资源共享，以及 SageMaker Unified Studio、Athena、Redshift 对 TIP 的支持。<br><b>为什么对数据平台重要：</b> 这把"数据在哪"与"谁能用"两个问题第一次在跨 Region 场景下拆开治理：身份平面跨区走，物理数据留在原地，靠受信身份传播而不是复制数据。对平台团队有三点可直接落地的判断：其一，跨域数据协作的前置条件是组织级身份实例统一，这类架构约束在设计期定不下来、事后迁移成本极高；其二，细粒度授权开始以资源链接加外部目录这类声明式引用表达，跨组织共享的最小单元从账号下沉到表；其三，官方在此路径上明确要求只走 IAM 访问控制，意味着平台侧必须把行级、列级策略与 IAM 策略的边界讲清楚，否则两套权限体系会互相打洞。需要一并计入成本的还有跨 Region 延迟与跨组织信任链的运维复杂度上升。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 把 Cortex Search 检索搬进 SQL，并托管 MCP 编码 Agent</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-10-23-cortex-search-retrieve-preview">Snowflake 发布说明（Retrieve Cortex Search）</a> / <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-10-23-mcp-coding-agent">Snowflake 发布说明（Coding agent MCP tool）</a> / <a href="https://docs.snowflake.com/en/release-notes/all-release-notes">Snowflake 全部发布说明索引</a><br><b>摘要：</b> Snowflake 10 月 23 日同批发布三项与智能体相关的更新。一是 Retrieve Cortex Search 进入 Public Preview，CORTEX_SEARCH_RETRIEVE 表函数可从 SQL 里直接跑低延迟检索，既支持单条查询，也支持按输入行做 LATERAL join，检索结果可与 join、聚合等 SQL 组合，复用服务已有的服务资源。二是 Responses API for Cortex REST API（Preview），可用 OpenAI SDK 或任何兼容 Responses API 的客户端调用 Cortex 上的 OpenAI 模型，端点为 /api/v2/cortex/v1/responses，也可在 Cortex AI Gateway 上走 /v1/responses。三是 Coding agent MCP tool，Snowflake 托管的 MCP server 可以通过 CODING_AGENT 类型的工具暴露编码 Agent，无需预先创建 stored agent object，每次调用附带托管编码沙箱 code_toolset_all，可用 thread_id 续接同一会话。同日另有 Snowpark Container Services 的 GEN_ARM_G1 与 GEN_X64_G1 实例族在 Google Cloud 上正式可用。<br><b>为什么对数据平台重要：</b> 三项指向同一件事：检索与工具调用正在被重新定义成 SQL 层的可组合对象，而不是需要另建同步管道的外挂服务。价值主要落在治理侧而非性能侧——检索发生在数据库内部，意味着访问控制、数据血缘与审计留痕留在同一层，Agent 的每一次召回都能被既有的权限与用量口径捕获，不必再为"AI 检索"另开一套观测体系。对平台团队可直接落到三个评估项：语义层与检索结果能否组合成同一条查询、Agent 的检索调用是否进入既有成本核算、托管沙箱是否满足数据不出域的要求。需要注意的是三项均为预览或预览级能力，生产采用前需自测延迟与配额。</div>
+</div>
+<div class="item">
+    <h3>Meta 收购 AI 数据分析平台 Sundial，并入 DATA 部门</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.yahoo.com/technology/ai/articles/exclusive-meta-acquires-ai-data-205220657.html">Axios 独家报道（Yahoo Finance 转载）</a> / <a href="https://tech.ifeng.com/c/8xTbXGz8T1f">IT之家报道（凤凰网科技转载）</a><br><b>摘要：</b> 据 Axios 10 月 23 日独家报道并经 Meta 发言人确认，Meta 已收购 AI 数据分析平台 Sundial，交易价格未披露。Sundial 由两名前 Meta 高管创立：CEO Julie Zhuo 曾任 Meta 产品设计副总裁，联合创始人 Chandra Narayanan 曾任 Instagram 与红杉资本的数据分析主管、Facebook 分析总监；两人都将加入 Meta，Sundial 其他员工（含多名 Meta 校友）也会一并加入。Sundial 将并入 Alex Schultz 领衔的 Data Analytics Tooling & Agents 部门（DATA），Schultz 表示 Narayanan 将负责数据分析工具与智能体方向；Schultz 7 月被任命为 Meta 首任首席数据官，其原职务是前市场负责人。Sundial 的产品把自然语言提问转成可执行的分析结论、通过聊天插件接入，让业务团队不必等集中式数据团队响应；交易完成后 Sundial 将停止对外服务。<br><b>为什么对数据平台重要：</b> 这是大厂把分析工具与智能体两条线合并到同一部门的明确动作，直接改变数据工具链的采购格局。Sundial 的定位值得注意：它卖的不是查询引擎，而是让业务方绕开集中式数据团队自助取数的分析层，这类能力过去通常由数据平台内部消化，现在被独立产品化并被大厂收编。对平台团队有三点判断：其一，自助分析层的竞争会从谁能写 SQL 转向谁能给业务方一个受治理的自助入口，语义层与权限设计的重要性随之上升；其二，并入 DATA 之后，这类能力会被定位成 AI 系统的运维与监控基础设施，而不只是取数工具；其三，这类公司被收编通常意味着外部产品形态被内部需求替代，独立供应商的窗口在收窄。需标注的是，此条为媒体报道并经发言人确认，未见公司正式公告文件，金额与条款均未披露。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>华为云 RDS Supabase AI 应用开放公测：托管 Supabase 并接入 MCP 与向量检索</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://huaweicloud.blog.csdn.net/article/details/168877926">华为云开发者联盟官方博客（CSDN 同步）</a> / <a href="http://mp.weixin.qq.com/s?__biz=MzkzNzM4ODE0NQ==&mid=2247596445&idx=1&sn=3793cc9e78875053a6591e4b69c280a3">华为云开发者联盟微信公众号原文</a> / <a href="https://support.huaweicloud.com/usermanual-rds-pg/rds_supabase_02.html">华为云帮助中心（创建应用）</a><br><b>摘要：</b> 华为云 10 月 23 日宣布 RDS Supabase AI 应用开放公测，基于开源 Supabase 与华为云 RDS for PostgreSQL 全托管能力，提供 Data API、Auth 认证、Storage 存储、Realtime 实时推送四项开箱即用能力。架构分三层解耦：应用接入层提供 OpenAPI、SDK、Web 控制台与 MCP 四种接入方式；RDS 服务层由 Kong、GoTrue、PostgREST、Realtime、Storage、Imgproxy、Studio、Supavisor、Logflare 九大 Supabase 组件加华为云 OBS 与云磁盘组成；业务数据层为 PostgreSQL 主备架构，支持行级安全策略（RLS）、Auth Schema 与 pgvector 向量检索。AI 侧两项能力是内置 pgvector 与 MCP Server 接入，Agent 可直接调用 Data API 且受 RLS 约束。官方文档说明公测期通用型免费，仅收托管实例、NAT 网关、弹性公网 IP、实例存储与 OBS 费用，转商后提供包年包月与按需两种计费模式。<br><b>对数据平台的影响：</b> 值得关注的是托管数据库服务承载开源 BaaS 组件这条路径的落地方式：九个 Supabase 组件被拆进托管数据库实例与对象存储两侧，行级安全直接落在 PostgreSQL 业务数据层，向量检索与结构化数据同库。对做 AI 应用后端的团队，这意味着不必再单独采购向量数据库，检索增强场景的数据底座可以收敛到一个数据库实例，权限模型也只有一套。落地前有三处必须自己核：MCP 工具调用在 RLS 约束下的实际行为、Realtime 基于逻辑复制的变更推送在高并发写入下的延迟、以及公测期免费与转商后的计费口径差异——公测期只免应用本身费用，实例与网络费用照收，成本模型需按转商后重算。</div>
+</div>
+<div class="item">
+    <h3>Databricks 同日密集上新：serverless 缓存、Files API 3.0 与两个托管连接器</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/october">Databricks 10 月发布说明</a><br><b>摘要：</b> Databricks 10 月 23 日在同一天的发布说明里给出四项更新。一是 DataFrame caching on serverless compute 进入 Public Preview，可在 serverless 上用 df.cache() 或 df.persist() 缓存 DataFrame 以复用高开销计算结果，要求无服务器环境版本 5 及以上，或 Databricks Connect for Python 18.1.8 / Scala 18.1.5 及以上，多数工作区默认启用。二是 Files API 3.0 for Unity Catalog volumes 进入 Beta，新增超过 5GB 的分段上传，以及基于当前版本的条件上传、下载与删除，避免并发场景下的意外覆盖。三是 Google Analytics Aggregated 托管连接器进入 Beta，支持摄入 GA4 的用户行为、获取、互动、变现、人口统计与技术报告等汇总报表，可自定义维度、指标与汇总层级，支持增量摄取及服务账号与 OAuth U2M 两种认证。四是 Box Audit Logs 托管摄取连接器进入 Beta，用于把 Box 企业审计事件摄入平台。<br><b>对数据平台的影响：</b> 这四项方向一致：把平台上原本需要自己搭的连接层与缓存层收进托管能力，让 serverless 承载更重的工作负载。对平台团队的实际影响在成本结构上——serverless 上的 DataFrame 缓存如果能替代原先为复用结果而常驻的交互式集群，闲置计算成本会被直接压掉，但缓存收益高度依赖工作负载特征，交互式分析中短会话、长扫描的作业缓存命中率往往很低，需要先用自己的查询分布测一遍再决定是否默认开启。Files API 3.0 的条件操作同样是治理向改进：Unity Catalog 卷上的文件读写终于有了版本语义，多 Agent 并发写入同一目录时不会再互相覆盖，这正是把 Agent 接入存储层时最容易出问题的地方。GA4 与 Box 连接器则补齐了行为分析与审计事件这两类过去最常靠手工导出的数据入口。</div>
+</div>
+<div class="item">
+    <h3>Confluent Cloud for Apache Flink 的计算池支持托管 AI 模型</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.confluent.io/cloud/current/release-notes/index.html">Confluent Cloud 发布说明</a><br><b>摘要：</b> Confluent Cloud 10 月 23 日的发布说明记录，Confluent Cloud for Apache Flink 现可在运行于 AWS、Azure 与 Google Cloud 的计算池中支持托管 AI 模型，由 Confluent 负责模型管理，用户无需自行创建到模型厂商的连接即可运行模型推理。官方文档《Run an AI Model with Confluent Cloud for Apache Flink》给出的使用方式是把模型当作 Flink 环境中的一等资源：用 CREATE MODEL 语句在 Flink 环境里注册 AI 或 ML 模型，再在流式查询中引用推理，可用模型源包括 AWS Bedrock、AWS SageMaker、Azure OpenAI、Azure ML、Google AI 的 OpenAI 兼容端点与 Vertex AI，模型可用 Flink SQL 或 Cloud Console 创建；同一文档体系在 10 月 19 日的另一条更新中还提到托管 MCP server 已支持用 Confluent Cloud 账号以 OAuth 登录，工具以调用者自身权限执行。<br><b>对数据平台的影响：</b> 这条改动的意义在于把模型调用从流处理管道里的外部依赖，变成 Flink 内部的一等资源。收益直接落在两处：其一，数据不出域——流处理引擎自己托管模型，敏感数据不需要为了推理先出境到模型厂商，省掉了跨云出口流量与合规审查；其二，状态与上下文管理仍在 Flink 内完成，按序列维护状态并设置定时器意味着模型推理可以带上最近上下文，而不必对每条事件外查一次数据库。对平台团队要提醒的是这类托管能力的边界：模型由云侧托管意味着推理单价由供应商决定且不易压价，托管 AI 模型与自建推理集群的性价比拐点需要按自家流量曲线测算，在事件量大而单条价值低的场景下差异会被放大。</div>
+</div>
+<div class="item">
+    <h3>Microsoft Fabric 一批预览功能落地：数据流公共 API、OneLake 实例规则与数据智能体服务主体认证</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://learn.microsoft.com/en-us/fabric/get-started/whats-new">Microsoft Fabric 最新动态</a><br><b>摘要：</b> Microsoft Fabric 在 10 月 23 日前后更新了最新动态页，其中与数据平台直接相关的预览项包括：Dataflow Gen2 数据流的公共 API（Preview），支持以编程方式创建、更新、计划与监控数据流；Dataflow Gen2 的分区计算（Preview），把数据流逻辑的不同部分并行执行以缩短求值时间；prebuilt Foundry Tools（Preview），直接用预建模型增强数据，当前支持 Azure OpenAI、Azure Language 与 Azure Translator；Real-Time Dashboards 的 AI 自定义可视化生成器（Preview），按自然语言描述生成 HTML 可视化；Resource Instance Rules for OneLake（Preview），按身份允许受信 Azure 资源实例入站访问 OneLake，与 Private Link 及 IP 防火墙并列；标量用户自定义函数（Preview）；Event Schema Registry（Preview）；Eventstream MQTT 连接器的 mTLS（Preview）；Fabric data agents 的服务主体认证（Preview），让自定义应用与 Foundry 智能体以应用身份调用数据智能体 API 并继承工作区权限；以及 Fabric Data Engineering 的 Resource Profiles、Data Factory 流水线中的 Refresh Materialized Lake View 活动、连接与网关的 REST API、计划任务用户数据函数等。<br><b>对数据平台的影响：</b> 本批预览项随 FabCon Europe 2026 的 Fabric Planning 更新同期公开，官方说明为 expected to be available around Friday Oct 23rd 2026，日期依据取自官方公告而非页面抓取时间。这一批更新的共同指向是把 Fabric 内部的管理与调用接口打开，让外部系统与自动化工具可以像操作数据库一样操作数据流、工作区与数据智能体。对平台团队最值得看的是三项：Dataflow Gen2 的公共 API 与分区计算，前者决定数据流能否纳入既有编排与监控体系，后者直接改变数据流作业的成本模型，且分区计算的效果取决于数据流内部依赖的切分质量，并非打开就提速；Fabric data agents 的服务主体认证，是把数据智能体接入企业应用的关键前提，委托用户令牌改为应用身份后，权限模型与审计口径会随工作区权限走而不是随个人账号走；Resource Instance Rules for OneLake 则补上了 Private Link 之外的一条入站访问路径。需要提醒的是这批功能多数仍是预览，接口形态与行为可能继续变化。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake：衡量 AI 价值要按 AI 所做的工作分层，而不是只看采用率</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.snowflake.com/en/blog/measure-ai-value-beyond-adoption/">Snowflake 官方博客</a> / <a href="https://www.snowflake.com/en/blog/ai-ml/">Snowflake AI/ML 博客索引</a><br><b>核心观点：</b> Snowflake 10 月 23 日发布《Beyond Adoption: How to Measure Whether AI Is Changing the Work That Matters》，提出四部分框架。第一，按 AI 所做的工作分三级——Foundational（解释代码、回答问题）、Applied development（写改代码、探查数据、排障、构建报表或应用）、Agentic（跨上下文推理、使用工具、多步完成结果），衡量对象是工作性质而非交互次数。第二，把采用度与熟练度分开度量，两个维度组合出四种位置。第三，用同行业基准给孤立数字提供参照。第四，看最熟练用户与全体之间的差距，因为少数人先跑通的工作流应被当作路线图而非轶事。文中给出四个被验证有效的做法：让高阶用户做动手工作坊而非演示、把工作流写成可复用的配方模板、定期的展示与失败复盘、以及让工作流库可被发现。文中以 Snowflake 内部团队为例：一周各记录 1000 次 AI 交互的两个团队，因工作性质不同会被多数企业看板打成同一分；产品数据科学团队用 Agent 自动化诊断流水线的运行手册，节省了每月约 160 小时专家诊断时间。<br><b>映射到数据平台的判断：</b> 这份框架的价值在于它把 AI 用得好不好从感觉变成了可审计的指标集，而这套指标恰好需要数据平台托管——按工作性质分级的标签、用量与结果口径、行业基准所需的同类企业样本，都落在数据平台的元数据与度量层上。对平台团队有三点可迁移：其一，度量对象应当是任务性质而不是调用次数，采集上需要把这条交互属于哪一级工作的判定前置到调用链路上，这要求平台在 Agent 调用入口就带有可打标的工作类型上下文；其二，熟练度与采用度分开之后，找出少数先跑通者就成了一项数据问题——高阶用户与新用户在工作类型上的分布差异，靠的是对历史调用记录的分层聚合；其三，公开基准的价值取决于可比群体是否存在，对多数企业而言自建基准与同行业对标要分两套口径，不能混算。四个做法中"让工作流库可被发现"对数据平台最直接：可复用工作流的检索与分发，本身就是目录与检索层该解决的问题。</div>
+</div>
+<div class="item">
+    <h3>IDC：数据市场的 50-50 预测成立，但社区协作功能不会由基础设施平台商提供</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.idc.com/resource-center/blog/did-idcs-50-50-marketplace-prediction-hold">IDC 官方博客</a><br><b>核心观点：</b> IDC 研究副总裁 Jeff Hojlo 10 月 23 日撰文复盘 2024 年 FutureScape 中关于数据市场 2026 年形成 50-50 分野的预测。结论是就今天而言成立：目前约一半组织既用市场获取数据与应用，也用市场与伙伴及客户共同协作，比 2024 年调查中只有 22% 把市场当作与伙伴共事场所明显提升；展望未来数年则更接近 80-20，剩下 20% 是不带支付机制、不做公平价值分成或只提供数据与应用的交易型市场。预测中预期会随参与度下降而萎缩的公平价值监控并未真正出现，目前没有人在核查某个项目的收入是否在伙伴间公平分配。关键差异在供给侧：大型基础设施与平台厂商并未普遍补上社区管理与共创功能（如沙箱），它们主要扩展了 AI 模型仓库与数据市场、补充了参与者报酬机制，承担社区协作功能的是企业级与行业垂直厂商，因为其客户与伙伴需要共享数据、共同做产品并获取行业相关数据。Hojlo 同时把市场重新定义为活的（living）数据模型供给方与外部智能体来源，并提出新的要求：跨多个数据集查看、带治理地编排智能体与数据模型。障碍被归为运营性而非技术性：隐私与合规、基础设施成本、跨伙伴的令牌管理与分配、知识产权与法律复杂度、身份验证。<br><b>映射到数据平台的判断：</b> 这条判断对平台采购与自研的影响在于供给侧的角色分配：随着社区协作能力由垂直厂商而非基础设施平台商提供，平台厂商把预算投在共建与撮合上的回报会明显低于投在跨数据集访问与带治理的编排上。后者恰好是数据平台的既有强项——目录、血缘、权限与跨域访问能力可以直接复用，但要求平台把编排智能体当成一等公民来设计治理面：智能体跨多个数据集取数时，权限判定、数据血缘与调用留痕必须在同一口径下完成。另一个可操作的推论是公平价值监控尚未出现，这意味着跨组织数据协作的分成机制短期内不会由平台自动提供，需要平台自己留出可扩展的记账接口，不要等需求出现再补。Hojlo 把障碍列为运营性而非技术性，提示平台方：技术能力上线之后，真正卡住跨组织协作的通常是协议、合规与结算，而不是查询性能。</div>
+</div>
+<div class="item">
+    <h3>Databricks：528 次智能体构建基准显示声明式管道更省算力但更费 token</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/built-agents-case-spark-declarative-pipelines">Databricks 官方博客</a><br><b>核心观点：</b> Databricks 10 月 23 日发布《Built for Agents: The Case for Spark Declarative Pipelines》，公开对 528 次智能体构建的基准测试结果。测试取 22 个真实数据工程任务，每个任务生成 12 份带生产脏值的数据集，分别用过程式 PySpark 与 Spark 声明式管道实现，各 264 次构建，全部使用 Opus 4.8，自动评分器不知道结果出自哪种写法。结果是声明式全面胜出：过程式运行累计消耗 596 个 executor 秒，声明式仅 17 个，约 34 倍差距，原因是结构错误可由便宜的 dry run 在执行前拦下，而过程式没有等价关卡，单次失败最多消耗约 521 executor 秒，声明式被拒的尝试约 0.5 秒。代码量上声明式中位 64 行对过程式 131 行，少约一半，且 19 次过程式构建采用逐行内存处理的取巧写法，声明式一次都没有。代价在 token：声明式约多用 2.3 倍 token，单次构建中位成本约 0.50 美元对 0.26 美元，原因是迭代发生在 dry run 阶段。逻辑错误两者持平，声明式 264 次中 85 次出现静默错误（32.2%），过程式 73 次（27.7%），官方认为差距在 15% 内不足以构成实质差异，声明式只让结构错误变便宜，对静默错误无效。文章同时指出 Databricks 上超过 70% 的 SDP 管道已由智能体创建，并公开复现仓库。<br><b>映射到数据平台的判断：</b> 这份基准的可迁移结论不是声明式更好，而是让智能体写生产管道时错误的发现时机决定成本结构。过程式写法把错误成本推迟到集群上执行，声明式把结构错误前移到近乎零成本的校验阶段，这个差别在智能体要反复试错的场景里会被放大到数量级。对平台团队有三层含义：其一，如果平台要让智能体参与生产管道的开发与维护，提供前置校验与 dry run 能力比提供更快的执行引擎更能降低总成本；其二，基准自己给出了 token 与算力的交换比——声明式多花约 2.3 倍 token 换掉约 34 倍的集群算力，这意味着在算力贵、token 便宜的当下更划算，而在推理成本上行或集群闲置严重的场景下结论会反转，选型必须按自家算力与推理价格重算；其三，也是最需要警惕的一条：声明式对静默错误无效，两者的静默错误率在 32.2% 与 27.7% 之间，官方明确说这一差距不构成实质差异。智能体写生产代码时，测试与评审仍不可替代，把 dry run 当成正确性保障是误读。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】华瑞指数云完成超亿元新一轮融资，押注 AI 推理的 KV Cache 存储层</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.shangdaovc.cn/h-nd-14785.html">商道创投网·创投生态圈</a> / <a href="https://www.cinic.org.cn/zgzz/qy/1657697.html">中国产业经济信息网</a><br><b>核心数据：</b> 融资规模为超亿元新的一轮，由一家具备产业资源与科技投资经验的基金与琮碧秋实投资联合领投，某国有产投基金跟投，估值未披露。公司称 2026 年上半年合同额同比增长 150%，目标是在未来 12 个月内推动 50 家以上重量级 AI 推理客户实现生产落地。存量业务 WADP 统一存储底座已在 200 余家客户核心生产环境运行，覆盖人工智能、自动驾驶、互联网、半导体、量化交易、金融、运营商与先进制造等行业。性能口径为厂商与客户联合测试结果：某大型 Token 工厂在 24 张 GPU 加 1 个 WQS 存储节点下达到相当于 48 张 GPU 的 Token 产能；另一大型企业在不新增硬件的前提下把首 Token 时延降低 60%、输出 Token 吞吐提升超过 3 倍。<br><b>摘要：</b> 华瑞指数云（ExponTech）近日宣布完成新一轮超亿元融资，本轮资金主要投向 AI 原生 KV Cache 存储系统 WQS 的持续研发与规模化交付、软硬协同设计与全栈 IO 优化，以及市场与客户服务体系。公司核心产品 WQS 围绕 KV Cache 的复用、共享与调度设计，用低成本 SSD 替代昂贵 DRAM 构建大规模上下文存储池；WADP 统一存储底座下另有高性能分布式块存储 WDS 与并行文件存储 WFS。创始人靳广亮表示，将与 NVIDIA、AMD、昇腾以及 vLLM、SGLang 等推理开源生态从适配走向联合方案与标准共建；领投机构给出的理由是，长上下文、多轮交互与自主式智能体走向规模化后，内存与存储 IO 已成为 AI 推理最大的瓶颈，制约程度甚至超过算力短缺。股东方奇安投资披露，公司已完成对 NVIDIA 2026 年提出的 CMX 架构的适配验证，并完成批量生产级验证。<br><b>对数据平台的影响：</b> 这笔钱的去向指出了一个此前被数据平台讨论覆盖不足的位置：推理侧的存储 IO 正在成为独立的基础设施层。对数据平台的直接影响有三点：其一，如果 KV Cache 的存储与调度确实可以从 DRAM 侧移到 SSD 侧并保持接近的性能，那么推理集群的扩容口径要重算——过去按显存与卡数规划，现在要按有效 Token 产能规划，厂商给出的 24 张 GPU 顶 48 张 GPU 是同厂商口径，需用自己的模型与上下文长度复测；其二，WQS 与 vLLM、SGLang、LMCache、NIXL、Dynamo 等推理框架的对接说明这一层正在形成事实标准，一旦生态默认方案固化，替换成本会迅速升高，平台方如果要做推理侧存储，需要尽早参与到接口层而不是等到方案定型；其三，不增 GPU 提升 Token 产能如果成立，那 AI 基础设施的采购与成本谈判会被重新排序——在算力供给紧张、缺电与内存紧绑的背景下，用存量介质换产能的方案值得认真评估，这比扩容更符合当下的供给约束。需要注意的是本轮领投方未具名、估值未披露，且性能数字均来自厂商与客户联合测试，尚无第三方复现。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】腾讯云将于 10 月 30 日办 AI 原生数据库专场，拟发布 TDSQL Nexa 与 TDSQL Boundless</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20261023A0C9VJ00">腾讯新闻（腾讯云数据库）</a><br><b>为什么值得继续看：</b> 腾讯云 10 月 23 日发布预告，将于 10 月 30 日 14:30–17:00 在深圳宝安国际会展中心举办 AI 原生数据库专场，嘉宾包含腾讯云副总裁王义成与 IDC 研究经理王楠。预告显示届时将发布 TDSQL Nexa——一款 AI 原生多模数据库，官方口径是一张多模表加一套 SQL，复杂路由与编排闭环在引擎内部完成；以及 TDSQL Boundless，把行存、列存、向量索引与全文索引收在一处，并支持热冷自动下沉。此外还提到 AI_DECIDE 函数。专场本身属于厂商活动，但发布内容指向的是数据平台的两个真问题：多模数据与检索能力如何在引擎内部统一编排，以及向量与全文索引能否与行存列存共用一套存储底座。<br><b>需要等待什么信号确认：</b> 等待专场当天的一手材料——TDSQL Nexa 的多模表类型系统与 SQL 方言边界、复杂路由与编排由哪一层引擎承担（是查询优化器还是独立的路由层）、以及 AI_DECIDE 函数是把决策逻辑下沉到引擎还是作为外部决策服务的绑定接口。这三处决定了它是能力升级还是新的架构代差。另外需要观察多模表与向量、全文索引是否共用存储层与权限模型——如果共用，检索增强类负载的端到端成本结构会被改写；如果各自分离，则更接近功能叠加。同时值得对比的是同类厂商同期对多模与 Agent 负载的路线图，判断是行业收敛还是各家自定义。</div>
+</div>
+<div class="item">
+    <h3>【预告】腾讯云 AI 安全中心将于 10 月 27 日上线 MCP 网关与 JIT 短时令牌</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.tencent.com/document/product/1092/97880">腾讯云 AI 安全中心产品动态</a><br><b>为什么值得继续看：</b> 腾讯云 AI 安全中心的产品动态页最近更新时间为 10 月 24 日，页面列出的功能将于 10 月 27 日上线，方向明确指向智能体场景：资产清单新增 LLM 清单与 MCP 清单，用于盘点组织内正在使用的大模型与 MCP 服务；新增 AI 数据安全模块；新增 MCP 网关，配合 JIT 短时令牌与终端插件；并补齐资源访问管理与安全审计。这套组合对应的是智能体规模化后出现的三类具体问题——组织不知道自己在用哪些模型和哪些 MCP 服务、Agent 调用工具的凭据长期有效难以回收、Agent 的操作缺少可审计的留痕。对数据平台而言，MCP 网关是新的管控点：它是智能体接入数据与工具的必经通道，权限判定、令牌时效与调用留痕如果在这一层统一，治理成本会远低于事后逐个工具补。<br><b>需要等待什么信号确认：</b> 等待上线后的官方文档确认四件事：MCP 网关与既有数据平台权限体系的关系是代理复用还是独立授权，JIT 短时令牌的有效期与续期策略，以及 LLM 清单与 MCP 清单的覆盖范围是自动发现还是依赖手工登记。这三点决定它是治理层还是资产台账。同时需要观察这类网关是否会成为事实上的智能体流量入口——如果组织内的 MCP 调用集中在这一层，统一的审计与用量口径就有了落点；如果各家自建网关并存，治理会重新碎片化。另需注意 10 月 27 日为上线时点而非功能验证完成，功能口径以正式发布文档为准。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Apache Doris Summit 2026 落幕：Capy Agent 定于 10 月 31 日发布，Doris 5.0 仍为路线图计划</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.modb.pro/db/2113532477407059968">墨天轮（SelectDB 峰会总结）</a> / <a href="https://blog.itpub.net/70017904/viewspace-3186563/">ITPUB（SelectDB 峰会总结）</a> / <a href="https://doris.apache.org/zh-CN/community/roadmap/">Apache Doris 官方路线图</a><br><b>为什么值得继续看：</b> Doris Summit 2026 于 10 月 21–22 日线上举办，官方渠道的峰会总结稿于 10 月 23 日发布。三条主线分别落在数据层、计算层与交互层：数据层面向 AI 的多模湖仓架构主张存储保持开放、查询与执行保持统一，允许 Iceberg、Paimon、Lance 等开放格式各自承载数据，由引擎直接复用湖表原生的向量、全文与标量索引，避免冗余存储与同步开销，并用单条 SQL 在同一执行计划中完成向量语义召回、Variant 动态路径过滤、跨源多表 Join 与权限过滤。计算层推出 Row Binlog 与 Table Stream，新一代行级增量物化视图在 10 亿级基表下只扫描发生变更的数百行，官方称资源消耗约为传统分区刷新的 1/50，数据变更到指标查询的 P50 延迟缩短至 0.26 秒。交互层宣布免费、自托管的 Web 工具 Capy Agent 将于 10 月 31 日发布，引入 Markdown as Dashboard 与 Coding MCP。需要同时标注的是，官方路线图页把 5.0 列为 Planned Nov 2026，即尚未正式发布。<br><b>需要等待什么信号确认：</b> 等待 10 月 31 日 Capy Agent 的实际发布版本，重点看三件事：Markdown 文件系统上下文层在真实数据分析上的准确率表现，Coding MCP 如何解决上下文窗口溢出，以及自托管形态下的权限隔离与审计是否可用。而 5.0 本身要等路线图上的 11 月窗口，需要核的是 Row Binlog 与行级增量物化视图的实际可用范围（是否只覆盖行存、是否支持多表级增量）、增量计算能否延伸到 Iceberg 与 Paimon 等开放湖仓格式、以及官方的 1/50 资源与 0.26 秒 P50 在多租户与并发场景下是否还成立。这三点决定 Doris 5.0 是一次查询引擎的功能升级，还是把实时增量做成默认计算路径。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-26 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
