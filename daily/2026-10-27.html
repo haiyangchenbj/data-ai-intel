@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-27</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-27 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>语义层正在从单家私有能力变成跨厂商共识的基础设施</li>
+      <li>数据平台的边界从结构化表扩展到企业知识与非结构化内容</li>
+      <li>治理重心从事后审计前移到目录层的对象级权限控制</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台的重心正从把数据搬进仓库，转向在数据所在处定义口径与权限；竞争不再是存了多少数据，而是谁能让人和智能体在同一套业务定义上工作。投入重点应落在目录层的语义资产与权限模型，而不是继续堆叠存储与计算资源。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Oracle 在 AI World 2026 发布自主 AI 湖仓：业务语义层、原生 Iceberg 写与多维仿真引擎</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.oracle.com/sa/news/announcement/ai-world-oracle-advances-autonomous-ai-lakehouse-with-business-semantic-layer-and-expanded-support-for-iceberg-data-2026-10-26">Oracle 官方新闻稿（10 月 26 日）</a> / <a href="https://blogs.oracle.com/database/your-data-stays-put-ai-comes-to-it-whats-new-in-oracle-autonomous-ai-lakehouse">Oracle 数据库博客深度说明</a><br><b>摘要：</b> Oracle 于 10 月 26 日在拉斯维加斯 AI World 2026 上发布自主 AI 湖仓的一批更新。一是业务语义层：目录层注解可挂载外部目录（AWS Glue、Databricks Unity Catalog、Snowflake Horizon Catalog），Oracle 引擎可就地实时查询这些目录中的数据，检索走智能体式搜索与分层剪枝；语义层包含目录注解、从 Oracle AI Database 导入的 SQL 注解、由 AI 建议的分析视图，并支持导入 Apache Ossie 语义模型。二是扩展的原生 Iceberg 支持：Iceberg 表可用 Oracle SQL 直接建表、写入、更新与删除，并支持时序回溯查询。三是业务仿真引擎：多维建模能力 Essbase 原生并入湖仓，支持动态层级汇总、复杂计算与分摊，仿真结果可写回 Oracle AI Database 与 Iceberg 表，可用自然语言提问或做 Excel 式分析。配套 Data Studio 支持 100 多个数据源，接入前无需先置备数据库；AI Data Catalog 作为单一控制面做基于角色的访问控制与对象级控制，并发凭证表级临时凭证与 OpenLineage 血缘。官方给出的性能数字包括：数据湖加速在 100TB TPC-DS 数据集上最高 3 倍加速、集群从 32 节点扩到 100 节点，Lake Cache 把查询从 96 秒降到 17 秒、最高 8 倍。<b>关键限定：AI Data Catalog 的智能体能力与业务语义层，官方口径是「未来 12 个月内可用」，并非当天上线；扩展 Iceberg 能力与业务仿真引擎在公告中未标注可用时间。</b><br><b>为什么对数据平台重要：</b> 这条把语义层从各家私有能力推向跨引擎共识层，值得关注的不是功能清单而是控制面所处位置。四点判断：其一，目录层的读能力正在变成跨引擎的交换面，谁掌握目录与语义注解的解释权，谁就掌握跨云查询入口的定价权，这与身份平面那条线是同一条逻辑的延续；其二，Iceberg 侧的动作说明开放表格式的故事已经不止于「数据可携带」，引擎方开始争夺的是在这套格式上直接执行增删改与时序回溯的能力，落地风险从「能不能读」转到「谁负责写」；其三，官方加速数字全部基于自家 TPC-DS 数据集与自家缓存，跨引擎场景的实际收益必须自行实测，不能直接引用；其四，多维仿真引擎原生并入湖仓并支持写回，等于把预算、分摊、what-if 这类此前由财务规划专用平台独占的负载拉进湖仓的竞争范围，对数据平台是新增的负载类型，也意味着与 Anaplan、OneStream、SAP Analytics Cloud 这类规划平台的正面重叠开始出现。<b>必须标注的限定是智能体能力与业务语义层的可用时间表为「未来 12 个月」</b>，因此本期更适合作为架构方向判断，而不是当期可用能力清单。</div>
+</div>
+<div class="item">
+    <h3>Databricks AI Search 原生支持流式表、物化视图与 Iceberg v3 托管表</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/building-live-intelligence-databricks-ai-search-supports-streaming-tables-materialized-views">Databricks 官方博客（10 月 26 日）</a> / <a href="https://www.databricks.com/feed">Databricks 官方 RSS（发布时间戳）</a> / <a href="https://docs.databricks.com/aws/en/ai-search/create-ai-search">Databricks AI Search 建索引文档</a><br><b>摘要：</b> Databricks 10 月 26 日发布，AI Search 在 Delta 表之外原生支持三类数据源：流式表、物化视图，以及使用 Iceberg v3 及以上的托管表。此前这三类数据若要接入检索，必须先建一份 Delta 副本并自行维护同步管道；现在可以直接对源表建 Delta Sync 索引，省掉中间表与自定义同步逻辑。三类源定位不同：流式表面向持续到达的事件（欺诈检测、安全监控、实时物联分析），新记录到达时索引持续更新；物化视图面向聚合与关联后的定制化状态，底层数据变化时视图增量维护、变更传播到索引，可支撑会话感知的推荐与智能体辅助；托管 Iceberg 表把开放格式数据直接接入检索，不需转换或迁移，跨引擎的智能体与统一知识检索可直接消费。三种源沿用与 Delta 表相同的工作流，从界面或 API 创建索引即可。<br><b>为什么对数据平台重要：</b> 这条改动指向的痛点非常具体：过去「实时」与「可检索」之间隔着一层必须自己维护的同步管道，这份管道既是工程负担也是口径风险来源——中间表一旦与源表口径漂移，检索结果的可信度就无法保证。原生直连把中间层从架构里删掉之后有两点直接变化：一是数据新鲜度不再受同步管道调度频率约束，流式表的事件可以边到达边进索引；二是 Iceberg 侧直连意味着开放格式表第一次可以同时是「跨引擎的事实来源」和「智能体检索的来源」，不必再为检索单独维护一份投影。对平台团队可落到两项评估上：其一，自建同步管道的运维成本可以省掉，但要先确认自家检索场景对增量更新延迟的实际要求；其二，直连并不消除口径治理，只是把治理位置从管道移到了源表与索引定义上，索引自身的刷新与可见性策略需要单独确认。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud Looker 托管 MCP server 与数据血缘双双转为正式可用</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/looker/docs/release-notes">Looker 官方发布说明（10 月 26 日条目）</a><br><b>摘要：</b> Looker 10 月 26 日的发布说明里有两条转为正式可用。一是 Looker 托管的 Model Context Protocol server 正式可用，AI 智能体可以在不需要额外中间件的情况下安全地与业务数据和 LookML 模型交互；同批上线 Manage OAuth Clients 管理页，提供集中界面治理 AI 智能体与外部应用的身份化访问，可注册带指定重定向 URI 与基于组的访问控制的自定义 OAuth 客户端。二是 Looker 数据血缘正式可用，GA 版为 LookML 仪表板与对话式分析智能体补上端到端可见性，血缘启用方式改为由 Data Lineage API 与服务级摄取控制独立管理，与 Looker 内部的知识目录元数据设置解耦。需区分的是，LookML 元数据自动编目进入知识目录的正式可用属于 10 月 21 日（仅 Looker core），当日仍标注数据血缘集成处于预览阶段，因此不计入本期。<br><b>为什么对数据平台重要：</b> MCP server 从「各家自己起一个」变成「数据平台自带一个且自带身份治理」，这一点的采购含义大于技术含义：智能体接数据要过 OAuth 客户端注册、要过基于组的访问控制，等于把智能体的权限模型并入既有身份体系，而不是另建一套旁路授权。对平台团队可落到三项评估：其一，托管 MCP server 的认证与授权粒度必须在自己的组模型上实测，尤其是智能体是代表用户还是代表自身身份调用，两者的审计口径完全不同；其二，数据血缘与知识目录元数据解耦是双刃剑——解耦之后血缘覆盖率不再随目录元数据自动增长，需要单独确认摄取范围是否覆盖了实际在用的仪表板与智能体；其三，与本板块前两条同源，这三条 Top Signal 都指向同一件事——人和智能体要在同一套口径与权限下工作，目录层与身份层能不能被复用，决定了这个目标能不能低成本达成。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云开源 UnifiedModel：用对象图语义层把企业系统变成可查询的世界模型</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.alibabacloud.com/blog/the-ai-agent-era-doesnt-need-more-data-%E2%80%94-it-needs-a-semantic-layer_603674">阿里云官方博客（10 月 26 日）</a> / <a href="https://developer.aliyun.com/article/1761914">阿里云开发者社区（中文详解）</a> / <a href="https://github.com/alibaba/UnifiedModel">UnifiedModel 开源仓库</a><br><b>摘要：</b> 阿里云 10 月 26 日开源 UnifiedModel（下称 UModel），定位是面向智能体的开源语义层运行时，把企业资产、运行数据与系统关系组织成可查询的对象图。语义定义只用三个原语：Set、Link、Field，分别对应「对象是谁、证据在哪、数据怎么查」。查询面收敛为一套 SPL 接口（.umodel / .entity / .entity_set / .topo / .runbook_set），同时提供 REST、CLI 与 SDK 合约。对智能体的三项设计是自描述与渐进式披露（可先调 __list_method__ 了解当前实体集有哪些方法与参数，再决定下一步，不必一次性塞满上下文）、MCP Gateway（通过标准协议暴露查询、解释、示例与校验能力，读工具默认可用、写工具默认关闭或需显式授权、资源只暴露元数据、所有访问都经过 Query Service）、以及 Skills（把对象图查询、根因分析、影响面分析打包成可加载技能，供 Claude Code、Cursor、Codex 等共用同一套语义能力）。官方在受控 DataAgentBench 实验中给出四个模型的对比：接入语义层后各模型提升 10 到 20 个百分点，GLM-5.2 达到 50.2% pass@1。存储侧用 GraphStore Provider 抽象，当前提供 memory、file.memory 与 local.ladybug 三种实现，模型定义与公共契约（OpenAPI、MCP schema、SDK 类型）都是标准格式文件，不绑定特定平台。<br><b>对数据平台的影响：</b> 这条最有价值的地方不在功能清单，而在它把语义层的场景从数据仓库换到了运维与业务系统：对象图里放的是服务、主机、配置、部署、告警这类运维对象与它们之间的调用关系，而不是宽表和维度表。这一定位有两层含义：其一，它把语义层的竞争从「指标口径统一」推向「实体与关系统一」，一旦企业把服务、配置、工单这类非表形态的对象也纳入同一套对象图，语义层的覆盖面就从分析域扩到了全域治理域；其二，它坚持厂商中立（存储可插拔、契约是标准格式文件），对已有语义层或 CMDB 体系的企业，这是渐进式采用的路径而不是替换路径。需要自己核的三点：MCP 写工具默认关闭后，实际开启授权的粒度与审计是否足够；DataAgentBench 是受控实验，其提升幅度不能直接外推到自家业务问答场景；开源版本目前不含云端控制平面、多租户授权与内部前端套件，后续演进路径需持续观察。</div>
+</div>
+<div class="item">
+    <h3>Databricks Lakeflow Connect 新增生产力数据原生连接器，非结构化内容直接落受治理表</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/unify-your-productivity-and-ai-data-lakeflow-connect">Databricks 官方博客（10 月 26 日）</a> / <a href="https://docs.databricks.com/aws/en/ingestion/overview">Lakeflow Connect 官方文档</a><br><b>摘要：</b> Databricks 10 月 26 日发布 Lakeflow Connect 生产力数据系列的第二篇，公布 Atlassian（Jira、Confluence）、Microsoft（SharePoint）、Google Workspace（Drive、Outlook、Gmail）、GitHub 以及 OpenAI、Anthropic 等模型与工具厂商的原生全托管连接器，数据统一落成 Unity Catalog 中受治理的托管表，无需自建接口集成管道。非结构化内容的落库形态按来源分别定义：SharePoint 与 Google Drive 的每个非结构化文件占一行，原始字节存 content 列（BINARY 或 FILE），文件级元数据并存；Confluence 把每页与每篇博客的正文以 STRUCT 类型存在 pages 与 blogposts 表的 body 字段；Outlook 把正文放在 email_messages 表的 full_body_content（文本），附件放在同表 attachments 列（BINARY）；Gmail 把完整正文落在 messages 表并额外摄取 attachmentId 引用；GitHub 把仓库文本文件存进 repo_contents 表的 content 列。文本类内容经轻量清洗即可切块向量化，以原始字节到达的文档文件先用内置 ai_parse_document 转成文本再处理。官方案例包括 Toyota Finance Australia 用 Jira 连接器替代自建管道、VaxCare 用 Confluence 连接器给内部知识库做智能体接地、M3 Accounting 用 GitHub 与 SharePoint 连接器把工程与产品文档并入湖仓、TRegs 用 Monday.com 与 QuickBooks 连接器给财务看板供数。<br><b>对数据平台的影响：</b> 这条解决的是一个长期存在但很少被平台侧主动承认的盲区：企业里最有价值的上下文不在数仓里，而在工单、wiki、邮件、代码和文档里，而这些数据的接入一直靠各团队自己写接口集成脚本，脚本多到没人知道有几个在跑、口径是否一致更无从谈起。把这些源做成一等受治理表之后有两点变化值得注意：其一，权限与血缘从「散落在各团队脚本里」回到统一目录，跨团队复用不再需要先复制数据；其二，列的语义设计透露了平台的真实取舍——原始字节与已解析文本是两条路径，前者保真但要额外算力，后者可直接检索但会丢版式信息，团队要按下游用途选，不能一律用同一套处理。落地前建议自己核三处：不同源的字段口径差异很大（Confluence 的 body 是 STRUCT，Outlook 的正文是 HTML 与纯文本混存），跨源统一建模的成本要单算；增量更新在源端频繁变更时的去重与删除语义需确认；官方案例的收益来自特定规模，不能直接套用到自家。</div>
+</div>
+<div class="item">
+    <h3>Optimove 推出 Zero Copy Customer Lists：客户数据不出仓，只回传客户标识</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.yahoo.com/technology/articles/optimove-launches-zero-copy-customer-173100187.html">GlobeNewswire 官方新闻稿（经 Yahoo Finance 转载，10 月 26 日）</a> / <a href="https://academy.optimove.com/hc/en-us/articles/37304550362653-Zero-Copy-Customer-Lists">Optimove 官方产品文档</a> / <a href="https://developer.optimove.com/docs/getting-access">Optimove 开发者文档（数据接入方式）</a><br><b>摘要：</b> Optimove 10 月 26 日发布 Zero Copy Customer Lists，一项通过 Snowflake 实现的能力：品牌方把 Optimove 与自己的 Snowflake 环境连接一次，在 Optimove Data Studio 里用一条返回 Customer ID 的 SQL 定义名单，Optimove 在品牌方仓库内跑这条 SQL，只取回符合条件的 Customer ID，其余数据全部留在仓库。官方点名这类此前无法使用的数据包括信用评分、KYC 状态与内部风险模型的输出——这些数据按合规策略不能离开仓库，于是过去只能二选一：把数据复制进营销平台并承担治理负担，或者放弃这类受众。零拷贝名单改变了这一点，每次同步反映的是仓库当时的状态，而不是首次构建时的快照。平台侧目前只支持 Snowflake，Databricks、BigQuery 与 Redshift 标注为后续版本计划。约束写在官方文档里：单次查询最多返回 50 万行；只包含已在 Optimove 注册的客户；返回数据不能用于个性化，也不能用于训练 Optimove 的 AI 模型，仅限受众定向使用；查询失败会邮件告警，上一次成功同步的名单继续生效。Snowflake 全球 ISV 与企业技术合作副总裁 Rodrigo Rocha 具名背书，Optimove 平台日均处理超过 20 亿条实时事件。<br><b>对数据平台的影响：</b> 这是「计算下推」在营销场景的一次具体落地，但真正的通用性在于把「哪些数据不许出仓」这条合规约束，变成了一个可以被平台直接支持的产品形态。对数据平台有三点可落地判断：其一，跨系统协作的最小交换单元正在从「数据表」细化为「标识符集合」，这类零拷贝模式把合规成本从法务谈判转成了仓库内的权限配置，对象存储与数据库侧的权限粒度决定它能不能做；其二，官方文档里那几条限制本身就是一份现成的设计参考——返回行数上限、只回传标识符、结果不可用于二次训练与个性化，说明零拷贝的边界必须由合同与产品约束同时写死，否则「不出仓」很快会被绕过成「出了仓但没留痕」；其三，目前只支持 Snowflake 这一点意味着它在多引擎架构里的价值取决于自家仓库是哪一个厂商，评估时要看清楚这是数据仓库的能力红利还是可移植的模式。采购与合规侧要一并核的是：名单同步失败时的告警与回退机制、数据在仓库侧的权限是否随业务实时变动、以及这类名单是否会被下游用于官方声明之外的用途。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>摩根士丹利：模型多元化反而利好微软，多模型平台的战略价值在上升</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.jrj.com.cn/2026/10/26234158874507.shtml">智通财经／金融界转载研报要点（10 月 26 日）</a> / <a href="https://www.itiger.com/news/1114173817">老虎证券英文版转载</a><br><b>核心观点：</b> 摩根士丹利 10 月 26 日发布研报认为，开放权重模型加速普及使企业可选模型变多，竞争从单一大模型性能比拼转向基础设施、数据管理、模型调度与企业应用等多个层面，这一趋势不会削弱微软的竞争优势，反而可能巩固其企业 AI 领先地位，机构维持「增持」评级与 600 美元目标价。三组支撑数据：其一，据研报引用的 OpenRouter 数据，平台使用量前 50 的模型中开放权重模型已占约 72% 的 Token 使用量，而一年前仅约 22%；其二，2026 年初以来，用多家模型供应商产品构建应用的微软客户数增长五倍；其三，Foundry 平台已支持超过 1.1 万个 AI 模型，Fabric 与 Foundry 共同客户数超过 1.7 万、同比增长 60%，Microsoft 365 Copilot 付费席位超过 3000 万。研报同时给出 CIO 调研口径：47% 的受访 CIO 选择用微软构建定制化 AI 应用，选择 AWS 与 Google 的各 10%；token 支出审视趋严——42% 的 CIO 尚无法评估 AI token 支出的投资回报，28% 表示回报低于投入，43% 已实施 token 支出管控、另有 31% 计划在 2027 年下半年前落地。<br><b>映射到数据平台的判断：</b> 这份研报的价值不在微软评级本身，而在它把「多模型时代」的收益归属讲清楚了：收益落在同时承载模型访问、模型编排与企业上下文的那一层，而不是落在最好的模型上。对数据平台有三点判断：其一，当模型选择从一次性技术决策变成持续的成本与性能优化过程，承载这段决策的控制平面就成为成本治理的主战场，而控制平面要有效，前提是它同时握有模型清单与企业上下文；其二，开放权重模型的 Token 份额从一年前约 22% 升到约 72%，意味着「模型可替换」已经不是假设，这直接削弱了「把业务语义绑定在某一个模型厂商上」的做法，语义资产与上下文资产要独立于模型资产管理；其三，42% 的 CIO 无法评估 token 支出回报这个数字，对数据平台是机会也是警告——机会在于用量与成本口径本身需要一套跨系统的度量规则，警告在于若这套规则不在平台侧统一沉淀，用量数据就会分散在模型网关与应用日志里，事后想回答「这笔推理值不值」会很贵。需要注意的是这是一份卖方研报，OpenRouter 的 Token 份额只反映该平台的流量结构，不等于全市场模型使用分布。</div>
+</div>
+<div class="item">
+    <h3>Gartner：2027 年基础设施与 IT 运维的五个 AI 趋势，重点在可观测与成本封顶</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027">Gartner 官方新闻稿（10 月 26 日）</a><br><b>核心观点：</b> Gartner 10 月 26 日发布 2027 年基础设施与 IT 运维领域的五个 AI 趋势，基于 2026 年 4 至 5 月对 272 位 I&O 负责人的调研，58% 的受访者把「把 AI 概念验证扩展为落地」列为未来 12 个月的重点。五条趋势与关键预测：其一，IT 运维的智能体化，到 2030 年 50% 的组织将在 IT 运维中使用几乎无需人工介入的 AI 智能体（2026 年接近 0%）；其二，Token 经济学挑战，到 2027 年，采用按 Token 计费且不封顶的可变定价模式的企业，成本超预期幅度将比采用订阅或打包定价的企业高出 50% 以上，Gartner 建议执行严格的「没有遥测就不部署」策略；其三，AI 推理推动混合基础设施，到 2029 年 80% 的大型企业会让生产级 AI 工作负载横跨至少三种基础设施环境（公有云、neocloud、自建数据中心、边缘）；其四，运维风险与安全风险收敛，到 2030 年 25% 的企业会合并网络运营中心与安全运营中心（2026 年为 5%），工具与人力支出合计下降超过 25%；其五，I&O 角色从把关者转为企业 AI 平台的编排者，到 2030 年，没有强 I&O 能力的企业其 AI 倡议失败概率将是其他企业的两倍以上。<br><b>映射到数据平台的判断：</b> 这五条里与数据平台直接相关的是第二条和第三条，而它们互为因果。其一，「按 Token 计费不封顶」与「生产负载横跨至少三种环境」叠加，等于说单一环境下的成本优化手段很快失效——跨云跨引擎的推理流量一多，成本控制就必须建立在跨系统的统一计量与遥测上，Gartner 那句「没有遥测就不部署」本质是在要求可观测性先于部署，这是一条对平台侧的硬约束。其二，多环境带来的不只是成本问题，还有口径分裂：同一个业务定义在公有云、neocloud 与自建数据中心各有一份实现时，血缘与权限模型能不能跨环境贯通，决定了 AI 工作负载的产出是否可被审计。其三，网络运营中心与安全运营中心合并的预测说明工具边界在收敛，运维数据与安全数据本来就在同一批系统里，对数据平台的机会是把这批高价值运营流量的接入做成标准能力，而不是等到安全团队自己提需求。落地建议是：先在自家推理链路上把「无遥测不上线」变成一条准入规则，再评估跨环境成本口径；不要反过来先扩环境后补计量。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 应用 AI 副总裁：动态模型路由的三倍 token 效率，与「AI 的经济学现在是董事会的算术」</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.businesstoday.in/amp/technology/artificial-intelligence/story/snowflake-claims-3x-token-efficiency-from-ai-model-routing-563589-2026-10-26">Business Today 专访（10 月 26 日）</a> / <a href="https://www.thedeepview.com/articles/snowflake-targets-ai-costs-with-model-routing">The Deep View 专访</a> / <a href="https://www.technologymagazine.com/news/snowflake-dynamic-model-routing-cuts-enterprise-ai-spend">Technology Magazine 报道</a><br><b>核心观点：</b> Snowflake 应用 AI 副总裁 Baris Gultekin 在 10 月 26 日的专访中表示，其动态模型路由技术在自家 Cortex AI Gateway 上测试可达到最高三倍 token 效率且输出质量相当，路由机制按任务特征自动在客户已批准的模型中挑选适配模型，而不是所有请求都走最强模型。他的原话把成本问题抬到了董事会层面：「AI 的经济学现在是董事会的算术」，企业开始追问创造的价值是否值得付出成本。他同时给出三条选型原则：其一，不要迷信基准，受控测试里的表现不一定能转成业务结果，企业要拿自己的数据与工作负载去评测，并随技术演进重新评估；其二，模型选型要同时看质量、成本、时延，以及在生产中才显现的可靠性、可用性、安全、治理，以及模型与企业自有数据和上下文的契合度；其三，治理必须内建到模型选择里——路由只允许管理员批准的模型、保留每个请求由哪个模型处理的可见性、并尊重既有的数据安全与驻留控制。他也提醒更便宜的模型未必降低总成本，若输出需要大量返工，总支出可能反而更高。需标注的事实边界：动态模型路由本身由 Snowflake 在 2026 年 8 月前后发布，本期新增的是高管对外表态与更完整的测试口径，不是当天的新功能发布。<br><b>映射到数据平台的判断：</b> 这条的核心价值是给出了一套可执行的成本判断框架，而不是一个倍数。对数据平台有三点判断：其一，「更便宜的模型未必更便宜」这个提醒指向治理与成本的耦合点——判断一次模型调用是否划算，需要同时拿到模型单价、输出质量、人工返工成本三组数据，而这三组数据分别落在模型网关、应用侧与工单系统，只有数据平台有能力把它们放到同一口径下比较；其二，「治理必须内建到模型选择」意味着模型选择权本身要当成一项受管的资产来对待，管理员批准清单、请求级可见性、数据驻留约束这三条不能是事后审计；其三，选型原则里被放在第一位的「用自己的工作负载评测」，对平台侧意味着要维护一套自己的评测集与回归机制，这套资产的价值会随模型更迭而累积，而非一次性投入。落地建议是把模型路由的决策日志纳入数据平台的统一血缘，否则成本优化与审计会分属两套数据。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【收购兼并】巴西最大银行 Itaú 收购 NeoSpace：把「大型数据模型」能力买进内部</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.channelnewsasia.com/business/brazils-itau-agrees-buy-ai-startup-neospace-589-million-6492871">路透社报道（经 CNA 转载，10 月 26 日）</a> / <a href="https://econotimes.com/Ita-Agrees-to-Buy-NeoSpace-for-R-2-925-Billion-to-Expand-AI-Capabilities-1763579">EconoTimes（引证券文件，10 月 26 日）</a> / <a href="https://tsnmedia.org/itau-buys-neospace-ai-startup">TSNMedia（引 Valor Econômico）</a><br><b>核心数据：</b> 交易对价 29.25 亿雷亚尔，按 1 美元兑 4.9654 雷亚尔折算约合 5.89 亿美元；收购 NeoSpace A.I. Technologies 全部已发行股份；部分价款于交割时支付，余额五年内分期支付并附条件，双方均未披露交割时应付比例与后续付款时间表；待巴西反垄断机构 CADE 与巴西央行批准，未给出预计交割时间。对照历史：2025 年 1 月 Itaú 领投 NeoSpace 1800 万美元融资，投后估值 1 亿美元，本次隐含估值跃升约 5.8 倍；另据 Exame 引 Bloomberg Línea，Itaú 早前以 1500 万美元持有约 15% 股份。NeoSpace 成立于 2023 年底，联合创始人 Bruno Pierobon（留任 CEO）、Felipe Almeida、Gustavo Debs、Thiago Teixeira 此前创办的 Zup 曾于 2019 年被 Itaú 以逾 5 亿雷亚尔收购。NeoSpace 主营「Large Data Models」，即针对多种数据格式与文档而非仅语言构建的模型，客户横跨电信、航空与能源，并正拓展美国与欧洲。<br><b>摘要：</b> 据 10 月 26 日提交给巴西证券监管机构 CVM 的重大事实文件，Itaú Unibanco 及其关联方同意收购 NeoSpace 全部股份。NeoSpace 已与 Itaú 协作近两年，用 Itaú 自有数据训练模型，应用于信贷、客户关系管理与反欺诈，银行称已取得「相关且有变革性的结果」；该能力同时进入 Itaú 的生成式 AI 助手 ia.i——该服务于 7 月推出，当时约 30 万客户可用，银行目标是 2026 年底覆盖全量个人零售 App 用户。文件未量化预期回报或其他成本；NeoSpace 将保留独立管理与运营，团队留任。银行 CEO Milton Maluhy Filho 表示，希望成为「定义全球金融业下一篇章」的机构之一。<br><b>对数据平台的影响：</b> 这笔交易的价值不在金额，而在于它把一类此前通常外包的数据能力变成了内部资产。三点判断：其一，被买的是「处理复杂多格式数据」而不是「训练更大的模型」——这与本期的另外两条（语义层、数据目录）指向同一件事，即数据工作的重心正从模型能力转向数据形态处理与定义能力，资本正在按这个方向定价；其二，买方是银行而不是科技公司，说明这类能力的价值在强监管行业更直接——在信贷与反欺诈场景里，模型必须长在自家数据与自家文档格式上，外采通用模型无法覆盖，收购团队比采购接口更现实；其三，NeoSpace 同时服务电信、航空、能源并拓展欧美，说明「多格式数据建模」正在成为可产品化的独立能力品类，对数据平台的启示是这类能力的产品化边界正在被独立公司验证。风险与观察点：五年分期付款结构说明卖方与买方对现金流的判断并不一致，交割仍待监管批准，且银行必须为信贷与反欺诈场景中的模型结果负责——这意味着被收购的能力要进入银行自身的模型风险管理体系，落地节奏取决于合规而非技术。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Oracle AI World 2026 会期跨窗口，语义层互操作与可用时间仍待第三方实证</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://blogs.oracle.com/database/analyst-perspectives-on-new-oracle-autonomous-ai-lakehouse-capabilities">Oracle 数据库博客（第三方分析师观点集，10 月 26 日）</a> / <a href="https://www.worldprogramming.org/posts/oracle-adds-a-semantic-layer-to-ground-ai-agents-in-the-business-context-powf2l">第三方实践报道（Infoworld，10 月 26 日）</a><br><b>为什么值得继续看：</b> 值得追的是第三方视角目前只给到定性好评，没有实测结论。Oracle 官方博客同日集中刊出八位分析师的观点（Constellation Research、HyperFRAME Research、NAND Research、Blue Badge Insights、DBMSGuru、theCUBE、theCUBE Research、Omdia），一致肯定语义层与开放表格式的方向，但没有任何一位给出跨引擎挂载外部目录的实测数据，也没有第三方独立核验各项能力的可用时间表。被明确指出的实施代价来自实践侧：Kanerika 的 AI 负责人说，智能体上线前先要建模四十多个实体、标准化八十多个 KPI，业务定义得由企业自己定义并持续维护，模型不完整或过时就仍会产出不一致甚至误导性的结论。Nord-IQ 的分析师补充提醒，开放表格式解决的是访问，企业仍可能依赖专有目录与语义层来解释数据，可移植性不会因为 Iceberg 支持而自动成立。会期本身还有两天，剩余场次是否给出时间表与进一步公告，目前不可知。<br><b>需要等待什么信号确认：</b> 其一，会期剩余两天是否给出可用时间表——扩展 Iceberg 能力与业务仿真引擎在官方公告中未标注时间，第三方报道则直接写明官方尚未给出这两项的可用时间，智能体能力与业务语义层的分批放开节奏同样待观察；其二，外部目录挂载的第三方互操作验证，尤其是跨引擎查询的实际语义一致性、Iceberg 表上 Oracle 增删改与其他引擎并发写入的冲突处理，这两处是「数据可携带」从口号变成工程现实的关键卡点；其三，官方性能数字在非 Oracle 环境下的复现情况；其四，语义层与既有 CMDB、知识图谱、BI 语义层并存时，谁是定义的权威来源，以及企业自行维护实体与 KPI 规则的投入量级。</div>
+</div>
+<div class="item">
+    <h3>【降级】Confluent CTO：智能体暴露数据时效缺口，企业数据仍按十二小时批量刷新</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://wire.fusion-42.com/stories/085c463f-f3d3-46fc-9022-a2f157f6a4bf">Fusion42 Wire 简报（标 26 October 2026）</a> / <a href="https://theinference.org/article/ibm-paid-11-billion-for-confluent-confluent-s-cto-says-the-data-still-refreshes-every-12-hours">The Inference 报道（引 Frontier Enterprise 访谈）</a><br><b>为什么值得继续看：</b> Confluent 首席技术官 Stephen Deasy 在 Frontier Enterprise 的访谈中提出一个结构性判断：智能体需要连续实时的数据，而企业数据系统仍按批量的节奏刷新，且管道当初是为「人先复核、再行动」而设计的，因此这段刷新间隔不是性能问题，而是架构遗留下来的设计前提。他主张把治理尽量左移到数据产生的地方，让数据产品在源头就带着模式与责任人，把模型与数据源解耦以便快速试验，并让湖仓向治理下的更实时集成演进。这条观点的份量在于它来自一家刚被大型买方收购的流处理厂商的技术负责人，且与其所在公司押注的方向一致——流处理是智能体时代的数据底座。对数据平台从业者的直接价值是，它把「实时」这个被滥用的词还原成一句可检验的话：你的管道是为谁设计的。<br><b>需要等待什么信号确认：</b> 其一，日期口径存在冲突——Fusion42 的 Wire 简报标注为 2026 年 10 月 26 日，The Inference 的报道把它定位在 IBM 季度财报之后约五天（若按 10 月 21 日财报推算同样落在 10 月 26 日），但另有归档页把该访谈页显示为 4 月 17 日，需要回溯原始发布页确认到底是哪一天，本条因此按降级收录。其二，需要看到可验证的落地证据而不是厂商观点：真实客户在治理左移后，把刷新间隔与人工复核环节一起压缩的量化案例。其三，这套主张与本期内其他厂商路线（语义层、目录级权限、开放表格式）能否在同一架构里共存，还是彼此竞争。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-27 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
