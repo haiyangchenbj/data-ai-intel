@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-28</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-28 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>跨云可组合与可迁移正在取代单引擎能力，成为数据平台新的竞争轴</li>
+      <li>智能体的规模化瓶颈在数据上下文与治理，不在模型能力</li>
+      <li>接入、管道与运维正在被打包给智能体，平台团队角色转向定规则</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期共同指向同一件事：数据平台的竞争轴正从单引擎能力转向跨云可组合性，智能体则把上下文质量与治理债推到台前。投入重点应放在业务语义资产、细粒度权限与可审计的操作血缘上，这三样决定了智能体能否被允许真正放开手去做事。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Oracle 把 Snowflake AI Data Cloud 装进 OCI：对家成了自家清单上的一行</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.snowflake.com/en/news/press-releases/oracle-expands-native-ai-and-data-services-on-oci-with-snowflake/">Snowflake 官方新闻稿（10 月 27 日）</a> / <a href="https://www.oracle.com/news/announcement/blog/ai-world-building-the-next-decade-of-oracle-cloud-infrastructure-2026-10-27">Oracle 官方博客（AI World 专稿，10 月 27 日）</a><br><b>摘要：</b> 10 月 27 日在 Oracle AI World 2026 上，Oracle 与 Snowflake 联合宣布 Snowflake AI Data Cloud 将以原生一方服务形式进入 OCI。客户可直接在 Oracle 侧采购、开通与计费，可用 Oracle Universal Credits 抵扣，定价、折扣与账单由 Oracle 统一处理，形成单一商务关系。Snowflake CEO Sridhar Ramaswamy 称 Snowflake 是「在 OCI 内以第一方方式运行的旗舰 AI 数据平台合作伙伴」。官方给出的四点价值是：把 Snowflake 的分析与 AI 能力放到 Oracle 关键业务数据旁边（支持源包括 Oracle Fusion Cloud Applications、NetSuite、Oracle Autonomous AI Database、MySQL HeatWave、Oracle NoSQL Database）；通过原生集成直接传输数据，减少自建管道；保持对数据访问、使用与治理的控制权；在 OCI 内部移动数据以降低跨云出口成本。运维方式上，客户在 OCI 控制面开通 Snowflake 账号后，仓库、数据库、管道与访问控制仍用 Snowflake 自身能力管理。<b>关键限定：Snowflake 官方博客的措辞是「when available / planned」，未给出上线日期；跨云数据共享、复制与故障转移标为 subject to technical validation and availability。</b><br><b>为什么对数据平台重要：</b> 这是一次方向性的竞争格局反转，值得注意的不是功能清单而是商务口径。其一，一家数据库厂商把直接竞争对手的数据平台装进自己的云目录并统一计费，说明大型企业采购正在向「单一供应商、单一账单」收敛；评估多云数据平台时，计费口径与合同归属的权重在上升，技术差异的权重相对下降。其二，「原生」的实质是存储与网络落在 OCI 内、能省下跨云出口成本，但这个收益只在数据真的位于 OCI 时成立，对已有跨云数据分布的企业是增量而非替代，所以它更像一次为新客户准备的迁移路径设计，而不是对存量格局的改写。其三，治理边界上有个容易被忽略的口径差：Snowflake 被限定为「在 OCI 里运行」，而目录、权限与口径的解释权仍在 Snowflake 一侧，两套治理平面并存会留下责任缝隙，这一点在合同条款与权限模型落地前无法验证。</div>
+</div>
+<div class="item">
+    <h3>Google Cloud 与 Oracle 打通双向湖仓，并给出亚秒级 CDC 与查询联邦</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/databases/oracle-ai-databasegoogle-cloud-whats-new-at-oracle-ai-world">Google Cloud 官方博客（10 月 27 日）</a> / <a href="https://docs.oracle.com/en-us/iaas/Content/database-at-gcp-autonomous/ogadb-whats-new-autonomous-database-services.html">Oracle AI Database@Google Cloud 官方更新页</a><br><b>摘要：</b> 10 月 27 日在 Oracle AI World 上，Google Cloud 与 Oracle 公布三项与数据平台直接相关的能力。第一项，Oracle Access to Google Cloud borderless Lakehouse 进入预览：Oracle Autonomous AI Database 与 Google 的无边界湖仓（由 BigQuery 与 Managed Spark 驱动）可直接在 Google Cloud Storage 上共享的 Apache Iceberg 表上执行查询与写入/DML 操作，完全免去 ETL 与数据复制，实现路径是经 DBMS_CATALOG 接入湖仓运行时 REST catalog。第二项，OCI GoldenGate 原生集成：CDC 事件直接从 Oracle redo log 抽取，不触碰数据块、也不给事务负载增加开销，事务经 Google Cloud 私网安全流入 BigQuery 托管表，实现亚秒级分析新鲜度。第三项，BigQuery query federation with Oracle 进入预览：通过 EXTERNAL_QUERY 函数在 BigQuery 查询、看板与管道中直接执行原生 Oracle SQL，就地取回实时事务记录并与 PB 级 BigQuery 数据集关联。配套进展包括：托管 Remote MCP Server with Data API 已转为正式可用，Knowledge Catalog 集成与 Gemini connector 仍为预览；europe-west12-a（都灵）与 northamerica-south1-b（克雷塔罗）两个区域上线；Oracle 宣布计划申请 FedRAMP High 认证。Google 官方给出的架构对照表明确标注了差异：双向湖仓与 CDC 对 Oracle OLTP 的影响均为零，查询联邦对 OLTP 的影响随查询而变。<br><b>为什么对数据平台重要：</b> 双向共享 Iceberg 表是这轮里最大的架构变化——过去跨云的开放表格式多停在「单引擎可读」，现在是两个引擎对同一份表同时可写，于是冲突解决、元数据归属与一致性边界从「数据工程问题」升级为「平台必须给出的契约」，而这些契约目前只写在预览文档里。其二，官方把三种数据访问方式并成一张表，并显式标注各自对生产库的影响，这个做法本身值得抄：这类选型已经不能只谈延迟收益，把「访问方式」与「对 OLTP 的影响」绑在一张表里才是决策单位。其三，CDC 走 redo log 并宣称不增加事务负载，这一说法需要在自己负载下实测；同样，亚秒级是延迟口径而非端到端一致性口径，不等于下游立刻看得到事务。</div>
+</div>
+<div class="item">
+    <h3>IDC FutureScape 2027 发布：250 条预测把智能体治理划进「正在关闭的窗口」</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.idc.com/resource-center/blog/idc-futurescape-2027-the-great-rewrite">IDC 官方博客（10 月 27 日）</a> / <a href="https://www.idc.com/resource-center/futurescape-2027/">IDC FutureScape 2027 官方资源页</a><br><b>摘要：</b> IDC 10 月 27 日启动年度预测集 FutureScape 2027《The Great Rewrite: Winning in the Agentic Economy》，25 个研究领域各出 10 条预测、共 250 条，10 月 27 至 29 日陆续发布。IDC 的框架是按决策窗口分三档：正在关闭的窗口（机会即将变成劣势）、仍然开放的窗口（今天必须决定，但可塑空间正在收窄）、正在开启的窗口（先动者得）。与数据平台直接相关的预测有五组：到 2029 年 60% 的企业将以 AI-first 方式运行多数业务流程（2026 年为 13%）；到 2028 年 70% 的 G2000 企业将能持续验证智能体的决策（当前为 14%）；到 2028 年，G2000 中未给生产智能体配置熔断开关（可关闭失控智能体的控制手段）的企业将面临 25% 更高的责任保险费与两倍重大审计发现；到 2029 年 35% 的 G2000 公司将运行按司法辖区划分的 AI 模型注册表与管控；到 2029 年 G2000 的 CIO 将把 25% 的服务预算从按人时计费转向按结果计费的智能体集群。支撑数据来自 IDC 的 Future Enterprise Resiliency and Spending Survey 第二波（2026 年 3 至 4 月，n=1,009）：企业预期生产中运行的智能体类型数将从 2026 年 4 月的平均 23.5 个增至年底 43.2 个。<br><b>为什么对数据平台重要：</b> 这份报告最值得注意的不是某一条预测，而是它把「验证智能体在做什么」提升到与部署速度同等的胜负手，这会把数据平台的一项具体能力推到前面：智能体执行了什么操作、读写了哪些对象、依据哪一版口径，必须能被还原成可审计的记录，而这件事的技术前提是操作日志与数据血缘落在同一套对象模型上，而不是两套日志事后拼接。其二，「熔断开关」这条对数据平台的含义比表面更重——能停掉一个失控智能体，意味着要有一个统一的控制面能收回它的数据权限，这要求权限模型支持按智能体身份撤销，而不是只能按人撤销。其三，到 2029 年 35% 的 G2000 运行辖区专属模型注册表，与同期「2028 年 60% 的 AI 负载转向开源模型」形成叠加，说明智能体治理的对象正从模型扩展到「模型 + 工具 + 数据源」三者组合，登记口径最好一次定全，否则后补的迁移成本很高。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake CoCo 自动 Snowpipe 配置转正式可用：一句自然语言建管道并产出 Terraform</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.snowflake.com/en/blog/automated-snowpipe-setup-snowflake-coco/">Snowflake 官方博客（10 月 27 日）</a> / <a href="https://docs.snowflake.com/release-notes/all-release-notes">Snowflake 官方发布说明（10 月 27 日条目）</a><br><b>摘要：</b> Snowflake 10 月 27 日宣布 CoCo 自动 Snowpipe 配置转正式可用，入口覆盖 Snowsight、CoCo Desktop 与 CoCo CLI，可在一次自然语言对话内把云存储路径变成持续加载的 Snowflake 标准表或 Snowflake 托管的 Apache Iceberg 表。能力构成是完整的：CoCo 采样文件自动识别格式（CSV、JSON、Parquet、Avro、ORC、XML）并推断列名与数据类型；复用兼容的存储集成、stage 与文件格式，若已有管道覆盖同一批文件会停下提示，避免重复加载；默认在创建或变更对象前展示 SQL 并请求批准，所有语句以用户当前 Snowflake 角色执行。AWS 上的关键设计是 IAM 临时委派——CoCo 只申请所需的桶通知权限与创建存储角色的权限并带权限边界，用户在 AWS 控制台逐项批准，Snowflake 随后创建存储角色与信任策略，临时授权到期后留在 AWS 侧的只有存储角色与桶通知；每次设置动作写入 CloudTrail，CoCo 执行过的语句出现在 Snowflake 查询历史中。基础设施即代码选项下，CoCo 为完整管道（含 Iceberg 表）生成 Terraform，AWS 侧保留既有通知规则，供团队走 PR 评审后部署；也可选择生成 CloudFormation 或 ARM 模板交由云平台团队部署。管道建成后的校验由 CoCo 完成：检查管道状态、通知投递与加载历史并报告加载错误，无需自行查询 SYSTEM$PIPE_STATUS。同日，一次性批量加载能力（COPY INTO）也转为正式可用。<br><b>对数据平台的影响：</b> 这条把「接入一个新源」这件事的排队成本压到接近零，而排队成本恰恰是数据平台团队最贵也最不显性的开销——它是业务方等待数天的那个数字。三个可落地的判断：其一，管道定义以 Terraform 形式产出，意味着生成物天然进入版本控制与代码评审，治理形态从「人写管道」扩展为「人审管道」，这条路径比自由文本生成的脚本更可管；其二，AWS IAM 临时委派的做法值得单独评估——它把云权限的授予动作留在 AWS 控制台侧、把时间边界写进授权，是跨云协作中较少见的形态，且每次设置动作都进 CloudTrail，审计链路可验证；其三，需注意 CoCo 会替你做 schema 推断，字段命名与类型的默认推断规则必须与自家语义模型核对，否则大量自动生成的管道会把命名规范悄悄带偏。</div>
+</div>
+<div class="item">
+    <h3>Airbyte 发布 MCP Server 与 context layer：管道运维面和仓库数据面接到同一入口</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://airbyte.com/blog/airbyte-mcp">Airbyte 官方博客（10 月 27 日）</a> / <a href="https://natlawreview.com/press-releases/new-airbyte-mcp-server-lets-users-chat-their-data-simplifies-pipeline">Business Wire 新闻稿（10 月 27 日）</a> / <a href="https://docs.airbyte.com/platform/context-layer">Airbyte context layer 官方文档</a><br><b>摘要：</b> Airbyte 10 月 27 日发布 MCP Server 与 context layer。开源 MCP server 覆盖 Airbyte Cloud 全部计划（Standard、Plus、Pro）、Enterprise Flex 与自托管 Core，可用现有账号以 OAuth 或 SSO 登录，无需粘贴 API key，兼容客户端包括 Claude（网页、桌面、Claude Code）、ChatGPT、Cursor、VS Code。工具面覆盖四类：建管道（建源、目标与连接，选流、设调度、启动同步）、修同步（查同步状态、读作业日志并给出修复建议）、管连接器（审连接器配置、管理自建连接器）、回答 Airbyte 自身问题（检索官方文档、API 规格与 GitHub）。安全护栏有五道：权限不放大（智能体只能触及角色允许的工作区与连接，且不能提权）、破坏性操作前确认（工具按 read、mutate、destructive 三类划分，删除类需确认）、数据侧只读（直接读可列出与读取记录，仓库查询仅限 SELECT）、管理员决定可读范围（context layer 默认关闭，组织管理员开启后由工作区编辑者选择可达的源与目标，关闭不影响复制任务）、审计留痕（经 MCP 的动作记录到用户、工具与目标并在界面标记）。context layer 部分需付费方案，可用范围为 Airbyte Cloud 与 Enterprise Flex，自托管 Core 不适用；对 Snowflake 与 BigQuery 目标做只读查询，对 50 多个源连接器做直接读。<b>关键限定：官方明确语义搜索仍在建设中、尚未推出；context layer 运行在 Airbyte 云基础设施上，有严格数据驻留要求的团队可选择关闭。</b><br><b>对数据平台的影响：</b> 关键不是它新增了多少工具，而是把「管道运维面」与「数据面」接到了同一个智能体入口上——这是接入层智能体化的一种完整形态。对平台团队有三点判断：其一，五道护栏值得作为自建 MCP 的对照模板，尤其是 read、mutate、destructive 三分类加破坏性操作确认，以及把「不能提权」写成硬约束而非提示词；其二，语义搜索尚未落地这一点很重要——如果企业的业务上下文主要在工单、纪要、文档这类非结构化载体里，当前的直接读加结构化查询覆盖不到，「让智能体懂业务」这一步仍缺一块；其三，官方给出的自建基准（单次查询 token 降八成、工具调用降四成）是在自家连接器上测的，而社区同时在讨论「通用模型加轻量工具可能让专用平台变得多余」，说明这条产品线真正的对手未必是同类厂商，而是智能体自身对结构化访问的替代能力。</div>
+</div>
+<div class="item">
+    <h3>阿里云 MaxCompute 发布 IAM 新权限体系：从项目级授权走向命名空间与列级管控</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.aliyun.com/notice/118740">阿里云公告（10 月 27 日发布）</a> / <a href="https://help.aliyun.com/zh/maxcompute/user-guide/iam-permissions">阿里云 MaxCompute IAM 权限官方文档</a><br><b>摘要：</b> 阿里云 10 月 27 日发布 MaxCompute IAM 新权限体系公告，MaxCompute 控制台于 2026 年 10 月陆续开放 IAM 权限可视化管理能力。该体系基于 CatalogAPI 构建，提供账号（Namespace）层级与项目（Project）层级的权限管理。资源层级自上而下为：资源目录（RD，解决跨账号安全边界）、命名空间（等同租户，提供更高层次的统一管理与策略定义点）、项目（核心资源与安全边界）、Schema（增加逻辑分组与中间层授权）、表（最终数据载体，支持最细粒度权限控制与列级安全，通过策略标签实现）。机制上三点：其一，自定义角色与策略绑定，权限在层级化资源上自动继承——在较高层级授予即可自动应用到下层所有对象以减少重复授权，而在特定层级（如 Table）直接授予的权限不向下继承，用于满足特定的跨部门数据依赖需求；其二，基于策略标签的动态数据脱敏，集中定义敏感数据标签并关联脱敏策略，无需修改现有查询 SQL，数据被访问时按访问者身份动态决定返回原始值、脱敏值或拒绝访问，预置角色 MaskedReader 与 FineGrainedReader 分别对应脱敏读取与原始读取；其三，集中化安全原则，同一套安全规则可跨项目复用，避免在每个项目重复配置导致策略不一致。<b>关键限定：官方文档明确当前 IAM 仅支持管控表（含视图）数据，暂不支持管控作业（Job）等其他对象，CreateInstance 等对象权限仍走原有权限体系；策略标签自身的权限目前也无法通过 RAM 管控。</b><br><b>对数据平台的影响：</b> 这是国产云厂商把湖仓权限模型从项目级粗粒度推向跨账号加列级加动态脱敏的一个可观察样本，对多账号、多项目组织最有价值的有三点：其一，继承与不继承并存的设计（高层级自动继承、Table 层级显式授予不继承）正好对应企业里「默认全开个别收口」与「默认关逐项开」两种相反诉求，跨部门数据依赖比共享数据集更需要后者；其二，动态脱敏不修改查询 SQL，把脱敏从应用层逻辑下沉到权限层执行，意味着同一张表的原始列可以被不同角色以不同形态看到，而不必复制出两张表；其三，必须注意官方自陈的边界——作业权限仍不在 IAM 管控范围内，这意味着数据访问与计算执行的权限是两条线，审计上仍需对 Job 单独建立口径，不能因为数据面有细粒度控制就认为整条链路的权限模型已经闭合。</div>
+</div>
+<div class="item">
+    <h3>Amazon Neptune 支持在线重建索引，碎片整理不必停库</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/neptune-online-index-rebuild/">AWS 官方 what's new（10 月 27 日）</a><br><b>摘要：</b> Amazon Neptune 10 月 27 日宣布支持在线索引重建，可在数据库不停机的前提下整理索引碎片、回收闲置存储空间。问题背景是插入、更新与删除会在数据页内留下空洞，即便数据已删除，VolumeBytesUsed 指标仍被人为抬高，进而推高 I/O 成本并拖慢 Gremlin、openCypher 与 SPARQL 负载的查询性能。在线重建全程，写实例与只读副本上的读写查询均不中断。索引范围可选择全部索引、仅 quad 索引或仅字典索引，适用场景包括删除后的清理、周期性维护、存储上限管理与性能调优；并发度与写缓冲区大小可调，用于在重建速度与业务负载影响之间取舍，内置的存储安全机制可防止重建期间耗尽存储空间。该能力自 Neptune 引擎版本 1.5.0.0 起在预置实例（provisioned writer instances）上提供，覆盖 Neptune Database 支持的全部区域。<br><b>对数据平台的影响：</b> 这条的价值不在图数据库本身，而在于它点出了一个被普遍低估的运维事实：删除数据不会自动回收空间，存储指标虚高会持续推高 I/O 成本。图数据库在知识图谱、实体解析以及智能体的记忆与关系推理场景里正被越来越多采用，而这些场景的写入模式（大量 upsert 与关系删除）恰好最容易制造碎片。三点判断：其一，「在线」这个限定词是关键——不停库意味着可以在业务时段做整理，不必等变更窗口，这类维护动作的可执行性直接决定它是否真会被执行；其二，可按索引类型分别选择重建范围，说明不同索引的碎片分布差异很大，整库重建会浪费资源；其三，需要自己确认的是引擎版本门槛与实例形态——1.5.0.0 引擎与预置实例这两个限定意味着托管实例用户可能并不适用，评估前要先确认自家部署形态。</div>
+</div>
+<div class="item">
+    <h3>Amazon ElastiCache for Valkey 支持存量集群在线切换持久性：缓存开始承接智能体长期记忆</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/">AWS 官方 what's new（10 月 27 日）</a><br><b>摘要：</b> Amazon ElastiCache for Valkey 10 月 27 日起允许在既有节点型集群上启用或关闭持久性，无需新建集群。此前持久性配置无法在原集群上变更，从缓存转向持久数据存储、或随应用要求调整时都只能重建集群。两种写入模式可选：同步写在响应客户端前把数据持久化到至少两个可用区，面向零数据丢失，写延迟为个位数毫秒；异步写在响应客户端后再持久化，保持微秒级写延迟且不额外收费，代价是故障罕见情况下最多丢失 10 秒未提交数据。两者读延迟均为微秒级。官方明确把新增适用场景列为：AI 智能体长期记忆、AI 智能体工作流状态、RAG 应用的知识库、支付令牌化、实时库存管理。能力覆盖 ElastiCache for Valkey 9.0 及以上版本可用的全部区域。<br><b>对数据平台的影响：</b> 这条在数据平台语境里最有意思的是官方自己给出的用途清单——把 Valkey 明确列为智能体长期记忆与工作流状态的承载层，等于官方承认缓存层正在承接一类新的、有状态且有正确性要求的负载，而这类负载过去默认落在关系库或文档库里。三点判断：其一，同步与异步的取舍在这一场景下不是性能问题而是正确性问题，智能体的记忆丢失会直接变成错误决策，因此「最多丢十秒」这条必须按业务后果而非延迟指标来评估；其二，「存量集群在线切换」降低了把缓存用作持久存储的迁移成本，也降低了回退成本，但 Valkey 9.0 版本门槛与节点型集群这一限定意味着集群型部署不在此列；其三，这类负载进入缓存层之后，数据平台的职责边界要跟着扩展——备份、恢复、审计与数据生命周期策略都得把智能体记忆纳入，否则会出现技术上高速、治理上失明的状态。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>Oracle 执行副总裁与 IDC 研究副总裁：企业 AI 的差异在业务上下文，不在模型</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.oracle.com/sg/news/announcement/ai-world-oracle-ai-data-platform-brings-ai-assisted-business-context-to-enterprise-ai-2026-10-27">Oracle 官方新闻稿（10 月 27 日）</a> / <a href="https://www.oracle.com/ai-world/ai-data-platform/">Oracle AI World 官方 AI Data Platform 专页</a><br><b>核心观点：</b> Oracle 10 月 27 日在 AI World 发布 Oracle AI Data Platform 的新能力，用意是让智能体共享对企业业务实体、关系、政策与工作流的共同理解。执行副总裁 T.K. Anand 的原话把上下文说成规模化前提：智能体正在从信息检索走向参与业务决策与执行，要可靠地规模化，企业需要一套反映业务实际运作方式的上下文系统，而这套上下文应从企业既有的应用、数据库、分析与文档中的业务知识出发，并在多个智能体之间复用。IDC 研究副总裁 Megha Kumar 的判断更直接：企业 AI 的下一个竞争优势不会来自模型本身，而来自 AI 对业务的理解有多深；Oracle AI Data Platform 的意义在于把数据、业务知识与 AI 能力连起来，让企业从试验走向受治理的业务结果。机制层面，AI Discovery 智能体通过分析数据库模式、语义模型、应用与 API 文档、以及非结构化文档中的业务知识来生成业务本体，业务领域专家随后审阅、修正并批准；语义推理引擎以本体为业务知识来源，在模型之前跨联邦系统编排检索、解析业务关系并施加治理控制；AI Registry 维护智能体、工具、技能与 MCP server 的集中清单，含归属、版本、依赖、权限与生命周期状态。<b>关键限定：Oracle 明确这些新能力将在未来 12 个月内提供，AI Governance and Control 仍标为「计划中」；本次发布未给出定价与任何实测指标。</b><br><b>映射到数据平台的判断：</b> 把这段话当产品公告看会低估它的分量，它其实是在给数据平台的重心下定义。三点判断：其一，「上下文在模型之前被组装」这个结构决定了语义层与治理控制不再是模型应用的附属品，而是模型调用的前置依赖——数据平台因此从「给模型喂数据」变成「替模型决定看什么、怎么看」，控制面的位置更靠前；其二，本体需要人审阅批准这一条，是把定义权留在企业手里，与 IDC 同日发布的「治理跑不赢智能体速度」是同一个问题的两面，企业买到的是工具链而非免审的定义；其三，风险也在这里——12 个月的可用窗口意味着这套本体的可维护性、版本化与审批流尚未被真实负载检验过，企业此刻该做的不是等，而是把自己的实体与指标定义先在现有语义层里沉淀出来，等工具到位时才有可导入的资产。</div>
+</div>
+<div class="item">
+    <h3>IBM 与 Confluent 数据负责人：智能体只做它能理解的事，目前四分之一达企业就绪</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://dev48.org/en/articles/techxchange-2026-practitioners-tackle-ai-security-and-data-challenges">Dev48 现场报道（10 月 27 日，含时间戳）</a> / <a href="https://siliconangle.com/2026/10/22/ibm-puts-governed-context-center-production-ai-ibmaioperatingmodel/">SiliconANGLE 对 Shaun Clowes 的专访（10 月 22 日）</a><br><b>核心观点：</b> IBM TechXchange 2026 于 10 月 27 日举行，IBM 数据与 Confluent 总经理 Shaun Clowes 在开场主题演讲中给出核心判断：「智能体只能做它能理解的事，它们受限于可访问上下文的质量与时效性。」他给上下文下了一个操作化定义——完成一项工作所需的信息——并强调这个定义意味着「更多不等于更好」：喂给智能体的上下文若碎片化或陈旧，会在下游放大错误、增加返工与人工干预。他同时指出，生产级智能体让软件直接自主参与业务运行，企业自动化的暴露面因此大幅扩大。IBM 软件高级副总裁 Dinesh Nirmal 在开场提出规模问题：目前只有 25% 的 AI 智能体真正达到企业就绪水平。会上还引述了 Gartner 预测：企业内智能体数量将从当前平均 15 个增至 2028 年的 15 万个。Clowes 主张的 streamhouse 架构有三个属性——始终保持最新、面向关键业务、去中心化，即持续连接、流式、处理、治理并服务业务的当前状态，而不必把数据集中到一处；IBM 的 Confluent 平台开箱提供这套能力，且「不需要推倒重来」，是让已经在业务中流动的数据持续变得可用。IBM 数据领域现场首席技术官 Kiyu Gabriel 则对比了联邦与集中两条路线：联邦避免了搬迁数据源，但智能体增多后大量算力消耗在智能体与分散数据源之间的状态通信上；集中式则把各系统数据汇入中央仓库。<b>信源边界：25%、15 万、三个属性等均出自 10 月 27 日现场报道的具名引述；Clowes 关于「为任务准备上下文」的论述另见他 10 月 22 日接受 SiliconANGLE 采访时提出的同一主张（受控上下文、按任务定义语境、越早治理越好）。</b><br><b>映射到数据平台的判断：</b> 这条给数据平台提了一个可检验的判据：智能体能力的天花板不在模型，而在它能拿到的上下文质量与时效。对平台团队有三点落点：其一，「更多不等于更好」直接否定了「把所有能给的都给智能体」这个常见做法，那么上下文供给就应该是一套有选择、有优先级、有时效标记的目录能力，而不是尽可能全的暴露面，这与治理目标其实是同一件事；其二，若 25% 的就绪率成立，其差额里相当一部分在数据侧而非模型侧——语义模型覆盖不全、口径分散、时效不达标，这些正是数据平台已有的工作面，也就是说智能体规模化会把治理债一次性暴露出来；其三，联邦与集中之争在这里给出第三个答案：决定智能体成败的不是架构形态，而是能否在不搬家的前提下持续提供当前状态，这恰好是流式架构的主场，也解释了流处理厂商在智能体叙事里持续加码的原因。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】Hex 完成 1 亿美元 D 轮、估值 12 亿美元，并把分析平台整体重写</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://hex.tech/blog/hex-new-era">Hex CEO 官方博客（10 月 27 日）</a> / <a href="https://hex.tech/blog/introducing-hex-4-0">Hex 官方产品博客（10 月 27 日）</a> / <a href="https://timesof.ai/2026/10/hex-100m-1-2b-hex-4-agent-native-rebuild">第三方核查与口径比对（10 月 27 日）</a><br><b>核心数据：</b> 融资 1 亿美元，估值 12 亿美元；领投方 Peak XV 与 137 Ventures，参与方 Amplify、Avra、a16z、Redpoint、Sequoia、Zero Prime；Hex 全球客户数超过 2500 家；产品侧 Hex 4.0 于同日发布，当前处于 private beta、未来数周逐步扩大开放；公司 2019 年成立，此前融资包括 2022 年 3 月 5200 万美元 B 轮与 2025 年 5 月 7000 万美元 C 轮。<br><b>摘要：</b> Hex 10 月 27 日同时宣布两件事：完成 1 亿美元融资、估值 12 亿美元；发布从零重写的分析平台 Hex 4.0。CEO Barry McCardel 给出的重写理由有三条：旧架构的数据模型与核心假设固化于 2020 至 2021 年，其智能体 harness 膨胀到数百个工具，导致外部智能体只能通过 MCP 的「钥匙孔」接入产品，计算引擎也不适配智能体偏好的高并发迭代负载。产品侧差异点是：核心假设为「一切皆代码」，项目的逻辑与可视化全部由代码文件承载而非专有 YAML，同时保留受治理上下文与统一的逻辑规范；全新的执行引擎支持互不依赖的查询并行执行、结果就绪即流式呈现、输入变更只重跑受影响依赖；新界面提供逐元素检查，可从页面任一数字回溯到完整逻辑、数据源与血缘，这依赖新的代码框架让智能体显式声明每个依赖与完整 DAG。官方同时提出外部智能体（Claude、Codex、Cursor 等）可把产物推回 Hex 重建为应用，StubHub 与 Ro 为 4.0 的 alpha 测试方。<b>需标注的口径差异：Hex 官方未说明 12 亿美元是投前还是投后估值，第三方引 FinSMEs 记为投后；官方称客户超过 2500 家，第三方引 FinSMEs 称「数百家企业客户」，双方均未披露营收；本次为厂商自述，尚无第三方独立评测。</b><br><b>对数据平台的影响：</b> 这笔钱的意义不在金额，而在它给出的赌注方向。三点判断：其一，「删掉数百万行前 AI 代码、从零重写」这个决定，押的是分析层不会在旧 BI 范式上被改造成功——从行业角度看这是对既有分析平台的长期判断，若成立，短期内数据团队的自建替代方案与代理式 BI 的替代路径会同时被加速；其二，重写的具体抓手值得平台侧借鉴：并行执行、结果流式返回、依赖级重跑这三条是工程效率维度的硬指标，其价值取决于自家工作负载是否同样受制于串行与全量重算；其三，估值与客户数口径官方与第三方不一致、且无营收披露，说明这轮资本定价的对象是叙事与增长预期，不是已验证的单位经济，采购侧不宜据此做长期锁定。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Snowflake on OCI 官方口径仍是「计划中」，跨云共享与复制待技术验证</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://snowflake.com/blog/snowflake-oracle-partnership-ai-data-cloud-oci">Snowflake 官方博客（10 月 27 日）</a> / <a href="https://www.unite.ai/oracle-to-offer-snowflake-ai-data-cloud-as-first-party-oci-service">Unite.AI 报道（10 月 27 日）</a><br><b>为什么值得继续看：</b> A1 已把这条作为当日最重要的信号之一，这里跟进的是它尚未确定的部分。Snowflake 官方博客通篇用「when available」「planned」描述 Snowflake on OCI，未给出上线时间表；与之并列的 Oracle 新闻稿则写成客户「将能够」直接通过 Oracle 采购、开通与使用，两处口径存在落差——是「即将可用」还是「计划中」，直接决定企业能不能把它排进今年的采购与预算计划。官方博客同时把跨云数据共享、复制与故障转移列为 subject to technical validation and availability，而这恰恰是把 Snowflake 放进 OCI 之后最值钱的部分：Snowflake 的差异化从来不在数据放在哪个云，而在跨云共享与复制。<br><b>需要等待什么信号确认：</b> 三点。其一，上线时间表与首批可用区域——这是从「宣布」变成「可采购」的分界线，也是决定是否要为其重排现有云成本模型的依据；其二，跨云共享、复制与故障转移的可用状态与限制条件，需逐项确认是否在首发即支持、支持到哪些云与区域，因为这三项决定 Snowflake on OCI 究竟是「多了一个部署选项」还是「多了一套跨云架构」；其三，统一账单与通用积分抵扣之后的实际计价口径，尤其是跨 OCI 与其他云的数据传输如何计费——这一项若与既有出口成本假设不符，官方所说的节省出口费用的说法就不成立。</div>
+</div>
+<div class="item">
+    <h3>【预告】IDC FutureScape 2027 全球 Top 10 预测将于 10 月 28 日线上发布</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.idc.com/ap/media-center?origin=asean-old-site">IDC 官方媒体中心（发布记录）</a> / <a href="https://events.zoom.us/ev/AsR6BT2nOlho56w7LxMpRBrFqsLfo7Y9yANtKLv2S4-HD6Q-MRU6~AuGLMkkIyt4BPiZ72qwfeBb4F25fV66mgqcNy2o_GPGv85zsBqvgUyv5NQ">Top 10 全球预测线上说明会页面</a><br><b>为什么值得继续看：</b> IDC 官方博客确认 FutureScape 2027 的 25 份报告在 10 月 27 至 29 日陆续发布，10 月 28 日由 IDC 全球研究副总裁组 Rick Villars 主持一场 Top 10 全球预测的线上说明会，把这十项预测按「正在关闭 / 仍然开放 / 正在开启」三个窗口排序，并沿三条线索展开：重新定义韧性、为智能体建立信任、建立新的领导力。这场说明会的价值在于，Top 10 预测第一次被明确排进决策期限序列——按窗口而非按主题组织，意味着会后每条预测都对应一个「现在必须定、还能改、可以观望」的判断。对数据平台从业者，智能体治理与主权被 IDC 归入正在打开的窗口，而这一窗口被描述为压缩得很快，说明与数据平台相关的决策项很快会从观察转为必须表态。<br><b>需要等待什么信号确认：</b> 其一，Top 10 中与数据平台直接相关的条目究竟落在哪个窗口，是否有治理与主权类的具体条目进入 Top 10——若进入，则说明它已从 250 条预测中被提升为优先议程；其二，是否给出可追踪的量化目标（例如模型注册表、熔断开关、审计发现这类可核指标），以便企业自查差距；其三，中国区解读场次（IDC FutureScape 2027 新加坡场为 11 月 13 日，另设中国 ICT 市场预测论坛）的时间与内容，以确认本地口径的适用性。注：官方公布的时区安排为太平洋时间上午 8 点，亚太直播落在新加坡时间 23 点、东京与悉尼为次日 0 点与 2 点，国内实际可行的方式是看回放。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-28 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
