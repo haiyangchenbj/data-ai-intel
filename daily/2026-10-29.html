@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-10-29</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-10-29 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台的竞争轴正从引擎能力转向智能体的可审计性</li>
+      <li>云厂商的算力投入已经进入现金流转负的阶段</li>
+      <li>开放表格式开始补齐时间维度与约束语义</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期指向同一件事：数据平台的价值正从算力规模转向可控性。智能体要接手操作，前提是每次读写都可审计、可回退；现金流转负换来的算力，需在治理能力上兑现成可靠性。投入重点是语义定义、细粒度权限与操作血缘，它们是智能体放手的许可。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Microsoft 改组分部后的首份财报：Azure 收入增 48%、单季购置物业设备 393.67 亿美元</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast">Microsoft 投资者关系 FY2027 Q1 业绩新闻稿（10 月 28 日）</a><br><b>摘要：</b> Microsoft 10 月 28 日发布 FY2027 第一财季业绩（报告期截至 2026 年 9 月 30 日），这是公司调整报告分部后的首份财报：原「生产力与业务流程」「智能云」「更多个人计算」三个分部并为「智能体与基础设施」（Agents and Infra）与「设备和消费者」两个。核心数据：总营收 923 亿美元（+19%），Microsoft Cloud 639 亿美元（+30%，固定汇率 +31%），营业利润 459 亿美元（+21%），GAAP 净利润 366 亿美元（+32%），摊薄每股收益 4.92 美元；Azure 收入 331.65 亿美元、同比 48%（上年同期 223.84 亿美元）；Microsoft 365 商业云收入报告口径 +17%（调整后 +18%，固定汇率 +19%）；商业剩余履约义务 6770 亿美元（+73%）；行业解决方案云收入 53.37 亿美元（+10%）；智能体与基础设施分部收入 767.95 亿美元（+25%），设备与消费者分部 155 亿美元（−3%），其中 Windows OEM 及设备收入 −22%。现金流：经营活动净现金 580 亿美元，购置物业与设备 393.67 亿美元（上年同期 193.94 亿美元）。<b>关键限定：新闻稿未披露 Fabric、Foundry、Agent 365、Microsoft IQ、Purview 任何运营指标，也未给出公司口径的总资本开支。</b><br><b>为什么对数据平台重要：</b> 这份财报对数据平台有三层含义。第一层是口径变了：Azure 的绝对收入被摆到台面上，331.65 亿美元是少数几个能与自家仓库、搜索、湖仓支出做同口径比较的绝对值之一；而 48% 的增速与 6770 亿美元的商业剩余履约义务指向同一件事——需求侧已经在签长约，供给侧尚未交付完，排队本身就是当下最值钱的数据平台议题，平台团队真正要回答的是「产能何时到位」而不是「要不要上云」。第二层是成本结构：购置物业与设备从 193.94 亿美元跳到 393.67 亿美元、接近翻倍，而公司口径的总资本开支新闻稿没有给出，这种「只披露现金流出关键项、不披露总量」的信息结构本身值得采购方警惕；同时它提醒一个常被忽略的结论——把「自带算力」当成成本优化手段的空间在快速消失，当算力变成云厂商的资产负债表科目，自建集群的性价比会被重新定价。第三层是披露边界：真正决定数据平台竞争格局的 Fabric 付费客户、Agent 365 注册量、Purview 审计规模这些指标，一份都没有出现在新闻稿里，只能等电话会，而电话会口径是二手转录，本期另条单独处理。</div>
+</div>
+<div class="item">
+    <h3>国家数据局「数据要素×」三年收官：公共数据授权运营从试点转入规模化</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://nda.gov.cn/sjj/zwgk/zjjd/1028/20261028095059777221485_pc.html">国家数据局政策解读（10 月 28 日，作者：国家数据发展研究院副院长姜江）</a><br><b>摘要：</b> 国家数据局 10 月 28 日发布「数据要素×」三年行动计划收官解读，作者为国家数据发展研究院副院长姜江。公布的三年结果：参赛队伍从 1.9 万支增至 2.9 万余支，参赛人数从近 10 万人增至近 15 万人，赛道从 12 个增至 17 个；<b>53% 的项目数据来自公共数据，78% 的项目实现了公共数据融合利用</b>；超过 87% 的团队搭建了高质量数据集；超三成入围项目建有可信数据空间；近百个项目完成数据产权登记；<b>累计挖掘高价值场景超千个，远超三年行动计划设定的 300 个目标</b>。<br><b>为什么对数据平台重要：</b> 这组数字里最有信息量的不是规模而是结构，三点判断。其一，53% 与 78% 说明公共数据已经从「试点里可以用」变成「多数项目在依赖」，而依赖方是数据产品而非个人用户，这直接决定了公共数据授权运营的技术底座必须按「可计量、可追溯、可二次开发」来建，而不是按「可展示」来建——展示型底座撑不起供给侧的真实成本核算。其二，近百个项目完成数据产权登记、超三成建可信数据空间，是本轮唯一同时给出数量与口径的进展；登记与凭证类基础设施的落地速度，决定公共数据能否从「授权一次」变成「按次计量」，而按次计量是把公共数据变成可持续供给的唯一商业前提，这两项能力恰恰落在数据平台的元数据、血缘与权益登记系统上。其三，超千个高价值场景远超 300 个目标，说明制约不在场景需求侧，而在供给侧的规模化能力——下一步真正的瓶颈是同一份公共数据能否被多个行业场景反复复用，以及复用时的口径与留痕是否统一；这意味着数据平台要交付的不是又一个数据目录，而是让不同主体、不同场景对同一份公共数据保持同一套定义与同一套证据链。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 给 Iceberg 表加上 Time Travel 与版本标签：开放表格式补上时间维度</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/release-notes/2026/other/2026-10-28-iceberg-time-travel-version-tags">Snowflake 官方发布说明（10 月 28 日）</a><br><b>摘要：</b> Snowflake 10 月 28 日在官方发布说明中上线 Apache Iceberg 表的 Time Travel（预览）。此前 Snowflake 的 AT | BEFORE 子句只接受时间戳，现在可直接接受 Iceberg 的 snapshot ID、引用名或版本标签。版本标签机制允许给某个快照起一个稳定名字并按自选期限保持可查询，与表自身的数据保留期相互独立，通过 `ALTER ICEBERG TABLE … VERSION_TAG` 创建、重指向与删除（官方示例：`CREATE VERSION_TAG audit_2026_q1 AS OF VERSION 3821550127947089009 RETAIN 7 DAYS`），查询侧写作 `AT(VERSION_TAG => 'audit_2026_q1')`；查快照与列标签、分支用 `GET_TABLE_VERSIONS` 与 `GET_TABLE_VERSION_REFS` 两个函数。<b>关键限定：该能力标注为 Preview，官方发布说明未给出转正式可用的时间表。</b><br><b>为什么对数据平台重要：</b> 三点判断。其一，这是开放表格式在时间维度上的一次关键补齐：Iceberg 表此前能写、能出快照，但快照不是一等公民——查历史快照要靠各引擎自己的实现，跨引擎更没有统一入口。Snowflake 把 Iceberg 快照 ID、引用与标签纳入自己的时间旅行语义，等于把「表的历史」从引擎级功能提升为平台级能力，对以 Iceberg 为存储层的多引擎架构是实打实的运维收益：误操作回滚、审计取证、变更比对都不必再绕道。其二，版本标签与保留期解耦这个设计值得单独注意——它把「保留多久可查」从事后清理策略变成可显式声明的治理承诺，方向上更接近合规留痕而非技术缓存，评估时应当按后者提问：标签的创建与销毁是否留痕、谁能删标签、删标签后快照是否立即不可达。其三，必须同时看清边界——Snowflake 侧的标签语义能否被 Spark、Trino、Flink 等其他引擎识别与执行，目前没有任何公开结论；若标签只在 Snowflake 侧可解析，它解决的是「平台内回滚」而非「跨平台回滚」，这正是本期另一条要等的信号；另外预览态没有 GA 时间表，意味着它现阶段只能作为选型参考，不能写进架构承诺。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>ClickHouse 公开成本型 join 优化器：外连接也能重排序，26.10 起默认启用</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://clickhouse.com/blog/the-new-cost-based-join-optimizer-with-reordering-support-for-non-inner-joins">ClickHouse 官方博客（10 月 28 日）</a><br><b>摘要：</b> ClickHouse 10 月 28 日发布博客，公开新的成本型 join 优化器（CBO）实现，核心是 DPsub 动态规划算法的工程化版本：对最多 12 张表的查询，它在既有成本模型下穷举并给出最省的计划，同时把 LEFT、RIGHT、FULL 外连接以及 SEMI、ANTI 连接一并纳入可重排序范围——此前除 inner join 外的所有连接类型都是优化屏障。重排序的安全性由冲突检测器（conflict detector）保证，只放行保持结果不变的重排序。官方给出的验证：理论侧枚举 9 万余棵 join 树、280 万个候选计划，无无效计划、无遗漏计划；真实引擎侧用差分模糊测试跑 1200 条最多 7 表的随机多连接查询（混合 INNER/LEFT/RIGHT/FULL/SEMI/ANTI、含单侧 ON 条件、含 NULL 与重复键），与不重排序的基准结果比对校验和，0 处不一致。性能上以旧的 greedy 默认优化器为对照：TPC-H Q2 从 143ms 降至 65ms（−55%）、TPC-DS Q73 从 260ms 降至 143ms（−45%）、TPC-H Q5 从 574ms 降至 320ms（−44%）、TPC-DS Q86 从 93ms 降至 57ms（−39%）、TPC-DS Q65 从 302ms 降至 227ms（−25%）。启用方式为 `query_plan_optimize_join_order_algorithm = 'dpsub,greedy'` 与 `query_plan_optimize_join_order_conflict_detector = 'c'`，官方称自 26.10 版本起作为 join 的默认 CBO。<b>关键限定：博客发布时 26.10 仍属「即将发布」，官方未给出确切 GA 日期；官方设置文档另注明该冲突检测器设置在 26.9 已新增、默认值为空（留空即不使用），与博客所称「26.10 起默认启用」在默认值表述上存在差异。</b><br><b>对数据平台的影响：</b> 这条的真正意义在于「优化屏障」被拆掉，三点判断。其一，外连接过去不能重排，意味着一个典型的星型模型加半连接过滤的查询，无论怎么写都要先把两张大表自己连接起来，代价直接落在中间结果物化上；现在这类查询可以先跑选择性高的半连接把行数压下去再连接，这是查询层能拿到的确定收益，官方给的示例查询在关闭运行时 join filter 时是 3.8 倍加速。其二，正确性论证的强度是它区别于普通优化器改进的地方——冲突检测器要同时满足「不产生错误结果」与「不遗漏有效计划」，前者是安全、后者是完备，官方用 9 万棵树加 280 万候选计划做穷举、并用差分模糊测试跑 1200 条查询给出 0 不一致，这个验收方式值得其他引擎做优化器改造时照抄：性能数字可以宣传，正确性验收必须机器化。其三，落地前有两处必须自己确认：一是 26.10 尚未正式发布且官方未给确切日期，要进生产得等正式发布说明；二是默认值在博客与设置文档之间表述不一致（博客称自 26.10 起默认启用 DPsub 与冲突检测器，文档则标注该设置默认留空即不使用），实际行为必须在自己的集群上用 `EXPLAIN actions = 1` 核对计划，不能凭文档默认值推断。</div>
+</div>
+<div class="item">
+    <h3>AWS OpenSearch Serverless 下一代集合新增时序集合：单集合 100TB 热存储加冷热分层</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/time-series-collection-next-generation-opensearch-serverless/">AWS 官方公告页（10 月 28 日）</a> / <a href="https://aws.amazon.com/blogs/big-data/introducing-the-next-generation-of-serverless-time-series-for-amazon-opensearch-service/">AWS Big Data 官方博客（配套技术说明）</a><br><b>摘要：</b> AWS 10 月 28 日公告 Amazon OpenSearch Serverless 下一代集合支持时序集合（time series collections）。能力构成三点。其一是存储分层：新增加一个成本更低的 warm 存储层，与既有 hot 层并存，通过 `index.warm.after` 指定数据在 hot 层停留多久后转入 warm（单位为天或小时，最小 24h，上限 3650 天，且不得超过该索引的数据保留期，未设置时默认 1 天），单集合 hot 存储最高 100TB；数据在写入时同时落到 hot 层与 S3，转入 warm 后查询时再回载到 hot 层，首次查询更慢、之后回到热层延迟，跨层查询在一次响应内返回。其二是时序集合必须指定一个顶层时间字段（默认 `@timestamp`，可通过 `index.timestamp_field` 改为已有字段），缺时间戳、值为空或非法的文档会被拒绝，但拒绝只作用于单条文档，批量写入时其余文档仍会入库并在 errors 块中列出。其三是把告警与异常检测直接做进集合：告警按计划轮询数据，支持单值、按分组桶与 PPL 三类监控器；异常检测用 Random Cut Forest 学习正常模式并近实时标出偏离，监控器与检测器在 OpenSearch UI 的工作区内管理。留存以索引设置 `index.data.retention` 为准（1 天至 3650 天），可由索引模板批量下发。能力在支持 OpenSearch Serverless 的全部 AWS 商业区域可用。<b>关键限定：官方公告页标注日期为 10 月 28 日，配套技术博客页面渲染日期为 10 月 27 日。</b><br><b>对数据平台的影响：</b> 这条真正解决的是可观测性数据「成本—留存—可查」三者的取舍，三点判断。其一，过去的做法要么按峰值容量常年付费、要么缩短留存把历史扔进快照再恢复，而 warm 层把「可查」和「便宜」拆开，让长周期留存第一次不以牺牲可查性为代价——对日志、指标、链路追踪这类量大但访问稀疏的数据，这是结构性的成本变化，也是把「观测数据保留多久」从一句口号变成可填参数的前提。其二，异常检测与告警下沉到集合内部，意义比听上去更重：这类负载的判定逻辑必须贴着数据所在的地方算，否则每分钟把海量原始数据拉回后端做检测，成本与延迟都不可接受；用 Random Cut Forest 而不是固定阈值，也意味着检测基线随数据分布自演进，减少了阈值维护这项长期运维负担。其三，必须自己核对三处：时间字段强制且不可事后修改，存量数据若没有统一时间戳字段，迁移前要先在采集侧补齐，这是一项容易被低估的前置改造；warm 层数据的查询延迟高于 hot 层，官方明确说明首次查询更慢，因此查询 SLA 必须区分冷热两层来定，不能按热层延迟承诺；分层与留存是两套独立设置，`index.warm.after` 不得超过 `index.data.retention` 的校验约束值得在模板层统一治理，避免批量建索引时踩坑。</div>
+</div>
+<div class="item">
+    <h3>Databricks：Clean Room 笔记本的 Serverless GPU 转正式可用</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/october">Databricks 官方发布说明（10 月 28 日条目）</a><br><b>摘要：</b> Databricks 10 月 28 日在官方发布说明中记录：Clean Room 笔记本（clean room notebooks）的 Serverless GPU 转为正式可用（generally available）。官方表述是：现在可以在 serverless GPU 算力上运行 Clean Room 笔记本，对共享数据做模型推理与训练；GPU 笔记本运行在 AI Runtime 上，并沿用与其他 Clean Room 笔记本相同的审批流、数据访问机制与输出表。<b>关键限定：官方发布说明以条目形式给出，未披露定价、可用区域、配额与性能指标；同页另注明 Databricks 的能力发布采取分阶段方式，账户实际可用时间可能比初始发布日期晚一周或更久。</b><br><b>对数据平台的影响：</b> 三点判断。其一，先看清定位：它不是通用笔记本的算力升级，而是把 GPU 直接放进 Clean Room 这条跨组织协作的数据工作流里，而这条工作流的客户是互不信任甚至互不相识的数据持有方，所以「能不能在受控环境内就地做模型计算」直接决定了这类合作能否成立——过去很多联合建模项目卡住的不是建模能力，而是双方都不愿意把数据搬到自己不可控的环境。其二，GPU 在 clean room 里的用途与常规分析不同，通常承载模型推理、训练这类需要把计算贴近受控数据的负载，因此 GA 的意义更多在「可采购、可承诺、可写进合作协议」，而不是单纯的性能提升；这也解释了官方为什么强调沿用原有审批流、数据访问与输出表机制——受控环境的边界没有被 GPU 打破。其三，评估时有三项必须自己补齐的信息：定价、可用区域与配额，尤其是不同区域的配额，因为 Clean Room 合作经常需要把计算放在特定司法辖区，这条约束通常比价格更早生效；此外官方自己提示能力分阶段发布，因此落地节奏要按「账户实际开通时间」而不是「公告日期」来排。</div>
+</div>
+<div class="item">
+    <h3>IBM 推出 watsonx.data 对 Apache Flink 的集成：流处理的三条通用路径</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.ibm.com/new/announcements/expanding-enterprise-data-engineering-with-apache-flink-stream-processing">IBM 官方新闻稿（10 月 28 日）</a><br><b>摘要：</b> IBM 10 月 28 日宣布 watsonx.data integration for Apache Flink，目标是把数据工程实践带进 Flink 的全生命周期，管道运行在 Confluent Platform for Apache Flink 之上。编写方式有三条：可视化拖拽画布、AI 驱动的编写、以及 Python SDK，三者产出同一套底层管道模型，再翻译为原生 Flink job graph 提交执行；官方强调这不是替代原生 Flink 开发，熟悉 SQL 的工程师仍可写原生作业。运维侧的三项实践被明确列出：上线前用样本数据预览并校验配置；变更与失败时把失败记录投递到 Apache Kafka 以便排查与重放，并通过 schema 演进来处理数据漂移；用内置的数据可观测能力主动监控数据流，实时发现 schema 变化、数据质量问题与异常管道行为。<b>关键限定：该集成的官方口径是面向 Confluent Platform for Apache Flink，IBM 未披露定价、可用区域与 GA 状态标注。</b><br><b>对数据平台的影响：</b> 这条的本质是「把流处理的专业化门槛从少数专家身上移走」，三点判断。其一，官方给出的理由很具体——Flink 的难点不在运行时而在分布式状态、检查点、事件时间与运维行为这些需要专知识的环节，因此当每条管道都要靠少数专家时，实时场景就会排队等人；把作者、校验、变更处理、监控四件事产品化，实质是把「实时数据工程」从项目制变成流水线制。其二，三条编写路径共用同一套管道模型再翻译成 Flink job graph，这个设计比「各自一套工具」更值得注意：它意味着管道定义存在平台侧的一份规范表示，治理、复用与迁移才有落点，也才谈得上把流管道纳入统一的血缘与质量体系；但反过来，翻译层必然带来一层语义损耗，官方未说明哪些 Flink 特性在图形化路径下不可达，这是评估时要实测的部分。其三，必须留意治理的传导路径：把失败记录投递 Kafka 以便重放是好设计，但重放能力一旦具备，就要求管道具备幂等语义与状态一致性保证，否则「可重放」会变成「可重复制造错误」，这层能力 IBM 未在此稿展开，需要在自有负载上验证。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>a16z 合伙人：Databricks 的真实故事是智能体在发起的查询已经超过人</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://a16z.com/databricks-the-future-of-the-firm/">a16z 官方博客（10 月 27 日，作者：Ben Horowitz、Michael McGuiness）</a><br><b>核心观点：</b> a16z 合伙人 Ben Horowitz 与 Michael McGuiness 10 月 27 日撰文，主张判断企业软件的关键变量是「系统记录与决策机制」，而它又被「数据库技术允许什么」所约束。文中给出的 Databricks 事实与数字：过去三年每次交互都有人参与，如今智能体发起的查询已超过人类，<b>每天由智能体新建的数据库超过 1700 万个</b>；三个月前总营收运行率突破 70 亿美元、同比增 80%，估值 1900 亿美元；Lakehouse 营收运行率超 15 亿美元、同比增速超过 100%；2025 年收购 Neon 之后推出的 Lakebase 营收运行率已超 1 亿美元，智能体是其最活跃的用户。文中对「智能体时代的系统记录」给出四个必须回答的问题：什么是真的（Lakehouse 与 Lakebase 持有状态）、什么意思（Genie Ontology 持续构建组织知识的图谱，OntoRank 算法按定义者、使用广度与最近变更给权威性排序，在其测试中把智能体答案准确率从约 50% 提升到 84.5%）、什么被允许（Unity Gateway 给每个模型、智能体与 AI 工具一个身份、一份预算和一组护栏，并记录每个动作的 trace log）、以及人接下来做什么。<b>信源边界：本文作者 a16z 是 Databricks 早期投资人，Horowitz 担任其董事，据报道美国司法部正依《克莱顿法》调查该交易，文中数字均为厂商或投资方自述，无第三方独立核验。</b><br><b>映射到数据平台的判断：</b> 这篇长文对平台团队有三点落点，且必须连同它的利益关系一起读。其一，最有价值的一句判断是「智能体的一天看起来像人做数据分析：先戳一戳、做探索性分析、在明确需求前对少量数据反复试」，这恰好解释了为什么进程内分析型引擎（嵌入式、小数据量、低延迟）会成为智能体默认的数据访问路径——平台侧若只提供面向报表的查询接口，智能体会绕过它自己找更轻的入口，这类入口一旦旁路，治理与审计就断了。其二，Unity Gateway 那段是全文最可操作的部分：给每个智能体一个身份、一份预算、一组护栏，并记录动作的 trace log，这三件事正好对应今天大多数企业权限模型的三个缺口——权限只按人发、预算无人负责、动作无证据链；也就是说，智能体规模化对数据平台的要求，本质是把治理单元从「人」扩展到「非人主体」，这与本期其他几条指向同一件事。其三，它的数字全部来自厂商或投资方自述，包括那 1700 万个日均数据库与 84.5% 的准确率提升，读者只能当作趋势信号，不能当作选型依据；但它提出的问题本身值得跟踪：当智能体发起的数据访问量超过人类，数据平台的核心指标会不会从「查询数」转向「按主体计价的查询与花费」，这已经是本期另一条财报里能看到苗头的方向。 [补录 10-27]</div>
+</div>
+<div class="item">
+    <h3>财报电话会里的智能体运营指标：微软把治理进度第一次摆成了可核对的数字</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.eastmoney.com/a/202610293913618379.html">财联社中文财报实录（10 月 29 日，经东方财富转载，标注为 AI 辅助翻译、部分内容有删减）</a> / <a href="https://www.tradingkey.com/news/transcripts/262249601-tradingkey">微软 FY2027 Q1 电话会英文实录（媒体转录版）</a><br><b>核心观点：</b> 微软 10 月 28 日美东盘后的 FY2027 Q1 财报电话会上，一批数据平台与智能体运营指标被披露，而这些指标在正式新闻稿里一个都没有。三组数字：其一是采用规模——<b>Microsoft Fabric 付费客户 44,000 家、同比增长超过 50%</b>，其中 19,000 家以上同时使用 Foundry 与 Fabric；近 60,000 家客户通过 Microsoft IQ 获取上下文，环比增长 25%。其二是智能体规模与成本——<b>Agent 365 注册管理的智能体超过 5,000 万个，环比增长超过 30%</b>；Copilot 每日用户环比增近 50%、同比超 5 倍，本季通过用量计费实际消费额度的 Copilot 客户数环比增超 75%。其三是治理进度——<b>Microsoft Purview 已审计超过 76 亿次智能体活动，环比增长 5 倍</b>。同期口径的其他关键数：季度资本开支 452 亿美元，其中约四分之三投向 CPU、GPU 等短期资产；下季资本开支指引超过 500 亿美元、2026 自然年约 1700 亿美元；Azure 下季固定汇率增速指引 +49% 至 +50%；商业预订额同比下降 12%；Windows OEM 及设备收入 −22%。<b>信源边界：以上运营指标均出自电话会，而非投资者关系新闻稿；两个来源分别为中文 AI 辅助翻译实录与英文媒体转录版，个别措辞可能有偏差，引用时应以原始录音与公司后续材料为准。</b><br><b>映射到数据平台的判断：</b> 这组数字值得单独跟，理由是它把「智能体治理」从口号变成可核对的进度条，三点判断。其一，最有信息量的是 Purview 的 76 亿次智能体活动审计——它的环比 5 倍增速，比任何定性描述都更能说明一件事：智能体正在产生大量的、需要在事后被还原的操作留痕，而这类留痕一旦成为合规刚需，「谁在什么授权下、用哪一版口径、改了哪个对象」就必须落在同一套对象模型上，而不是数据侧一套日志、审计侧另一套日志。其二，Fabric 付费客户 44,000 家与 19,000 家同时用 Foundry 与 Fabric，是湖仓与模型平台首次出现的明确交集数字；两者共用客户的比例越高，「一个平台承载智能体全链路」的市场假设就越接近被验证，也越意味着只做存储不做治理的选项会被压缩。其三，要提醒的是这批数字的口径弱点：它们全部出自电话会而非审计过的新闻稿，且同比、环比、绝对值三种口径混用（Fabric 是同比、IQ 与 Agent 365 是环比、Purview 是绝对值加环比），做同业比较时不能直接拉平；同时资本开支 452 亿美元与下季超 500 亿美元的指引说明这些运营指标是在供给紧张的背景下取得的，增长里有多少来自产能投放、有多少来自真实渗透，现在还无法拆分。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【财报发布】Alphabet 第三季度：Google Cloud 收入翻倍，单季自由现金流转负</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Third-Quarter-2026-Results-2026-FCcqxfIfmh/default.aspx">Alphabet 投资者关系新闻页（10 月 28 日）</a> / <a href="https://s206.q4cdn.com/479360582/files/doc_news/2026/Oct/28/attachments/2026q3-alphabet-earnings-release.pdf">Alphabet Q3 2026 业绩公告全文（Exhibit 99.1，PDF）</a> / <a href="https://stockanalysis.com/stocks/googl/transcripts/712854-q3-2026/">Q3 2026 财报电话会实录（媒体转录版）</a><br><b>核心数据：</b> 合并营收 1275.77 亿美元（+25%）；Google Services 963.02 亿美元（+11%）；<b>Google Cloud 收入 307.69 亿美元（+103%）</b>；其他业务约 5.06 亿美元。合并经营利润 405.76 亿美元（+30%），营业利润率 31.8%；归母净利润 261.70 亿美元，每股收益 2.12 美元。分部经营利润：Google Services 391.57 亿美元（上年 335.27 亿美元）；<b>Google Cloud 111.21 亿美元（上年 35.94 亿美元）</b>；其他业务 −20.47 亿美元；Alphabet 层面 −76.55 亿美元。现金流：<b>本季经营现金流 422.90 亿美元，购置物业与设备 513.55 亿美元，自由现金流 −90.65 亿美元</b>；过去十二个月购置物业与设备 1598.04 亿美元，自由现金流 197.47 亿美元。电话会另给出：Google Cloud backlog 5610 亿美元、未来 24 个月预计确认略高于 55%；2026 年全年资本开支指引 1950 亿至 2050 亿美元，2027 年将「显著增加」；期末未开始履行的租赁等未来采购承诺 9240 亿美元，另有其他义务 1520 亿美元。<br><b>摘要：</b> Alphabet 10 月 28 日发布第三财季业绩（报告期截至 2026 年 9 月 30 日）。增长与利润结构都集中在云侧：Google Cloud 收入同比增长 103%，分部经营利润从 35.94 亿美元升至 111.21 亿美元、营业利润率由 23.7% 升至 36.2%。管理层在电话会上说明，Cloud 增长由 Google Cloud Platform 带动，AI 基础设施与 AI 解决方案是主要驱动，TPU 系统销售也是重要贡献项；即使剔除 TPU 系统销售，Cloud 增长仍然强劲。数据平台侧的口径在同一次电话会中给出：<b>BigQuery 查询速度同比提升超过 40%，查询处理成本同比下降超过 50%</b>；Gemini 通过 Knowledge Catalog 定位信息与定义、通过统一湖仓实现零拷贝访问；客户案例包括德国电信用 BigQuery 与 Knowledge Catalog 把 40 多个本地遗留系统整合为统一湖仓，以及 Etsy 迁移 3PB 数据后关键数据 join 最快提升 60%。现金流方面，本季自由现金流转负，管理层归因为资本开支投入与 TPU 库存备货，并表示与 TPU 相关的库存均对应已签合同；同季还支付了 52 亿美元欧盟委员会罚款。<b>关键限定：TPU 系统销售的收入确认节奏是「先签合同、再建库存、后交付确认」，因此云业务利润快速增长与集团自由现金流承压可以同时发生；2027 年资本开支只给出「显著增加」的方向，未给具体数字。</b><br><b>对数据平台的影响：</b> 这份财报把「云厂商靠算力换规模」这件事的成本结构完整摊开了，三点判断。其一，最值得注意的不是 Cloud 翻倍而是 Cloud 分部利润率从 23.7% 跳到 36.2%——这说明以 TPU 系统销售与 AI 基础设施为代表的业务，已经从「烧钱换收入」阶段走到能自己赚钱的阶段；但这条曲线的另一面是集团层面单季自由现金流 −90.65 亿美元、过去十二个月仅 197.47 亿美元，意味着行业整体的算力军备竞赛在现金流上仍是净消耗，采购方若把「云厂商会持续降价」当作前提，需要重新评估这一假设。其二，对平台团队最有实操价值的是 BigQuery 那两个数字——查询速度提升 40% 以上、查询处理成本下降 50% 以上，并给出两个可核对的客户样本（德国电信 40 多个遗留系统整合、Etsy 3PB 迁移后关键 join 快 60%）：这说明湖仓型查询引擎的成本优势已经大到可以用「查询成本降一半」这种量级去压传统数仓的报价，评估自有平台时，除了看功能对齐，还要看自家工作负载在对方新版本上的实际单位成本变化。其三，必须留意的两处口径陷阱：其一，TPU 系统销售会把原本属于云服务的需求转成一次性硬件收入，Cloud 的 103% 增速里含这一块，官方称剔除后依然强劲但未给剔除后的数字，做增速外推时不能直接用 103%；其二，欧盟罚款与 TPU 库存是本季自由现金流转负的并列原因，二者性质完全不同（一次性与经营性），把 −90.65 亿美元整体归因于算力投入会误导自己的容量规划判断。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Snowflake 的 Iceberg 表时间旅行仍是预览，版本标签的跨引擎可读性待定</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/user-guide/tables-iceberg-time-travel">Snowflake 官方文档：Iceberg 表的时间旅行（预览）</a> / <a href="https://docs.snowflake.com/en/sql-reference/sql/alter-iceberg-table-version-tag">Snowflake SQL 参考：ALTER ICEBERG TABLE … VERSION_TAG</a><br><b>为什么值得继续看：</b> A3 已把「Snowflake 给 Iceberg 表加上 Time Travel 与版本标签」列为当日最重要的信号之一，这里跟进的是它尚未确定的部分。三点。其一，转正式可用的时间表没有公布，预览态功能在采购谈判里通常不能计入承诺清单，若企业打算把回滚与审计取证流程建在这套语义上，等正式可用是必要条件。其二，版本标签的语义归属最关键：标签是 Snowflake 平台侧的对象，还是能写进 Iceberg 规范、由其他引擎识别与执行？后者才是「跨平台回滚」，前者只是「平台内回滚」，两者的架构含义完全不同。其三，标签与表保留期解耦后，标签本身成为一类需要被管理的资产——谁能创建、谁能删除、删除后快照是否立即不可达、这些动作是否留痕，这套操作权限模型在文档里没有完整交代。<br><b>需要等待什么信号确认：</b> 三点。其一，Preview 转正式可用的时间点与首发支持的功能范围（AT 子句是否完整支持 snapshot ID、引用与标签三类，以及 `GET_TABLE_VERSIONS`、`GET_TABLE_VERSION_REFS` 是否同期转正）。其二，版本标签是否进入 Iceberg 规范层或通过 Iceberg REST catalog 暴露——这是判断其他引擎能否参与同一套时间旅行语义的关键，也是本期另两条（表约束投票、跨引擎标签）能否合流的前提。其三，标签的权限与审计口径：创建、重指向、删除标签是否写入活动日志，以及删除标签后对应快照在保留期内是否仍可被其他方式访问；这直接决定这套机制能不能作为合规留痕的证据链使用。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Apache Iceberg V4 表约束与文件级 tight_stats 两项投票通过</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://dev.to/alexmercedcoder/apache-data-lakehouse-weekly-october-21-28-2026-5f15">Apache Data Lakehouse Weekly（10 月 28 日，记录 10 月 27 日两项投票结果）</a> / <a href="https://iceberg.apache.org/spec">Iceberg 规范正文：表约束与约束状态</a> / <a href="https://github.com/apache/iceberg/pull/17822">规范 PR：v4 constraints（#17822）</a><br><b>为什么值得继续看：</b> 这是上期窗口内搜到但未收录的社区投票结果，按 T-1 规则补录。10 月 27 日 Iceberg 社区通过两项 v4 规范投票：其一，Huaxin Gao 提出的表约束投票以 8 个 +1 通过（其中 5 个为 binding），为表元数据新增 check、unique、primary-key 三类约束，每类带 enforced 标志控制写入方是否必须校验，并为每个快照记录约束状态（validated、valid、invalid、unvalidated）；在 v4 中 primary key 取代 identifier field ids，升级的表会自动得到一条未强制执行的主键约束，迁移不破坏既有语义。其二，Anoop Johnson 提出的 tight_stats 投票以 9 个 binding +1 通过，把逐列的 tight_bounds 改为数据文件级的一个 tight_stats 标志，该标志同时覆盖空值计数、NaN 计数与值计数，缺失该标志时读者必须假定统计不精确；配套变化是删除向量不再自动放大统计误差，引擎也可以在不重写数据文件的情况下重新收紧统计。值得关注的不是单项改动，而是这两项投票加在一起的方向：社区周报把它概括为「把大概是准的元数据变成保证准的元数据」，而这正是查询优化器与智能体都无法自行校验的部分。<br><b>需要等待什么信号确认：</b> 三点。其一，规范正文何时随下一次规范版本正式发布、以及各引擎（Spark、Trino、Flink、引擎侧目录服务）什么时候实现读取 constraint-statuses 与 tight_stats，没有实现之前这些字段只是元数据里的声明；社区投票属于间接信号，规范落地节奏必须逐引擎跟踪。其二，一个必须实测的问题：读取方在面对 unvalidated 状态的约束时，会选择「信任声明」还是「拒绝使用声明」——这决定了主键声明到底能不能用于 join elimination 与基数估算，还是会退化为一句无人采信的注释；官方规范要求读者把未列出的约束视为 unvalidated，但未约束读者行为。其三，enforced 标志的责任边界：约束由写入方校验，而湖仓表的写入方分散在批、流、Python 作业等多个通道，「谁来保证每条通道都校验」不是规范能解决、而是平台侧必须自己立规的部分。 [补录 10-27]</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-10-29 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
