@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-04</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-04 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>大数据平台的操作入口开始整体移交对话式智能体编排层</li>
+      <li>模型调用网关转正，成本与可观测管理成为数据平台标配</li>
+      <li>数据要素制度进入国家落地节奏，AI用数治理被单独点名</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>入口在换人：厂商把平台操作面交给多智能体编排，模型调用与成本管理升格为网关标配，监管把AI用数单独写进十五五部署。三条线共同指向同一个位置，数据平台要先回答机器调用方怎么治理，再谈能力供给。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>阿里云正式推出 AI 原生大数据服务 ADA，以多智能体编排重组平台操作面</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://mp.weixin.qq.com/s?__biz=Mzk3NTEwNTIyOA==&mid=2247507261&idx=2&sn=d2b2586e42a07256374915a2703100eb&chksm=c5d4a7328d09720d64f32c2d00f69cb6afc75cf76da84ff28023ad2f4897646fe97dd58c80fb#rd">阿里云大数据AI技术：AI 原生大数据服务 ADA 正式发布</a><br><b>摘要：</b> 阿里云 11 月 3 日正式推出 AI 原生大数据服务 ADA，定位以智能体为核心的数据生产力平台。AdaWork 主智能体统一理解意图、拆解任务并调度 MaxCompute、Hologres、Flink、EMR、DataWorks 等引擎的内置 Agent，内置数据分析师、语义建模、数据工程、数据治理与智能运维等专业角色协同；语义模型、指标口径与分析经验沉淀为统一知识中枢，所有结论附引用溯源；官方称其 Agent 直接内嵌在数据系统内部，可实时感知运行状态并自主排查诊断，权限继承 RAM 体系并全程审计。产品页与帮助文档同步上线（<a href="https://www.aliyun.com/product/ada/">aliyun.com/product/ada</a>）。<br><b>为什么对数据平台重要：</b> 厂商第一次把大数据平台的操作面整体重组为多智能体协作结构：入口从控制台与 SQL 变成对话与任务编排，语义层从配套能力变成智能体回答的统一口径来源，权限与审计直接复用平台既有体系。数据平台的竞争位置从提供引擎转向提供 Agent 的调度与治理框架，语义层和口径管理成为新的必争层；同类的智能体工作台（DataWorks Data Agent、各引擎助手）从分散功能收敛为统一编排入口，跨引擎任务交付成为新的验收标准。</div>
+</div>
+<div class="item">
+    <h3>Snowflake Cortex AI Gateway 推理、可观测与成本管理正式 GA，兑现版本窗口预告</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/">Snowflake 服务器版本说明与功能更新（2026-11-03 两条）</a><br><b>摘要：</b> Snowflake 官方功能更新 11 月 3 日发布两项 GA：Cortex AI Gateway 的推理、可观测性与成本管理正式可用，Google Gemini 4 Argon 模型同日 GA；另有 CoCo for Excel 与 Google Sheets 进入 Preview。上期 E1【跟踪】的 10.40 版本窗口开始兑现：11 月 3 日出现的能力以功能更新条目形式落地，10.40 行为变更包本身仍列在 Upcoming（见本期 E3）。<br><b>为什么对数据平台重要：</b> 网关层 GA 意味着模型调用正式成为数据平台内的一等资源：用量、延迟与成本进入与计算资源同级的管控界面，多模型统一走平台网关，成本归因从账单后置变成调用前策略。数据平台的 AI 能力竞争进入「运营层」：谁先把模型调用做成可预算、可审计、可配额的资源，谁就能承接企业级 Agent 工作负载；表格端（Excel/Google Sheets）进入 Preview 则把分析入口延伸到电子表格人群。</div>
+</div>
+<div class="item">
+    <h3>国家数据局「十五五」数据要素部署：顶层文件在制定，AI 用数安全探索新型治理</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.nda.gov.cn/sjj/swdt/xwfb/1103/20261103204643794126975_pc.html">国家数据局政策和规划司负责人在国家发展改革委奋进「十五五」系列新闻发布会上答记者问</a><br><b>摘要：</b> 11 月 3 日国家发展改革委举行奋进「十五五」系列首场发布会，国家数据局政策和规划司司长栾婕介绍五方面部署：健全数据产权、流通利用、收益分配、安全治理等基础制度，数据产权登记服务系统已上线，登记凭证将在数据交易、资产入表、司法裁判中发挥可信证明作用；加快制定全国一体化数据市场顶层文件，完善流通交易规则和标准，鼓励市场化数据定价；谋划新一轮「数据要素×」三年行动；针对人工智能用数的数据安全问题探索新型治理机制，加快研究数据合规流通、匿名化等指引；建设数据跨境流动服务基础设施。<br><b>为什么对数据平台重要：</b> 「十五五」数据部署从地方规划（北京、山东规划已在此前两期收录）上升到国家层面的顶层文件节奏，数据要素市场规则、定价机制与收益分配将进入密集出台期。AI 用数被单独点名为治理对象，合规流通与匿名化指引直接影响数据平台向模型训练与智能体供给数据的合规设计；登记凭证的可信证明地位则把数据资产入表的口径进一步压实。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Azure 容器应用网关公测 MCP 网关：多 MCP 服务器聚合与网关层安全收敛</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://azure.microsoft.com/en-us/updates?id=576388">Azure Updates：Public Preview - MCP gateway for Application Gateway for Containers</a><br><b>摘要：</b> 微软 11 月 3 日公测 Application Gateway for Containers 的 MCP 网关：新增 MCPRoute 自定义资源，支持多个 MCP 服务器聚合在单一受管端点之后，网关层集中 TLS、JWT 校验、WAF 防护、后端健康检查与路由策略；聚合部署下自动合并工具、资源与提示发现响应，并对能力名做命名空间化避免冲突；支持会话亲和以承接维护内存会话状态的 MCP 服务器。<br><b>对数据平台的影响：</b> 智能体成为数据平台调用方之后，MCP 流量治理从各应用自建上移到网关层，与 API 网关治理 HTTP 流量同构。企业数据平台的 MCP 接入可以复用同一套边界控制（认证、WAF、审计、健康检查），智能体接入层开始成为基础设施标配组件；多服务器聚合与能力名命名空间化直接回应了企业内部 MCP 服务器数量膨胀后的治理问题。</div>
+</div>
+<div class="item">
+    <h3>阿里云 Dataphin 发布 V6.4：网络权限、非结构化架构升级与自然语言消费渠道</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://help.aliyun.com/zh/document_detail/2834544.html">阿里云帮助中心：Dataphin 动态与公告（2026-11-03 V6.4 版本发布）</a><br><b>摘要：</b> 阿里云 Dataphin 11 月 3 日发布 V6.4：新增网络权限功能，登录 IP 命中生效规则即令该规则配置的权限在会话中失效；登录支持对接钉钉应用；非结构化数据架构升级，引入读写算子并支持临时 OSS 存储，历史任务可运行但禁止编辑；新增 YashanDB 离线集成；Dataphin 与全域表质量规则支持按配置字段聚合校验结果并写入结果表；新增 Quick AI Pro 智能分析消费渠道，可通过自然语言对话完成数据查询、可视化分析与报告生成全流程。<br><b>对数据平台的影响：</b> 数据开发平台两条线同步推进：治理线把网络层权限纳入会话控制、把质量校验结果资产化为可查表，从部门与区域视角分析数据质量趋势；消费线把自然语言分析确立为正式消费渠道，与本期 A1 的 ADA 对话式交付同一方向。非结构化数据「可运行禁编辑」的迁移期策略是存量平台改造可参照的过渡设计。</div>
+</div>
+<div class="item">
+    <h3>火山引擎 EMR 管控平台 1.29.0：队列潮汐调度与元数据层弹性补课</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.volcengine.com/docs/6491/83954">火山引擎 E-MapReduce on ECS 动态（2026-11-03 发布 1.29.0 版本）</a><br><b>摘要：</b> 火山引擎 EMR on ECS 管控平台 11 月 3 日起在各地域陆续发布 1.29.0 版本：YARN 服务组件新增 Capacity Scheduler 与 Fair Scheduler 队列资源潮汐调度能力，并支持在控制台界面化配置两种调度器的潮汐策略；Hive Metastore 高可用实例新增扩容与缩容支持，可在控制台按需调整 HiveServer2 与 Hive Metastore 高可用部署规模；集群引导操作新增服务组件级执行范围，可设置执行策略并选择在组件安装前或启动后触发。<br><b>对数据平台的影响：</b> 潮汐调度把队列资源随业务波峰波谷弹性伸缩变成产品能力，直接对应弹性场景的算力成本优化；Hive Metastore 扩缩容补齐元数据层的弹性短板，使存算分离架构下元数据服务不再是不随负载伸缩的固定开销。三项均为运维效率维度的小步迭代，非方向性变化。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>摩根士丹利：三大云三季度营收增速再加快，竞争延伸到数据分析与企业 AI 应用层</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-11-03/doc-inixnpzn9832966.shtml">新浪财经：大摩研报——AI 热潮带动云计算需求全面加速（2026-11-03）</a><br><b>核心观点：</b> 摩根士丹利 11 月 3 日研报：三大云服务商三季度合计营收约 1099 亿美元、同比增长 55.7%（二季度为 47.9%）；AWS 固定汇率同比 +39%，连续六个季度加速；Azure 同比 +48%；Google Cloud 同比约 +103%，剔除 TPU 系统销售后核心业务约 +71%。亚马逊称 AI 推理业务已占其 AI 收入一半以上，AgentCore 本季度部署的智能体数量为此前三季度合计的两倍；微软 Foundry 平台收入同比增长超两倍，Agent365 登记智能体超 5000 万个、环比增逾 30%；Alphabet 称 BigQuery 查询速度同比提升超 40%、查询处理成本下降超 50%。大摩判断：云竞争正从底层计算资源延伸至数据分析和企业 AI 应用层；智能体若能直接查询企业数据平台，反而可能进一步增加平台使用量。<br><b>映射到数据平台的判断：</b> 云巨头财报口径首次把智能体数量与推理收入占比作为增长叙事的主角，数据平台被夹在两条曲线之间：上游算力被模型研发优先占用，下游分析层被云巨头自营能力挤压（亚马逊把 DuckDB 定位为存储分析的通用查询语言、BigQuery 提速降价）。采购逻辑需要同时评估算力供给的优先级风险与平台自营分析替代独立数据平台的风险；而智能体带来的查询增量是数据平台厂商在财报季可以讲的新故事。</div>
+</div>
+<div class="item">
+    <h3>皮查伊：算力优先给前沿模型研发，云业务让渡短期收入</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.infoq.cn/article/JmVl0yY2RYIBNpuD0xuu">InfoQ：谷歌宁愿少卖云算力，也要先把算力留给 Gemini（2026-11-03 编译 Big Technology Podcast 访谈）</a><br><b>核心观点：</b> 谷歌 CEO 皮查伊在 Big Technology Podcast 访谈中披露：Gemini 4 Argon 上线后前 72 小时 token 消耗接近 25 万亿，约为 Gemini 3.0 同期的三倍；为保障前沿模型研发，谷歌已将算力优先分配给 AI 研究团队，云业务因此放弃部分短期收入。他同时表示谷歌内部不再以「AI 写代码比例」为核心指标，Gemini 4 Argon 发布后四周内代码变更提交量增加约 30%、回滚次数减少约三分之一，转向实效性工程指标。<br><b>映射到数据平台的判断：</b> 算力在前沿模型研发与对外云收入之间出现了显式的内部定价与让渡次序：自有模型优先，客户负载靠后。这给企业数据平台的算力与配额规划提出新的评估项：厂商自用需求（尤其是模型迭代冲刺期）会挤占对外供给，容量承诺、价格稳定性与降级条款应写进采购谈判；「厂商把算力留给自家模型」从猜测变成了厂商自述。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】观测云完成 A 轮与 A+ 轮合计近亿元融资，与驻云信息拆分独立运营</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.pedaily.cn/202611/571267.shtml">投资界：观测云完成近亿元 A 轮、A+ 轮融资（2026-11-03）</a><br><b>核心数据：</b> A 轮由方广资本领投、千合资本与常州科教城跟投，A+ 轮由方广资本追加，两轮合计近亿元；观测云已完成与驻云信息的拆分、独立公司运营；近一年营收高速增长，海外收入占比超六成，目标 2027 年提升至 70%；已进入东南亚与非洲市场。<br><b>摘要：</b> 观测云定位 AI 时代的全域数据观测平台，覆盖 App、Web、后端、中间件、基础设施与云平台全链路监控，集成 650 余个主流技术栈与云服务。本轮资金主要投入产品研发、AI 能力建设与海外市场拓展。<br><b>对数据平台的影响：</b> 可观测性是智能体用量归因与数据平台成本归因的配套层：当智能体成为数据平台主要调用方，调用链、任务执行记录与推理成本的持续监控从运维辅助变成计费与治理依赖。该层获得独立融资并确认拆分运营，说明「观测」作为数据基础设施独立品类的商业化路径成立，数据平台厂商自建可观测与外采观测平台之间的边界会继续重划。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Snowflake 被报道推出常驻自主运行的 AI 智能体（暂未见官方对应公告页）</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.qq.com/rain/a/20261104A001QH00">腾讯新闻转 IT 时代网：Snowflake 推出常驻自主 AI 智能体（11-03 消息）</a><br><b>为什么值得继续看：</b> 报道称该智能体无需显式指令即可在后台自主规划并执行任务，定位企业「AI 同事」。⚠️ 本期未检索到 Snowflake 官方文档或 release notes 中的对应公告条目（11 月 3 日官方功能更新列表无此命名产品），按二手报道收录跟踪。若为正式产品，数据平台的智能体形态将从会话式问答转向后台自主执行，权限边界（受限会话范围已于 10 月底 GA）与计费归因将承受直接压力。<br><b>需要等待什么信号确认：</b> 官方文档或 release notes 出现对应产品页；与 CoWork、Cortex Agents 的产品关系说明；后台自主执行的任务类型与配额策略。</div>
+</div>
+<div class="item">
+    <h3>【降级】谷歌云 Knowledge Catalog 语义层三连：LookML 索引 GA、自学习富化与 Gemini Enterprise 打通 Snowflake</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/business-intelligence/lookml-metadata-indexing-in-knowledge-catalog-is-now-ga">谷歌云官方博客：LookML in Knowledge Catalog is now GA（原始发布 2026-10-26，超窗）</a><br><b>为什么值得继续看：</b> 三项发布均超本期窗口（10-26/10-27），因与本期主线直接相关降级收录：一是 LookML 语义元数据索引 GA，把 Looker 生产验证的 KPI 公式、join 路径与过滤规则实时索引进 Knowledge Catalog，供 Gemini Enterprise 与自定义 Agent 复用，防 text-to-SQL 指标定义漂移；二是 <a href="https://cloud.google.com/blog/products/data-analytics/knowledge-catalog-self-learning-context-enrichment-for-ai-agents">Knowledge Catalog 自学习上下文富化</a>面向 AI Agent 持续沉淀语境；三是 <a href="https://cloud.google.com/blog/products/data-analytics/bridge-gemini-enterprise-and-snowflake-with-google-adk">经 MCP 与 ADK 打通 Gemini Enterprise 与 Snowflake</a>，由 Cortex 生成 SQL 并以用户级权限执行。语义层正从 BI 配套变成智能体的确定性上下文来源，目录层成为跨平台语义竞争的主战场，与上期跨云目录趋势同向。<br><b>需要等待什么信号确认：</b> Looker 客户把语义索引迁移进目录的实际案例；自学习富化的 GA 时间；Snowflake 侧是否推出对称的语义出口能力。</div>
+</div>
+<div class="item">
+    <h3>【降级】AWS Aurora MySQL 双版本 GA 与 RDS 按快照计费（发布于窗口外数小时）</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/recent/feed/">AWS What's New 官方 RSS（2026-11-02 条目，GMT 时间戳）</a><br><b>为什么值得继续看：</b> 三项发布原始时间戳为 11 月 2 日 17:00-18:43 GMT，比本期窗口起点早 7 至 15 小时，按降级收录：Aurora MySQL 8.4.10 GA（新增 GTID 标签支持、单实例最高 50000 并发连接）、Aurora MySQL 3.14 GA（兼容 MySQL 8.0.46、新增后量子 TLS 密钥交换）、RDS 快照按快照计费（默认启用、经成本分配标签归因到单个快照）。并发连接上限与快照级成本归因直接影响云数据库的容量规划与成本模型，PQ-TLS 则是加密迁移节奏的前置信号。<br><b>需要等待什么信号确认：</b> 8.4.10 在生产集群的升级采用情况；按快照计费上线后企业快照保留策略与存储账单的实际变化；后量子 TLS 的强制时间表。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-04 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
