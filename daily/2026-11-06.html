@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-06</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-06 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>并购正在把交易与分析引擎装进同一个数据底座。</li>
+      <li>面向智能体的对象存储成为厂商竞逐的新市场。</li>
+      <li>语义层与访问边界成为跨生态互通的竞争焦点。</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天的重头在资产层：数据库、存储与分析引擎正通过并购重组为面向智能体的多引擎底座，开源两大引擎合并、消费级存储厂商反向进入、专业分析数据库持续吸金同时发生，智能体基础设施的争夺已从产品功能下沉到并购与资本开支。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>EDB 收购 Altinity：Postgres 与 ClickHouse 两大开源引擎团队合并</h3>
+    <div class="source">来源：<a href="https://www.enterprisedb.com/press-releases/edb-acquires-altinity-bring-together-two-leading-open-source-databases-advancing-its">EDB 官方新闻稿</a></div>
+    <div class="body"><b>摘要：</b> EDB 于 11 月 5 日宣布收购 ClickHouse 生态头部服务商 Altinity，交易金额未披露。Altinity 团队整体并入 EDB 成为其实时分析部门，Postgres 第一大商业贡献者与 ClickHouse 第二大贡献者就此合并，双方合计服务超 1,860 家企业客户。整合路线包括在 EDB Postgres AI 平台内统一事务、实时分析与智能体负载，四季度推出集成企业版 ClickHouse 能力，并规划共享 Apache Iceberg 目录与跨引擎一致的访问控制。<br><b>为什么对数据平台重要：</b> 事务与实时分析的引擎边界正在被并购动作打破，「一个数据层承载智能体负载」从路线图叙事变成资产整合。对采购方而言，Postgres 加 ClickHouse 组合的多模型一体化将直接影响数据库选型、开源商定支持服务的成本谈判与厂商合并评估。</div>
+</div>
+<div class="item">
+    <h3>Dropbox 宣布 3.5 亿美元收购 Tigris Data，同步推出 DBX Agent Cloud</h3>
+    <div class="source">来源：<a href="https://dropbox.gcs-web.com/news-releases/news-release-details/dropbox-announces-plans-acquire-tigris-data-inc-and-unveils-dbx">Dropbox 投资者关系新闻稿</a></div>
+    <div class="body"><b>摘要：</b> Dropbox 于 11 月 5 日宣布拟以 3.5 亿美元收购全球分布式对象存储平台 Tigris Data，交易预计四季度交割，同时发布 DBX Agent Cloud——以独立 S3 兼容对象存储起步、面向构建 AI 应用与智能体的企业和开发者的存储与数据层，后续计划扩展文件系统与内容处理能力。同日发布的三季度财报显示营收 6.373 亿美元、同比增长 0.5%。<br><b>为什么对数据平台重要：</b> 消费级存储厂商携现金流与海量用户基础反向进入 AI 对象存储市场，S3 兼容存储层的竞争者增加，意味着智能体基础设施的存储议价权趋于分散，跨云数据放置与可移植性将成为新的采购考量维度。</div>
+</div>
+<div class="item">
+    <h3>Databricks 打开跨生态接入面：Power BI 语义模型进 Genie，伙伴平台入策略白名单</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/november">Databricks 2026 年 11 月发布说明</a></div>
+    <div class="body"><b>摘要：</b> Databricks 11 月 5 日发布三项更新：外部知识源进入 Beta，可把 Power BI 语义模型的元数据与度量定义拉入 Databricks 供 Genie 回答时引用；上下文入口策略新增放行 Power BI、Tableau Cloud、dbt Cloud 及 Genie 的 Slack 与 Teams 应用，平台侧自动维护伙伴地址；SSH 隧道会话可运行 Claude Code 与 Codex，模型请求经 Unity Gateway 走 SSH 凭证认证。<br><b>为什么对数据平台重要：</b> 语义定义与访问边界开始跨生态流动，微软语义层资产可直接喂养 Databricks 智能体，厂商围墙的数据面被从治理侧凿开。对多平台并存的企业，语义层归属与入口策略审计将成为架构治理的新决策点。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake Iceberg 表存储备份转正，托管 MCP 服务器支持智能体后台运行 [补录 11-04]</h3>
+    <div class="source">来源：<a href="https://docs.snowflake.com/en/release-notes/all-release-notes">Snowflake 发布说明</a></div>
+    <div class="body"><b>摘要：</b> Snowflake 11 月 4 日功能更新：Snowflake Storage for Apache Iceberg 表与使用该存储的动态 Iceberg 表在 AWS 上备份能力正式 GA；托管 MCP 服务器中 CORTEX_AGENT_RUN 与 CODING_AGENT 工具新增后台运行参数，调用立即返回句柄供轮询；HTML 报告进入公开预览，可由 CoCo 与 CoWork 生成并作为制品分享。<br><b>对数据平台的影响：</b> Iceberg 存储备份 GA 补齐开放表格式进入生产的关键运维短板，动态表与静态表统一备份降低了湖仓表的上生产门槛；MCP 服务器原生支持后台任务，说明平台开始把智能体当作一等调度对象而非一次性调用方。</div>
+</div>
+<div class="item">
+    <h3>AWS S3 Tables 提供数据湖现代化托管迁移路径 [补录 11-04]</h3>
+    <div class="source">来源：<a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-managed-migration-hive-to-iceberg/">AWS What's New</a></div>
+    <div class="body"><b>摘要：</b> AWS 11 月 4 日宣布 S3 Tables 为数据湖现代化提供简单低成本路径，并新增六个 API 支持把 AWS Glue Data Catalog 中的表迁移进 S3 表桶（含 StartTableMigration、SyncTableMigration 等），由服务托管迁移流程。<br><b>对数据平台的影响：</b> 迁移工具链由厂商托管后，存量 Hive 湖表向 Iceberg 集中的摩擦显著下降，Iceberg 的集中度会进一步抬升；对多目录并存的企业，目录层的整合与收敛时点可以开始纳入架构规划。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】Ocient 完成 1 亿美元 C 轮，押注 PB 级智能体分析</h3>
+    <div class="source">来源：<a href="https://www.businesswire.com/news/home/20261105209219/en/">Business Wire 新闻稿</a></div>
+    <div class="body"><b>核心数据：</b> C 轮 1 亿美元，BOKA Capital 与 OCA Ventures 联合领投，老股东全部跟投，累计融资 2.6 亿美元；公司预计本财年收入增长超两倍，上一财年已翻倍。<br><b>摘要：</b> 这家芝加哥分析数据库厂商 11 月 5 日官宣融资，主打免采样的 PB 级数据分析，OcientAIQ 统一数据平台把摄取、治理、智能与智能体编排收进单一引擎，分析在存储引擎内原生执行而非外接大模型。客户集中在电信与国家安全机构，管理层称客户需求正转向本地化部署以控制云支出并满足主权要求。<br><b>对数据平台的影响：</b> 资本继续流向「引擎内执行智能体分析」路线，验证免采样超大规模分析与主权部署的组合存在独立市场；分析负载回流本地的趋势，为混合部署型平台提供了新的定价与部署形态参照。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Dropbox 收购 Tigris 交割与 DBX Agent Cloud 扩展节奏</h3>
+    <div class="source">来源：<a href="https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure">TechCrunch 报道</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 交易预计四季度交割，DBX Agent Cloud 目前仅在美国、英国、澳大利亚向部分标准版与高级版客户开放，更大范围可用计划在 2027 年；Tigris 此前仅完成 2,500 万美元 A 轮融资，并入后产品路线如何与 Dropbox 近二十年的存储运营经验整合、是否维持跨云中立定位，都待验证。<br><b>需要等待什么信号确认：</b> 交割完成公告、DBX Agent Cloud 的正式 GA 与定价文件、首批企业级客户案例。</div>
+</div>
+<div class="item">
+    <h3>【降级】Fabric 数据智能体标准运行时升级窗口与默认模型切换</h3>
+    <div class="source">来源：<a href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Advanced-NL2SQL-and-advanced-DAX-generation-in-Fabric-data/ba-p/5374654">Microsoft Fabric 更新博客</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 高级 NL2SQL 与高级 DAX 生成将推送至标准运行时，内部基准显示智能回答准确率从 78.8% 升至 90.9%，DAX 生成 P50 延迟约降 48%；标准运行时同步切换至 GPT-5.6 Terra，升级预计 11 月 10 日至 14 日陆续到达各环境。原功能 10 月 19 日已 GA，超出当期窗口故降级收录，但升级时间表与默认模型切换将直接改变存量数据智能体的行为基线。<br><b>需要等待什么信号确认：</b> 各租户实际收到升级的时间点，以及官方关于 GPT-5.6 Terra 切换后的行为变更说明与用户重测反馈。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-06 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
