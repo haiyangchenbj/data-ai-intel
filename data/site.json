@@ -11534,6 +11534,96 @@
       "source": "Microsoft Fabric 更新博客",
       "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Advanced-NL2SQL-and-advanced-DAX-generation-in-Fabric-data/ba-p/5374654",
       "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Apache Spark 4.3.0 发布：有状态实时处理进入开源主线，发版节奏转为季度",
+      "summary": "来源： Apache Spark 官方发布说明摘要： Spark 4.3.0 于 10 月 30 日发布，11 月 5 日 Databricks 发表官方工程博客宣布其进入 Databricks Runtime 19。本版把流式聚合、dropDuplicates 与 transformWithState 有状态算子接入 Real-Time Mode，官方三项基准的 P99 端到端延迟为 136-141 毫秒（厂商自测口径，仅覆盖受测负载）；同时宣布功能版本节奏从每半年一次改为每季度一次。本版解决超 1100 个 Jira 工单，来自 210 余名贡献者。为什么对数据平台重要： 亚秒级流处理从此是通用引擎的内置能力而非独立引擎的专属卖点，为毫秒级延迟单独维护 Flink 类系统的必要性被实质性削弱；季度发版节奏也意味着下游平台的跟进与兼容测试周期需要同步缩短。[补录 11-05]",
+      "source": "Apache Spark 官方发布说明",
+      "url": "https://spark.apache.org/releases/spark-release-4-3-0.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "阿里云",
+      "module": "专题",
+      "title": "IDC：阿里云以 23.5% 份额首次跃居中国大数据平台整体市场第一",
+      "summary": "来源： IDC《中国大数据平台市场份额，2025》（新浪财经）摘要： IDC 于 11 月 6 日集中发布多份大数据市场研究报告。其中《中国大数据平台市场份额，2025》显示，阿里云以 23.5% 的整体份额首次跃居大数据平台市场第一，公有云子市场份额超过第二至第四名之和；2025 年中国公有云大数据平台市场规模约 117.1 亿元，同比增长约 39%。同期发布的《数据治理平台市场份额》中阿里云连续五年第一（33.1%），Agent Data Lake 能力评估获 10 项维度中 9 项满分，Data Agent MarketScape 位列领导者。报告数据经阿里云公关渠道传播，厂商自述成分需在引用时注意。为什么对数据平台重要： 中国市场座次整体易位叠加 Agent Data Lake、Data Agent 等新评估类目集中发布，说明国内竞争的记分牌已从传统湖仓规模转向智能体数据底座能力，政企采购的短名单基准需要同步更新。",
+      "source": "IDC《中国大数据平台市场份额，2025》（新浪财经）",
+      "url": "https://finance.sina.cn/2026-11-06/detail-inixuqhu4985968.d.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "AWS",
+      "module": "技术",
+      "title": "Amazon Redshift SUPER 类型支持最大 1600 万字节单字符串",
+      "summary": "来源： AWS What's New摘要： 11 月 6 日，AWS 宣布 Redshift SUPER 半结构化数据类型支持单个字符串最大 1600 万字节，此前上限为 65535 字节，通过数据库参数选择启用。增强覆盖 JSON、Parquet、TEXT、CSV 的摄入与 ELT 转换，JSON_PARSE、CONCAT、LISTAGG 等函数同步支持大字符串，全部商用区域（含 GovCloud）可用。对数据平台的影响： 合同、条款类大文档此前需要预拆分或截断才能进数仓，现在可直接入库并用 SQL/PartiQL 查询，半结构化数据直接查询的适用边界明显外扩，预处理管道可以进一步简化。",
+      "source": "AWS What's New",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-redshift-expands-super-to-16-million-bytes/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "AWS",
+      "module": "技术",
+      "title": "AWS Glue 数据目录支持 Iceberg REST 联合中的外部目录 vended credentials",
+      "summary": "来源： AWS What's New摘要： AWS Glue Data Catalog 在 Iceberg REST 目录联合中新增对外部目录签发凭证（vended credentials）的支持：查询引擎使用外部目录提供的、限定 S3 存储前缀的临时凭证，只能读取外部目录授权的表。Athena、EMR、Redshift 与 Glue 均可使用该方式，行级权限仍由 Lake Formation 统一管理，全商用区域可用。对数据平台的影响： 此前外部目录联合依赖对 S3 桶有宽权限的 IAM 角色，权限边界比目录授权更宽；凭证下发把跨目录访问的授权收敛到数据所在目录层执行，多目录混用环境的最小权限落地成本显著降低。",
+      "source": "AWS What's New",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/glue-catalog-vended-credentials-iceberg/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "BigQuery 图查询 GQL 支持按需计费，八月收紧的口径回摆",
+      "summary": "来源： BigQuery 发布说明摘要： Google Cloud 在 11 月 6 日的 BigQuery 发布说明中宣布，GQL 图查询支持按需计费运行；此前 8 月曾公告按需项目的核心图处理将于 2027 年 4 月 26 日终止、GQL 必须使用企业版及以上预留。本次变更使不购买预留的项目可直接以按扫描量计费方式试用 BigQuery Graph（8 月 31 日已 GA）；发布说明未说明旧的按需终止日期是否一并撤销。对数据平台的影响： 计费口径从「必须预留」回摆到「按需可用」，降低了图分析试用与试点成本；但终止公告未撤销形成政策不确定性，图负载的产能规划需要同时按两种口径对冲。",
+      "source": "BigQuery 发布说明",
+      "url": "https://cloud.google.com/bigquery/docs/release-notes",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "Databricks 发布说明：元数据目录可恢复 API 与 JDBC 驱动 Maven 安装",
+      "summary": "来源： Databricks 2026 年 11 月发布说明摘要： 11 月 6 日，Databricks 发布两项 Unity Catalog 更新：账号管理员可在元数据目录删除后五天内通过 REST API 按 ID 恢复（公共预览）；JDBC 目录连接的驱动可改用 Maven 坐标安装，无需再上传至 Volume（需 Serverless、Runtime 19+ 或 SQL Warehouse 2026.43+）。11 月 5 日上线的目录内 Wiki 协作文档（Beta）允许团队在 Catalog Explorer 中记录表的口径、用途与来源。对数据平台的影响： 元存储误删从不可逆事故变为五天可恢复操作，目录层容灾能力补齐；Wiki 把业务口径沉淀到目录本体，是语义层治理从外挂系统收回平台内建的又一动作。",
+      "source": "Databricks 2026 年 11 月发布说明",
+      "url": "https://docs.databricks.com/aws/pt/release-notes/product/2026/november",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "中国移动发布磐维数据库 V4.0，主打 AI 原生一体化架构",
+      "summary": "来源： 运营商财经网（网易号）摘要： 11 月 5 日，中国移动在 2026 移动网络大会发布磐维数据库 V4.0，提出内核、数据、研产、认知、资源五个一体化的 AI 原生架构：同一内核承载交易与分析负载，一套系统同时管理业务数据与 AI 知识记忆，认知一体化把分散的业务口径统一标注供人与智能体调用，厂商称相关应用场景 Token 开销降低 50%（自述口径）。启明星辰、亚信科技等生态伙伴同步宣布适配合作。对数据平台的影响： 运营商系自研数据库全面转向智能体优先设计，与云厂商的 Agent Data Lake、AI 原生数据库叙事合流，政企市场的国产数据库选型开始按智能体底座能力重新分级。[补录 11-05]",
+      "source": "运营商财经网（网易号）",
+      "url": "https://www.163.com/dy/article/LB4KQ0F80511BBQE.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "腾讯",
+      "module": "机构",
+      "title": "【降级】Gartner 数据集成工具魔力象限发布，预测 2028 年六成集成任务自主完成",
+      "summary": "来源： 腾讯网转载 Denodo 公告为什么值得继续看： 2026 年 Gartner 数据集成工具魔力象限报告本体于 11 月 2 日发布（超窗口，降级收录），Denodo 连续第七年、Qlik 第十一次居领导者，两家厂商自宣集中在 11 月 6 日。报告预测到 2028 年 60% 的数据集成任务将自主完成，释放数据工程师 20% 的时间。需要等待什么信号确认： 等待头部厂商在下一代产品中把「集成任务自主执行」从营销口径落成可计量的产品能力（如自治管道修复、语义映射自动化），以及国内厂商在同类评估中的座次变化。",
+      "source": "腾讯网转载 Denodo 公告",
+      "url": "https://new.qq.com/rain/a/20261106A04CZ000",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-09",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "【降级】谷歌云 Data Cloud 连接器预览：Gemini 以用户身份联邦查询企业数据",
+      "summary": "来源： 谷歌云官方博客为什么值得继续看： 谷歌云 11 月 6 日宣布 Data Cloud connectors 进入预览：Gemini 可直接以自然语言查询 BigQuery（预览）、Spanner、AlloyDB、Cloud SQL（预览）与 Looker（预览），每个连接器由第一方 MCP 服务器驱动，联邦模式下以用户自身凭证原地查询、不复制数据，行级权限沿用数据库既有策略，BigQuery 连接器还把跨云 Iceberg/Delta/Parquet 开放表纳入同一对话接口。属 11 月 4 日 Agentic Data Cloud 同一产品线的延伸发布，故降级收录不单独成主条。需要等待什么信号确认： 等待各连接器从预览转正的时间线，以及复杂事务库上的准确率边界说明是否随 GA 更新；跨云直查部分的配额与计费口径待官方补充。",
+      "source": "谷歌云官方博客",
+      "url": "https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors",
+      "conf": ""
     }
   ],
   "archive": [
@@ -11700,7 +11790,8 @@
     "2026-11-03",
     "2026-11-04",
     "2026-11-05",
-    "2026-11-06"
+    "2026-11-06",
+    "2026-11-09"
   ],
   "monthly": [
     {
@@ -11737,6 +11828,11 @@
       "ym": "2026-09",
       "file": "monthly/Data+AI_Monthly_Report_2026-09.html",
       "title": "Data+AI 情报月报 2026-09"
+    },
+    {
+      "ym": "2026-10",
+      "file": "monthly/Data+AI_Monthly_Report_2026-10.html",
+      "title": "Data+AI 情报月报 2026-10"
     }
   ],
   "reports": [

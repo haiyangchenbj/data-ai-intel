@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-09</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-09 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>开源引擎把实时处理收编为主线，功能版节奏从半年提到一季</li>
+      <li>中国数据平台市场座次整体易位，评估重心转向智能体数据底座</li>
+      <li>数据访问的凭证与权限正下沉到目录与存储层统一执行</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>周末窗口信息平淡，但三条主线清晰：开源引擎加速把实时能力收编为默认路径，中国大数据平台市场座次出现整体易位，访问治理则从各引擎各自为政转向目录与存储层统一执行。采购侧应把发版节奏与治理收敛同时纳入选型权重。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Apache Spark 4.3.0 发布：有状态实时处理进入开源主线，发版节奏转为季度</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://spark.apache.org/releases/spark-release-4-3-0.html">Apache Spark 官方发布说明</a><br><b>摘要：</b> Spark 4.3.0 于 10 月 30 日发布，11 月 5 日 Databricks 发表官方工程博客宣布其进入 Databricks Runtime 19。本版把流式聚合、dropDuplicates 与 transformWithState 有状态算子接入 Real-Time Mode，官方三项基准的 P99 端到端延迟为 136-141 毫秒（厂商自测口径，仅覆盖受测负载）；同时宣布功能版本节奏从每半年一次改为每季度一次。本版解决超 1100 个 Jira 工单，来自 210 余名贡献者。<br><b>为什么对数据平台重要：</b> 亚秒级流处理从此是通用引擎的内置能力而非独立引擎的专属卖点，为毫秒级延迟单独维护 Flink 类系统的必要性被实质性削弱；季度发版节奏也意味着下游平台的跟进与兼容测试周期需要同步缩短。[补录 11-05]</div>
+</div>
+<div class="item">
+    <h3>IDC：阿里云以 23.5% 份额首次跃居中国大数据平台整体市场第一</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://finance.sina.cn/2026-11-06/detail-inixuqhu4985968.d.html">IDC《中国大数据平台市场份额，2025》（新浪财经）</a><br><b>摘要：</b> IDC 于 11 月 6 日集中发布多份大数据市场研究报告。其中《中国大数据平台市场份额，2025》显示，阿里云以 23.5% 的整体份额首次跃居大数据平台市场第一，公有云子市场份额超过第二至第四名之和；2025 年中国公有云大数据平台市场规模约 117.1 亿元，同比增长约 39%。同期发布的《数据治理平台市场份额》中阿里云连续五年第一（33.1%），Agent Data Lake 能力评估获 10 项维度中 9 项满分，Data Agent MarketScape 位列领导者。报告数据经阿里云公关渠道传播，厂商自述成分需在引用时注意。<br><b>为什么对数据平台重要：</b> 中国市场座次整体易位叠加 Agent Data Lake、Data Agent 等新评估类目集中发布，说明国内竞争的记分牌已从传统湖仓规模转向智能体数据底座能力，政企采购的短名单基准需要同步更新。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Amazon Redshift SUPER 类型支持最大 1600 万字节单字符串</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-redshift-expands-super-to-16-million-bytes/">AWS What's New</a><br><b>摘要：</b> 11 月 6 日，AWS 宣布 Redshift SUPER 半结构化数据类型支持单个字符串最大 1600 万字节，此前上限为 65535 字节，通过数据库参数选择启用。增强覆盖 JSON、Parquet、TEXT、CSV 的摄入与 ELT 转换，JSON_PARSE、CONCAT、LISTAGG 等函数同步支持大字符串，全部商用区域（含 GovCloud）可用。<br><b>对数据平台的影响：</b> 合同、条款类大文档此前需要预拆分或截断才能进数仓，现在可直接入库并用 SQL/PartiQL 查询，半结构化数据直接查询的适用边界明显外扩，预处理管道可以进一步简化。</div>
+</div>
+<div class="item">
+    <h3>AWS Glue 数据目录支持 Iceberg REST 联合中的外部目录 vended credentials</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/glue-catalog-vended-credentials-iceberg/">AWS What's New</a><br><b>摘要：</b> AWS Glue Data Catalog 在 Iceberg REST 目录联合中新增对外部目录签发凭证（vended credentials）的支持：查询引擎使用外部目录提供的、限定 S3 存储前缀的临时凭证，只能读取外部目录授权的表。Athena、EMR、Redshift 与 Glue 均可使用该方式，行级权限仍由 Lake Formation 统一管理，全商用区域可用。<br><b>对数据平台的影响：</b> 此前外部目录联合依赖对 S3 桶有宽权限的 IAM 角色，权限边界比目录授权更宽；凭证下发把跨目录访问的授权收敛到数据所在目录层执行，多目录混用环境的最小权限落地成本显著降低。</div>
+</div>
+<div class="item">
+    <h3>BigQuery 图查询 GQL 支持按需计费，八月收紧的口径回摆</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/bigquery/docs/release-notes">BigQuery 发布说明</a><br><b>摘要：</b> Google Cloud 在 11 月 6 日的 BigQuery 发布说明中宣布，GQL 图查询支持按需计费运行；此前 8 月曾公告按需项目的核心图处理将于 2027 年 4 月 26 日终止、GQL 必须使用企业版及以上预留。本次变更使不购买预留的项目可直接以按扫描量计费方式试用 BigQuery Graph（8 月 31 日已 GA）；发布说明未说明旧的按需终止日期是否一并撤销。<br><b>对数据平台的影响：</b> 计费口径从「必须预留」回摆到「按需可用」，降低了图分析试用与试点成本；但终止公告未撤销形成政策不确定性，图负载的产能规划需要同时按两种口径对冲。</div>
+</div>
+<div class="item">
+    <h3>Databricks 发布说明：元数据目录可恢复 API 与 JDBC 驱动 Maven 安装</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/pt/release-notes/product/2026/november">Databricks 2026 年 11 月发布说明</a><br><b>摘要：</b> 11 月 6 日，Databricks 发布两项 Unity Catalog 更新：账号管理员可在元数据目录删除后五天内通过 REST API 按 ID 恢复（公共预览）；JDBC 目录连接的驱动可改用 Maven 坐标安装，无需再上传至 Volume（需 Serverless、Runtime 19+ 或 SQL Warehouse 2026.43+）。11 月 5 日上线的目录内 Wiki 协作文档（Beta）允许团队在 Catalog Explorer 中记录表的口径、用途与来源。<br><b>对数据平台的影响：</b> 元存储误删从不可逆事故变为五天可恢复操作，目录层容灾能力补齐；Wiki 把业务口径沉淀到目录本体，是语义层治理从外挂系统收回平台内建的又一动作。</div>
+</div>
+<div class="item">
+    <h3>中国移动发布磐维数据库 V4.0，主打 AI 原生一体化架构</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.163.com/dy/article/LB4KQ0F80511BBQE.html">运营商财经网（网易号）</a><br><b>摘要：</b> 11 月 5 日，中国移动在 2026 移动网络大会发布磐维数据库 V4.0，提出内核、数据、研产、认知、资源五个一体化的 AI 原生架构：同一内核承载交易与分析负载，一套系统同时管理业务数据与 AI 知识记忆，认知一体化把分散的业务口径统一标注供人与智能体调用，厂商称相关应用场景 Token 开销降低 50%（自述口径）。启明星辰、亚信科技等生态伙伴同步宣布适配合作。<br><b>对数据平台的影响：</b> 运营商系自研数据库全面转向智能体优先设计，与云厂商的 Agent Data Lake、AI 原生数据库叙事合流，政企市场的国产数据库选型开始按智能体底座能力重新分级。[补录 11-05]</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】Gartner 数据集成工具魔力象限发布，预测 2028 年六成集成任务自主完成</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://new.qq.com/rain/a/20261106A04CZ000">腾讯网转载 Denodo 公告</a><br><b>为什么值得继续看：</b> 2026 年 Gartner 数据集成工具魔力象限报告本体于 11 月 2 日发布（超窗口，降级收录），Denodo 连续第七年、Qlik 第十一次居领导者，两家厂商自宣集中在 11 月 6 日。报告预测到 2028 年 60% 的数据集成任务将自主完成，释放数据工程师 20% 的时间。<br><b>需要等待什么信号确认：</b> 等待头部厂商在下一代产品中把「集成任务自主执行」从营销口径落成可计量的产品能力（如自治管道修复、语义映射自动化），以及国内厂商在同类评估中的座次变化。</div>
+</div>
+<div class="item">
+    <h3>【降级】谷歌云 Data Cloud 连接器预览：Gemini 以用户身份联邦查询企业数据</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors">谷歌云官方博客</a><br><b>为什么值得继续看：</b> 谷歌云 11 月 6 日宣布 Data Cloud connectors 进入预览：Gemini 可直接以自然语言查询 BigQuery（预览）、Spanner、AlloyDB、Cloud SQL（预览）与 Looker（预览），每个连接器由第一方 MCP 服务器驱动，联邦模式下以用户自身凭证原地查询、不复制数据，行级权限沿用数据库既有策略，BigQuery 连接器还把跨云 Iceberg/Delta/Parquet 开放表纳入同一对话接口。属 11 月 4 日 Agentic Data Cloud 同一产品线的延伸发布，故降级收录不单独成主条。<br><b>需要等待什么信号确认：</b> 等待各连接器从预览转正的时间线，以及复杂事务库上的准确率边界说明是否随 GA 更新；跨云直查部分的配额与计费口径待官方补充。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-09 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
