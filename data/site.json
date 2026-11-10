@@ -11624,6 +11624,56 @@
       "source": "谷歌云官方博客",
       "url": "https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors",
       "conf": ""
+    },
+    {
+      "date": "2026-11-10",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "ClickHouse 宣布平台史上最大扩张：Managed Postgres GA、收购 Xata，观测与安全负载并入",
+      "summary": "来源： ClickHouse 官方博客摘要： ClickHouse 于 11 月 9 日宣布自 ClickHouse Cloud 发布以来最大规模的平台扩张：Managed Postgres 正式 GA（NVMe 存储、原生 CDC 亚秒级复制数据进入 ClickHouse、pg_clickhouse 扩展），并收购 agent-native Postgres 公司 Xata，加速即时数据库分支、克隆与 scale-to-zero 能力，为 AI Agent 规划专用服务层。同期推出 ClickHouse Observability 公测（OpenTelemetry 接入的托管日志、指标、追踪服务）、基于 RunReveal 技术的 ClickHouse Security 私测（Agentic SIEM），以及开源 Langfuse AI Gateway 公测。公司称客户已超 5000 家，包括 DoorDash、Meta、Tesla、Visa 等。为什么对数据平台重要： 主流开源分析引擎正式转向\"交易＋分析＋观测＋安全＋AI 工程\"一体化平台，与 Snowflake、Databricks 的平台化路线正面对位。Xata 的 agent-native Postgres 能力表明\"为 Agent 提供按需隔离的数据库环境\"正在成为独立产品分层，采购评估的权重从单引擎查询性能转向负载覆盖面与 Agent 治理能力。",
+      "source": "ClickHouse 官方博客",
+      "url": "https://clickhouse.com/blog/announcing-clickhouse-platform-largest-expansion",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-10",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 四项 Genie 能力同日 GA：业务本体、组织搜索与 Teams/Slack 入口",
+      "summary": "来源： Databricks 2026 年 11 月发布说明摘要： Databricks 在 11 月 9 日的发布批次中宣布四项 GA：Genie Ontology（结合 Unity Catalog 语义层中人工定义的知识与 Genie 从资产和使用中学习的知识，为 Genie One、Genie Code 等 AI Agent 提供业务感知的组织地图）、Genie Search（索引 Google Drive、Jira、Confluence、Workday 等组织知识源，文档权限与内容同步索引）、Genie 在 Microsoft Teams 与 Slack 中的应用。同批还包括 Jobs 计算默认访问模式改为 Auto、Lakeflow Jobs 日期算术参数 Beta、管理员可经 MDM 用 Unity Gateway 批量配置 Claude 桌面端。为什么对数据平台重要： 与 Snowflake 在 Expedition 2026 宣布的 Business Ontology 与 Cortex AI Gateway 形成直接对位，\"业务本体/语义上下文层\"从概念与预览进入正式可用。数据平台面向 Agent 的竞争焦点已经转移到治理过的业务上下文供给：谁的语义层更完整、权限继承更严格，谁的 Agent 出口就更可信。",
+      "source": "Databricks 2026 年 11 月发布说明",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/november",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-10",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "Snowflake 开源进化式优化器 CoCoEvolve：AI 函数自动寻优进入公共预览",
+      "summary": "来源： Snowflake 工程博客摘要： Snowflake 于 11 月 9 日发布工程博客，介绍进化式优化器 CoCoEvolve：以自家编码 Agent CoCo 充当变异子，可查询完整搜索历史并对真实系统做测试后再提出改动（meta-reflection）。在六个 AI Function 负载上全部领先 GEPA、AdaEvolve 与 OpenEvolve；其轻量版本驱动 AI_FUNCTION_OPTIMIZATION 进入公共预览，用户可用两条 SQL 语句对 Cortex AI 函数的提示词、模型与 SQL 定义自动寻优，按 quality_first、balanced、cost_first 三种策略与多档预算输出成本-质量前沿，胜出实现可直接提升为新的 AI Function。对数据平台的影响： AI 函数的调优从人工 eval 循环变成平台内自动化能力，成本与质量的权衡直接进入 SQL 工作流，数据团队维护 LLM 管线的工程成本显著下降。编码 Agent 被用作优化器本体、反哺平台自身能力，是 Agent 能力沉淀为数据平台功能的代表性样本。",
+      "source": "Snowflake 工程博客",
+      "url": "https://www.snowflake.com/en/blog/engineering/optimize-cortex-ai-functions-cocoevolve/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-10",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【投融资】Supabase 获 1.5 亿美元新融资，GIC 领投，距上轮仅四个月",
+      "summary": "来源： Supabase 融资新闻稿（经 StorageNewsletter 发布）核心数据： 新融资 1.5 亿美元，GIC 领投，Alphabet 旗下 CapitalG、IronArc、SquarePeg 跟投；距 5 亿美元 Series F 仅四个月。每月新增用户超 100 万、数据库超 400 万个，其中 70% 的新数据库由 Agent 或 AI 工具创建。摘要： 开源 Postgres 开发平台 Supabase 宣布新一轮融资，资金用于 agent-driven databases 方向的产品研发与员工流动性，并同步推进对 Turso 的收购整合——Turso 以 Rust 重写 SQLite 架构，单台服务器可承载百万级按需数据库，创始人将执掌 Supabase 新设的 Agentic Services 部门。对数据平台的影响： Agent 正从数据的查询方变成数据库的创建方与选型方，per-agent database 成为独立的资本密集赛道。数据库采购决策权部分向编码 Agent 转移，平台谁能成为 Agent 的默认后端，谁就获得新一轮增长入口。",
+      "source": "Supabase 融资新闻稿（经 StorageNewsletter 发布）",
+      "url": "https://www.storagenewsletter.com/2026/11/09/supabase-announces-150m-in-new-funding-and-turso-acquisition",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-10",
+      "vendor": "ClickHouse",
+      "module": "投融资",
+      "title": "【跟踪】Supabase 收购 Turso 的交割与 per-agent 数据库产品化",
+      "summary": "来源： Supabase 官方博客：Supabase is acquiring Turso为什么值得继续看： 收购于 10 月初宣布，11 月 9 日的融资通稿仍在用进行时表述，并称 Turso 平台将继续独立运营、沿\"毕业路径\"并入 Supabase 生态——交割与架构整合尚未完成。ClickHouse 同期收购 Xata 布局同方向能力，per-agent database 正在形成独立赛道，Supabase 与 Turso 的整合进度直接影响该品类的竞争节奏。需要等待什么信号确认： 交割完成公告；Turso 架构并入后首个面向 Agent 的按需数据库产品层 GA；与 ClickHouse-Xata 同类能力的定价与目标负载对比。",
+      "source": "Supabase 官方博客：Supabase is acquiring Turso",
+      "url": "https://supabase.com/blog/supabase-is-acquiring-turso",
+      "conf": ""
     }
   ],
   "archive": [
@@ -11791,7 +11841,8 @@
     "2026-11-04",
     "2026-11-05",
     "2026-11-06",
-    "2026-11-09"
+    "2026-11-09",
+    "2026-11-10"
   ],
   "monthly": [
     {

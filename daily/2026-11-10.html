@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-10</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-10 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>分析引擎厂商开始把交易、观测与安全负载并入同一平台</li>
+      <li>业务本体层正式可用，Agent 上下文成平台竞争焦点</li>
+      <li>Agent 正成为数据库创建与选型的直接发起者</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>数据平台的边界正被 Agent 负载重新划定：分析引擎并入交易与观测能力，业务本体层进入正式可用，数据库开始按 Agent 需求即时创建。竞争重心从查询性能转向上下文供给与负载覆盖，平台化扩张的速度已快于单点引擎的能力迭代。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>ClickHouse 宣布平台史上最大扩张：Managed Postgres GA、收购 Xata，观测与安全负载并入</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://clickhouse.com/blog/announcing-clickhouse-platform-largest-expansion">ClickHouse 官方博客</a><br><b>摘要：</b> ClickHouse 于 11 月 9 日宣布自 ClickHouse Cloud 发布以来最大规模的平台扩张：Managed Postgres 正式 GA（NVMe 存储、原生 CDC 亚秒级复制数据进入 ClickHouse、pg_clickhouse 扩展），并收购 agent-native Postgres 公司 Xata，加速即时数据库分支、克隆与 scale-to-zero 能力，为 AI Agent 规划专用服务层。同期推出 ClickHouse Observability 公测（OpenTelemetry 接入的托管日志、指标、追踪服务）、基于 RunReveal 技术的 ClickHouse Security 私测（Agentic SIEM），以及开源 Langfuse AI Gateway 公测。公司称客户已超 5000 家，包括 DoorDash、Meta、Tesla、Visa 等。<br><b>为什么对数据平台重要：</b> 主流开源分析引擎正式转向"交易＋分析＋观测＋安全＋AI 工程"一体化平台，与 Snowflake、Databricks 的平台化路线正面对位。Xata 的 agent-native Postgres 能力表明"为 Agent 提供按需隔离的数据库环境"正在成为独立产品分层，采购评估的权重从单引擎查询性能转向负载覆盖面与 Agent 治理能力。</div>
+</div>
+<div class="item">
+    <h3>Databricks 四项 Genie 能力同日 GA：业务本体、组织搜索与 Teams/Slack 入口</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/november">Databricks 2026 年 11 月发布说明</a><br><b>摘要：</b> Databricks 在 11 月 9 日的发布批次中宣布四项 GA：Genie Ontology（结合 Unity Catalog 语义层中人工定义的知识与 Genie 从资产和使用中学习的知识，为 Genie One、Genie Code 等 AI Agent 提供业务感知的组织地图）、Genie Search（索引 Google Drive、Jira、Confluence、Workday 等组织知识源，文档权限与内容同步索引）、Genie 在 Microsoft Teams 与 Slack 中的应用。同批还包括 Jobs 计算默认访问模式改为 Auto、Lakeflow Jobs 日期算术参数 Beta、管理员可经 MDM 用 Unity Gateway 批量配置 Claude 桌面端。<br><b>为什么对数据平台重要：</b> 与 Snowflake 在 Expedition 2026 宣布的 Business Ontology 与 Cortex AI Gateway 形成直接对位，"业务本体/语义上下文层"从概念与预览进入正式可用。数据平台面向 Agent 的竞争焦点已经转移到治理过的业务上下文供给：谁的语义层更完整、权限继承更严格，谁的 Agent 出口就更可信。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake 开源进化式优化器 CoCoEvolve：AI 函数自动寻优进入公共预览</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.snowflake.com/en/blog/engineering/optimize-cortex-ai-functions-cocoevolve/">Snowflake 工程博客</a><br><b>摘要：</b> Snowflake 于 11 月 9 日发布工程博客，介绍进化式优化器 CoCoEvolve：以自家编码 Agent CoCo 充当变异子，可查询完整搜索历史并对真实系统做测试后再提出改动（meta-reflection）。在六个 AI Function 负载上全部领先 GEPA、AdaEvolve 与 OpenEvolve；其轻量版本驱动 AI_FUNCTION_OPTIMIZATION 进入公共预览，用户可用两条 SQL 语句对 Cortex AI 函数的提示词、模型与 SQL 定义自动寻优，按 quality_first、balanced、cost_first 三种策略与多档预算输出成本-质量前沿，胜出实现可直接提升为新的 AI Function。<br><b>对数据平台的影响：</b> AI 函数的调优从人工 eval 循环变成平台内自动化能力，成本与质量的权衡直接进入 SQL 工作流，数据团队维护 LLM 管线的工程成本显著下降。编码 Agent 被用作优化器本体、反哺平台自身能力，是 Agent 能力沉淀为数据平台功能的代表性样本。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】Supabase 获 1.5 亿美元新融资，GIC 领投，距上轮仅四个月</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.storagenewsletter.com/2026/11/09/supabase-announces-150m-in-new-funding-and-turso-acquisition">Supabase 融资新闻稿（经 StorageNewsletter 发布）</a><br><b>核心数据：</b> 新融资 1.5 亿美元，GIC 领投，Alphabet 旗下 CapitalG、IronArc、SquarePeg 跟投；距 5 亿美元 Series F 仅四个月。每月新增用户超 100 万、数据库超 400 万个，其中 70% 的新数据库由 Agent 或 AI 工具创建。<br><b>摘要：</b> 开源 Postgres 开发平台 Supabase 宣布新一轮融资，资金用于 agent-driven databases 方向的产品研发与员工流动性，并同步推进对 Turso 的收购整合——Turso 以 Rust 重写 SQLite 架构，单台服务器可承载百万级按需数据库，创始人将执掌 Supabase 新设的 Agentic Services 部门。<br><b>对数据平台的影响：</b> Agent 正从数据的查询方变成数据库的创建方与选型方，per-agent database 成为独立的资本密集赛道。数据库采购决策权部分向编码 Agent 转移，平台谁能成为 Agent 的默认后端，谁就获得新一轮增长入口。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Supabase 收购 Turso 的交割与 per-agent 数据库产品化</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://supabase.com/blog/supabase-is-acquiring-turso">Supabase 官方博客：Supabase is acquiring Turso</a><br><b>为什么值得继续看：</b> 收购于 10 月初宣布，11 月 9 日的融资通稿仍在用进行时表述，并称 Turso 平台将继续独立运营、沿"毕业路径"并入 Supabase 生态——交割与架构整合尚未完成。ClickHouse 同期收购 Xata 布局同方向能力，per-agent database 正在形成独立赛道，Supabase 与 Turso 的整合进度直接影响该品类的竞争节奏。<br><b>需要等待什么信号确认：</b> 交割完成公告；Turso 架构并入后首个面向 Agent 的按需数据库产品层 GA；与 ClickHouse-Xata 同类能力的定价与目标负载对比。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-10 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
