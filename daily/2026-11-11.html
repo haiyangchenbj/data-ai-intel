@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-11</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-11 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>备份厂商开始把归档数据变成智能体可消费的治理资产</li>
+      <li>观测遥测正并入开放表格式生态，智能体可直接查询排障</li>
+      <li>存储层创新重新瞄准温冷数据，成本与能耗成为新竞争轴</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天的信号指向同一件事：数据平台的价值边界正在向外扩——归档数据被重新激活、遥测数据并入开放格式、存储介质为温冷负载重构。竞争关键词正从查询性能转向让沉睡数据带着上下文和治理进入可计算范围。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Commvault 与 Databricks 共建数据激活方案：备份归档数据将作为治理表进入湖仓</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/commvault-and-databricks-unlock-trusted-enterprise-data-for-ai-302934181.html">PR Newswire 官方通稿</a><br><b>摘要：</b> Commvault 于 11 月 10 日宣布与 Databricks 共建 Commvault Data Activate for Databricks：把受 Commvault 治理的企业非结构化数据经 OpenSharing 以治理表形式接入 Databricks，交由 Unity Catalog 管理，携带来源、权属、权限与血缘上下文，供分析、AI 应用与智能体使用；方案计划 12 月在部分 Azure 区域开放早期访问。双方引述 BARC 研究称，70% 的数据与 AI 领导者反映可被 AI 使用的非结构化数据不足一半。Databricks 产品合作生态 SVP Stephen Orban 表示，数据进入 Databricks 后最有价值的形态是上下文随数据一起到达。<br><b>为什么对数据平台重要：</b> 备份与恢复厂商开始把冷归档重新定位为 AI 可直接消费的治理资产，数据平台竞争从"接入更多源"延伸到"让沉睡数据带着上下文进来"。上下文随数据走（来源、权限、血缘、保留策略）正在成为智能体时代数据供给的准入条件，也把备份体系从成本中心改写为数据供给方。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】华为 11 月 12 日举办新型存储系统试用启动现场会，磁电融合架构瞄准 AI 温冷数据</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.qq.com/rain/a/20261110A0A1HO00">IT之家（转述《中国经营报》）</a><br><b>为什么值得继续看：</b> 华为方面 11 月 10 日向媒体确认，将于 11 月 12 日在贵安云上屯举办新型存储系统试用启动现场会。官方口径称 Agentic AI 时代 AI 语料库等温冷数据爆发式增长，传统存储难以兼顾成本、能耗与效率，其"磁与电深度融合"的新型存储架构将进入真实场景联合验证阶段。若成立，温冷数据的长效保存成本曲线可能被重写，直接关联数据平台的存储层选型。<br><b>需要等待什么信号确认：</b> 现场会披露的架构细节与官方一手材料；首批试用客户与验证规模；正式商用时间表与定价。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Siglake 开源观测湖仓亮相：遥测数据落在自家对象存储的 Iceberg 表上</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://github.com/siglake/siglake">GitHub - siglake/siglake</a><br><b>为什么值得继续看：</b> InfluxData 联合创始人 Todd Persen 创办的 Limnion 本周经 YC 发布 Siglake（Apache-2.0，Rust 实现）：OTel 采集、Parquet 与 Iceberg 开放格式存储、DataFusion 分布式 SQL 查询，并内置只读 MCP 服务器供 Claude、Codex 等智能体直接查询遥测排障，宣称分布式压测摄入超每秒 40 万行。原始发布时刻仅能追溯至聚合日报 11 月 10 日收录，颗粒度不足，故按跟踪处理。<br><b>需要等待什么信号确认：</b> 原始发布日与 YC 官方批次页确认；首个正式 release 与实际采用案例；托管服务定价。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Snowflake 10.41 发布窗口到来：Native App 应用包上限从 5GB 提至 150GiB</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/10_41">Snowflake 10.41 Release Notes</a><br><b>为什么值得继续看：</b> 10.41 发布说明于 11 月 9 日以预览形式刊出、按计划 11 月 10 日完成发布，官方仅给日期未给时刻，故按跟踪处理。本期实质变更：AWS 与 Azure 部署的 Native App Framework 应用包单文件上限从 5GB 提至 150GiB，版本 stage 同步放宽（含政府区域与 AWS 中国区），GCP 维持 5GB——大体量数据应用开始能整体进入 Native App 分发体系。<br><b>需要等待什么信号确认：</b> 发布说明随发布完成后的增量条目；大体量应用包的实际分发表现与复制到 GCP 部署的兼容性。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-11 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
