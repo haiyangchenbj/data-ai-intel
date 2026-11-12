@@ -11714,6 +11714,66 @@
       "source": "Snowflake 10.41 Release Notes",
       "url": "https://docs.snowflake.com/en/release-notes/2026/10_41",
       "conf": ""
+    },
+    {
+      "date": "2026-11-12",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 发布新版 Genie：从问答工具升级为可自主执行任务的智能体",
+      "summary": "来源： Databricks Blog摘要： Databricks 11 月 11 日发布新版 Genie：任务可经 Genie One、邮件、Slack 或 Teams 委派，按计划或事件触发（如指标下滑、重复需求聚集）自主运行，过程由人审批；配套发布 Genie Ontology（从现有仪表盘、查询和笔记本构建业务上下文，受治理定义优先，配合 Unity Catalog Domains、Pages 与 Ontology Snippets）、Genie Search（对 Google Drive、Jira、Confluence、Workday、SharePoint 做混合检索，权限由 Unity Catalog 强制执行）、Genie One 的 Artifacts 与 Skills，以及面向 Slack、Zoom、Microsoft 365、Jira、GitHub 的 MCP 连接器。Genie Agents 可检索 Unity Catalog Volumes 中的 PDF 并给出页面级引用，支持经 Clean Rooms 向外部共享。为什么对数据平台重要： Snowflake（Business Ontology、CoCo/CoWork）与 Databricks（Genie Ontology、自主 Genie）在同一个月把竞争焦点对准「业务语义治理＋受控自主执行」。数据平台的使用入口正在从 SQL 与 BI 看板转向替人跑长任务的智能体，本体层正在成为继开放表格式之后新的一层标准之争；数据团队的交付物从报表扩展为「可被智能体消费的受治理语义」。",
+      "source": "Databricks Blog",
+      "url": "https://www.databricks.com/blog/new-genie-autonomous-ai-complex-enterprise-work",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-12",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Denodo 与 AWS 签署多年期战略合作协议，主攻智能体场景的受治理数据访问",
+      "summary": "来源： GlobeNewswire 通稿（腾讯新闻转载）摘要： 数据虚拟化与 AI 数据层厂商 Denodo 11 月 11 日宣布与 AWS 签署多年期战略合作协议（SCA），在既有合作基础上进入新投资阶段：双方将联合举办场景研讨会、联合营销、一线协同销售，并提供商务激励支持技术评测与 AWS Marketplace 采购，与系统集成商合作面向银行反欺诈、保险理赔、制造预测性维护等智能体业务场景推出方案。核心主张是不移动、不复制数据，让智能体访问实时、受治理的数据与动态上下文。为什么对数据平台重要： 继本期窗口内 Commvault×Databricks、上周 EDB 收购 Altinity 等动作后，超大规模云厂商又把逻辑数据层/数据虚拟化厂商写进战略合作协议，说明行业共识正在固化：智能体规模化落地的瓶颈在受治理的数据访问，而非模型能力。数据访问层的采购通道（Marketplace 激励、计入承诺支出）被制度化，会直接影响企业数据平台的选型组合。",
+      "source": "GlobeNewswire 通稿（腾讯新闻转载）",
+      "url": "https://new.qq.com/rain/a/20261111A06F7200",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-12",
+      "vendor": "AWS",
+      "module": "技术",
+      "title": "AWS 官方给出 ClickHouse 直连 S3 Tables 的湖仓参考架构",
+      "summary": "来源： AWS Storage Blog摘要： AWS 存储博客 11 月 11 日发布参考方案：自管 ClickHouse 通过 DataLakeCatalog 数据库引擎连接 Amazon S3 Tables（托管 Iceberg）的 Iceberg REST 端点，表桶在 ClickHouse 中映射为数据库，可原地查询 Iceberg 表、用 ClickHouse SQL 做转换后把结果写回 S3 Tables，数据不留副本；需要集中治理、跨引擎细粒度权限或跨账户访问时，官方建议改走 Glue Iceberg REST 端点。方案同时把该模式延伸到需要反复查询分析结果的智能体负载。对数据平台的影响： 此前 AWS 已为 DuckDB 写过同类方案，ClickHouse 进入官方 Iceberg 引擎推荐清单意味着「查询在存储侧原地完成、结果写回开放表格式」的零拷贝模式继续被官方背书。对选型的直接含义：托管 Iceberg 表桶之上的引擎层可替换性在增强，锁定单一计算引擎的架构理由在减少，迁移与并发引擎混用的成本评估应按开放格式重算。",
+      "source": "AWS Storage Blog",
+      "url": "https://aws.amazon.com/blogs/storage/bring-high-performance-analytics-to-your-lakehouse-with-clickhouse-and-amazon-s3-tables/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-12",
+      "vendor": "Databricks",
+      "module": "投融资",
+      "title": "【降级】PuppyGraph 完成 1000 万美元 A 轮，把数仓当图查的 Agent 路线拿到钱",
+      "summary": "来源： Business Wire（Yahoo Finance 转载）为什么值得继续看： 图查询引擎 PuppyGraph 11 月 10 日宣布完成 1000 万美元 A 轮（Particle Future、defy.vc 领投，累计融资 1500 万美元），紧随 1.0 正式版发布。产品不搬数据，直接把 Snowflake、Databricks、Iceberg、ClickHouse、DuckDB 等现有表当一张图查：AI 辅助起草图模型并由人工确认、拒绝未定义关系引用并返回可修正错误、遍历每一跳检查行级权限、经 MCP 接入外部智能体。公司自称 ARR 一年增长 7 倍、客户含 AMD 与 Palo Alto Networks，均为单方口径。需要等待什么信号确认： 公开客户的生产规模与留存证据（现仅有客户名单与厂商自述）；ARR 绝对值披露；与 Neo4j、TigerGraph 及数仓原生图能力的正面基准。 [补录 11-10]",
+      "source": "Business Wire（Yahoo Finance 转载）",
+      "url": "https://finance.yahoo.com/technology/ai/articles/puppygraph-raises-10m-series-help-140000216.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-12",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【降级】七款云数仓成本横评：并发才是成本主因，同负载年成本相差近 3 倍",
+      "summary": "来源： IT Brief UK为什么值得继续看： 咨询公司 CorrDyn 与数据管道厂商 Estuary 11 月 9 日发布横评，测试 Snowflake、Databricks、BigQuery、Redshift、Microsoft Fabric、ClickHouse 与 MotherDuck：244 条查询、1 GB 至 1 TB 数据、最高 100 并发会话、自动扩缩容全部关闭。100 GB 数据 50 并发时最便宜与最贵引擎年成本分别约 15 万与 42 万美元；1 TB 数据下响应低于 5 秒时无单一计算单元能支撑超过 10 个并发；代码、查询文件与含失败运行的原始结果已在 GitHub 开放复核。需要等待什么信号确认： 厂商回应或独立第三方复现；自动扩缩容开启后的重测（本轮全部关闭，与多数生产配置不同）。注意 Estuary 出售多引擎数据管道，「按负载换引擎」的结论与其商业立场一致。 [补录 11-09]",
+      "source": "IT Brief UK",
+      "url": "https://itbrief.co.uk/story/benchmark-shows-cloud-warehouse-costs-can-vary-wildly",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-12",
+      "vendor": "华为",
+      "module": "技术",
+      "title": "【降级】华为云 GaussDB 获国内数据库领域首张 EAL5+ 认证",
+      "summary": "来源： 中华网科技为什么值得继续看： 11 月 11 日多家媒体报道，华为云 GaussDB 数据库管理系统获中国网络安全审查认证和市场监管大数据中心（网数中心）EAL5+ 评估保障级认证，为国内数据库基础软件领域首张，评估覆盖安全审计、密码支持、用户数据保护等 9 大类共 102 条测试项。GaussDB 此前已通过安全可靠测评 II 级。对信创与关键信息基础设施场景的数据库采购，EAL5+ 可能成为新的准入门槛参考。需要等待什么信号确认： 华为云官方一手发布（截至发稿未检索到官网或美通社原始通稿链接，本条基于厂商通稿的媒体报道）；认证证书编号与覆盖的具体版本范围；其他国产数据库厂商的跟进申报。 ⚠️ 待验证",
+      "source": "中华网科技",
+      "url": "https://tech.china.com/articles/20261111/202611111976763.html",
+      "conf": ""
     }
   ],
   "archive": [
@@ -11883,7 +11943,8 @@
     "2026-11-06",
     "2026-11-09",
     "2026-11-10",
-    "2026-11-11"
+    "2026-11-11",
+    "2026-11-12"
   ],
   "monthly": [
     {
