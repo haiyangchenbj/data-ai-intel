@@ -11774,6 +11774,66 @@
       "source": "中华网科技",
       "url": "https://tech.china.com/articles/20261111/202611111976763.html",
       "conf": ""
+    },
+    {
+      "date": "2026-11-13",
+      "vendor": "微软",
+      "module": "专题",
+      "title": "微软数据治理战略重组：Purview 数据治理一年后退役，OneLake Catalog 成为唯一治理底座",
+      "summary": "来源： Microsoft Security Blog（Microsoft Community Hub）摘要： 微软 11 月 12 日宣布数据治理战略调整：Microsoft Fabric 正式成为其数据治理方案，OneLake Catalog 作为跨全域数据的统一治理基础，策略、信任信号、血缘与数据管理职责随数据留在平台内；Purview 数据治理（含统一目录、数据地图、工作流）支持将于 2027 年 11 月 12 日终止。Purview 此后聚焦数据安全与合规方向（分类、标注、防泄漏），治理能力包含在 Fabric 容量中计费，不再走独立计量。为什么对数据平台重要： 治理从旁挂工具并入数据平台，是\"治理内置于平台\"路线迄今最强的一次官方确认：同一套权限、敏感标签与血缘同时约束数据和消费数据的 AI Agent。独立数据目录厂商的市场空间被直接压缩，存量 Purview 治理客户面临一年迁移窗口，数据平台采购评估中治理项的计价方式随之改变。",
+      "source": "Microsoft Security Blog（Microsoft Community Hub）",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/a-next-step-in-the-evolution-of-the-microsoft-data-governance-strategy/4572227",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-13",
+      "vendor": "华为",
+      "module": "技术",
+      "title": "华为磁电存储启动客户联合试商用，温冷数据存储出现第三条介质路线",
+      "summary": "来源： 上海证券报·中国证券网摘要： 11 月 12 日，华为新型存储系统试商用启动现场会在贵安云上屯举行，磁电存储系统客户联合试商用正式启动，技术从实验室验证进入真实场景验证阶段。华为已邀请平安科技、斗鱼等 10 余个行业 30 余家客户参与，配套超百 PB 存储测试资源，覆盖网盘存储、直播归档、金融票据、医疗影像等 20 余类场景，并在华为云乌兰察布数据中心开始部署；据透露明年规划的试商用容量已被客户全量预定。华为披露口径：对比 HDD 方案整体 TCO 降低约 30%，对比磁带库在成本相当前提下归档取回时间从 3-5 小时缩短至 30 分钟以内。对数据平台的影响： AI 语料驱动温冷数据占比快速上升，存储层成本结构出现新变量。磁电介质若在真实场景验证成立，湖仓归档层与备份层将多出介于 HDD 与磁带之间的选项，\"存得起、取得快\"改变归档架构的成本假设；这也是中国厂商首次定义并试商用的存储新介质，数据基础设施介质层的自主格局随之变化。",
+      "source": "上海证券报·中国证券网",
+      "url": "https://www.cnstock.com/commonDetail/828042",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-13",
+      "vendor": "微软",
+      "module": "技术",
+      "title": "Azure SQL Managed Instance 托管性能监控进入公共预览",
+      "summary": "来源： Azure Updates摘要： 微软 11 月 12 日宣布 Azure SQL Managed Instance 托管性能监控公共预览上线：由微软托管采集并存储性能遥测，提供单实例与全资产两级仪表盘，帮助识别性能趋势、异常与瓶颈，替代客户自建脚本与割裂监控工具；深度分析与自定义可视化可通过 RBAC 保护的 Azure Data Explorer 代理端点用 KQL 查询监控数据。对数据平台的影响： 数据库可观测性正从自建遥测管道转向厂商托管服务：采集、存储、仪表盘由平台内置，无需自运维监控基础设施。监控数据落在 ADX 上意味着运维数据可直接进入分析栈做多实例横向对比，中小团队数据库运维工具链被进一步收进平台，第三方数据库监控工具在云托管场景的必要性下降。",
+      "source": "Azure Updates",
+      "url": "https://azure.microsoft.com/updates/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-13",
+      "vendor": "微软",
+      "module": "机构",
+      "title": "Gartner：2026 数据与分析治理平台魔力象限发布，为 AI Agent 治理数据成为主线",
+      "summary": "来源： Ataccama 官方博客核心观点： Gartner 于 11 月 12 日发布《数据与分析治理平台魔力象限》（作者 Anurag Raj、Sarah Turkaly、Lulu Wang、Dalia Naguib）。入选 Visionary 的 Ataccama 围绕报告主题提出\"数据信任层\"路径：治理层横跨多个数据平台，为数据附加机器可读的信任分（Data Trust Index），AI Agent 在使用数据前先行核验；治理对象从\"人和报表用的目录\"扩展到\"Agent 可消费的信任信号\"。映射到数据平台的判断： 与同日微软把治理收进 Fabric 的动作互为印证（详见 A 板块）：集中维护的业务定义、质量与信任指标正成为 AI 落地的前置采购项，治理平台的评估口径从覆盖度转向\"Agent 能否安全消费数据\"，独立治理厂商与云内目录的竞争将集中在信任信号的可移植性上。",
+      "source": "Ataccama 官方博客",
+      "url": "https://www.ataccama.com/blog/ataccama-named-a-visionary-in-the-2026-gartner-magic-quadrant-for-data-and-analytics-governance-platforms-governing-data-for-ai-agents-and-what-comes-next",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-13",
+      "vendor": "微软",
+      "module": "产品",
+      "title": "【跟踪】Purview 治理客户迁移窗口与高监管行业过渡安排",
+      "summary": "来源： Microsoft Learn 合作伙伴中心 2026 年 11 月公告为什么值得继续看： Purview 数据治理支持于 2027 年 11 月 12 日截止，微软即日起提供过渡指引，并特别提示有合同义务或属高监管行业的客户尽早与客户团队对接、逐一评估迁移范围。需要等待什么信号确认： 微软是否对高监管客户提供延长支持或例外安排；Atlan、Alation、Collibra、Informatica 等第三方目录厂商是否借迁移窗口承接存量 Purview 治理客户。",
+      "source": "Microsoft Learn 合作伙伴中心 2026 年 11 月公告",
+      "url": "https://learn.microsoft.com/zh-cn/partner-center/announcements/2026-november",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-13",
+      "vendor": "SelectDB",
+      "module": "技术",
+      "title": "【预告】Apache Doris 5.0：11 月发布窗口，实时增量计算与 Agent 式分析",
+      "summary": "来源： Apache Doris 社区路线图为什么值得继续看： 社区路线图将 5.0 定位为聚焦实时增量计算的功能版本，规划于 2026 年 11 月交付；Doris Summit 2026 归纳的多模湖仓、增量计算、Agent 式分析三条主线中，后两条都压在这个版本上，查询并发与 Ad-hoc 特征按 Agent 消费者重新设计。需要等待什么信号确认： 官方发布公告与 release notes 是否按期在 11 月落地；增量计算的具体语义边界与面向 Agent 高并发 Ad-hoc 查询的能力范围。",
+      "source": "Apache Doris 社区路线图",
+      "url": "https://doris.apache.org/community/roadmap/",
+      "conf": ""
     }
   ],
   "archive": [
@@ -11944,7 +12004,8 @@
     "2026-11-09",
     "2026-11-10",
     "2026-11-11",
-    "2026-11-12"
+    "2026-11-12",
+    "2026-11-13"
   ],
   "monthly": [
     {
