@@ -11834,6 +11834,46 @@
       "source": "Apache Doris 社区路线图",
       "url": "https://doris.apache.org/community/roadmap/",
       "conf": ""
+    },
+    {
+      "date": "2026-11-16",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 发布 OpenAI 工具企业落地指南，Codex 调用统一走 Unity Gateway",
+      "summary": "来源： Databricks 官方博客摘要： Databricks 于 11 月 13 日发布企业采用指南，给出在受治理数据上使用 OpenAI 工具的三条路径：业务用户经 ChatGPT 的 Genie 插件按企业指标定义查询，答案回链数据源且权限沿用既有边界；Codex 请求经 Unity Gateway 路由，OpenAI 密钥留在网关、每次调用留日志、管理者可按团队设预算（网关已 GA，部分配套工具仍为 Beta）；自定义 Agent 经 Model Serving 部署在受治理数据旁，无需外部 API Key。合作本体为 2025 年 9 月官宣的多年协议，本篇将其落成可执行的部署模式。为什么对数据平台重要： 模型调用的密钥管理、审计日志与预算控制正在向数据平台侧收敛，Unity Gateway 这类控制面成为数据平台承接企业 AI 的核心组件；「模型网关＋治理」预计将成为各平台的标配能力与采购评估项，Snowflake 的 Cortex AI Gateway 走的是同一方向。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/openai-and-databricks-enterprise-ai-your-governed-data",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-16",
+      "vendor": "Google",
+      "module": "专题",
+      "title": "Google Cloud 把 Agent 可观测性与治理压进 BigQuery 与 Looker",
+      "summary": "来源： Google Cloud 官方文档 BigQuery Agent Analytics摘要： Google Cloud 于 11 月 13 日在官方博客宣布扩展 Google Data Cloud 的 Agent 可观测性与评估能力：一方 Agent 零配置发送遥测，用 ADK 或 LangGraph 构建的自定义 Agent 经一行 SDK 接入；对话日志（GA）经 Storage Write API 写入客户自有的 agent_events 表，继承 IAM、CMEK 与 VPC Service Controls；知识源带行级安全、策略标签或动态脱敏时，记录侧 fail-closed 跳过、执行侧 fail-open 不中断会话。成本侧新增按日 token 配额（Preview，可按项目/用户/Agent 强制），配合 BigQuery 按查询的字节扫描上限，在计费发生前拦截超大查询。为什么对数据平台重要： Agent 遥测的归属地被明确设计为客户自有 BigQuery 表而非第三方面板，隐私检查、成本限额与评估结果直接复用数仓的治理与计费模型；轨迹、token 消耗与评测分数正在成为数仓里的新数据品类，数据平台成为 AI 运营数据的默认存放与治理层。",
+      "source": "Google Cloud 官方文档 BigQuery Agent Analytics",
+      "url": "https://cloud.google.com/bigquery/docs/bigquery-agent-analytics",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-16",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【降级】Google Knowledge Catalog 语义模型支持被多方报道 GA，一手发布记录待确认",
+      "summary": "来源： AI In Context 转述报道为什么值得继续看： 多家二手媒体于 11 月 14 日报道 Google Knowledge Catalog 语义模型支持正式 GA：可摄取 Looker LookML、BigQuery Graph、dbt MetricFlow、Snowflake Semantic Views、Databricks Metric Views 与 SAP Core Schema Notation 六来源的指标定义入统一上下文图，冲突定义并存并标注出处、由数据治理者裁决。但官方 Dataplex/Knowledge Catalog release notes 未见对应条目，GA 状态与一手发布日期尚无法确认。需要等待什么信号确认： Google Cloud 官方博客或 release notes 收录该条目；Knowledge Studio 从 Preview 转 GA 的状态变化。",
+      "source": "AI In Context 转述报道",
+      "url": "https://aiincontext.com/articles/google-makes-knowledge-catalog-semantic-support-generally-available",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-16",
+      "vendor": "微软",
+      "module": "产品",
+      "title": "【跟踪】微软 M365 全球服务中断涉及 Fabric、Power BI 与 Purview，恢复节奏待观察",
+      "summary": "来源： 央视新闻为什么值得继续看： 故障自 11 月 12 日起发生并蔓延至 13 日，波及 Outlook、Teams、Copilot 及 Fabric、Power BI、Purview、Graph 等分析与治理服务；微软 13 日致歉，称源于此前一次网络容量升级、与网络攻击无关，尚无法预计完全恢复时间。数日前微软刚宣布 Purview 数据治理退役、能力并入 Fabric OneLake（11-13 期 A1），治理体系迁移与可用性事件叠加。需要等待什么信号确认： 微软官方事后复盘（RCA）公告；Fabric/Power BI 服务健康完全恢复；监管问询与企业客户 SLA 索赔的后续进展。",
+      "source": "央视新闻",
+      "url": "https://big5.cctv.com/gate/big5/news.cctv.cn/2026/11/14/ARTIcp9G5NhU2UCxXvTWKF98261114.shtml",
+      "conf": ""
     }
   ],
   "archive": [
@@ -12005,7 +12045,8 @@
     "2026-11-10",
     "2026-11-11",
     "2026-11-12",
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-16"
   ],
   "monthly": [
     {
