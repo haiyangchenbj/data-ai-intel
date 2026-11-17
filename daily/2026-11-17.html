@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-17</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-17 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台厂商公开企业AI用量账本，模型选型走向数据驱动</li>
+      <li>数据库AI函数从可用走向自动调优，成本与质量可量化权衡</li>
+      <li>单点基础设施故障引发级联失效，恢复目标重回平台采购视野</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本期信号集中指向AI用量的可运营化：模型调用的成本、质量与治理正在变成数据平台的原生能力，从函数级调优到企业级用量指数；同期，单点基础设施故障的级联失效提醒买方，恢复目标与供应商分散度应重新纳入平台采购评估。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 上线 AI Index：以一万家企业真实用量公开模型采用与成本数据</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/introducing-databricks-ai-index-state-enterprise-ai-tokenomics">Databricks 官方博客</a><br><b>摘要：</b> Databricks 于 11 月 16 日上线 Databricks AI Index，将 Unity Gateway 上超过 1 万家企业的匿名聚合用量数据（模型 token 份额、支出份额、周度支出模式）与编码 Agent 基准（任务成功率、每任务成本）合并为每周更新的公开资源。官方披露的关键变化：依赖单一模型供应商的企业占比从 7 月的 64% 降至 11 月初的 28%；开放权重模型 token 份额从 7.3% 升至 30.9%。<br><b>为什么对数据平台重要：</b> 治理平面（模型网关）正在成为企业 AI 用量的观测点与定价参照系；采购逻辑从 token 单价转向每任务成本，平台厂商掌握真实账本即掌握选型话语权，数据平台与模型采购决策进一步绑定。</div>
+</div>
+<div class="item">
+    <h3>Snowflake 双双 GA：Cortex AI Function Studio 与 AI Function Optimization 同日转正</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-11-16-cortex-ai-function-studio-ga">Snowflake 发布说明</a><br><b>摘要：</b> Snowflake 于 11 月 16 日将 Cortex AI Function Studio 与 AI Function Optimization 同时转为 GA。前者支持以自然语言（Cortex Code CLI 或 Snowsight AI Studio）创建面向文本、文档、图像、音视频的 AI 函数，自动完成提示词、模型选择与工作流策略的基准测试；后者通过 AI_FUNCTION_OPTIMIZATION 实验类型，在同一数据集与指标下评估多模型候选的质量与估算成本，并将选中结果物化为带稳定 SQL 接口的受治理可复用函数，原函数不被修改。<br><b>为什么对数据平台重要：</b> AI 函数从「能调用」走向「可自动调优」，成本与质量在同一 SQL 接口内可量化权衡；调优产物直接物化为受治理资产，把模型选型、成本控制与数据治理收敛进仓库原生能力，同维度能力已成为各大平台竞争焦点。</div>
+</div>
+<div class="item">
+    <h3>微软发布 M365 全球故障初步事后报告：三重因素叠加引发级联失效</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://tech.ifeng.com/c/8y6MAYWqFjg">凤凰网科技报道</a><br><b>摘要：</b> 微软于 11 月 16 日发布上周 Microsoft 365 全球故障的初步事后报告（Preliminary Post-Incident Report），并经高管 Charles Lamanna 公开说明：7 月部署的网关软件修复引入锁竞争缺陷，叠加 Teams 流量切换增加主网关负载、另有约 14% 服务器容量因前一日的无关问题不可用，自动流量调度反而放大压力，形成级联故障，峰值时超过 80% 网络网关服务器失去响应。Exchange Online 受影响最重，Fabric、Power BI、Purview 等依赖邮件链路的功能受到不同程度波及。完整技术报告承诺本周晚些时候发布。<br><b>为什么对数据平台重要：</b> 本期窗口内的治理与 BI 平台（Fabric/Power BI/Purview）随邮件链路一起受波及，印证数据平台可用性已与大平台底层基础设施强耦合；网关级共享依赖使局部缺陷演变为全球级联失效，跨区容灾与恢复目标设计需要按最坏情况重新校验。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>腾讯云发布首个数据库 Agent 平台 TencentDB Agent</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.qq.com/rain/a/20261116A06M1B00">腾讯云数据库（腾讯新闻同步）</a><br><b>摘要：</b> 腾讯云 11 月 16 日公布首个数据库 Agent 平台 TencentDB Agent，定位生产环境自主诊断与结论交付，而非问答助手。核心架构为 Safety、Skill、Memory 三支柱：操作权限分四级（只读自动执行、变更二次确认、高危永久拒绝），VPC 内部署、权限与 CAM 一比一对齐、全链路留痕；沉淀约十万级工单经验，封装 1600 多个 OpenAPI，覆盖 MySQL、Redis、MongoDB 等 14 款数据库；实例级到客户级三层记忆，官方称场景匹配准确率从 48% 提升至 76%（腾讯披露口径）。<br><b>对数据平台的影响：</b> 国内云厂商首次把数据库运维 Agent 平台化，把 DBA 诊断经验封装为可组合能力，运维工程效率维度出现新竞争位；分级防护加全链路审计的方案，也给出了 AI 代理接入生产数据库的治理参照。</div>
+</div>
+<div class="item">
+    <h3>Looker 秋季更新集中转正：Dashboard Agents、Managed MCP Server、语义层索引入 Knowledge Catalog</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://discuss.google.dev/t/looker-newsletter-fall-updates/414520">Looker 官方秋季通讯（Google 开发者论坛）</a><br><b>摘要：</b> Google 于 11 月 16 日发布 Looker 秋季更新通讯，多项能力集中 GA：嵌入用户自定义与 LookML 仪表板的 Dashboard Agents；Managed MCP Server——外部 AI Agent 可经 MCP 安全发现并查询受治理语义层；LookML 自动索引进 Knowledge Catalog，将 Looker 语义模型纳入统一目录；对话式分析的 Token 用量观测（System Activity 仪表板）同步 GA，Data Apps 进入 Preview。<br><b>对数据平台的影响：</b> 语义层正成为 Agent 接入企业数据的受治理入口——MCP 服务化让外部 Agent 在权限与语义约束内查询指标；语义模型沉淀进目录则把「目录即治理」从表结构扩展到业务定义，治理边界随之从数据面覆盖到 AI 面的入口。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】Microsoft Ignite 2026 开幕：Fabric 数据平台与治理路线的下一个窗口</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.microsoft.com/events/ignite/2026/live-news/">Microsoft Ignite 2026 官方页面</a><br><b>为什么值得继续看：</b> Ignite 2026 将于北京时间 11 月 18 日凌晨开幕（持续至 11 月 20 日）。这是 Purview 数据治理宣布退役（11 月 12 日）后的首个微软大会窗口，OneLake Catalog 作为治理承接中心的路线图、Fabric 数据平台的产能与定价口径，预计将集中披露。<br><b>需要等待什么信号确认：</b> Book of News 与主题演讲中 Fabric/OneLake Catalog 的治理迁移指引、计费口径，以及 Azure 数据平台与 AI 基础设施的整合公告。</div>
+</div>
+<div class="item">
+    <h3>【降级】Gartner 首次拆分湖仓与云操作型数据库两份魔力象限</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/databricks-leader-and-positioned-highest-execution-2026-gartnerr-magic-quadranttm-data">Databricks 官方博客（含两份报告引用）</a><br><b>为什么值得继续看：</b> Gartner 于 11 月 4 日发布首份《数据湖仓平台魔力象限》（Databricks 为 Leader 且执行力最高），并于 11 月 12 日发布首份《云操作型数据库管理系统魔力象限》（Databricks 为唯一 Visionary，MongoDB 为 Leader）——原云数据库魔力象限被拆分为两份独立报告，超出本期窗口，降级收录。拆分本身是品类边界信号：买方与决策链正在分离，而 AI 负载又在把分析数据与操作数据拉向同一平台。<br><b>需要等待什么信号确认：</b> Snowflake、Oracle、AWS 等厂商在两份新象限中的官方回应与来年座次变化；湖仓 MQ 与操作型数据库 MQ 的厂商重叠度是否持续扩大。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】微软 M365 故障后续：完整技术报告与 Fabric 治理面恢复质量</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://notebook.yesky.com/101/384101.shtml">天极网报道（恢复时间线与官方承诺）</a><br><b>为什么值得继续看：</b> 承接本期 A3。微软已按承诺在两个工作日内交付初步报告，最终报告承诺五个工作日内提供，完整技术细节预计本周晚些发布；此前故障已确认波及 Fabric、Power BI、Purview，治理迁移窗口与高监管客户的过渡安排是否受此次故障影响，仍待验证。<br><b>需要等待什么信号确认：</b> 最终报告中容量分区保护为何未能阻止级联故障的技术解释，以及 Fabric/Power BI 侧是否披露 SLA 补偿或架构加固承诺。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-17 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
