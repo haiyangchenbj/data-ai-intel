@@ -11954,6 +11954,76 @@
       "source": "天极网报道（恢复时间线与官方承诺）",
       "url": "https://notebook.yesky.com/101/384101.shtml",
       "conf": ""
+    },
+    {
+      "date": "2026-11-18",
+      "vendor": "微软",
+      "module": "专题",
+      "title": "微软 Ignite 2026：Cosmos DB in Fabric 与 Cosmos DB Mirroring 同日 GA，事务数据整建制并入 OneLake",
+      "summary": "摘要： Ignite 2026 上微软宣布 Azure Cosmos DB 镜像进 Fabric 的私有网络配置正式可用，支持从带 Private Endpoint 或 VNET 隔离的 Cosmos DB 账户向 OneLake 复制数据；Ignite 分会场进一步确认 Cosmos DB in Fabric 与 Cosmos DB Mirroring 同日 GA，镜像支持双向同步、每日最高 2.5TB 复制吞吐。同期 SQL database in Fabric 公布企业级能力：已删除数据库的时点恢复、客户托管密钥、审计与动态数据掩码均正式可用。为什么对数据平台重要： 事务数据库被原生收编进湖仓后，HTAP 的实现方式从「外挂复制管道」变成「平台内置镜像」，企业自建 CDC 链路的必要性被直接削弱。微软把 Cosmos DB（ChatGPT 级负载验证过的数据库）作为切入点的选法，说明这一步是奔着 AI 应用的运行时数据去的，不只是分析侧补课。",
+      "source": "Microsoft Fabric 官方博客：Advancing Databases for the Next Generation of Applications",
+      "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blogs/Advancing-Databases-for-the-Next-Generation-of-Applications/ba-p/5172237",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-18",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "BigQuery 十一批次集中转正：AI 函数优化模式、跨区域托管容灾、语义检索重排全部 GA",
+      "summary": "摘要： 11 月 17 日 BigQuery release notes 集中转正一批能力：托管 AI 函数新增优化模式（GA），降低处理大数据集时的 LLM token 消耗与查询延迟，并扩展到 AI.CLASSIFY 多标签分类；跨区域数据集复制与故障转移预留位可经 REST API 配置和监控（GA），托管容灾闭环；AI.SEARCH 支持按相关度重排结果、AI.RANK 函数（GA）。对数据平台的影响： 三条线各自指向一个趋势：AI 函数的成本被当成一等优化对象（优化模式直接省 token），容灾从自助搭建变成托管配置项，语义检索进入函数级原语。企业评估 BigQuery 上的 GenAI 管道成本模型时，优化模式的 token 节省幅度值得实测。",
+      "source": "BigQuery Release Notes",
+      "url": "https://cloud.google.com/bigquery-ml/docs/release-notes",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-18",
+      "vendor": "Databricks",
+      "module": "产品",
+      "title": "Databricks 发布 Unity Gateway Insights（Beta）：智能体用量与 token 浪费变成可查报表",
+      "summary": "摘要： 11 月 17 日 Databricks 发布 Unity Gateway Insights（Beta）：从统一 trace 表采样会话生成报告，展示用户把智能体用在哪里、token 花在哪里被浪费，报告由 Genie Code 从统一 trace 表构建。这是继上周以聚合数据定义「企业 AI tokenomics」的 AI Index 之后，Databricks 把同款观测能力产品化到单个客户账户内。对数据平台的影响： 智能体花销正在成为数据平台的一等治理对象，「谁家的网关能算清 token 去向」会变成采购评估项。Insights 基于统一 trace 表采样，覆盖度取决于该表的接入完整度，评估时要核对自家工作负载是否在采样范围内。",
+      "source": "Databricks 2026 年 11 月 Release Notes",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/november",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-18",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "Looker 可视化语言大版本更新：新原生图表 + 开源 looker-skills 让智能体写自定义图表",
+      "summary": "摘要： 谷歌 11 月 17/18 日发布 Looker 可视化语言大版本更新：新增 KPI、子弹图、桑基图、层次表、直方图、网络图等原生图表与紧凑数字格式，仪表盘获得现代化排版与磁贴级筛选（Preview）；同时开源 looker-skills 仓库，提供自定义可视化技能，用自然语言驱动 Claude、Codex 等编码智能体按 Visualization API 编写、测试并部署自定义图表，同一套系统支撑 Looker Data Apps。对数据平台的影响： BI 自定义开发的门槛从「会写 JavaScript」降到「会描述需求」，且产出物直接继承语义模型与钻取体系。行业专属可视化（晶圆图、库位图、差异桥）这类长尾需求，可能不再需要外包或等待插件市场。",
+      "source": "Google Cloud 官方博客：Modern data visualizations and custom charts in Looker",
+      "url": "https://cloud.google.com/blog/products/business-intelligence/modern-data-visualizations-and-custom-charts-in-looker",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-18",
+      "vendor": "微软",
+      "module": "投融资",
+      "title": "【投融资】LanceDB 完成 5750 万美元 B 轮，多模态训练数据层成为独立赛道",
+      "summary": "核心数据： B 轮 5750 万美元，Bessemer Venture Partners 与 Innovation Endeavors 领投，Theory Ventures、Dimension、Swift Ventures、CRV、Y Combinator 跟投；累计融资 9850 万美元。公司称 A 轮（2025 年 6 月）以来营收同比增长超 10 倍，开源库累计下载超 1.2 亿次。摘要： LanceDB 基于开源 Lance 格式构建面向 AI 训练的多模态湖仓，把结构化记录与图像、视频、传感器数据放进同一平台，支持单条记录级检索与列级追加（PB 级表加一列嵌入无需重写整表），数据留在客户云存储不搬运。客户包括 Netflix、微软、Runway、NVIDIA、字节跳动等；单个训练表可达 10-20PB，部分工作流接近 100PB。对数据平台的影响： Lance 在多模态训练数据场景对 Parquet/Iceberg 系整表优化格式形成实质差异化竞争——分析格式优化整表扫描，Lance 优化单记录取回与列追加。湖仓概念正在外溢出一个「AI 训练数据层」细分赛道，传统数据平台的训练数据管理功能是它的对位竞争对手。",
+      "source": "SiliconANGLE：LanceDB raises $57.5M to accelerate AI model training with multimodal data platform",
+      "url": "https://siliconangle.com/2026/11/17/lancedb-raises-57-5m-to-accelerate-ai-model-training-with-multimodal-data-platform/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-18",
+      "vendor": "微软",
+      "module": "技术",
+      "title": "【跟踪】微软 M365 全球宕机最终事件报告定档 11 月 20 日，区域隔离失效原因待解释",
+      "summary": "为什么值得继续看： 微软初步报告已确认 7 月引入的网关软件缺陷、Teams 流量切换与 14% 容量损失三因素叠加，导致超 80% 网关瘫痪近 24 小时，但按区域隔离故障的防护机制为何未能生效仍未解释；11 月 20 日的完整最终报告预计披露这一点及后续加固承诺。上期已跟踪 Fabric/Power BI 受波及情况，补偿与 SLA 安排仍未落地。需要等待什么信号确认： 11 月 20 日最终报告发布，重点看区域隔离失效的技术解释、容量分区策略调整，以及面向 Fabric/Power BI 受影响客户的具体补偿或 SLA 承诺。",
+      "source": "至顶科技：三重故障叠加致微软 365 大规模宕机（转述微软初步事件报告 PIR）",
+      "url": "https://www.163.com/dy/article/LBVHH94C05118UGF.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-18",
+      "vendor": "其他",
+      "module": "技术",
+      "title": "【跟踪】Ignite 2026 数据栈公告周开跑（11-17~20）：开发者侧能力先行，治理与计费口径待观察",
+      "summary": "为什么值得继续看： 大会首日数据库侧公告以开发者效率为主（SSMS 集成 Fabric Database Hub、GitHub Copilot 支持自带模型、查询性能面板进入 VS Code）；上期关注的 Fabric 治理迁移与计费口径，以及 OneLake Catalog 迁移指引，尚未在本批公告中细化，大会还有三天窗口。需要等待什么信号确认： 大会闭幕前（11-20）Book of News 与 Fabric 官方博客是否发布治理计费口径细则与 OneLake Catalog 迁移指引；若本周不发布，治理承接的完整度存疑，需下期继续跟踪。",
+      "source": "Azure SQL 官方博客：What's new across Microsoft SQL at Microsoft Ignite 2026",
+      "url": "https://devblogs.microsoft.com/azure-sql/whats-new-across-microsoft-sql-at-microsoft-ignite-2026",
+      "conf": ""
     }
   ],
   "archive": [
@@ -12127,7 +12197,8 @@
     "2026-11-12",
     "2026-11-13",
     "2026-11-16",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-18"
   ],
   "monthly": [
     {

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-18</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-18 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>事务数据库正被原生搬进湖仓，复制管道的中间层价值被压缩</li>
+      <li>平台治理重心从数据访问转向智能体用量与成本观测</li>
+      <li>训练数据层成为独立赛道，多模态湖仓开始虹吸资本</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>微软把事务数据库整建制搬进湖仓，谷歌把智能体用量观测做进数仓，两条主线指向同一件事：数据平台的边界正在吞并邻近层级，事务中间层与独立的可观测工具是最先被吞的两块。对买方而言，评估 CDC 管道与单点观测工具的长期价值正当其时。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>微软 Ignite 2026：Cosmos DB in Fabric 与 Cosmos DB Mirroring 同日 GA，事务数据整建制并入 OneLake</h3>
+    <div class="source">来源：<a href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blogs/Advancing-Databases-for-the-Next-Generation-of-Applications/ba-p/5172237">Microsoft Fabric 官方博客：Advancing Databases for the Next Generation of Applications</a></div>
+    <div class="body"><b>摘要：</b> Ignite 2026 上微软宣布 Azure Cosmos DB 镜像进 Fabric 的私有网络配置正式可用，支持从带 Private Endpoint 或 VNET 隔离的 Cosmos DB 账户向 OneLake 复制数据；Ignite 分会场进一步确认 Cosmos DB in Fabric 与 Cosmos DB Mirroring 同日 GA，镜像支持双向同步、每日最高 2.5TB 复制吞吐。同期 SQL database in Fabric 公布企业级能力：已删除数据库的时点恢复、客户托管密钥、审计与动态数据掩码均正式可用。<br><b>为什么对数据平台重要：</b> 事务数据库被原生收编进湖仓后，HTAP 的实现方式从「外挂复制管道」变成「平台内置镜像」，企业自建 CDC 链路的必要性被直接削弱。微软把 Cosmos DB（ChatGPT 级负载验证过的数据库）作为切入点的选法，说明这一步是奔着 AI 应用的运行时数据去的，不只是分析侧补课。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>BigQuery 十一批次集中转正：AI 函数优化模式、跨区域托管容灾、语义检索重排全部 GA</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/bigquery-ml/docs/release-notes">BigQuery Release Notes</a></div>
+    <div class="body"><b>摘要：</b> 11 月 17 日 BigQuery release notes 集中转正一批能力：托管 AI 函数新增优化模式（GA），降低处理大数据集时的 LLM token 消耗与查询延迟，并扩展到 AI.CLASSIFY 多标签分类；跨区域数据集复制与故障转移预留位可经 REST API 配置和监控（GA），托管容灾闭环；AI.SEARCH 支持按相关度重排结果、AI.RANK 函数（GA）。<br><b>对数据平台的影响：</b> 三条线各自指向一个趋势：AI 函数的成本被当成一等优化对象（优化模式直接省 token），容灾从自助搭建变成托管配置项，语义检索进入函数级原语。企业评估 BigQuery 上的 GenAI 管道成本模型时，优化模式的 token 节省幅度值得实测。</div>
+</div>
+<div class="item">
+    <h3>Databricks 发布 Unity Gateway Insights（Beta）：智能体用量与 token 浪费变成可查报表</h3>
+    <div class="source">来源：<a href="https://docs.databricks.com/aws/en/release-notes/product/2026/november">Databricks 2026 年 11 月 Release Notes</a></div>
+    <div class="body"><b>摘要：</b> 11 月 17 日 Databricks 发布 Unity Gateway Insights（Beta）：从统一 trace 表采样会话生成报告，展示用户把智能体用在哪里、token 花在哪里被浪费，报告由 Genie Code 从统一 trace 表构建。这是继上周以聚合数据定义「企业 AI tokenomics」的 AI Index 之后，Databricks 把同款观测能力产品化到单个客户账户内。<br><b>对数据平台的影响：</b> 智能体花销正在成为数据平台的一等治理对象，「谁家的网关能算清 token 去向」会变成采购评估项。Insights 基于统一 trace 表采样，覆盖度取决于该表的接入完整度，评估时要核对自家工作负载是否在采样范围内。</div>
+</div>
+<div class="item">
+    <h3>Looker 可视化语言大版本更新：新原生图表 + 开源 looker-skills 让智能体写自定义图表</h3>
+    <div class="source">来源：<a href="https://cloud.google.com/blog/products/business-intelligence/modern-data-visualizations-and-custom-charts-in-looker">Google Cloud 官方博客：Modern data visualizations and custom charts in Looker</a></div>
+    <div class="body"><b>摘要：</b> 谷歌 11 月 17/18 日发布 Looker 可视化语言大版本更新：新增 KPI、子弹图、桑基图、层次表、直方图、网络图等原生图表与紧凑数字格式，仪表盘获得现代化排版与磁贴级筛选（Preview）；同时开源 looker-skills 仓库，提供自定义可视化技能，用自然语言驱动 Claude、Codex 等编码智能体按 Visualization API 编写、测试并部署自定义图表，同一套系统支撑 Looker Data Apps。<br><b>对数据平台的影响：</b> BI 自定义开发的门槛从「会写 JavaScript」降到「会描述需求」，且产出物直接继承语义模型与钻取体系。行业专属可视化（晶圆图、库位图、差异桥）这类长尾需求，可能不再需要外包或等待插件市场。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3>【投融资】LanceDB 完成 5750 万美元 B 轮，多模态训练数据层成为独立赛道</h3>
+    <div class="source">来源：<a href="https://siliconangle.com/2026/11/17/lancedb-raises-57-5m-to-accelerate-ai-model-training-with-multimodal-data-platform/">SiliconANGLE：LanceDB raises $57.5M to accelerate AI model training with multimodal data platform</a></div>
+    <div class="body"><b>核心数据：</b> B 轮 5750 万美元，Bessemer Venture Partners 与 Innovation Endeavors 领投，Theory Ventures、Dimension、Swift Ventures、CRV、Y Combinator 跟投；累计融资 9850 万美元。公司称 A 轮（2025 年 6 月）以来营收同比增长超 10 倍，开源库累计下载超 1.2 亿次。<br><b>摘要：</b> LanceDB 基于开源 Lance 格式构建面向 AI 训练的多模态湖仓，把结构化记录与图像、视频、传感器数据放进同一平台，支持单条记录级检索与列级追加（PB 级表加一列嵌入无需重写整表），数据留在客户云存储不搬运。客户包括 Netflix、微软、Runway、NVIDIA、字节跳动等；单个训练表可达 10-20PB，部分工作流接近 100PB。<br><b>对数据平台的影响：</b> Lance 在多模态训练数据场景对 Parquet/Iceberg 系整表优化格式形成实质差异化竞争——分析格式优化整表扫描，Lance 优化单记录取回与列追加。湖仓概念正在外溢出一个「AI 训练数据层」细分赛道，传统数据平台的训练数据管理功能是它的对位竞争对手。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】微软 M365 全球宕机最终事件报告定档 11 月 20 日，区域隔离失效原因待解释</h3>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/LBVHH94C05118UGF.html">至顶科技：三重故障叠加致微软 365 大规模宕机（转述微软初步事件报告 PIR）</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 微软初步报告已确认 7 月引入的网关软件缺陷、Teams 流量切换与 14% 容量损失三因素叠加，导致超 80% 网关瘫痪近 24 小时，但按区域隔离故障的防护机制为何未能生效仍未解释；11 月 20 日的完整最终报告预计披露这一点及后续加固承诺。上期已跟踪 Fabric/Power BI 受波及情况，补偿与 SLA 安排仍未落地。<br><b>需要等待什么信号确认：</b> 11 月 20 日最终报告发布，重点看区域隔离失效的技术解释、容量分区策略调整，以及面向 Fabric/Power BI 受影响客户的具体补偿或 SLA 承诺。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Ignite 2026 数据栈公告周开跑（11-17~20）：开发者侧能力先行，治理与计费口径待观察</h3>
+    <div class="source">来源：<a href="https://devblogs.microsoft.com/azure-sql/whats-new-across-microsoft-sql-at-microsoft-ignite-2026">Azure SQL 官方博客：What's new across Microsoft SQL at Microsoft Ignite 2026</a></div>
+    <div class="body"><b>为什么值得继续看：</b> 大会首日数据库侧公告以开发者效率为主（SSMS 集成 Fabric Database Hub、GitHub Copilot 支持自带模型、查询性能面板进入 VS Code）；上期关注的 Fabric 治理迁移与计费口径，以及 OneLake Catalog 迁移指引，尚未在本批公告中细化，大会还有三天窗口。<br><b>需要等待什么信号确认：</b> 大会闭幕前（11-20）Book of News 与 Fabric 官方博客是否发布治理计费口径细则与 OneLake Catalog 迁移指引；若本周不发布，治理承接的完整度存疑，需下期继续跟踪。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-18 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
