@@ -12024,6 +12024,46 @@
       "source": "Azure SQL 官方博客：What's new across Microsoft SQL at Microsoft Ignite 2026",
       "url": "https://devblogs.microsoft.com/azure-sql/whats-new-across-microsoft-sql-at-microsoft-ignite-2026",
       "conf": ""
+    },
+    {
+      "date": "2026-11-19",
+      "vendor": "SAP",
+      "module": "专题",
+      "title": "Workday 宣布收购语义层公司 Honeydew，并入 Workday Data Cloud",
+      "summary": "来源： Workday Newsroom（PR Newswire 官方新闻稿）摘要： 11 月 18 日巴塞罗那 Workday Rising EMEA 上，Workday 宣布收购 Honeydew——一个面向 AI 与 BI 的语义层。其语义编译器把业务定义编译为精确的受治理查询，在请求到达模型之前完成；定义直接作用于 Workday Data Cloud 中的活数据而非数仓抽取副本，权限随定义传递，越权请求在查询执行前被拦截。交易条款未披露，预计在截至 2027 年 1 月 31 日的财季交割。Workday Data Cloud 负责人 Yasmeen Ahmad 表示：\"当下企业 AI 最大的瓶颈不是推理，而是上下文。\"为什么对数据平台重要： 这是继 SAP 于 11 月 16 日完成 TechWolf 交割后一周内的第二笔语义层资本动作，说明\"Agent 取数口径一致性\"已从产品功能变成独立收购标的。数据平台的治理边界正在从数据访问前移到\"问题变成查询之前\"的语义编译环节，语义层选型由可选组件升级为平台级决策，BI 与 Agent 共用一套受治理定义将成为采购评估的默认项。",
+      "source": "Workday Newsroom（PR Newswire 官方新闻稿）",
+      "url": "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-Announces-Intent-to-Acquire-Honeydew-a-Semantic-Layer-for-AI-and-Business-Intelligence/default.aspx",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-19",
+      "vendor": "微软",
+      "module": "专题",
+      "title": "微软与 Intel 签长期协议深化 Azure 基础设施，数据库性能协同设计落地",
+      "summary": "来源： PR Newswire（微软与 Intel 联合新闻稿）摘要： 11 月 18 日，微软与 Intel 宣布扩大长期合作：微软首家宣布在 Azure 自研芯片上采用 Intel Foundry 的 EMIB 先进封装，并确认包括下一代 Diamond Rapids 在内的多代 Xeon 多年供货；双方将在 CXL 内存、QAT 加速与机密计算上协同。已落地的性能数据：M 系列 v4 虚拟机借 CXL 内存与 Flat Memory Mode 实测最高 2.3 倍性能提升；首批 QAT 虚拟机使 Azure SQL 备份最高提速 2.5 倍；TDX 支持机密虚拟机跨主机迁移时的内存与 CPU 状态加密。为什么对数据平台重要： 数据库性能优化正在下沉到芯片、内存与系统协同设计层，云厂商开始以多年期协议锁定底层供给。对在 Azure 上承载数据库负载的团队，备份窗口、内存扩展上限与机密计算能力将由下一代 VM 规格直接改变容量规划与成本模型，采购周期需要与芯片供给周期对表。",
+      "source": "PR Newswire（微软与 Intel 联合新闻稿）",
+      "url": "https://www.prnewswire.com/news-releases/microsoft-and-intel-deepen-collaboration-to-deliver-differentiated-azure-infrastructure-302944146.html",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-19",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "Google Cloud Database Center 推出代理式评估预览，数据库变更先跑基准再上生产",
+      "summary": "来源： Google Cloud 官方博客摘要： 11 月 18 日，Google Cloud 在 Database Center 中为 Cloud SQL for PostgreSQL 推出 assessments 代理式工作流预览。针对机器升配、版本升级、启用 data cache 三类平台建议，用户点击\"评估影响\"后自动创建测试计划、克隆主实例、在隔离环境运行合成基准、对克隆实例应用变更并生成前后对比报告（吞吐、延迟、CPU、内存），评估完成后克隆自动删除。对数据平台的影响： 数据库变更验证从 DBA 手工搭建临时环境变成托管代理工作流，\"建议—验证—上线\"闭环收进平台控制面。对管理多实例舰队的团队，变更决策周期与试错成本显著下降；这也预示云厂商将把\"AI 代理执行数据库变更\"作为默认能力推进，变更审计与权限口径需要同步纳入治理评估。",
+      "source": "Google Cloud 官方博客",
+      "url": "https://cloud.google.com/blog/products/databases/database-center-assessments-for-cloud-sql-for-postgresql",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-19",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【预告】Workday 财报 11 月 24 日发布，语义层收购细节迎首个披露窗口",
+      "summary": "来源： TradingView WDAY 财报日历为什么值得继续看： Workday 将于 11 月 24 日发布 FY2027 Q3 财报，距 Honeydew 收购宣布仅六天。财报电话会是对外确认交易条款、Data Cloud 语义层整合路线与 AI 代理相关经营指标的第一个窗口，也是观察\"上下文层\"如何被定价的直接样本。需要等待什么信号确认： 交易金额是否披露及交割进度；Honeydew 语义编译并入 Data Cloud 的时间表；管理层对语义层商业化的口径定义与相关收入指引。",
+      "source": "TradingView WDAY 财报日历",
+      "url": "https://www.tradingview.com/symbols/NASDAQ-WDAY/",
+      "conf": ""
     }
   ],
   "archive": [
@@ -12198,7 +12238,8 @@
     "2026-11-13",
     "2026-11-16",
     "2026-11-17",
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-19"
   ],
   "monthly": [
     {

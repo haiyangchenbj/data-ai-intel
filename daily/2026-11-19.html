@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-19</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-19 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>语义层收购接连出现，业务上下文正成为企业AI栈的独立争夺层级</li>
+      <li>数据库变更验证正交给AI代理，先在隔离环境跑基准再动生产</li>
+      <li>数据库性能优化下沉到芯片协同，云厂商以多年协议锁定供给</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>企业AI的瓶颈从模型推理转向业务上下文，语义层一周内两度成为收购标的，治理边界前移到查询生成之前；同时数据库性能优化下沉到芯片与内存协同，云厂商以多年期协议锁定供给。平台选型需同时评估语义治理与底层供给周期。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Workday 宣布收购语义层公司 Honeydew，并入 Workday Data Cloud</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-Announces-Intent-to-Acquire-Honeydew-a-Semantic-Layer-for-AI-and-Business-Intelligence/default.aspx">Workday Newsroom（PR Newswire 官方新闻稿）</a><br><b>摘要：</b> 11 月 18 日巴塞罗那 Workday Rising EMEA 上，Workday 宣布收购 Honeydew——一个面向 AI 与 BI 的语义层。其语义编译器把业务定义编译为精确的受治理查询，在请求到达模型之前完成；定义直接作用于 Workday Data Cloud 中的活数据而非数仓抽取副本，权限随定义传递，越权请求在查询执行前被拦截。交易条款未披露，预计在截至 2027 年 1 月 31 日的财季交割。Workday Data Cloud 负责人 Yasmeen Ahmad 表示："当下企业 AI 最大的瓶颈不是推理，而是上下文。"<br><b>为什么对数据平台重要：</b> 这是继 SAP 于 11 月 16 日完成 TechWolf 交割后一周内的第二笔语义层资本动作，说明"Agent 取数口径一致性"已从产品功能变成独立收购标的。数据平台的治理边界正在从数据访问前移到"问题变成查询之前"的语义编译环节，语义层选型由可选组件升级为平台级决策，BI 与 Agent 共用一套受治理定义将成为采购评估的默认项。</div>
+</div>
+<div class="item">
+    <h3>微软与 Intel 签长期协议深化 Azure 基础设施，数据库性能协同设计落地</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.prnewswire.com/news-releases/microsoft-and-intel-deepen-collaboration-to-deliver-differentiated-azure-infrastructure-302944146.html">PR Newswire（微软与 Intel 联合新闻稿）</a><br><b>摘要：</b> 11 月 18 日，微软与 Intel 宣布扩大长期合作：微软首家宣布在 Azure 自研芯片上采用 Intel Foundry 的 EMIB 先进封装，并确认包括下一代 Diamond Rapids 在内的多代 Xeon 多年供货；双方将在 CXL 内存、QAT 加速与机密计算上协同。已落地的性能数据：M 系列 v4 虚拟机借 CXL 内存与 Flat Memory Mode 实测最高 2.3 倍性能提升；首批 QAT 虚拟机使 Azure SQL 备份最高提速 2.5 倍；TDX 支持机密虚拟机跨主机迁移时的内存与 CPU 状态加密。<br><b>为什么对数据平台重要：</b> 数据库性能优化正在下沉到芯片、内存与系统协同设计层，云厂商开始以多年期协议锁定底层供给。对在 Azure 上承载数据库负载的团队，备份窗口、内存扩展上限与机密计算能力将由下一代 VM 规格直接改变容量规划与成本模型，采购周期需要与芯片供给周期对表。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Google Cloud Database Center 推出代理式评估预览，数据库变更先跑基准再上生产</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/blog/products/databases/database-center-assessments-for-cloud-sql-for-postgresql">Google Cloud 官方博客</a><br><b>摘要：</b> 11 月 18 日，Google Cloud 在 Database Center 中为 Cloud SQL for PostgreSQL 推出 assessments 代理式工作流预览。针对机器升配、版本升级、启用 data cache 三类平台建议，用户点击"评估影响"后自动创建测试计划、克隆主实例、在隔离环境运行合成基准、对克隆实例应用变更并生成前后对比报告（吞吐、延迟、CPU、内存），评估完成后克隆自动删除。<br><b>对数据平台的影响：</b> 数据库变更验证从 DBA 手工搭建临时环境变成托管代理工作流，"建议—验证—上线"闭环收进平台控制面。对管理多实例舰队的团队，变更决策周期与试错成本显著下降；这也预示云厂商将把"AI 代理执行数据库变更"作为默认能力推进，变更审计与权限口径需要同步纳入治理评估。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【预告】Workday 财报 11 月 24 日发布，语义层收购细节迎首个披露窗口</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.tradingview.com/symbols/NASDAQ-WDAY/">TradingView WDAY 财报日历</a><br><b>为什么值得继续看：</b> Workday 将于 11 月 24 日发布 FY2027 Q3 财报，距 Honeydew 收购宣布仅六天。财报电话会是对外确认交易条款、Data Cloud 语义层整合路线与 AI 代理相关经营指标的第一个窗口，也是观察"上下文层"如何被定价的直接样本。<br><b>需要等待什么信号确认：</b> 交易金额是否披露及交割进度；Honeydew 语义编译并入 Data Cloud 的时间表；管理层对语义层商业化的口径定义与相关收入指引。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-19 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
