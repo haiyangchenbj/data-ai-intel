@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-20</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-20 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据平台的运维权正从值班工程师转移到平台内常驻智能体。</li>
+      <li>AI 需求主导头部云厂商收入曲线，增速与算力投入同步放大。</li>
+      <li>语义上下文层成湖仓厂商共同押注，业务口径管理走向平台化。</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>本周主线是数据平台把 agent 从外挂工具收编为内建能力：运维、检索、语义与记忆都在进入平台的合同边界。需求侧 AI 收入已成报表主变量，供给侧算力与语义基建同步扩张，竞争从功能清单转向谁能托管 agent 的生产运行。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Databricks 开放 Genie ZeroOps 公共 Beta：自治管道运维智能体走向全面可用</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.databricks.com/blog/genie-zeroops-now-public-beta-autonomous-agent-fixes-data-pipelines-lessons-80000-customer">Databricks 官方博客</a><br><b>摘要：</b> Databricks 于 11 月 19 日宣布 Genie ZeroOps 进入公共 Beta，任意工作区管理员可在 Previews 页开启。该后台智能体持续监控作业、管道与表，既抓硬故障也抓「表停止更新、行数骤减」类静默异常，收集日志、源码、元数据与 Unity Catalog 血缘定位根因，在沙箱内用单元测试与试运行验证修复方案，最终以一键 PR 交付。私有预览覆盖数百家公司、观测超 8 万起真实故障，过半问题需组织特定知识才能定级处理。<br><b>为什么对数据平台重要：</b> 数据工程的主要成本正从「建管道」转向「养管道」，ZeroOps 把定级、根因调查、修复验证整段自动化，且直接运行在 Unity Catalog 血缘与权限体系内。运维智能体从外挂脚本变成平台内建能力，将改写数据团队的人力结构，也会成为平台选型的新评估项。</div>
+</div>
+<div class="item">
+    <h3>阿里云财报：外部收入增速 64% 创近六年新高，AI 收入连续 13 个季度三位数增长</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.cnstock.com/commonDetail/831012">上海证券报·中国证券网（财报披露口径）</a><br><b>摘要：</b> 阿里巴巴 11 月 19 日晚发布 2027 财年 Q2（截至 2026-09-30）财报：AI 云与算力服务收入 609.73 亿元，同比 +53%；外部客户收入同比 +64%（上季 45%，近六年新高）；外部经常性收入 +67%；经调整 EBITA 88.38 亿元，同比 +121%，利润率 14.5%；AI 相关产品收入 179.18 亿元，连续 13 个季度三位数增长；集团资本开支 504.77 亿元，同比 +60%。<br><b>为什么对数据平台重要：</b> 增速较上季显著加快且由外部客户驱动，AI 需求已进入报表主变量；CEO 吴泳铭重申 2030 自然年云外部收入 1000 亿美元、利润率超 20% 的目标不变，真武 V900 芯片 2027 年一季度量产。<br><b>为什么对数据平台重要：</b> capex 同比 +60% 说明供给与需求同步扩张，国内数据平台与算力采购向头部集中的势能进一步加强，同梯队厂商的定价、产能与补贴策略都将承压。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake 中旬功能批次集中转正：Cortex Agent SDK 进入 GA</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/en/release-notes/feature-releases-2026">Snowflake 官方 Release Notes</a><br><b>摘要：</b> Snowflake 于 11 月 18 日集中转正多项能力：Cortex Agent SDK 1.0.0 正式可用（Python/TypeScript，支持流式响应、会话维持与长任务重连）；Retrieve Cortex Search GA，可在 SQL 中以表函数低延迟调用搜索；Spark Monitoring UI GA；加载 Parquet/JSON/Avro/ORC 时结构化 OBJECT/ARRAY/MAP 类型的 schema 检测与演进 GA；AI_COMPLETE 提示词缓存 GA。11 月 19 日再推出 App Runtime serverless 计算与 Workspaces 开发预览。<br><b>对数据平台的影响：</b> Agent SDK 转正意味着 agent 运行时被正式纳入平台能力边界，企业可在受治理数据之上构建 agent 而不必依赖框架自拼装；结构化类型 schema 演进 GA 与提示词缓存直接降低半结构化管道与 AI 调用的维护和成本。</div>
+</div>
+<div class="item">
+    <h3>BigQuery 更新：Data Engineering Agent 可观测性 GA、AI 索引开放预览</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/bigquery/docs/release-notes">BigQuery Release Notes</a><br><b>摘要：</b> Google Cloud 于 11 月 19 日更新 BigQuery：Data Engineering Agent 的 agent 观测能力 GA，可在 Cloud Monitoring 监控 token 消耗、请求量与模型延迟，在 Cloud Trace 查看执行轨迹与工具调用；新增 CREATE AI INDEX 语句与 AI.SEARCH 函数（Preview），无需自管 embedding 即可对表列做自然语言检索；BigQuery Migration Service 新增迁移校验服务（Preview），可比对源仓与目标表的 schema、聚合指标与行级数据。同日披露 Dataform、BigQuery Studio 与 Colab Enterprise 的路径穿越漏洞（GCP-2026-084 安全公告）。<br><b>对数据平台的影响：</b> agent 大量进入数据管道后，token 成本与执行审计成为治理新科目，观测能力 GA 说明平台方开始把 agent 当作一等计费与审计主体；AI 索引把语义检索下沉为表级基建，检索类工作负载的架构选择空间进一步收窄。</div>
+</div>
+<div class="item">
+    <h3>PostgreSQL 19 正式发布，EDB 同日宣布平台同步支持</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.postgresql.org/about/news/">PostgreSQL 官方新闻</a><br><b>摘要：</b> PostgreSQL 19 于 11 月 19 日按计划正式 GA（10 月 15 日 RC1、11 月 12 日 RC2 之后）。版本包含查询优化器改进、逻辑复制增强与多项默认值变更（JIT 默认关闭、TOAST 默认改用 LZ4 等），升级需走 pg_upgrade 或逻辑复制路径。EDB 同日宣布其 Postgres AI 平台同步提供 PG 19 支持。<br><b>对数据平台的影响：</b> PostgreSQL 是托管数据库与湖仓连接器的事实底座，19 的默认值与兼容性变更将传导至各大云托管 PG 服务和 CDC 工具链的适配节奏，升级窗口规划需要提前纳入变更清单。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【补录】Azure HorizonDB 正式 GA，Fabric HorizonDB 进入公开预览</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://learn.microsoft.com/zh-cn/partner-center/announcements/2026-november">Microsoft Partner Center 官方公告</a> [补录 11-18]<br><b>为什么值得继续看：</b> Ignite 2026 上微软推出云原生 PostgreSQL 服务 Azure HorizonDB（11 月 17/18 日 GA 覆盖 13 个区域，最高 192 vCore 与 128TB 存储，内置 DiskANN 向量索引、语义算子与库内 AI 模型，官方口径 OLTP 吞吐最高达自建 PG 的 8 倍），Microsoft Fabric HorizonDB 以 serverless 形态同步公开预览并作为 Fabric 应用的默认数据库。上两期未及收录，本期补录留档。<br><b>需要等待什么信号确认：</b> 8 倍吞吐口径的基准条件与独立复现结果；Oracle 迁移 PostgreSQL 路径的实际采用数据；Fabric HorizonDB 从预览到 GA 的计费口径。</div>
+</div>
+<div class="item">
+    <h3>【降级】ClickHouse 开源 Loom：agent 记忆与代码索引进同一数据库</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.modb.pro/db/2121380206841782272">墨天轮（ClickHouse 官方文章 11 月 15 日发布，二手解读）</a> 【降级】<br><b>为什么值得继续看：</b> ClickHouse 于 11 月 15 日以 Apache-2.0 开源 Loom，把 agent 事实记忆（带版本化历史）、向量、BM25 全文、实体图与代码调用图放进同一个库，四路检索融合为一次排序，并提供 MCP、HTTP 及 Python/TypeScript 接口。发布时间超出本期 72 小时补录上限，按规则降级收录。<br><b>需要等待什么信号确认：</b> 生产环境采用案例与官方后续路线；与专用 agent 记忆中间件（LangGraph memory、Mem0 等）的替代或共存关系；Lance、Milvus 等同类基础设施的对标动作。</div>
+</div>
+<div class="item">
+    <h3>【降级】Starburst 推出 Context Studio：语义上下文层竞赛扩容（一手原文待验证）</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.zhiding.cn/ai-infrastructure/2026/1119/3206482.shtml">至顶网（11 月 19 日报道 Launch Point 2026 发布，未见一手原文）</a> 【降级】<br><b>为什么值得继续看：</b> Starburst 于 11 月 18 日在 Launch Point 2026 推出 Context Studio（私有预览），为 AI agent 提供受治理的业务语义与数据产品上下文，记录 agent 访问的数据源与生成的 SQL 以支持答案溯源；公开预览计划 2027 年 1 月启动。与 Databricks Genie Ontology、Snowflake 语义视图同题，「上下文层」正在成为湖仓厂商的共同押注。<br><b>需要等待什么信号确认：</b> Starburst 官方博客原文与产品文档；私有预览客户的准确性基准数据；GA 时间表与定价。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-20 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

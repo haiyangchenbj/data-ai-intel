@@ -12064,6 +12064,86 @@
       "source": "TradingView WDAY 财报日历",
       "url": "https://www.tradingview.com/symbols/NASDAQ-WDAY/",
       "conf": ""
+    },
+    {
+      "date": "2026-11-20",
+      "vendor": "Databricks",
+      "module": "专题",
+      "title": "Databricks 开放 Genie ZeroOps 公共 Beta：自治管道运维智能体走向全面可用",
+      "summary": "来源： Databricks 官方博客摘要： Databricks 于 11 月 19 日宣布 Genie ZeroOps 进入公共 Beta，任意工作区管理员可在 Previews 页开启。该后台智能体持续监控作业、管道与表，既抓硬故障也抓「表停止更新、行数骤减」类静默异常，收集日志、源码、元数据与 Unity Catalog 血缘定位根因，在沙箱内用单元测试与试运行验证修复方案，最终以一键 PR 交付。私有预览覆盖数百家公司、观测超 8 万起真实故障，过半问题需组织特定知识才能定级处理。为什么对数据平台重要： 数据工程的主要成本正从「建管道」转向「养管道」，ZeroOps 把定级、根因调查、修复验证整段自动化，且直接运行在 Unity Catalog 血缘与权限体系内。运维智能体从外挂脚本变成平台内建能力，将改写数据团队的人力结构，也会成为平台选型的新评估项。",
+      "source": "Databricks 官方博客",
+      "url": "https://www.databricks.com/blog/genie-zeroops-now-public-beta-autonomous-agent-fixes-data-pipelines-lessons-80000-customer",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-20",
+      "vendor": "阿里云",
+      "module": "专题",
+      "title": "阿里云财报：外部收入增速 64% 创近六年新高，AI 收入连续 13 个季度三位数增长",
+      "summary": "来源： 上海证券报·中国证券网（财报披露口径）摘要： 阿里巴巴 11 月 19 日晚发布 2027 财年 Q2（截至 2026-09-30）财报：AI 云与算力服务收入 609.73 亿元，同比 +53%；外部客户收入同比 +64%（上季 45%，近六年新高）；外部经常性收入 +67%；经调整 EBITA 88.38 亿元，同比 +121%，利润率 14.5%；AI 相关产品收入 179.18 亿元，连续 13 个季度三位数增长；集团资本开支 504.77 亿元，同比 +60%。为什么对数据平台重要： 增速较上季显著加快且由外部客户驱动，AI 需求已进入报表主变量；CEO 吴泳铭重申 2030 自然年云外部收入 1000 亿美元、利润率超 20% 的目标不变，真武 V900 芯片 2027 年一季度量产。为什么对数据平台重要： capex 同比 +60% 说明供给与需求同步扩张，国内数据平台与算力采购向头部集中的势能进一步加强，同梯队厂商的定价、产能与补贴策略都将承压。",
+      "source": "上海证券报·中国证券网（财报披露口径）",
+      "url": "https://www.cnstock.com/commonDetail/831012",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-20",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "Snowflake 中旬功能批次集中转正：Cortex Agent SDK 进入 GA",
+      "summary": "来源： Snowflake 官方 Release Notes摘要： Snowflake 于 11 月 18 日集中转正多项能力：Cortex Agent SDK 1.0.0 正式可用（Python/TypeScript，支持流式响应、会话维持与长任务重连）；Retrieve Cortex Search GA，可在 SQL 中以表函数低延迟调用搜索；Spark Monitoring UI GA；加载 Parquet/JSON/Avro/ORC 时结构化 OBJECT/ARRAY/MAP 类型的 schema 检测与演进 GA；AI_COMPLETE 提示词缓存 GA。11 月 19 日再推出 App Runtime serverless 计算与 Workspaces 开发预览。对数据平台的影响： Agent SDK 转正意味着 agent 运行时被正式纳入平台能力边界，企业可在受治理数据之上构建 agent 而不必依赖框架自拼装；结构化类型 schema 演进 GA 与提示词缓存直接降低半结构化管道与 AI 调用的维护和成本。",
+      "source": "Snowflake 官方 Release Notes",
+      "url": "https://docs.snowflake.com/en/en/release-notes/feature-releases-2026",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-20",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "BigQuery 更新：Data Engineering Agent 可观测性 GA、AI 索引开放预览",
+      "summary": "来源： BigQuery Release Notes摘要： Google Cloud 于 11 月 19 日更新 BigQuery：Data Engineering Agent 的 agent 观测能力 GA，可在 Cloud Monitoring 监控 token 消耗、请求量与模型延迟，在 Cloud Trace 查看执行轨迹与工具调用；新增 CREATE AI INDEX 语句与 AI.SEARCH 函数（Preview），无需自管 embedding 即可对表列做自然语言检索；BigQuery Migration Service 新增迁移校验服务（Preview），可比对源仓与目标表的 schema、聚合指标与行级数据。同日披露 Dataform、BigQuery Studio 与 Colab Enterprise 的路径穿越漏洞（GCP-2026-084 安全公告）。对数据平台的影响： agent 大量进入数据管道后，token 成本与执行审计成为治理新科目，观测能力 GA 说明平台方开始把 agent 当作一等计费与审计主体；AI 索引把语义检索下沉为表级基建，检索类工作负载的架构选择空间进一步收窄。",
+      "source": "BigQuery Release Notes",
+      "url": "https://cloud.google.com/bigquery/docs/release-notes",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-20",
+      "vendor": "EDB",
+      "module": "技术",
+      "title": "PostgreSQL 19 正式发布，EDB 同日宣布平台同步支持",
+      "summary": "来源： PostgreSQL 官方新闻摘要： PostgreSQL 19 于 11 月 19 日按计划正式 GA（10 月 15 日 RC1、11 月 12 日 RC2 之后）。版本包含查询优化器改进、逻辑复制增强与多项默认值变更（JIT 默认关闭、TOAST 默认改用 LZ4 等），升级需走 pg_upgrade 或逻辑复制路径。EDB 同日宣布其 Postgres AI 平台同步提供 PG 19 支持。对数据平台的影响： PostgreSQL 是托管数据库与湖仓连接器的事实底座，19 的默认值与兼容性变更将传导至各大云托管 PG 服务和 CDC 工具链的适配节奏，升级窗口规划需要提前纳入变更清单。",
+      "source": "PostgreSQL 官方新闻",
+      "url": "https://www.postgresql.org/about/news/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-20",
+      "vendor": "微软",
+      "module": "技术",
+      "title": "【补录】Azure HorizonDB 正式 GA，Fabric HorizonDB 进入公开预览",
+      "summary": "来源： Microsoft Partner Center 官方公告 [补录 11-18]为什么值得继续看： Ignite 2026 上微软推出云原生 PostgreSQL 服务 Azure HorizonDB（11 月 17/18 日 GA 覆盖 13 个区域，最高 192 vCore 与 128TB 存储，内置 DiskANN 向量索引、语义算子与库内 AI 模型，官方口径 OLTP 吞吐最高达自建 PG 的 8 倍），Microsoft Fabric HorizonDB 以 serverless 形态同步公开预览并作为 Fabric 应用的默认数据库。上两期未及收录，本期补录留档。需要等待什么信号确认： 8 倍吞吐口径的基准条件与独立复现结果；Oracle 迁移 PostgreSQL 路径的实际采用数据；Fabric HorizonDB 从预览到 GA 的计费口径。",
+      "source": "Microsoft Partner Center 官方公告",
+      "url": "https://learn.microsoft.com/zh-cn/partner-center/announcements/2026-november",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-20",
+      "vendor": "ClickHouse",
+      "module": "技术",
+      "title": "【降级】ClickHouse 开源 Loom：agent 记忆与代码索引进同一数据库",
+      "summary": "来源： 墨天轮（ClickHouse 官方文章 11 月 15 日发布，二手解读） 【降级】为什么值得继续看： ClickHouse 于 11 月 15 日以 Apache-2.0 开源 Loom，把 agent 事实记忆（带版本化历史）、向量、BM25 全文、实体图与代码调用图放进同一个库，四路检索融合为一次排序，并提供 MCP、HTTP 及 Python/TypeScript 接口。发布时间超出本期 72 小时补录上限，按规则降级收录。需要等待什么信号确认： 生产环境采用案例与官方后续路线；与专用 agent 记忆中间件（LangGraph memory、Mem0 等）的替代或共存关系；Lance、Milvus 等同类基础设施的对标动作。",
+      "source": "墨天轮（ClickHouse 官方文章 11 月 15 日发布，二手解读）",
+      "url": "https://www.modb.pro/db/2121380206841782272",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-20",
+      "vendor": "Databricks",
+      "module": "技术",
+      "title": "【降级】Starburst 推出 Context Studio：语义上下文层竞赛扩容（一手原文待验证）",
+      "summary": "来源： 至顶网（11 月 19 日报道 Launch Point 2026 发布，未见一手原文） 【降级】为什么值得继续看： Starburst 于 11 月 18 日在 Launch Point 2026 推出 Context Studio（私有预览），为 AI agent 提供受治理的业务语义与数据产品上下文，记录 agent 访问的数据源与生成的 SQL 以支持答案溯源；公开预览计划 2027 年 1 月启动。与 Databricks Genie Ontology、Snowflake 语义视图同题，「上下文层」正在成为湖仓厂商的共同押注。需要等待什么信号确认： Starburst 官方博客原文与产品文档；私有预览客户的准确性基准数据；GA 时间表与定价。",
+      "source": "至顶网（11 月 19 日报道 Launch Point 2026 发布，未见一手原文）",
+      "url": "https://www.zhiding.cn/ai-infrastructure/2026/1119/3206482.shtml",
+      "conf": ""
     }
   ],
   "archive": [
@@ -12239,7 +12319,8 @@
     "2026-11-16",
     "2026-11-17",
     "2026-11-18",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-20"
   ],
   "monthly": [
     {
