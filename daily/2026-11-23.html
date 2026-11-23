@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-23</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-23 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>决策类负载正被做成专用模型能力，AI 函数从理解走向裁决</li>
+      <li>平台默认行为变更成为常规杠杆，静默改判直接动到成本基线</li>
+      <li>头部厂商估值锚在逆风周期继续上移，一级市场为平台层重新定价</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>周末信息面偏静，但两条主线清晰：平台厂商持续把治理与决策能力下沉为内建能力，行为变更取代大版本成为影响成本基线的常规手段；资本在 AI 逆风下仍愿为数据+AI 平台抬价，头部估值锚与二线融资热度分化。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Snowflake Decision 公共预览：AI_COMPLETE 新增专用决策模型</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-ai-complete-snowflake-decision-public-preview">Snowflake Release Notes（2026-11-20）</a><br><b>摘要：</b> Snowflake 在 AI_COMPLETE 中新增 Snowflake Decision 公共预览，这是面向海量数据集高吞吐分类、评分与决策场景的专用模型：按预定义标准评估非结构化数据，返回带概率与置信度的结构化答案，可直接接入路由、优先级与处理自动化流程；同批 AI_EXTRACT 的字段、表格与复杂版面抽取精度进一步提升。<br><b>为什么对数据平台重要：</b> 数据平台正从「理解内容」延伸到「直接输出可执行的裁决结果」：分类、评分、路由类业务规则被内建进仓库执行路径，减少外部模型调用与数据搬运，也把这类负载的成本、一致性与审计收回平台内，是 AI 函数从辅助分析走向业务裁决的信号。</div>
+</div>
+<div class="item">
+    <h3>动态表 AUTO 刷新默认改判 ADAPTIVE</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-dynamic-tables-auto-resolves-to-adaptive">Snowflake Release Notes（2026-11-20）</a><br><b>摘要：</b> Snowflake 调整动态表默认刷新行为：REFRESH_MODE = AUTO（默认值）且定义支持增量刷新时，刷新模式改判为 ADAPTIVE 而非 INCREMENTAL；不兼容增量刷新的定义仍回退 FULL。该变更对新建与存量动态表统一生效，无需迁移。<br><b>为什么对数据平台重要：</b> 这是零迁移成本的默认行为变更：动态表的刷新路径、计算开销与数据新鲜度随之改变，直接影响成本基线与下游 SLA。平台厂商正越来越多地用「改默认值」代替发大版本，运维侧需要把默认行为变更纳入监控与容量评估口径。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Postgres access roles 令牌认证正式 GA</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-postgres-token-access-roles-ga">Snowflake Release Notes（2026-11-20）</a><br><b>摘要：</b> Snowflake 的 Postgres access roles 令牌认证正式 GA：为 Postgres 用户启用访问角色并授予 Snowflake 角色、应用角色或用户后，授权调用方可生成短时令牌，以该 Postgres 用户身份连接；库与对象权限仍由 Postgres 角色控制，权限模型不因认证方式改变。<br><b>对数据平台的影响：</b> 短时凭证替代长期口令是 Postgres 生态治理的共性方向；Snowflake 把托管 Postgres 的接入认证与其角色体系打通后，跨系统身份传播与审计链路更完整，可作为企业凭证轮换与最小权限改造的参考模式。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】Databricks 传早期洽谈新一轮融资，目标估值约 2250 亿美元</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.channelnewsasia.com/business/databricks-in-early-talks-raise-funds-225-billion-valuation-wsj-reports-6570836">路透社转引《华尔街日报》报道（CNA 同步，2026-11-20）</a><br><b>为什么值得继续看：</b> WSJ 11-20 援引知情人士报道称，Databricks 正就新一轮融资早期洽谈，拟募资数十亿美元，目标投后估值约 2250 亿美元，较 8 月刚完成的 50 亿美元融资（1900 亿美元估值）再抬约 18%；谈判仍在进行、条款可能变化，公司未回应置评。公司此前披露 Lakehouse 业务季度收入破 15 亿美元、Lakebase 破 1 亿美元、年化营收超 70 亿美元。若落地，将是 AI 逆风周期中数据平台层定价的重要参照。<br><b>需要等待什么信号确认：</b> 公司官方确认或条款披露；领投方与实际规模；下一轮融资通稿中 Lakebase 与 Lakehouse 收入口径的更新。</div>
+</div>
+<div class="item">
+    <h3>【预告】Workday 11-24 盘后发布 FY2027 Q3 财报</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-to-Announce-Fiscal-2027-Third-Quarter-Financial-Results-on-November-24-2026/default.aspx">Workday 投资者关系公告（2026-11-02）</a><br><b>为什么值得继续看：</b> Workday 已官方确认 11-24 美股盘后发布 FY2027 第三季度业绩，电话会同期举行。观察重点是其订阅收入与企业 AI 产品贡献的披露口径，以及语义层相关能力与 Honeydew 整合的量化进展——Workday 正把企业数据与 Agent 能力绑定，其披露节奏是这类「业务系统厂商做数据层」路线的风向标。<br><b>需要等待什么信号确认：</b> 财报中订阅收入与 AI/Agent 产品贡献口径；Honeydew 整合或语义层能力商业化的量化披露。</div>
+</div>
+<div class="item">
+    <h3>【降级】LanceDB 完成 5750 万美元 B 轮融资</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://blog.lancedb.com/">LanceDB 官方博客（2026-11-17）</a><br><b>为什么值得继续看：</b> LanceDB 于 11-17 官宣完成 5750 万美元 B 轮，Bessemer Venture Partners 与 Innovation Endeavors 联合领投，Theory Ventures、Dimension Capital 等跟投。公司基于自研 Lance 列式格式构建面向 AI 的多模态湖仓，统一存储向量、图片、音视频与元数据。因超出 72 小时补录窗口，本期降级收录。多模态训练数据基础设施的融资热度仍在持续，与向量数据库赛道的整合趋势互相印证。<br><b>需要等待什么信号确认：</b> 新资金的具体投向（Lance 格式生态与企业版能力）；多模态/向量数据基础设施赛道的下一轮定价与整合动作。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-23 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>

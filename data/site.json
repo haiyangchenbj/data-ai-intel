@@ -12144,6 +12144,66 @@
       "source": "至顶网（11 月 19 日报道 Launch Point 2026 发布，未见一手原文）",
       "url": "https://www.zhiding.cn/ai-infrastructure/2026/1119/3206482.shtml",
       "conf": ""
+    },
+    {
+      "date": "2026-11-23",
+      "vendor": "Snowflake",
+      "module": "专题",
+      "title": "Snowflake Decision 公共预览：AI_COMPLETE 新增专用决策模型",
+      "summary": "来源： Snowflake Release Notes（2026-11-20）摘要： Snowflake 在 AI_COMPLETE 中新增 Snowflake Decision 公共预览，这是面向海量数据集高吞吐分类、评分与决策场景的专用模型：按预定义标准评估非结构化数据，返回带概率与置信度的结构化答案，可直接接入路由、优先级与处理自动化流程；同批 AI_EXTRACT 的字段、表格与复杂版面抽取精度进一步提升。为什么对数据平台重要： 数据平台正从「理解内容」延伸到「直接输出可执行的裁决结果」：分类、评分、路由类业务规则被内建进仓库执行路径，减少外部模型调用与数据搬运，也把这类负载的成本、一致性与审计收回平台内，是 AI 函数从辅助分析走向业务裁决的信号。",
+      "source": "Snowflake Release Notes（2026-11-20）",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-ai-complete-snowflake-decision-public-preview",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-23",
+      "vendor": "Snowflake",
+      "module": "专题",
+      "title": "动态表 AUTO 刷新默认改判 ADAPTIVE",
+      "summary": "来源： Snowflake Release Notes（2026-11-20）摘要： Snowflake 调整动态表默认刷新行为：REFRESH_MODE = AUTO（默认值）且定义支持增量刷新时，刷新模式改判为 ADAPTIVE 而非 INCREMENTAL；不兼容增量刷新的定义仍回退 FULL。该变更对新建与存量动态表统一生效，无需迁移。为什么对数据平台重要： 这是零迁移成本的默认行为变更：动态表的刷新路径、计算开销与数据新鲜度随之改变，直接影响成本基线与下游 SLA。平台厂商正越来越多地用「改默认值」代替发大版本，运维侧需要把默认行为变更纳入监控与容量评估口径。",
+      "source": "Snowflake Release Notes（2026-11-20）",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-dynamic-tables-auto-resolves-to-adaptive",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-23",
+      "vendor": "Snowflake",
+      "module": "技术",
+      "title": "Postgres access roles 令牌认证正式 GA",
+      "summary": "来源： Snowflake Release Notes（2026-11-20）摘要： Snowflake 的 Postgres access roles 令牌认证正式 GA：为 Postgres 用户启用访问角色并授予 Snowflake 角色、应用角色或用户后，授权调用方可生成短时令牌，以该 Postgres 用户身份连接；库与对象权限仍由 Postgres 角色控制，权限模型不因认证方式改变。对数据平台的影响： 短时凭证替代长期口令是 Postgres 生态治理的共性方向；Snowflake 把托管 Postgres 的接入认证与其角色体系打通后，跨系统身份传播与审计链路更完整，可作为企业凭证轮换与最小权限改造的参考模式。",
+      "source": "Snowflake Release Notes（2026-11-20）",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-postgres-token-access-roles-ga",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-23",
+      "vendor": "Databricks",
+      "module": "投融资",
+      "title": "【跟踪】Databricks 传早期洽谈新一轮融资，目标估值约 2250 亿美元",
+      "summary": "来源： 路透社转引《华尔街日报》报道（CNA 同步，2026-11-20）为什么值得继续看： WSJ 11-20 援引知情人士报道称，Databricks 正就新一轮融资早期洽谈，拟募资数十亿美元，目标投后估值约 2250 亿美元，较 8 月刚完成的 50 亿美元融资（1900 亿美元估值）再抬约 18%；谈判仍在进行、条款可能变化，公司未回应置评。公司此前披露 Lakehouse 业务季度收入破 15 亿美元、Lakebase 破 1 亿美元、年化营收超 70 亿美元。若落地，将是 AI 逆风周期中数据平台层定价的重要参照。需要等待什么信号确认： 公司官方确认或条款披露；领投方与实际规模；下一轮融资通稿中 Lakebase 与 Lakehouse 收入口径的更新。",
+      "source": "路透社转引《华尔街日报》报道（CNA 同步，2026-11-20）",
+      "url": "https://www.channelnewsasia.com/business/databricks-in-early-talks-raise-funds-225-billion-valuation-wsj-reports-6570836",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-23",
+      "vendor": "其他",
+      "module": "投融资",
+      "title": "【预告】Workday 11-24 盘后发布 FY2027 Q3 财报",
+      "summary": "来源： Workday 投资者关系公告（2026-11-02）为什么值得继续看： Workday 已官方确认 11-24 美股盘后发布 FY2027 第三季度业绩，电话会同期举行。观察重点是其订阅收入与企业 AI 产品贡献的披露口径，以及语义层相关能力与 Honeydew 整合的量化进展——Workday 正把企业数据与 Agent 能力绑定，其披露节奏是这类「业务系统厂商做数据层」路线的风向标。需要等待什么信号确认： 财报中订阅收入与 AI/Agent 产品贡献口径；Honeydew 整合或语义层能力商业化的量化披露。",
+      "source": "Workday 投资者关系公告（2026-11-02）",
+      "url": "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-to-Announce-Fiscal-2027-Third-Quarter-Financial-Results-on-November-24-2026/default.aspx",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-23",
+      "vendor": "EDB",
+      "module": "投融资",
+      "title": "【降级】LanceDB 完成 5750 万美元 B 轮融资",
+      "summary": "来源： LanceDB 官方博客（2026-11-17）为什么值得继续看： LanceDB 于 11-17 官宣完成 5750 万美元 B 轮，Bessemer Venture Partners 与 Innovation Endeavors 联合领投，Theory Ventures、Dimension Capital 等跟投。公司基于自研 Lance 列式格式构建面向 AI 的多模态湖仓，统一存储向量、图片、音视频与元数据。因超出 72 小时补录窗口，本期降级收录。多模态训练数据基础设施的融资热度仍在持续，与向量数据库赛道的整合趋势互相印证。需要等待什么信号确认： 新资金的具体投向（Lance 格式生态与企业版能力）；多模态/向量数据基础设施赛道的下一轮定价与整合动作。",
+      "source": "LanceDB 官方博客（2026-11-17）",
+      "url": "https://blog.lancedb.com/",
+      "conf": ""
     }
   ],
   "archive": [
@@ -12320,7 +12380,8 @@
     "2026-11-17",
     "2026-11-18",
     "2026-11-19",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-23"
   ],
   "monthly": [
     {
