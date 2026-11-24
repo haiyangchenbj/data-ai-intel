@@ -12204,6 +12204,46 @@
       "source": "LanceDB 官方博客（2026-11-17）",
       "url": "https://blog.lancedb.com/",
       "conf": ""
+    },
+    {
+      "date": "2026-11-24",
+      "vendor": "Snowflake",
+      "module": "专题",
+      "title": "Elastic 推出 ES|QL Data Federation：直接查询 S3 上的开放格式",
+      "summary": "来源： Elastic 官方博客摘要： Elastic 宣布 ES|QL Data Federation 进入技术预览：用 ES|QL 的 FROM 语法直接查询 Amazon S3 上的 Parquet、NDJSON、CSV、TSV 文件（含 gzip、zstd、snappy 压缩），查询时推断 schema，无需摄取、无需第二查询引擎，Kibana 看板与检测规则照常工作。该能力现已在 Elastic Cloud Serverless 可用，预计 12 月初随 Elasticsearch 9.6 进入 Cloud Hosted 与自管部署。官方路线图还包括 Google Cloud Storage、Azure Blob、数据湖目录，以及 Redshift、Snowflake 等数仓与数据库。为什么对数据平台重要： 过去分析、安全与合规场景要查对象存储里的归档数据，必须在 Elasticsearch 之外另立 Athena、Trino、Spark 等第二引擎并手工对账；现在同一条 ES|QL、同一套权限与看板可同时覆盖索引数据与开放格式归档，官方还给出谓词下推、TopN 下推等针对外部数据的性能工程。搜索引擎正式加入「查询引擎伸向对象存储开放格式」的阵营，以就地查询替代数据复制进一步成为跨引擎的默认形态。",
+      "source": "Elastic 官方博客",
+      "url": "https://www.elastic.co/search-labs/blog/esql-data-federation-query-s3-elasticsearch",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-24",
+      "vendor": "AWS",
+      "module": "技术",
+      "title": "Aurora serverless MySQL 容量上限提升至 384 ACU",
+      "summary": "来源： AWS What's New摘要： AWS 宣布 Aurora serverless（MySQL 兼容版）单节点最大容量从 256 ACU 提升至 384 ACU（提升 50%，约 768 GiB 内存），要求 Aurora MySQL 3.14 或 8.4.10 及以上内核并运行在 Platform Version 4；旧平台版本集群需通过维护操作升级，已在 Platform Version 4 上的集群修改配置即可、无停机。官方点名智能体应用突发式、长空闲、流量不可预测的负载为主要适配场景。对数据平台的影响： 弹性上限抬高让此前因 256 ACU 天花板被迫迁往预置实例的大规格负载可以留在 scale-to-zero 模型，兼顾峰谷成本；同时按 ACU 实际用量计费，失控查询或缺失索引的账单风险同步放大，容量上限需要与 ServerlessDatabaseCapacity、ACUUtilization 监控告警一起调整。",
+      "source": "AWS What's New",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-serverless-mysql-supports-384-acu/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-24",
+      "vendor": "微软",
+      "module": "产品",
+      "title": "【降级】微软发布 M365 全球服务中断最终事后报告",
+      "summary": "来源： BigPanda IT Ops 周报（转述 GeekWire 等，二手）为什么值得继续看： 微软 11 月 12 日全球服务中断（波及 Fabric、Power BI、Purview）的最终事后报告于 11 月 20 日发布：故障起点为美东 Teams 网关路由异常，自动化切换把全球 Teams 流量压向邮件网关，叠加 14% 容量例行离线，北美超 80% 网关服务器一度无响应；微软列出 13 项整改，承诺 2026 年底前实现故障流量区域隔离、限制 Teams 切换范围，2027 年一季度按工作负载划分网关容量池。治理链路依赖 M365 的数据团队值得把整改节点纳入供应商风险评估。需要等待什么信号确认： 2026 年底前区域隔离机制上线、2027 年一季度网关容量分区落地，以及 Fabric、Power BI 相关的 SLA 承诺或补偿安排是否兑现。",
+      "source": "BigPanda IT Ops 周报（转述 GeekWire 等，二手）",
+      "url": "https://www.bigpanda.io/blog/itops-news-brief-bigpanda-1123/",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-24",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "【降级】Google ADK 与 MongoDB 的智能体持久化集成（二手待验证）",
+      "summary": "来源： AI In Context（二手报道，未见官方一手原文）为什么值得继续看： 报道称 Google 与 MongoDB 于 11 月 24 日发布 Agent Development Kit 原生集成，提供会话存储、长期记忆与向量混合检索三组件，经 pip 安装 google-adk[mongodb] 即用，支持 Atlas 与自管 MongoDB 8.0+。若属实，通用数据库进一步成为智能体状态的持久层，与近期 ClickHouse、Supabase 的 Agent 数据层动作同向。需要等待什么信号确认： Google ADK 官方文档或 MongoDB 官方博客的一手公告、google-adk[mongodb] 安装包收录与版本说明。",
+      "source": "AI In Context（二手报道，未见官方一手原文）",
+      "url": "https://aiincontext.com/articles/google-and-mongodb-ship-session-memory-and-search-layer-for-ai-agents",
+      "conf": ""
     }
   ],
   "archive": [
@@ -12381,7 +12421,8 @@
     "2026-11-18",
     "2026-11-19",
     "2026-11-20",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-24"
   ],
   "monthly": [
     {

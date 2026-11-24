@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-24</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-24 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>查询引擎直接伸向对象存储开放格式，复制式集成让位就地查询</li>
+      <li>弹性上限抬高，云数据库按需形态开始承接更高峰值的智能体负载</li>
+      <li>智能体状态正沉淀进通用数据库，代理层与数据平台边界开始融合</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>今天的三条信号指向同一件事：平台边界在向外扩。查询能力伸向对象存储上的开放数据，弹性容量上限抬高，智能体状态沉淀进通用数据库。数据平台的竞争焦点正从仓内性能，转向以更少复制、更按需的成本承接开放数据与智能体负载。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>Elastic 推出 ES|QL Data Federation：直接查询 S3 上的开放格式</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.elastic.co/search-labs/blog/esql-data-federation-query-s3-elasticsearch">Elastic 官方博客</a><br><b>摘要：</b> Elastic 宣布 ES|QL Data Federation 进入技术预览：用 ES|QL 的 FROM 语法直接查询 Amazon S3 上的 Parquet、NDJSON、CSV、TSV 文件（含 gzip、zstd、snappy 压缩），查询时推断 schema，无需摄取、无需第二查询引擎，Kibana 看板与检测规则照常工作。该能力现已在 Elastic Cloud Serverless 可用，预计 12 月初随 Elasticsearch 9.6 进入 Cloud Hosted 与自管部署。官方路线图还包括 Google Cloud Storage、Azure Blob、数据湖目录，以及 Redshift、Snowflake 等数仓与数据库。<br><b>为什么对数据平台重要：</b> 过去分析、安全与合规场景要查对象存储里的归档数据，必须在 Elasticsearch 之外另立 Athena、Trino、Spark 等第二引擎并手工对账；现在同一条 ES|QL、同一套权限与看板可同时覆盖索引数据与开放格式归档，官方还给出谓词下推、TopN 下推等针对外部数据的性能工程。搜索引擎正式加入「查询引擎伸向对象存储开放格式」的阵营，以就地查询替代数据复制进一步成为跨引擎的默认形态。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>Aurora serverless MySQL 容量上限提升至 384 ACU</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-serverless-mysql-supports-384-acu/">AWS What's New</a><br><b>摘要：</b> AWS 宣布 Aurora serverless（MySQL 兼容版）单节点最大容量从 256 ACU 提升至 384 ACU（提升 50%，约 768 GiB 内存），要求 Aurora MySQL 3.14 或 8.4.10 及以上内核并运行在 Platform Version 4；旧平台版本集群需通过维护操作升级，已在 Platform Version 4 上的集群修改配置即可、无停机。官方点名智能体应用突发式、长空闲、流量不可预测的负载为主要适配场景。<br><b>对数据平台的影响：</b> 弹性上限抬高让此前因 256 ACU 天花板被迫迁往预置实例的大规格负载可以留在 scale-to-zero 模型，兼顾峰谷成本；同时按 ACU 实际用量计费，失控查询或缺失索引的账单风险同步放大，容量上限需要与 ServerlessDatabaseCapacity、ACUUtilization 监控告警一起调整。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】微软发布 M365 全球服务中断最终事后报告</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.bigpanda.io/blog/itops-news-brief-bigpanda-1123/">BigPanda IT Ops 周报（转述 GeekWire 等，二手）</a><br><b>为什么值得继续看：</b> 微软 11 月 12 日全球服务中断（波及 Fabric、Power BI、Purview）的最终事后报告于 11 月 20 日发布：故障起点为美东 Teams 网关路由异常，自动化切换把全球 Teams 流量压向邮件网关，叠加 14% 容量例行离线，北美超 80% 网关服务器一度无响应；微软列出 13 项整改，承诺 2026 年底前实现故障流量区域隔离、限制 Teams 切换范围，2027 年一季度按工作负载划分网关容量池。治理链路依赖 M365 的数据团队值得把整改节点纳入供应商风险评估。<br><b>需要等待什么信号确认：</b> 2026 年底前区域隔离机制上线、2027 年一季度网关容量分区落地，以及 Fabric、Power BI 相关的 SLA 承诺或补偿安排是否兑现。</div>
+</div>
+<div class="item">
+    <h3>【降级】Google ADK 与 MongoDB 的智能体持久化集成（二手待验证）</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://aiincontext.com/articles/google-and-mongodb-ship-session-memory-and-search-layer-for-ai-agents">AI In Context（二手报道，未见官方一手原文）</a><br><b>为什么值得继续看：</b> 报道称 Google 与 MongoDB 于 11 月 24 日发布 Agent Development Kit 原生集成，提供会话存储、长期记忆与向量混合检索三组件，经 pip 安装 google-adk[mongodb] 即用，支持 Atlas 与自管 MongoDB 8.0+。若属实，通用数据库进一步成为智能体状态的持久层，与近期 ClickHouse、Supabase 的 Agent 数据层动作同向。<br><b>需要等待什么信号确认：</b> Google ADK 官方文档或 MongoDB 官方博客的一手公告、google-adk[mongodb] 安装包收录与版本说明。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-24 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
