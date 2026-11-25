@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-25</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-25 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>数据库厂商反向切入湖仓，AI数据底座竞争两边开打</li>
+      <li>数据要素与算力网络进入国家级行动计划，制度供给提速</li>
+      <li>超大规模云服务的故障恢复速度，正在变成企业采购的显性指标</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>AI 数据基础设施的边界正在重画：数据库厂商以湖库一体底座直接对标湖仓平台，政策端把数据要素与算力网络纳入国家级规划。平台选型的评估维度正在从事务、分析、多模态的单点性能，转向能否用一套底座承载 Agent 时代的数据负载。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3>OceanBase 发布湖库一体 AI 数据平台 OceanLake，核心引擎开源</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.oceanbase.com/blog/oceanbase-ai-lakebase-architecture">OceanBase 官方博客</a><br><b>摘要：</b> 11月24日 OceanBase 在 AI 数据大会上发布湖库一体 AI 数据平台 OceanLake，同时将核心 AI 数据库以 OceanSeek 为代号按 Apache 2.0 协议开源。架构上以对象存储上的多模表为底座，统一管理结构化、半结构化与非结构化数据，SQL、Spark ETL、Daft on Ray 等 open 计算共用一份数据，配统一 Catalog、行级权限（RLS）、Agent 场景的 Fork Database 分支回滚与逻辑表；上下文层提供 PowerMem 记忆与 OSI 语义层、DataPilot 问数。官方同场披露：AI 业务收入超 1 亿元，海外营收占比超 15%（同比增长超 100%），公有云营收增长 80%；并按 Omdia 口径列亚太及大洋洲分布式事务型数据库市场份额第一（15.5%）。<br><b>为什么对数据平台重要：</b> 数据库厂商从交易侧反向进入湖仓与 Agent 数据底座，与 Databricks、Snowflake 从湖仓侧补事务能力形成对进；「一份数据同时服务事务、分析、搜索与 AI 计算」的主张若兑现，将直接压缩数据平台选型中「多引擎拼接 + CDC 同步」方案的生存空间，多模表与统一治理边界也会成为新的对标项。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局：数字经济发展「十五五」行动计划</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://paper.people.com.cn/rmrbhwb/pc/content/202611/25/content_30193039.html">人民日报海外版</a><br><b>核心观点：</b> 11月24日从国家数据局获悉，将组织实施数字经济发展「十五五」行动计划：到 2030 年数字经济核心产业增加值占 GDP 比重达 12.5%；完善数据流通利用规则，健全数据要素价格形成和收益分配机制；加快构建全国一体化算力网，建设运营国家数据基础设施；推进制定数字经济促进法，探索布局数据跨境流动服务基础设施。<br><b>映射到数据平台的判断：</b> 数据基础设施从技术选型问题升格为国家级规划命题：数据要素价格与收益分配机制落地后，企业数据平台将面对更明确的流通合规与定价约束；全国一体化算力网与国家数据基础设施投入，会带动跨域调度、可信流通类能力成为平台建设的合规底线，跨境流动基础设施则直接影响跨国企业数据架构的区域切分设计。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【跟踪】微软就 M365 全球中断启动「红色警报」行动</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.qq.com/rain/a/20261125A03X5P00">腾讯新闻转引中新经纬（路透社报道）</a><br><b>为什么值得继续看：</b> 据路透社 11月24日援引的内部备忘录，微软启动最高优先级 Code Red 行动改革重大故障预防与响应机制：按区域隔离流量、过载时优先保障关键服务、用 AI 智能体辅助诊断，目标未来全球级中断 1 小时内恢复。该行动与此前的 13 项整改、年底区域隔离、2027 年一季度网关容量分区计划形成同一条主线。<br><b>需要等待什么信号确认：</b> 官方技术博客或信任中心对区域隔离机制与容量分区时间表的正式说明；Fabric、Power BI 等托管数据服务是否获得独立的 SLA 或容量承诺。</div>
+</div>
+<div class="item">
+    <h3>【跟踪】Workday FY2027 Q3 财报：AI 产品合同价值三倍增长，语义层口径未披露</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://news.qq.com/rain/a/20261125A03PRA00">腾讯新闻（智通财经）</a><br><b>为什么值得继续看：</b> Workday 于美东时间 11月24日盘后发布 FY2027 Q3 财报：总营收 27.05 亿美元（+11.2%），订阅收入 25.32 亿美元（+12.8%）；AI 产品当季新增年化合同价值近 1.5 亿美元，为上年同期三倍以上，逾 2200 家核心客户购买至少一项 AI 产品。全年订阅收入指引上调至 99.58 亿美元。但 9 月宣布收购的语义层 Honeydew 并入 Data Cloud 后的商业化口径未单独披露。<br><b>需要等待什么信号确认：</b> 后续财报或分析师电话会对 Data Cloud/语义层收入的独立拆分；Honeydew 交割进度（原计划 FY2027 Q4）与产品整合节奏。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-25 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
