@@ -12344,6 +12344,46 @@
       "source": "MongoDB 官方文档",
       "url": "https://dochub.mongodb.org/docs/atlas/ai-integrations/google-adk",
       "conf": ""
+    },
+    {
+      "date": "2026-11-27",
+      "vendor": "Google",
+      "module": "技术",
+      "title": "BigQuery cross-cloud connections GA：全区域直查 AWS、Azure 与 Salesforce Data 360",
+      "summary": "来源： BigQuery Release Notes摘要： Google Cloud 在 BigQuery Release Notes 宣布 cross-cloud connections 正式 GA：可从所有 BigQuery 区域查询 AWS、Azure 与 Salesforce Data 360 中的数据，功能可用性超出基于 BigQuery Omni 的标准连接。该能力此前以 Omni 等受限形态提供，本次连接层全量放开。对数据平台的影响： 跨云联邦查询正从特定形态的增值能力下沉为全区域默认能力，“数据不动、查询过去”从 BigQuery Omni 的特殊方案变成平台标配；企业做跨云分析时不再默认需要搬运数据或单独建链路，压缩了为跨云查询而复制数据的方案空间，并改变湖仓与仓库选型中的跨云能力权重。 [补录 11-25]",
+      "source": "BigQuery Release Notes",
+      "url": "https://cloud.google.com/bigquery/docs/release-notes",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-27",
+      "vendor": "Google",
+      "module": "产品",
+      "title": "Managed Airflow 推出 Agentic upgrade check：升级前由 Agent 预检 DAG 兼容性",
+      "summary": "来源： Cloud Composer Release Notes摘要： Google Cloud 11 月 26 日发布：Agentic upgrade check 在 Managed Airflow 上线。升级环境前可在控制台运行升级检查，询问 Managed Airflow Agent：所选 Airflow 构建或镜像版本要求 DAG 做哪些变更，提前暴露不兼容项。对数据平台的影响： 托管编排把 LLM Agent 嵌入版本升级这类高风险运维动作，DAG 兼容性预检从人工比对 release notes 变成对话式自动检查；若可靠性得到验证，将明显降低 Airflow 大版本升级的工程成本，也为“Agent 代做平台运维”提供了从问答走向执行动作的样本。",
+      "source": "Cloud Composer Release Notes",
+      "url": "https://cloud.google.com/composer/docs/release-notes",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-27",
+      "vendor": "国家数据局",
+      "module": "机构",
+      "title": "国家数据局：《关于完善数据规则 赋能人工智能创新发展的若干意见》公开征求意见",
+      "summary": "来源： 国家数据局综合司公告核心观点： 11 月 26 日发布公开征求意见稿，围绕 AI 发展的数据要素需求提出三大方面十二项举措：推动数据产权制度在 AI 用数领域运用，合法采集、衍生、协议取得的数据可依法用于训练和推理；协调数据处理者与受托方关系，支持和鼓励为数据付费；建立数据质量评价、流通责任认定与纠纷调解机制，鼓励用 AI 破解语义对齐、数据分散等治理难题。征求意见期 11 月 26 日至 12 月 6 日，后续将通过试点推动落实。映射到数据平台的判断： AI 用数即将进入有明确规则层的阶段：数据产权登记凭证拟作为流通责任认定的重要考量，“为数据付费”被正式鼓励，高质量数据集建设与流通交易被点名推动；数据平台需要在血缘、授权凭证留存、来源可查验、质量测评上提前具备支撑能力，治理能力从合规成本项转向参与数据交易的前提项。",
+      "source": "国家数据局综合司公告",
+      "url": "https://www.nda.gov.cn/sjj/hdjl/yjzq/yjzqform/list/index_pc.html?code=ff808081-a1d5596e-01a2-17aa8b5d-096b",
+      "conf": ""
+    },
+    {
+      "date": "2026-11-27",
+      "vendor": "英伟达",
+      "module": "技术",
+      "title": "【降级】NVIDIA×DuckDB：GPU 原生 SQL 引擎 Sirius 成为 DuckDB 核心扩展",
+      "summary": "来源： NVIDIA Technical Blog为什么值得继续看： NVIDIA 与 DuckLabs 将开源 GPU 原生 SQL 引擎 Sirius 以核心扩展形式并入 DuckDB，随 DuckDB 2.0.1 LTS 提供，Apache-2.0 开源；INSTALL/LOAD 两条命令启用，不改写 SQL 与表结构，不支持的特性自动回退 CPU。官方口径 TPC-H 10TB 双 GPU 调优配置总时间 2369.4 秒降至 729.9 秒（3.25 倍），查询时段计算成本降约 79%。原始发布 11 月 20 日至 23 日，超出 24 小时窗口，降级收录。GPU 执行从独立引擎变成嵌入式分析引擎的可选扩展，CPU 向量化路线的引擎将面临同机 GPU 路径的性价比对比；执行边界放在可交换查询计划上，StarRocks 已列入支持路线图。需要等待什么信号确认： StarRocks 宿主支持的实际落地时间表；独立第三方在真实负载与计费口径下的复现数据；其他分析引擎是否以同样方式接入该执行边界。",
+      "source": "NVIDIA Technical Blog",
+      "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+      "conf": ""
     }
   ],
   "archive": [
@@ -12524,7 +12564,8 @@
     "2026-11-23",
     "2026-11-24",
     "2026-11-25",
-    "2026-11-26"
+    "2026-11-26",
+    "2026-11-27"
   ],
   "monthly": [
     {

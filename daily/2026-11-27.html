@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data+AI 全球日报 | 2026-11-27</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #ea4335;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+    --green: #34a853;
+    --orange: #fbbc04;
+    --purple: #9334e6;
+    --teal: #00897b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    padding: 32px 40px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.3);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .header .date { font-size: 14px; opacity: 0.85; }
+
+  /* Summary Box */
+  .summary-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .summary-box h2 { font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .summary-box ol { padding-left: 20px; }
+  .summary-box li { margin-bottom: 8px; font-size: 15px; }
+  .summary-box .verdict {
+    background: var(--primary-light);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  .badge-a { background: var(--accent); }
+  .badge-b { background: var(--primary); }
+  .badge-c { background: var(--green); }
+  .badge-d { background: var(--teal); }
+  .badge-e { background: var(--orange); }
+  .section-header h2 { font-size: 18px; font-weight: 600; }
+
+  /* Item */
+  .item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .item:last-child { border-bottom: none; }
+  .item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .item .source {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .item .source a { color: var(--primary); text-decoration: none; }
+  .item .source a:hover { text-decoration: underline; }
+  .item .body { font-size: 14px; line-height: 1.7; color: #3c4043; }
+  .item .impact {
+    background: #f0f7ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1a56db;
+  }
+
+  /* 投融资特殊样式 */
+  .funding-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  .tag-funding { background: #fce4ec; color: #c62828; }
+  .tag-earnings { background: #e3f2fd; color: #1565c0; }
+  .tag-ipo { background: #f3e5f5; color: #7b1fa2; }
+  .tag-ma { background: #e8f5e9; color: #2e7d32; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .header { padding: 24px; }
+    .header h1 { font-size: 22px; }
+    .section, .summary-box { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>📊 Data+AI 全球日报</h1>
+    <div class="date">2026-11-27 · 严格只包含过去24小时信息</div>
+  </div>
+
+  <!-- 根据实际日报内容填充以下模板 -->
+
+  <div class="summary-box">
+    <h2>🔥 今日最重要的3个变化</h2>
+    <ol>
+      <li>跨云联邦查询成为全区域默认能力，跨云孤岛的查询边界在松动</li>
+      <li>编排平台把智能体嵌进升级与运维动作，从回答问题走向代做检查</li>
+      <li>数据要素规则开始为AI用数定价定责，治理进入实操条款阶段</li>
+    </ol>
+    <div class="verdict">
+      <strong>总判断：</strong>窗口内发布动作偏薄，但三条线同向：跨云查询下沉为默认能力，Agent 进入平台运维链路，政策把 AI 用数的产权、付费与责任写成可执行条款。数据平台的竞争正从存算性能转向查询可达范围、运维自动化深度与用数合规支撑，投入重点宜转向这三处。
+    </div>
+  </div>
+
+  <!-- Section A: Top Signals -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-a">A</span>
+      <h2>Top Signals</h2>
+    </div>
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section B: Product & Tech -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-b">B</span>
+      <h2>Product & Tech</h2>
+    </div>
+    <div class="item">
+    <h3>BigQuery cross-cloud connections GA：全区域直查 AWS、Azure 与 Salesforce Data 360</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/bigquery/docs/release-notes">BigQuery Release Notes</a><br><b>摘要：</b> Google Cloud 在 BigQuery Release Notes 宣布 cross-cloud connections 正式 GA：可从所有 BigQuery 区域查询 AWS、Azure 与 Salesforce Data 360 中的数据，功能可用性超出基于 BigQuery Omni 的标准连接。该能力此前以 Omni 等受限形态提供，本次连接层全量放开。<br><b>对数据平台的影响：</b> 跨云联邦查询正从特定形态的增值能力下沉为全区域默认能力，“数据不动、查询过去”从 BigQuery Omni 的特殊方案变成平台标配；企业做跨云分析时不再默认需要搬运数据或单独建链路，压缩了为跨云查询而复制数据的方案空间，并改变湖仓与仓库选型中的跨云能力权重。 [补录 11-25]</div>
+</div>
+<div class="item">
+    <h3>Managed Airflow 推出 Agentic upgrade check：升级前由 Agent 预检 DAG 兼容性</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://cloud.google.com/composer/docs/release-notes">Cloud Composer Release Notes</a><br><b>摘要：</b> Google Cloud 11 月 26 日发布：Agentic upgrade check 在 Managed Airflow 上线。升级环境前可在控制台运行升级检查，询问 Managed Airflow Agent：所选 Airflow 构建或镜像版本要求 DAG 做哪些变更，提前暴露不兼容项。<br><b>对数据平台的影响：</b> 托管编排把 LLM Agent 嵌入版本升级这类高风险运维动作，DAG 兼容性预检从人工比对 release notes 变成对话式自动检查；若可靠性得到验证，将明显降低 Airflow 大版本升级的工程成本，也为“Agent 代做平台运维”提供了从问答走向执行动作的样本。</div>
+</div>
+  </div>
+
+  <!-- Section C: Views & Research (People & Views + Analyst Insights 合并) -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-c">C</span>
+      <h2>Views & Research</h2>
+    </div>
+    <div class="item">
+    <h3>国家数据局：《关于完善数据规则 赋能人工智能创新发展的若干意见》公开征求意见</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://www.nda.gov.cn/sjj/hdjl/yjzq/yjzqform/list/index_pc.html?code=ff808081-a1d5596e-01a2-17aa8b5d-096b">国家数据局综合司公告</a><br><b>核心观点：</b> 11 月 26 日发布公开征求意见稿，围绕 AI 发展的数据要素需求提出三大方面十二项举措：推动数据产权制度在 AI 用数领域运用，合法采集、衍生、协议取得的数据可依法用于训练和推理；协调数据处理者与受托方关系，支持和鼓励为数据付费；建立数据质量评价、流通责任认定与纠纷调解机制，鼓励用 AI 破解语义对齐、数据分散等治理难题。征求意见期 11 月 26 日至 12 月 6 日，后续将通过试点推动落实。<br><b>映射到数据平台的判断：</b> AI 用数即将进入有明确规则层的阶段：数据产权登记凭证拟作为流通责任认定的重要考量，“为数据付费”被正式鼓励，高质量数据集建设与流通交易被点名推动；数据平台需要在血缘、授权凭证留存、来源可查验、质量测评上提前具备支撑能力，治理能力从合规成本项转向参与数据交易的前提项。</div>
+</div>
+  </div>
+
+  <!-- Section D: Capital & Corporate -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-d">D</span>
+      <h2>Capital & Corporate</h2>
+    </div>
+    <!-- 使用 funding-tag 类标注类型 -->
+    <!-- <span class="funding-tag tag-funding">投融资</span> -->
+    <!-- <span class="funding-tag tag-earnings">财报发布</span> -->
+    <!-- <span class="funding-tag tag-ipo">IPO</span> -->
+    <!-- <span class="funding-tag tag-ma">收购兼并</span> -->
+    <div class="item">
+    <h3></h3>
+    
+    <div class="body">今日无合格信息。</div>
+</div>
+  </div>
+
+  <!-- Section E: Watchlist -->
+  <div class="section">
+    <div class="section-header">
+      <span class="badge badge-e">E</span>
+      <h2>Watchlist</h2>
+    </div>
+    <div class="item">
+    <h3>【降级】NVIDIA×DuckDB：GPU 原生 SQL 引擎 Sirius 成为 DuckDB 核心扩展</h3>
+    
+    <div class="body"><b>来源：</b> <a href="https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/">NVIDIA Technical Blog</a><br><b>为什么值得继续看：</b> NVIDIA 与 DuckLabs 将开源 GPU 原生 SQL 引擎 Sirius 以核心扩展形式并入 DuckDB，随 DuckDB 2.0.1 LTS 提供，Apache-2.0 开源；INSTALL/LOAD 两条命令启用，不改写 SQL 与表结构，不支持的特性自动回退 CPU。官方口径 TPC-H 10TB 双 GPU 调优配置总时间 2369.4 秒降至 729.9 秒（3.25 倍），查询时段计算成本降约 79%。原始发布 11 月 20 日至 23 日，超出 24 小时窗口，降级收录。GPU 执行从独立引擎变成嵌入式分析引擎的可选扩展，CPU 向量化路线的引擎将面临同机 GPU 路径的性价比对比；执行边界放在可交换查询计划上，StarRocks 已列入支持路线图。<br><b>需要等待什么信号确认：</b> StarRocks 宿主支持的实际落地时间表；独立第三方在真实负载与计费口径下的复现数据；其他分析引擎是否以同样方式接入该执行边界。</div>
+</div>
+  </div>
+
+  <div class="footer">
+    <p>Powered by Data+AI Daily Brief</p>
+    <p>信息截至北京时间 2026-11-27 08:00</p>
+  </div>
+
+</div>
+</body>
+</html>
